@@ -1,0 +1,38 @@
+- name: Anders Ynnerman
+  title: Project Management
+  affiliation: Linköping University
+  image: "assets/team/admin_01_anders_ynnerman.webp"
+  type: admin
+  active: true
+- name: Chuck Hansen
+  title: Project Management
+  affiliation: University of Utah, Scientific Computing and Imaging Institute
+  image: "assets/team/prevadmin_01_chuck_hansen.webp"
+  type: admin
+  active: false
+
+- name: Megan Villa
+  title: Project Coordinator
+  affiliation: American Museum of Natural History
+  image: "assets/team/coord_01_megan_villa.webp"
+  type: coord
+
+- name: Alex Bock
+  title: Development Lead
+  affiliation: Linköping University
+  image: "assets/team/dev_01_alex_bock.webp"
+  active: true
+  type: dev
+- name: Jonas Strandstedt
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "assets/team/prevdev_01_jonas_strandstedt.webp"
+  type: dev
+
+- name: Martin Törnros
+  affiliation: Linköping University
+  image: "assets/team/student_01_martin_tornros.webp"
+  thesis: Interactive Visualization of Space Weather Data
+  thesis-link: http://liu.diva-portal.org/smash/get/diva2:667227/FULLTEXT01.pdf
+  thesis-affiliation: CCMC
+  type: student

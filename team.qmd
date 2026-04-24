@@ -1,0 +1,34 @@
+---
+title: "Team"
+listing:
+  - id: leadership
+    contents: assets/team/team.yml
+    type: default
+    include:
+      type: "{admin,coord}"
+  - id: developer
+    contents: "assets/team/team.yml"
+    type: default
+    include:
+      type: dev
+  - id: students
+    contents: "assets/team/team.yml"
+    type: default
+    include:
+      type: student
+---
+
+# Project Leadership and Management
+
+::: {#leadership}
+:::
+
+# Developers
+
+::: {#developer}
+:::
+
+# Students
+
+::: {#students}
+:::

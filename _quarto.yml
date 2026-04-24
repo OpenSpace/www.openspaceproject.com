@@ -1,0 +1,157 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 12800
+
+format:
+  html:
+    quarto-required: 1.9.*
+    theme:
+      light:
+        - "assets/style/brand.scss"
+        - "assets/style/openspace-theme-light.scss"
+      dark:
+        - "assets/style/brand.scss"
+        - "assets/style/openspace-theme-dark.scss"
+    anchor-sections: false
+    smooth-scroll: true
+    # tabsets: true
+    respect-user-color-scheme: true
+    toc: false
+    cap-location: bottom
+    # page-layout: custom
+    grid:
+      body-width: 1000px
+      sidebar-width: 0px
+      margin-width: 0px
+    # appendix-style:
+    # title-block-style: none
+    # title-block-banner: "#ff0000"
+    # title-block-categories: true
+    execution:
+      echo: false
+      warning: true
+    lightbox: true
+    link-external-icon: true
+    link-external-newwindow: true
+    lang: "en"
+    axe: true
+    # include-before-body:
+    # include-after-body:
+    # include-in-header:
+    # resources:
+
+website:
+  title: "OpenSpace"
+  description: "Official OpenSpace Website"
+  favicon: "/assets/logos/openspace-icon.webp"
+  image: "/assets/logos/openspace-logo.webp"
+  image-alt: "OpenSpace"
+  site-url: "https://www.openspaceproject.com"
+  # repo-url: "https://github.com/OpenSpace/www.openspaceproject.com"
+  # repo-link-target: "_blank"
+  # repo-actions: [edit, issue]
+  llms-txt: true
+  # google-analytics:
+  cookie-consent: true
+  search: false
+
+  # body-header:
+  body-footer: ""
+  page-navigation: false
+  back-to-top-navigation: false
+  bread-crumbs: true
+  # page-footer:
+  open-graph: true
+  # twitter-card:
+  #   creator: "@openspaceproj"
+  #   site: "@openspaceproj"
+  # other-links:
+  # code-links:
+  draft-mode: unlinked
+
+
+  # sidebar:
+  #   search: true
+  #   title: Sidebar
+  #   tools:
+
+  # margin:
+
+  announcement:
+    icon: info-circle
+    content: "_Alert_ - Draft webpage"
+    dismissable: true
+    position: above-navbar
+
+  page-footer:
+    border: true
+    background: dark
+    foreground: light
+    left: |
+      Left text
+    center: |
+      © OpenSpace Project Team 2026
+    right: |
+      License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+  # page-footer:
+  #   left:
+  #     - text: "Left text"
+  #   right:
+  #     - text: "Right Text"
+  #   center:
+  #     - text: "© OpenSpace Project Team 2026"
+  #   border: false
+  #   # background:
+  #   # foreground:
+
+  navbar:
+    title: false
+    logo: "/assets/logos/openspace-horiz-logo.webp"
+    logo-alt: "OpenSpace"
+    # background:
+    # foreground:
+    # search: false
+    pinned: true
+    collapse: true
+    collapse-below: sm
+    # toggle-position:
+    # tools-collapse:
+
+    # left:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: About
+        menu:
+          - team.qmd
+          - partners.qmd
+      - text: Resources
+        menu:
+          - resources-images.qmd
+          - text: Server Status
+            href: https://uptime.openspaceproject.com
+      - events.qmd
+      - about.qmd
+      - icon: github
+        href: https://github.com/OpenSpace/OpenSpace
+        aria-label: "GitHub Repository"
+
+  # listing:
+
+extensions:
+  iconify:
+    set: "octicon"
+    size: "Huge"
+    width: "1em"
+    height: "1em"
+    flip: "horizontal"
+    rotate: "90deg"
+    inline: true
+    mode: "svg"
+    style: "color: #b22222;"
+
+# List of available icons:  https://fontawesome.com/search?ic=free-collection
+# List of available icons:  https://icon-sets.iconify.design/   via   https://github.com/mcanouil/quarto-iconify

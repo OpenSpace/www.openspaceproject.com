@@ -1,0 +1,28 @@
+---
+title: "Images"
+execute:
+  echo: false
+  output: asis
+---
+
+View image description and credit by clicking or tapping on the image.
+
+```{python}
+from IPython.display import display, Markdown
+from os import listdir
+
+# Settings
+base_path = "assets/resources/images"
+image_width = 600
+image_height = 400
+
+# main():
+all_images = listdir(base_path)
+all_images.sort()
+
+print("::: {layout-ncol=4}\n")
+for image in all_images:
+  # display(Markdown(f"![]({base_path}/{image}){{width={image_width} height={image_height} style=\"object-fit: cover;\"}}\n\n"))
+  display(Markdown(f"![]({base_path}/{image})\n\n"))
+print(":::")
+```

@@ -1,0 +1,21 @@
+---
+title: "Events"
+listing:
+  - id: upcoming-events
+    contents: "events"
+    type: default
+    sort: "date desc"
+    categories: true
+    feed: true
+
+---
+
+# Upcoming Events
+
+::: {#upcoming-events}
+:::
+
+# Past Events
+
+::: {#past-events}
+:::

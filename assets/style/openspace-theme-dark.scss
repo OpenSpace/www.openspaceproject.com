@@ -196,7 +196,7 @@ hr {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -212,7 +212,13 @@ hr {
     margin-top: 0.5rem;
   }
 
-  .title, .affliation {
+  .title {
     font-size: 0.85rem;
+    font-style: italic;
+  }
+
+  .affiliation {
+    margin-top: 1rem;
+    font-size: 0.75rem;
   }
 }

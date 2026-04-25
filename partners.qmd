@@ -1,7 +1,3 @@
----
-title: Partners
----
-
 # University Partners
 [Linköping University](https://liu.se/?l=en) is one of the world's leading universities in the field of scientific visualization. The desire for an interactive tool to explore and communicate scientific data initiated the development of the OpenSpace project in 2014. Since then, student internships at NASA Goddard Space Flight Center and AMNH have contributed to the development of the project. Since 2002, LiU has conducted a successful series of master's thesis internships with AMNH to visualize its Digital Universe 3D Atlas, a dataset originally supported by NASA during the rebuild of the museum's Hayden Planetarium in 2000 that spawned commercial software Uniview and its parent company SCISS.
 

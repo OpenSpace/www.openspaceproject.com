@@ -1,41 +1,28 @@
 ---
-title: "Team"
 listing:
   - id: admin
     template: template/team.ejs.md
     contents: assets/team/team.yml
-    type: default
+    type: custom
     include:
-      type: "{admin,coord}"
-      active: true
+      type: "{admin,coordinator}"
   - id: advisor
     template: template/team.ejs.md
     contents: assets/team/team.yml
-    type: default
+    type: custom
     include:
       type: "{advisor}"
-      active: true
   - id: developer
     template: template/team.ejs.md
     contents: "assets/team/team.yml"
-    type: default
+    type: custom
     include:
-      type: dev
-      active: true
+      type: developer
   - id: students
+    template: template/team.ejs.md
     contents: "assets/team/team.yml"
-    type: table
-    fields: [ image, name, affiliation, thesis-affiliation ]
+    type: custom
     page-size: 9999
-    image-height: "128px"
-    sort-ui: false
-    filter-ui: false
-    table-striped: true
-    table-hover: true
-    field-display-names:
-      name: Name
-      affiliation: Affiliation
-      thesis-affiliation: Thesis Location
     include:
       type: student
 ---

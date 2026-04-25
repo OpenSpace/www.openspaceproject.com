@@ -1,6 +1,5 @@
----
-title: "www.openspaceproject.com"
----
+![](/assets/images/banner/mars.webp){.hero}
+
 
 This is a Quarto website.
 

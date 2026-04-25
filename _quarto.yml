@@ -15,6 +15,9 @@ format:
       # dark:
         - "assets/style/brand.scss"
         - "assets/style/openspace-theme-dark.scss"
+        - "assets/style/hero.scss"
+    include-after-body:
+      - file: template/hero.html
     anchor-sections: false
     smooth-scroll: true
     # tabsets: true
@@ -46,8 +49,8 @@ format:
 website:
   title: "OpenSpace"
   description: "Official OpenSpace Website"
-  favicon: "/assets/logos/openspace-icon.webp"
-  image: "/assets/logos/openspace-logo.webp"
+  favicon: "/assets/logos/openspace/icon.webp"
+  image: "/assets/logos/openspace/logo.webp"
   image-alt: "OpenSpace"
   site-url: "https://www.openspaceproject.com"
   # repo-url: "https://github.com/OpenSpace/www.openspaceproject.com"
@@ -90,12 +93,18 @@ website:
     border: true
     background: dark
     foreground: light
-    left: |
-      Left text
+    # left: |
+      # Left text
     center: |
       © OpenSpace Project Team 2026
-    right: |
-      License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+      OpenSpace is available under the [MIT License](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md).
+
+      OpenSpace is funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.
+
+      OpenSpace is also funded by the Knut & Alice Wallenberg Foundation, the Swedish Research Council (Vetenskapsrådet), and the Swedish e-Science Research Centre.
+
+    # right: |
+      # License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
   # page-footer:
   #   left:
@@ -110,7 +119,7 @@ website:
 
   navbar:
     title: false
-    logo: "/assets/logos/openspace-horiz-logo-crop.webp"
+    logo: "/assets/logos/openspace/horizontal-logo.webp"
     logo-alt: "OpenSpace"
     # background:
     # foreground:
@@ -127,15 +136,20 @@ website:
         href: index.qmd
       - text: About
         menu:
-          - team.qmd
-          - partners.qmd
+          - text: Team
+            href: team.qmd
+          - text: Partners
+            href: partners.qmd
       - text: Resources
         menu:
-          - resources-images.qmd
+          - text: Images
+            href: resources-images.qmd
           - text: Server Status
             href: https://uptime.openspaceproject.com
-      - events.qmd
-      - about.qmd
+      - text: Events
+        href: events.qmd
+      - text: About
+        href: about.qmd
       - icon: github
         href: https://github.com/OpenSpace/OpenSpace
         aria-label: "GitHub Repository"

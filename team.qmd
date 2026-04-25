@@ -1,34 +1,57 @@
 ---
 title: "Team"
 listing:
-  - id: leadership
+  - id: admin
+    template: template/team.ejs.md
     contents: assets/team/team.yml
     type: default
     include:
       type: "{admin,coord}"
+      active: true
+  - id: advisor
+    template: template/team.ejs.md
+    contents: assets/team/team.yml
+    type: default
+    include:
+      type: "{advisor}"
+      active: true
   - id: developer
+    template: template/team.ejs.md
     contents: "assets/team/team.yml"
     type: default
     include:
       type: dev
+      active: true
   - id: students
     contents: "assets/team/team.yml"
-    type: default
+    type: table
+    fields: [ image, name, affiliation, thesis-affiliation ]
+    page-size: 9999
+    image-height: "128px"
+    sort-ui: false
+    filter-ui: false
+    table-striped: true
+    table-hover: true
+    field-display-names:
+      name: Name
+      affiliation: Affiliation
+      thesis-affiliation: Thesis Location
     include:
       type: student
 ---
 
-# Project Leadership and Management
-
-::: {#leadership}
+# Project Leadership
+::: {#admin}
 :::
 
 # Developers
-
 ::: {#developer}
 :::
 
-# Students
+# Advisor
+::: {#advisor}
+:::
 
+# Students
 ::: {#students}
 :::

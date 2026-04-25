@@ -1,38 +1,536 @@
 - name: Anders Ynnerman
   title: Project Management
   affiliation: Linköping University
-  image: "assets/team/admin_01_anders_ynnerman.webp"
+  image: "/assets/team/admin_01_anders_ynnerman.webp"
+  type: admin
+  active: true
+- name: Carter Emmart
+  title: Creative Lead
+  affiliation: American Museum of Natural History
+  image: "/assets/team/admin_02_carter_emmart.webp"
+  type: admin
+  active: true
+- name: Ro Kinzler
+  title: Principal Investigator NASA Grant
+  affiliation: American Museum of Natural History
+  image: "/assets/team/admin_05_ro_kinzler.webp"
+  type: admin
+  active: true
+- name: Vivian Trakinski
+  title: Project Director
+  affiliation: American Museum of Natural History
+  image: "/assets/team/admin_03_vivian_trakinski.webp"
+  type: admin
+  active: true
+- name: Masha Kuznetsova
+  title: Project Management
+  affiliation: NASA Goddard, Community Coordinated Modeling Center
+  image: "/assets/team/admin_04_masha_kuznetsova.webp"
   type: admin
   active: true
 - name: Chuck Hansen
   title: Project Management
   affiliation: University of Utah, Scientific Computing and Imaging Institute
-  image: "assets/team/prevadmin_01_chuck_hansen.webp"
+  image: "/assets/team/prevadmin_01_chuck_hansen.webp"
   type: admin
   active: false
+- name: Claudio T. Silva
+  title: Project Management
+  affiliation: New York University Tandon School of Engineering
+  image: "/assets/team/prevadmin_02_claudio_silva.webp"
+  type: admin
+  active: false
+
+
 
 - name: Megan Villa
   title: Project Coordinator
   affiliation: American Museum of Natural History
-  image: "assets/team/coord_01_megan_villa.webp"
+  image: "/assets/team/coord_01_megan_villa.webp"
   type: coord
+  active: true
+
+
 
 - name: Alex Bock
   title: Development Lead
   affiliation: Linköping University
-  image: "assets/team/dev_01_alex_bock.webp"
-  active: true
+  image: "/assets/team/dev_01_alex_bock.webp"
   type: dev
+  active: true
+- name: Joakim Kilby
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/dev_02_joakim_kilby.webp"
+  type: dev
+  active: true
+- name: Micah Acinapura
+  title: Software Integration Engineer
+  affiliation: American Museum of Natural History
+  image: "/assets/team/dev_03_micah_acinapura.webp"
+  type: dev
+  active: true
+- name: Emma Broman
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/dev_04_emma_broman.webp"
+  type: dev
+  active: true
+- name: Malin Ejdbo
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/dev_05_malin_ejdbo.webp"
+  type: dev
+  active: true
+- name: Ylva Selling
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/dev_06_ylva_selling.webp"
+  type: dev
+  active: true
+- name: Adam Rohdin
+  title: Software Engineer
+  affiliation: Visualization Center C
+  image: "/assets/team/dev_07_adam_rohdin.webp"
+  type: dev
+  active: true
+- name: Andreas Engberg
+  title: Software Engineer
+  affiliation: Visualization Center C
+  image: "/assets/team/dev_08_andreas_engberg.webp"
+  type: dev
+  active: true
+- name: Anders Lundkvist
+  title: Software Engineer
+  affiliation: Community Coordinated Modeling Center
+  image: "/assets/team/dev_09_anders_lundkvist.webp"
+  type: dev
+  active: true
 - name: Jonas Strandstedt
   title: Research Engineer
   affiliation: Linköping University
-  image: "assets/team/prevdev_01_jonas_strandstedt.webp"
+  image: "/assets/team/prevdev_01_jonas_strandstedt.webp"
   type: dev
+  active: false
+- name: Emil Axelsson
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/prevdev_02_emil_axelsson.webp"
+  type: dev
+  active: false
+- name: Eric Meyers
+  title: Software Manager
+  affiliation: American Museum of Natural History
+  image: "/assets/team/prevdev_03_eric_meyers.webp"
+  type: dev
+  active: false
+- name: Erik Sundén
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/prevdev_04_erik_sunden.webp"
+  type: dev
+  active: false
+- name: Jonathas Costa
+  title: Research Engineer
+  affiliation: New York University
+  image: "/assets/team/prevdev_05_jonathas_costa.webp"
+  type: dev
+  active: false
+- name: Gene Payne
+  title: Research Engineer
+  affiliation: University of Utah
+  image: "/assets/team/prevdev_06_gene_payne.webp"
+  type: dev
+  active: false
+- name: Lovisa Hassler
+  title: Research Engineer
+  affiliation: Linköping University
+  image: "/assets/team/prevdev_07_lovisa_hassler.webp"
+  type: dev
+  active: false
+- name: Elon Olsson
+  title: Software Engineer
+  affiliation: Community Coordinated Modeling Center
+  image: "/assets/team/prevdev_08_elon_olsson.webp"
+  type: dev
+  active: false
+- name: Ben Mastripolito
+  title: Research Engineer
+  affiliation: University of Utah
+  image: "/assets/team/prevdev_09_ben_mastripolito.webp"
+  type: dev
+  active: false
 
+
+
+- name: Mordecai-Mark Mac Low
+  title: Scientific Advisor
+  affiliation: American Museum of Natural History
+  image: "/assets/team/advisor_01_mordecai_mark_mac_low.webp"
+  type: advisor
+  active: true
+- name: Denton Ebel
+  title: Scientific Advisor
+  affiliation: American Museum of Natural History
+  image: "/assets/team/advisor_02_denton_ebel.webp"
+  type: advisor
+  active: true
+- name: Brian Abbott
+  title: Manager of Digital Universe Atlas
+  affiliation: American Museum of Natural History
+  image: "/assets/team/advisor_03_brian_abbott.webp"
+  active: true
+  type: advisor
+
+
+
+- name: Wilhelm Björkström
+  affiliation: Linköping University
+  image: "/assets/team/student_74_wilhelm_bjorkstrom.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Emil Wallberg
+  affiliation: Linköping University
+  image: "/assets/team/student_73_emil_wallberg.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Maria Brunned
+  affiliation: Linköping University
+  image: "/assets/team/student_72_maria_brunned.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Cindy Khuong
+  affiliation: Linköping University
+  image: "/assets/team/student_71_cindy_khuong.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Tim Olsson
+  affiliation: Linköping University
+  image: "/assets/team/student_70_tim_olsson.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Dennis Moradkhani
+  affiliation: Linköping University
+  image: "/assets/team/student_69_denis_moradkhani.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Julia Johnstone
+  affiliation: Linköping University
+  image: "/assets/team/student_68_julia_johnstone.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Alice Molin
+  affiliation: Linköping University
+  image: "/assets/team/student_67_alice_molin.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Anders Lundkvist
+  affiliation: Linköping University
+  image: "/assets/team/student_66_anders_lundkvist.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Erik Salsborn
+  affiliation: Linköping University
+  image: "/assets/team/student_65_erik_salsborn.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Andreas Engberg
+  affiliation: Linköping University
+  image: "/assets/team/student_64_andreas_engberg.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Märta Nilsson
+  affiliation: Linköping University
+  image: "/assets/team/student_63_marta_nilsson.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Robin Ridell
+  affiliation: Linköping University
+  image: "/assets/team/student_62_robin_ridell.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Emma Segolsson
+  affiliation: Linköping University
+  image: "/assets/team/student_61_emma_segolsson.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Linn Storesund
+  affiliation: Linköping University
+  image: "/assets/team/student_60_linn_storesund.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Måns Aronsson
+  affiliation: Linköping University
+  image: "/assets/team/student_58_mans_aronsson.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Simon Karlsson Brefält
+  affiliation: Linköping University
+  image: "/assets/team/student_57_simon_brefalt.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Philip Ngo
+  affiliation: Linköping University
+  image: "/assets/team/student_56_philip_ngo.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Hanna Timander Björknert
+  affiliation: Linköping University
+  image: "/assets/team/student_55_hanna_timander.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Nisse Bergman
+  affiliation: Linköping University
+  image: "/assets/team/student_54_nisse_bergman.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Victor Lindquist
+  affiliation: Linköping University
+  image: "/assets/team/student_53_victor_lindquist.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Jacob Molin
+  affiliation: Linköping University
+  image: "/assets/team/student_52_jacob_molin.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Anne Olthoff
+  affiliation: Linköping University
+  image: "/assets/team/student_51_anne_olthoff.webp"
+  thesis-affiliation: NYU
+  type: student
+- name: Catja Johansson Nordqvist
+  affiliation: Linköping University
+  image: "/assets/team/student_50_catja_nordqvist.webp"
+  thesis-affiliation: NYU
+  type: student
+- name: Christoffer Paulusson
+  affiliation: Linköping University
+  image: "/assets/team/student_48_chris_paulusson.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Ester Lindgren
+  affiliation: Linköping University
+  image: "/assets/team/student_47_ester_lindgren.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Ylva Selling
+  affiliation: Linköping University
+  image: "/assets/team/student_46_ylva_selling.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Joel Paulsson
+  affiliation: Linköping University
+  image: "/assets/team/student_45_joel_paulsson.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Adrian Andersson
+  affiliation: Linköping University
+  image: "/assets/team/student_44_adrian_andersson.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Emilie Ho
+  affiliation: Linköping University
+  image: "/assets/team/student_43_emilie_ho.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Christian Adamsson
+  affiliation: Linköping University
+  image: "/assets/team/student_42_christian_adamsson.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Johanna Granström
+  affiliation: Linköping University
+  image: "/assets/team/student_41_johanna_granstrom.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Aniisa Bihi
+  affiliation: Linköping University
+  image: "/assets/team/student_40_aniisa_bihi.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Elias Elmquist
+  affiliation: Linköping University
+  image: "/assets/team/student_39_elias_elmquist.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Malin Ejdbo
+  affiliation: Linköping University
+  image: "/assets/team/student_38_malin_ejdbo.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Ingela Rossing
+  affiliation: Linköping University
+  image: "/assets/team/student_37_ingela_rossing.webp"
+  thesis-affiliation: NYU
+  type: student
+- name: Emma Broman
+  affiliation: Linköping University
+  image: "/assets/team/student_36_emma_broman.webp"
+  thesis-affiliation: NYU
+  type: student
+- name: Elon Olsson
+  affiliation: Linköping University
+  image: "/assets/team/student_35_elon_olsson.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Jonathan Fransson
+  affiliation: Linköping University
+  image: "/assets/team/student_33_jonathan_fransson.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Sovanny Huy
+  affiliation: Linköping University
+  image: "/assets/team/student_32_sovanny_huy.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Axel Kollberg
+  affiliation: Linköping University
+  image: "/assets/team/student_31_axel_kollberg.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Karin Reidarman
+  affiliation: Linköping University
+  image: "/assets/team/student_30_karin_keidarman.webp"
+  thesis-affiliation: NYU
+  type: student
+- name: Matthew Territo
+  affiliation: University of Utah
+  image: "/assets/team/student_29_matthew_territo.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Matthias Berg
+  affiliation: Linköping University
+  image: "/assets/team/student_28_matthias_berg.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Jonathan Grangien
+  affiliation: Linköping University
+  image: "/assets/team/student_27_jonathan_grangien.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Lovisa Hassler
+  affiliation: Linköping University
+  image: "/assets/team/student_26_lovisa_hassler.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Agnes Heppich
+  affiliation: Linköping University
+  image: "/assets/team/student_25_agnes_heppich.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Sofie Khullar
+  affiliation: Linköping University
+  image: "/assets/team/student_24_sofie_khullar.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Hanna Johansson
+  affiliation: Linköping University
+  image: "/assets/team/student_23_hanna_johansson.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Caroline Gard
+  affiliation: Linköping University
+  image: "/assets/team/student_22_caroline_gard.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Kristin Bäck
+  affiliation: Linköping University
+  image: "/assets/team/student_21_kristin_back.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Adam Alsegård
+  affiliation: Linköping University
+  image: "/assets/team/student_20_adam_alsegard.webp"
+  thesis-affiliation: LiU
+  type: student
+- name: Klas Eskilson
+  affiliation: Linköping University
+  image: "/assets/team/student_19_klas_eskilson.webp"
+  thesis-affiliation: NYU
+  type: student
+- name: Rickard Lindstedt
+  affiliation: Linköping University
+  image: "/assets/team/student_18_rickard_lindstedt.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Michael Sjöström
+  affiliation: Linköping University
+  image: "/assets/team/student_17_michael_sjostrom.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Michael Novén
+  affiliation: Linköping University
+  image: "/assets/team/student_16_michael_noven.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Oskar Carlbaum
+  affiliation: Linköping University
+  image: "/assets/team/student_15_oskar_carlbaum.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Jonathan Bosson
+  affiliation: Linköping University
+  image: "/assets/team/student_14_jonathan_bosson.webp"
+  thesis-affiliation: SCI
+  type: student
+- name: Kalle Bladin
+  affiliation: Linköping University
+  image: "/assets/team/student_13_kalle_bladin.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Erik Broberg
+  affiliation: Linköping University
+  image: "/assets/team/student_12_erik_broberg.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Anton Arbring
+  affiliation: Linköping University
+  image: "/assets/team/student_11_anton_arbring.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Michael Nilsson
+  affiliation: Linköping University
+  image: "/assets/team/student_10_michael_nielsson.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Sebastian Piwell
+  affiliation: Linköping University
+  image: "/assets/team/student_09_sebastian_piwell.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Emil Axelsson
+  affiliation: Linköping University
+  image: "/assets/team/student_07_emil_axelsson.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Tomas Forsyth Rosin
+  affiliation: Linköping University
+  image: "/assets/team/student_06_tomas_forsyth_rosin.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Hans-Christian Helltegen
+  affiliation: Linköping University
+  image: "/assets/team/student_05_hc_helltegen.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Michal Marcinkowski
+  affiliation: Linköping University
+  image: "/assets/team/student_04_michal_marcinkowski.webp"
+  thesis-affiliation: AMNH
+  type: student
+- name: Jonas Strandstedt
+  affiliation: Linköping University
+  image: "/assets/team/student_03_jonas_strandstedt.webp"
+  thesis-affiliation: CCMC
+  type: student
+- name: Victor Sand
+  affiliation: Linköping University
+  image: "/assets/team/student_02_victor_sand.webp"
+  thesis-affiliation: CCMC
+  type: student
 - name: Martin Törnros
   affiliation: Linköping University
-  image: "assets/team/student_01_martin_tornros.webp"
-  thesis: Interactive Visualization of Space Weather Data
-  thesis-link: http://liu.diva-portal.org/smash/get/diva2:667227/FULLTEXT01.pdf
+  image: "/assets/team/student_01_martin_tornros.webp"
   thesis-affiliation: CCMC
   type: student

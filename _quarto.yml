@@ -8,10 +8,11 @@ format:
   html:
     quarto-required: 1.9.*
     theme:
-      light:
-        - "assets/style/brand.scss"
-        - "assets/style/openspace-theme-light.scss"
-      dark:
+      # light:
+      #   - "assets/style/brand.scss"
+      #   - "assets/style/openspace-theme.scss"
+      #   - "assets/style/openspace-theme-light.scss"
+      # dark:
         - "assets/style/brand.scss"
         - "assets/style/openspace-theme-dark.scss"
     anchor-sections: false
@@ -109,7 +110,7 @@ website:
 
   navbar:
     title: false
-    logo: "/assets/logos/openspace-horiz-logo.webp"
+    logo: "/assets/logos/openspace-horiz-logo-crop.webp"
     logo-alt: "OpenSpace"
     # background:
     # foreground:

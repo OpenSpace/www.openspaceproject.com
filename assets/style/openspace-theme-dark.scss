@@ -12,10 +12,10 @@ $headings-font-family: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', san
 $headings-font-weight: 300;
 $headings-letter-spacing: 0.02em;
 $navbar-bg: rgba(#0a1b1d, 0.97);
-$navbar-fg: $sateliteGray;
+$navbar-fg: $satelliteGray;
 $navbar-hl: $primaryAccent;
 $footer-bg: darken($background, 2%);
-$footer-fg: $sateliteGray;
+$footer-fg: $satelliteGray;
 
 $backgroundColor: $background;
 $mainColor: $textColor;
@@ -129,8 +129,8 @@ hr {
 
 .btn-outline-accent {
   background-color: transparent;
-  color: $sateliteGray;
-  border: 1px solid rgba($sateliteGray, 0.4);
+  color: $satelliteGray;
+  border: 1px solid rgba($satelliteGray, 0.4);
   padding: 0.55rem 1.4rem;
   font-family: 'TeX Gyre Adventor', sans-serif;
   font-size: 0.8rem;
@@ -161,7 +161,7 @@ hr {
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $sateliteGray;
+  color: $satelliteGray;
   border-bottom: 1px solid rgba($primaryAccent, 0.15);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
@@ -171,14 +171,18 @@ hr {
 .nav-footer {
   border-top: 1px solid rgba($primaryAccent, 0.12);
   font-size: 0.78rem;
-  color: rgba($sateliteGray, 0.7);
+  color: rgba($satelliteGray, 0.7);
   padding: 1.5rem 0;
   text-align: center;
 
   a {
-    color: rgba($sateliteGray, 0.85);
+    color: rgba($satelliteGray, 0.85);
     &:hover { color: $primaryAccent; }
   }
+}
+
+.navbar-logo {
+  max-height: 50px;
 }
 
 // Quarto content area
@@ -190,3 +194,25 @@ hr {
   max-width: 860px;
 }
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.team {
+  background-color: $satelliteGray;
+  color: $background;
+  text-align: center;
+  padding: 1rem;
+
+  .name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .title, .affliation {
+    font-size: 0.85rem;
+  }
+}

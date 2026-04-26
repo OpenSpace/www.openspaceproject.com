@@ -28,12 +28,25 @@ website:
         menu:
           - text: Images
             href: resources-images.qmd
+          - text: Reports
+            href: reports.qmd
           - text: Server Status
             href: https://uptime.openspaceproject.com
       - text: Events
         href: events.qmd
+      - text: User Meeting
+        menu:
+          - text: "2026"
+            href: user-meeting/2026/index.qmd
+          - text: "2025"
+            href: user-meeting/2025/index.qmd
       - text: About
         href: about.qmd
+      - text: Install
+        menu:
+          - text: Version 0.21.3
+            href: install/version-0213.qmd
+    tools:
       - icon: github
         href: https://github.com/OpenSpace/OpenSpace
         aria-label: "GitHub Repository"

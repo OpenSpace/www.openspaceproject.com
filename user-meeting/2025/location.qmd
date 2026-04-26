@@ -1,0 +1,42 @@
+We're excited to welcome you to the **American Museum of Natural History (AMNH)**, located in the heart of Manhattan's Upper West Side. The Museum is one of the world's leading scientific and cultural institutions—and the home base for the OpenSpace team!
+
+```{python}
+from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles
+m = Map(
+  center=(40.781167467309245, -73.97361443218887),
+  zoom=15
+)
+m.add_layer(Marker(location=(40.781167467309245, -73.97361443218887)))
+m
+```
+
+# Getting Here
+The Museum is easily accessible by subway, bus, car, or on foot.
+
+The main entrance for attendees is located at **Central Park West and 79th Street**.
+
+## By Subway
+  - **B and C trains** stop at **81st Street–Museum of Natural History**, with a direct underground entrance to the Museum.
+  - **1 train to 79th Street**, then walk two blocks east to Central Park West.
+
+## By Bus
+  - The **M79 crosstown** bus stops directly in front of the Museum.
+  - The **M7, M10, and M11** buses run north-south nearby.
+
+## By Taxi/Rideshare
+Enter "American Museum of Natural History, Central Park West & 79th Street" in your ride app.
+
+# Inside the Museum
+Meeting sessions and workshops will be held in the Museum's Linder Theater and classrooms. Evening activities will feature presentations in the [Hayden Planetarium](https://www.amnh.org/research/hayden-planetarium) and [Invisible Worlds](https://www.amnh.org/exhibitions/invisible-worlds) Theater. You'll receive a full schedule and map upon check-in. During breaks, feel free to explore the Museum's exhibitions, including:
+
+  - The Rose Center for Earth and Space
+  - The Gilder Center for Science, Education, and Innovation
+  - The Mignone Halls of Gems and Minerals
+  - And many more!
+
+# About the Upper West Side
+The Upper West Side is a vibrant, historic neighborhood known for its leafy streets, cultural landmarks, and easy access to Central Park. It offers a wide range of dining, shopping, and lodging options—all within walking distance of the Museum.
+
+If you have any questions about directions or navigating the Museum, don't hesitate to reach out to the planning team via [email](mvilla@amnh.org) or Slack.
+
+We can't wait to welcome you to New York City!

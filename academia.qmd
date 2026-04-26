@@ -2,13 +2,13 @@
 listing:
   - id: theses
     type: table
-    # template: template/team.ejs.md
+    # template: _template/team.ejs.md
     contents: assets/academia.yml
     include:
       type: "{masterthesis, phd}"
   - id: papers
     type: table
-    # template: template/team.ejs.md
+    # template: _template/team.ejs.md
     contents: assets/academia.yml
     include:
       type: "paper"

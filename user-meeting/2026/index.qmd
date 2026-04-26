@@ -1,0 +1,18 @@
+---
+sidebar: user-meeting-2026
+---
+
+![](visc.webp)
+
+# OpenSpace User Meeting
+_August, 26 – August, 28, 2026_
+
+Join us for the second in-person user meeting in beautiful Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for two days of trainings, presentations, hands-on sessions, and networking. This is a great opportunity to:
+
+  - Sharpen your OpenSpace skills
+  - Explore the latest software features and updates
+  - Connect with educators, planetarium professionals, researchers, and developers in the OpenSapce community
+
+The [registration](https://visualiseringscenter.se/registration-openspace-user-meeting/) is **free**. We recommend to bring your own OpenSpace-compatible laptop for meeting as loaner devices are limited.
+
+Please contact [Alexander Bock](alexander.bock@liu.se) for any information about the meeting.

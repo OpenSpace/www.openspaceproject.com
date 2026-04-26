@@ -1,0 +1,51 @@
+Below is a tentative schedule. Times are subject to change. 
+
+To accommodate the variety of requested topics, some sessions will run at the same time in separate rooms—either Davis East or Davis West.
+
+Breakfast and lunch will be provided on Thursday and Friday. Attendees will arrange their own dinners.
+
+**Thursday, July 31** (_times listed in EDT_)
+
+| Time | Session | Room | Speakers |
+| ---- | ------- | ---- | -------- |
+| 8:30-9:00 AM | Arrival to AMNH | | |
+| 9:00 AM | Welcome | Davis Classrooms | |
+| 9:30 AM | Kickoff: Community, Updates & What's Ahead | Davis Classrooms | Alex Bock, Megan Villa |
+| 10:45 AM | OpenSpace 101 Workshop | Davis East | Micah | Acinapura |
+| 10:45 AM | Coding, Scripts & Custom Navigation. Lua scripting Workshop | Davis West | Alex Bock |
+| 12:15 PM | Lunch | | |
+| 1:15 PM | ShowComposer Basics | Davis East | Micah Acinapura |
+| 1:15 PM | Content Import (Map layers, GDAL) Workshop | Davis West | Alex Bock |
+| 2:15 PM | Creating Rendered Video | Davis Classrooms | James Hedberg |
+| 3:15 PM | Break | | |
+| 3:30 PM | Configuration Files | Davis Classrooms | Alex Bock |
+| 4:30 PM | Encounters in the Milky Way Planetarium Show | Hayden Planetarium | |
+| 5:15 - 7:00 PM | Lightning Presentations | Hayden Planetarium | Carter Emmart, Jackie Faherty, Brian Abbott, KaChun Yu |
+
+**Friday, August 1** (_times listed in EDT_)
+
+| Time | Session | Room | Speakers |
+| ---- | ------- | ---- | -------- |
+| 8:30-9:00 AM | Arrival to AMNH | | |
+| 9:00 AM | Lightning Presentations | Hayden Planetarium | Ken Murphy, Hari Mogosanu, Sam Leske, Sarah Treadwell |
+| 10:15 AM | OpenSpace 101 Continued - Included Profiles Workshop | Davis East | Micah Acinapura |
+| 10:45 AM | 3D Models and Trajectory Data Workshop | Davis West | Alex Bock |
+| 11:30 AM | OpenSpace 101 Custom Profiles Workshop | Davis East | Micah Acinapura |
+| 11:30 AM | Jam Session (Add your own assets!) | Davis West | Alex Bock |
+| 12:15 PM | Lunch | | |
+| | | | |
+| 1:30 PM | Portable Planetariums | Davis East | Sarah Treadwell, Josh Roberts, Micah Acinapura |
+| 1:30 PM | Multi Channel Domes: CPlay and CTroll | Davis West | Christian Ready, Dylan Salas, Alex Bock |
+| 2:30 PM | Engaging Audiences | Davis East | Jacqueline Benitez, Ellen Thompson, Vincent Morris |
+| 2:30 PM | Custom Data Examples | Davis West | Kristina Collins, Mark Popinchalk, Micah Acinapura |
+| 3:15 PM | Break (Poster time) | | |
+| 3:45 PM | OpenSpace Hub | Davis Classrooms | Alex Bock |
+| 4:30 PM | Wrap Up | Davis Classrooms | |
+| 5:30-6:30 PM | Invisible Worlds Free Flight | Invisible Worlds Theater | |
+
+**Saturday, August 2** (_times listed in EDT_)
+
+| Time | Session | Notes | Speakers |
+| ---- | ------- | ---- |
+| 10:45 AM | Arrive to Pier 83 for boat tour | If you RSVP'd the AMNH team will have your ticket. We'll meet at Pier 83 in Midtown Manhattan (42nd St & 12th Ave) Address: Pier 83, New York, NY 10036. For those staying near AMNH, take the C train downtown to 42 ST - Port Authority Bus Terminal and walk 4 avenues west to Pier 83. |
+| 11:30 AM | Circle Line cruise departs | |

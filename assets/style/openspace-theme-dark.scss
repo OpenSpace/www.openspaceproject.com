@@ -18,7 +18,7 @@ $footer-bg: darken($background, 2%);
 $footer-fg: $satelliteGray;
 $dropdown-link-hover-color: $lightAccentYellow;
 $dropdown-link-hover-bg: $background;
-
+$dropdown-link-active-bg: $background;
 
 
 /*-- scss:rules --*/
@@ -284,4 +284,11 @@ hr {
     opacity: 0;
     transition: opacity 0.75s ease-in-out;
   }
+}
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        top: 95%;
+    }
 }

@@ -1,0 +1,44 @@
+Below are answers to some frequently asked questions about the OpenSpace User Meeting. If you don't see your question here, feel free to reach via email or Slack.
+
+::: {.panel-accordion}
+
+# When and where is the meeting?
+The OpenSpace User Meeting will take place on Thursday, July 31 and Friday, August 1 at the American Museum of Natural History in New York City. An optional social event will follow on Saturday, August 2.
+
+# Who should attend?
+This meeting is open to current and prospective OpenSpace users including:
+  - Planetarium presenters
+  - Museum and science center staff
+  - Researchers and educators
+  - Developers and data visualization specialists
+
+Whether you're new to OpenSpace or have been using it for years, there will be something for you.
+
+# How do I register?
+[Register here](https://forms.gle/aCkyjasWpwgmwfCC7) by May 15.
+
+Space may be limited, so we encourage you to register early.
+
+# Is there a registration fee?
+No, the OpenSpace User Meeting is free to attend.
+
+# Is travel support available?
+We are offering limited domestic travel support for attendees traveling from within the United States. The deadline for travel support requests was March 17.
+
+# What's the best way to get to the museum?
+Check out our [Travel Info](./travel.qmd) page for detailed guidance on arriving by air, train, or subway.
+
+# What should I bring?
+We recommend bringing your own OpenSpace compatible laptop. See hardware requirements on the [OpenSpace Documentation page](https://docs.openspaceproject.com/latest/getting-started/install/index.html).
+
+Don't have an OpenSpace compatible laptop? Extra laptops will be available for attendees to borrow during the meeting.
+
+# Will there be a virtual option?
+While the meeting is primarily in person, we plan to record presentation sessions and share them with all users after the event.
+
+# What is the social event?
+Attendees can join a group Circle Line sightseeing cruise around Manhattan for a fun and scenic way to connect with fellow participants. More details will be shared with registrants closer to the event, along with a chance to confirm attendance.
+
+# Who can I contact with questions?
+Please contact OpenSpace Project Coordinator [Megan Villa](mvilla@amnh.org) with any questions.
+:::

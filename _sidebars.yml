@@ -1,0 +1,26 @@
+website:
+  sidebar:
+    - id: user-meeting-2025
+      title: Sidebar
+      style: floating
+      contents:
+        - text: User Meeting 2025
+          href: user-meeting/2025/index.qmd
+        - text: Sessions
+          href: user-meeting/2025/sessions.qmd
+        - text: Location
+          href: user-meeting/2025/location.qmd
+        - text: Hotels
+          href: user-meeting/2025/hotels.qmd
+        - text: Travel
+          href: user-meeting/2025/travel.qmd
+        - text: FAQS
+          href: user-meeting/2025/faqs.qmd
+    - id: user-meeting-2026
+      title: Sidebar
+      style: floating
+      contents:
+        - text: User Meeting 2026
+          href: user-meeting/2026/index.qmd
+        - text: Location
+          href: user-meeting/2026/location.qmd

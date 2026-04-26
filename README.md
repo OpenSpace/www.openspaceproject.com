@@ -1,5 +1,6 @@
 # OpenSpace Project Website
 To build the webpage:
+  - Run `pip install -r requirements.txt` from the root folder to install Python dependencies
   - For development, run `quarto preview` in the root folder. A brower will open to `localhost:12800`. This uses hot reloading, so whenever any file is changed the webpage will reload
   - For deployment, run `quarto render`. The generated webpage is created in the `_site` folder
 
@@ -14,7 +15,7 @@ File formats and tools used in the webpage:
   - [Bootstrap](https://getbootstrap.com): Layout for the webpage
 
 ## File locations
-  - `assets`: Assets used globally
+  - `assets`: Assets used globally for the webpage itself
     - `assets/images`: General folder for images
       - `assets/images/banner`: Images used for the hero banner section. Images in this folder should be of the aspect ratio φ:1 (1.61803398874989:1)
       - `assets/images/carousel`: Iamges that are automatically rotated through in the main page carousel
@@ -25,10 +26,12 @@ File formats and tools used in the webpage:
     - `asset/academia.yml`: Information about the academic output
     - `asset/team.yml`: Information about the different team members
   - `events`: A list of events that will automatically be added to the events page. Each event should be in a subfolder that has a `index.qmd`
-  - `template`: Partial pages that are included or EJS file templates used by other pages
+  - `resources`: Resources that are provided by the webpage for external use
+  - `_template`: Partial pages that are included or EJS file templates used by other pages
   - `_announcement.yml`: Configuration file to control a top-level announcement banner
   - `_footer.yml`: Configuration file to control the information provided in the footer
   - `_navbar.yml`: Configuration file to control the top navigation bar
+  - `_sidebar.yml`: Configuration file to control per-page sidebars
   - `_quarto.yml`: Root configuration file for Quarto
   - `_variables.yml`: Global variables that can be reused in different documents
   - `404.qmd`: Special 404 page that gets displayed when someone navigates to a page that doesn't exist
@@ -94,7 +97,7 @@ listing:
   - id: carousel
     contents: <path to image>/*
     type: custom
-    template: template/carousel.ejs.md
+    template: _template/carousel.ejs.md
     template-params:
       delay: <delay in ms>
 ---

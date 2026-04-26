@@ -7,7 +7,7 @@ listing:
   - id: carousel
     contents: /assets/images/carousel/*
     type: custom
-    template: template/carousel.ejs.md
+    template: _template/carousel.ejs.md
     template-params:
       delay: 5000
 ---

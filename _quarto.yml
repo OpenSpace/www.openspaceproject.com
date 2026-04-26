@@ -8,6 +8,7 @@ metadata-files:
   - _announcement.yml
   - _footer.yml
   - _navbar.yml
+  - _sidebars.yml
 
   # resources:
     # - assets/js/slider.js
@@ -25,7 +26,7 @@ format:
         - "assets/style/openspace-theme-dark.scss"
         - "assets/style/hero.scss"
     include-after-body:
-      - file: template/hero.html
+      - file: _template/hero.html
     anchor-sections: false
     smooth-scroll: true
     # tabsets: true
@@ -35,7 +36,7 @@ format:
     # page-layout: custom
     grid:
       body-width: 1000px
-      sidebar-width: 0px
+      sidebar-width: 200px
       margin-width: 0px
     # appendix-style:
     # title-block-style: none
@@ -57,7 +58,7 @@ format:
 website:
   title: "OpenSpace"
   description: "Official OpenSpace Website"
-  favicon: "/assets/logos/openspace/icon.webp"
+  favicon: "/assets/logos/openspace/favicon.webp"
   image: "/assets/logos/openspace/logo.webp"
   image-alt: "OpenSpace"
   site-url: "https://www.openspaceproject.com"
@@ -87,16 +88,17 @@ website:
   # code-links:
   draft-mode: unlinked
 
-
-  # sidebar:
-  #   search: true
-  #   title: Sidebar
-  #   tools:
-
   # margin:
 
 
   # listing:
+
+execute:
+  echo: false
+  output: asis
+
+filters:
+  - panel-accordion
 
 extensions:
   iconify:

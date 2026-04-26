@@ -1,0 +1,194 @@
+# Version 0.21.3
+OpenSpace Version 0.21.3 delivers bug fixes for a number of issues with existing layers, the rendering on laptop computers, issues with the user interface in very heavy profiles, and more. A complete changelog is available on [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3).
+
+A precompiled binary for Windows operating system is available, and the source code is freely available on [GitHub](https://github.com/OpenSpace/OpenSpace) to peruse and compile for missing platforms.
+
+## Questions?
+Connect with our developers on [Slack](https://openspacesupport.slack.com/) or email us at {{< var email.support >}}.
+
+# Requirements
+**Minimum requirements**: OpenSpace is designed for use on laptops up to planetarium domes. A minimum i5 processor and Nvidia 1060 GTX GPU (or comparable), 8 GB RAM, and 4 GB VRAM are required. For details on requirements by profile, [see our documentation](https://docs.openspaceproject.com/latest/getting-started/install/index.html#hardware-requirements).
+
+**For optimal use**: We recommend using Windows 10 or newer and a machine with 16 GB RAM and 6 GB VRAM or more.
+
+**Windows users**: You will also need to install Microsoft Visual C++ Redistributable for Visual Studio 2022, which you can either [download here](https://aka.ms/vs/17/release/vc_redist.x64.exe) or find in the downloaded OpenSpace folder. The file is al If you experience the error "VCRUNTIME140_1.dll was not found," the Redistributable installation will fix this.
+
+Additionally, OpenSpace will ask for permission to access the internet which causes a Windows popup window. If you do not give OpenSpace that permission, some important features, such as the user interface, will be inaccessible.
+
+# Download
+This download includes the OpenSpace application and all necessary data for the default Profile — if another Profile is selected, the required datasets will download on startup.
+
+<a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip" class="btn-beam">Download for Windows</a>
+
+## If updating from a previous version...
+Use the light-weight download links below if you are updating an existing installation of OpenSpace and already have a working sync folder that you do not want to replace. You will need to copy your sync folder from the previous version and paste into the OpenSpace folder. You may wish to copy your user folder into the new folder, too.
+
+<a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3-minimal.zip" class="btn-beam">Download light-weight for Windows</a>
+
+## Additional Datasets
+These datasets add high-resolution images and digital terrain patches on the surface of Mars, Mercury, and Moon. They are not required but expand the data available in the standard OpenSpace download. The zip files can be extracted at any location, though an SSD is recommended for a smoother experience. Also check out the [OpenSpace Hub](http://hub.openspaceproject.com/) for assets created by the OpenSpace community that can be added to OpenSpace.
+
+:::: {.columns}
+::: {.column width="33%"}
+<a href="https://data.openspaceproject.com/release/GlobeBrowsingData/Mars.zip" class="btn-beam">Mars HiRISE Patches</a>
+:::
+
+::: {.column width="33%"}
+<a href="https://data.openspaceproject.com/release/GlobeBrowsingData/Mercury.zip" class="btn-beam">Mercury Messenger Patches</a>
+:::
+
+::: {.column width="33%"}
+<a href="https://data.openspaceproject.com/release/GlobeBrowsingData/Moon.zip" class="btn-beam">Moon Apollo Patches</a>
+:::
+::::
+
+**Mars Download**: Extra downloads of high resolution HiRISE patches (images and terrain model) on Mars. The zip download is 12.2 GB.
+**Mercury Download**: Extra downloads of terrain patches created by the MESSENGER mission. The zip download is 36 MB.
+**Moon Download**: Extra downloads of terrain patches for the Apollo missions to the Moon. The zip download is 7.1 GB.
+
+While it is possible to change the location in which these are stored (by editing the `OpenSpace/data/assets/customization/globebrowsing.asset` file), the default location is in a folder called `globebrowsing` inside your user folder. For example, if you installed OpenSpace in `C:\OpenSpace-0.21.3`, the folder for the optional planetary datasets would be `C:\OpenSpace-0.21.3\user\globebrowsing\Mars`, `C:\OpenSpace-0.21.3\user\globebrowsing\Mercury`, etc. This should enable the additional datasets to be loaded into the Layers list. If you are editing the globebrowsing.asset manually, please note not to use `\` in the paths and only use `/` as otherwise error messages will be generated at startup.
+
+# Profiles
+Version 0.21.3 includes 25 OpenSpace profiles. Select your desired profile when you launch the OpenSpace application, found in the bin folder. Below find a brief description of each profile, organized alphabetically. See our Resources and documentation for more information.
+
+::: {.panel-accordion}
+## Apollo
+This profile contains models and trajectories for the NASA Apollo 8 mission circling the Moon, including when the iconic "Earthrise" image was photographed. It also contains additional datasets showing the landing sites of Apollo 11 and 17, and photogrammetry of boulders from Apollo 17 station sites.
+
+_Additional profile keybindings_:
+  - E: Jump to the time of the Apollo 8 Earthrise picture
+  - U: Jump to the launch time of Apollo 8
+  - K: Toggles the visibility of the Kaguya layer on the Moon; useful when viewing the high-resolution inset of Apollo 17
+  - T: Toggles visibility of the Apollo 8 trail around the moon
+  - Shift+T: Toggles the visibility of the Apollo 8 launch trail
+  - Ctrl+T: Toggles the visibility of the entire Apollo 8 trail
+  - S: Toggles shading for the Moon
+  - Page Up: Focus on Apollo 8
+  - Page Down: Focus on the Moon
+  - Home: Focus on Earth
+
+## Artemis
+This profile visualizes NASA's Artemis 1 mission. The profile starts focusing on the Artemis I Orion spacecraft as it approaches the Moon on Monday, November 21, 2022. Navigate to relevant dates using the Mission GUI that opens upon startup on the right hand side. Reopen the Mission GUI by clicking on the rocket ship icon in the bottom menu bar. The profile also includes a button in the Actions panel to "Set to Artemis-1 launch time."
+
+## Asteroids
+This profile shows approximately 936,000 asteroids from the JPL Horizons [Small-Body Database (SBDB)](https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/). Included in this profile ([and defined on our wiki](http://wiki.openspaceproject.com/docs/users/content/asteroids#asteroid-content-categories)): Amor Asteroids, Apollo Asteroids, Aten Asteroids, Atira Asteroids, Centaur Asteroids, Chiron-Type Comets, Encke-Type Comets, Halley-Type Comets, Inner Main Asteroid Belt Asteroids, Jupiter Family Comets, Jupiter Trojan Asteroids, Main Asteroid Belt Asteroids, Mars-Crossing Asteroids, Outer Main Asteroid Belt Asteroids, Potentially Hazardous Asteroids (PHAs), and Trans-Neptunian Asteroids.
+
+## Bastille Day 2000
+This profile shows the Coronal mass ejection (CME) that occurred on Bastille Day, July 14, 2000. The profile is data heavy and will require a powerful graphics card (GPU). This CME event might be the most studied solar storm so far. The visualizations to highlight the CME include: a volume rendering of the density of the material ejected from the sun; field lines showing the Sun's magnetic structure; magnetograms which are texture layers on the sun showing variation in strength of the magnetic field; an extreme ultra violet (EUV) image sequence layer shown on the sun; a light speed indicator to compare the speed of the CME; cut plane sequences showing the flux values of the CME, one equatorial cut plane and one meridional. Also there are flux nodes that show flux values, which are accompanied by a legend describing the color scheme. Showing all different visualization parts at once, may make the scene cluttered so hotkeys are provided to toggle different parts on and off.
+
+Additional profile keybindings:
+  - CTRL+1 through CTRL+4: Starts loops to highlight the CME event. In order from 1-4 they are called short loop, standard loop, fast loop and long loop.
+  - R: Resets the loops, to make them stop loopingN: Show legend
+  - M: Hide legend: Toggle the density volume
+  - E: Toggle the EUV layer (must be turned off to show magnetograms)
+  - I: Switch different color layers of the magnetogram
+  - O: Toggles the flux nodes
+  - U: Toggles the field lines
+  - P: Toggles the equatorial cut plane
+  - Left bracket '[': Toggles the meridional cut plane
+
+## Bepicolombo
+This profile visualizes the joint mission of the European Space Agency and the Japan Aerospace Exploration Agency to Mercury.
+
+## Calibrator
+This profile places the camera in the inside of a calibration cube. This profile can be used to verify that a multi-projection display environment is set up correctly. If a setup is correct, the different windows/viewports should show the correct parts of the surrounding cube accurately and without any unwanted distortion.
+
+## Dawn
+This profile visualizes NASA's Dawn mission which launched in 2007 with the goal of studying two known protoplanets of the asteroid belt: Vesta and Ceres. The profile starts focused on a model of the Dawn spacecraft with the time and date set to Saturday, August 6, 2011, as the spacecraft orbits Vesta. Navigate between mission milestones such as its launch, flyby of Mars, and orbits of Vesta and Ceres by using the Mission GUI.
+
+## Default
+This profile is enabled on default and provides the ability to look at detailed terrain models of the Earth, Moon, Mars, other planets, and the Digital Universe extrasolar catalog.
+
+The view defaults on Earth at the current time with the ESRI VIIRS Combo enabled. This uses the Suomi VIIRS daily images when viewing the whole Earth, and switches to high-detail imagery from ESRI when zooming in.
+
+## Eclipse
+This profile includes assets to support telling stories about eclipses. The profile starts focused on Earth with umbra and penumbra shadow cones visible. Additional information on eclipses and an interactive timeline of eclipses in the last century are available in the Missions user interface.
+
+## Empty
+This profile does not contain any graphics. Use this profile to visualize your own 3D models or datasets separately.
+
+## Euclid
+This profile visualizes ESA's Euclid mission, designed to explore the composition and evolution of the universe.
+
+## Gaia
+This profile contains a new rendering method to show the dataset from ESA Gaia's Data Release 2 (DR2). By default, it loads 7.224 million stars of the Gaia DR2 that contain radial velocities.
+
+## Juice
+This profile visualizes ESA's JUICE (JUpiter ICy moons Explorer) mission that will explore Jupiter and three of its icy moons. The profile starts on Friday, August 1, 2031, with a focus on Jupiter.
+
+## Juno
+This profile is a work in progress. It shows a model and approach of the NASA Juno space probe to the Jupiter system and its initial orbits around the gas planet in July 2016. Future work will include visualization of the Juno cam imaging.
+
+## JWST
+This profile visualizes the NASA-ESA-CAN James Webb Space Telescope, which launched on December 25, 2021. The profile includes two visualizations of the Webb trail: One plotted with respect to the Earth-Sun L2, where it will be stationed; and another with respect to the Sun, as we plot the orbits of the planets. The profile includes a dynamic model of Webb and a time lapse of its deployment and unfolding. The profile includes the capability to point the telescope with an associated view frustum to any celestial coordinates. The orientation can be controlled by entering Right Ascension (R.A.) and Declination (Dec.) on an [external webpage](http://ui.openspaceproject.com/jwst_scripts/index.html).
+
+## Mars
+This profile adds visualizations for the NASA Interior Exploration using Seismic Investigations, Geodesy and Heat Transport (InSight) mission, including a trajectory towards Mars, model of lander, entry into the Martian atmosphere, and subsequent descent and landing on November 26, 2018; and NASA's Mars 2020 mission, including a trajectory and model of Perseverance rover on the surface.
+
+## Messenger
+This profile contains a model and trajectory of the NASA MESSENGER spacecraft with craft pointing data from March to June 2011. In addition, a rendering of Mercury's magnetosphere based on data recorded by MESSENGER can be enabled and viewed around the planet. Along with the mission data, additional maps were added to Mercury showing element abundances on the surface and a multi-color mosaic from the Mercury Dual Imaging System (MDIS) instrument.
+
+## New Horizons
+This profile shows the acquisition of NASA New Horizons' images of the Plutonian system in July 2015. The profile starts at around 10:00 GMT on July 14, about 10 minutes before a new image campaign starts. By selecting Pluto as the Focus and moving time faster, you can see the imprint of the instrument's field-of-view on the planetary surface and see the images being projected. A timer on the top left of the screen shows when the next image is being taken.
+
+Additional keybindings:
+  - A: Focus the camera on the New Horizons spacecraft
+  - S: Focus the camera on Pluto
+  - D: Focus the camera on Charon
+  - L: Toggle the visibility of the labels of New Horizons' instruments
+  - J: Toggle the visibility of the labels for Pluto and its moons
+  - Shift+T: Toggle the visibility of Pluto's and Charon's shadows
+  - F7: Toggles the image projections
+  - F8: Remove the already projected images from the surface
+  - F9: Jump to the start time and remove all image projections
+  - Keypad 8, Keypad 2: Increase and decrease the height exaggeration on Pluto to show the terrain structure
+  - Keypad 9, Keypad 3: Increase and decrease the height exaggeration on Charon to show the terrain structure
+
+## Night Sky
+This profile visualizes the night sky from Earth. The profile starts on Earth, with a camera view of the horizon and night sky. Adjust the date and time settings to view the sunrise and sunset.
+
+## Offline
+This profile includes low resolution maps of planets that do not require internet connection.
+
+## Osiris-REx
+This profile demonstrates the entire lifetime of the NASA OSIRIS-REx (Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer) spacecraft on its way to the 101955 Bennu asteroid and its subsequent journey back to Earth. The profile starts at Earth before the spacecraft's launch and has information throughout the entire mission until the sample's 2023 landing back in Utah. Models of OSIRIS-REx and Bennu are available, as well as a preliminary instrument timing and some of the imaging campaign, which uses the same projection technique as employed in the New Horizons and Rosetta profiles.
+
+Additional keybindings:
+  - A: Focus the camera on OSIRIS-REx
+  - S: Focus the camera on Bennu
+  - F6: Sets the time to the launch time
+  - F7: Sets the time to the Earth gravity assist
+  - F8: Sets the time to the approach time at Bennu
+  - F9: Sets the time to the preliminary survey of Bennu
+  - F10: Sets the time to the orbital Bennu event
+  - F11: Sets the time to the recon event
+
+## Rosetta
+This profile shows the entire mission of the ESA Rosetta spacecraft around comet 67P, also known as Churyumov-Gerasimenko. The spacecraft's images are projected onto the comet and the separation of the Philae lander is visible as well.
+
+Additional keybindings:
+  - A: Focus the camera on the 67P comet
+  - S: Focus the camera on the Rosetta spacecraft
+  - I: Toggle the visibility of the free-floating image plane
+  - P: Toggles the image projection of Rosetta; useful if making long time jumps and not wanting to wait for the image projections to occur
+  - F: Toggles the visibility of Philae's trail
+  - F5: Jumps to the initial approach of Rosetta to 67P
+  - F6: Jumps to the time when the Philae lander is released
+  - F8: Removes all image projections from 67P
+
+## Solar Storm 2012
+This profile is showing several coronal mass ejection (CMEs) during July 2012, where the last one was incredible intense. Its strength was comparable to the most intense CME in recorded history, the Carrington Event of 1859, which caused damage to electric equipment world wide. Luckily this 2012 event missed Earth. The event is modeled with ENLIL which spands across the solar system, from the Sun to Earth, Batsrus which is showing the interaction of the flow of the solar wind and Earths magnetosphere. There is also one time step of the PFSS model showing the Suns local magnetic structure.
+
+Additional keybindings:
+  - D: Toggles between darkening the sun and showing the surface of the Sun
+  - E: Starts a loop that best highlights the ENLIL model (Recomended is to have the whole solarsystem in view)
+  - B: Starts a loop that best highlights the BATSRUS model (Recomended is to have mostely the Earth-moon system in view)
+  - R: Resets the loops, to make them stop looping
+
+## Today's Sun
+Today's Sun profile  shows the state of the magnetic field around the Sun.
+
+## Voyager
+This profile contains the NASA Voyager 1 and Voyager 2 missions as they were launched from Earth in the 1970s and observed the gas giants in the solar system. The spacecraft models are included and are pointed accurately throughout the mission. Position and orientation information are available until the second half of the 21st century.
+
+:::

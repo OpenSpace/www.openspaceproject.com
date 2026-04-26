@@ -7,10 +7,11 @@ To build the webpage:
 ## General considerations
 For loading performance, consider converting image files to `.webp` format using, for example, [ImageMagick](https://imagemagick.org).
 
-File formats used in the webpage:
+File formats and tools used in the webpage:
   - [YML](https://learn.getgrav.org/17/advanced/yaml): Both used for configuration and data files
   - [SCSS](https://sass-lang.com/): Style sheets
   - [EJS](https://ejs.co/#docs): Templating language to turn files/YML into HTML
+  - [Bootstrap](https://getbootstrap.com): Layout for the webpage
 
 ## File locations
   - `assets`: Assets used globally
@@ -21,9 +22,13 @@ File formats used in the webpage:
     - `assets/logos`: Logos for softwares, institutions
     - `asset/style`: SCSS style files used for the webpage
     - `asset/team`: Information about team members
-      - `asset/team/team.yml`: Information about the different team members
+    - `asset/academia.yml`: Information about the academic output
+    - `asset/team.yml`: Information about the different team members
   - `events`: A list of events that will automatically be added to the events page. Each event should be in a subfolder that has a `index.qmd`
   - `template`: Partial pages that are included or EJS file templates used by other pages
+  - `_announcement.yml`: Configuration file to control a top-level announcement banner
+  - `_footer.yml`: Configuration file to control the information provided in the footer
+  - `_navbar.yml`: Configuration file to control the top navigation bar
   - `_quarto.yml`: Root configuration file for Quarto
   - `_variables.yml`: Global variables that can be reused in different documents
   - `404.qmd`: Special 404 page that gets displayed when someone navigates to a page that doesn't exist

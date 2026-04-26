@@ -22,11 +22,13 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 # Title
 Lorem ipsum {{< iconify copilot-24 >}} dolor sit amet, consectetur adipiscing elit. Duis aliquam fermentum purus, semper euismod elit aliquet id. Nunc pulvinar ac velit lacinia aliquam. Duis auctor lobortis tellus et euismod. Pellentesque semper neque in ultricies iaculis. Nunc in consectetur tortor. Pellentesque orci libero, sollicitudin eget auctor ac, elementum eget ipsum. Fusce vel nulla augue. Cras a lacus posuere, congue nibh ac, congue lectus. Sed pulvinar condimentum ligula. Aenean vestibulum ipsum at enim faucibus, nec interdum diam dictum. Ut nec eleifend libero. Vestibulum eget volutpat dolor, in blandit nulla. Proin est massa, elementum vitae urna in, tristique pharetra est. Vivamus dictum nisi non libero eleifend accumsan.
 
+<a href="https://www.openspaceproject.com/version-0213" class="btn-beam">Download OpenSpace</a>
+
 Email [Support](mailto:{{< var email.support >}})
 
 ::: {#carousel}
 :::
-        
+
 
 Etiam lacinia commodo nunc, quis sodales augue fermentum a. Maecenas bibendum gravida sapien vitae auctor. Duis maximus, augue sit amet facilisis sagittis, felis odio accumsan neque, non maximus erat ex ac ipsum. Suspendisse ut lectus sit amet libero tempus vestibulum nec non ante. Donec vel velit felis. Phasellus sagittis magna a nulla ornare pulvinar. In gravida consectetur risus, quis semper nisl lobortis vitae. Curabitur vitae condimentum turpis. Proin sed magna interdum, fermentum magna ut, blandit justo. Curabitur quis facilisis enim. Curabitur ultricies ligula sit amet dui viverra tristique. Praesent quis eleifend dolor.
 

@@ -1,0 +1,18 @@
+website:
+  page-footer:
+    border: true
+    background: dark
+    foreground: light
+    left: |
+      OpenSpace is available under the [MIT License](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md).
+    center: |
+      © OpenSpace Project Team 2026
+    right: |
+      [{{< iconify fa7-brands:x-twitter >}}](https://x.com/openspaceproj){.no-external}
+      [{{< iconify fa7-brands:instagram >}}](https://instagram.com/openspaceproj){.no-external}
+      [{{< iconify fa7-brands:square-youtube >}}](https://www.youtube.com/@OpenSpaceProj){.no-external}
+      [{{< iconify fa7-brands:facebookt >}}](https://www.facebook.com/OpenSpaceProj){.no-external}
+      [{{< iconify fa7-brands:github >}}](https://github.com/OpenSpace/OpenSpace){.no-external}
+      [{{< iconify fa7-brands:reddit >}}](https://www.reddit.com/r/OpenSpaceProject){.no-external}
+      [{{< iconify fa7-brands:linkedin >}}](https://www.linkedin.com/company/openspace-project/){.no-external}
+      [{{< iconify material-symbols:mail >}}](ilto:{{< var email.support >}}){.no-external}

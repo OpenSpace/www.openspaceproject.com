@@ -16,43 +16,12 @@ $navbar-fg: $satelliteGray;
 $navbar-hl: $primaryAccent;
 $footer-bg: darken($background, 2%);
 $footer-fg: $satelliteGray;
+$dropdown-link-hover-color: $lightAccentYellow;
+$dropdown-link-hover-bg: $background;
 
-$backgroundColor: $background;
-$mainColor: $textColor;
-$headingColor: $primaryAccent;
-$linkColor: $lightAccentYellow;
-$linkColorHover: lighten($lightAccentYellow, 10%);
-$selectionBackgroundColor: rgba($primaryAccent, 0.3);
-$selectionColor: $background;
 
-$mainFont: 'IBM Plex Sans', sans-serif;
-$headingFont: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
-$codeFont: 'IBM Plex Mono', monospace;
-
-$mainFontSize: 38px;
-$headingFontWeight: 300;
-$headingLineHeight: 1.2;
-$headingLetterSpacing: 0.02em;
-$headingTextTransform: none;
-
-$heading1Size: 2.2em;
-$heading2Size: 1.6em;
-$heading3Size: 1.2em;
-$heading4Size: 1.0em;
 
 /*-- scss:rules --*/
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  color: $primaryAccent;
-}
-
 h3, h4 {
   color: $lightAccentYellow;
 }
@@ -82,6 +51,8 @@ hr {
   text-transform: uppercase;
   font-size: 0.82rem;
 }
+
+
 
 // Hero section on homepage
 .hero-section {
@@ -143,6 +114,62 @@ hr {
 
   &:hover {
     border-color: $primaryAccent;
+    color: $primaryAccent;
+    text-decoration: none;
+  }
+}
+
+@property --beam-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-beam {
+  to { --beam-angle: 360deg; }
+}
+
+.btn-beam {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  padding: 0.7rem 2.2rem;
+  font-family: 'TeX Gyre Adventor', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $satelliteGray;
+  background: $background;
+  transition: color 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    background: conic-gradient(
+      from var(--beam-angle),
+      rgba($satelliteGray, 0.25) 0%,
+      rgba($satelliteGray, 0.25) 78%,
+      rgba($primaryAccent, 0.6) 84%,
+      $primaryAccent 88%,
+      rgba(255, 255, 255, 0.9) 91%,
+      $primaryAccent 94%,
+      rgba($satelliteGray, 0.25) 100%
+    );
+    animation: border-beam 3s linear infinite;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+
+  &:hover {
     color: $primaryAccent;
     text-decoration: none;
   }

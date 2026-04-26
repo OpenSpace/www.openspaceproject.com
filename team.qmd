@@ -3,25 +3,25 @@ listing:
   - id: admin
     type: custom
     template: template/team.ejs.md
-    contents: assets/team/team.yml
+    contents: assets/team.yml
     include:
       type: "{admin,coordinator}"
   - id: advisor
     type: custom
     template: template/team.ejs.md
-    contents: assets/team/team.yml
+    contents: assets/team.yml
     include:
       type: "{advisor}"
   - id: developer
     type: custom
     template: template/team.ejs.md
-    contents: "assets/team/team.yml"
+    contents: "assets/team.yml"
     include:
       type: developer
   - id: students
     type: custom
     template: template/team.ejs.md
-    contents: "assets/team/team.yml"
+    contents: "assets/team.yml"
     page-size: 9999
     include:
       type: student

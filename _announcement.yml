@@ -1,0 +1,6 @@
+website:
+  announcement:
+    icon: info-circle
+    content: "_Alert_ - Draft webpage"
+    dismissable: true
+    position: above-navbar

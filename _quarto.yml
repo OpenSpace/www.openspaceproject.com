@@ -3,6 +3,12 @@ project:
   output-dir: _site
   preview:
     port: 12800
+
+metadata-files:
+  - _announcement.yml
+  - _footer.yml
+  - _navbar.yml
+
   # resources:
     # - assets/js/slider.js
 
@@ -89,66 +95,6 @@ website:
 
   # margin:
 
-  announcement:
-    icon: info-circle
-    content: "_Alert_ - Draft webpage"
-    dismissable: true
-    position: above-navbar
-
-  page-footer:
-    border: true
-    background: dark
-    foreground: light
-    left: |
-      OpenSpace is available under the [MIT License](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md).
-    center: |
-      © OpenSpace Project Team 2026
-    right: |
-      [{{< iconify fa7-brands:x-twitter >}}](https://x.com/openspaceproj){.no-external}
-      [{{< iconify fa7-brands:instagram >}}](https://instagram.com/openspaceproj){.no-external}
-      [{{< iconify fa7-brands:square-youtube >}}](https://www.youtube.com/@OpenSpaceProj){.no-external}
-      [{{< iconify fa7-brands:facebookt >}}](https://www.facebook.com/OpenSpaceProj){.no-external}
-      [{{< iconify fa7-brands:github >}}](https://github.com/OpenSpace/OpenSpace){.no-external}
-      [{{< iconify fa7-brands:reddit >}}](https://www.reddit.com/r/OpenSpaceProject){.no-external}
-      [{{< iconify fa7-brands:linkedin >}}](https://www.linkedin.com/company/openspace-project/){.no-external}
-      [{{< iconify material-symbols:mail >}}](ilto:{{< var email.support >}}){.no-external}
-
-  navbar:
-    title: false
-    logo: "/assets/logos/openspace/horizontal-logo.webp"
-    logo-alt: "OpenSpace"
-    # background:
-    # foreground:
-    # search: false
-    pinned: true
-    collapse: true
-    collapse-below: sm
-    # toggle-position:
-    # tools-collapse:
-
-    # left:
-    right:
-      - text: "Home"
-        href: index.qmd
-      - text: About
-        menu:
-          - text: Team
-            href: team.qmd
-          - text: Partners
-            href: partners.qmd
-      - text: Resources
-        menu:
-          - text: Images
-            href: resources-images.qmd
-          - text: Server Status
-            href: https://uptime.openspaceproject.com
-      - text: Events
-        href: events.qmd
-      - text: About
-        href: about.qmd
-      - icon: github
-        href: https://github.com/OpenSpace/OpenSpace
-        aria-label: "GitHub Repository"
 
   # listing:
 

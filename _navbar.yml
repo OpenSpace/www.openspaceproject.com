@@ -1,0 +1,39 @@
+website:
+  navbar:
+    title: false
+    logo: "/assets/logos/openspace/horizontal-logo.webp"
+    logo-alt: "OpenSpace"
+    # background:
+    # foreground:
+    # search: false
+    pinned: true
+    collapse: true
+    collapse-below: sm
+    # toggle-position:
+    # tools-collapse:
+
+    # left:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: About
+        menu:
+          - text: Team
+            href: team.qmd
+          - text: Partners
+            href: partners.qmd
+          - text: Academica
+            href: academia.qmd
+      - text: Resources
+        menu:
+          - text: Images
+            href: resources-images.qmd
+          - text: Server Status
+            href: https://uptime.openspaceproject.com
+      - text: Events
+        href: events.qmd
+      - text: About
+        href: about.qmd
+      - icon: github
+        href: https://github.com/OpenSpace/OpenSpace
+        aria-label: "GitHub Repository"

@@ -3,6 +3,8 @@ project:
   output-dir: _site
   preview:
     port: 12800
+  # resources:
+    # - assets/js/slider.js
 
 format:
   html:
@@ -58,7 +60,11 @@ website:
   # repo-actions: [edit, issue]
   llms-txt: true
   # google-analytics:
-  cookie-consent: true
+  # cookie-consent:
+  #   type: express
+  #   style: simple
+  #   palette: dark
+  #   policy-url: www.openspaceproject.com
   search: false
 
   # body-header:
@@ -93,29 +99,19 @@ website:
     border: true
     background: dark
     foreground: light
-    # left: |
-      # Left text
+    left: |
+      OpenSpace is available under the [MIT License](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md).
     center: |
       © OpenSpace Project Team 2026
-      OpenSpace is available under the [MIT License](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md).
-
-      OpenSpace is funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.
-
-      OpenSpace is also funded by the Knut & Alice Wallenberg Foundation, the Swedish Research Council (Vetenskapsrådet), and the Swedish e-Science Research Centre.
-
-    # right: |
-      # License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
-
-  # page-footer:
-  #   left:
-  #     - text: "Left text"
-  #   right:
-  #     - text: "Right Text"
-  #   center:
-  #     - text: "© OpenSpace Project Team 2026"
-  #   border: false
-  #   # background:
-  #   # foreground:
+    right: |
+      [{{< iconify fa7-brands:x-twitter >}}](https://x.com/openspaceproj){.no-external}
+      [{{< iconify fa7-brands:instagram >}}](https://instagram.com/openspaceproj){.no-external}
+      [{{< iconify fa7-brands:square-youtube >}}](https://www.youtube.com/@OpenSpaceProj){.no-external}
+      [{{< iconify fa7-brands:facebookt >}}](https://www.facebook.com/OpenSpaceProj){.no-external}
+      [{{< iconify fa7-brands:github >}}](https://github.com/OpenSpace/OpenSpace){.no-external}
+      [{{< iconify fa7-brands:reddit >}}](https://www.reddit.com/r/OpenSpaceProject){.no-external}
+      [{{< iconify fa7-brands:linkedin >}}](https://www.linkedin.com/company/openspace-project/){.no-external}
+      [{{< iconify material-symbols:mail >}}](ilto:{{< var email.support >}}){.no-external}
 
   navbar:
     title: false
@@ -159,14 +155,14 @@ website:
 extensions:
   iconify:
     set: "octicon"
-    size: "Huge"
-    width: "1em"
-    height: "1em"
-    flip: "horizontal"
-    rotate: "90deg"
+    # size: "Huge"
+    # width: "1em"
+    # height: "1em"
+    # flip: "horizontal"
+    # rotate: "90deg"
     inline: true
     mode: "svg"
-    style: "color: #b22222;"
+    style: "color: #ecf5fb;"
 
 # List of available icons:  https://fontawesome.com/search?ic=free-collection
 # List of available icons:  https://icon-sets.iconify.design/   via   https://github.com/mcanouil/quarto-iconify

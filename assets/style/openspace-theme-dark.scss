@@ -170,7 +170,7 @@ hr {
 // Page footer
 .nav-footer {
   border-top: 1px solid rgba($primaryAccent, 0.12);
-  font-size: 0.78rem;
+  font-size: 1.25rem;
   color: rgba($satelliteGray, 0.7);
   padding: 1.5rem 0;
   text-align: center;
@@ -179,6 +179,9 @@ hr {
     color: rgba($satelliteGray, 0.85);
     &:hover { color: $primaryAccent; }
   }
+}
+.nav-footer .nav-footer-right {
+  font-size: 1.5rem;
 }
 
 .navbar-logo {
@@ -220,5 +223,38 @@ hr {
   .affiliation {
     margin-top: 1rem;
     font-size: 0.75rem;
+  }
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
   }
 }

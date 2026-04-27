@@ -38,9 +38,19 @@ Pellentesque eget ultrices nunc. Aenean id porttitor orci. Aliquam vulputate eui
 
 Etiam vel est eget eros consectetur mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas ac quam ornare, placerat ligula non, tempus mauris. Nullam ac ornare nisi. Nulla sed nibh a quam ultricies ullamcorper. Sed est mauris, ullamcorper sed risus non, imperdiet volutpat tellus. Morbi blandit porttitor turpis, eu ullamcorper elit ultricies eu. Suspendisse et porta justo, vitae lacinia lorem. Aenean eu pretium lacus, in feugiat mi. Duis libero tellus, dignissim in est quis, tempus fringilla est. Donec placerat dapibus metus, at dapibus nisi porttitor vitae. Maecenas in eros eu metus dignissim sagittis nec quis sapien. Maecenas a leo tempor, malesuada erat a, aliquet lorem. Aliquam eget ante eu lacus sagittis gravida id vel risus. Pellentesque vel felis id massa vulputate euismod non eget sapien. Fusce ultrices id arcu quis laoreet.
 
+{{< video https://www.youtube.com/watch?v=lunXQsm0P0o >}}
+
+{{< video https://www.youtube.com/watch?v=s1UaX0phl6I width=75% >}}
 
 ## level 2
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam fermentum purus, semper euismod elit aliquet id. Nunc pulvinar ac velit lacinia aliquam. Duis auctor lobortis tellus et euismod. Pellentesque semper neque in ultricies iaculis. Nunc in consectetur tortor. Pellentesque orci libero, sollicitudin eget auctor ac, elementum eget ipsum. Fusce vel nulla augue. Cras a lacus posuere, congue nibh ac, congue lectus. Sed pulvinar condimentum ligula. Aenean vestibulum ipsum at enim faucibus, nec interdum diam dictum. Ut nec eleifend libero. Vestibulum eget volutpat dolor, in blandit nulla. Proin est massa, elementum vitae urna in, tristique pharetra est. Vivamus dictum nisi non libero eleifend accumsan.
+
+
+::: {width=50%}
+```{=html}
+<iframe width="100%" height="640" src="https://hub.openspaceproject.com" title="Hub"></iframe>
+```
+:::
 
 Etiam lacinia commodo nunc, quis sodales augue fermentum a. Maecenas bibendum gravida sapien vitae auctor. Duis maximus, augue sit amet facilisis sagittis, felis odio accumsan neque, non maximus erat ex ac ipsum. Suspendisse ut lectus sit amet libero tempus vestibulum nec non ante. Donec vel velit felis. Phasellus sagittis magna a nulla ornare pulvinar. In gravida consectetur risus, quis semper nisl lobortis vitae. Curabitur vitae condimentum turpis. Proin sed magna interdum, fermentum magna ut, blandit justo. Curabitur quis facilisis enim. Curabitur ultricies ligula sit amet dui viverra tristique. Praesent quis eleifend dolor.
 

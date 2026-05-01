@@ -18,6 +18,8 @@ website:
         href: index.qmd
       - text: About
         menu:
+          - text: About OpenSpace
+            href: about-open-space.qmd
           - text: Team
             href: team.qmd
           - text: Partners

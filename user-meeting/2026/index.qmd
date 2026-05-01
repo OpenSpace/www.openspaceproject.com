@@ -5,9 +5,9 @@ sidebar: user-meeting-2026
 ![](visc.webp)
 
 # OpenSpace User Meeting
-_August, 26 – August, 28, 2026_
+_August 26 – August 28, 2026_
 
-Join us for the second in-person user meeting in beautiful Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for two days of trainings, presentations, hands-on sessions, and networking. This is a great opportunity to:
+Join us for the second in-person user meeting in beautiful Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking. This is a great opportunity to:
 
   - Sharpen your OpenSpace skills
   - Explore the latest software features and updates

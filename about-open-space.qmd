@@ -1,0 +1,17 @@
+![](/assets/images/banner/earth1.webp){.hero}
+
+# About OpenSpace
+
+OpenSpace is an open-source visualization project that enables interactive exploration of the universe. It is built for researchers, educators, and public outreach programs who want to present scientific data in an immersive, visually compelling way.
+
+- Free and open-source software
+- Designed for planetariums, museums, and research centers
+- Supports real-time visualization of astronomical data, missions, and scientific datasets
+
+## Mission
+
+Our mission is to make science accessible through interactive visualization and storytelling. OpenSpace brings complex astronomical datasets to life for a wide audience, from students to professional researchers.
+
+## Get started
+
+To learn more about using OpenSpace, visit the [Install page](install/version-0213.qmd) and the [Resources section](resources-images.qmd).

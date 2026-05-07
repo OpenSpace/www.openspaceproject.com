@@ -14,35 +14,55 @@ website:
 
     # left:
     right:
-      - text: "Home"
-        href: index.qmd
       - text: About
         menu:
-          - text: About OpenSpace
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-icon">🛰️</span><span class="nav-rich-body"><span class="nav-rich-title">About OpenSpace</span><span class="nav-rich-desc">The project, its origins, and the institutions behind it.</span></span></span>
             href: about-open-space.qmd
-          - text: Team
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-icon">👥</span><span class="nav-rich-body"><span class="nav-rich-title">Team</span><span class="nav-rich-desc">The people behind the OpenSpace project.</span></span></span>
             href: team.qmd
-          - text: Partners
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-icon">🤝</span><span class="nav-rich-body"><span class="nav-rich-title">Partners</span><span class="nav-rich-desc">The organizations collaborating with the OpenSpace project.</span></span></span>
             href: partners.qmd
-          - text: Academica
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-icon">📊</span><span class="nav-rich-body"><span class="nav-rich-title">Annual Reports</span><span class="nav-rich-desc">Year-by-year project progress and impact.</span></span></span>
+            href: reports.qmd
+          - text: |
+              <span class="nav-rich"><span class="nav-rich-icon">🎓</span><span class="nav-rich-body"><span class="nav-rich-title">Academia</span><span class="nav-rich-desc">Publications, theses, and research projects.</span></span></span>
             href: academia.qmd
+      - text: Features
+        menu:
+          - text: Globe Browsing
+            href: globe-browsing.qmd
+          - text: Mission Visualizations
+            href: mission-visualizations.qmd
+          - text: Space Weather
+            href: space-weather.qmd
+          - text: Display Support
+            href: display-support.qmd
+      - text: Community
+        menu:
+          - text: Use Cases
+            href: use-cases.qmd
+          - text: Events
+            href: events.qmd
       - text: Resources
         menu:
+          - text: Documentation
+            href: https://docs.openspaceproject.com
+          - text: Tutorials
+            href: tutorials.qmd
           - text: Images
             href: resources-images.qmd
-          - text: Reports
-            href: reports.qmd
+
           - text: Server Status
             href: https://uptime.openspaceproject.com
-      - text: Events
-        href: events.qmd
       - text: User Meeting
         menu:
           - text: "2026"
             href: user-meeting/2026/index.qmd
           - text: "2025"
             href: user-meeting/2025/index.qmd
-      - text: About
-        href: about.qmd
       - text: "<span class='btn btn-primary'>Download</span>"
-        href: install/version-0213.qmd
+        href: version-0213.qmd

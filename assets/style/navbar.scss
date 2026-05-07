@@ -1,0 +1,170 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Rich navbar dropdowns + desktop layout overrides
+// Save at assets/style/navbar.scss
+// =============================================================
+
+// ---------- DESKTOP NAV ----------
+@media (min-width: 992px) {
+
+  // Force the outer navbar container to be a horizontal flex row
+  .navbar > .navbar-container,
+  .navbar .navbar-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  // Vertical breathing room around logo and nav
+  .navbar {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  // Brand container: take only as much width as needed, vertically centered
+  .navbar .navbar-brand-container {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    margin-right: 1.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  // Logo size cap
+  .navbar .navbar-logo {
+    max-height: 56px;
+    width: auto;
+  }
+
+  // Hide hamburger
+  .navbar .navbar-toggler {
+    display: none !important;
+  }
+
+  // Collapse container takes the remaining space, vertically centered
+  .navbar .navbar-collapse {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-basis: auto !important;
+    visibility: visible !important;
+    height: auto !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+
+  // Nav list: horizontal row
+  .navbar .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 1.25rem;
+  }
+
+  // Each nav item: inline-flex, no bullets, no stacking
+  .navbar .navbar-nav .nav-item {
+    display: inline-flex !important;
+    list-style: none !important;
+    width: auto !important;
+  }
+
+  // Extra space before Download
+  .navbar .nav-link:has(.nav-cta) {
+    margin-left: 1rem;
+  }
+.navbar .nav-link {
+  transform: translateY(8px);
+}
+}
+
+// ---------- Dropdown menu container ----------
+.navbar .dropdown-menu {
+  min-width: 320px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-top: 0.6rem;
+}
+
+.navbar .dropdown-item {
+  padding: 0.65rem 0.85rem;
+  border-radius: 6px;
+  white-space: normal;
+  transition: background 0.15s ease;
+
+  &:hover,
+  &:focus {
+    background: rgba(13, 110, 253, 0.06);
+  }
+
+  > span {
+    text-decoration: none;
+  }
+  .navbar .nav-item.dropdown .dropdown-menu {
+  transform: translateY(-8px);  // counter the parent's translation
+}
+}
+
+// ---------- Rich item layout ----------
+.nav-rich {
+  display: block;
+}
+
+.nav-rich-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.nav-rich-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.nav-rich-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.nav-rich-desc {
+  display: block;
+  font-size: 0.8125rem;
+  color: #6c757d;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+// ---------- Download CTA button ----------
+.navbar .nav-cta {
+  display: inline-block;
+  background: #1a1a1a;
+  color: white;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+.navbar .nav-link:hover .nav-cta,
+.navbar .nav-link:focus .nav-cta {
+  background: #0d6efd;
+  color: white;
+}
+
+// ---------- Mobile (under 992px) ----------
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    min-width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+}

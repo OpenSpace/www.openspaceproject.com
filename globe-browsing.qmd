@@ -1,0 +1,22 @@
+---
+title: "Globe Browsing"
+pagetitle: "Globe Browsing — OpenSpace"
+description-meta: "Globe Browsing in OpenSpace renders planetary surfaces from real mission data, letting you fly seamlessly from interstellar space down to ground level."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+[Fly from interstellar space to a single crater on the Moon — without a cut.]{.feature-lede}
+
+::: {.feature-body}
+::: {.os-container .narrow}
+
+Globe Browsing is the planetary surface rendering system at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions, so audiences can cross fifteen orders of magnitude — from the Milky Way down to the texture of Martian regolith — in one continuous flight. No load screens, no cuts, no second application.
+
+- **Fly across Mars at full HiRISE resolution.** Land at Jezero Crater, follow Perseverance's traverse, then pull back to see the whole planet in context.
+- **Visit any imaged surface in the solar system.** Apollo landing sites on the Moon, Cassini imagery of Titan, New Horizons coverage of Pluto — all at the resolution the spacecraft captured them.
+
+Multiple data layers can be active and blended at once — base imagery, colorized elevation, scientific overlays, labels — and a presenter can reveal them live during a show. Camera motion stays smooth at every scale, which is why Globe Browsing is the foundation of so many planetarium and museum experiences built on OpenSpace.

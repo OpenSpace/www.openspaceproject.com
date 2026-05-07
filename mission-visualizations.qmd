@@ -1,0 +1,28 @@
+---
+title: "Mission Visualizations"
+pagetitle: "Mission Visualizations — OpenSpace"
+description-meta: "OpenSpace recreates real spacecraft missions in real time — fly alongside New Horizons, watch JWST unfold, ride with Rosetta to a comet."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+[Ride alongside the spacecraft, at the moment it happened — in scientifically accurate detail.]{.feature-lede}
+
+
+::: {.feature-body}
+::: {.os-container .narrow}
+
+OpenSpace recreates real spacecraft missions in real time, using actual trajectory data, instrument footprints, and observation timelines from NASA, ESA, and JAXA archives. Every mission is positioned correctly in the solar system, every flyby happens at the moment it really did, and every image is shown where the spacecraft was when it took it.
+
+## Missions you can fly with {.feature-h2}
+
+::: {.feature-list-wrapper}
+- **New Horizons at Pluto.** Watch the July 2015 flyby unfold from the spacecraft's perspective, with imaging targets and downlinked photos appearing as they were captured.
+- **JWST in deep space.** See the telescope's actual orbit at L2, follow its observation pointing in real time, and visualize fields it has surveyed.
+- **Rosetta and Philae at 67P.** Approach Comet Churyumov–Gerasimenko alongside Rosetta, then watch Philae's descent to the surface in 2014.
+- **Voyager 1 and 2.** Trace the full forty-eight-year journey from launch to interstellar space, with planetary encounters in their original sequence.
+:::
+
+Mission visualizations sync with OpenSpace's time controls, so you can play forward, rewind, scrub to a specific moment, or speed time up by a factor of a million. Combined with Globe Browsing, you can fly with a spacecraft to a planet and then continue down to its surface — one continuous experience, one application.

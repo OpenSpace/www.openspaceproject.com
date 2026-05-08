@@ -55,7 +55,7 @@ website:
             href: events.qmd
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📢</span><span class="nav-rich-title">Annual Meetings</span></span><span class="nav-rich-desc">Build your skills and connect with users at our annual meetings.</span></span>
-            href: annual-meetings.qmd
+            href: user-meetings.qmd
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">💬</span><span class="nav-rich-title">Slack</span></span><span class="nav-rich-desc">Ask questions and share ideas with the OpenSpace community.</span></span>
             href: slack.qmd
@@ -74,11 +74,5 @@ website:
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📡</span><span class="nav-rich-title">Server Status</span></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
             href: https://uptime.openspaceproject.com
-      - text: User Meeting
-        menu:
-          - text: "2026"
-            href: user-meeting/2026/index.qmd
-          - text: "2025"
-            href: user-meeting/2025/index.qmd
       - text: "<span class='btn btn-primary'>Download</span>"
         href: version-0213.qmd

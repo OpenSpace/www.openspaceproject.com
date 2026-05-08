@@ -1,0 +1,62 @@
+---
+title: "Annual User Meeting"
+pagetitle: "Annual User Meeting &mdash; OpenSpace"
+description-meta: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<section class="use-cases-hero">
+  <div class="os-container narrow">
+    <p class="feature-eyebrow">Community</p>
+    <h1 class="feature-title-dark">Annual User Meeting</h1>
+    <p class="use-cases-lede">Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next.</p>
+  </div>
+</section>
+
+<section class="meetings-intro-section">
+  <div class="os-container narrow">
+    <p>The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover everything from new feature demos and dome integration techniques to use-case showcases and hands-on training. It&rsquo;s where the project&rsquo;s direction gets shaped &mdash; by the people building with it.</p>
+  </div>
+</section>
+
+<section class="use-cases-grid-section">
+  <div class="os-container">
+    <div class="meetings-grid">
+
+      <a class="use-case-card meeting-card" href="user-meeting-2026.qmd" style="background-image: url('user-meetings/2026/visc.webp');" aria-label="2026 Annual User Meeting">
+        <div class="use-case-overlay"></div>
+        <div class="meeting-badge meeting-badge-upcoming">Upcoming</div>
+        <div class="use-case-text">
+          <p class="use-case-meta">June 2026 &middot; Norrk&ouml;ping, Sweden</p>
+          <h3 class="use-case-title">2026 Annual User Meeting</h3>
+        </div>
+      </a>
+
+      <a class="use-case-card meeting-card" href="user-meeting-2025.qmd" style="background-image: url('user-meetings/2025/hayden.webp');" aria-label="2025 Annual User Meeting">
+        <div class="use-case-overlay"></div>
+        <div class="meeting-badge meeting-badge-past">Recap</div>
+        <div class="use-case-text">
+          <p class="use-case-meta">June 2025 &middot; American Museum of Natural History</p>
+          <h3 class="use-case-title">2025 Annual User Meeting</h3>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="use-cases-cta">
+  <div class="os-container narrow text-center">
+    <h2 class="feature-h2">Stay in the loop</h2>
+    <p>Sign up to be notified when registration opens and to get session recaps.</p>
+    <p class="feature-footer-link">
+      <a href="contact.qmd">Get notified &rarr;</a> &nbsp;&middot;&nbsp; <a href="events.qmd">Past events &rarr;</a>
+    </p>
+  </div>
+</section>
+```

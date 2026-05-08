@@ -17,29 +17,33 @@ website:
       - text: About
         menu:
           - text: |
-             <span class="nav-rich"><span class="nav-rich-icon">🛰️</span><span class="nav-rich-body"><span class="nav-rich-title">About OpenSpace</span><span class="nav-rich-desc">The project, its origins, and the institutions behind it.</span></span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🛰️</span><span class="nav-rich-title">About OpenSpace</span></span><span class="nav-rich-desc">The project, its origins, and the institutions behind it.</span></span>
             href: about-open-space.qmd
           - text: |
-             <span class="nav-rich"><span class="nav-rich-icon">👥</span><span class="nav-rich-body"><span class="nav-rich-title">Team</span><span class="nav-rich-desc">The people behind the OpenSpace project.</span></span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">👥</span><span class="nav-rich-title">Team</span></span><span class="nav-rich-desc">The people behind the OpenSpace project.</span></span>
             href: team.qmd
           - text: |
-             <span class="nav-rich"><span class="nav-rich-icon">🤝</span><span class="nav-rich-body"><span class="nav-rich-title">Partners</span><span class="nav-rich-desc">The organizations collaborating with the OpenSpace project.</span></span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🤝</span><span class="nav-rich-title">Partners</span></span><span class="nav-rich-desc">The organizations collaborating with the OpenSpace project.</span></span>
             href: partners.qmd
           - text: |
-             <span class="nav-rich"><span class="nav-rich-icon">📊</span><span class="nav-rich-body"><span class="nav-rich-title">Annual Reports</span><span class="nav-rich-desc">Year-by-year project progress and impact.</span></span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📊</span><span class="nav-rich-title">Annual Reports</span></span><span class="nav-rich-desc">Year-by-year project progress and impact.</span></span>
             href: reports.qmd
           - text: |
-              <span class="nav-rich"><span class="nav-rich-icon">🎓</span><span class="nav-rich-body"><span class="nav-rich-title">Academia</span><span class="nav-rich-desc">Publications, theses, and research projects.</span></span></span>
+              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🎓</span><span class="nav-rich-title">Academia</span></span><span class="nav-rich-desc">Publications, theses, and research projects.</span></span>
             href: academia.qmd
       - text: Features
         menu:
-          - text: Globe Browsing
+          - text: |
+              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🌍</span><span class="nav-rich-title">Globe Browsing</span></span><span class="nav-rich-desc">Real planetary surfaces from spacecraft mission data.</span></span>
             href: globe-browsing.qmd
-          - text: Mission Visualizations
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🚀</span><span class="nav-rich-title">Mission Visualizations</span></span><span class="nav-rich-desc">Fly with New Horizons, JWST, Rosetta, and more.</span></span>
             href: mission-visualizations.qmd
-          - text: Space Weather
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">☀️</span><span class="nav-rich-title">Space Weather</span></span><span class="nav-rich-desc">Solar wind, CMEs, and magnetosphere visualization.</span></span>
             href: space-weather.qmd
-          - text: Display Support
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🎬</span><span class="nav-rich-title">Versatile Display Support</span></span><span class="nav-rich-desc">Domes, multi-projector walls, and networked sessions.</span></span>
             href: display-support.qmd
       - text: Community
         menu:

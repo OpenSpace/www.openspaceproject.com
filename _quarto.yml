@@ -26,6 +26,7 @@ format:
         - "assets/style/openspace-theme-dark.scss"
         - "assets/style/hero.scss"
         - "assets/style/navbar.scss"
+        - "assets/style/use-cases.scss"
     include-after-body:
       - file: _template/hero.html
     anchor-sections: false

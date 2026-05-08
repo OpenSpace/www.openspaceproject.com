@@ -1,0 +1,165 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Use Cases page — image-dominant card layout
+// Save at assets/style/use-cases.scss
+// =============================================================
+
+// ---------- Hero ----------
+.use-cases-hero {
+  background: #0a1b1d;
+  color: white;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.use-cases-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.use-cases-hero .feature-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 1rem;
+}
+
+.feature-title-dark {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+  color: white;
+}
+
+.use-cases-lede {
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+// ---------- Grid section ----------
+.use-cases-grid-section {
+  padding: 4rem 0 5rem;
+  background: #0a1b1d;
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}
+
+// ---------- Image-dominant card ----------
+.use-case-card {
+  position: relative;
+  display: block;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1a2030; // fallback while image loads
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-3px);
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.10),
+      0 16px 32px rgba(0, 0, 0, 0.14);
+    text-decoration: none;
+    color: inherit;
+
+    .use-case-title {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #0d6efd;
+    outline-offset: 3px;
+  }
+}
+
+// Dark gradient overlay — bottom 60% fades from transparent to near-black
+.use-case-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 35%,
+    rgba(0, 0, 0, 0.45) 65%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
+// Text positioned at the bottom
+.use-case-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.use-case-meta {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.use-case-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+// ---------- CTA ----------
+.use-cases-cta {
+  padding: 4rem 0 5rem;
+  background: #0a1b1d;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+// ---------- Reduced motion ----------
+@media (prefers-reduced-motion: reduce) {
+  .use-case-card {
+    transition: none;
+    &:hover,
+    &:focus-visible {
+      transform: none;
+    }
+  }
+}

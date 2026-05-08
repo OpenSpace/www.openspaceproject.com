@@ -1,0 +1,60 @@
+---
+title: "2025 Annual User Meeting"
+pagetitle: "2025 Annual User Meeting — OpenSpace"
+description-meta: "Recap of the 2025 OpenSpace Annual User Meeting at the American Museum of Natural History — sessions, highlights, and community moments."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+::: {.use-case-detail-hero}
+::: {.use-case-detail-hero-media}
+![](images/meetings/2025-hero.jpg){.use-case-detail-img}
+
+::: {.use-case-detail-hero-overlay}
+:::
+:::
+
+::: {.use-case-detail-hero-content}
+::: {.os-container .narrow}
+
+[2025 Annual User Meeting]{.feature-eyebrow}
+
+# A look back {.feature-title-dark}
+
+[June 2025 · American Museum of Natural History, New York]{.use-case-detail-meta}
+
+:::
+:::
+:::
+
+::: {.use-case-detail-body}
+::: {.os-container .narrow}
+
+Held at the American Museum of Natural History in June 2025, the meeting brought together planetarium directors, museum educators, university researchers, and the OpenSpace development team for several days of demos, workshops, and conversation. Below are some highlights from the program.
+
+## Sessions {.feature-h2}
+
+The program included development team previews of upcoming features, hands-on workshops for dome operators integrating OpenSpace with their existing systems, lightning talks from users showcasing how they've built around the platform, and open discussion sessions on community priorities.
+
+A few session highlights:
+
+- New space-weather visualization workflows from NASA's Community Coordinated Modelling Center
+- Live demonstration of the latest mission visualization profiles
+- Hands-on dome integration troubleshooting with the development team
+- Lightning talks from users at six institutions on novel implementations
+
+## Community moments {.feature-h2}
+
+Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward — over coffee, in the AMNH planetarium, and during informal meetups in the evenings. New collaborations between institutions started here, and several feature requests in the current roadmap trace back to discussions during the meeting.
+
+## Coming up
+
+The [2026 Annual User Meeting](2026.qmd) is being planned for June 2026. Registration details will be announced in early 2026.
+
+[← Back to all meetings](../annual-user-meeting.qmd)
+
+:::
+:::

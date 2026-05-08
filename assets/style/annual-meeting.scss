@@ -1,0 +1,86 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Annual User Meeting page
+// Save at assets/style/annual-meeting.scss
+// Add to _quarto.yml theme list AFTER use-cases.scss
+// =============================================================
+
+// ---------- Intro section between hero and cards ----------
+.meetings-intro-section {
+  padding: 3rem 0 2rem;
+  background: white;
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+// ---------- Two-card grid (larger than use-cases grid) ----------
+.meetings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
+
+// ---------- Meeting card overrides ----------
+// Reuses .use-case-card from use-cases.scss but bumps height
+.meeting-card {
+  height: 380px;
+
+  @media (max-width: 720px) {
+    height: 320px;
+  }
+
+  .use-case-meta {
+    font-size: 0.8125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .use-case-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @media (max-width: 720px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// ---------- Status badge (top right of card) ----------
+.meeting-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.meeting-badge-upcoming {
+  background: rgba(13, 110, 253, 0.85);
+  color: white;
+}
+
+.meeting-badge-past {
+  background: rgba(255, 255, 255, 0.20);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}

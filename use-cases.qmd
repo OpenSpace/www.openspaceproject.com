@@ -1,0 +1,121 @@
+---
+title: "Use Cases"
+pagetitle: "Use Cases — OpenSpace"
+description-meta: "How museums, planetariums, universities, and research institutions use OpenSpace to engage audiences and advance science."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    theme:
+      - assets/style/hero.scss
+      - assets/style/feature.scss
+      - assets/style/use-cases.scss
+      - assets/style/navbar.scss
+---
+
+::: {.use-cases-hero}
+::: {.os-container .narrow}
+
+[Use Cases]{.feature-eyebrow}
+
+# Who's using OpenSpace {.feature-title-dark}
+
+[From museum tilt tables to NASA's Wow Room, from B612's planetary defense work to citizen pilots in planetariums.]{.use-cases-lede}
+
+:::
+:::
+
+::: {.use-cases-grid-section}
+::: {.os-container}
+
+::: {.use-cases-grid}
+
+<a class="use-case-card" href="use-cases/museum-life-science.qmd" style="background-image: url('images/use-cases/museum-life-science.jpg');" aria-label="Read about Museum of Life &amp; Science">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">Museum of Life &amp; Science · Durham, NC</p>
+    <h3 class="use-case-title">Real-time planet exploration at full tilt</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/b612-asteroid-institute.qmd" style="background-image: url('images/use-cases/b612-asteroid.jpg');" aria-label="Read about B612 Asteroid Institute">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">B612 Asteroid Institute</p>
+    <h3 class="use-case-title">OpenSpace defends the planet</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/lawrence-hall.qmd" style="background-image: url('images/use-cases/lawrence-hall.jpg');" aria-label="Read about The Lawrence Hall of Science">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">Lawrence Hall of Science · Berkeley, CA</p>
+    <h3 class="use-case-title">Visitors take control of the dome</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/houston-museum.qmd" style="background-image: url('images/use-cases/houston-museum.jpg');" aria-label="Read about Houston Museum of Natural Science">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">Houston Museum of Natural Science · Houston, TX</p>
+    <h3 class="use-case-title">Gaming with OpenSpace</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/towson-planetarium.qmd" style="background-image: url('images/use-cases/towson.jpg');" aria-label="Read about Towson University Planetarium">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">Towson University Planetarium · Baltimore County, MD</p>
+    <h3 class="use-case-title">From Title One to state policy</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/asu-marston.qmd" style="background-image: url('images/use-cases/asu-marston.jpg');" aria-label="Read about Marston Exploration Theater at ASU">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">Marston Exploration Theater, ASU · Tempe, AZ</p>
+    <h3 class="use-case-title">Passers-by fly high</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/goddard-wow-room.qmd" style="background-image: url('images/use-cases/goddard-wow.jpg');" aria-label="Read about NASA Goddard CCMC">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">NASA Goddard CCMC · Greenbelt, MD</p>
+    <h3 class="use-case-title">Step into the Wow Room</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/rachel-smith.qmd" style="background-image: url('images/use-cases/rachel-smith.jpg');" aria-label="Read about Dr. Rachel Smith">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">Dr. Rachel Smith · Raleigh, NC</p>
+    <h3 class="use-case-title">A powerful outreach tool</h3>
+  </div>
+</a>
+
+<a class="use-case-card" href="use-cases/nasa-hyperwall.qmd" style="background-image: url('images/use-cases/nasa-hyperwall.jpg');" aria-label="Read about NASA Hyperwall">
+  <div class="use-case-overlay"></div>
+  <div class="use-case-text">
+    <p class="use-case-meta">NASA Hyperwall · Conferences nationwide</p>
+    <h3 class="use-case-title">Talking peer-to-peer</h3>
+  </div>
+</a>
+
+:::
+
+:::
+:::
+
+::: {.use-cases-cta}
+::: {.os-container .narrow .text-center}
+
+## Add your story {.feature-h2}
+
+If your institution is using OpenSpace, we'd love to feature it here.
+
+[[Get in touch →](contact.qmd) &nbsp;·&nbsp; [Download OpenSpace →](<version-0213></version-0213>.qmd)]{.feature-footer-link}
+
+:::
+:::

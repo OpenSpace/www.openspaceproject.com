@@ -47,20 +47,32 @@ website:
             href: display-support.qmd
       - text: Community
         menu:
-          - text: Use Cases
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🏛️</span><span class="nav-rich-title">Use Cases</span></span><span class="nav-rich-desc">Examples of how institutions use OpenSpace.</span></span>
             href: use-cases.qmd
-          - text: Events
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📅</span><span class="nav-rich-title">Events</span></span><span class="nav-rich-desc">Upcoming events and conferences.</span></span>
             href: events.qmd
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📢</span><span class="nav-rich-title">Annual Meetings</span></span><span class="nav-rich-desc">Build your skills and connect with users at our annual meetings.</span></span>
+            href: annual-meetings.qmd
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">💬</span><span class="nav-rich-title">Slack</span></span><span class="nav-rich-desc">Ask questions and share ideas with the OpenSpace community.</span></span>
+            href: slack.qmd
       - text: Resources
         menu:
-          - text: Documentation
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📖</span><span class="nav-rich-title">Documentation</span></span><span class="nav-rich-desc">Getting Started guide, configuration, and API details.</span></span>
             href: https://docs.openspaceproject.com
-          - text: Tutorials
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🎓</span><span class="nav-rich-title">Tutorials</span></span><span class="nav-rich-desc">Step-by-step walkthroughs for new users.</span></span>
             href: tutorials.qmd
-          - text: Images
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">🖼️</span><span class="nav-rich-title">Images</span></span><span class="nav-rich-desc">Screenshots, renders, and visuals for download.</span></span>
             href: resources-images.qmd
 
-          - text: Server Status
+          - text: | 
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon">📡</span><span class="nav-rich-title">Server Status</span></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
             href: https://uptime.openspaceproject.com
       - text: User Meeting
         menu:

@@ -19,6 +19,10 @@ node("server-misc") {
   }
   stage("Quarto") {
     sh(
+      script: "pip install -r requirements.txt",
+      label: "PIP install"
+    )
+    sh(
       script: "quarto render",
       label: "Quarto rendering"
     )

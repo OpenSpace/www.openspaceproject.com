@@ -1,3 +1,4 @@
+def url = 'https://github.com/OpenSpace/www.openspaceproject.com';
 def branch = env.BRANCH_NAME
 
 def mainTarget = "www.openspaceproject.com"

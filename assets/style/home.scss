@@ -158,7 +158,7 @@ $navbar-hl:      #ffffff !default;
     font-size: 1.25rem;
     line-height: 1.5;
     margin: 0 0 2rem;
-    color: $os-text-muted;
+    color: rgba(255, 255, 255, 0.85);
   }
 }
 
@@ -392,11 +392,29 @@ $navbar-hl:      #ffffff !default;
     padding-left: 12rem;
   }
 
+  > .section-lede {
+    max-width: none;
+  }
+
   > .section-heading.text-center,
   > .section-lede.text-center {
     text-align: left !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  > .section-heading {
+    border-bottom: none;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 12rem;
+      width: calc(#{$os-container-max} - 24rem);
+      height: 1px;
+      background: rgba($primaryAccent, 0.15);
+    }
   }
 }
 
@@ -530,6 +548,16 @@ $navbar-hl:      #ffffff !default;
 // ---------- Quarto full-bleed overrides ----------
 // With page-layout: full, Quarto still adds column padding via .page-columns
 // These rules ensure our sections truly stretch edge-to-edge
+
+// Quarto adds padding-top to <main> and the empty title-block header
+// contributes layout space. Remove both completely on pages with a hero.
+main:has(.hero-section) {
+  padding-top: 0 !important;
+}
+
+main:has(.hero-section) #title-block-header {
+  display: none !important;
+}
 
 .venues-section,
 .trusted-section,

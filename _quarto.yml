@@ -34,6 +34,7 @@ format:
         - "assets/style/about-openspace.scss"
     include-after-body:
       - file: _template/hero.html
+      - file: _template/footer.html
     anchor-sections: false
     smooth-scroll: true
     # tabsets: true

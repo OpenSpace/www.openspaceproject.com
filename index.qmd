@@ -1,78 +1,224 @@
 ---
+title: ""
+pagetitle: "OpenSpace — Visualize the known universe"
+description-meta: "OpenSpace is open-source interactive astrovisualization software used by planetariums, museums, classrooms, and researchers worldwide."
 format:
   html:
-    include-after-body:
-      - text: <script src="assets/js/slider.js"></script>
-listing:
-  - id: carousel
-    contents: /assets/images/carousel/*
-    type: custom
-    template: _template/carousel.ejs.md
-    template-params:
-      delay: 5000
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    theme:
+      - styles/brand.scss
+      - styles/home.scss
 ---
 
-![](/assets/images/banner/mars.webp){.hero}
-
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-# Title
-Lorem ipsum {{< iconify copilot-24 >}} dolor sit amet, consectetur adipiscing elit. Duis aliquam fermentum purus, semper euismod elit aliquet id. Nunc pulvinar ac velit lacinia aliquam. Duis auctor lobortis tellus et euismod. Pellentesque semper neque in ultricies iaculis. Nunc in consectetur tortor. Pellentesque orci libero, sollicitudin eget auctor ac, elementum eget ipsum. Fusce vel nulla augue. Cras a lacus posuere, congue nibh ac, congue lectus. Sed pulvinar condimentum ligula. Aenean vestibulum ipsum at enim faucibus, nec interdum diam dictum. Ut nec eleifend libero. Vestibulum eget volutpat dolor, in blandit nulla. Proin est massa, elementum vitae urna in, tristique pharetra est. Vivamus dictum nisi non libero eleifend accumsan.
-
-<a href="https://www.openspaceproject.com/version-0213" class="btn-beam">Download OpenSpace</a>
-
-Email [Support](mailto:{{< var email.support >}})
-
-::: {#carousel}
-:::
-
-
-Etiam lacinia commodo nunc, quis sodales augue fermentum a. Maecenas bibendum gravida sapien vitae auctor. Duis maximus, augue sit amet facilisis sagittis, felis odio accumsan neque, non maximus erat ex ac ipsum. Suspendisse ut lectus sit amet libero tempus vestibulum nec non ante. Donec vel velit felis. Phasellus sagittis magna a nulla ornare pulvinar. In gravida consectetur risus, quis semper nisl lobortis vitae. Curabitur vitae condimentum turpis. Proin sed magna interdum, fermentum magna ut, blandit justo. Curabitur quis facilisis enim. Curabitur ultricies ligula sit amet dui viverra tristique. Praesent quis eleifend dolor.
-
-![](/assets/images/event-placeholder.webp)
-
-Pellentesque eget ultrices nunc. Aenean id porttitor orci. Aliquam vulputate euismod quam vitae volutpat. Maecenas sem mauris, fermentum vel nisi gravida, porta hendrerit mi. Morbi malesuada orci ante, ut condimentum turpis tempor vitae. Pellentesque volutpat magna id neque consectetur fermentum. Sed aliquet justo sed aliquam eleifend.
-
-Etiam vel est eget eros consectetur mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas ac quam ornare, placerat ligula non, tempus mauris. Nullam ac ornare nisi. Nulla sed nibh a quam ultricies ullamcorper. Sed est mauris, ullamcorper sed risus non, imperdiet volutpat tellus. Morbi blandit porttitor turpis, eu ullamcorper elit ultricies eu. Suspendisse et porta justo, vitae lacinia lorem. Aenean eu pretium lacus, in feugiat mi. Duis libero tellus, dignissim in est quis, tempus fringilla est. Donec placerat dapibus metus, at dapibus nisi porttitor vitae. Maecenas in eros eu metus dignissim sagittis nec quis sapien. Maecenas a leo tempor, malesuada erat a, aliquet lorem. Aliquam eget ante eu lacus sagittis gravida id vel risus. Pellentesque vel felis id massa vulputate euismod non eget sapien. Fusce ultrices id arcu quis laoreet.
-
-{{< video https://www.youtube.com/watch?v=lunXQsm0P0o >}}
-
-{{< video https://www.youtube.com/watch?v=s1UaX0phl6I width=75% >}}
-
-## level 2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam fermentum purus, semper euismod elit aliquet id. Nunc pulvinar ac velit lacinia aliquam. Duis auctor lobortis tellus et euismod. Pellentesque semper neque in ultricies iaculis. Nunc in consectetur tortor. Pellentesque orci libero, sollicitudin eget auctor ac, elementum eget ipsum. Fusce vel nulla augue. Cras a lacus posuere, congue nibh ac, congue lectus. Sed pulvinar condimentum ligula. Aenean vestibulum ipsum at enim faucibus, nec interdum diam dictum. Ut nec eleifend libero. Vestibulum eget volutpat dolor, in blandit nulla. Proin est massa, elementum vitae urna in, tristique pharetra est. Vivamus dictum nisi non libero eleifend accumsan.
-
-
-::: {width=50%}
 ```{=html}
-<iframe width="100%" height="640" src="https://hub.openspaceproject.com" title="Hub"></iframe>
+<section class="hero-section">
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline poster="images/hero-poster.jpg" class="hero-video">
+      <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
+      <source src="videos/home-zoomout.webm" type="video/webm">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <h1 class="hero-title">Explore a Universe of Data</h1>
+  <div class="hero-content">
+    <p class="hero-lede">Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
+    <div class="hero-actions">
+      <a href="version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
+      <a href="features.html" class="btn-ghost-os">Explore features</a>
+    </div>
+  </div>
+</section>
+
+<section class="trusted-section">
+  <div class="os-container">
+    <p class="trusted-label">Trusted by 100+ institutions worldwide</p>
+    <div class="logo-grid">
+      <img src="assets/images/logos/AMNH_Primary_WHITE.webp" alt="American Museum of Natural History" class="institution-logo">
+      <img src="assets/images/logos/Adler_white.webp" alt="Adler Planetarium" class="institution-logo">
+      <img src="assets/images/logos/DMNS_white.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
+      <img src="assets/images/logos/hmns_white.webp" alt="Houston Museum of Natural Science" class="institution-logo">
+      <img src="assets/images/logos/MoS_white.webp" alt="Museum of Science Boston" class="institution-logo">
+      <img src="assets/images/logos/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
+      <img src="assets/images/logos/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
+      <img src="assets/images/logos/MiSci_color.webp" alt="Michigan Science Center" class="institution-logo">
+      <img src="assets/images/logos/unsm_white.webp" alt="University of Nebraska State Museum" class="institution-logo">
+      <img src="assets/images/logos/ars_white.webp" alt="Ars Electronica" class="institution-logo">
+
+    </div>
+  </div>
+</section>
+
+<section class="venues-section">
+  <div class="os-container">
+    <h2 class="section-heading">Built for every venue</h2>
+    <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
+    <div class="venue-grid">
+
+      <a href="use-cases/planetarium.html" class="venue-card">
+        <img src="assets/images/venue-cards/Hayden_JWST.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
+        <div class="venue-body">
+          <h3>Planetarium domes</h3>
+          <p>Drive fixed and portable domes with multi-projector blending, fisheye, and MPCDI support. Built-in tools for warp, edge-blend, and calibration.</p>
+          <span class="venue-link">Learn more →</span>
+        </div>
+      </a>
+
+      <a href="use-cases/classroom.html" class="venue-card">
+        <img src="assets/images/venue-cards/AMNH_LWD students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
+        <div class="venue-body">
+          <h3>Classrooms</h3>
+          <p>Bring the solar system, deep space, and live mission data into any classroom. Free, cross-platform, with curated profiles and lesson-ready content.</p>
+          <span class="venue-link">Learn more →</span>
+        </div>
+      </a>
+
+      <a href="use-cases/museum.html" class="venue-card">
+        <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" class="venue-img">
+        <div class="venue-body">
+          <h3>Museum exhibits</h3>
+          <p>Power immersive permanent and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
+          <span class="venue-link">Learn more →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="content-carousel-section">
+  <div class="os-container">
+    <h2 class="section-heading">See what's possible</h2>
+    <p class="section-lede">Real visualizations from real data &mdash; planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
+  </div>
+
+  <div class="content-carousel" id="contentCarousel">
+    <div class="content-carousel-track" id="carouselTrack">
+
+      <div class="content-slide" style="background-image: url('assets/images/carousel/mars-surface.webp');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Globe Browsing</p>
+          <h3 class="content-slide-title">Mars surface from HiRISE imagery</h3>
+        </div>
+      </div>
+
+      <div class="content-slide" style="background-image: url('images/showcase/asteroid-trajectories.jpg');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Mission visualizations</p>
+          <h3 class="content-slide-title">Asteroid trajectories near Earth</h3>
+        </div>
+      </div>
+
+      <div class="content-slide" style="background-image: url('images/showcase/galaxy-cluster.jpg');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Digital Universe</p>
+          <h3 class="content-slide-title">Galaxy cluster catalog</h3>
+        </div>
+      </div>
+
+      <div class="content-slide" style="background-image: url('images/showcase/space-weather.jpg');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Space weather</p>
+          <h3 class="content-slide-title">Solar wind and magnetosphere</h3>
+        </div>
+      </div>
+
+      <div class="content-slide" style="background-image: url('images/showcase/jwst-orbit.jpg');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Mission visualizations</p>
+          <h3 class="content-slide-title">JWST at Lagrange Point 2</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <div class="carousel-dots" id="carouselDots"></div>
+    <div class="carousel-buttons">
+      <button class="carousel-btn" id="carouselPrev" aria-label="Previous slide">&#8249;</button>
+      <button class="carousel-btn" id="carouselNext" aria-label="Next slide">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const track = document.getElementById('carouselTrack');
+  const dotsContainer = document.getElementById('carouselDots');
+  const prevBtn = document.getElementById('carouselPrev');
+  const nextBtn = document.getElementById('carouselNext');
+  if (!track) return;
+
+  const slides = track.querySelectorAll('.content-slide');
+  const total = slides.length;
+  let current = 0;
+
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  }
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, total - 1));
+    const slide = slides[0];
+    const slideWidth = slide.offsetWidth + 14;
+    track.style.transform = 'translateX(-' + (current * slideWidth) + 'px)';
+    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+  goTo(0);
+})();
+</script>
+
+<section class="funders-section">
+  <h2 class="section-heading text-center">Funded by</h2>
+  <p class="section-lede text-center">OpenSpace is non-commercial software supported by a coalition of public research funders.</p>
+
+  <div class="funder-marquee">
+    <div class="funder-track">
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/NASA_Grantee_color_with_outline.webp" alt="NASA Grantee" class="funder-logo"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/wallenberg_white.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc_white.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
+      <a href="https://www.esero.se/in-english/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/esero_white.webp" alt="ESERO Sweden" class="funder-logo"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsrådet_white.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/RS_white.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
+
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/NASA_Grantee_color_with_outline.webp" alt="NASA Grantee" class="funder-logo"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/wallenberg_white.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc_white.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
+      <a href="https://www.esero.se/in-english/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/esero_white.webp" alt="ESERO Sweden" class="funder-logo"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsrådet_white.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/RS_white.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
+    </div>
+  </div>
+
+  <p class="funder-disclaimer">Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.</p>
+</section>
+
+<section class="cta-section">
+  <div class="os-container text-center">
+    <h2 class="section-heading">Start exploring</h2>
+    <p class="section-lede">Free. Open source. Cross-platform.</p>
+    <div class="hero-actions">
+      <a href="version-0213.qmd" class="btn-primary-os btn-primary-dark">Download</a>
+      <a href="https://github.com/OpenSpace/OpenSpace" class="btn-ghost-os btn-ghost-dark">View on GitHub</a>
+    </div>
+  </div>
+</section>
 ```
-:::
-
-Etiam lacinia commodo nunc, quis sodales augue fermentum a. Maecenas bibendum gravida sapien vitae auctor. Duis maximus, augue sit amet facilisis sagittis, felis odio accumsan neque, non maximus erat ex ac ipsum. Suspendisse ut lectus sit amet libero tempus vestibulum nec non ante. Donec vel velit felis. Phasellus sagittis magna a nulla ornare pulvinar. In gravida consectetur risus, quis semper nisl lobortis vitae. Curabitur vitae condimentum turpis. Proin sed magna interdum, fermentum magna ut, blandit justo. Curabitur quis facilisis enim. Curabitur ultricies ligula sit amet dui viverra tristique. Praesent quis eleifend dolor.
-
-Pellentesque eget ultrices nunc. Aenean id porttitor orci. Aliquam vulputate euismod quam vitae volutpat. Maecenas sem mauris, fermentum vel nisi gravida, porta hendrerit mi. Morbi malesuada orci ante, ut condimentum turpis tempor vitae. Pellentesque volutpat magna id neque consectetur fermentum. Sed aliquet justo sed aliquam eleifend.
-
-Etiam vel est eget eros consectetur mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas ac quam ornare, placerat ligula non, tempus mauris. Nullam ac ornare nisi. Nulla sed nibh a quam ultricies ullamcorper. Sed est mauris, ullamcorper sed risus non, imperdiet volutpat tellus. Morbi blandit porttitor turpis, eu ullamcorper elit ultricies eu. Suspendisse et porta justo, vitae lacinia lorem. Aenean eu pretium lacus, in feugiat mi. Duis libero tellus, dignissim in est quis, tempus fringilla est. Donec placerat dapibus metus, at dapibus nisi porttitor vitae. Maecenas in eros eu metus dignissim sagittis nec quis sapien. Maecenas a leo tempor, malesuada erat a, aliquet lorem. Aliquam eget ante eu lacus sagittis gravida id vel risus. Pellentesque vel felis id massa vulputate euismod non eget sapien. Fusce ultrices id arcu quis laoreet.
-
-
-### LEvel 3
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam fermentum purus, semper euismod elit aliquet id. Nunc pulvinar ac velit lacinia aliquam. Duis auctor lobortis tellus et euismod. Pellentesque semper neque in ultricies iaculis. Nunc in consectetur tortor. Pellentesque orci libero, sollicitudin eget auctor ac, elementum eget ipsum. Fusce vel nulla augue. Cras a lacus posuere, congue nibh ac, congue lectus. Sed pulvinar condimentum ligula. Aenean vestibulum ipsum at enim faucibus, nec interdum diam dictum. Ut nec eleifend libero. Vestibulum eget volutpat dolor, in blandit nulla. Proin est massa, elementum vitae urna in, tristique pharetra est. Vivamus dictum nisi non libero eleifend accumsan.
-
-Etiam lacinia commodo nunc, quis sodales augue fermentum a. Maecenas bibendum gravida sapien vitae auctor. Duis maximus, augue sit amet facilisis sagittis, felis odio accumsan neque, non maximus erat ex ac ipsum. Suspendisse ut lectus sit amet libero tempus vestibulum nec non ante. Donec vel velit felis. Phasellus sagittis magna a nulla ornare pulvinar. In gravida consectetur risus, quis semper nisl lobortis vitae. Curabitur vitae condimentum turpis. Proin sed magna interdum, fermentum magna ut, blandit justo. Curabitur quis facilisis enim. Curabitur ultricies ligula sit amet dui viverra tristique. Praesent quis eleifend dolor.
-
-Pellentesque eget ultrices nunc. Aenean id porttitor orci. Aliquam vulputate euismod quam vitae volutpat. Maecenas sem mauris, fermentum vel nisi gravida, porta hendrerit mi. Morbi malesuada orci ante, ut condimentum turpis tempor vitae. Pellentesque volutpat magna id neque consectetur fermentum. Sed aliquet justo sed aliquam eleifend.
-
-Etiam vel est eget eros consectetur mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas ac quam ornare, placerat ligula non, tempus mauris. Nullam ac ornare nisi. Nulla sed nibh a quam ultricies ullamcorper. Sed est mauris, ullamcorper sed risus non, imperdiet volutpat tellus. Morbi blandit porttitor turpis, eu ullamcorper elit ultricies eu. Suspendisse et porta justo, vitae lacinia lorem. Aenean eu pretium lacus, in feugiat mi. Duis libero tellus, dignissim in est quis, tempus fringilla est. Donec placerat dapibus metus, at dapibus nisi porttitor vitae. Maecenas in eros eu metus dignissim sagittis nec quis sapien. Maecenas a leo tempor, malesuada erat a, aliquet lorem. Aliquam eget ante eu lacus sagittis gravida id vel risus. Pellentesque vel felis id massa vulputate euismod non eget sapien. Fusce ultrices id arcu quis laoreet.
-
-
-
-
-
-
-OpenSpace is funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.
-
-OpenSpace is also funded by the Knut & Alice Wallenberg Foundation, the Swedish Research Council (Vetenskapsrådet), and the Swedish e-Science Research Centre.

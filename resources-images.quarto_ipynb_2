@@ -1,0 +1,48 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "View image description and credit by clicking or tapping on the image."
+      ],
+      "id": "3f100d78"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "from IPython.display import display, Markdown\n",
+        "from os import listdir\n",
+        "\n",
+        "# Settings\n",
+        "base_path = \"resources/images\"\n",
+        "image_width = 600\n",
+        "image_height = 400\n",
+        "\n",
+        "# main():\n",
+        "all_images = listdir(base_path)\n",
+        "all_images.sort()\n",
+        "\n",
+        "print(\"::: {layout-ncol=4}\\n\")\n",
+        "for image in all_images:\n",
+        "  # display(Markdown(f\"![]({base_path}/{image}){{width={image_width} height={image_height} style=\\\"object-fit: cover;\\\"}}\\n\\n\"))\n",
+        "  display(Markdown(f\"![]({base_path}/{image})\\n\\n\"))\n",
+        "print(\":::\")"
+      ],
+      "id": "ebedf3f6",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/Megan/Library/Python/3.9/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

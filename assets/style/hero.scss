@@ -2,6 +2,19 @@
 
 /* Hero Image Background for Title Block Header */
 /* Only apply styles when a hero image is present */
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 body:has(img.hero) {
   #title-block-header.quarto-title-block {
     position: relative;
@@ -73,4 +86,22 @@ body:has(img.hero) {
 /* Hide the hero image element itself */
 img.hero {
   display: none !important;
+}
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.os-container {
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }

@@ -28,6 +28,10 @@ format:
         - "assets/style/navbar.scss"
         - "assets/style/use-cases.scss"
         - "assets/style/annual-meeting.scss"
+        - "assets/style/content-carousel.scss"
+        - "assets/style/home.scss"
+        - "assets/style/content-carousel.scss"
+        - "assets/style/about-openspace.scss"
     include-after-body:
       - file: _template/hero.html
     anchor-sections: false

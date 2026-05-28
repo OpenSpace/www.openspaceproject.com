@@ -115,7 +115,7 @@ format:
 
 If your institution is using OpenSpace, we'd love to feature it here.
 
-[[Get in touch →](contact.qmd) &nbsp;·&nbsp; [Download OpenSpace →](<version-0213></version-0213>.qmd)]{.feature-footer-link}
+[[Get in touch →](contact.qmd) &nbsp;·&nbsp; [Download OpenSpace →](version-0213.qmd)]{.feature-footer-link}
 
 :::
 :::

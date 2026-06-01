@@ -1,0 +1,209 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Impact page — startup map, annual reports, CTA
+// =============================================================
+
+// ---------- Page hero ----------
+.impact-hero {
+  background: $background;
+  color: white;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+
+  .feature-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba($satelliteGray, 0.7);
+    margin: 0 0 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+    color: $baseWhite;
+  }
+
+  .impact-hero-lede {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: rgba($satelliteGray, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// ---------- Section wrappers ----------
+.impact-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+  padding-left:  clamp(1.5rem, 10vw, 12rem);
+  padding-right: clamp(1.5rem, 10vw, 12rem);
+}
+
+.impact-section-alt {
+  background: #0d1014;
+}
+
+.impact-section-heading {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $primaryAccent;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.impact-section-lede {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: rgba($satelliteGray, 0.8);
+  max-width: 640px;
+  margin: 0 0 1.75rem;
+}
+
+// ---------- Startup map ----------
+#impact-startup-map {
+  height: 460px;
+  border-radius: 12px;
+  border: 1px solid rgba($primaryAccent, 0.2);
+  background: #111;
+}
+
+.impact-map-footer {
+  margin-top: 0.85rem;
+  font-size: 0.8125rem;
+  color: rgba($satelliteGray, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  a {
+    color: $primaryAccent;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.04em;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+// ---------- Annual reports ----------
+.impact-reports-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.impact-report-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #0d1014;
+  border: 1px solid rgba($primaryAccent, 0.2);
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $baseWhite;
+  text-decoration: none;
+  transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+  .chip-icon {
+    font-size: 0.75rem;
+    color: rgba($primaryAccent, 0.6);
+    transition: color 0.18s ease;
+  }
+
+  &:hover {
+    border-color: rgba($primaryAccent, 0.55);
+    color: $primaryAccent;
+    transform: translateY(-2px);
+
+    .chip-icon { color: $primaryAccent; }
+  }
+}
+
+.impact-reports-note {
+  margin-top: 1.25rem;
+  font-size: 0.8125rem;
+  color: rgba($satelliteGray, 0.5);
+  line-height: 1.6;
+
+  a {
+    color: rgba($primaryAccent, 0.7);
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+// ---------- CTA ----------
+.impact-cta-card {
+  background: #0d1014;
+  border: 1px solid rgba($primaryAccent, 0.2);
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 680px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, $primaryAccent, transparent);
+    opacity: 0.5;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    color: $baseWhite;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: rgba($satelliteGray, 0.8);
+    max-width: 480px;
+    margin: 0 auto 2rem;
+  }
+}
+
+.impact-cta-btn {
+  display: inline-block;
+  background: $primaryAccent;
+  color: $background;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  letter-spacing: 0.01em;
+
+  &:hover {
+    opacity: 0.88;
+    transform: translateY(-2px);
+  }
+}

@@ -6,7 +6,7 @@
 
 // ---------- Page hero ----------
 .research-hero {
-  background: #0a0a0a;
+  background: $background;
   color: white;
   padding: 5rem 0 4rem;
   width: 100vw;
@@ -18,7 +18,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba($satelliteGray, 0.7);
     margin: 0 0 1rem;
   }
 
@@ -28,14 +28,14 @@
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin: 0 0 1.25rem;
-    color: white;
+    color: $baseWhite;
     font-family: 'IBM Plex Sans', sans-serif;
   }
 
   .research-hero-lede {
     font-size: 1.0625rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba($satelliteGray, 0.9);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -67,11 +67,11 @@
 .liu-program-desc {
   font-size: 0.9375rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba($satelliteGray, 0.9);
   margin: 1.25rem 0 2rem;
 
   strong {
-    color: $lightAccentYellow;
+    color: $softAccentYellow;
   }
 }
 
@@ -85,9 +85,9 @@
     font-size: 0.7rem;
     font-family: 'IBM Plex Mono', monospace;
     letter-spacing: 0.06em;
-    color: rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba($satelliteGray, 0.8);
+    background: rgba($primaryAccent, 0.06);
+    border: 1px solid rgba($primaryAccent, 0.1);
     padding: 0.3rem 0.75rem;
     border-radius: 20px;
   }
@@ -132,7 +132,7 @@
   transition: background 0.18s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba($primaryAccent, 0.04);
   }
 }
 
@@ -150,13 +150,13 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: top center;
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba($satelliteGray, 0.15);
   flex-shrink: 0;
 }
 
 .thesis-photo-placeholder {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1.5px dashed rgba(255, 255, 255, 0.1);
+  background: rgba($primaryAccent, 0.06);
+  border: 1.5px dashed rgba($primaryAccent, 0.1);
 }
 
 // Content column
@@ -167,12 +167,12 @@
 .thesis-title {
   font-size: 0.9rem;
   font-weight: 500;
-  color: white;
+  color: $baseWhite;
   line-height: 1.4;
   margin-bottom: 0.3rem;
 
   a {
-    color: white;
+    color: $baseWhite;
     text-decoration: none;
 
     &:hover {
@@ -191,8 +191,8 @@
   font-size: 0.6rem;
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.1em;
-  color: $lightAccentYellow;
-  border: 1px solid rgba($lightAccentYellow, 0.4);
+  color: $softAccentYellow;
+  border: 1px solid rgba($softAccentYellow, 0.4);
   padding: 0.1rem 0.45rem;
   border-radius: 3px;
   margin-left: 0.5rem;
@@ -203,7 +203,7 @@
 
 .thesis-author {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba($satelliteGray, 0.65);
   line-height: 1.4;
   margin-bottom: 0.35rem;
 }
@@ -264,7 +264,7 @@
   transition: background 0.18s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba($primaryAccent, 0.04);
   }
 }
 
@@ -275,16 +275,16 @@
 .paper-title {
   font-size: 0.9rem;
   font-weight: 500;
-  color: white;
+  color: $baseWhite;
   line-height: 1.4;
   margin-bottom: 0.3rem;
 
   a {
-    color: white;
+    color: $baseWhite;
     text-decoration: none;
 
     &:hover {
-      color: $lightAccentYellow;
+      color: $softAccentYellow;
     }
   }
 
@@ -295,7 +295,7 @@
 
 .paper-author {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba($satelliteGray, 0.65);
   line-height: 1.5;
   margin-bottom: 0.35rem;
 }
@@ -305,9 +305,9 @@
   font-size: 0.62rem;
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.08em;
-  color: rgba($lightAccentYellow, 0.7);
-  background: rgba($lightAccentYellow, 0.06);
-  border: 1px solid rgba($lightAccentYellow, 0.15);
+  color: rgba($softAccentYellow, 0.85);
+  background: rgba($softAccentYellow, 0.07);
+  border: 1px solid rgba($softAccentYellow, 0.2);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }

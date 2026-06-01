@@ -35,6 +35,7 @@ format:
         - "assets/style/team.scss"
         - "assets/style/research.scss"
         - "assets/style/partners.scss"
+        - "assets/style/impact.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html

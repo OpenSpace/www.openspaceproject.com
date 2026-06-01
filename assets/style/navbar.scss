@@ -110,13 +110,13 @@
 
   &:hover,
   &:focus {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba($primaryAccent, 0.08);
 
     .nav-rich-icon {
-      background: #d0f884;
+      background: $vividAccentGreen;
 
       iconify-icon {
-        color: #000000;
+        color: $background;
       }
     }
   }
@@ -183,13 +183,13 @@
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background: rgba(184, 184, 184, 0.229);
+  background: rgba($satelliteGray, 0.25);
   flex-shrink: 0;
   transition: background 0.15s ease;
 
   iconify-icon {
     font-size: 1.1rem;
-    color: #d0f884;
+    color: $vividAccentGreen;
     transition: color 0.15s ease;
   }
 }
@@ -197,14 +197,14 @@
 .nav-rich-title {
   font-weight: 600;
   font-size: 0.9375rem;
-  color: #ffffff;
+  color: $baseWhite;
   line-height: 1.3;
 }
 
 .nav-rich-desc {
   display: block;
   font-size: 0.8125rem;
-  color: #b8c8ca;
+  color: $satelliteGray;
   line-height: 1.45;
   font-weight: 400;
 }
@@ -212,9 +212,9 @@
 // ---------- Download CTA button ----------
 .navbar .nav-cta {
   display: inline-block;
-  background: #000000;
-  color: #ffffff;
-  border: 1px solid #d0f884;
+  background: $background;
+  color: $baseWhite;
+  border: 1px solid $vividAccentGreen;
   padding: 0.45rem 1.1rem;
   border-radius: 6px;
   font-weight: 500;
@@ -223,8 +223,8 @@
 
 .navbar .nav-link:hover .nav-cta,
 .navbar .nav-link:focus .nav-cta {
-  background: #d0f884;
-  color: #000000;
+  background: $vividAccentGreen;
+  color: $background;
 }
 
 // ---------- Mobile (under 992px) ----------

@@ -75,12 +75,12 @@
 }
 
 .meeting-badge-upcoming {
-  background: rgba(13, 110, 253, 0.85);
-  color: white;
+  background: rgba($primaryAccent, 0.85);
+  color: $background;
 }
 
 .meeting-badge-past {
-  background: rgba(255, 255, 255, 0.20);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba($greenColor, 0.15);
+  color: $baseWhite;
+  border: 1px solid rgba($greenColor, 0.4);
 }

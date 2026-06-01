@@ -26,8 +26,8 @@ website:
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:handshake"></iconify-icon></span><span class="nav-rich-title">Partners</span></span><span class="nav-rich-desc">The organizations collaborating with the OpenSpace project.</span></span>
             href: partners.qmd
           - text: |
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:bar-chart"></iconify-icon></span><span class="nav-rich-title">Annual Reports</span></span><span class="nav-rich-desc">Year-by-year project progress and impact.</span></span>
-            href: reports.qmd
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:bar-chart-2"></iconify-icon></span><span class="nav-rich-title">Impact</span></span><span class="nav-rich-desc">Global reach, startup data, and NASA annual reports.</span></span>
+            href: impact.qmd
           - text: |
               <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Research</span></span><span class="nav-rich-desc">Master's theses, dissertations, and publications.</span></span>
             href: research.qmd

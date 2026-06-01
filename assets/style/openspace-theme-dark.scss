@@ -3,8 +3,8 @@
 /*-- scss:defaults --*/
 $body-bg: $background;
 $body-color: $textColor;
-$link-color: $lightAccentYellow;
-$link-hover-color: lighten($lightAccentYellow, 10%);
+$link-color: $softAccentYellow;
+$link-hover-color: lighten($softAccentYellow, 8%);
 $headings-color: $primaryAccent;
 $font-family-sans-serif: 'IBM Plex Sans', sans-serif;
 $font-family-monospace: 'IBM Plex Mono', monospace;
@@ -16,18 +16,18 @@ $navbar-fg: $satelliteGray;
 $navbar-hl: $primaryAccent;
 $footer-bg: darken($background, 2%);
 $footer-fg: $satelliteGray;
-$dropdown-link-hover-color: $lightAccentYellow;
+$dropdown-link-hover-color: $softAccentYellow;
 $dropdown-link-hover-bg: $background;
 $dropdown-link-active-bg: $background;
 
 
 /*-- scss:rules --*/
 h3, h4 {
-  color: $lightAccentYellow;
+  color: $softAccentYellow;
 }
 
 strong {
-  color: $lightAccentYellow;
+  color: $softAccentYellow;
   font-weight: 600;
 }
 
@@ -72,7 +72,7 @@ hr {
     font-size: 0.9rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: $lightAccentYellow;
+    color: $softAccentYellow;
     margin-bottom: 1.2rem;
   }
 }
@@ -247,7 +247,7 @@ hr {
     display: flex;
     align-items: center;
 
-    &:hover { color: $lightAccentYellow; }
+    &:hover { color: $softAccentYellow; }
   }
 }
 

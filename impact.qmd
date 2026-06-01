@@ -1,0 +1,128 @@
+---
+pagetitle: "Impact — OpenSpace"
+description-meta: "OpenSpace's global reach — where it runs, NASA annual reports, and how to get involved."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+---
+
+```{=html}
+<section class="impact-hero">
+  <div>
+    <p class="feature-eyebrow">Impact</p>
+    <h1>OpenSpace around the world</h1>
+    <p class="impact-hero-lede">From planetarium domes to research labs, OpenSpace is running on every continent. Here's a look at our global footprint, annual progress, and how you can be part of the story.</p>
+  </div>
+</section>
+
+<!-- ── Startup map ─────────────────────────────────────── -->
+<div class="impact-section">
+  <h2 class="impact-section-heading">Where OpenSpace runs</h2>
+  <p class="impact-section-lede">Every point on this map represents a unique location where OpenSpace has been started. Startup data is collected anonymously and powers our NASA reporting.</p>
+
+  <div id="impact-startup-map"></div>
+
+  <div class="impact-map-footer">
+    <span>Each marker = a unique startup location &nbsp;·&nbsp; Circle size scales with launch count</span>
+    <a href="https://status.openspaceproject.com/" target="_blank" rel="noopener">View full usage stats &rarr;</a>
+  </div>
+</div>
+
+<!-- ── Annual reports ──────────────────────────────────── -->
+<div class="impact-section impact-section-alt">
+  <h2 class="impact-section-heading">Annual reports</h2>
+  <p class="impact-section-lede">OpenSpace is funded in part by NASA's Science Activation Program under award No. NNX16AB93A. We publish a report each year documenting project progress, reach, and outcomes.</p>
+
+  <div class="impact-reports-grid">
+    <a class="impact-report-chip" href="/resources/reports/2025_NNX16AB93A_Y10_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2025
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2024_NNX16AB93A_Y9_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2024
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2023_NNX16AB93A_Y8_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2023
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2022_NNX16AB93A_Y7_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2022
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2021_NNX16AB93A_Y6_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2021
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2020_NNX16AB93A_Y5_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2020
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2019_NNX16AB93A_Y4_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2019
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2018_NNX16AB93A_Y3_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2018
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2017_NNX16AB93A_Y2_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2017
+    </a>
+    <a class="impact-report-chip" href="/resources/reports/2016_NNX16AB93A_Y1_Annual_Report.pdf" target="_blank" rel="noopener">
+      <span class="chip-icon">&#8595;</span> 2016
+    </a>
+  </div>
+
+  <p class="impact-reports-note">
+    Annual reports are submitted to NASA's Science Activation Program. For questions about our reporting, contact us at <a href="mailto:support@openspaceproject.com">support@openspaceproject.com</a>.
+  </p>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────── -->
+<div class="impact-section">
+  <div class="impact-cta-card">
+    <h2>Using OpenSpace? Tell us about it.</h2>
+    <p>We track how OpenSpace is being used around the world for NASA reporting and community building. If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you — and may feature you in our annual reports and on this site.</p>
+    <a class="impact-cta-btn" href="mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution">Get in touch &rarr;</a>
+  </div>
+</div>
+
+<!-- ── Leaflet + map init ──────────────────────────────── -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+function initImpactMap() {
+  var mapEl = document.getElementById('impact-startup-map');
+  if (!mapEl || typeof L === 'undefined' || typeof data === 'undefined') return;
+
+  var leafletMap = L.map('impact-startup-map', {
+    center: [20, 0],
+    zoom: 2,
+    scrollWheelZoom: false,
+    zoomControl: true
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(leafletMap);
+
+  var accent = '#a2e7fb';
+
+  (data.places || []).forEach(function (place) {
+    var r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
+    L.circleMarker([place.lat, place.lng], {
+      radius: r,
+      color: accent,
+      fillColor: accent,
+      fillOpacity: 0.45,
+      weight: 1,
+      opacity: 0.75
+    }).addTo(leafletMap).bindPopup(
+      '<strong style="color:#000">' + place.total + '</strong> launch' + (place.total !== 1 ? 'es' : '')
+    );
+  });
+
+  setTimeout(function () { leafletMap.invalidateSize(); }, 200);
+}
+</script>
+<script src="https://status.openspaceproject.com/data.js" async onload="initImpactMap()"></script>
+```

@@ -2,7 +2,7 @@
 
 .content-carousel-section {
   padding: 5rem 0 6rem;
-  background: #0a0a0a;
+  background: $background;
 }
 
 .content-carousel-section .os-container {
@@ -16,13 +16,13 @@
   font-weight: 600;
   margin: 0 0 0.5rem;
   letter-spacing: -0.01em;
-  color: white;
+  color: $baseWhite;
   padding-left: 0;
 }
 
 .content-carousel-section .section-lede {
   font-size: 1.125rem;
-  color: #6c757d;
+  color: $satelliteGray;
   margin: 0 0 2.5rem;
   max-width: 720px;
   line-height: 1.6;
@@ -110,7 +110,7 @@
 .carousel-dot {
   width: 8px;
   height: 4px;
-  background: #d0d0d0;
+  background: rgba($satelliteGray, 0.4);
   border-radius: 2px;
   border: none;
   padding: 0;
@@ -120,10 +120,10 @@
 
 .carousel-dot.active {
   width: 24px;
-  background: #d0f884;
+  background: $vividAccentGreen;
 }
 
-.carousel-dot:hover:not(.active) { background: #999; }
+.carousel-dot:hover:not(.active) { background: rgba($satelliteGray, 0.7); }
 
 .carousel-buttons { display: flex; gap: 0.625rem; }
 
@@ -131,9 +131,9 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: white;
-  border: 1px solid #d0d0d0;
-  color: #6c757d;
+  background: rgba($baseWhite, 0.9);
+  border: 1px solid rgba($satelliteGray, 0.35);
+  color: $satelliteGray;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
@@ -143,13 +143,13 @@
 }
 
 .carousel-btn:hover {
-  background: #d0f884;
-  color: #010101;
-  border-color: #d0f884;
+  background: $vividAccentGreen;
+  color: $background;
+  border-color: $vividAccentGreen;
 }
 
 .carousel-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-.carousel-btn:disabled:hover { background: white; color: #6c757d; border-color: #d0d0d0; }
+.carousel-btn:disabled:hover { background: rgba($baseWhite, 0.9); color: $satelliteGray; border-color: rgba($satelliteGray, 0.35); }
 
 @media (prefers-reduced-motion: reduce) {
   .content-carousel-track { transition: none; }

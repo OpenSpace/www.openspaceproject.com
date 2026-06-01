@@ -295,16 +295,33 @@
   }
 }
 
-// ---------- Side padding — fluid, homepage-inspired ----------
-// Override the global .os-container padding (0 12rem) with a clamp
-// so about-page sections have breathing room at all viewport widths.
-.about-hero .os-container,
-.about-body-section .os-container,
+// ---------- Full-bleed sections + consistent side padding ----------
+// Match the research/team/partners page architecture: sections break out to
+// full viewport width, then the inner container applies the same clamp padding.
+.about-body-section,
+.timeline-section,
+.institutions-section,
+.about-cta {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+// Timeline, institutions, and CTA: remove max-width, apply padding directly.
+// Inner components (.os-timeline, .institution-grid) keep their own max-widths.
 .timeline-section .os-container,
 .institutions-section .os-container,
 .about-cta .os-container {
-  padding-left:  clamp(1.5rem, 8vw, 10rem);
-  padding-right: clamp(1.5rem, 8vw, 10rem);
+  max-width: none;
+  padding-left:  clamp(1.5rem, 10vw, 12rem);
+  padding-right: clamp(1.5rem, 10vw, 12rem);
+}
+
+// Prose section: center the content block within the full-bleed section.
+.about-body-section .os-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left:  clamp(1.5rem, 4vw, 3rem);
+  padding-right: clamp(1.5rem, 4vw, 3rem);
 }
 
 // ---------- Responsive timeline ----------

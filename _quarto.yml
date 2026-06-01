@@ -34,6 +34,7 @@ format:
         - "assets/style/about-openspace.scss"
         - "assets/style/team.scss"
         - "assets/style/research.scss"
+        - "assets/style/partners.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html

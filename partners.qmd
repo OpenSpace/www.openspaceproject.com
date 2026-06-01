@@ -1,22 +1,117 @@
-# University Partners
-[Linköping University](https://liu.se/?l=en) is one of the world's leading universities in the field of scientific visualization. The desire for an interactive tool to explore and communicate scientific data initiated the development of the OpenSpace project in 2014. Since then, student internships at NASA Goddard Space Flight Center and AMNH have contributed to the development of the project. Since 2002, LiU has conducted a successful series of master's thesis internships with AMNH to visualize its Digital Universe 3D Atlas, a dataset originally supported by NASA during the rebuild of the museum's Hayden Planetarium in 2000 that spawned commercial software Uniview and its parent company SCISS.
+---
+pagetitle: "Partners — OpenSpace"
+description-meta: "The institutions and universities that make the OpenSpace project possible."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
 
-The [Visualization and Data Analysis (ViDA) Lab at New York University (NYU) Tandon School of Engineering](https://engineering.nyu.edu/research-innovation/centers/visualization-imaging-and-data-analysis-center-vida) has a strong tradition in the development of open source tools. One of the best known examples is the open source data exploration system VisTrails, used in NASA labs and partially funded by NASA. Another major project is the Ultrascale Visualization Climate Data Analysis Tools (UV-CDAT), a novel climate data analysis system that recently won the Federal Laboratory Consortium Interagency Partnership Award. NASA is one of the partnering institutions in the development of UV-CDAT.
+```{=html}
+<section class="partners-hero">
+  <div>
+    <p class="feature-eyebrow">Partners</p>
+    <h1>Built with the world's best institutions</h1>
+    <p class="partners-hero-lede">OpenSpace is an international collaboration between universities, science museums, and planetariums united by a shared mission to make space exploration accessible to everyone.</p>
+  </div>
+</section>
 
-The [Scientific Computing and Imaging (SCI) Institute at the University of Utah](The Scientific Computing and Imaging (SCI) Institute at the University of Utah) has established itself as an internationally recognized leader in visualization, scientific computing, and image analysis applied to a broad range of application domains. A particular hallmark of SCI Institute research is the development of innovative and robust software packages, including the SCIRun scientific problem solving environment, Seg3D, ImageVis3D, FluoRender, ViSUS, and map3d. All these packages are broadly available to the scientific community under open source licensing and supported by web pages, documentation, and users groups. Software at the SCI Institute is developed in close collaboration with users to satisfy real needs within research communities.
+<div class="partners-section">
+  <h2 class="partners-section-heading">University Partners</h2>
+  <div class="partner-grid">
 
-# Informal Science Institution Partners
-The [American Museum of Natural History](https://www.amnh.org/) (AMNH) is one of the world's largest natural history museums. The museum has a full-time scientific staff of 200 active researchers, collections of more than 33 million specimens of plants, animals, minerals, and cultural artifacts, and digital collections that include astrophysical data, molecular and genomic sequences, and satellite imagery. AMNH has a distinguished history as a leader in science visualization technology designed to convey sophisticated science concepts to a general audience. The museum also has a long record of successful partnerships with NASA that enhance science education for local and international audiences.
+    <a class="partner-card" href="https://liu.se/?l=en" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <span class="partner-logo-text">Linköping University</span>
+      </div>
+      <p class="partner-blurb">A world leader in scientific visualization, LiU initiated the OpenSpace project in 2014 and has maintained a long-running series of collaborative internships with NASA GSFC and AMNH.</p>
+    </a>
 
-[Adler Planetarium](https://www.adlerplanetarium.org/) is the United States' first planetarium and a premiere resource for inspiring the next generation of space explorers. From its home in Chicago, the Adler connects people, communities, and institutions to one another through the wonder of space science through exhibitions and programming, theaters and citizen science projects.
+    <a class="partner-card" href="https://engineering.nyu.edu/research-innovation/centers/visualization-imaging-and-data-analysis-center-vida" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <span class="partner-logo-text">NYU Tandon ViDA Lab</span>
+      </div>
+      <p class="partner-blurb">The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of open-source tools and NASA-partnered research to the OpenSpace collaboration.</p>
+    </a>
 
-[California Academy of Sciences](https://www.calacademy.org/) is an aquarium, planetarium, rainforest, and natural history museum in the heart of San Francisco's Golden Gate Park — and a powerful voice for biodiversity research and exploration, environmental education, and sustainability across the globe. The Academy's Morrison Planetarium showcases cutting-edge scientific data, resulting in stunning visualizations of the latest findings, discoveries, and theories about our Universe in the planetarium's 75-foot-diameter screen.
+    <a class="partner-card" href="https://www.sci.utah.edu/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/SCI-logo-transparent-white.webp" alt="SCI Institute">
+      </div>
+      <p class="partner-name">SCI Institute — University of Utah</p>
+      <p class="partner-blurb">An internationally recognized leader in visualization and scientific computing, SCI develops robust open-source software packages deployed broadly across scientific research communities.</p>
+    </a>
 
-[Denver Museum of Nature & Science](https://www.dmns.org/) is the Rocky Mountain region's leading resource for informal science education. A variety of exhibitions, programs, and activities help museum visitors experience the natural wonders of Colorado, Earth, and the universe.
+  </div>
+</div>
 
-[Houston Museum of Natural Science](https://www.hmns.org/) has always had the purpose since its founding in 1909 to "enhance in individuals the knowledge and delight in natural science and related subjects." To this very day, this purpose is carried out in every project, program and exhibition associated with the museum. The museum's Burke Baker Planetarium allows visitors to experience the wonders of space while still on earth. The dome theatre offers the world's most technologically advanced and realistic views of space and the universe. Giving visitors the feeling that they are traveling in space, high-resolution video technology projects images of planets, stars, meteors, solar systems and entire galaxies. The dome theatre is also used to train NASA Space Shuttle astronauts in star field identification.
+<div class="partners-section">
+  <h2 class="partners-section-heading">Informal Science Institution Partners</h2>
+  <div class="partner-grid">
 
-[North Carolina Museum of Natural Sciences](https://www.naturalsciences.org/) (NCMNS) seeks to illuminate nature and inspires its conservation through ‘what do we know?,' ‘how do we know?,' ‘what is happening now?,' and ‘how can the public participate?' Opened in 1879, the NCMNS is the largest natural history museum in the southeast. Raleigh's top-rated attraction, the NCMNS strives to embody progressive trends in nature and science museums globally. The NCMNS has been locally and nationally recognized — notably, in 2014 at the White House with a national medal for outstanding community service, in 2015 by the Greater Raleigh Convention and Visitors Bureau with its top award for economic impact, and in 2016 by the Raleigh Mayor's Award for service to those with disabilities. The NCMNS is also one of three nationwide partners of the Smithsonian Science Education Center.
+    <a class="partner-card" href="https://www.amnh.org/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/AMNH_Primary_WHITE.webp" alt="American Museum of Natural History">
+      </div>
+      <p class="partner-name">American Museum of Natural History</p>
+      <p class="partner-blurb">One of the world's largest natural history museums, AMNH is a leader in science visualization and has a distinguished record of NASA partnerships that enhance science education for global audiences.</p>
+    </a>
 
-# Project Evaluator
-[HG&Co](https://www.hgandco.com/) is a visitor-centered planning, strategy, and research firm working with museums, libraries, and cultural organizations to complete stakeholder charrettes, needs assessments, develop interpretative plans, convene advisory boards, perform expert reviews, and conduct front-end, formative, remedial, and summative evaluations.
+    <a class="partner-card" href="https://www.adlerplanetarium.org/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/Adler_white.webp" alt="Adler Planetarium">
+      </div>
+      <p class="partner-name">Adler Planetarium</p>
+      <p class="partner-blurb">The United States' first planetarium, Adler connects people to space science through exhibitions, dome theaters, and citizen science programming from its home in Chicago.</p>
+    </a>
+
+    <a class="partner-card" href="https://www.calacademy.org/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/cas white.webp" alt="California Academy of Sciences">
+      </div>
+      <p class="partner-name">California Academy of Sciences</p>
+      <p class="partner-blurb">The Academy's Morrison Planetarium showcases cutting-edge scientific data on its 75-foot-diameter screen, making it one of the most technologically advanced planetariums in the world.</p>
+    </a>
+
+    <a class="partner-card" href="https://www.dmns.org/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/DMNS_white.webp" alt="Denver Museum of Nature & Science">
+      </div>
+      <p class="partner-name">Denver Museum of Nature &amp; Science</p>
+      <p class="partner-blurb">The Rocky Mountain region's leading resource for informal science education, DMNS helps visitors experience the natural wonders of Colorado, Earth, and the universe.</p>
+    </a>
+
+    <a class="partner-card" href="https://www.hmns.org/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/hmns_white.webp" alt="Houston Museum of Natural Science">
+      </div>
+      <p class="partner-name">Houston Museum of Natural Science</p>
+      <p class="partner-blurb">Home to the Burke Baker Planetarium, HMNS has fostered wonder for natural science since 1909 through exhibitions and immersive dome experiences that give visitors the feeling of traveling through space.</p>
+    </a>
+
+    <a class="partner-card" href="https://www.naturalsciences.org/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <img class="partner-logo" src="assets/images/logos/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences">
+      </div>
+      <p class="partner-name">North Carolina Museum of Natural Sciences</p>
+      <p class="partner-blurb">The largest natural history museum in the Southeast, NCMNS illuminates nature and inspires its conservation through science education, research, and citizen science programs.</p>
+    </a>
+
+  </div>
+</div>
+
+<div class="partners-section">
+  <h2 class="partners-section-heading">Project Evaluator</h2>
+  <div class="partner-grid" style="max-width: 340px;">
+
+    <a class="partner-card" href="https://www.hgandco.com/" target="_blank" rel="noopener">
+      <div class="partner-logo-area">
+        <span class="partner-logo-text">HG&amp;Co</span>
+      </div>
+      <p class="partner-blurb">A visitor-centered planning and research firm working with museums, libraries, and cultural organizations on interpretive planning, needs assessments, and summative evaluations.</p>
+    </a>
+
+  </div>
+</div>
+```

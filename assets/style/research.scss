@@ -1,0 +1,331 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Research page — thesis row cards & publications table
+// =============================================================
+
+// ---------- Page hero ----------
+.research-hero {
+  background: #0a0a0a;
+  color: white;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+
+  .feature-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .research-hero-lede {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// ---------- Section layout ----------
+// Left/right padding mirrors the homepage .os-container (12rem at wide screens)
+.research-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  padding-left: clamp(1.5rem, 10vw, 12rem);
+  padding-right: clamp(1.5rem, 10vw, 12rem);
+}
+
+.research-section-heading {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $primaryAccent;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+// ---------- LiU program description ----------
+.liu-program-desc {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1.25rem 0 2rem;
+
+  strong {
+    color: $lightAccentYellow;
+  }
+}
+
+.liu-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 2.5rem;
+
+  .liu-partner-tag {
+    font-size: 0.7rem;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+  }
+}
+
+// ---------- Thesis list ----------
+.thesis-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+// Year group
+.thesis-year-group {
+  margin-bottom: 0.5rem;
+}
+
+.thesis-year-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba($primaryAccent, 0.55);
+  padding: 1.5rem 0 0.5rem;
+  border-top: 1px solid rgba($primaryAccent, 0.08);
+  margin-top: 0.5rem;
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+// Row card
+.thesis-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.25rem;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  align-items: center;
+  transition: background 0.18s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+// Photos column
+.thesis-photos {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.thesis-photo {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.thesis-photo-placeholder {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px dashed rgba(255, 255, 255, 0.1);
+}
+
+// Content column
+.thesis-content {
+  min-width: 0;
+}
+
+.thesis-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $primaryAccent;
+    }
+  }
+
+  // Suppress Quarto's external link icon inside thesis titles
+  i, .bi {
+    display: none;
+  }
+}
+
+.thesis-degree-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  color: $lightAccentYellow;
+  border: 1px solid rgba($lightAccentYellow, 0.4);
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.thesis-author {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+}
+
+.thesis-partner-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.08em;
+  color: rgba($primaryAccent, 0.7);
+  background: rgba($primaryAccent, 0.07);
+  border: 1px solid rgba($primaryAccent, 0.15);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+// Quarto listing wrapper cleanup
+#theses {
+  .quarto-listing {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// ---------- Publications rows ----------
+#papers {
+  .quarto-listing {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.paper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.paper-year-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba($primaryAccent, 0.55);
+  padding: 1.5rem 1.1rem 0.5rem;
+  border-top: 1px solid rgba($primaryAccent, 0.08);
+  margin-top: 0.5rem;
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.paper-row {
+  padding: 0.85rem 1.1rem;
+  border-radius: 10px;
+  transition: background 0.18s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.paper-content {
+  min-width: 0;
+}
+
+.paper-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $lightAccentYellow;
+    }
+  }
+
+  i, .bi {
+    display: none;
+  }
+}
+
+.paper-author {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
+}
+
+.paper-venue-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.08em;
+  color: rgba($lightAccentYellow, 0.7);
+  background: rgba($lightAccentYellow, 0.06);
+  border: 1px solid rgba($lightAccentYellow, 0.15);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+// ---------- Responsive ----------
+@media (max-width: 600px) {
+  .thesis-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.9rem 0.75rem;
+  }
+
+  .thesis-photos {
+    justify-content: flex-start;
+  }
+
+  .thesis-photo {
+    width: 48px;
+    height: 48px;
+  }
+}

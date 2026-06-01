@@ -347,34 +347,6 @@ hr {
   margin-right: auto;
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.team {
-  background-color: $satelliteGray;
-  color: $background;
-  text-align: center;
-  padding: 1rem;
-
-  .name {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
-
-  .title {
-    font-size: 0.85rem;
-    font-style: italic;
-  }
-
-  .affiliation {
-    margin-top: 1rem;
-    font-size: 0.75rem;
-  }
-}
 
 .slideshow {
   position: relative;

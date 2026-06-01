@@ -32,6 +32,8 @@ format:
         - "assets/style/home.scss"
         - "assets/style/content-carousel.scss"
         - "assets/style/about-openspace.scss"
+        - "assets/style/team.scss"
+        - "assets/style/research.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html

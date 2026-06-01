@@ -14,32 +14,8 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
-.about-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(1px 1px at 12% 18%, white 100%, transparent),
-    radial-gradient(1px 1px at 28% 62%, rgba(255,255,255,0.6) 100%, transparent),
-    radial-gradient(1px 1px at 45% 25%, white 100%, transparent),
-    radial-gradient(1px 1px at 67% 80%, rgba(255,255,255,0.7) 100%, transparent),
-    radial-gradient(1px 1px at 82% 45%, white 100%, transparent),
-    radial-gradient(1.5px 1.5px at 91% 22%, white 100%, transparent),
-    radial-gradient(1px 1px at 18% 88%, rgba(255,255,255,0.5) 100%, transparent),
-    radial-gradient(1px 1px at 75% 15%, rgba(255,255,255,0.4) 100%, transparent),
-    radial-gradient(1px 1px at 8% 50%, rgba(255,255,255,0.6) 100%, transparent);
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.about-hero > * {
-  position: relative;
-  z-index: 1;
-}
 
 .about-hero .feature-eyebrow {
   display: block;
@@ -120,21 +96,29 @@
   max-width: 880px;
 }
 
+// Glowing vertical track
 .os-timeline::before {
   content: "";
   position: absolute;
-  left: 80px;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-  background: #0a0a0a(255, 255, 255, 0.15);
+  left: 108px;
+  top: 1rem;
+  bottom: 1rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba($primaryAccent, 0.35) 8%,
+    rgba($primaryAccent, 0.35) 92%,
+    transparent
+  );
+  box-shadow: 0 0 6px rgba($primaryAccent, 0.15);
 }
 
 .timeline-item {
   position: relative;
   display: flex;
   gap: 1.5rem;
-  padding: 0 0 2rem;
+  padding: 0 0 3rem;
   align-items: flex-start;
 
   &:last-child {
@@ -143,71 +127,89 @@
 }
 
 .timeline-year {
-  flex: 0 0 80px;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: white;
-  letter-spacing: 0.02em;
-  padding-top: 0.1rem;
+  flex: 0 0 108px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: $primaryAccent;
+  letter-spacing: 0.06em;
+  padding-top: 0.2rem;
+  padding-right: 24px;
   text-align: right;
   position: relative;
 }
 
+// Dot: glowing ring with dark core
 .timeline-dot {
   position: absolute;
-  right: -7px;
-  top: 0.5rem;
-  width: 12px;
-  height: 12px;
+  right: -8px;
+  top: 0.45rem;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  background: #1c1c1c;
-  border: 2px solid #5DCAA5;
+  background: $background;
+  border: 2px solid $primaryAccent;
+  box-shadow:
+    0 0 0 3px rgba($primaryAccent, 0.1),
+    0 0 10px rgba($primaryAccent, 0.3);
   z-index: 1;
 }
 
+// Future dot: lime green glow
 .timeline-item-future .timeline-dot {
-  background: #d0f884;
-  border-color: #1a1a1a;
+  background: $lightAccentYellow;
+  border-color: $lightAccentYellow;
+  box-shadow:
+    0 0 0 3px rgba($lightAccentYellow, 0.15),
+    0 0 12px rgba($lightAccentYellow, 0.35);
 }
 
 .timeline-image {
-  flex: 0 0 120px;
+  flex: 0 0 240px;
   padding-left: 0.5rem;
 
   img {
-    width: 120px;
-    height: 80px;
+    width: 240px;
+    height: 160px;
     object-fit: cover;
     display: block;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: #0a0a0a; // fallback while image loads
+    border-radius: 6px;
+    border: 1px solid rgba($primaryAccent, 0.12);
+    background: #0a0a0a;
   }
 }
 
 .timeline-item-future .timeline-image img {
-  border-color: rgba(208, 248, 132, 0.25);
+  border-color: rgba($lightAccentYellow, 0.2);
 }
 
 .timeline-content {
   flex: 1;
-  padding-left: 0.25rem;
+  padding-left: 0.75rem;
   min-width: 0;
+  border-left: 1px solid rgba($primaryAccent, 0.07);
 
   h3 {
-    font-size: 1.0625rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 0 0 0.4rem;
     color: white;
     line-height: 1.35;
+    letter-spacing: 0.01em;
   }
 
   p {
-    font-size: 0.9375rem;
-    line-height: 1.65;
-    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
     margin: 0;
   }
+}
+
+.timeline-item-future .timeline-content {
+  border-left-color: rgba($lightAccentYellow, 0.15);
+
+  h3 { color: $lightAccentYellow; }
 }
 
 // ---------- Institutions section (cool dark) ----------
@@ -293,6 +295,18 @@
   }
 }
 
+// ---------- Side padding — fluid, homepage-inspired ----------
+// Override the global .os-container padding (0 12rem) with a clamp
+// so about-page sections have breathing room at all viewport widths.
+.about-hero .os-container,
+.about-body-section .os-container,
+.timeline-section .os-container,
+.institutions-section .os-container,
+.about-cta .os-container {
+  padding-left:  clamp(1.5rem, 8vw, 10rem);
+  padding-right: clamp(1.5rem, 8vw, 10rem);
+}
+
 // ---------- Responsive timeline ----------
 @media (max-width: 720px) {
   .timeline-image {
@@ -306,11 +320,11 @@
 
 @media (max-width: 540px) {
   .os-timeline::before {
-    left: 60px;
+    left: 88px;
   }
 
   .timeline-year {
-    flex-basis: 60px;
-    font-size: 0.875rem;
+    flex-basis: 88px;
+    font-size: 0.75rem;
   }
 }

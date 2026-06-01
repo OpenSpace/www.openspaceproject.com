@@ -1,0 +1,230 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Team page — flip cards
+// =============================================================
+
+// ---------- Page hero ----------
+.team-hero {
+  background: #0a0a0a;
+  color: white;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+
+  .feature-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+    color: white;
+  }
+
+  .team-hero-lede {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
+
+// ---------- Section headings ----------
+.team-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left:  clamp(1rem, 3vw, 3rem);
+  padding-right: clamp(1rem, 3vw, 3rem);
+}
+
+.team-section-heading {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $primaryAccent;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+// ---------- Grid ----------
+// Fixed 200px cards — auto-fill adds columns as space opens up.
+// Side padding shrinks so the grid gains room rather than cards changing width.
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+// ---------- Flip card ----------
+.team-card {
+  height: 300px;
+  perspective: 900px;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
+    border-radius: 14px;
+  }
+}
+
+.team-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.52s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 14px;
+}
+
+.team-card:hover .team-card-inner,
+.team-card:focus-within .team-card-inner {
+  transform: rotateY(180deg);
+}
+
+.team-card-front,
+.team-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+// Front: photo with gradient name overlay
+.team-card-front {
+  background: #111;
+
+  .team-card-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  .team-card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 0.9rem 0.9rem;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.55) 50%,
+      transparent 100%
+    );
+  }
+
+  .team-card-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 0.15rem;
+  }
+
+  .team-card-role {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.3;
+  }
+}
+
+// Back: dark surface with accent border
+.team-card-back {
+  background: #0d1014;
+  border: 1px solid rgba($primaryAccent, 0.2);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, $primaryAccent, transparent);
+    opacity: 0.6;
+  }
+
+  .team-card-back-inner {
+    padding: 1.5rem;
+  }
+
+  .team-card-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 0.4rem;
+  }
+
+  .team-card-role {
+    font-size: 0.68rem;
+    color: $primaryAccent;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .team-card-affil {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+  }
+
+  .team-card-thesis {
+    font-size: 0.72rem;
+    color: rgba($lightAccentYellow, 0.65);
+    margin-top: 0.55rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+// ---------- Quarto listing wrapper ----------
+// Remove extra padding Quarto adds around listing blocks
+#admin,
+#developer,
+#advisor {
+  .quarto-listing {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// ---------- Responsive ----------
+@media (max-width: 500px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 0.65rem;
+  }
+
+  .team-card {
+    height: 240px;
+  }
+}

@@ -1,0 +1,376 @@
+#
+# Master Theses and PhD Dissertations
+# Fields: title, author, year, partner (short), link, degree, image1, image2
+# Images are relative to /assets/team/student/
+#
+
+- title: An Interactive Black Hole Visualisation in OpenSpace
+  author: Wilhelm Björkström & Emil Wallberg
+  year: 2025
+  partner: LiU
+  link: https://liu.diva-portal.org/smash/get/diva2:1974754/FULLTEXT01.pdf
+  degree: master
+  image1: 71_wilhelm_bjorkstrom.webp
+  image2: 70_emil_wallberg.webp
+
+- title: Contextual Visualization of Adaptive Meshes using YT
+  author: Maria Brunned & Cindy Khuong
+  year: 2024
+  partner: AMNH
+  link: https://liu.diva-portal.org/smash/get/diva2:1975471/FULLTEXT01.pdf
+  degree: master
+  image1: 69_maria_brunned.webp
+  image2: 68_cindy_khuong.webp
+
+- title: Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace
+  author: Dennis Moradkhani & Tim Olsson
+  year: 2024
+  partner: SCI
+  link: https://liu.diva-portal.org/smash/get/diva2:1974447/FULLTEXT01.pdf
+  degree: master
+  image1: 66_denis_moradkhani.webp
+  image2: 67_tim_olsson.webp
+
+- title: Space Weather Simulation Model Integration
+  author: Alice Molin & Julia Johnstone
+  year: 2023
+  partner: CCMC
+  link: https://liu.diva-portal.org/smash/get/diva2:1829691/FULLTEXT02.pdf
+  degree: master
+  image1: 64_alice_molin.webp
+  image2: 65_julia_johnstone.webp
+
+- title: Enhancing Dungey Cycle Visualization in OpenSpace
+  author: Anders Lundkvist & Erik Salsborn
+  year: 2023
+  partner: CCMC
+  link:
+  degree: master
+  image1: 63_anders_lundkvist.webp
+  image2: 62_erik_salsborn.webp
+
+- title: Investigating the Chemical Cartography of the Galaxy Through Visualization
+  author: Andreas Engberg
+  year: 2023
+  partner: AMNH
+  link: https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-206480
+  degree: master
+  image1: 61_andreas_engberg.webp
+
+- title: Using Point Cloud Interpolation to Present a Cosmic View of Life
+  author: Märta Nilsson & Robin Ridell
+  year: 2023
+  partner: AMNH
+  link: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-199028
+  degree: master
+  image1: 60_marta_nilsson.webp
+  image2: 59_robin_ridell.webp
+
+- title: Astronomy Software Integration with OpenSpace in Distributed Systems
+  author: Jacob Molin & Victor Lindquist
+  year: 2022
+  partner: SCI
+  link: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-196497
+  degree: master
+  image1: 50_jacob_molin.webp
+  image2: 51_victor_lindquist.webp
+
+- title: Interactive visualization of climate change on Earth in the OpenSpace project
+  author: Anne Olthoff & Catja Johansson Nordqvist
+  year: 2022
+  partner: NYU
+  link:
+  degree: master
+  image1: 49_anne_olthoff.webp
+  image2: 48_catja_nordqvist.webp
+
+- title: Advanced Fieldline Rendering for Space Weather Visualization
+  author: Måns Aronsson & Simon Karlsson Brefält
+  year: 2022
+  partner: CCMC
+  link: http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157
+  degree: master
+  image1: 56_mans_aronsson.webp
+  image2: 55_simon_brefalt.webp
+
+- title: "A Cosmic View of Life on Earth: Visualizing the Relationship Between Species DNA in Three-Dimensional Space"
+  author: Emma Segolsson & Linn Storesund
+  year: 2022
+  partner: AMNH
+  link: http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669
+  degree: master
+  image1: 58_emma_segolsson.webp
+  image2: 57_linn_storesund.webp
+
+- title: Topological Analysis Tool for Earth's Magnetosphere
+  author: Philip Ngo
+  year: 2022
+  partner: CCMC
+  link:
+  degree: master
+  image1: 54_philip_ngo.webp
+
+- title: Interactive Visualization of Air Traffic in OpenSpace
+  author: Christoffer Paulusson
+  year: 2022
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/record.jsf?dswid=579&pid=diva2%3A1657454
+  degree: master
+  image1: 46_chris_paulusson.webp
+
+- title: Designing a Streaming Pipeline for the Public Dissemination of Astronomy Data
+  author: Nisse Bergman & Hanna Timander Björknert
+  year: 2022
+  partner: LiU
+  link: http://liu.diva-portal.org/smash/record.jsf?dswid=6325&pid=diva2%3A1686604
+  degree: master
+  image1: 52_nisse_bergman.webp
+  image2: 53_hanna_timander.webp
+
+- title: Interactive Visualization of Air Traffic in OpenSpace
+  author: Adrian Andersson & Joel Paulsson
+  year: 2021
+  partner: LiU
+  link: https://liu.diva-portal.org/smash/get/diva2:1582766/FULLTEXT01.pdf
+  degree: master
+  image1: 42_adrian_andersson.webp
+  image2: 43_joel_paulsson.webp
+
+- title: "Interactive Visualization of Astronomy Images: Integrating AAS WorldWide Telescope into OpenSpace"
+  author: Ester Lindgren & Ylva Selling
+  year: 2021
+  partner: AMNH
+  link: https://liu.diva-portal.org/smash/get/diva2:1740944/FULLTEXT01.pdf
+  degree: master
+  image1: 45_ester_lindgren.webp
+  image2: 44_ylva_selling.webp
+
+- title: Interactive 3D-visualization of a Solar Particle Event for Public Outreach
+  author: Christian Adamsson & Emilie Ho
+  year: 2020
+  partner: CCMC
+  link: https://liu.diva-portal.org/smash/get/diva2:1530786/FULLTEXT01.pdf
+  degree: master
+  image1: 40_christian_adamsson.webp
+  image2: 41_emilie_ho.webp
+
+- title: Astronomy Software Integration with OpenSpace
+  author: Aniisa Bihi & Johanna Granström
+  year: 2020
+  partner: SCI
+  link: https://liu.diva-portal.org/smash/get/diva2:1530782/FULLTEXT01.pdf
+  degree: master
+  image1: 38_aniisa_bihi.webp
+  image2: 39_johanna_granstrom.webp
+
+- title: Interactive Sonification in OpenSpace
+  author: Malin Ejdbo & Elias Elmquist
+  year: 2020
+  partner: LiU
+  link: https://liu.diva-portal.org/smash/get/diva2:1473031/FULLTEXT01.pdf
+  degree: master
+  image1: 36_malin_ejdbo.webp
+  image2: 37_elias_elmquist.webp
+
+- title: A System for Procedural Camera Movements for Navigation in Astrographics
+  author: Emma Broman & Ingela Rossing
+  year: 2019
+  partner: NYU
+  link: https://liu.diva-portal.org/smash/get/diva2:1629977/FULLTEXT01.pdf
+  degree: master
+  image1: 34_emma_broman.webp
+  image2: 35_ingela_rossing.webp
+
+- title: "Today's Space Weather in the Planetarium"
+  author: Sovanny Huy & Axel Kollberg
+  year: 2019
+  partner: CCMC
+  link: https://liu.diva-portal.org/smash/get/diva2:1429856/FULLTEXT01.pdf
+  degree: master
+  image1: 31_sovanny_huy.webp
+  image2: 30_axel_kollberg.webp
+
+- title: Visualization of Space Debris using Orbital Representation and Volume Rendering
+  author: Jonathan Fransson & Elon Olsson
+  year: 2019
+  partner: SCI
+  link: http://liu.diva-portal.org/smash/get/diva2:1371832/FULLTEXT01.pdf
+  degree: master
+  image1: 32_jonathan_fransson.webp
+  image2: 33_elon_olsson.webp
+
+- title: Flight Controller
+  author: Matthew Territo
+  year: 2019
+  partner: SCI
+  link:
+  degree: master
+  image1: 28_matthew_territo.webp
+
+- title: Implementing an Interactive Simulation Data Pipeline for Space Weather Visualization
+  author: Matthias Berg & Jonathan Grangien
+  year: 2018
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:1375791/FULLTEXT01.pdf
+  degree: master
+  image1: 27_matthias_berg.webp
+  image2: 26_jonathan_grangien.webp
+
+- title: Interactive 3D Visualization of the NASA Deep Space Network Activity
+  author: Lovisa Hassler & Agnes Heppich
+  year: 2018
+  partner: AMNH
+  link: http://liu.diva-portal.org/smash/get/diva2:1322083/FULLTEXT01.pdf
+  degree: master
+  image1: 25_lovisa_hassler.webp
+  image2: 24_agnes_heppich.webp
+
+- title: "Exoplanets: Interactive Visualization of Data and Discovery Method"
+  author: Karin Reidarman
+  year: 2018
+  partner: NYU
+  link: https://liu.diva-portal.org/smash/get/diva2:1315169/FULLTEXT01.pdf
+  degree: master
+  image1: 29_karin_keidarman.webp
+
+- title: Graphical User Interfaces for Multi-Touch Displays Supporting Public Exploration and Guided Storytelling of Astronomical Visualizations
+  author: Hanna Johansson & Sofie Khullar
+  year: 2018
+  partner: SCI
+  link: http://liu.diva-portal.org/smash/get/diva2:1270021/FULLTEXT01.pdf
+  degree: master
+  image1: 22_hanna_johansson.webp
+  image2: 23_sofie_khullar.webp
+
+- title: Robotic Spacecraft Visualization of MSL Curiosity using Telemetry Data
+  author: Kristin Bäck & Caroline Gard
+  year: 2018
+  partner: AMNH
+  link:
+  degree: master
+  image1: 20_kristin_back.webp
+  image2: 21_caroline_gard.webp
+
+- title: Interactive Out-of-Core Rendering and Filtering of One Billion Stars Measured by the ESA Gaia Mission
+  author: Adam Alsegård
+  year: 2018
+  partner: LiU
+  link: http://liu.diva-portal.org/smash/get/diva2:1247648/FULLTEXT01.pdf
+  degree: master
+  image1: 19_adam_alsegard.webp
+
+- title: Tailoring Visualization Applications for Tasks and Users
+  author: Alexander Bock
+  year: 2018
+  partner: LiU
+  link: http://liu.diva-portal.org/smash/get/diva2:1208841/FULLTEXT01.pdf
+  degree: phd
+
+- title: Contextualization of Autonomous Spaceflight Operations for Deep Space Planetary Encounters
+  author: Michal Marcinkowski
+  year: 2018
+  partner: AMNH
+  link: https://www.diva-portal.org/smash/get/diva2:1195627/FULLTEXT02.pdf
+  degree: master
+  image1: 04_michal_marcinkowski.webp
+
+- title: Real-Time Magnetohydrodynamic Space Weather Visualization
+  author: Oskar Carlbaum & Michael Novén
+  year: 2017
+  partner: CCMC
+  link: http://www.diva-portal.org/smash/get/diva2:1147161/FULLTEXT01.pdf
+  degree: master
+  image1: 14_oskar_carlbaum.webp
+  image2: 15_michael_noven.webp
+
+- title: Interactive In-Situ Visualization of Mars Science Laboratory Data
+  author: Rickard Lindstedt & Michael Sjöström
+  year: 2017
+  partner: AMNH
+  link:
+  degree: master
+  image1: 17_rickard_lindstedt.webp
+  image2: 16_michael_sjostrom.webp
+
+- title: Multi-Touch Interfaces for Public Exploration and Navigation in Astronomical Visualizations
+  author: Jonathan Bosson
+  year: 2017
+  partner: SCI
+  link: http://www.diva-portal.org/smash/get/diva2:1147162/FULLTEXT01.pdf
+  degree: master
+  image1: 13_jonathan_bosson.webp
+
+- title: Creating User Interfaces Using Web-based Technologies to Support Rapid Prototyping in a Desktop Astrovisualization Software
+  author: Klas Eskilson
+  year: 2017
+  partner: NYU
+  link: http://www.diva-portal.org/smash/get/diva2:1169029/FULLTEXT01.pdf
+  degree: master
+  image1: 18_klas_eskilson.webp
+
+- title: Multi-Volume Rendering in OpenSpace Using A-Buffers for Space Weather Visualizations
+  author: Jonas Strandstedt
+  year: 2017
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:1098484/FULLTEXT01.pdf
+  degree: master
+  image1: 03_jonas_strandstedt.webp
+
+- title: Design and Implementation of an Out-of-Core Globe Rendering System Using Multiple Map Services
+  author: Kalle Bladin & Erik Broberg
+  year: 2016
+  partner: AMNH
+  link: http://liu.diva-portal.org/smash/get/diva2:1098476/FULLTEXT01.pdf
+  degree: master
+  image1: 12_kalle_bladin.webp
+  image2: 11_erik_broberg.webp
+
+- title: "Bridging the Gap: Providing Public Science Dissemination through Expert Tools"
+  author: Michael Nilsson & Sebastian Piwell
+  year: 2016
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:1072646/FULLTEXT01.pdf
+  degree: master
+  image1: 09_michael_nielsson.webp
+  image2: 08_sebastian_piwell.webp
+
+- title: Spatio-temporal Multi-modal Visualization of Volumetric Simulation and In Situ Satellite Data
+  author: Emil Axelsson & Tomas Forsyth Rosin
+  year: 2015
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:968704/FULLTEXT01.pdf
+  degree: master
+  image1: 07_emil_axelsson.webp
+  image2: 06_tomas_forsyth_rosin.webp
+
+- title: Public Dissemination of Deep Space Missions through Immersive Visualization
+  author: Anton Arbring
+  year: 2015
+  partner: AMNH
+  link:
+  degree: master
+  image1: 10_anton_arbring.webp
+
+- title: "Visualizing Space Weather: Acquiring and Rendering Data of Earth's Magnetosphere"
+  author: Hans-Christian Helltegen
+  year: 2014
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:1375792/FULLTEXT01.pdf
+  degree: master
+  image1: 05_hc_helltegen.webp
+
+- title: Dynamic Visualization of Space Weather Data
+  author: Victor Sand
+  year: 2014
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:763094/FULLTEXT01.pdf
+  degree: master
+  image1: 02_victor_sand.webp
+
+- title: Interactive Visualization of Space Weather Data
+  author: Martin Törnros
+  year: 2013
+  partner: CCMC
+  link: http://liu.diva-portal.org/smash/get/diva2:667227/FULLTEXT01.pdf
+  degree: master
+  image1: 01_martin_tornros.webp

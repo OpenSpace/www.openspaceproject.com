@@ -1,44 +1,54 @@
 ---
+pagetitle: "Team — OpenSpace"
+description-meta: "The people behind the OpenSpace project."
 listing:
   - id: admin
     type: custom
     template: _template/team.ejs.md
     contents: assets/team.yml
     include:
-      type: "{admin,coordinator}"
-  - id: advisor
-    type: custom
-    template: _template/team.ejs.md
-    contents: assets/team.yml
-    include:
-      type: "{advisor}"
+      type: "{admin,coordinator,advisor}"
   - id: developer
     type: custom
     template: _template/team.ejs.md
     contents: "assets/team.yml"
     include:
       type: developer
-  - id: students
-    type: custom
-    template: _template/team.ejs.md
-    contents: "assets/team.yml"
-    page-size: 9999
-    include:
-      type: student
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
 ---
 
-# Project Leadership
+```{=html}
+<section class="team-hero">
+  <div>
+    <p class="feature-eyebrow">Team</p>
+    <h1>The people behind OpenSpace</h1>
+    <p class="team-hero-lede">An international consortium of researchers, engineers, educators, and students building open-source astrovisualization.</p>
+  </div>
+</section>
+```
+
+```{=html}
+<div class="team-section">
+  <h2 class="team-section-heading">Project Leadership</h2>
+```
+
 ::: {#admin}
 :::
 
-# Developers
+```{=html}
+</div>
+
+<div class="team-section">
+  <h2 class="team-section-heading">Developers</h2>
+```
+
 ::: {#developer}
 :::
 
-# Advisor
-::: {#advisor}
-:::
-
-# Students
-::: {#students}
-:::
+```{=html}
+</div>
+```

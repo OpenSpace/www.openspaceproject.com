@@ -15,7 +15,7 @@
       <div class="thesis-photos">
         <% if (item.image1) { %>
         <img
-          src="/assets/team/student/<%- item.image1 %>"
+          src="/assets/team/<%- item.image1_dir || 'student' %>/<%- item.image1 %>"
           alt="<%- item.author %>"
           class="thesis-photo"
           loading="lazy"

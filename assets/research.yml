@@ -265,6 +265,8 @@
   partner: LiU
   link: http://liu.diva-portal.org/smash/get/diva2:1208841/FULLTEXT01.pdf
   degree: phd
+  image1: "01_alex_bock.webp"
+  image1_dir: "developer"
 
 - title: Contextualization of Autonomous Spaceflight Operations for Deep Space Planetary Encounters
   author: Michal Marcinkowski

@@ -66,7 +66,21 @@
   </div>
 
   <div class="footer-bottom">
-    <span>© OpenSpace Project Team 2026</span>
-    <span>Available under the <a href="https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT License</a></span>
+    <button class="theme-toggle-btn" onclick="osToggleTheme()" aria-label="Toggle color scheme">
+      <span class="theme-icon-dark"><iconify-icon icon="lucide:sun"></iconify-icon></span>
+      <span class="theme-icon-light"><iconify-icon icon="lucide:moon"></iconify-icon></span>
+      <span class="theme-label-dark">Light mode</span>
+      <span class="theme-label-light">Dark mode</span>
+    </button>
+    <div class="footer-bottom-meta">
+      <span>© OpenSpace Project Team 2026</span>
+      <span>Available under the <a href="https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT License</a></span>
+    </div>
   </div>
 </footer>
+<script>
+window.osToggleTheme = function () {
+  var isLight = document.documentElement.classList.toggle('light-mode');
+  localStorage.setItem('os-theme', isLight ? 'light' : 'dark');
+};
+</script>

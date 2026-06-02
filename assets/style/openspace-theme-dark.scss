@@ -298,6 +298,7 @@ hr {
   padding-top: 1.2rem;
   border-top: 1px solid rgba($primaryAccent, 0.08);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -311,6 +312,48 @@ hr {
     &:hover { color: $satelliteGray; }
   }
 }
+
+.footer-bottom-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// Theme toggle button — dark mode colors
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid rgba($satelliteGray, 0.3);
+  color: rgba($satelliteGray, 0.6);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.72rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s, border-color 0.2s;
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+
+  iconify-icon { font-size: 0.85em; }
+
+  &:hover {
+    color: $satelliteGray;
+    border-color: rgba($satelliteGray, 0.6);
+  }
+}
+
+// Default (dark): show sun icon (= "switch to light"), hide moon
+.theme-icon-light, .theme-label-light { display: none; }
+.theme-icon-dark, .theme-label-dark { display: inline; }
+
+// Light mode: show moon (= "switch to dark"), hide sun
+html.light-mode .theme-icon-dark,
+html.light-mode .theme-label-dark { display: none; }
+html.light-mode .theme-icon-light,
+html.light-mode .theme-label-light { display: inline; }
 
 @media (max-width: 768px) {
   .site-footer-inner {
@@ -328,6 +371,13 @@ hr {
 
   .footer-bottom {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .footer-bottom-meta {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.3rem;
   }
 }

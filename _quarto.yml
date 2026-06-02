@@ -17,25 +17,20 @@ format:
   html:
     quarto-required: 1.9.*
     theme:
-      # light:
-      #   - "assets/style/brand.scss"
-      #   - "assets/style/openspace-theme.scss"
-      #   - "assets/style/openspace-theme-light.scss"
-      # dark:
-        - "assets/style/brand.scss"
-        - "assets/style/openspace-theme-dark.scss"
-        - "assets/style/hero.scss"
-        - "assets/style/navbar.scss"
-        - "assets/style/use-cases.scss"
-        - "assets/style/annual-meeting.scss"
-        - "assets/style/content-carousel.scss"
-        - "assets/style/home.scss"
-        - "assets/style/content-carousel.scss"
-        - "assets/style/about-openspace.scss"
-        - "assets/style/team.scss"
-        - "assets/style/research.scss"
-        - "assets/style/partners.scss"
-        - "assets/style/impact.scss"
+      - "assets/style/brand.scss"
+      - "assets/style/openspace-theme-dark.scss"
+      - "assets/style/openspace-theme-light.scss"
+      - "assets/style/hero.scss"
+      - "assets/style/navbar.scss"
+      - "assets/style/use-cases.scss"
+      - "assets/style/annual-meeting.scss"
+      - "assets/style/content-carousel.scss"
+      - "assets/style/home.scss"
+      - "assets/style/about-openspace.scss"
+      - "assets/style/team.scss"
+      - "assets/style/research.scss"
+      - "assets/style/partners.scss"
+      - "assets/style/impact.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html
@@ -64,7 +59,8 @@ format:
     axe: true
     # include-before-body:
     # include-after-body:
-    # include-in-header:
+    include-in-header:
+      - file: _template/theme-init.html
     # resources:
 
 website:

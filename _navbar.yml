@@ -9,10 +9,11 @@ website:
     pinned: true
     collapse: true
     collapse-below: sm
+    toggle-position: right
+    tools-collapse: true
     # toggle-position:
     # tools-collapse:
 
-    # left:
     right:
       - text: About
         menu:

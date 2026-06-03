@@ -17,9 +17,15 @@ html.light-mode {
     color: #212529;
   }
 
-  // Headings — exclude navbar
+  // Headings — exclude navbar and dark hero sections
   #quarto-content h1, #quarto-content h2 {
     color: #005f73;
+  }
+
+  // Hero title sits on a dark video background — keep it white
+  #quarto-content .hero-section h1,
+  #quarto-content .hero-title {
+    color: white;
   }
 
   #quarto-content h3, #quarto-content h4 {
@@ -124,6 +130,13 @@ html.light-mode {
       &:hover { color: #212529; }
     }
   }
+
+  .system-status {
+    color: rgba(#4a5a6a, 0.5) !important;
+    &:hover { color: rgba(#4a5a6a, 0.8) !important; }
+  }
+
+  .status-dot.status--unknown { background: rgba(#4a5a6a, 0.25); }
 
   // ── Home page sections ──────────────────────────────────────
   // .hero-section is intentionally left dark (space video background)

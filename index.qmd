@@ -35,10 +35,10 @@ format:
   <div class="os-container">
     <p class="trusted-label">Trusted by 100+ institutions worldwide</p>
     <div class="logo-grid">
-      <img src="assets/images/logos/AMNH_Primary_WHITE.webp" alt="American Museum of Natural History" class="institution-logo">
-      <img src="assets/images/logos/Adler_white.webp" alt="Adler Planetarium" class="institution-logo">
-      <img src="assets/images/logos/DMNS_white.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
-      <img src="assets/images/logos/hmns_white.webp" alt="Houston Museum of Natural Science" class="institution-logo">
+      <img src="assets/images/logos/AMNH_Primary_WHITE.webp" data-light-src="assets/images/logos/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History" class="institution-logo">
+      <img src="assets/images/logos/Adler_white.webp" data-light-src="assets/images/logos/Adler_Black.webp" alt="Adler Planetarium" class="institution-logo">
+      <img src="assets/images/logos/DMNS_white.webp" data-light-src="assets/images/logos/DMNS_black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
+      <img src="assets/images/logos/hmns_white.webp" data-light-src="assets/images/logos/hmns_black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
       <img src="assets/images/logos/MoS_white.webp" alt="Museum of Science Boston" class="institution-logo">
       <img src="assets/images/logos/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
       <img src="assets/images/logos/vcc_white.webp" alt="Visualization Center C" class="institution-logo">

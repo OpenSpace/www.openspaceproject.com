@@ -52,7 +52,7 @@ format:
 
     <a class="partner-card" href="https://www.amnh.org/" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <img class="partner-logo" src="assets/images/logos/AMNH_Primary_WHITE.webp" alt="American Museum of Natural History">
+        <img class="partner-logo" src="assets/images/logos/AMNH_Primary_WHITE.webp" data-light-src="assets/images/logos/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History">
       </div>
       <p class="partner-name">American Museum of Natural History</p>
       <p class="partner-blurb">One of the world's largest natural history museums, AMNH is a leader in science visualization and has a distinguished record of NASA partnerships that enhance science education for global audiences.</p>
@@ -60,7 +60,7 @@ format:
 
     <a class="partner-card" href="https://www.adlerplanetarium.org/" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <img class="partner-logo" src="assets/images/logos/Adler_white.webp" alt="Adler Planetarium">
+        <img class="partner-logo" src="assets/images/logos/Adler_white.webp" data-light-src="assets/images/logos/Adler_Black.webp" alt="Adler Planetarium">
       </div>
       <p class="partner-name">Adler Planetarium</p>
       <p class="partner-blurb">The United States' first planetarium, Adler connects people to space science through exhibitions, dome theaters, and citizen science programming from its home in Chicago.</p>
@@ -76,7 +76,7 @@ format:
 
     <a class="partner-card" href="https://www.dmns.org/" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <img class="partner-logo" src="assets/images/logos/DMNS_white.webp" alt="Denver Museum of Nature & Science">
+        <img class="partner-logo" src="assets/images/logos/DMNS_white.webp" data-light-src="assets/images/logos/DMNS_black.webp" alt="Denver Museum of Nature & Science">
       </div>
       <p class="partner-name">Denver Museum of Nature &amp; Science</p>
       <p class="partner-blurb">The Rocky Mountain region's leading resource for informal science education, DMNS helps visitors experience the natural wonders of Colorado, Earth, and the universe.</p>
@@ -84,7 +84,7 @@ format:
 
     <a class="partner-card" href="https://www.hmns.org/" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <img class="partner-logo" src="assets/images/logos/hmns_white.webp" alt="Houston Museum of Natural Science">
+        <img class="partner-logo" src="assets/images/logos/hmns_white.webp" data-light-src="assets/images/logos/hmns_black.webp" alt="Houston Museum of Natural Science">
       </div>
       <p class="partner-name">Houston Museum of Natural Science</p>
       <p class="partner-blurb">Home to the Burke Baker Planetarium, HMNS has fostered wonder for natural science since 1909 through exhibitions and immersive dome experiences that give visitors the feeling of traveling through space.</p>

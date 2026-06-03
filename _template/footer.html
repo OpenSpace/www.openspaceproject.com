@@ -66,21 +66,43 @@
   </div>
 
   <div class="footer-bottom">
-    <button class="theme-toggle-btn" onclick="osToggleTheme()" aria-label="Toggle color scheme">
-      <span class="theme-icon-dark"><iconify-icon icon="lucide:sun"></iconify-icon></span>
-      <span class="theme-icon-light"><iconify-icon icon="lucide:moon"></iconify-icon></span>
-      <span class="theme-label-dark">Light mode</span>
-      <span class="theme-label-light">Dark mode</span>
-    </button>
-    <div class="footer-bottom-meta">
+    <a href="https://uptime.openspaceproject.com/status/all" target="_blank" rel="noopener" class="system-status" aria-label="System status">
+      <span class="status-dot status--unknown" id="status-dot"></span><span id="status-text">All Systems</span>
+    </a>
+    <div class="footer-bottom-legal">
       <span>© OpenSpace Project Team 2026</span>
       <span>Available under the <a href="https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT License</a></span>
     </div>
   </div>
 </footer>
+
 <script>
-window.osToggleTheme = function () {
-  var isLight = document.documentElement.classList.toggle('light-mode');
-  localStorage.setItem('os-theme', isLight ? 'light' : 'dark');
-};
+(function () {
+  var LABELS = { up: 'All Systems Operational', degraded: 'Partial Outage', down: 'Major Outage', unknown: 'All Systems' };
+  function setStatus(key) {
+    var dot = document.getElementById('status-dot');
+    var text = document.getElementById('status-text');
+    if (dot) dot.className = 'status-dot status--' + key;
+    if (text) text.textContent = LABELS[key] || LABELS.unknown;
+  }
+  fetch('https://uptime.openspaceproject.com/api/status-page/heartbeat/all')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var beats = data.heartbeatList || {};
+      var ids = Object.keys(beats);
+      if (!ids.length) { setStatus('unknown'); return; }
+      var anyDown = false, anyUp = false;
+      ids.forEach(function (id) {
+        var list = beats[id];
+        if (!list || !list.length) return;
+        var latest = list[list.length - 1];
+        if (latest.status === 1) anyUp = true;
+        else anyDown = true;
+      });
+      if (anyDown && anyUp) setStatus('degraded');
+      else if (anyDown) setStatus('down');
+      else setStatus('up');
+    })
+    .catch(function () { setStatus('unknown'); });
+})();
 </script>

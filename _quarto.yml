@@ -3,6 +3,9 @@ project:
   output-dir: _site
   preview:
     port: 12800
+  resources:
+    - assets/images/logos/
+    - assets/logos/
 
 metadata-files:
   - _announcement.yml
@@ -19,7 +22,6 @@ format:
     theme:
       - "assets/style/brand.scss"
       - "assets/style/openspace-theme-dark.scss"
-      - "assets/style/openspace-theme-light.scss"
       - "assets/style/hero.scss"
       - "assets/style/navbar.scss"
       - "assets/style/use-cases.scss"
@@ -59,8 +61,7 @@ format:
     axe: true
     # include-before-body:
     # include-after-body:
-    include-in-header:
-      - file: _template/theme-init.html
+    # include-in-header:
     # resources:
 
 website:
@@ -69,7 +70,7 @@ website:
   favicon: "/assets/logos/openspace/favicon.webp"
   image: "/assets/logos/openspace/logo.webp"
   image-alt: "OpenSpace"
-  site-url: "https://www.openspaceproject.com"
+  site-url: "https://testing.www.openspaceproject.com"
   # repo-url: "https://github.com/OpenSpace/www.openspaceproject.com"
   # repo-link-target: "_blank"
   # repo-actions: [edit, issue]

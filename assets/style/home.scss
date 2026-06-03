@@ -604,3 +604,7 @@ main:has(.hero-section) #title-block-header {
     -webkit-mask-image: none;
   }
 }
+
+#quarto-document-content {
+  margin-top: 0;
+}

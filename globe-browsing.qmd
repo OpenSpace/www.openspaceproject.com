@@ -1,7 +1,6 @@
 ---
-title: "Globe Browsing"
 pagetitle: "Globe Browsing — OpenSpace"
-description-meta: "Globe Browsing in OpenSpace renders planetary surfaces from real mission data, letting you fly seamlessly from interstellar space down to ground level."
+description-meta: "Globe Browsing in OpenSpace renders planetary surfaces from real mission data — fly from interstellar space to the texture of Martian regolith in one continuous flight."
 format:
   html:
     page-layout: full
@@ -9,14 +8,242 @@ format:
     anchor-sections: false
 ---
 
-[Fly from interstellar space to a single crater on the Moon — without a cut.]{.feature-lede}
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="gb-hero">
+  <div class="gb-hero-bg" style="background-image:url('assets/images/banner/mars.webp')"></div>
+  <div class="gb-hero-overlay"></div>
+  <div class="gb-hero-content">
+    <p class="gb-eyebrow">Globe Browsing</p>
+    <h1 class="gb-hero-title">Fly from the Milky Way<br>to a single crater</h1>
+    <p class="gb-hero-lede">OpenSpace streams real spacecraft imagery and elevation data from NASA missions — cross fifteen orders of magnitude in one uncut, uninterrupted flight.</p>
+  </div>
+</section>
 
-::: {.feature-body}
-::: {.os-container .narrow}
+<!-- ── Video showcase ────────────────────────────────────── -->
+<div class="gb-video-section">
+  <div class="gb-video-wrap">
+    <video class="gb-video" autoplay muted loop playsinline>
+      <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p class="gb-video-caption">The observable universe to Earth's surface — one continuous navigation in OpenSpace</p>
+</div>
 
-Globe Browsing is the planetary surface rendering system at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions, so audiences can cross fifteen orders of magnitude — from the Milky Way down to the texture of Martian regolith — in one continuous flight. No load screens, no cuts, no second application.
+<!-- ── Intro + Stats ─────────────────────────────────────── -->
+<div class="gb-section">
+  <div class="gb-intro-row">
+    <div class="gb-intro-text-col">
+      <h2 class="gb-section-heading">Planetary surface rendering</h2>
+      <p class="gb-prose">Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions — HiRISE, MOLA, LRO, Cassini — and renders them continuously at every scale. No load screens. No transitions. No second application.</p>
+      <p class="gb-prose">Multiple data layers can be active and blended at once: base imagery, colorized elevation, scientific overlays, labels. A presenter can reveal and toggle them live during a show without pausing or switching scenes.</p>
+    </div>
+    <div class="gb-stats-col">
+      <div class="gb-stat">
+        <span class="gb-stat-number">15</span>
+        <span class="gb-stat-label">Orders of magnitude — Milky Way to a boulder on Mars</span>
+      </div>
+      <div class="gb-stat gb-stat-divider">
+        <span class="gb-stat-number">0</span>
+        <span class="gb-stat-label">Load screens between any two scales</span>
+      </div>
+      <div class="gb-stat gb-stat-divider">
+        <span class="gb-stat-number">100%</span>
+        <span class="gb-stat-label">Real data from NASA, ESA, and planetary missions</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-- **Fly across Mars at full HiRISE resolution.** Land at Jezero Crater, follow Perseverance's traverse, then pull back to see the whole planet in context.
-- **Visit any imaged surface in the solar system.** Apollo landing sites on the Moon, Cassini imagery of Titan, New Horizons coverage of Pluto — all at the resolution the spacecraft captured them.
+<!-- ── Worlds accordion ────────────────────────────────────── -->
+<div class="gb-worlds-section">
+  <div class="gb-panels" id="gbPanels">
 
-Multiple data layers can be active and blended at once — base imagery, colorized elevation, scientific overlays, labels — and a presenter can reveal them live during a show. Camera motion stays smooth at every scale, which is why Globe Browsing is the foundation of so many planetarium and museum experiences built on OpenSpace.
+    <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
+         style="background-image:url('assets/images/carousel/mars-surface.webp')">
+      <div class="gb-panel-tint" style="background:rgba(55,18,0,0.3)"></div>
+      <div class="gb-panel-gradient"></div>
+      <span class="gb-panel-crosshair" aria-hidden="true">+</span>
+      <div class="gb-panel-num-wrap">
+        <span class="gb-panel-num">01</span>
+        <span class="gb-panel-num-label">HiRISE Mars</span>
+      </div>
+      <div class="gb-panel-body">
+        <p class="gb-panel-eyebrow">Mars</p>
+        <h3 class="gb-panel-title">Mars at full<br>resolution</h3>
+        <p class="gb-panel-desc">Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application.</p>
+      </div>
+    </div>
+
+    <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
+         style="background-image:url('assets/images/carousel/earth.webp')">
+      <div class="gb-panel-tint" style="background:rgba(0,18,55,0.4)"></div>
+      <div class="gb-panel-gradient"></div>
+      <span class="gb-panel-crosshair" aria-hidden="true">+</span>
+      <div class="gb-panel-num-wrap">
+        <span class="gb-panel-num">02</span>
+        <span class="gb-panel-num-label">Earth</span>
+      </div>
+      <div class="gb-panel-body">
+        <p class="gb-panel-eyebrow">Earth</p>
+        <h3 class="gb-panel-title">Earth from<br>orbit</h3>
+        <p class="gb-panel-desc">Satellite composites, real elevation terrain, and time-varying data — sea ice extent, atmospheric layers, live weather.</p>
+      </div>
+    </div>
+
+    <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
+         style="background-image:url('assets/images/carousel/Burma+Tibet.webp')">
+      <div class="gb-panel-tint" style="background:rgba(0,28,18,0.32)"></div>
+      <div class="gb-panel-gradient"></div>
+      <span class="gb-panel-crosshair" aria-hidden="true">+</span>
+      <div class="gb-panel-num-wrap">
+        <span class="gb-panel-num">03</span>
+        <span class="gb-panel-num-label">Solar System</span>
+      </div>
+      <div class="gb-panel-body">
+        <p class="gb-panel-eyebrow">Solar System</p>
+        <h3 class="gb-panel-title">Any imaged<br>surface</h3>
+        <p class="gb-panel-desc">Apollo sites on the Moon. Cassini imagery of Titan. New Horizons coverage of Pluto — all at mission resolution.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  var container = document.getElementById('gbPanels');
+  if (!container) return;
+  var panels = container.querySelectorAll('.gb-panel');
+
+  panels.forEach(function (panel) {
+    panel.addEventListener('click', function () {
+      var isExpanded = panel.classList.contains('is-expanded');
+      panels.forEach(function (p) {
+        p.classList.remove('is-expanded');
+        p.setAttribute('aria-expanded', 'false');
+      });
+      if (!isExpanded) {
+        panel.classList.add('is-expanded');
+        panel.setAttribute('aria-expanded', 'true');
+        container.classList.add('has-expanded');
+      } else {
+        container.classList.remove('has-expanded');
+      }
+    });
+
+    panel.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        panel.click();
+      }
+    });
+  });
+})();
+</script>
+
+<!-- ── Big image ──────────────────────────────────────────── -->
+<div class="gb-showcase-section">
+  <figure class="gb-showcase">
+    <img src="assets/images/carousel/goddard-openspace-mars.webp" alt="Mars globe rendered in OpenSpace using HiRISE imagery and MOLA elevation data" class="gb-showcase-img">
+    <figcaption class="gb-showcase-caption">Mars in OpenSpace — HiRISE surface imagery draped over MOLA elevation data. Colors represent real topography from the Mars Orbiter Laser Altimeter.</figcaption>
+  </figure>
+</div>
+
+<!-- ── Data layers ────────────────────────────────────────── -->
+<div class="gb-section gb-section-alt">
+  <div class="gb-split">
+    <div class="gb-split-text">
+      <h2 class="gb-section-heading">Data layers</h2>
+      <h3 class="gb-split-title">Stack and reveal live</h3>
+      <p class="gb-prose">Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show — no pausing, no switching scenes, no prerendering.</p>
+      <ul class="gb-feature-list">
+        <li>Base imagery from multiple spacecraft missions</li>
+        <li>Colorized elevation from MOLA, LOLA, and radar altimetry</li>
+        <li>Scientific overlays — mineral maps, temperature, atmospheric data</li>
+        <li>Time-varying data: watch ice caps advance and retreat</li>
+        <li>Toggleable labels and graticules at any scale</li>
+      </ul>
+    </div>
+    <div class="gb-split-visual">
+      <div class="gb-layer-stack" id="gbLayerStack" role="button" tabindex="0" aria-label="Click to cycle through data layer examples">
+        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp')">
+          <span class="gb-layer-label">Globe view</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/mars-surface.webp')">
+          <span class="gb-layer-label">Surface detail</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/Larsen+Ice+Shelf+breakup.webp')">
+          <span class="gb-layer-label">Time-series data</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/earth.webp')">
+          <span class="gb-layer-label">Base imagery</span>
+        </div>
+      </div>
+      <div class="gb-layer-footer">
+        <div class="gb-layer-dots" id="gbLayerDots">
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+        </div>
+        <span class="gb-layer-hint">Click to cycle layers</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var stack = document.getElementById('gbLayerStack');
+  if (!stack) return;
+  var cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
+  var dots  = Array.from(document.querySelectorAll('#gbLayerDots .gb-layer-dot'));
+  var total = cards.length;
+  var current = 0;
+  var states = ['gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden'];
+
+  function render() {
+    cards.forEach(function (card, i) {
+      states.forEach(function (s) { card.classList.remove(s); });
+      var offset = (i - current + total) % total;
+      card.classList.add(states[Math.min(offset, states.length - 1)]);
+    });
+    dots.forEach(function (dot, i) {
+      dot.classList.toggle('active', i === current);
+    });
+  }
+
+  stack.addEventListener('click', function () {
+    current = (current + 1) % total;
+    render();
+  });
+
+  stack.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      current = (current + 1) % total;
+      render();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      current = (current - 1 + total) % total;
+      render();
+    }
+  });
+
+  render();
+})();
+</script>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<div class="gb-section">
+  <div class="impact-cta-card">
+    <h2>Start exploring planetary surfaces</h2>
+    <p>Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.</p>
+    <div class="gb-cta-buttons">
+      <a class="impact-cta-btn" href="version-0213.qmd">Download OpenSpace</a>
+      <a class="gb-cta-btn-ghost" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
+    </div>
+  </div>
+</div>
+```

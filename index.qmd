@@ -212,13 +212,40 @@ format:
 </section>
 
 <section class="cta-section">
-  <div class="os-container text-center">
+  <div class="cta-card">
     <h2 class="section-heading">Start exploring</h2>
     <p class="section-lede">Free. Open source. Cross-platform.</p>
     <div class="hero-actions">
-      <a href="version-0213.qmd" class="btn-primary-os btn-primary-dark">Download</a>
-      <a href="https://github.com/OpenSpace/OpenSpace" class="btn-ghost-os btn-ghost-dark">View on GitHub</a>
+      <a href="version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
+      <a href="https://github.com/OpenSpace/OpenSpace" class="btn-ghost-os">View on GitHub</a>
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  var cards = document.querySelectorAll('.venue-card');
+  if (!cards.length) return;
+
+  cards.forEach(function (card) {
+    var dot = document.createElement('div');
+    dot.className = 'venue-cursor';
+    card.appendChild(dot);
+
+    card.addEventListener('mousemove', function (e) {
+      var rect = card.getBoundingClientRect();
+      dot.style.left = (e.clientX - rect.left) + 'px';
+      dot.style.top  = (e.clientY - rect.top)  + 'px';
+    });
+
+    card.addEventListener('mouseenter', function () {
+      dot.classList.add('is-visible');
+    });
+
+    card.addEventListener('mouseleave', function () {
+      dot.classList.remove('is-visible');
+    });
+  });
+})();
+</script>
 ```

@@ -1,0 +1,428 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Mission Visualizations page
+// =============================================================
+
+// ── Hero ──────────────────────────────────────────────────────
+.mv-hero {
+  background: $background;
+  color: white;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+
+  .feature-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba($satelliteGray, 0.7);
+    margin: 0 0 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 auto 1.25rem;
+    color: $baseWhite;
+    max-width: 760px;
+  }
+}
+
+.mv-hero-lede {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: rgba($satelliteGray, 0.9);
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+// ── Section wrapper ───────────────────────────────────────────
+.mv-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left:  clamp(1.5rem, 10vw, 12rem);
+  padding-right: clamp(1.5rem, 10vw, 12rem);
+}
+
+.mv-section-heading {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $primaryAccent;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.mv-section-lede {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: rgba($satelliteGray, 0.8);
+  max-width: 640px;
+  margin: 0 0 2rem;
+}
+
+.mv-prose {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba($baseWhite, 0.82);
+  margin: 0 0 1.1rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+// ── How it works ──────────────────────────────────────────────
+.mv-how-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 5rem;
+  align-items: start;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.mv-capabilities {
+  display: flex;
+  flex-direction: column;
+}
+
+.mv-cap {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  &:last-child { border-bottom: none; }
+}
+
+.mv-cap-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $baseWhite;
+  margin: 0 0 0.35rem;
+}
+
+.mv-cap-desc {
+  font-size: 0.8125rem;
+  line-height: 1.65;
+  color: rgba($satelliteGray, 0.68);
+  margin: 0;
+}
+
+// ── Missions full-bleed section ───────────────────────────────
+.mv-missions-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #0d1014;
+}
+
+.mv-missions-header {
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  padding-left:  clamp(1.5rem, 10vw, 12rem);
+  padding-right: clamp(1.5rem, 10vw, 12rem);
+}
+
+// ── Image accordion panels ────────────────────────────────────
+.mv-missions {
+  // No extra styles needed — panels stack naturally
+}
+
+.mv-mission {
+  // Wrapper for each mission
+}
+
+// The image panel itself
+.mv-panel {
+  position: relative;
+  height: 88px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: height 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  border-top: 1px solid rgba($primaryAccent, 0.1);
+
+  &:last-child {
+    border-bottom: 1px solid rgba($primaryAccent, 0.1);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: -2px;
+    z-index: 10;
+  }
+}
+
+.mv-mission.is-open .mv-panel {
+  height: 520px;
+  cursor: default;
+}
+
+// Hover: grow slightly when nothing is open
+.mv-missions:not(.has-open) .mv-panel:hover {
+  height: 110px;
+}
+
+// Color tint
+.mv-panel-tint {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.mv-mission.is-open .mv-panel-tint {
+  opacity: 0.6; // let more image through when expanded
+}
+
+// Top gradient — keeps strip header legible
+.mv-panel-top-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.3)  60%,
+    transparent 100%
+  );
+}
+
+// Bottom gradient — fades up for body text
+.mv-panel-bot-grad {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 320px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.65) 45%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.mv-mission.is-open .mv-panel-bot-grad {
+  opacity: 1;
+}
+
+// ── Strip (always-visible header row) ─────────────────────────
+.mv-panel-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 88px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 56px 1fr auto auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 clamp(1.5rem, 10vw, 12rem);
+  pointer-events: none;
+}
+
+.mv-num {
+  font-size: 0.7rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.14em;
+  color: $primaryAccent;
+  font-weight: 500;
+}
+
+.mv-name-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.mv-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: $baseWhite;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s ease;
+}
+
+.mv-mission.is-open .mv-name {
+  color: $primaryAccent;
+}
+
+.mv-tagline {
+  font-size: 0.72rem;
+  color: rgba($satelliteGray, 0.55);
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.mv-agency {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.45);
+  font-family: 'IBM Plex Mono', monospace;
+  white-space: nowrap;
+
+  @media (max-width: 600px) { display: none; }
+}
+
+.mv-toggle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba($satelliteGray, 0.5);
+  line-height: 1;
+  width: 28px;
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.mv-mission.is-open .mv-toggle {
+  transform: rotate(45deg);
+  color: $primaryAccent;
+}
+
+// ── Panel body (revealed on expand) ───────────────────────────
+.mv-panel-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0 clamp(1.5rem, 10vw, 12rem) 2.5rem;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease 0.25s,
+              transform 0.4s ease 0.25s;
+  max-width: none;
+}
+
+.mv-mission.is-open .mv-panel-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mv-body-eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $primaryAccent;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0 0 0.6rem;
+}
+
+.mv-body-title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.75rem;
+  max-width: 700px;
+}
+
+.mv-body-desc {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 1.25rem;
+  max-width: 640px;
+}
+
+.mv-facts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mv-fact {
+  font-size: 0.7rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  color: rgba($satelliteGray, 0.82);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba($primaryAccent, 0.25);
+  border-radius: 4px;
+  padding: 0.3rem 0.65rem;
+}
+
+// ── CTA ───────────────────────────────────────────────────────
+.mv-cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mv-cta-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: $primaryAccent;
+  border: 1px solid rgba($primaryAccent, 0.3);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+  letter-spacing: 0.01em;
+
+  i, .bi { display: none; }
+
+  &:hover {
+    border-color: rgba($primaryAccent, 0.7);
+    background: rgba($primaryAccent, 0.06);
+    transform: translateY(-2px);
+    color: $primaryAccent;
+    text-decoration: none;
+  }
+}
+
+// ── Mobile ────────────────────────────────────────────────────
+@media (max-width: 600px) {
+  .mv-mission.is-open .mv-panel {
+    height: 480px;
+  }
+
+  .mv-body-title {
+    font-size: 1.5rem;
+  }
+
+  .mv-facts-row {
+    gap: 0.4rem;
+  }
+}
+
+// ── Reduced motion ────────────────────────────────────────────
+@media (prefers-reduced-motion: reduce) {
+  .mv-panel { transition: none; }
+  .mv-toggle { transition: none; }
+  .mv-panel-body { transition: none; }
+  .mv-panel-bot-grad { transition: none; }
+}

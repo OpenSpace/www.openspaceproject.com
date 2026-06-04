@@ -33,6 +33,8 @@ format:
       - "assets/style/research.scss"
       - "assets/style/partners.scss"
       - "assets/style/impact.scss"
+      - "assets/style/globe-browsing.scss"
+      - "assets/style/mission-visualizations.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html

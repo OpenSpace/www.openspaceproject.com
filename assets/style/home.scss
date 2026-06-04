@@ -97,27 +97,26 @@ $navbar-hl:      #ecf5fb !default;
   gap: 1.75rem;
   color: white;
   background-color: $background;
-  padding-bottom: 300px;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 220px;
-    background: linear-gradient(to bottom, transparent 0%, $background 100%);
-    pointer-events: none;
-    z-index: 2;
-  }
+  padding-bottom: clamp(200px, 28vh, 380px);
 
   .hero-video-wrap {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 300px;
+    bottom: clamp(200px, 28vh, 380px);
     z-index: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: clamp(140px, 24vh, 320px);
+      background: linear-gradient(to bottom, transparent 0%, $background 100%);
+      pointer-events: none;
+    }
   }
 
   .hero-video {
@@ -139,7 +138,7 @@ $navbar-hl:      #ecf5fb !default;
 
   .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 800px;
     padding: 0 1.5rem;
     text-align: center;
@@ -155,7 +154,7 @@ $navbar-hl:      #ecf5fb !default;
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     position: relative;
   }
 
@@ -224,20 +223,10 @@ $navbar-hl:      #ecf5fb !default;
 .trusted-section {
   padding: 3rem 0;
   background: $background;
-  margin-top: -270px;
+  margin-top: clamp(-360px, -26vh, -180px);
   position: relative;
   z-index: 10;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -320px;
-    left: 0;
-    right: 0;
-    height: 300px;
-    background: linear-gradient(to bottom, transparent, $background);
-    pointer-events: none;
-  }
 }
 
 .trusted-label {
@@ -514,17 +503,45 @@ $navbar-hl:      #ecf5fb !default;
 
 // ---------- Final CTA ----------
 .cta-section {
-  padding: 0;
+  padding: 4rem clamp(1.5rem, 10vw, 12rem) 5rem;
   background: $background;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #d9da6d, #3dbdee);
+    opacity: 0.22;
+    filter: blur(60px);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover::before {
+    animation: ucGlowMorph 4s ease-in-out infinite;
+    opacity: 0.32;
+  }
 }
 
 .cta-card {
-  padding: 5rem 4rem;
-  background: #0d1014;
-  border-radius: 48px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba($baseWhite, 0.18);
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem;
   text-align: center;
   position: relative;
   z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+
+  &::before { display: none; }
 
   .section-lede {
     text-align: center;
@@ -536,19 +553,6 @@ $navbar-hl:      #ecf5fb !default;
   .hero-actions {
     justify-content: center;
   }
-}
-
-// Sticky footer reveal — scoped to homepage (only page with .cta-section)
-body:has(.cta-section) #quarto-content {
-  position: relative;
-  z-index: 1;
-}
-
-body:has(.cta-section) .site-footer {
-  position: sticky;
-  bottom: 0;
-  z-index: 0;
-  margin-top: -3rem;
 }
 
 // ---------- Responsive ----------
@@ -566,8 +570,7 @@ body:has(.cta-section) .site-footer {
   }
 
   .cta-card {
-    padding: 3rem 2rem;
-    border-radius: 32px;
+    padding: 2.5rem 1.5rem;
   }
 
   .funder-track {

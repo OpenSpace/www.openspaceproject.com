@@ -1,0 +1,86 @@
+---
+pagetitle: "Tutorials — OpenSpace"
+description-meta: "Step-by-step video tutorials for getting started with OpenSpace — installation, navigation, and the user interface."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="tut-hero">
+  <div>
+    <p class="feature-eyebrow">Tutorials</p>
+    <h1>Get started with OpenSpace</h1>
+    <p class="tut-hero-lede">Step-by-step video guides covering installation, navigation, and the user interface — everything you need to take your first flight.</p>
+  </div>
+</section>
+
+<!-- ── Video grid ─────────────────────────────────────────── -->
+<div class="tut-section">
+  <h2 class="tut-section-heading">Getting started · v0.21.0</h2>
+
+  <div class="tut-grid">
+
+    <div class="tut-card">
+      <div class="tut-embed-wrap">
+        <iframe src="https://www.youtube.com/embed/DY5mugXgivw"
+                title="Tutorial 0. Download and Installation (0.21.0)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+      </div>
+      <div class="tut-card-body">
+        <p class="tut-eyebrow">Tutorial 0</p>
+        <h3 class="tut-title">Download and Installation</h3>
+        <p class="tut-desc">Install OpenSpace 0.21.0 on Windows, macOS, or Linux — from download to first launch.</p>
+      </div>
+    </div>
+
+    <div class="tut-card">
+      <div class="tut-embed-wrap">
+        <iframe src="https://www.youtube.com/embed/VaawmfV4zak"
+                title="Tutorial 1. Getting Started (0.21.0)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+      </div>
+      <div class="tut-card-body">
+        <p class="tut-eyebrow">Tutorial 1</p>
+        <h3 class="tut-title">Getting Started</h3>
+        <p class="tut-desc">Load your first profile and take your first flight — navigating the solar system from Earth to the outer planets.</p>
+      </div>
+    </div>
+
+    <div class="tut-card">
+      <div class="tut-embed-wrap">
+        <iframe src="https://www.youtube.com/embed/qy7fIQA7YoE"
+                title="Tutorial 2. User Interface (0.21.0)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+      </div>
+      <div class="tut-card-body">
+        <p class="tut-eyebrow">Tutorial 2</p>
+        <h3 class="tut-title">User Interface</h3>
+        <p class="tut-desc">A complete walkthrough of the OpenSpace UI — panels, menus, time controls, and navigation tools.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── More resources ─────────────────────────────────────── -->
+<div class="tut-section tut-section-alt">
+  <div class="impact-cta-card">
+    <h2>More learning resources</h2>
+    <p>The full documentation covers every feature in depth. The community Slack is the best place to ask questions and connect with other OpenSpace users.</p>
+    <div class="tut-cta-buttons">
+      <a class="impact-cta-btn" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
+      <a class="tut-cta-btn-ghost" href="slack.html">Join the Slack</a>
+    </div>
+  </div>
+</div>
+```

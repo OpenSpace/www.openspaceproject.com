@@ -56,7 +56,7 @@ format:
     <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
     <div class="venue-grid">
 
-      <a href="use-cases/planetarium.html" class="venue-card">
+      <a href="display-support.html#dome-theaters" class="venue-card">
         <img src="assets/images/venue-cards/Hayden_JWST.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
         <div class="venue-body">
           <h3>Planetarium domes</h3>
@@ -65,7 +65,7 @@ format:
         </div>
       </a>
 
-      <a href="use-cases/classroom.html" class="venue-card">
+      <a href="display-support.html#classrooms-desktops" class="venue-card">
         <img src="assets/images/venue-cards/AMNH_LWD students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
         <div class="venue-body">
           <h3>Classrooms</h3>
@@ -74,7 +74,7 @@ format:
         </div>
       </a>
 
-      <a href="use-cases/museum.html" class="venue-card">
+      <a href="display-support.html#museum-exhibits" class="venue-card">
         <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" class="venue-img">
         <div class="venue-body">
           <h3>Museum exhibits</h3>
@@ -222,30 +222,4 @@ format:
   </div>
 </section>
 
-<script>
-(function () {
-  var cards = document.querySelectorAll('.venue-card');
-  if (!cards.length) return;
-
-  cards.forEach(function (card) {
-    var dot = document.createElement('div');
-    dot.className = 'venue-cursor';
-    card.appendChild(dot);
-
-    card.addEventListener('mousemove', function (e) {
-      var rect = card.getBoundingClientRect();
-      dot.style.left = (e.clientX - rect.left) + 'px';
-      dot.style.top  = (e.clientY - rect.top)  + 'px';
-    });
-
-    card.addEventListener('mouseenter', function () {
-      dot.classList.add('is-visible');
-    });
-
-    card.addEventListener('mouseleave', function () {
-      dot.classList.remove('is-visible');
-    });
-  });
-})();
-</script>
 ```

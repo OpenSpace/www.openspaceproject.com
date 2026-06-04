@@ -1,0 +1,212 @@
+---
+pagetitle: "Space Weather — OpenSpace"
+description-meta: "OpenSpace visualizes real solar wind, magnetosphere, CME, and aurora data from NASA — from live conditions to historical storm events."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="sw-hero">
+  <div class="sw-hero-bg" style="background-image:url('assets/images/banner/earth1.webp')"></div>
+  <div class="sw-hero-overlay"></div>
+  <div class="sw-hero-content">
+    <p class="sw-eyebrow">Space Weather</p>
+    <h1 class="sw-hero-title">The Sun's reach, visualized in real data</h1>
+    <p class="sw-hero-lede">From solar wind to coronal mass ejections — OpenSpace streams live and historical space weather data so you can see what the Sun is doing to our solar system right now.</p>
+  </div>
+</section>
+
+<!-- ── What is space weather ──────────────────────────────── -->
+<div class="sw-section">
+  <div class="sw-intro-grid">
+    <div class="sw-intro-text">
+      <h2 class="sw-section-heading">What OpenSpace shows</h2>
+      <p class="sw-prose">OpenSpace connects to real-time and historical data from NASA's Community Coordinated Modeling Center (CCMC) and NOAA's Space Weather Prediction Center. The result is a live visualization of the electromagnetic environment surrounding Earth — and the rest of the solar system.</p>
+      <p class="sw-prose">Every particle field, every magnetic field line, every CME trajectory is drawn from actual simulation and observation data. This is the same data space weather forecasters use, made navigable.</p>
+    </div>
+    <div class="sw-stats">
+      <div class="sw-stat">
+        <span class="sw-stat-num">Live</span>
+        <span class="sw-stat-label">Real-time data from NASA CCMC and NOAA SWPC</span>
+      </div>
+      <div class="sw-stat sw-stat-divider">
+        <span class="sw-stat-num">ENLIL</span>
+        <span class="sw-stat-label">Solar wind simulation model powering CME tracking</span>
+      </div>
+      <div class="sw-stat sw-stat-divider">
+        <span class="sw-stat-num">BATS-R-US</span>
+        <span class="sw-stat-label">Magnetospheric MHD model for field-line visualization</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Phenomena accordion ────────────────────────────────── -->
+<div class="sw-phenomena-section">
+
+  <div class="sw-phenomena-header">
+    <h2 class="sw-section-heading">What you can visualize</h2>
+    <p class="sw-section-lede">Click any phenomenon to explore.</p>
+  </div>
+
+  <div class="sw-phenomena" id="swPhenomena">
+
+    <div class="sw-phenom">
+      <div class="sw-panel"
+           style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 40%"
+           role="button" tabindex="0" aria-expanded="false">
+        <div class="sw-panel-tint" style="background:rgba(0,20,80,0.52)"></div>
+        <div class="sw-panel-top-grad"></div>
+        <div class="sw-panel-bot-grad"></div>
+        <div class="sw-panel-strip">
+          <span class="sw-num">01</span>
+          <div class="sw-name-wrap">
+            <span class="sw-name">Solar Wind</span>
+            <span class="sw-tagline">Continuous particle stream from the Sun</span>
+          </div>
+          <span class="sw-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="sw-panel-body">
+          <p class="sw-body-eyebrow">Solar Wind</p>
+          <h3 class="sw-body-title">The Sun's constant breath</h3>
+          <p class="sw-body-desc">The solar wind is a continuous stream of charged particles flowing outward from the Sun at 400–800 km/s. In OpenSpace, it appears as a visible particle field — dense near the Sun and thinning as it spreads across the solar system past Earth and the outer planets.</p>
+          <div class="sw-facts-row">
+            <span class="sw-fact">400–800 km/s average speed</span>
+            <span class="sw-fact">Reaches Earth in 2–4 days</span>
+            <span class="sw-fact">ENLIL model data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sw-phenom">
+      <div class="sw-panel"
+           style="background-image:url('assets/images/banner/earth1.webp'); background-position:center 35%"
+           role="button" tabindex="0" aria-expanded="false">
+        <div class="sw-panel-tint" style="background:rgba(30,0,80,0.48)"></div>
+        <div class="sw-panel-top-grad"></div>
+        <div class="sw-panel-bot-grad"></div>
+        <div class="sw-panel-strip">
+          <span class="sw-num">02</span>
+          <div class="sw-name-wrap">
+            <span class="sw-name">Magnetosphere</span>
+            <span class="sw-tagline">Earth's invisible magnetic shield</span>
+          </div>
+          <span class="sw-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="sw-panel-body">
+          <p class="sw-body-eyebrow">Magnetosphere</p>
+          <h3 class="sw-body-title">Earth's invisible shield</h3>
+          <p class="sw-body-desc">Earth's magnetic field deflects the solar wind, creating a cavity called the magnetosphere — compressed on the sunward side and stretched into a long tail on the night side. OpenSpace renders magnetic field lines from the BATS-R-US model and shows how the magnetosphere responds dynamically to solar activity.</p>
+          <div class="sw-facts-row">
+            <span class="sw-fact">Extends 60,000 km toward the Sun</span>
+            <span class="sw-fact">Magnetotail stretches millions of km</span>
+            <span class="sw-fact">BATS-R-US MHD model</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sw-phenom">
+      <div class="sw-panel"
+           style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%"
+           role="button" tabindex="0" aria-expanded="false">
+        <div class="sw-panel-tint" style="background:rgba(80,22,0,0.52)"></div>
+        <div class="sw-panel-top-grad"></div>
+        <div class="sw-panel-bot-grad"></div>
+        <div class="sw-panel-strip">
+          <span class="sw-num">03</span>
+          <div class="sw-name-wrap">
+            <span class="sw-name">Coronal Mass Ejections</span>
+            <span class="sw-tagline">Massive plasma eruptions from the Sun</span>
+          </div>
+          <span class="sw-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="sw-panel-body">
+          <p class="sw-body-eyebrow">Coronal Mass Ejections</p>
+          <h3 class="sw-body-title">Plasma storms crossing the solar system</h3>
+          <p class="sw-body-desc">CMEs are eruptions of billions of tonnes of magnetized plasma from the Sun's corona. OpenSpace recreates historical CME events using NASA CCMC's ENLIL simulation — watch the pressure wave propagate outward across the solar system and arrive at Earth, triggering geomagnetic storms.</p>
+          <div class="sw-facts-row">
+            <span class="sw-fact">Travel time: 1–3 days to Earth</span>
+            <span class="sw-fact">Speed: up to 3,000 km/s</span>
+            <span class="sw-fact">Historical events from CCMC archive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sw-phenom">
+      <div class="sw-panel"
+           style="background-image:url('assets/images/carousel/Larsen+Ice+Shelf+breakup.webp'); background-position:center 50%"
+           role="button" tabindex="0" aria-expanded="false">
+        <div class="sw-panel-tint" style="background:rgba(0,45,20,0.45)"></div>
+        <div class="sw-panel-top-grad"></div>
+        <div class="sw-panel-bot-grad"></div>
+        <div class="sw-panel-strip">
+          <span class="sw-num">04</span>
+          <div class="sw-name-wrap">
+            <span class="sw-name">Aurora</span>
+            <span class="sw-tagline">Particles meet atmosphere</span>
+          </div>
+          <span class="sw-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="sw-panel-body">
+          <p class="sw-body-eyebrow">Aurora</p>
+          <h3 class="sw-body-title">Where the solar wind becomes visible</h3>
+          <p class="sw-body-desc">When CME particles funnel down magnetic field lines into Earth's atmosphere, they excite atmospheric gases and produce aurora. OpenSpace renders the aurora oval — the ring of auroral activity around the magnetic poles — and shows how it expands and brightens during geomagnetic storms.</p>
+          <div class="sw-facts-row">
+            <span class="sw-fact">Altitude: 100–300 km</span>
+            <span class="sw-fact">Kp index drives oval size</span>
+            <span class="sw-fact">Live Ovation Prime model</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<div class="sw-section">
+  <div class="impact-cta-card">
+    <h2>See space weather in action</h2>
+    <p>Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.</p>
+    <div class="sw-cta-buttons">
+      <a class="impact-cta-btn" href="version-0213.qmd">Download OpenSpace</a>
+      <a class="sw-cta-btn-ghost" href="https://ccmc.gsfc.nasa.gov" target="_blank" rel="noopener">NASA CCMC</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var phenoms = Array.from(document.querySelectorAll('.sw-phenom'));
+
+  phenoms.forEach(function (phenom) {
+    var panel = phenom.querySelector('.sw-panel');
+    if (!panel) return;
+
+    panel.addEventListener('click', function () {
+      var isOpen = phenom.classList.contains('is-open');
+      phenoms.forEach(function (p) {
+        p.classList.remove('is-open');
+        var pn = p.querySelector('.sw-panel');
+        if (pn) pn.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        phenom.classList.add('is-open');
+        panel.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    panel.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); panel.click(); }
+    });
+  });
+})();
+</script>
+```

@@ -1,0 +1,250 @@
+---
+pagetitle: "Display Support — OpenSpace"
+description-meta: "OpenSpace runs on everything from a personal laptop to a 30-meter planetarium dome — with fisheye, MPCDI, multi-projector, and tiled display support built in."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="ds-hero">
+  <div>
+    <p class="feature-eyebrow">Display Support</p>
+    <h1>Any screen. Any venue.</h1>
+    <p class="ds-hero-lede">From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and tiled wall support built in.</p>
+  </div>
+</section>
+
+<!-- ── Anchor nav ─────────────────────────────────────────── -->
+<nav class="ds-anchor-nav" aria-label="Jump to section">
+  <a class="ds-anchor-link" href="#dome-theaters">Dome Theaters</a>
+  <a class="ds-anchor-link" href="#classrooms-desktops">Classrooms &amp; Desktops</a>
+  <a class="ds-anchor-link" href="#museum-exhibits">Museum Exhibits</a>
+  <a class="ds-anchor-link" href="#fisheye">Fisheye Rendering</a>
+</nav>
+
+<!-- ── Dome Theaters ──────────────────────────────────────── -->
+<section class="ds-venue-section" id="dome-theaters">
+  <div class="ds-venue-image-area">
+    <img class="ds-venue-img ds-img--active"
+         src="assets/images/venue-cards/Hayden_JWST.webp"
+         alt="Hayden Planetarium dome running OpenSpace with JWST data">
+    <img class="ds-venue-img"
+         src="assets/images/carousel/earth.webp"
+         alt="Earth visualization in OpenSpace dome projection">
+    <img class="ds-venue-img"
+         src="assets/images/carousel/goddard-openspace-mars.webp"
+         alt="Mars globe rendered in OpenSpace for dome display">
+    <div class="ds-img-dots">
+      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
+      <button class="ds-dot" aria-label="Image 2"></button>
+      <button class="ds-dot" aria-label="Image 3"></button>
+    </div>
+  </div>
+  <div class="ds-venue-text">
+    <p class="ds-eyebrow">Planetarium</p>
+    <h2 class="ds-venue-title">Dome theaters</h2>
+    <p class="ds-venue-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files — everything your dome already uses.</p>
+    <ul class="ds-venue-list">
+      <li>MPCDI mesh warping for any dome geometry</li>
+      <li>Multi-projector soft edge blending and masking</li>
+      <li>Fisheye, cylindrical, and equirectangular output modes</li>
+      <li>Compatible with portable inflatable and permanent fixed domes</li>
+      <li>Live presenter controls for real-time narration</li>
+    </ul>
+    <div class="ds-img-arrows">
+      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
+      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Classrooms & Desktops ──────────────────────────────── -->
+<section class="ds-venue-section ds-venue-section--reverse ds-venue-section--alt" id="classrooms-desktops">
+  <div class="ds-venue-image-area">
+    <img class="ds-venue-img ds-img--active"
+         src="assets/images/venue-cards/AMNH_LWD students.webp"
+         alt="Students using OpenSpace in a classroom at AMNH">
+    <img class="ds-venue-img"
+         src="assets/images/carousel/mars-surface.webp"
+         alt="Mars HiRISE surface as seen by students in OpenSpace">
+    <img class="ds-venue-img"
+         src="assets/images/carousel/Burma+Tibet.webp"
+         alt="Earth terrain visualization in OpenSpace classroom">
+    <div class="ds-img-dots">
+      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
+      <button class="ds-dot" aria-label="Image 2"></button>
+      <button class="ds-dot" aria-label="Image 3"></button>
+    </div>
+  </div>
+  <div class="ds-venue-text">
+    <p class="ds-eyebrow">Classroom</p>
+    <h2 class="ds-venue-title">Classrooms &amp; desktops</h2>
+    <p class="ds-venue-desc">OpenSpace runs on Windows, macOS, and Linux from a standard laptop or workstation. Single and multi-monitor setups work out of the box — deploy it across an entire school district for free.</p>
+    <ul class="ds-venue-list">
+      <li>Windows, macOS, and Linux — no licensing costs</li>
+      <li>Runs on consumer hardware, no specialist GPU required</li>
+      <li>Curated classroom profiles with lesson-ready content</li>
+      <li>Single-monitor and multi-screen desktop configurations</li>
+      <li>Projector and interactive whiteboard compatible</li>
+    </ul>
+    <div class="ds-img-arrows">
+      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
+      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Museum Exhibits ────────────────────────────────────── -->
+<section class="ds-venue-section" id="museum-exhibits">
+  <div class="ds-venue-image-area">
+    <img class="ds-venue-img ds-img--active"
+         src="assets/images/venue-cards/spaceship.webp"
+         alt="OpenSpace running in a museum exhibit">
+    <img class="ds-venue-img"
+         src="assets/images/venue-cards/Hayden_JWST.webp"
+         alt="OpenSpace at the Hayden Planetarium exhibit">
+    <img class="ds-venue-img"
+         src="assets/images/carousel/earth.webp"
+         alt="Earth visualization in a museum display">
+    <div class="ds-img-dots">
+      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
+      <button class="ds-dot" aria-label="Image 2"></button>
+      <button class="ds-dot" aria-label="Image 3"></button>
+    </div>
+  </div>
+  <div class="ds-venue-text">
+    <p class="ds-eyebrow">Museum</p>
+    <h2 class="ds-venue-title">Museum exhibits</h2>
+    <p class="ds-venue-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience; curators can update content remotely.</p>
+    <ul class="ds-venue-list">
+      <li>Touch and gesture input for kiosk-style exhibits</li>
+      <li>Custom UI profiles — lock to specific content or flight paths</li>
+      <li>Synchronized multi-display walls and segmented spheres</li>
+      <li>Auto-reset to home position after idle period</li>
+      <li>Supports permanent installations and traveling shows</li>
+    </ul>
+    <div class="ds-img-arrows">
+      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
+      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Fisheye Rendering ──────────────────────────────────── -->
+<section class="ds-venue-section ds-venue-section--reverse ds-venue-section--alt" id="fisheye">
+  <div class="ds-venue-image-area">
+    <img class="ds-venue-img ds-img--active"
+         src="assets/images/carousel/goddard-openspace-mars.webp"
+         alt="Mars globe rendered in OpenSpace fisheye mode">
+    <img class="ds-venue-img"
+         src="assets/images/carousel/earth.webp"
+         alt="Earth rendered in OpenSpace fisheye projection">
+    <img class="ds-venue-img"
+         src="assets/images/banner/earth1.webp"
+         alt="Earth orbit view for fisheye dome rendering">
+    <div class="ds-img-dots">
+      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
+      <button class="ds-dot" aria-label="Image 2"></button>
+      <button class="ds-dot" aria-label="Image 3"></button>
+    </div>
+  </div>
+  <div class="ds-venue-text">
+    <p class="ds-eyebrow">Rendering</p>
+    <h2 class="ds-venue-title">Fisheye rendering</h2>
+    <p class="ds-venue-desc">OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>
+    <ul class="ds-venue-list">
+      <li>Native 180° fisheye — no post-process warping</li>
+      <li>Per-eye stereo rendering for 3D dome experiences</li>
+      <li>Supports 4K and 8K output resolutions</li>
+      <li>Equirectangular and cubemap outputs for previews</li>
+      <li>SPOUT output for integration with compositing tools</li>
+    </ul>
+    <div class="ds-img-arrows">
+      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
+      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Technical capabilities ─────────────────────────────── -->
+<div class="ds-section ds-section-alt">
+  <h2 class="ds-section-heading">Technical capabilities</h2>
+  <div class="ds-tech-grid">
+    <div class="ds-tech-card">
+      <h3 class="ds-tech-title">MPCDI support</h3>
+      <p class="ds-tech-desc">Reads industry-standard MPCDI calibration files for precise mesh warping and blending on any dome or curved screen.</p>
+    </div>
+    <div class="ds-tech-card">
+      <h3 class="ds-tech-title">Edge blending</h3>
+      <p class="ds-tech-desc">Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.</p>
+    </div>
+    <div class="ds-tech-card">
+      <h3 class="ds-tech-title">Projection modes</h3>
+      <p class="ds-tech-desc">Fisheye, equirectangular, cylindrical, and perspective projections — switchable via config for any screen geometry.</p>
+    </div>
+    <div class="ds-tech-card">
+      <h3 class="ds-tech-title">Multi-node sync</h3>
+      <p class="ds-tech-desc">Synchronized rendering across multiple GPUs and machines for tiled video walls and segmented spheres.</p>
+    </div>
+    <div class="ds-tech-card">
+      <h3 class="ds-tech-title">Window configs</h3>
+      <p class="ds-tech-desc">A single JSON file describes your entire display setup. Switch between venues without reinstalling.</p>
+    </div>
+    <div class="ds-tech-card">
+      <h3 class="ds-tech-title">Cross-platform</h3>
+      <p class="ds-tech-desc">Windows, macOS, and Linux. Runs on consumer hardware and professional visualization clusters alike.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<div class="ds-section">
+  <div class="impact-cta-card">
+    <h2>Set up OpenSpace for your venue</h2>
+    <p>The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.</p>
+    <div class="ds-cta-buttons">
+      <a class="impact-cta-btn" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
+      <a class="ds-cta-btn-ghost" href="mailto:support@openspaceproject.com">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Anchor nav — explicit scroll handler to bypass Quarto's smooth-scroll JS
+  document.querySelectorAll('.ds-anchor-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = link.getAttribute('href').replace('#', '');
+      var target = document.getElementById(id);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // Image gallery
+  var sections = document.querySelectorAll('.ds-venue-section');
+  sections.forEach(function (section) {
+    var imgs    = section.querySelectorAll('.ds-venue-img');
+    var dots    = section.querySelectorAll('.ds-dot');
+    var prevBtn = section.querySelector('.ds-arrow--prev');
+    var nextBtn = section.querySelector('.ds-arrow--next');
+    var total   = imgs.length;
+    var current = 0;
+
+    function goTo(i) {
+      current = (i + total) % total;
+      imgs.forEach(function (img, j) { img.classList.toggle('ds-img--active', j === current); });
+      dots.forEach(function (dot, j) { dot.classList.toggle('ds-dot--active', j === current); });
+    }
+
+    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); }); });
+    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); });
+  });
+})();
+</script>
+```

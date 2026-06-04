@@ -51,8 +51,13 @@
   flex-wrap: wrap;
   gap: 0.6rem;
   justify-content: center;
-  background: $background;
+  background: rgba($background, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba($primaryAccent, 0.1);
+  position: sticky;
+  top: 90px;
+  z-index: 90;
 }
 
 .ds-anchor-link {
@@ -64,8 +69,10 @@
   text-transform: uppercase;
   color: rgba($satelliteGray, 0.7);
   text-decoration: none;
+  background: transparent;
   border: 1px solid rgba($primaryAccent, 0.2);
   border-radius: 100px;
+  cursor: pointer;
   transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
   white-space: nowrap;
 
@@ -84,7 +91,7 @@
   display: grid;
   grid-template-columns: 55% 45%;
   min-height: 540px;
-  scroll-margin-top: 64px;
+  scroll-margin-top: 140px;
   background: #131210;
 
   & + .ds-venue-section {

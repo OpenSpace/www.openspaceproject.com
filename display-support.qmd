@@ -20,10 +20,10 @@ format:
 
 <!-- ── Anchor nav ─────────────────────────────────────────── -->
 <nav class="ds-anchor-nav" aria-label="Jump to section">
-  <a class="ds-anchor-link" href="#dome-theaters">Dome Theaters</a>
-  <a class="ds-anchor-link" href="#classrooms-desktops">Classrooms &amp; Desktops</a>
-  <a class="ds-anchor-link" href="#museum-exhibits">Museum Exhibits</a>
-  <a class="ds-anchor-link" href="#fisheye">Fisheye Rendering</a>
+  <button class="ds-anchor-link" onclick="var el=document.getElementById('dome-theaters');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Dome Theaters</button>
+  <button class="ds-anchor-link" onclick="var el=document.getElementById('classrooms-desktops');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Classrooms &amp; Desktops</button>
+  <button class="ds-anchor-link" onclick="var el=document.getElementById('museum-exhibits');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Museum Exhibits</button>
+  <button class="ds-anchor-link" onclick="var el=document.getElementById('fisheye');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Fisheye Rendering</button>
 </nav>
 
 <!-- ── Dome Theaters ──────────────────────────────────────── -->
@@ -215,16 +215,6 @@ format:
 
 <script>
 (function () {
-  // Anchor nav — explicit scroll handler to bypass Quarto's smooth-scroll JS
-  document.querySelectorAll('.ds-anchor-link').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      var id = link.getAttribute('href').replace('#', '');
-      var target = document.getElementById(id);
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-
   // Image gallery
   var sections = document.querySelectorAll('.ds-venue-section');
   sections.forEach(function (section) {

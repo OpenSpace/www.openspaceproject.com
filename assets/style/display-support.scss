@@ -93,10 +93,7 @@
   min-height: 540px;
   scroll-margin-top: 140px;
   background: #131210;
-
-  & + .ds-venue-section {
-    padding-top: 4rem;
-  }
+  padding: 3rem 0;
 
   &.ds-venue-section--reverse {
     grid-template-columns: 45% 55%;

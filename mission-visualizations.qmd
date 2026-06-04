@@ -20,195 +20,118 @@ format:
 
 <!-- ── How it works ───────────────────────────────────────── -->
 <div class="mv-section">
-  <div class="mv-how-grid">
-    <div class="mv-how-text">
-      <h2 class="mv-section-heading">How OpenSpace visualizes missions</h2>
-      <p class="mv-prose">Every mission is positioned correctly in the solar system using archived trajectory data. Every flyby happens at the moment it really did. Every image appears where the spacecraft was when it captured it — with the actual instrument footprint and pointing direction.</p>
-      <p class="mv-prose">Mission visualizations sync with OpenSpace's time controls, so you can play forward at any rate, rewind, or scrub to any specific moment. Combined with Globe Browsing, you can fly with a spacecraft to a planet and continue down to its surface — one continuous experience, one application.</p>
+  <h2 class="mv-section-heading">How it works</h2>
+  <div class="mv-caps-grid">
+    <div class="mv-cap">
+      <h3 class="mv-cap-title">Real trajectory data</h3>
+      <p class="mv-cap-desc">SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time. Every flyby happens at the moment it really did.</p>
     </div>
-    <div class="mv-capabilities">
-      <div class="mv-cap">
-        <h3 class="mv-cap-title">Full time control</h3>
-        <p class="mv-cap-desc">Play, rewind, scrub, or accelerate to any moment in a mission's history — or watch it unfold in real time.</p>
-      </div>
-      <div class="mv-cap">
-        <h3 class="mv-cap-title">Real trajectory data</h3>
-        <p class="mv-cap-desc">SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time.</p>
-      </div>
-      <div class="mv-cap">
-        <h3 class="mv-cap-title">Instrument footprints</h3>
-        <p class="mv-cap-desc">Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured.</p>
-      </div>
+    <div class="mv-cap">
+      <h3 class="mv-cap-title">Instrument footprints</h3>
+      <p class="mv-cap-desc">Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured — with actual pointing direction.</p>
+    </div>
+    <div class="mv-cap">
+      <h3 class="mv-cap-title">Full time control</h3>
+      <p class="mv-cap-desc">Play, rewind, scrub, or accelerate to any moment in a mission's history. Combine with Globe Browsing to fly from Earth to a planet's surface in one continuous view.</p>
     </div>
   </div>
 </div>
 
-<!-- ── Mission accordion ──────────────────────────────────── -->
+<!-- ── Missions grid ──────────────────────────────────────── -->
 <div class="mv-missions-section">
-
   <div class="mv-missions-header">
     <h2 class="mv-section-heading">Missions</h2>
-    <p class="mv-section-lede">Click any mission to explore.</p>
   </div>
 
-  <div class="mv-missions" id="mvMissions">
+  <div class="mv-grid">
 
-    <!-- ─ New Horizons ─ -->
-    <div class="mv-mission">
-      <div class="mv-panel"
-           style="background-image:url('assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="mv-panel-tint" style="background:rgba(15,8,55,0.52)"></div>
-        <div class="mv-panel-top-grad"></div>
-        <div class="mv-panel-bot-grad"></div>
-
-        <div class="mv-panel-strip">
-          <span class="mv-num">01</span>
-          <div class="mv-name-wrap">
-            <span class="mv-name">New Horizons</span>
-            <span class="mv-tagline">Pluto flyby · July 14, 2015</span>
-          </div>
-          <span class="mv-agency">NASA</span>
-          <span class="mv-toggle" aria-hidden="true">+</span>
+    <!-- New Horizons -->
+    <div class="mv-card" style="background-image:url('assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%">
+      <div class="mv-card-overlay"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-meta">
+          <span class="mv-card-num">01</span>
+          <span class="mv-card-agency">NASA</span>
         </div>
-
-        <div class="mv-panel-body">
-          <p class="mv-body-eyebrow">NASA · July 14, 2015</p>
-          <h3 class="mv-body-title">First spacecraft to Pluto</h3>
-          <p class="mv-body-desc">Watch the historic flyby unfold from New Horizons' perspective — imaging targets and downlinked photos appearing as they were captured during closest approach. Then pull back to see the full 9.5-year journey from Earth.</p>
-          <div class="mv-facts-row">
-            <span class="mv-fact">Closest approach at 12,500 km</span>
-            <span class="mv-fact">9.5-year journey from Earth</span>
-            <span class="mv-fact">Imagery downlinked over 16 months</span>
-          </div>
+        <h3 class="mv-card-name">New Horizons</h3>
+        <p class="mv-card-tagline">Pluto flyby · July 14, 2015</p>
+        <p class="mv-card-desc">Watch the historic flyby unfold from New Horizons' perspective — imaging targets appearing as they were captured during closest approach. Then pull back to see the full 9.5-year journey from Earth.</p>
+        <div class="mv-facts-row">
+          <span class="mv-fact">Closest approach at 12,500 km</span>
+          <span class="mv-fact">9.5-year journey from Earth</span>
         </div>
       </div>
     </div>
 
-    <!-- ─ JWST ─ -->
-    <div class="mv-mission">
-      <div class="mv-panel"
-           style="background-image:url('assets/images/venue-cards/Hayden_JWST.webp'); background-position:center 30%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="mv-panel-tint" style="background:rgba(5,10,30,0.38)"></div>
-        <div class="mv-panel-top-grad"></div>
-        <div class="mv-panel-bot-grad"></div>
-
-        <div class="mv-panel-strip">
-          <span class="mv-num">02</span>
-          <div class="mv-name-wrap">
-            <span class="mv-name">James Webb Space Telescope</span>
-            <span class="mv-tagline">L2 orbit · 2022 – present</span>
-          </div>
-          <span class="mv-agency">NASA / ESA / CSA</span>
-          <span class="mv-toggle" aria-hidden="true">+</span>
+    <!-- JWST -->
+    <div class="mv-card" style="background-image:url('assets/images/venue-cards/Hayden_JWST.webp'); background-position:center 30%">
+      <div class="mv-card-overlay"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-meta">
+          <span class="mv-card-num">02</span>
+          <span class="mv-card-agency">NASA / ESA / CSA</span>
         </div>
-
-        <div class="mv-panel-body">
-          <p class="mv-body-eyebrow">NASA · ESA · CSA · 2022 – present</p>
-          <h3 class="mv-body-title">Seeing the universe in infrared</h3>
-          <p class="mv-body-desc">JWST sits at the L2 Lagrange point 1.5 million km from Earth. See its actual orbit, follow its observation pointing in real time, and visualize the deep fields and exoplanet systems it has surveyed — updated as new observations are published.</p>
-          <div class="mv-facts-row">
-            <span class="mv-fact">Orbit at Sun–Earth L2 point</span>
-            <span class="mv-fact">6.5 m gold-coated primary mirror</span>
-            <span class="mv-fact">Infrared: 0.6 – 28 μm</span>
-          </div>
+        <h3 class="mv-card-name">James Webb Space Telescope</h3>
+        <p class="mv-card-tagline">L2 orbit · 2022 – present</p>
+        <p class="mv-card-desc">See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.</p>
+        <div class="mv-facts-row">
+          <span class="mv-fact">Orbit at Sun–Earth L2 point</span>
+          <span class="mv-fact">6.5 m primary mirror</span>
         </div>
       </div>
     </div>
 
-    <!-- ─ Rosetta ─ -->
-    <div class="mv-mission">
-      <div class="mv-panel"
-           style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="mv-panel-tint" style="background:rgba(45,20,0,0.48)"></div>
-        <div class="mv-panel-top-grad"></div>
-        <div class="mv-panel-bot-grad"></div>
-
-        <div class="mv-panel-strip">
-          <span class="mv-num">03</span>
-          <div class="mv-name-wrap">
-            <span class="mv-name">Rosetta &amp; Philae</span>
-            <span class="mv-tagline">Comet 67P · November 12, 2014</span>
-          </div>
-          <span class="mv-agency">ESA</span>
-          <span class="mv-toggle" aria-hidden="true">+</span>
+    <!-- Rosetta -->
+    <div class="mv-card" style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
+      <div class="mv-card-overlay"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-meta">
+          <span class="mv-card-num">03</span>
+          <span class="mv-card-agency">ESA</span>
         </div>
-
-        <div class="mv-panel-body">
-          <p class="mv-body-eyebrow">ESA · November 12, 2014</p>
-          <h3 class="mv-body-title">Landing on a comet</h3>
-          <p class="mv-body-desc">Approach Comet Churyumov–Gerasimenko alongside Rosetta as it orbited for over two years, then watch Philae's historic descent to the surface. Every orbital maneuver and instrument activation represented with real trajectory data.</p>
-          <div class="mv-facts-row">
-            <span class="mv-fact">10-year journey to Comet 67P</span>
-            <span class="mv-fact">First attempted comet landing</span>
-            <span class="mv-fact">Nucleus: 4.3 × 4.1 km</span>
-          </div>
+        <h3 class="mv-card-name">Rosetta &amp; Philae</h3>
+        <p class="mv-card-tagline">Comet 67P · November 12, 2014</p>
+        <p class="mv-card-desc">Approach Comet Churyumov–Gerasimenko alongside Rosetta, then watch Philae's historic descent. Every orbital maneuver and instrument activation represented with real trajectory data.</p>
+        <div class="mv-facts-row">
+          <span class="mv-fact">10-year journey to Comet 67P</span>
+          <span class="mv-fact">First comet landing attempt</span>
         </div>
       </div>
     </div>
 
-    <!-- ─ Voyager ─ -->
-    <div class="mv-mission">
-      <div class="mv-panel"
-           style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 60%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="mv-panel-tint" style="background:rgba(0,5,25,0.5)"></div>
-        <div class="mv-panel-top-grad"></div>
-        <div class="mv-panel-bot-grad"></div>
-
-        <div class="mv-panel-strip">
-          <span class="mv-num">04</span>
-          <div class="mv-name-wrap">
-            <span class="mv-name">Voyager 1 &amp; 2</span>
-            <span class="mv-tagline">Interstellar space · 1977 – present</span>
-          </div>
-          <span class="mv-agency">NASA</span>
-          <span class="mv-toggle" aria-hidden="true">+</span>
+    <!-- Voyager -->
+    <div class="mv-card" style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 60%">
+      <div class="mv-card-overlay"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-meta">
+          <span class="mv-card-num">04</span>
+          <span class="mv-card-agency">NASA</span>
         </div>
-
-        <div class="mv-panel-body">
-          <p class="mv-body-eyebrow">NASA · 1977 – present</p>
-          <h3 class="mv-body-title">The longest journey</h3>
-          <p class="mv-body-desc">Trace the full 48-year journey of both probes from their 1977 launches through planetary encounters with Jupiter, Saturn, Uranus, and Neptune, out to interstellar space where both spacecraft now travel. Scrub through decades of flight in seconds.</p>
-          <div class="mv-facts-row">
-            <span class="mv-fact">Both probes in interstellar space</span>
-            <span class="mv-fact">Signal: 22+ hours one-way to Voyager 1</span>
-            <span class="mv-fact">Grand Tour gravity-assist trajectory</span>
-          </div>
+        <h3 class="mv-card-name">Voyager 1 &amp; 2</h3>
+        <p class="mv-card-tagline">Interstellar space · 1977 – present</p>
+        <p class="mv-card-desc">Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.</p>
+        <div class="mv-facts-row">
+          <span class="mv-fact">Both probes beyond the heliosphere</span>
+          <span class="mv-fact">Grand Tour gravity-assist trajectory</span>
         </div>
       </div>
     </div>
 
-    <!-- ─ Perseverance ─ -->
-    <div class="mv-mission">
-      <div class="mv-panel"
-           style="background-image:url('assets/images/carousel/mars-surface.webp'); background-position:center 45%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="mv-panel-tint" style="background:rgba(30,8,0,0.28)"></div>
-        <div class="mv-panel-top-grad"></div>
-        <div class="mv-panel-bot-grad"></div>
-
-        <div class="mv-panel-strip">
-          <span class="mv-num">05</span>
-          <div class="mv-name-wrap">
-            <span class="mv-name">Mars 2020 / Perseverance</span>
-            <span class="mv-tagline">Jezero Crater · February 18, 2021</span>
-          </div>
-          <span class="mv-agency">NASA</span>
-          <span class="mv-toggle" aria-hidden="true">+</span>
+    <!-- Perseverance — full-width -->
+    <div class="mv-card mv-card-wide" style="background-image:url('assets/images/carousel/mars-surface.webp'); background-position:center 45%">
+      <div class="mv-card-overlay"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-meta">
+          <span class="mv-card-num">05</span>
+          <span class="mv-card-agency">NASA</span>
         </div>
-
-        <div class="mv-panel-body">
-          <p class="mv-body-eyebrow">NASA · February 18, 2021</p>
-          <h3 class="mv-body-title">Exploring the Martian surface</h3>
-          <p class="mv-body-desc">Follow Perseverance's landing at Jezero Crater and navigate its traverse across the Martian surface. Combined with Globe Browsing, fly the full journey from Earth to Mars and continue to the rover's exact landing site — without leaving the application.</p>
-          <div class="mv-facts-row">
-            <span class="mv-fact">Landing at Jezero Crater</span>
-            <span class="mv-fact">26+ km surface traverse</span>
-            <span class="mv-fact">Ingenuity: first powered flight on Mars</span>
-          </div>
+        <h3 class="mv-card-name">Mars 2020 / Perseverance</h3>
+        <p class="mv-card-tagline">Jezero Crater · February 18, 2021</p>
+        <p class="mv-card-desc">Follow Perseverance's landing and navigate its traverse across the Martian surface. Fly the full journey from Earth to Mars and continue down to the rover's exact landing site — without leaving OpenSpace.</p>
+        <div class="mv-facts-row">
+          <span class="mv-fact">Landing at Jezero Crater</span>
+          <span class="mv-fact">26+ km surface traverse</span>
+          <span class="mv-fact">Ingenuity: first powered flight on Mars</span>
         </div>
       </div>
     </div>
@@ -227,37 +150,4 @@ format:
     </div>
   </div>
 </div>
-
-<script>
-(function () {
-  var missions = Array.from(document.querySelectorAll('.mv-mission'));
-
-  missions.forEach(function (mission) {
-    var panel = mission.querySelector('.mv-panel');
-    if (!panel) return;
-
-    panel.addEventListener('click', function () {
-      var isOpen = mission.classList.contains('is-open');
-
-      missions.forEach(function (m) {
-        m.classList.remove('is-open');
-        var p = m.querySelector('.mv-panel');
-        if (p) p.setAttribute('aria-expanded', 'false');
-      });
-
-      if (!isOpen) {
-        mission.classList.add('is-open');
-        panel.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    panel.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        panel.click();
-      }
-    });
-  });
-})();
-</script>
 ```

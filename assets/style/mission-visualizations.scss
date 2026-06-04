@@ -63,56 +63,33 @@
   font-family: 'IBM Plex Mono', monospace;
 }
 
-.mv-section-lede {
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  color: rgba($satelliteGray, 0.8);
-  max-width: 640px;
-  margin: 0 0 2rem;
-}
-
-.mv-prose {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: rgba($baseWhite, 0.82);
-  margin: 0 0 1.1rem;
-  &:last-child { margin-bottom: 0; }
-}
-
-// ── How it works ──────────────────────────────────────────────
-.mv-how-grid {
+// ── How it works — 3-column capability strip ──────────────────
+.mv-caps-grid {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 5rem;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 
   @media (max-width: 860px) {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 }
 
-.mv-capabilities {
-  display: flex;
-  flex-direction: column;
-}
-
 .mv-cap {
-  padding: 1.4rem 0;
-  border-bottom: 1px solid rgba($primaryAccent, 0.08);
-  &:last-child { border-bottom: none; }
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba($primaryAccent, 0.12);
 }
 
 .mv-cap-title {
   font-size: 0.875rem;
   font-weight: 600;
   color: $baseWhite;
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.5rem;
 }
 
 .mv-cap-desc {
-  font-size: 0.8125rem;
-  line-height: 1.65;
+  font-size: 0.875rem;
+  line-height: 1.7;
   color: rgba($satelliteGray, 0.68);
   margin: 0;
 }
@@ -131,245 +108,126 @@
   padding-right: clamp(1.5rem, 10vw, 12rem);
 }
 
-// ── Image accordion panels ────────────────────────────────────
-.mv-missions {
-  // No extra styles needed — panels stack naturally
+// ── Mission card grid ─────────────────────────────────────────
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.mv-mission {
-  // Wrapper for each mission
-}
-
-// The image panel itself
-.mv-panel {
+.mv-card {
   position: relative;
-  height: 88px;
+  height: 420px;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: pointer;
-  transition: height 0.65s cubic-bezier(0.4, 0, 0.2, 1);
-  border-top: 1px solid rgba($primaryAccent, 0.1);
 
-  &:last-child {
-    border-bottom: 1px solid rgba($primaryAccent, 0.1);
-  }
-
-  &:focus-visible {
-    outline: 2px solid $primaryAccent;
-    outline-offset: -2px;
-    z-index: 10;
+  &:hover .mv-card-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.96) 0%,
+      rgba(0, 0, 0, 0.62) 45%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
   }
 }
 
-.mv-mission.is-open .mv-panel {
-  height: 520px;
-  cursor: default;
+// Full-width card for last mission
+.mv-card-wide {
+  grid-column: 1 / -1;
+  height: 340px;
 }
 
-// Hover: grow slightly when nothing is open
-.mv-missions:not(.has-open) .mv-panel:hover {
-  height: 110px;
-}
-
-// Color tint
-.mv-panel-tint {
+// Dark gradient overlay
+.mv-card-overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.mv-mission.is-open .mv-panel-tint {
-  opacity: 0.6; // let more image through when expanded
-}
-
-// Top gradient — keeps strip header legible
-.mv-panel-top-grad {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 110px;
-  z-index: 2;
-  pointer-events: none;
   background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.72) 0%,
-    rgba(0, 0, 0, 0.3)  60%,
-    transparent 100%
+    to top,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.55) 40%,
+    rgba(0, 0, 0, 0.12) 100%
   );
+  transition: background 0.4s ease;
 }
 
-// Bottom gradient — fades up for body text
-.mv-panel-bot-grad {
+// Text body — pinned to bottom
+.mv-card-body {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 320px;
   z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.95) 0%,
-    rgba(0, 0, 0, 0.65) 45%,
-    transparent 100%
-  );
-  opacity: 0;
-  transition: opacity 0.45s ease;
+  padding: 0 2rem 2rem;
 }
 
-.mv-mission.is-open .mv-panel-bot-grad {
-  opacity: 1;
+.mv-card-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-// ── Strip (always-visible header row) ─────────────────────────
-.mv-panel-strip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 88px;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: 56px 1fr auto auto;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 0 clamp(1.5rem, 10vw, 12rem);
-  pointer-events: none;
-}
-
-.mv-num {
-  font-size: 0.7rem;
+.mv-card-num {
+  font-size: 0.65rem;
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.14em;
   color: $primaryAccent;
   font-weight: 500;
 }
 
-.mv-name-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  min-width: 0;
+.mv-card-agency {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.5);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-.mv-name {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: $baseWhite;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: color 0.2s ease;
+.mv-card-name {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35rem;
 }
 
-.mv-mission.is-open .mv-name {
-  color: $primaryAccent;
-}
-
-.mv-tagline {
-  font-size: 0.72rem;
+.mv-card-tagline {
+  font-size: 0.7rem;
   color: rgba($satelliteGray, 0.55);
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-.mv-agency {
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba($satelliteGray, 0.45);
-  font-family: 'IBM Plex Mono', monospace;
-  white-space: nowrap;
-
-  @media (max-width: 600px) { display: none; }
-}
-
-.mv-toggle {
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: rgba($satelliteGray, 0.5);
-  line-height: 1;
-  width: 28px;
-  text-align: center;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
-  flex-shrink: 0;
-}
-
-.mv-mission.is-open .mv-toggle {
-  transform: rotate(45deg);
-  color: $primaryAccent;
-}
-
-// ── Panel body (revealed on expand) ───────────────────────────
-.mv-panel-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  padding: 0 clamp(1.5rem, 10vw, 12rem) 2.5rem;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.4s ease 0.25s,
-              transform 0.4s ease 0.25s;
-  max-width: none;
-}
-
-.mv-mission.is-open .mv-panel-body {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.mv-body-eyebrow {
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: $primaryAccent;
-  font-family: 'IBM Plex Mono', monospace;
-  margin: 0 0 0.6rem;
-}
-
-.mv-body-title {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
   margin: 0 0 0.75rem;
-  max-width: 700px;
 }
 
-.mv-body-desc {
-  font-size: 0.9375rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0 0 1.25rem;
-  max-width: 640px;
+.mv-card-desc {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 1rem;
+  max-width: 560px;
 }
 
 .mv-facts-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .mv-fact {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-family: 'IBM Plex Mono', monospace;
-  letter-spacing: 0.06em;
-  color: rgba($satelliteGray, 0.82);
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba($primaryAccent, 0.25);
-  border-radius: 4px;
-  padding: 0.3rem 0.65rem;
+  letter-spacing: 0.05em;
+  color: rgba($satelliteGray, 0.8);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba($primaryAccent, 0.22);
+  border-radius: 3px;
+  padding: 0.25rem 0.55rem;
 }
 
 // ── CTA ───────────────────────────────────────────────────────
@@ -405,24 +263,19 @@
 }
 
 // ── Mobile ────────────────────────────────────────────────────
-@media (max-width: 600px) {
-  .mv-mission.is-open .mv-panel {
-    height: 480px;
+@media (max-width: 680px) {
+  .mv-card,
+  .mv-card-wide {
+    height: 380px;
+    grid-column: auto;
   }
 
-  .mv-body-title {
-    font-size: 1.5rem;
-  }
-
-  .mv-facts-row {
-    gap: 0.4rem;
+  .mv-card-body {
+    padding: 0 1.25rem 1.5rem;
   }
 }
 
 // ── Reduced motion ────────────────────────────────────────────
 @media (prefers-reduced-motion: reduce) {
-  .mv-panel { transition: none; }
-  .mv-toggle { transition: none; }
-  .mv-panel-body { transition: none; }
-  .mv-panel-bot-grad { transition: none; }
+  .mv-card-overlay { transition: none; }
 }

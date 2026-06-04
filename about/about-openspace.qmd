@@ -45,7 +45,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2014<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2014-founding.jpg" alt="Hayden Planetarium dome">
+          <img src="/images/about/timeline-2014-founding.jpg" alt="Hayden Planetarium dome">
         </div>
         <div class="timeline-content">
           <h3>Founding collaboration</h3>
@@ -56,7 +56,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2015<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2016-pluto.jpg" alt="Pluto from New Horizons spacecraft">
+          <img src="/images/about/timeline-2016-pluto.jpg" alt="Pluto from New Horizons spacecraft">
         </div>
         <div class="timeline-content">
           <h3>Breakfast at Pluto</h3>
@@ -67,7 +67,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2016<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2015-nasa.jpg" alt="Rosetta spacecraft at comet 67P">
+          <img src="/images/about/timeline-2015-nasa.jpg" alt="Rosetta spacecraft at comet 67P">
         </div>
         <div class="timeline-content">
           <h3>Rosetta mission visualization</h3>
@@ -78,7 +78,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2018<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2018-release.jpg" alt="GitHub release page">
+          <img src="/images/about/timeline-2018-release.jpg" alt="GitHub release page">
         </div>
         <div class="timeline-content">
           <h3>First public release</h3>
@@ -89,7 +89,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2020<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2020-mars.jpg" alt="Mars surface from HiRISE">
+          <img src="/images/about/timeline-2020-mars.jpg" alt="Mars surface from HiRISE">
         </div>
         <div class="timeline-content">
           <h3>Globe Browsing matures</h3>
@@ -100,7 +100,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2022<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2022-institutions.jpg" alt="World map showing OpenSpace user institutions">
+          <img src="/images/about/timeline-2022-institutions.jpg" alt="World map showing OpenSpace user institutions">
         </div>
         <div class="timeline-content">
           <h3>200+ institutions worldwide</h3>
@@ -111,7 +111,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2024<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2024-nyu.jpg" alt="NYU Tandon">
+          <img src="/images/about/timeline-2024-nyu.jpg" alt="NYU Tandon">
         </div>
         <div class="timeline-content">
           <h3>NYU Tandon joins</h3>
@@ -122,7 +122,7 @@ format:
       <li class="timeline-item">
         <div class="timeline-year">2025<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2025-amnh.jpg" alt="AMNH meeting">
+          <img src="/images/about/timeline-2025-amnh.jpg" alt="AMNH meeting">
         </div>
         <div class="timeline-content">
           <h3>Annual User Meeting at AMNH</h3>
@@ -133,7 +133,7 @@ format:
       <li class="timeline-item timeline-item-future">
         <div class="timeline-year">2026<span class="timeline-dot"></span></div>
         <div class="timeline-image">
-          <img src="images/about/timeline-2026-norrkoping.jpg" alt="Visualization Center C in Norrk&ouml;ping">
+          <img src="/images/about/timeline-2026-norrkoping.jpg" alt="Visualization Center C in Norrk&ouml;ping">
         </div>
         <div class="timeline-content">
           <h3>Annual User Meeting at Norrk&ouml;ping</h3>
@@ -177,8 +177,8 @@ format:
     <p>OpenSpace is built in the open by a community that welcomes new contributors. Whether you build planetarium shows, teach with OpenSpace, contribute code, or want to learn what the software can do at your institution &mdash; there's a way to engage.</p>
     <p class="about-footer-link">
       <a href="https://github.com/OpenSpace/OpenSpace">View on GitHub &rarr;</a> &nbsp;&middot;&nbsp;
-      <a href="contact.qmd">Get in touch &rarr;</a> &nbsp;&middot;&nbsp;
-      <a href="use-cases.qmd">See use cases &rarr;</a>
+      <a href="../contact.qmd">Get in touch &rarr;</a> &nbsp;&middot;&nbsp;
+      <a href="../community/use-cases.qmd">See use cases &rarr;</a>
     </p>
   </div>
 </section>

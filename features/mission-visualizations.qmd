@@ -46,7 +46,7 @@ format:
   <div class="mv-grid">
 
     <!-- New Horizons -->
-    <div class="mv-card" style="background-image:url('assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%">
+    <div class="mv-card" style="background-image:url('../assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%">
       <div class="mv-card-overlay"></div>
       <div class="mv-card-body">
         <div class="mv-card-meta">
@@ -64,7 +64,7 @@ format:
     </div>
 
     <!-- JWST -->
-    <div class="mv-card" style="background-image:url('assets/images/venue-cards/Hayden_JWST.webp'); background-position:center 30%">
+    <div class="mv-card" style="background-image:url('../assets/images/venue-cards/Hayden_JWST.webp'); background-position:center 30%">
       <div class="mv-card-overlay"></div>
       <div class="mv-card-body">
         <div class="mv-card-meta">
@@ -82,7 +82,7 @@ format:
     </div>
 
     <!-- Rosetta -->
-    <div class="mv-card" style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
+    <div class="mv-card" style="background-image:url('../assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
       <div class="mv-card-overlay"></div>
       <div class="mv-card-body">
         <div class="mv-card-meta">
@@ -100,7 +100,7 @@ format:
     </div>
 
     <!-- Voyager -->
-    <div class="mv-card" style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 60%">
+    <div class="mv-card" style="background-image:url('../assets/images/carousel/earth.webp'); background-position:center 60%">
       <div class="mv-card-overlay"></div>
       <div class="mv-card-body">
         <div class="mv-card-meta">
@@ -118,7 +118,7 @@ format:
     </div>
 
     <!-- Perseverance — full-width -->
-    <div class="mv-card mv-card-wide" style="background-image:url('assets/images/carousel/mars-surface.webp'); background-position:center 45%">
+    <div class="mv-card mv-card-wide" style="background-image:url('../assets/images/carousel/mars-surface.webp'); background-position:center 45%">
       <div class="mv-card-overlay"></div>
       <div class="mv-card-body">
         <div class="mv-card-meta">
@@ -145,7 +145,7 @@ format:
     <h2>Start flying with spacecraft</h2>
     <p>Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.</p>
     <div class="mv-cta-buttons">
-      <a class="impact-cta-btn" href="version-0213.qmd">Download OpenSpace</a>
+      <a class="impact-cta-btn" href="../install/version-0213.qmd">Download OpenSpace</a>
       <a class="mv-cta-btn-ghost" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
     </div>
   </div>

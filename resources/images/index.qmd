@@ -5,17 +5,16 @@ from IPython.display import display, Markdown
 from os import listdir
 
 # Settings
-base_path = "resources/images"
 image_width = 600
 image_height = 400
 
 # main():
-all_images = listdir(base_path)
+all_images = [f for f in listdir(".") if f.endswith(".webp")]
 all_images.sort()
 
 print("::: {layout-ncol=4}\n")
 for image in all_images:
-  # display(Markdown(f"![]({base_path}/{image}){{width={image_width} height={image_height} style=\"object-fit: cover;\"}}\n\n"))
-  display(Markdown(f"![]({base_path}/{image})\n\n"))
+  # display(Markdown(f"![]({image}){{width={image_width} height={image_height} style=\"object-fit: cover;\"}}\n\n"))
+  display(Markdown(f"![]({image})\n\n"))
 print(":::")
 ```

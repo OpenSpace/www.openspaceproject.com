@@ -28,7 +28,7 @@ format:
   <div class="os-container">
     <div class="meetings-grid">
 
-      <a class="use-case-card meeting-card" href="user-meeting-2026.qmd" style="background-image: url('user-meetings/2026/visc.webp');" aria-label="2026 Annual User Meeting">
+      <a class="use-case-card meeting-card" href="user-meeting-2026.qmd" style="background-image: url('2026/visc.webp');" aria-label="2026 Annual User Meeting">
         <div class="use-case-overlay"></div>
         <div class="meeting-badge meeting-badge-upcoming">Upcoming</div>
         <div class="use-case-text">
@@ -37,7 +37,7 @@ format:
         </div>
       </a>
 
-      <a class="use-case-card meeting-card" href="user-meeting-2025.qmd" style="background-image: url('user-meetings/2025/hayden.webp');" aria-label="2025 Annual User Meeting">
+      <a class="use-case-card meeting-card" href="user-meeting-2025.qmd" style="background-image: url('2025/hayden.webp');" aria-label="2025 Annual User Meeting">
         <div class="use-case-overlay"></div>
         <div class="meeting-badge meeting-badge-past">Recap</div>
         <div class="use-case-text">
@@ -55,7 +55,7 @@ format:
     <h2 class="feature-h2">Stay in the loop</h2>
     <p>Sign up to be notified when registration opens and to get session recaps.</p>
     <p class="feature-footer-link">
-      <a href="contact.qmd">Get notified &rarr;</a> &nbsp;&middot;&nbsp; <a href="events.qmd">Past events &rarr;</a>
+      <a href="../../contact.qmd">Get notified &rarr;</a> &nbsp;&middot;&nbsp; <a href="../events/index.qmd">Past events &rarr;</a>
     </p>
   </div>
 </section>

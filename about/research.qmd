@@ -6,14 +6,14 @@ aliases:
 listing:
   - id: theses
     type: custom
-    template: _template/thesis-row.ejs.md
-    contents: assets/research.yml
+    template: ../_template/thesis-row.ejs.md
+    contents: ../assets/research.yml
     page-size: 9999
     sort: "year desc"
   - id: papers
     type: custom
-    template: _template/paper-row.ejs.md
-    contents: assets/academia.yml
+    template: ../_template/paper-row.ejs.md
+    contents: ../assets/academia.yml
     include:
       type: "paper"
     page-size: 9999

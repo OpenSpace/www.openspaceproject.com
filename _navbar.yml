@@ -1,7 +1,7 @@
 website:
   navbar:
     title: false
-    logo: "/assets/logos/openspace/horizontal-logo.webp"
+    logo: "/assets/brand/horizontal-logo.webp"
     logo-alt: "OpenSpace"
     # background:
     # foreground:
@@ -19,47 +19,47 @@ website:
         menu:
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:satellite"></iconify-icon></span><span class="nav-rich-title">About OpenSpace</span></span><span class="nav-rich-desc">The project, its origins, and the institutions behind it.</span></span>
-            href: about-openspace.qmd
+            href: about/about-openspace.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:users"></iconify-icon></span><span class="nav-rich-title">Team</span></span><span class="nav-rich-desc">The people behind the OpenSpace project.</span></span>
-            href: team.qmd
+            href: about/team.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:handshake"></iconify-icon></span><span class="nav-rich-title">Partners</span></span><span class="nav-rich-desc">The organizations collaborating with the OpenSpace project.</span></span>
-            href: partners.qmd
+            href: about/partners.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:bar-chart-2"></iconify-icon></span><span class="nav-rich-title">Impact</span></span><span class="nav-rich-desc">Global reach, startup data, and NASA annual reports.</span></span>
-            href: impact.qmd
+            href: about/impact.qmd
           - text: |
               <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Research</span></span><span class="nav-rich-desc">Master's theses, dissertations, and publications.</span></span>
-            href: research.qmd
+            href: about/research.qmd
       - text: Features
         menu:
           - text: |
               <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:globe"></iconify-icon></span><span class="nav-rich-title">Globe Browsing</span></span><span class="nav-rich-desc">Real planetary surfaces from spacecraft mission data.</span></span>
-            href: globe-browsing.qmd
+            href: features/globe-browsing.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:rocket"></iconify-icon></span><span class="nav-rich-title">Mission Visualizations</span></span><span class="nav-rich-desc">Fly with New Horizons, JWST, Rosetta, and more.</span></span>
-            href: mission-visualizations.qmd
-          - text: | 
+            href: features/mission-visualizations.qmd
+          - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:sun"></iconify-icon></span><span class="nav-rich-title">Space Weather</span></span><span class="nav-rich-desc">Solar wind, CMEs, and magnetosphere visualization.</span></span>
-            href: space-weather.qmd
-          - text: | 
+            href: features/space-weather.qmd
+          - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:film"></iconify-icon></span><span class="nav-rich-title">Versatile Display Support</span></span><span class="nav-rich-desc">Domes, multi-projector walls, and networked sessions.</span></span>
-            href: display-support.qmd
+            href: features/display-support.qmd
       - text: Community
         menu:
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:building"></iconify-icon></span><span class="nav-rich-title">Use Cases</span></span><span class="nav-rich-desc">Examples of how institutions use OpenSpace.</span></span>
-            href: use-cases.qmd
+            href: community/use-cases.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:calendar"></iconify-icon></span><span class="nav-rich-title">Events</span></span><span class="nav-rich-desc">Upcoming events and conferences.</span></span>
-            href: events.qmd
+            href: community/events/index.qmd
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:users"></iconify-icon></span><span class="nav-rich-title">Annual Meetings</span></span><span class="nav-rich-desc">Build your skills and connect with users at our annual meetings.</span></span>
-            href: user-meetings.qmd
+            href: community/user-meetings/index.qmd
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:message-circle"></iconify-icon></span><span class="nav-rich-title">Slack</span></span><span class="nav-rich-desc">Ask questions and share ideas with the OpenSpace community.</span></span>
-            href: slack.qmd
+            href: community/slack.qmd
       - text: Resources
         menu:
           - text: |
@@ -67,13 +67,13 @@ website:
             href: https://docs.openspaceproject.com
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Tutorials</span></span><span class="nav-rich-desc">Step-by-step walkthroughs for new users.</span></span>
-            href: tutorials.qmd
+            href: resources/tutorials.qmd
           - text: | 
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:image"></iconify-icon></span><span class="nav-rich-title">Images</span></span><span class="nav-rich-desc">Screenshots, renders, and visuals for download.</span></span>
-            href: resources-images.qmd
+            href: resources/images/index.qmd
 
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:server"></iconify-icon></span><span class="nav-rich-title">Server Status</span></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
             href: https://uptime.openspaceproject.com
       - text: "<span class='nav-cta'>Download</span>"
-        href: version-0213.qmd
+        href: install/version-0213.qmd

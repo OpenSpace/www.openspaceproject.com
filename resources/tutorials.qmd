@@ -79,7 +79,7 @@ format:
     <p>The full documentation covers every feature in depth. The community Slack is the best place to ask questions and connect with other OpenSpace users.</p>
     <div class="tut-cta-buttons">
       <a class="impact-cta-btn" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-      <a class="tut-cta-btn-ghost" href="slack.html">Join the Slack</a>
+      <a class="tut-cta-btn-ghost" href="../community/slack.html">Join the Slack</a>
     </div>
   </div>
 </div>

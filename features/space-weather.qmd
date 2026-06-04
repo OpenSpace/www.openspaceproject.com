@@ -11,7 +11,7 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="sw-hero">
-  <div class="sw-hero-bg" style="background-image:url('assets/images/banner/earth1.webp')"></div>
+  <div class="sw-hero-bg" style="background-image:url('../assets/images/banner/earth1.webp')"></div>
   <div class="sw-hero-overlay"></div>
   <div class="sw-hero-content">
     <p class="sw-eyebrow">Space Weather</p>
@@ -54,7 +54,7 @@ format:
   <div class="sw-grid">
 
     <!-- Bastille Day 2000 -->
-    <div class="sw-card" style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 40%">
+    <div class="sw-card" style="background-image:url('../assets/images/carousel/earth.webp'); background-position:center 40%">
       <div class="sw-card-overlay"></div>
       <div class="sw-card-body">
         <div class="sw-card-meta">
@@ -73,7 +73,7 @@ format:
     </div>
 
     <!-- Solar Storm 2012 -->
-    <div class="sw-card" style="background-image:url('assets/images/banner/earth1.webp'); background-position:center 35%">
+    <div class="sw-card" style="background-image:url('../assets/images/banner/earth1.webp'); background-position:center 35%">
       <div class="sw-card-overlay" style="background:linear-gradient(to top, rgba(60,0,20,0.97) 0%, rgba(40,0,30,0.6) 40%, rgba(0,0,0,0.14) 100%)"></div>
       <div class="sw-card-body">
         <div class="sw-card-meta">
@@ -92,7 +92,7 @@ format:
     </div>
 
     <!-- Today's Sun -->
-    <div class="sw-card" style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
+    <div class="sw-card" style="background-image:url('../assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
       <div class="sw-card-overlay" style="background:linear-gradient(to top, rgba(0,10,50,0.97) 0%, rgba(0,10,50,0.6) 40%, rgba(0,0,0,0.14) 100%)"></div>
       <div class="sw-card-body">
         <div class="sw-card-meta">
@@ -120,7 +120,7 @@ format:
     <h2>See space weather in action</h2>
     <p>Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.</p>
     <div class="sw-cta-buttons">
-      <a class="impact-cta-btn" href="version-0213.qmd">Download OpenSpace</a>
+      <a class="impact-cta-btn" href="../install/version-0213.qmd">Download OpenSpace</a>
       <a class="sw-cta-btn-ghost" href="https://ccmc.gsfc.nasa.gov" target="_blank" rel="noopener">NASA CCMC</a>
     </div>
   </div>

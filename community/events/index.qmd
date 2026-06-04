@@ -1,7 +1,7 @@
 ---
 listing:
   - id: upcoming-events
-    contents: "events"
+    contents: "."
     type: default
     sort: "date desc"
     categories: true

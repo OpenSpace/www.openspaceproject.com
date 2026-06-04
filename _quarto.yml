@@ -4,8 +4,9 @@ project:
   preview:
     port: 12800
   resources:
-    - assets/images/logos/
-    - assets/logos/
+    - assets/images/institutions/
+    - assets/brand/
+    - assets/js/
 
 metadata-files:
   - _announcement.yml
@@ -72,8 +73,8 @@ format:
 website:
   title: "OpenSpace"
   description: "Official OpenSpace Website"
-  favicon: "/assets/logos/openspace/favicon.webp"
-  image: "/assets/logos/openspace/logo.webp"
+  favicon: "/assets/brand/favicon.webp"
+  image: "/assets/brand/logo.webp"
   image-alt: "OpenSpace"
   site-url: "https://testing.www.openspaceproject.com"
   # repo-url: "https://github.com/OpenSpace/www.openspaceproject.com"
@@ -122,7 +123,6 @@ extensions:
     # height: "1em"
     # flip: "horizontal"
     # rotate: "90deg"
-    inline: true
     mode: "svg"
     style: "color: #ecf5fb;"
 

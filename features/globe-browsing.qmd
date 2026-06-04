@@ -11,7 +11,7 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="gb-hero">
-  <div class="gb-hero-bg" style="background-image:url('assets/images/banner/mars.webp')"></div>
+  <div class="gb-hero-bg" style="background-image:url('../assets/images/banner/mars.webp')"></div>
   <div class="gb-hero-overlay"></div>
   <div class="gb-hero-content">
     <p class="gb-eyebrow">Globe Browsing</p>
@@ -24,7 +24,7 @@ format:
 <div class="gb-video-section">
   <div class="gb-video-wrap">
     <video class="gb-video" autoplay muted loop playsinline>
-      <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
+      <source src="/assets/videos/home-zoomout.mp4" type="video/mp4">
     </video>
   </div>
   <p class="gb-video-caption">The observable universe to Earth's surface — one continuous navigation in OpenSpace</p>
@@ -60,7 +60,7 @@ format:
   <div class="gb-panels" id="gbPanels">
 
     <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
-         style="background-image:url('assets/images/carousel/mars-surface.webp')">
+         style="background-image:url('../assets/images/carousel/mars-surface.webp')">
       <div class="gb-panel-tint" style="background:rgba(55,18,0,0.3)"></div>
       <div class="gb-panel-gradient"></div>
       <span class="gb-panel-crosshair" aria-hidden="true">+</span>
@@ -76,7 +76,7 @@ format:
     </div>
 
     <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
-         style="background-image:url('assets/images/carousel/earth.webp')">
+         style="background-image:url('../assets/images/carousel/earth.webp')">
       <div class="gb-panel-tint" style="background:rgba(0,18,55,0.4)"></div>
       <div class="gb-panel-gradient"></div>
       <span class="gb-panel-crosshair" aria-hidden="true">+</span>
@@ -92,7 +92,7 @@ format:
     </div>
 
     <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
-         style="background-image:url('assets/images/carousel/Burma+Tibet.webp')">
+         style="background-image:url('../assets/images/carousel/Burma+Tibet.webp')">
       <div class="gb-panel-tint" style="background:rgba(0,28,18,0.32)"></div>
       <div class="gb-panel-gradient"></div>
       <span class="gb-panel-crosshair" aria-hidden="true">+</span>
@@ -145,7 +145,7 @@ format:
 <!-- ── Big image ──────────────────────────────────────────── -->
 <div class="gb-showcase-section">
   <figure class="gb-showcase">
-    <img src="assets/images/carousel/goddard-openspace-mars.webp" alt="Mars globe rendered in OpenSpace using HiRISE imagery and MOLA elevation data" class="gb-showcase-img">
+    <img src="/assets/images/carousel/goddard-openspace-mars.webp" alt="Mars globe rendered in OpenSpace using HiRISE imagery and MOLA elevation data" class="gb-showcase-img">
     <figcaption class="gb-showcase-caption">Mars in OpenSpace — HiRISE surface imagery draped over MOLA elevation data. Colors represent real topography from the Mars Orbiter Laser Altimeter.</figcaption>
   </figure>
 </div>
@@ -167,16 +167,16 @@ format:
     </div>
     <div class="gb-split-visual">
       <div class="gb-layer-stack" id="gbLayerStack" role="button" tabindex="0" aria-label="Click to cycle through data layer examples">
-        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp')">
+        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/goddard-openspace-mars.webp')">
           <span class="gb-layer-label">Globe view</span>
         </div>
-        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/mars-surface.webp')">
+        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/mars-surface.webp')">
           <span class="gb-layer-label">Surface detail</span>
         </div>
-        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/Larsen+Ice+Shelf+breakup.webp')">
+        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/Larsen+Ice+Shelf+breakup.webp')">
           <span class="gb-layer-label">Time-series data</span>
         </div>
-        <div class="gb-layer-card" style="background-image:url('assets/images/carousel/earth.webp')">
+        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/earth.webp')">
           <span class="gb-layer-label">Base imagery</span>
         </div>
       </div>
@@ -241,7 +241,7 @@ format:
     <h2>Start exploring planetary surfaces</h2>
     <p>Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.</p>
     <div class="gb-cta-buttons">
-      <a class="impact-cta-btn" href="version-0213.qmd">Download OpenSpace</a>
+      <a class="impact-cta-btn" href="../install/version-0213.qmd">Download OpenSpace</a>
       <a class="gb-cta-btn-ghost" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
     </div>
   </div>

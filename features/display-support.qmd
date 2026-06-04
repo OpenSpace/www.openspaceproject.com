@@ -30,13 +30,13 @@ format:
 <section class="ds-venue-section" id="dome-theaters">
   <div class="ds-venue-image-area">
     <img class="ds-venue-img ds-img--active"
-         src="assets/images/venue-cards/Hayden_JWST.webp"
+         src="/assets/images/venue-cards/Hayden_JWST.webp"
          alt="Hayden Planetarium dome running OpenSpace with JWST data">
     <img class="ds-venue-img"
-         src="assets/images/carousel/earth.webp"
+         src="/assets/images/carousel/earth.webp"
          alt="Earth visualization in OpenSpace dome projection">
     <img class="ds-venue-img"
-         src="assets/images/carousel/goddard-openspace-mars.webp"
+         src="/assets/images/carousel/goddard-openspace-mars.webp"
          alt="Mars globe rendered in OpenSpace for dome display">
     <div class="ds-img-dots">
       <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
@@ -66,13 +66,13 @@ format:
 <section class="ds-venue-section ds-venue-section--reverse ds-venue-section--alt" id="classrooms-desktops">
   <div class="ds-venue-image-area">
     <img class="ds-venue-img ds-img--active"
-         src="assets/images/venue-cards/AMNH_LWD students.webp"
+         src="/assets/images/venue-cards/AMNH_LWD students.webp"
          alt="Students using OpenSpace in a classroom at AMNH">
     <img class="ds-venue-img"
-         src="assets/images/carousel/mars-surface.webp"
+         src="/assets/images/carousel/mars-surface.webp"
          alt="Mars HiRISE surface as seen by students in OpenSpace">
     <img class="ds-venue-img"
-         src="assets/images/carousel/Burma+Tibet.webp"
+         src="/assets/images/carousel/Burma+Tibet.webp"
          alt="Earth terrain visualization in OpenSpace classroom">
     <div class="ds-img-dots">
       <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
@@ -102,13 +102,13 @@ format:
 <section class="ds-venue-section" id="museum-exhibits">
   <div class="ds-venue-image-area">
     <img class="ds-venue-img ds-img--active"
-         src="assets/images/venue-cards/spaceship.webp"
+         src="/assets/images/venue-cards/spaceship.webp"
          alt="OpenSpace running in a museum exhibit">
     <img class="ds-venue-img"
-         src="assets/images/venue-cards/Hayden_JWST.webp"
+         src="/assets/images/venue-cards/Hayden_JWST.webp"
          alt="OpenSpace at the Hayden Planetarium exhibit">
     <img class="ds-venue-img"
-         src="assets/images/carousel/earth.webp"
+         src="/assets/images/carousel/earth.webp"
          alt="Earth visualization in a museum display">
     <div class="ds-img-dots">
       <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
@@ -138,13 +138,13 @@ format:
 <section class="ds-venue-section ds-venue-section--reverse ds-venue-section--alt" id="fisheye">
   <div class="ds-venue-image-area">
     <img class="ds-venue-img ds-img--active"
-         src="assets/images/carousel/goddard-openspace-mars.webp"
+         src="/assets/images/carousel/goddard-openspace-mars.webp"
          alt="Mars globe rendered in OpenSpace fisheye mode">
     <img class="ds-venue-img"
-         src="assets/images/carousel/earth.webp"
+         src="/assets/images/carousel/earth.webp"
          alt="Earth rendered in OpenSpace fisheye projection">
     <img class="ds-venue-img"
-         src="assets/images/banner/earth1.webp"
+         src="/assets/images/banner/earth1.webp"
          alt="Earth orbit view for fisheye dome rendering">
     <div class="ds-img-dots">
       <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>

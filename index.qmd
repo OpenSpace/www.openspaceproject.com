@@ -25,7 +25,7 @@ format:
   <div class="hero-content">
     <p class="hero-lede">Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
     <div class="hero-actions">
-      <a href="version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
+      <a href="install/version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
       <a href="features.html" class="btn-ghost-os">Explore features</a>
     </div>
   </div>
@@ -35,16 +35,16 @@ format:
   <div class="os-container">
     <p class="trusted-label">Trusted by 100+ institutions worldwide</p>
     <div class="logo-grid">
-      <img src="assets/images/logos/AMNH_Primary_WHITE.webp" data-light-src="assets/images/logos/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History" class="institution-logo">
-      <img src="assets/images/logos/Adler_white.webp" data-light-src="assets/images/logos/Adler_Black.webp" alt="Adler Planetarium" class="institution-logo">
-      <img src="assets/images/logos/DMNS_white.webp" data-light-src="assets/images/logos/DMNS_black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
-      <img src="assets/images/logos/hmns_white.webp" data-light-src="assets/images/logos/hmns_black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
-      <img src="assets/images/logos/MoS_white.webp" alt="Museum of Science Boston" class="institution-logo">
-      <img src="assets/images/logos/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
-      <img src="assets/images/logos/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
-      <img src="assets/images/logos/MiSci_color.webp" alt="Michigan Science Center" class="institution-logo">
-      <img src="assets/images/logos/unsm_white.webp" alt="University of Nebraska State Museum" class="institution-logo">
-      <img src="assets/images/logos/ars_white.webp" alt="Ars Electronica" class="institution-logo">
+      <img src="assets/images/institutions/AMNH_Primary_WHITE.webp" data-light-src="assets/images/institutions/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History" class="institution-logo">
+      <img src="assets/images/institutions/Adler_white.webp" data-light-src="assets/images/institutions/Adler_Black.webp" alt="Adler Planetarium" class="institution-logo">
+      <img src="assets/images/institutions/DMNS_white.webp" data-light-src="assets/images/institutions/DMNS_black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
+      <img src="assets/images/institutions/hmns_white.webp" data-light-src="assets/images/institutions/hmns_black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
+      <img src="assets/images/institutions/MoS_white.webp" alt="Museum of Science Boston" class="institution-logo">
+      <img src="assets/images/institutions/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
+      <img src="assets/images/institutions/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
+      <img src="assets/images/institutions/MiSci_color.webp" alt="Michigan Science Center" class="institution-logo">
+      <img src="assets/images/institutions/unsm_white.webp" alt="University of Nebraska State Museum" class="institution-logo">
+      <img src="assets/images/institutions/ars_white.webp" alt="Ars Electronica" class="institution-logo">
 
     </div>
   </div>
@@ -56,7 +56,7 @@ format:
     <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
     <div class="venue-grid">
 
-      <a href="display-support.html#dome-theaters" class="venue-card">
+      <a href="features/display-support.html#dome-theaters" class="venue-card">
         <img src="assets/images/venue-cards/Hayden_JWST.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
         <div class="venue-body">
           <h3>Planetarium domes</h3>
@@ -65,7 +65,7 @@ format:
         </div>
       </a>
 
-      <a href="display-support.html#classrooms-desktops" class="venue-card">
+      <a href="features/display-support.html#classrooms-desktops" class="venue-card">
         <img src="assets/images/venue-cards/AMNH_LWD students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
         <div class="venue-body">
           <h3>Classrooms</h3>
@@ -74,7 +74,7 @@ format:
         </div>
       </a>
 
-      <a href="display-support.html#museum-exhibits" class="venue-card">
+      <a href="features/display-support.html#museum-exhibits" class="venue-card">
         <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" class="venue-img">
         <div class="venue-body">
           <h3>Museum exhibits</h3>
@@ -216,7 +216,7 @@ format:
     <h2 class="section-heading">Start exploring</h2>
     <p class="section-lede">Free. Open source. Cross-platform.</p>
     <div class="hero-actions">
-      <a href="version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
+      <a href="install/version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
       <a href="https://github.com/OpenSpace/OpenSpace" class="btn-ghost-os">View on GitHub</a>
     </div>
   </div>

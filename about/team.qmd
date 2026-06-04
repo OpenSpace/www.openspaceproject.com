@@ -4,14 +4,14 @@ description-meta: "The people behind the OpenSpace project."
 listing:
   - id: admin
     type: custom
-    template: _template/team.ejs.md
-    contents: assets/team.yml
+    template: ../_template/team.ejs.md
+    contents: ../assets/team.yml
     include:
       type: "{admin,coordinator,advisor}"
   - id: developer
     type: custom
-    template: _template/team.ejs.md
-    contents: "assets/team.yml"
+    template: ../_template/team.ejs.md
+    contents: "../assets/team.yml"
     include:
       type: developer
 format:

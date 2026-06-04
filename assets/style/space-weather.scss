@@ -153,179 +153,116 @@
   color: rgba($satelliteGray, 0.65);
 }
 
-// ── Phenomena section (full-bleed horizontal accordion) ───────
-.sw-phenomena-section {
+// ── Space weather profiles (card grid) ───────────────────────
+.sw-profiles-section {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   background: #0d1014;
-}
-
-.sw-phenomena-header {
-  padding-top: 3.5rem;
-  padding-bottom: 0.5rem;
   padding-left:  clamp(1.5rem, 10vw, 12rem);
   padding-right: clamp(1.5rem, 10vw, 12rem);
+  padding-bottom: 3.5rem;
 }
 
-.sw-phenomena {
-  // panels stack naturally
+.sw-profiles-header {
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.sw-phenom {
-  // wrapper for each panel
+// ── Card grid ─────────────────────────────────────────────────
+.sw-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-// Image strip panel — same design as mission-visualizations
-.sw-panel {
+.sw-card {
   position: relative;
-  height: 88px;
+  height: 300px;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: pointer;
-  transition: height 0.65s cubic-bezier(0.4, 0, 0.2, 1);
-  border-top: 1px solid rgba($primaryAccent, 0.1);
 
-  &:last-child { border-bottom: 1px solid rgba($primaryAccent, 0.1); }
-  &:focus-visible { outline: 2px solid $primaryAccent; outline-offset: -2px; z-index: 10; }
+  &:hover .sw-card-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.96) 0%,
+      rgba(0, 0, 0, 0.62) 45%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+  }
 }
 
-.sw-phenom.is-open .sw-panel {
-  height: 520px;
-  cursor: default;
-}
-
-.sw-panel-tint {
+.sw-card-overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
-  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.55) 40%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
+  transition: background 0.4s ease;
 }
 
-.sw-panel-top-grad {
+.sw-card-body {
   position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 110px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.3) 60%, transparent 100%);
+  padding: 0 2rem 2rem;
 }
 
-.sw-panel-bot-grad {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 320px;
-  z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.65) 45%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.45s ease;
+.sw-card-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.sw-phenom.is-open .sw-panel-bot-grad { opacity: 1; }
-
-// Strip header row
-.sw-panel-strip {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 88px;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: 56px 1fr auto;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 0 clamp(1.5rem, 10vw, 12rem);
-  pointer-events: none;
-}
-
-.sw-num {
-  font-size: 0.7rem;
+.sw-card-num {
+  font-size: 0.65rem;
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.14em;
   color: $primaryAccent;
   font-weight: 500;
 }
 
-.sw-name-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  min-width: 0;
+.sw-card-tag {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.5);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-.sw-name {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: $baseWhite;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: color 0.2s ease;
+.sw-card-tag-live {
+  color: $primaryAccent;
 }
 
-.sw-phenom.is-open .sw-name { color: $primaryAccent; }
+.sw-card-name {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35rem;
+}
 
-.sw-tagline {
-  font-size: 0.72rem;
+.sw-card-tagline {
+  font-size: 0.7rem;
   color: rgba($satelliteGray, 0.55);
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-.sw-toggle {
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: rgba($satelliteGray, 0.5);
-  line-height: 1;
-  width: 28px;
-  text-align: center;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
-}
-
-.sw-phenom.is-open .sw-toggle { transform: rotate(45deg); color: $primaryAccent; }
-
-// Revealed body text
-.sw-panel-body {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  z-index: 3;
-  padding: 0 clamp(1.5rem, 10vw, 12rem) 2.5rem;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.4s ease 0.25s, transform 0.4s ease 0.25s;
-}
-
-.sw-phenom.is-open .sw-panel-body { opacity: 1; transform: translateY(0); }
-
-.sw-body-eyebrow {
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: $primaryAccent;
-  font-family: 'IBM Plex Mono', monospace;
-  margin: 0 0 0.6rem;
-}
-
-.sw-body-title {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
   margin: 0 0 0.75rem;
-  max-width: 680px;
 }
 
-.sw-body-desc {
-  font-size: 0.9375rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0 0 1.25rem;
-  max-width: 640px;
+.sw-card-desc {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 1rem;
+  max-width: 560px;
 }
 
 .sw-facts-row {
@@ -335,14 +272,14 @@
 }
 
 .sw-fact {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-family: 'IBM Plex Mono', monospace;
-  letter-spacing: 0.06em;
-  color: rgba($satelliteGray, 0.82);
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba($primaryAccent, 0.25);
-  border-radius: 4px;
-  padding: 0.3rem 0.65rem;
+  letter-spacing: 0.05em;
+  color: rgba($satelliteGray, 0.8);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba($primaryAccent, 0.22);
+  border-radius: 3px;
+  padding: 0.25rem 0.55rem;
 }
 
 // ── CTA ───────────────────────────────────────────────────────
@@ -375,13 +312,12 @@
   }
 }
 
-@media (max-width: 600px) {
-  .sw-phenom.is-open .sw-panel { height: 480px; }
-  .sw-body-title { font-size: 1.5rem; }
+@media (max-width: 680px) {
+  .sw-card-body {
+    padding: 0 1.25rem 1.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sw-panel { transition: none; }
-  .sw-panel-body { transition: none; }
-  .sw-toggle { transition: none; }
+  .sw-card-overlay { transition: none; }
 }

@@ -1,5 +1,4 @@
 ---
-title: "Use Cases"
 pagetitle: "Use Cases — OpenSpace"
 description-meta: "How museums, planetariums, universities, and research institutions use OpenSpace to engage audiences and advance science."
 format:
@@ -7,115 +6,275 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
-    theme:
-      - assets/style/hero.scss
-      - assets/style/feature.scss
-      - assets/style/use-cases.scss
-      - assets/style/navbar.scss
 ---
 
-::: {.use-cases-hero}
-::: {.os-container .narrow}
-
-[Use Cases]{.feature-eyebrow}
-
-# Who's using OpenSpace {.feature-title-dark}
-
-[From museum tilt tables to NASA's Wow Room, from B612's planetary defense work to citizen pilots in planetariums.]{.use-cases-lede}
-
-:::
-:::
-
-::: {.use-cases-grid-section}
-::: {.os-container}
-
-::: {.use-cases-grid}
-
-<a class="use-case-card" href="use-cases/museum-life-science.qmd" style="background-image: url('images/use-cases/museum-life-science.jpg');" aria-label="Read about Museum of Life &amp; Science">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">Museum of Life &amp; Science · Durham, NC</p>
-    <h3 class="use-case-title">Real-time planet exploration at full tilt</h3>
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="uc-hero">
+  <div>
+    <p class="uc-eyebrow">Use Cases</p>
+    <h1 class="uc-hero-title">Who's using OpenSpace</h1>
+    <p class="uc-hero-lede">From museum tilt tables to NASA's Wow Room — how institutions are putting OpenSpace in front of new audiences.</p>
   </div>
-</a>
+</section>
 
-<a class="use-case-card" href="use-cases/b612-asteroid-institute.qmd" style="background-image: url('images/use-cases/b612-asteroid.jpg');" aria-label="Read about B612 Asteroid Institute">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">B612 Asteroid Institute</p>
-    <h3 class="use-case-title">OpenSpace defends the planet</h3>
+<!-- ── Photo grid ────────────────────────────────────────── -->
+<div class="uc-grid-section">
+  <div class="uc-grid">
+
+    <div class="uc-card" role="button" tabindex="0" data-case="museum-life-science"
+         style="background-image:url('assets/images/use-cases/Museum%20of%20Life%20and%20Science-Tilty%20Table.webp'); background-position:center 50%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">Museum of Life &amp; Science · Durham, NC</p>
+        <h3 class="uc-card-title">Real Time Planet Exploration at Full Tilt</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="b612"
+         style="background-image:url('assets/images/use-cases/B612%20asteroids.webp'); background-position:center 50%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">B612's Asteroid Institute</p>
+        <h3 class="uc-card-title">OpenSpace Defends the Planet</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="lawrence"
+         style="background-image:url('assets/images/use-cases/Lawrence-9.7..23-0013.webp'); background-position:center 40%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">Lawrence Hall of Science · Berkeley, CA</p>
+        <h3 class="uc-card-title">Visitors Take Control of the Dome</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="houston"
+         style="background-image:url('assets/images/use-cases/Houston.webp'); background-position:center 50%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">Houston Museum of Natural Science · Houston, TX</p>
+        <h3 class="uc-card-title">Gaming with OpenSpace</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="towson"
+         style="background-image:url('assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">Towson University Planetarium · Baltimore County, MD</p>
+        <h3 class="uc-card-title">From Sunrise to Sunset</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="asu"
+         style="background-image:url('assets/images/use-cases/Color%20Corrected%20Arizona%20State%20Photo.webp'); background-position:center 40%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">Marston Exploration Theater, ASU · Tempe, AZ</p>
+        <h3 class="uc-card-title">Passers-By Fly High</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="wow-room"
+         style="background-image:url('assets/images/use-cases/Wow%20room%20Color%20Corrected.webp'); background-position:center 50%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">NASA Goddard CCMC · Greenbelt, MD</p>
+        <h3 class="uc-card-title">Step Into the Wow Room</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="rachel-smith"
+         style="background-image:url('assets/images/use-cases/Rachel%20talk.webp'); background-position:center 30%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">Dr. Rachel Smith · Raleigh, NC</p>
+        <h3 class="uc-card-title">A Powerful Outreach Tool</h3>
+      </div>
+    </div>
+
+    <div class="uc-card" role="button" tabindex="0" data-case="hyperwall"
+         style="background-image:url('assets/images/use-cases/Rachel%20from%20conference.webp'); background-position:center 40%">
+      <div class="uc-card-overlay"></div>
+      <div class="uc-card-text">
+        <p class="uc-card-meta">NASA Hyperwall · Conferences nationwide</p>
+        <h3 class="uc-card-title">Talking Peer-to-Peer</h3>
+      </div>
+    </div>
+
   </div>
-</a>
+</div>
 
-<a class="use-case-card" href="use-cases/lawrence-hall.qmd" style="background-image: url('images/use-cases/lawrence-hall.jpg');" aria-label="Read about The Lawrence Hall of Science">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">Lawrence Hall of Science · Berkeley, CA</p>
-    <h3 class="use-case-title">Visitors take control of the dome</h3>
+<!-- ── Modal ─────────────────────────────────────────────── -->
+<div class="uc-modal" id="ucModal" aria-modal="true" role="dialog" aria-label="Use case detail" aria-hidden="true">
+  <div class="uc-modal-backdrop"></div>
+  <div class="uc-modal-box">
+    <button class="uc-modal-close" aria-label="Close">&times;</button>
+    <div class="uc-modal-img-wrap">
+      <img class="uc-modal-img" src="" alt="" />
+    </div>
+    <div class="uc-modal-content">
+      <p class="uc-modal-meta"></p>
+      <h2 class="uc-modal-title"></h2>
+      <p class="uc-modal-body"></p>
+      <div class="uc-modal-tags"></div>
+    </div>
   </div>
-</a>
+</div>
 
-<a class="use-case-card" href="use-cases/houston-museum.qmd" style="background-image: url('images/use-cases/houston-museum.jpg');" aria-label="Read about Houston Museum of Natural Science">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">Houston Museum of Natural Science · Houston, TX</p>
-    <h3 class="use-case-title">Gaming with OpenSpace</h3>
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<div class="uc-cta-section">
+  <div class="impact-cta-card">
+    <h2>Add your story</h2>
+    <p>If your institution is using OpenSpace, we'd love to feature it here.</p>
+    <div class="uc-cta-buttons">
+      <a class="impact-cta-btn" href="version-0213.qmd">Download OpenSpace</a>
+      <a class="uc-cta-btn-ghost" href="contact.qmd">Get in touch</a>
+    </div>
   </div>
-</a>
+</div>
 
-<a class="use-case-card" href="use-cases/towson-planetarium.qmd" style="background-image: url('images/use-cases/towson.jpg');" aria-label="Read about Towson University Planetarium">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">Towson University Planetarium · Baltimore County, MD</p>
-    <h3 class="use-case-title">From Title One to state policy</h3>
-  </div>
-</a>
+<script>
+(function () {
+  var UC_DATA = {
+    'museum-life-science': {
+      title: 'Real Time Planet Exploration at Full Tilt',
+      institution: 'Museum of Life & Science',
+      location: 'Durham, North Carolina',
+      img: 'assets/images/use-cases/Museum%20of%20Life%20and%20Science-Tilty%20Table.webp',
+      imgAlt: 'A visitor uses a tilt table with live OpenSpace visuals at the Museum of Life & Science',
+      body: 'Live OpenSpace visuals shift and rotate on this tilt table, so Museum visitors can explore a planet from all directions with just the flick of a wrist. This hands-on design allows individuals to steer around the surface of the Earth with the speed and focus of the visitor\'s choosing. OpenSpace delivers near real-time views of our dynamic planet.',
+      tags: ['Interactive exhibit', 'Real-time data', 'Public museum']
+    },
+    'b612': {
+      title: 'OpenSpace Defends the Planet',
+      institution: 'B612\'s Asteroid Institute',
+      location: '',
+      img: 'assets/images/use-cases/B612%20asteroids.webp',
+      imgAlt: 'Visualization of asteroid trajectories near Earth rendered in OpenSpace',
+      body: '"Ed Lu wants to save Earth from killer asteroids." A New York Times article (May 31, 2022) describes how Astronaut Lu and the team at B612\'s Asteroid Institute use OpenSpace software within their workflow to follow asteroids\' trajectories, assessing whether danger is posed to Earth. OpenSpace\'s capability to incorporate new data as it emerges allows these scientists and engineers to contextualize and visualize current data developed from their Asteroid Discovery Analysis and Mapping (ADAM) platform.',
+      tags: ['Scientific research', 'Planetary defense', 'Live data']
+    },
+    'lawrence': {
+      title: 'OpenSpace Gives Visitors Control of the Planetarium Dome',
+      institution: 'The Lawrence Hall of Science',
+      location: 'Berkeley, California',
+      img: 'assets/images/use-cases/Lawrence-9.7..23-0013.webp',
+      imgAlt: 'Visitors at the Lawrence Hall of Science piloting the planetarium dome with OpenSpace',
+      body: 'OpenSpace began by focusing on enabling live presentations by professionals in planetarium domes. Now a new program at The Lawrence invites anyone to become "Planetarium Pilots." No experience with the software is needed. By tapping on a tablet, visitors can take themselves (and everyone watching) to the moon and back, all over the universe, or anywhere in between. Voice-overs explain the space science behind the visuals as visitors fly around space.',
+      tags: ['Planetarium', 'Public engagement', 'Visitor-led exploration']
+    },
+    'houston': {
+      title: 'Gaming with OpenSpace',
+      institution: 'Houston Museum of Natural Science',
+      location: 'Houston, Texas',
+      img: 'assets/images/use-cases/Houston.webp',
+      imgAlt: 'Visitors at the Houston Museum of Natural Science playing an OpenSpace-based space science game',
+      body: 'In Texas, OpenSpace videos and photos form the backbone of HMNS\'s space science game lab. The lab has a family focus, fostering increased social engagement through the room\'s fifteen-plus stations and seating. In addition to families, the lab attracts visitors of all ages looking for a quiet space of collaborative learning. For kids and by kids — high school interns programmed the games using content they captured themselves within OpenSpace.',
+      tags: ['K–12 education', 'Games', 'Family learning']
+    },
+    'towson': {
+      title: 'OpenSpace Takes Audiences from Sunrise to Sunset',
+      institution: 'The Towson University Planetarium',
+      location: 'Baltimore County, Maryland',
+      img: 'assets/images/carousel/Burma+Tibet.webp',
+      imgAlt: 'A view of Earth from space as shown in OpenSpace',
+      body: 'What do kids from Title One schools, scout troops, older adults with dementia and their caregivers, and the state Higher Education Commission all have in common? These are all audiences at Towson University\'s planetarium. The planetarium director chooses to use OpenSpace for talks and shows, as it "gives a better viewing experience and uses real data." The growth of OpenSpace users increases growth in both the software and in new content areas, creating a more powerful system over time.',
+      tags: ['Diverse audiences', 'Planetarium', 'University']
+    },
+    'asu': {
+      title: 'Passers-By Fly High in OpenSpace',
+      institution: 'The Marston Exploration Theater at Arizona State University',
+      location: 'Tempe, Arizona',
+      img: 'assets/images/use-cases/Color%20Corrected%20Arizona%20State%20Photo.webp',
+      imgAlt: 'Visitors piloting the Interactive Immersive Educational Experience display at ASU',
+      body: 'In the queueing area for ASU\'s Exploration Theater, visitors can do more than watch a tour of the universe — they pilot it. The Interactive Immersive Educational Experience (I2E2) is a panoramic display controlled by the visitor who wants to explore space and Earth in their own way, with room for 20 other students or family members. This implementation makes it easy for untrained pilots to fly, hover, and dive into the planetary or geological body of their choosing.',
+      tags: ['Interactive kiosk', 'Panoramic display', 'University']
+    },
+    'wow-room': {
+      title: 'Step Into the Wow Room',
+      institution: 'Goddard\'s Community Coordinated Modelling Center',
+      location: 'Greenbelt, Maryland',
+      img: 'assets/images/use-cases/Wow%20room%20Color%20Corrected.webp',
+      imgAlt: 'Visitors seated in the Wow Room at NASA Goddard CCMC watching an OpenSpace visualization on a curved screen',
+      body: 'The Community Coordinated Modelling Center (CCMC) uses OpenSpace in their "Wow Room," a space at the Center for engaging high-profile guests — whether they are national policy makers or senior NASA leadership. Four projectors and a curved screen create an immersive experience that helps make the case for the importance of supporting space and Earth science research.',
+      tags: ['Policy outreach', 'Immersive display', 'NASA']
+    },
+    'rachel-smith': {
+      title: 'To Infinity and Beyond: OpenSpace as a Powerful Outreach Tool',
+      institution: 'Dr. Rachel Smith — Super User',
+      location: 'Raleigh, North Carolina',
+      img: 'assets/images/use-cases/Rachel%20talk.webp',
+      imgAlt: 'Dr. Rachel Smith giving a presentation with OpenSpace visualizations',
+      body: 'Dr. Rachel Smith uses OpenSpace in research, teaching, and museum exhibitions. OpenSpace\'s data-rich visualizations enable Dr. Smith\'s compelling outreach to a wide variety of audiences including retirement communities, science conferences, and public policy groups.',
+      tags: ['Super User', 'Research', 'Public outreach']
+    },
+    'hyperwall': {
+      title: 'Talking Peer-to-Peer',
+      institution: 'The NASA Hyperwall',
+      location: 'Scientific conferences nationwide',
+      img: 'assets/images/use-cases/Rachel%20from%20conference.webp',
+      imgAlt: 'A scientist presenting OpenSpace data visualizations at a conference',
+      body: 'Scientists regularly share their work using OpenSpace on the NASA Hyperwall at conferences — including the Geological Society of America, American Geophysical Union, and American Astronomical Society. OpenSpace\'s impressive visualizations and the ability to interact with those visualizations supports in-depth peer discussions in conference settings.',
+      tags: ['Scientific conferences', 'NASA Hyperwall', 'Peer discussion']
+    }
+  };
 
-<a class="use-case-card" href="use-cases/asu-marston.qmd" style="background-image: url('images/use-cases/asu-marston.jpg');" aria-label="Read about Marston Exploration Theater at ASU">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">Marston Exploration Theater, ASU · Tempe, AZ</p>
-    <h3 class="use-case-title">Passers-by fly high</h3>
-  </div>
-</a>
+  var modal     = document.getElementById('ucModal');
+  var modalImg  = modal.querySelector('.uc-modal-img');
+  var modalMeta = modal.querySelector('.uc-modal-meta');
+  var modalTitle= modal.querySelector('.uc-modal-title');
+  var modalBody = modal.querySelector('.uc-modal-body');
+  var modalTags = modal.querySelector('.uc-modal-tags');
+  var closeBtn  = modal.querySelector('.uc-modal-close');
+  var backdrop  = modal.querySelector('.uc-modal-backdrop');
+  var lastFocused = null;
 
-<a class="use-case-card" href="use-cases/goddard-wow-room.qmd" style="background-image: url('images/use-cases/goddard-wow.jpg');" aria-label="Read about NASA Goddard CCMC">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">NASA Goddard CCMC · Greenbelt, MD</p>
-    <h3 class="use-case-title">Step into the Wow Room</h3>
-  </div>
-</a>
+  function openModal(id) {
+    var d = UC_DATA[id];
+    if (!d) return;
+    modalImg.src       = d.img;
+    modalImg.alt       = d.imgAlt || d.title;
+    var meta = d.institution + (d.location ? ' · ' + d.location : '');
+    modalMeta.textContent  = meta;
+    modalTitle.textContent = d.title;
+    modalBody.textContent  = d.body;
+    modalTags.innerHTML = d.tags.map(function (t) {
+      return '<span class="uc-modal-tag">' + t + '</span>';
+    }).join('');
+    modal.setAttribute('aria-hidden', 'false');
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
 
-<a class="use-case-card" href="use-cases/rachel-smith.qmd" style="background-image: url('images/use-cases/rachel-smith.jpg');" aria-label="Read about Dr. Rachel Smith">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">Dr. Rachel Smith · Raleigh, NC</p>
-    <h3 class="use-case-title">A powerful outreach tool</h3>
-  </div>
-</a>
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
 
-<a class="use-case-card" href="use-cases/nasa-hyperwall.qmd" style="background-image: url('images/use-cases/nasa-hyperwall.jpg');" aria-label="Read about NASA Hyperwall">
-  <div class="use-case-overlay"></div>
-  <div class="use-case-text">
-    <p class="use-case-meta">NASA Hyperwall · Conferences nationwide</p>
-    <h3 class="use-case-title">Talking peer-to-peer</h3>
-  </div>
-</a>
+  document.querySelectorAll('.uc-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      lastFocused = card;
+      openModal(card.dataset.case);
+    });
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        lastFocused = card;
+        openModal(card.dataset.case);
+      }
+    });
+  });
 
-:::
-
-:::
-:::
-
-::: {.use-cases-cta}
-::: {.os-container .narrow .text-center}
-
-## Add your story {.feature-h2}
-
-If your institution is using OpenSpace, we'd love to feature it here.
-
-[[Get in touch →](contact.qmd) &nbsp;·&nbsp; [Download OpenSpace →](version-0213.qmd)]{.feature-footer-link}
-
-:::
-:::
+  closeBtn.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+})();
+</script>
+```

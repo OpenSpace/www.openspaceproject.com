@@ -45,124 +45,68 @@ format:
   </div>
 </div>
 
-<!-- ── Phenomena accordion ────────────────────────────────── -->
-<div class="sw-phenomena-section">
-
-  <div class="sw-phenomena-header">
-    <h2 class="sw-section-heading">What you can visualize</h2>
-    <p class="sw-section-lede">Click any phenomenon to explore.</p>
+<!-- ── Space weather profiles ──────────────────────────────── -->
+<div class="sw-profiles-section">
+  <div class="sw-profiles-header">
+    <h2 class="sw-section-heading">Space weather profiles</h2>
   </div>
 
-  <div class="sw-phenomena" id="swPhenomena">
+  <div class="sw-grid">
 
-    <div class="sw-phenom">
-      <div class="sw-panel"
-           style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 40%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="sw-panel-tint" style="background:rgba(0,20,80,0.52)"></div>
-        <div class="sw-panel-top-grad"></div>
-        <div class="sw-panel-bot-grad"></div>
-        <div class="sw-panel-strip">
-          <span class="sw-num">01</span>
-          <div class="sw-name-wrap">
-            <span class="sw-name">Solar Wind</span>
-            <span class="sw-tagline">Continuous particle stream from the Sun</span>
-          </div>
-          <span class="sw-toggle" aria-hidden="true">+</span>
+    <!-- Bastille Day 2000 -->
+    <div class="sw-card" style="background-image:url('assets/images/carousel/earth.webp'); background-position:center 40%">
+      <div class="sw-card-overlay"></div>
+      <div class="sw-card-body">
+        <div class="sw-card-meta">
+          <span class="sw-card-num">01</span>
+          <span class="sw-card-tag">Historical</span>
         </div>
-        <div class="sw-panel-body">
-          <p class="sw-body-eyebrow">Solar Wind</p>
-          <h3 class="sw-body-title">The Sun's constant breath</h3>
-          <p class="sw-body-desc">The solar wind is a continuous stream of charged particles flowing outward from the Sun at 400–800 km/s. In OpenSpace, it appears as a visible particle field — dense near the Sun and thinning as it spreads across the solar system past Earth and the outer planets.</p>
-          <div class="sw-facts-row">
-            <span class="sw-fact">400–800 km/s average speed</span>
-            <span class="sw-fact">Reaches Earth in 2–4 days</span>
-            <span class="sw-fact">ENLIL model data</span>
-          </div>
+        <h3 class="sw-card-name">Bastille Day 2000</h3>
+        <p class="sw-card-tagline">X5.7 solar flare · July 14, 2000</p>
+        <p class="sw-card-desc">One of the most powerful solar storms of Solar Cycle 23 — an X5.7 flare and fast CME that triggered a severe geomagnetic storm, disrupted satellites, and produced aurora visible as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.</p>
+        <div class="sw-facts-row">
+          <span class="sw-fact">X5.7 flare classification</span>
+          <span class="sw-fact">Kp index reached 9</span>
+          <span class="sw-fact">ENLIL model from CCMC</span>
         </div>
       </div>
     </div>
 
-    <div class="sw-phenom">
-      <div class="sw-panel"
-           style="background-image:url('assets/images/banner/earth1.webp'); background-position:center 35%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="sw-panel-tint" style="background:rgba(30,0,80,0.48)"></div>
-        <div class="sw-panel-top-grad"></div>
-        <div class="sw-panel-bot-grad"></div>
-        <div class="sw-panel-strip">
-          <span class="sw-num">02</span>
-          <div class="sw-name-wrap">
-            <span class="sw-name">Magnetosphere</span>
-            <span class="sw-tagline">Earth's invisible magnetic shield</span>
-          </div>
-          <span class="sw-toggle" aria-hidden="true">+</span>
+    <!-- Solar Storm 2012 -->
+    <div class="sw-card" style="background-image:url('assets/images/banner/earth1.webp'); background-position:center 35%">
+      <div class="sw-card-overlay" style="background:linear-gradient(to top, rgba(60,0,20,0.97) 0%, rgba(40,0,30,0.6) 40%, rgba(0,0,0,0.14) 100%)"></div>
+      <div class="sw-card-body">
+        <div class="sw-card-meta">
+          <span class="sw-card-num">02</span>
+          <span class="sw-card-tag">Historical</span>
         </div>
-        <div class="sw-panel-body">
-          <p class="sw-body-eyebrow">Magnetosphere</p>
-          <h3 class="sw-body-title">Earth's invisible shield</h3>
-          <p class="sw-body-desc">Earth's magnetic field deflects the solar wind, creating a cavity called the magnetosphere — compressed on the sunward side and stretched into a long tail on the night side. OpenSpace renders magnetic field lines from the BATS-R-US model and shows how the magnetosphere responds dynamically to solar activity.</p>
-          <div class="sw-facts-row">
-            <span class="sw-fact">Extends 60,000 km toward the Sun</span>
-            <span class="sw-fact">Magnetotail stretches millions of km</span>
-            <span class="sw-fact">BATS-R-US MHD model</span>
-          </div>
+        <h3 class="sw-card-name">Solar Storm 2012</h3>
+        <p class="sw-card-tagline">Near-miss Carrington event · July 23, 2012</p>
+        <p class="sw-card-desc">A double CME eruption that reached a speed of 2,500 km/s — among the fastest ever recorded — narrowly missed Earth by one week. Had it arrived, scientists estimate it could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.</p>
+        <div class="sw-facts-row">
+          <span class="sw-fact">CME speed ~2,500 km/s</span>
+          <span class="sw-fact">Missed Earth by 9 days</span>
+          <span class="sw-fact">ENLIL model from CCMC</span>
         </div>
       </div>
     </div>
 
-    <div class="sw-phenom">
-      <div class="sw-panel"
-           style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="sw-panel-tint" style="background:rgba(80,22,0,0.52)"></div>
-        <div class="sw-panel-top-grad"></div>
-        <div class="sw-panel-bot-grad"></div>
-        <div class="sw-panel-strip">
-          <span class="sw-num">03</span>
-          <div class="sw-name-wrap">
-            <span class="sw-name">Coronal Mass Ejections</span>
-            <span class="sw-tagline">Massive plasma eruptions from the Sun</span>
-          </div>
-          <span class="sw-toggle" aria-hidden="true">+</span>
+    <!-- Today's Sun -->
+    <div class="sw-card" style="background-image:url('assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
+      <div class="sw-card-overlay" style="background:linear-gradient(to top, rgba(0,10,50,0.97) 0%, rgba(0,10,50,0.6) 40%, rgba(0,0,0,0.14) 100%)"></div>
+      <div class="sw-card-body">
+        <div class="sw-card-meta">
+          <span class="sw-card-num">03</span>
+          <span class="sw-card-tag sw-card-tag-live">Live</span>
         </div>
-        <div class="sw-panel-body">
-          <p class="sw-body-eyebrow">Coronal Mass Ejections</p>
-          <h3 class="sw-body-title">Plasma storms crossing the solar system</h3>
-          <p class="sw-body-desc">CMEs are eruptions of billions of tonnes of magnetized plasma from the Sun's corona. OpenSpace recreates historical CME events using NASA CCMC's ENLIL simulation — watch the pressure wave propagate outward across the solar system and arrive at Earth, triggering geomagnetic storms.</p>
-          <div class="sw-facts-row">
-            <span class="sw-fact">Travel time: 1–3 days to Earth</span>
-            <span class="sw-fact">Speed: up to 3,000 km/s</span>
-            <span class="sw-fact">Historical events from CCMC archive</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sw-phenom">
-      <div class="sw-panel"
-           style="background-image:url('assets/images/carousel/Larsen+Ice+Shelf+breakup.webp'); background-position:center 50%"
-           role="button" tabindex="0" aria-expanded="false">
-        <div class="sw-panel-tint" style="background:rgba(0,45,20,0.45)"></div>
-        <div class="sw-panel-top-grad"></div>
-        <div class="sw-panel-bot-grad"></div>
-        <div class="sw-panel-strip">
-          <span class="sw-num">04</span>
-          <div class="sw-name-wrap">
-            <span class="sw-name">Aurora</span>
-            <span class="sw-tagline">Particles meet atmosphere</span>
-          </div>
-          <span class="sw-toggle" aria-hidden="true">+</span>
-        </div>
-        <div class="sw-panel-body">
-          <p class="sw-body-eyebrow">Aurora</p>
-          <h3 class="sw-body-title">Where the solar wind becomes visible</h3>
-          <p class="sw-body-desc">When CME particles funnel down magnetic field lines into Earth's atmosphere, they excite atmospheric gases and produce aurora. OpenSpace renders the aurora oval — the ring of auroral activity around the magnetic poles — and shows how it expands and brightens during geomagnetic storms.</p>
-          <div class="sw-facts-row">
-            <span class="sw-fact">Altitude: 100–300 km</span>
-            <span class="sw-fact">Kp index drives oval size</span>
-            <span class="sw-fact">Live Ovation Prime model</span>
-          </div>
+        <h3 class="sw-card-name">Today's Sun</h3>
+        <p class="sw-card-tagline">Real-time solar conditions · updated continuously</p>
+        <p class="sw-card-desc">OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun–Earth system as it is right now.</p>
+        <div class="sw-facts-row">
+          <span class="sw-fact">Live data from NOAA SWPC</span>
+          <span class="sw-fact">ENLIL solar wind model</span>
+          <span class="sw-fact">BATS-R-US magnetosphere</span>
+          <span class="sw-fact">Ovation Prime aurora</span>
         </div>
       </div>
     </div>
@@ -181,32 +125,4 @@ format:
     </div>
   </div>
 </div>
-
-<script>
-(function () {
-  var phenoms = Array.from(document.querySelectorAll('.sw-phenom'));
-
-  phenoms.forEach(function (phenom) {
-    var panel = phenom.querySelector('.sw-panel');
-    if (!panel) return;
-
-    panel.addEventListener('click', function () {
-      var isOpen = phenom.classList.contains('is-open');
-      phenoms.forEach(function (p) {
-        p.classList.remove('is-open');
-        var pn = p.querySelector('.sw-panel');
-        if (pn) pn.setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        phenom.classList.add('is-open');
-        panel.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    panel.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); panel.click(); }
-    });
-  });
-})();
-</script>
 ```

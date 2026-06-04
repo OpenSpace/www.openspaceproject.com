@@ -97,6 +97,7 @@ $navbar-hl:      #ecf5fb !default;
   gap: 1.75rem;
   color: white;
   background-color: $background;
+  padding-bottom: 300px;
 
   &::after {
     content: '';
@@ -112,7 +113,10 @@ $navbar-hl:      #ecf5fb !default;
 
   .hero-video-wrap {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 300px;
     z-index: 0;
   }
 
@@ -120,6 +124,7 @@ $navbar-hl:      #ecf5fb !default;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
   }
 
   .hero-overlay {
@@ -217,9 +222,22 @@ $navbar-hl:      #ecf5fb !default;
 
 // ---------- Trusted by ----------
 .trusted-section {
-  padding: 4rem 0 3rem;
+  padding: 3rem 0;
   background: $background;
-  border-bottom: 1px solid $os-border-faint;
+  margin-top: -270px;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -320px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(to bottom, transparent, $background);
+    pointer-events: none;
+  }
 }
 
 .trusted-label {

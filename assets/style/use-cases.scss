@@ -1,105 +1,89 @@
 /*-- scss:rules --*/
 
 // =============================================================
-// Use Cases page — image-dominant card layout
-// Save at assets/style/use-cases.scss
+// Use Cases page
 // =============================================================
 
-// ---------- Hero ----------
-.use-cases-hero {
+// ── Hero ──────────────────────────────────────────────────────
+.uc-hero {
   background: $background;
   color: white;
   padding: 5rem 0 4rem;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   text-align: center;
-  position: relative;
-  overflow: hidden;
+
+  .uc-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba($satelliteGray, 0.7);
+    margin: 0 0 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+  }
 }
 
-.use-cases-hero > * {
-  position: relative;
-  z-index: 1;
-}
-
-.use-cases-hero .feature-eyebrow {
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba($satelliteGray, 0.75);
-  margin: 0 0 1rem;
-}
-
-.feature-title-dark {
-  font-size: clamp(2rem, 4.5vw, 3.25rem);
+.uc-hero-title {
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  margin: 0 0 1.25rem;
+  margin: 0 auto 1.25rem;
   color: $baseWhite;
+  max-width: 760px;
 }
 
-.use-cases-lede {
-  display: block;
-  font-size: 1.125rem;
+.uc-hero-lede {
+  font-size: 1.0625rem;
   line-height: 1.6;
-  color: rgba($baseWhite, 0.9);
-  max-width: 640px;
+  color: rgba($satelliteGray, 0.9);
+  max-width: 560px;
   margin: 0 auto;
 }
 
-// ---------- Grid section ----------
-.use-cases-grid-section {
-  padding: 4rem 0 5rem;
+// ── Grid section ──────────────────────────────────────────────
+.uc-grid-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 3rem clamp(1.5rem, 6vw, 5rem) 4rem;
   background: $background;
 }
 
-.use-cases-grid {
+.uc-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: 1rem;
 
-  @media (max-width: 992px) {
+  @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 560px) {
     grid-template-columns: 1fr;
-    max-width: 460px;
-    margin: 0 auto;
   }
 }
 
-// ---------- Image-dominant card ----------
-.use-case-card {
+// ── Photo card ────────────────────────────────────────────────
+.uc-card {
   position: relative;
-  display: block;
-  height: 320px;
-  border-radius: 12px;
+  height: 300px;
+  border-radius: 8px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #1a2030; // fallback while image loads
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: #111820;
+  cursor: pointer;
 
-  &:hover,
-  &:focus-visible {
-    transform: translateY(-3px);
-    box-shadow:
-      0 4px 8px rgba(0, 0, 0, 0.10),
-      0 16px 32px rgba(0, 0, 0, 0.14);
-    text-decoration: none;
-    color: inherit;
-
-    .use-case-title {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
+  &:hover .uc-card-overlay,
+  &:focus-visible .uc-card-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.12) 0%,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.92) 100%
+    );
   }
 
   &:focus-visible {
@@ -108,37 +92,38 @@
   }
 }
 
-// Dark gradient overlay — bottom 60% fades from transparent to near-black
-.use-case-overlay {
+.uc-card-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    transparent 35%,
-    rgba(0, 0, 0, 0.45) 65%,
-    rgba(0, 0, 0, 0.85) 100%
+    transparent 30%,
+    rgba(0, 0, 0, 0.5) 65%,
+    rgba(0, 0, 0, 0.88) 100%
   );
+  transition: background 0.3s ease;
 }
 
-// Text positioned at the bottom
-.use-case-text {
+.uc-card-text {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1.25rem 1.5rem 1.5rem;
+  z-index: 2;
 }
 
-.use-case-meta {
-  font-size: 0.75rem;
-  color: rgba($baseWhite, 0.9);
+.uc-card-meta {
+  font-size: 0.68rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  color: rgba($baseWhite, 0.7);
   margin: 0 0 0.4rem;
-  letter-spacing: 0.04em;
   line-height: 1.4;
 }
 
-.use-case-title {
-  font-size: 1.125rem;
+.uc-card-title {
+  font-size: 1.0625rem;
   font-weight: 600;
   margin: 0;
   color: $baseWhite;
@@ -146,20 +131,244 @@
   letter-spacing: -0.01em;
 }
 
-// ---------- CTA ----------
-.use-cases-cta {
-  padding: 4rem 0 5rem;
-  background: $background;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
+// ── Modal overlay ─────────────────────────────────────────────
+.uc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease, visibility 0.25s;
+
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
-// ---------- Reduced motion ----------
-@media (prefers-reduced-motion: reduce) {
-  .use-case-card {
-    transition: none;
-    &:hover,
-    &:focus-visible {
-      transform: none;
-    }
+.uc-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+// ── Modal box ─────────────────────────────────────────────────
+.uc-modal-box {
+  position: relative;
+  z-index: 1;
+  background: #0f1318;
+  border: 1px solid rgba($primaryAccent, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  transform: translateY(12px);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .uc-modal.is-open & {
+    transform: translateY(0);
   }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 1fr;
+    max-height: 88vh;
+  }
+}
+
+.uc-modal-img-wrap {
+  overflow: hidden;
+  background: #090d12;
+
+  @media (max-width: 680px) {
+    height: 220px;
+  }
+}
+
+.uc-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.uc-modal-content {
+  padding: 2.5rem 2rem 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 680px) {
+    padding: 1.5rem 1.25rem 1.5rem;
+  }
+}
+
+.uc-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba($primaryAccent, 0.2);
+  border-radius: 50%;
+  color: rgba($baseWhite, 0.7);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background: rgba($primaryAccent, 0.15);
+    color: $baseWhite;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 2px;
+  }
+}
+
+.uc-modal-meta {
+  font-size: 0.7rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  color: $primaryAccent;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.uc-modal-title {
+  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+  font-weight: 700;
+  color: $baseWhite;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+}
+
+.uc-modal-body {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: rgba($baseWhite, 0.78);
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.uc-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.uc-modal-tag {
+  font-size: 0.65rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.05em;
+  color: rgba($satelliteGray, 0.8);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba($primaryAccent, 0.22);
+  border-radius: 3px;
+  padding: 0.25rem 0.55rem;
+}
+
+// ── CTA ───────────────────────────────────────────────────────
+.uc-cta-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 4rem clamp(1.5rem, 10vw, 12rem) 5rem;
+  position: relative;
+  overflow: hidden;
+
+  // Round spotlight with linear logo gradient, centered on the bottom edge
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #d9da6d, #3dbdee);
+    opacity: 0.22;
+    filter: blur(60px);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover::before {
+    animation: ucGlowMorph 4s ease-in-out infinite;
+    opacity: 0.32;
+  }
+
+  // Transparent grey card, styled like the ghost button
+  .impact-cta-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba($baseWhite, 0.18);
+    backdrop-filter: none;
+
+    &::before { display: none; }
+  }
+}
+
+.uc-cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.uc-cta-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: $primaryAccent;
+  border: 1px solid rgba($primaryAccent, 0.3);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+
+  i, .bi { display: none; }
+
+  &:hover {
+    border-color: rgba($primaryAccent, 0.7);
+    background: rgba($primaryAccent, 0.06);
+    transform: translateY(-2px);
+    color: $primaryAccent;
+    text-decoration: none;
+  }
+}
+
+@keyframes ucGlowMorph {
+  0%   { filter: blur(60px) hue-rotate(0deg);   transform: translate(-50%, -50%) scale(1); }
+  25%  { filter: blur(68px) hue-rotate(30deg);  transform: translate(-51%, -51%) scale(1.06); }
+  50%  { filter: blur(60px) hue-rotate(60deg);  transform: translate(-50%, -50%) scale(1); }
+  75%  { filter: blur(64px) hue-rotate(20deg);  transform: translate(-49%, -51%) scale(1.04); }
+  100% { filter: blur(60px) hue-rotate(0deg);   transform: translate(-50%, -50%) scale(1); }
+}
+
+// ── Reduced motion ────────────────────────────────────────────
+@media (prefers-reduced-motion: reduce) {
+  .uc-card-overlay        { transition: none; }
+  .uc-modal               { transition: none; }
+  .uc-modal-box           { transition: none; }
+  .uc-cta-section:hover::before { animation: none; }
 }

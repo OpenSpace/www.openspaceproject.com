@@ -159,6 +159,11 @@
     color: $primaryAccent;
     text-decoration: none;
   }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 2px;
+  }
 }
 
 // ── Lightbox ──────────────────────────────────────────────────
@@ -250,6 +255,11 @@
     background: rgba($primaryAccent, 0.15);
     color: $baseWhite;
   }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
+  }
 }
 
 .imglib-lb-prev,
@@ -274,6 +284,11 @@
   &:hover {
     background: rgba($primaryAccent, 0.1);
     color: $baseWhite;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
   }
 
   @media (max-width: 680px) {
@@ -318,7 +333,7 @@
 .imglib-lb-counter {
   font-size: 0.72rem;
   font-family: 'IBM Plex Mono', monospace;
-  color: rgba($satelliteGray, 0.45);
+  color: rgba($satelliteGray, 0.65);
   white-space: nowrap;
 }
 
@@ -342,6 +357,11 @@
   svg {
     width: 12px;
     height: 12px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
   }
 
   &:hover {

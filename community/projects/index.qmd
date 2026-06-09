@@ -25,7 +25,7 @@ format:
     <a class="proj-card" href="ocean-worlds-roadshow/"
        style="background-image:url('../../assets/images/carousel/earth.webp'); background-position:center 40%">
       <div class="proj-card-overlay"></div>
-      <span class="proj-card-arrow">→</span>
+      <span class="proj-card-arrow" aria-hidden="true">→</span>
       <div class="proj-card-text">
         <p class="proj-card-meta">Sarah Treadwell &middot; University of North Dakota &middot; 2025</p>
         <h3 class="proj-card-title">Ocean World's Roadshow</h3>
@@ -35,7 +35,7 @@ format:
     <a class="proj-card" href="spinning-stars-2025/"
        style="background-image:url('../../assets/images/banner/earth1.webp'); background-position:center 60%">
       <div class="proj-card-overlay"></div>
-      <span class="proj-card-arrow">→</span>
+      <span class="proj-card-arrow" aria-hidden="true">→</span>
       <div class="proj-card-text">
         <p class="proj-card-meta">Mark Popinchalk &middot; AMNH &middot; 2025</p>
         <h3 class="proj-card-title">Spinning Stars in OpenSpace</h3>
@@ -45,7 +45,7 @@ format:
     <a class="proj-card" href="weird-worlds/"
        style="background-image:url('../../assets/images/carousel/mars-surface.webp'); background-position:center 50%">
       <div class="proj-card-overlay"></div>
-      <span class="proj-card-arrow">→</span>
+      <span class="proj-card-arrow" aria-hidden="true">→</span>
       <div class="proj-card-text">
         <p class="proj-card-meta">Kaz Gary &middot; The Ohio State University &middot; 2025</p>
         <h3 class="proj-card-title">Weird Worlds</h3>
@@ -55,7 +55,7 @@ format:
     <a class="proj-card" href="arecibo-wow/"
        style="background-image:url('../../assets/images/use-cases/B612%20asteroids.webp'); background-position:center 50%">
       <div class="proj-card-overlay"></div>
-      <span class="proj-card-arrow">→</span>
+      <span class="proj-card-arrow" aria-hidden="true">→</span>
       <div class="proj-card-text">
         <p class="proj-card-meta">Abel Mendez, PhD &middot; University of Puerto Rico at Arecibo &middot; 2024</p>
         <h3 class="proj-card-title">Arecibo Wow!</h3>
@@ -65,7 +65,7 @@ format:
     <a class="proj-card" href="lost-city/"
        style="background-image:url('../../assets/images/carousel/Larsen+Ice+Shelf+breakup.webp'); background-position:center 40%">
       <div class="proj-card-overlay"></div>
-      <span class="proj-card-arrow">→</span>
+      <span class="proj-card-arrow" aria-hidden="true">→</span>
       <div class="proj-card-text">
         <p class="proj-card-meta">Sarah Treadwell &middot; University of North Dakota &middot; 2023</p>
         <h3 class="proj-card-title">Lost City: Searching for Origins of Life</h3>
@@ -75,7 +75,7 @@ format:
     <a class="proj-card" href="spinning-stars/"
        style="background-image:url('../../assets/images/carousel/Burma+Tibet.webp'); background-position:center 50%">
       <div class="proj-card-overlay"></div>
-      <span class="proj-card-arrow">→</span>
+      <span class="proj-card-arrow" aria-hidden="true">→</span>
       <div class="proj-card-text">
         <p class="proj-card-meta">Mark Popinchalk &middot; AMNH &middot; 2023</p>
         <h3 class="proj-card-title">Spinning Stars in OpenSpace</h3>

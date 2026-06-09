@@ -81,6 +81,11 @@
     color: #0a0a0a;
     text-decoration: none;
   }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
+  }
 }
 
 .dl-btn-ghost {
@@ -100,6 +105,11 @@
     color: $baseWhite;
     text-decoration: none;
   }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
+  }
 }
 
 .dl-hero-platforms {
@@ -107,7 +117,7 @@
   font-size: 0.75rem;
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.08em;
-  color: rgba($satelliteGray, 0.5);
+  color: rgba($satelliteGray, 0.65);
 }
 
 // ── Platform cards ────────────────────────────────────────────
@@ -120,16 +130,6 @@
   border-bottom: 1px solid rgba($primaryAccent, 0.08);
 }
 
-.dl-platforms-heading {
-  font-size: 0.7rem;
-  font-family: 'IBM Plex Mono', monospace;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: $primaryAccent;
-  border-bottom: 1px solid rgba($primaryAccent, 0.15);
-  padding-bottom: 0.6rem;
-  margin-bottom: 2rem;
-}
 
 .dl-platform-grid {
   display: grid;
@@ -189,12 +189,15 @@
 .dl-platform-actions {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
 .dl-platform-btn {
-  display: block;
+  display: inline-block;
+  width: 100%;
+  max-width: 280px;
   text-align: center;
   font-size: 0.875rem;
   font-weight: 600;
@@ -205,6 +208,11 @@
   letter-spacing: 0.01em;
 
   i, .bi { display: none; }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
+  }
 
   &--primary {
     background: $vividAccentGreen;
@@ -239,6 +247,22 @@
       border-color: rgba($primaryAccent, 0.4);
       color: $primaryAccent;
       text-decoration: none;
+    }
+  }
+
+  &--glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: $baseWhite;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.11);
+      border-color: rgba($primaryAccent, 0.45);
+      color: $primaryAccent;
+      text-decoration: none;
+      transform: translateY(-1px);
     }
   }
 }
@@ -436,7 +460,7 @@
 .dl-dataset-size {
   font-size: 0.72rem;
   font-family: 'IBM Plex Mono', monospace;
-  color: rgba($satelliteGray, 0.45);
+  color: rgba($satelliteGray, 0.65);
   letter-spacing: 0.06em;
   margin: 0.25rem 0 0.75rem;
 }

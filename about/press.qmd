@@ -185,6 +185,7 @@ format:
     mByline.textContent = d.author ? 'By ' + d.author : '';
     mBody.textContent   = d.body;
     mLink.href          = d.url;
+    mLink.setAttribute('aria-label', 'Read article: ' + d.title + ' on ' + d.source);
     modal.setAttribute('aria-hidden', 'false');
     modal.classList.add('is-open');
     document.body.style.overflow = 'hidden';

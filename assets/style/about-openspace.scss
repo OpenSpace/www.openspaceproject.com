@@ -63,7 +63,9 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   margin: 2.5rem 0 1.25rem;
-  color: white;
+  color: $baseWhite;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  padding-bottom: 0.5rem;
 }
 
 .about-body-section .about-h2:first-of-type {
@@ -427,22 +429,16 @@
   margin-left: calc(50% - 50vw);
 }
 
-// Timeline, institutions, and CTA: remove max-width, apply padding directly.
-// Inner components (.os-timeline, .institution-grid) keep their own max-widths.
+// All about/brand section containers use homepage-aligned padding.
+.about-hero .os-container,
+.about-body-section .os-container,
 .timeline-section .os-container,
 .institutions-section .os-container,
-.about-cta .os-container {
+.about-cta .os-container,
+.brand-logos-section .os-container {
   max-width: none;
-  padding-left:  clamp(1.5rem, 5vw, 6rem);
-  padding-right: clamp(1.5rem, 5vw, 6rem);
-}
-
-// Prose section: center the content block within the full-bleed section.
-.about-body-section .os-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left:  clamp(1.5rem, 5vw, 6rem);
-  padding-right: clamp(1.5rem, 5vw, 6rem);
+  padding-left:  clamp(1.5rem, 8vw, 12rem);
+  padding-right: clamp(1.5rem, 8vw, 12rem);
 }
 
 // ---------- Responsive timeline ----------

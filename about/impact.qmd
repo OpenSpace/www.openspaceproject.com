@@ -107,7 +107,7 @@ function initImpactMap() {
     maxZoom: 19
   }).addTo(leafletMap);
 
-  var accent = '#a2e7fb';
+  var accent = getComputedStyle(document.documentElement).getPropertyValue('--os-accent').trim() || '#a2e7fb';
 
   (data.places || []).forEach(function (place) {
     var r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));

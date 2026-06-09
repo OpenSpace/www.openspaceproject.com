@@ -16,9 +16,10 @@
   .feature-eyebrow {
     display: block;
     font-size: 0.75rem;
+    font-family: 'IBM Plex Mono', monospace;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba($satelliteGray, 0.7);
+    color: rgba($satelliteGray, 0.75);
     margin: 0 0 1rem;
   }
 
@@ -150,60 +151,3 @@
   }
 }
 
-// ---------- CTA ----------
-.impact-cta-card {
-  background: #0d1014;
-  border: 1px solid rgba($primaryAccent, 0.2);
-  border-radius: 16px;
-  padding: 3.5rem 2.5rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  max-width: 680px;
-  margin: 0 auto;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 15%;
-    right: 15%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, $primaryAccent, transparent);
-    opacity: 0.5;
-  }
-
-  h2 {
-    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
-    font-weight: 600;
-    color: $baseWhite;
-    line-height: 1.2;
-    margin: 0 0 1rem;
-  }
-
-  p {
-    font-size: 0.9375rem;
-    line-height: 1.7;
-    color: rgba($satelliteGray, 0.8);
-    max-width: 480px;
-    margin: 0 auto 2rem;
-  }
-}
-
-.impact-cta-btn {
-  display: inline-block;
-  background: $primaryAccent;
-  color: $background;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-  letter-spacing: 0.01em;
-
-  &:hover {
-    opacity: 0.88;
-    transform: translateY(-2px);
-  }
-}

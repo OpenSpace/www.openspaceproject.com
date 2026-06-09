@@ -31,7 +31,7 @@ format:
 
 <!-- ── Platforms ─────────────────────────────────────────── -->
 <div class="dl-platforms-section">
-  <p class="dl-platforms-heading">All platforms</p>
+  <p class="dl-section-heading">Platforms</p>
   <div class="dl-platform-grid">
 
     <div class="dl-platform-card">
@@ -39,10 +39,10 @@ format:
       <h3 class="dl-platform-name">Windows</h3>
       <p class="dl-platform-desc">Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.</p>
       <div class="dl-platform-actions">
-        <a class="dl-platform-btn dl-platform-btn--primary" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip">
+        <a class="dl-platform-btn dl-platform-btn--glass" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip">
           Download v0.21.3 (full)
         </a>
-        <a class="dl-platform-btn dl-platform-btn--secondary" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3-minimal.zip">
+        <a class="dl-platform-btn dl-platform-btn--glass" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3-minimal.zip">
           Download v0.21.3 (lightweight)
         </a>
       </div>
@@ -53,10 +53,10 @@ format:
       <h3 class="dl-platform-name">Linux</h3>
       <p class="dl-platform-desc">No pre-compiled binary for Linux. Source code is freely available on GitHub &mdash; build instructions are in the documentation.</p>
       <div class="dl-platform-actions">
-        <a class="dl-platform-btn dl-platform-btn--ghost" href="https://github.com/OpenSpace/OpenSpace" target="_blank" rel="noopener">
+        <a class="dl-platform-btn dl-platform-btn--glass" href="https://github.com/OpenSpace/OpenSpace" target="_blank" rel="noopener">
           View source on GitHub
         </a>
-        <a class="dl-platform-btn dl-platform-btn--ghost" href="https://docs.openspaceproject.com/latest/getting-started/install/index.html" target="_blank" rel="noopener">
+        <a class="dl-platform-btn dl-platform-btn--glass" href="https://docs.openspaceproject.com/latest/getting-started/install/index.html" target="_blank" rel="noopener">
           Build instructions
         </a>
       </div>

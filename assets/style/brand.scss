@@ -12,3 +12,8 @@ $softAccentYellow: #e8fbc2;
 $greenColor: #d0f4ea;
 $textColor: $satelliteGray;
 
+// CSS custom property so JS can read brand colors without hardcoding
+:root {
+  --os-accent: #{$primaryAccent};
+}
+

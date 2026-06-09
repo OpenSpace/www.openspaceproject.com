@@ -145,31 +145,6 @@ format:
   </div>
 </section>
 
-<section class="institutions-section">
-  <div class="os-container">
-    <h2 class="about-h2 text-center">Who builds OpenSpace</h2>
-    <p class="about-section-lede text-center">A consortium of museums, universities, and research institutions, supported by public funding.</p>
-
-    <div class="institution-grid">
-      <div class="institution-card">
-        <h3>American Museum of Natural History</h3>
-        <p>New York, USA. Home of the Hayden Planetarium, where OpenSpace powers live shows and ongoing development of the platform's visualization framework.</p>
-      </div>
-      <div class="institution-card">
-        <h3>Link&ouml;ping University</h3>
-        <p>Norrk&ouml;ping, Sweden. Research on real-time visualization and rendering, including the Globe Browsing system that underpins OpenSpace's planetary navigation.</p>
-      </div>
-      <div class="institution-card">
-        <h3>University of Utah SCI Institute</h3>
-        <p>Salt Lake City, USA. Scientific computing and visualization research that connects OpenSpace to the broader scientific data ecosystem.</p>
-      </div>
-      <div class="institution-card">
-        <h3>NYU Tandon School of Engineering</h3>
-        <p>Brooklyn, USA. Recently joined founding partner contributing to OpenSpace's expansion into new visualization and interaction domains.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="cta-section">
   <div class="cta-card">

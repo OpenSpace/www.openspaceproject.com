@@ -20,7 +20,7 @@ format:
 
 <!-- ── How it works ───────────────────────────────────────── -->
 <div class="mv-section">
-  <h2 class="mv-section-heading">How it works</h2>
+  <h2 class="mv-section-h2">How it works</h2>
   <div class="mv-caps-grid">
     <div class="mv-cap">
       <h3 class="mv-cap-title">Real trajectory data</h3>
@@ -37,117 +37,127 @@ format:
   </div>
 </div>
 
-<!-- ── Missions grid ──────────────────────────────────────── -->
-<div class="mv-missions-section">
-  <div class="mv-missions-header">
-    <h2 class="mv-section-heading">Missions</h2>
+<!-- ── Missions list ───────────────────────────────────────── -->
+<div class="mv-missions-list-section">
+  <h2 class="mv-section-h2">Missions</h2>
+
+  <div class="mv-mission-item">
+    <div class="mv-mission-img-wrap">
+      <img src="/assets/images/carousel/Burma+Tibet.webp"
+           alt="New Horizons approaching Pluto — Earth terrain from orbit for context"
+           class="mv-mission-img">
+    </div>
+    <div class="mv-mission-content">
+      <div class="mv-mission-meta">
+        <span class="mv-mission-num">01</span>
+        <span class="mv-mission-agency">NASA</span>
+      </div>
+      <h3 class="mv-mission-name">New Horizons</h3>
+      <p class="mv-mission-tagline">Pluto flyby · July 14, 2015</p>
+      <p class="mv-mission-desc">Watch the historic flyby unfold from New Horizons' perspective — imaging targets appearing as they were captured during closest approach. Then pull back to see the full 9.5-year journey from Earth.</p>
+      <div class="mv-facts-row">
+        <span class="mv-fact">Closest approach at 12,500 km</span>
+        <span class="mv-fact">9.5-year journey from Earth</span>
+      </div>
+    </div>
   </div>
 
-  <div class="mv-grid">
-
-    <!-- New Horizons -->
-    <div class="mv-card" style="background-image:url('../assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%">
-      <div class="mv-card-overlay"></div>
-      <div class="mv-card-body">
-        <div class="mv-card-meta">
-          <span class="mv-card-num">01</span>
-          <span class="mv-card-agency">NASA</span>
-        </div>
-        <h3 class="mv-card-name">New Horizons</h3>
-        <p class="mv-card-tagline">Pluto flyby · July 14, 2015</p>
-        <p class="mv-card-desc">Watch the historic flyby unfold from New Horizons' perspective — imaging targets appearing as they were captured during closest approach. Then pull back to see the full 9.5-year journey from Earth.</p>
-        <div class="mv-facts-row">
-          <span class="mv-fact">Closest approach at 12,500 km</span>
-          <span class="mv-fact">9.5-year journey from Earth</span>
-        </div>
+  <div class="mv-mission-item">
+    <div class="mv-mission-img-wrap">
+      <img src="/assets/images/venue-cards/Hayden_JWST.webp"
+           alt="James Webb Space Telescope visualization at the Hayden Planetarium"
+           class="mv-mission-img">
+    </div>
+    <div class="mv-mission-content">
+      <div class="mv-mission-meta">
+        <span class="mv-mission-num">02</span>
+        <span class="mv-mission-agency">NASA / ESA / CSA</span>
+      </div>
+      <h3 class="mv-mission-name">James Webb Space Telescope</h3>
+      <p class="mv-mission-tagline">L2 orbit · 2022 &ndash; present</p>
+      <p class="mv-mission-desc">See JWST's actual orbit at the Sun&ndash;Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.</p>
+      <div class="mv-facts-row">
+        <span class="mv-fact">Orbit at Sun&ndash;Earth L2 point</span>
+        <span class="mv-fact">6.5 m primary mirror</span>
       </div>
     </div>
-
-    <!-- JWST -->
-    <div class="mv-card" style="background-image:url('../assets/images/venue-cards/Hayden_JWST.webp'); background-position:center 30%">
-      <div class="mv-card-overlay"></div>
-      <div class="mv-card-body">
-        <div class="mv-card-meta">
-          <span class="mv-card-num">02</span>
-          <span class="mv-card-agency">NASA / ESA / CSA</span>
-        </div>
-        <h3 class="mv-card-name">James Webb Space Telescope</h3>
-        <p class="mv-card-tagline">L2 orbit · 2022 – present</p>
-        <p class="mv-card-desc">See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.</p>
-        <div class="mv-facts-row">
-          <span class="mv-fact">Orbit at Sun–Earth L2 point</span>
-          <span class="mv-fact">6.5 m primary mirror</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Rosetta -->
-    <div class="mv-card" style="background-image:url('../assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
-      <div class="mv-card-overlay"></div>
-      <div class="mv-card-body">
-        <div class="mv-card-meta">
-          <span class="mv-card-num">03</span>
-          <span class="mv-card-agency">ESA</span>
-        </div>
-        <h3 class="mv-card-name">Rosetta &amp; Philae</h3>
-        <p class="mv-card-tagline">Comet 67P · November 12, 2014</p>
-        <p class="mv-card-desc">Approach Comet Churyumov–Gerasimenko alongside Rosetta, then watch Philae's historic descent. Every orbital maneuver and instrument activation represented with real trajectory data.</p>
-        <div class="mv-facts-row">
-          <span class="mv-fact">10-year journey to Comet 67P</span>
-          <span class="mv-fact">First comet landing attempt</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Voyager -->
-    <div class="mv-card" style="background-image:url('../assets/images/carousel/earth.webp'); background-position:center 60%">
-      <div class="mv-card-overlay"></div>
-      <div class="mv-card-body">
-        <div class="mv-card-meta">
-          <span class="mv-card-num">04</span>
-          <span class="mv-card-agency">NASA</span>
-        </div>
-        <h3 class="mv-card-name">Voyager 1 &amp; 2</h3>
-        <p class="mv-card-tagline">Interstellar space · 1977 – present</p>
-        <p class="mv-card-desc">Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.</p>
-        <div class="mv-facts-row">
-          <span class="mv-fact">Both probes beyond the heliosphere</span>
-          <span class="mv-fact">Grand Tour gravity-assist trajectory</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Perseverance — full-width -->
-    <div class="mv-card mv-card-wide" style="background-image:url('../assets/images/carousel/mars-surface.webp'); background-position:center 45%">
-      <div class="mv-card-overlay"></div>
-      <div class="mv-card-body">
-        <div class="mv-card-meta">
-          <span class="mv-card-num">05</span>
-          <span class="mv-card-agency">NASA</span>
-        </div>
-        <h3 class="mv-card-name">Mars 2020 / Perseverance</h3>
-        <p class="mv-card-tagline">Jezero Crater · February 18, 2021</p>
-        <p class="mv-card-desc">Follow Perseverance's landing and navigate its traverse across the Martian surface. Fly the full journey from Earth to Mars and continue down to the rover's exact landing site — without leaving OpenSpace.</p>
-        <div class="mv-facts-row">
-          <span class="mv-fact">Landing at Jezero Crater</span>
-          <span class="mv-fact">26+ km surface traverse</span>
-          <span class="mv-fact">Ingenuity: first powered flight on Mars</span>
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <div class="mv-mission-item">
+    <div class="mv-mission-img-wrap">
+      <img src="/assets/images/carousel/goddard-openspace-mars.webp"
+           alt="Mars globe rendered in OpenSpace — used for orbital mission context"
+           class="mv-mission-img">
+    </div>
+    <div class="mv-mission-content">
+      <div class="mv-mission-meta">
+        <span class="mv-mission-num">03</span>
+        <span class="mv-mission-agency">ESA</span>
+      </div>
+      <h3 class="mv-mission-name">Rosetta &amp; Philae</h3>
+      <p class="mv-mission-tagline">Comet 67P · November 12, 2014</p>
+      <p class="mv-mission-desc">Approach Comet Churyumov&ndash;Gerasimenko alongside Rosetta, then watch Philae's historic descent. Every orbital maneuver and instrument activation represented with real trajectory data.</p>
+      <div class="mv-facts-row">
+        <span class="mv-fact">10-year journey to Comet 67P</span>
+        <span class="mv-fact">First comet landing attempt</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mv-mission-item">
+    <div class="mv-mission-img-wrap">
+      <img src="/assets/images/carousel/earth.webp"
+           alt="Earth from orbit — departure point for the Voyager probes"
+           class="mv-mission-img">
+    </div>
+    <div class="mv-mission-content">
+      <div class="mv-mission-meta">
+        <span class="mv-mission-num">04</span>
+        <span class="mv-mission-agency">NASA</span>
+      </div>
+      <h3 class="mv-mission-name">Voyager 1 &amp; 2</h3>
+      <p class="mv-mission-tagline">Interstellar space · 1977 &ndash; present</p>
+      <p class="mv-mission-desc">Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.</p>
+      <div class="mv-facts-row">
+        <span class="mv-fact">Both probes beyond the heliosphere</span>
+        <span class="mv-fact">Grand Tour gravity-assist trajectory</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mv-mission-item">
+    <div class="mv-mission-img-wrap">
+      <img src="/assets/images/carousel/mars-surface.webp"
+           alt="Mars surface from HiRISE — Perseverance landing site terrain"
+           class="mv-mission-img">
+    </div>
+    <div class="mv-mission-content">
+      <div class="mv-mission-meta">
+        <span class="mv-mission-num">05</span>
+        <span class="mv-mission-agency">NASA</span>
+      </div>
+      <h3 class="mv-mission-name">Mars 2020 / Perseverance</h3>
+      <p class="mv-mission-tagline">Jezero Crater · February 18, 2021</p>
+      <p class="mv-mission-desc">Follow Perseverance's landing and navigate its traverse across the Martian surface. Fly the full journey from Earth to Mars and continue down to the rover's exact landing site — without leaving OpenSpace.</p>
+      <div class="mv-facts-row">
+        <span class="mv-fact">Landing at Jezero Crater</span>
+        <span class="mv-fact">26+ km surface traverse</span>
+        <span class="mv-fact">Ingenuity: first powered flight on Mars</span>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- ── CTA ────────────────────────────────────────────────── -->
-<div class="mv-section">
-  <div class="impact-cta-card">
-    <h2>Start flying with spacecraft</h2>
-    <p>Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.</p>
-    <div class="mv-cta-buttons">
-      <a class="impact-cta-btn" href="../install/version-0213.qmd">Download OpenSpace</a>
-      <a class="mv-cta-btn-ghost" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Start flying with spacecraft</h2>
+    <p class="section-lede">Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-ghost-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
     </div>
   </div>
-</div>
+</section>
 ```

@@ -1,7 +1,6 @@
 ---
-title: "2026 Annual User Meeting"
 pagetitle: "2026 Annual User Meeting — OpenSpace"
-description-meta: "Join the OpenSpace community at the 2026 Annual User Meeting for sessions on new features, use cases, and the project's direction."
+description-meta: "Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for three days of demos, training, and conversation."
 format:
   html:
     page-layout: full
@@ -9,47 +8,30 @@ format:
     anchor-sections: false
 ---
 
-::: {.use-case-detail-hero}
-::: {.use-case-detail-hero-media}
-![](images/meetings/2026-hero.jpg){.use-case-detail-img}
+```{=html}
+<section class="about-hero">
+  <div class="os-container narrow">
+    <p class="feature-eyebrow">Annual User Meeting &middot; 2026</p>
+    <h1 class="feature-title-dark">2026 Annual User Meeting</h1>
+    <p class="ev-detail-time">August 26&ndash;28, 2026 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
+  </div>
+</section>
 
-::: {.use-case-detail-hero-overlay}
-:::
-:::
-
-::: {.use-case-detail-hero-content}
-::: {.os-container .narrow}
-
-[2026 Annual User Meeting]{.feature-eyebrow}
-
-# Save the date {.feature-title-dark}
-
-[June 2026 · Location to be announced]{.use-case-detail-meta}
-
-:::
-:::
-:::
-
-::: {.use-case-detail-body}
-::: {.os-container .narrow}
-
-The 2026 Annual User Meeting will bring the OpenSpace community together for several days of demos, training sessions, and conversation about where the project is headed. Whether you run a planetarium, build for museum exhibits, teach with OpenSpace in classrooms, or contribute to the codebase, this is where the community connects.
-
-## What to expect {.feature-h2}
-
-Past meetings have included new feature previews from the development team, hands-on workshops for dome operators, lightning talks from users sharing how they've integrated OpenSpace into their venues, and open discussion about roadmap priorities. The 2026 program will follow a similar shape, with details added as they're confirmed.
-
-## Registration
-
-Registration opens in early 2026. Capacity is limited, so we'll announce on the OpenSpace mailing list and Slack first. Sign up below to get notified.
-
-[Get notified when registration opens →](contact.qmd)
-
-## Looking back {.feature-h2}
-
-Curious what these meetings are like? See the [2025 Annual User Meeting recap](2025.qmd) for sessions, photos, and highlights from last year.
-
-[← Back to all meetings](../annual-user-meeting.qmd)
-
-:::
-:::
+<!-- ── About the meeting ───────────────────────────────────── -->
+<section class="ds-venue-section" id="about">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">About the meeting</p>
+    <h2 class="ds-venue-title">Join us in Norrk&ouml;ping</h2>
+    <div class="um-detail-body">
+      <p>Join us for the second in-person OpenSpace User Meeting in Norrk&ouml;ping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.</p>
+      <p>This is a great opportunity to sharpen your OpenSpace skills, explore the latest software features and updates, and connect with educators, planetarium professionals, researchers, and developers in the OpenSpace community.</p>
+      <p>Registration is <strong>free</strong>. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited. Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> for any questions about the meeting.</p>
+      <div class="ev-detail-links">
+        <a class="ev-btn-primary" href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register</a>
+        <a class="ev-btn-ghost" href="2026/index.qmd">Full details &amp; location</a>
+      </div>
+      <p class="ev-detail-back"><a href="index.qmd">&larr; All meetings</a></p>
+    </div>
+  </div>
+</section>
+```

@@ -1,17 +1,33 @@
 ---
-title: "February OpenSpace Monthly Meeting"
-description: "Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users."
-date: "2028-02-10"
-time: "3:00 PM -- 4:00 PM EST"
-categories: ["User Meeting"]
-google-cal: "http://www.google.com/calendar/event?action=TEMPLATE&text=December%20OpenSpace%20Monthly%20Meeting&dates=20251208T200000Z/20251208T210000Z"
+pagetitle: "February OpenSpace Monthly Meeting — OpenSpace"
+description-meta: "Dive into the latest OpenSpace software development updates and participate in feedback sessions."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
 ---
 
-Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.
+```{=html}
+<section class="about-hero">
+  <div class="os-container narrow">
+    <p class="feature-eyebrow">Monthly Meeting &middot; February 10, 2028</p>
+    <h1 class="feature-title-dark">February OpenSpace Monthly Meeting</h1>
+    <p class="ev-detail-time">Monday, February 10, 2028 &middot; 3:00&ndash;4:00 PM EST &middot; Zoom</p>
+  </div>
+</section>
 
-We'll wrap up with a chance for you to showcase your recent OpenSpace projects and discoveries. Don't miss out on this chance to stay informed and get your questions answered by our team of developers!
+<section class="about-body-section">
+  <div class="os-container narrow">
+    <p>Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
+    <p>We&rsquo;ll wrap up with a chance for you to showcase your recent OpenSpace projects and discoveries. Don&rsquo;t miss out on this chance to stay informed and get your questions answered by our team of developers!</p>
 
-When: Monday, December 8 at 3pm ET
+    <div class="ev-detail-links">
+      <a class="ev-btn-primary" href="http://www.google.com/calendar/event?action=TEMPLATE&text=February%20OpenSpace%20Monthly%20Meeting&dates=20280210T200000Z/20280210T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
+      <a class="ev-btn-ghost" href="https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09" target="_blank" rel="noopener">Join Zoom</a>
+    </div>
 
-Where: [Zoom](https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09)
-
+    <p class="ev-detail-back"><a href="../">&larr; All events</a></p>
+  </div>
+</section>
+```

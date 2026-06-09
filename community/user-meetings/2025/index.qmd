@@ -1,18 +1,156 @@
 ---
-sidebar: user-meeting-2025
+pagetitle: "2025 Annual User Meeting — OpenSpace"
+description-meta: "Recap of the 2025 OpenSpace Annual User Meeting at the American Museum of Natural History — sessions, highlights, and community moments."
+sidebar: false
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
 ---
 
-![](hayden.webp)
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="ds-hero">
+  <div>
+    <p class="feature-eyebrow">Annual User Meeting &middot; 2025</p>
+    <h1>OpenSpace<br>User Meeting</h1>
+    <p class="ds-hero-lede">July 31 &ndash; August 1, 2025 &middot; American Museum of Natural History, New York</p>
+  </div>
+</section>
 
-# OpenSpace User Meeting
-_Thursday, July 31 - Friday, August 1_
+<!-- ── Right-side dot nav ─────────────────────────────────────── -->
+<nav class="ds-dot-nav" aria-label="Navigate to section">
+  <button class="ds-dot-nav-item is-active" data-target="recap"      aria-label="Recap"></button>
+  <button class="ds-dot-nav-item"            data-target="sessions"   aria-label="Sessions"></button>
+  <button class="ds-dot-nav-item"            data-target="recordings" aria-label="Recordings"></button>
+  <button class="ds-dot-nav-item"            data-target="community"  aria-label="Community"></button>
+</nav>
 
-Join us in NYC this summer for our first in-person OpenSpace User Meeting! OpenSpace users of all levels are invited to the American Museum of Natural History for two days of trainings, presentations, and hands-on sessions. This is a great opportunity to:
+<!-- ── Recap ─────────────────────────────────────────────────── -->
+<section class="ds-venue-section" id="recap">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Recap</p>
+    <h2 class="ds-venue-title">A look back</h2>
+    <div class="ds-venue-img-wrap">
+      <img src="hayden.webp"
+           alt="Hayden Planetarium, American Museum of Natural History, New York"
+           class="ds-venue-img">
+    </div>
+    <div class="um-detail-body">
+      <p>Held at the American Museum of Natural History in New York, the 2025 meeting was the first in-person OpenSpace user gathering. Planetarium directors, museum educators, university researchers, and the OpenSpace development team came together for two days of workshops, presentations, and hands-on sessions &mdash; with evening events in the Hayden Planetarium and Invisible Worlds Theater.</p>
+    </div>
+  </div>
+</section>
 
-  - Sharpen your OpenSpace skills
-  - Explore the latest software features and updates
-  - Connect with educators, planetarium professionals, researchers, and developers in the OpenSpace community
-  - Breakfast and lunch will be provided.
+<!-- ── Sessions ────────────────────────────────────────────────── -->
+<section class="ds-venue-section ds-venue-section--alt" id="sessions">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Program</p>
+    <h2 class="ds-venue-title">Sessions</h2>
+    <div class="um-detail-body">
+      <p>The two-day program covered something for every level &mdash; from first-time users to advanced developers. Sessions ran in parallel tracks across the Davis Classrooms and Hayden Planetarium.</p>
+      <ul>
+        <li>Kickoff: Community, updates &amp; what&rsquo;s ahead &mdash; Alex Bock &amp; Megan Villa</li>
+        <li>OpenSpace 101 &amp; custom profiles workshops &mdash; Micah Acinapura</li>
+        <li>Lua scripting &amp; content import workshops &mdash; Alex Bock</li>
+        <li>ShowComposer, rendered video &amp; configuration files</li>
+        <li>Multi-channel domes: CPlay and CTroll &mdash; Christian Ready, Dylan Salas</li>
+        <li>Portable planetariums &mdash; Sarah Treadwell, Josh Roberts</li>
+        <li>Lightning presentations from Carter Emmart, Jackie Faherty, Brian Abbott, KaChun Yu, and more</li>
+        <li>Evening: planetarium shows in the Hayden and Invisible Worlds theaters</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-_Registration has closed._
+<!-- ── Recordings ───────────────────────────────────────────────── -->
+<section class="ds-venue-section" id="recordings">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Watch</p>
+    <h2 class="ds-venue-title">Session recordings</h2>
+    <div class="um-detail-body">
+      <p>Recordings from the 2025 sessions are available on YouTube. The full playlist includes workshops, lightning talks, and presentations from both days of the meeting.</p>
+      <div class="ev-detail-links">
+        <a class="ev-btn-primary" href="https://www.youtube.com/playlist?list=PLzXWit_1TXstdi_g92k8YIPGaEVG13iJ2" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ── Community ────────────────────────────────────────────────── -->
+<section class="ds-venue-section ds-venue-section--alt" id="community">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Community</p>
+    <h2 class="ds-venue-title">Community moments</h2>
+    <div class="um-detail-body">
+      <p>Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward &mdash; in the AMNH planetarium, over coffee, and during informal evening meetups. New collaborations between institutions started here, and several feature requests in the current roadmap trace directly to discussions during the meeting.</p>
+      <p class="ev-detail-back"><a href="../">&larr; All meetings</a></p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var dotNav = document.querySelector('.ds-dot-nav');
+  function alignNav() {
+    if (!dotNav) return;
+    var btn = document.querySelector('.nav-cta');
+    if (btn) {
+      var right = window.innerWidth - btn.getBoundingClientRect().right;
+      dotNav.style.right = Math.max(8, right) + 'px';
+    }
+  }
+  alignNav();
+  window.addEventListener('resize', alignNav);
+
+  var navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
+  var sections = navItems.map(function (item) {
+    return document.getElementById(item.dataset.target);
+  }).filter(Boolean);
+  var currentIndex = 0;
+
+  function navbarHeight() {
+    var nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
+    return nav ? nav.offsetHeight + 12 : 80;
+  }
+
+  function setActive(index) {
+    currentIndex = Math.max(0, Math.min(index, sections.length - 1));
+    navItems.forEach(function (item, i) {
+      item.classList.toggle('is-active', i === currentIndex);
+    });
+  }
+
+  function goTo(index) {
+    index = Math.max(0, Math.min(index, sections.length - 1));
+    setActive(index);
+    var top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  navItems.forEach(function (item, i) {
+    item.addEventListener('click', function () { goTo(i); });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); goTo(currentIndex + 1); }
+    if (e.key === 'ArrowUp')   { e.preventDefault(); goTo(currentIndex - 1); }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var idx = sections.indexOf(entry.target);
+          if (idx !== -1) setActive(idx);
+        }
+      });
+    }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 });
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+
+  setActive(0);
+})();
+</script>
+```

@@ -1,0 +1,219 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Events page
+// =============================================================
+
+// ── Section wrappers ──────────────────────────────────────────
+.ev-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 4rem 0 3rem;
+
+  // Narrow prose container inherits from about-body-section
+  .os-container.narrow {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left:  clamp(1.5rem, 4vw, 3rem);
+    padding-right: clamp(1.5rem, 4vw, 3rem);
+  }
+}
+
+.ev-section--past {
+  background: #0d1014;
+}
+
+// ── Event item row ────────────────────────────────────────────
+.ev-item {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba($primaryAccent, 0.1);
+  align-items: start;
+  position: relative; // needed for stretched link
+
+  &:first-of-type { border-top: none; }
+
+  // Subtle hover lift on the image
+  &:hover .ev-img-wrap {
+    border-color: rgba($primaryAccent, 0.3);
+  }
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+// ── Stretched link — makes whole card clickable via title anchor ──
+.ev-title-link {
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover { color: inherit; text-decoration: none; }
+}
+
+// Action links must sit above the stretched-link overlay
+.ev-action-link {
+  position: relative;
+  z-index: 1;
+}
+
+// ── Thumbnail image ───────────────────────────────────────────
+.ev-img-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba($primaryAccent, 0.1);
+  flex-shrink: 0;
+
+  .ev-item--past & {
+    opacity: 0.55;
+  }
+}
+
+.ev-img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+// ── Event body ────────────────────────────────────────────────
+.ev-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.ev-tag {
+  font-size: 0.6rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.5);
+}
+
+.ev-title {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
+  color: $baseWhite;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.35rem;
+
+  .ev-item--past & { color: rgba($baseWhite, 0.6); }
+}
+
+.ev-time {
+  font-size: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgba($satelliteGray, 0.55);
+  letter-spacing: 0.04em;
+  margin: 0 0 0.85rem;
+}
+
+.ev-desc {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: rgba($baseWhite, 0.75);
+  margin: 0 0 1.25rem;
+
+  .ev-item--past & {
+    color: rgba($baseWhite, 0.45);
+    margin-bottom: 0;
+  }
+}
+
+// ── Detail page ───────────────────────────────────────────────
+.ev-detail-time {
+  font-size: 0.875rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgba($satelliteGray, 0.65);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.ev-detail-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 0;
+}
+
+.ev-detail-back {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+
+  a {
+    color: rgba($satelliteGray, 0.6);
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.04em;
+    font-size: 0.8125rem;
+    transition: color 0.15s ease;
+
+    &:hover { color: $primaryAccent; text-decoration: none; }
+  }
+}
+
+// ── Action links ──────────────────────────────────────────────
+.ev-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ev-btn-primary {
+  display: inline-block;
+  background: $vividAccentGreen;
+  color: $background;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  letter-spacing: 0.01em;
+
+  i, .bi { display: none; }
+
+  &:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+    text-decoration: none;
+    color: $background;
+  }
+}
+
+.ev-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: $primaryAccent;
+  border: 1px solid rgba($primaryAccent, 0.3);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  letter-spacing: 0.01em;
+
+  i, .bi { display: none; }
+
+  &:hover {
+    border-color: rgba($primaryAccent, 0.65);
+    background: rgba($primaryAccent, 0.06);
+    transform: translateY(-1px);
+    color: $primaryAccent;
+    text-decoration: none;
+  }
+}

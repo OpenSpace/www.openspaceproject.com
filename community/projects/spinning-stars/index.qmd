@@ -1,0 +1,68 @@
+---
+pagetitle: "Spinning Stars in OpenSpace — OpenSpace Projects"
+description-meta: "Mark Popinchalk at AMNH incorporates NASA TESS stellar rotation data into OpenSpace, creating interactive planetarium programs that reveal how star spin rates unlock the ages of distant suns."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="proj-detail-hero">
+  <div class="proj-detail-hero-inner">
+    <a class="proj-detail-back" href="../">← Projects</a>
+    <div class="proj-status status-complete">Completed &middot; 2023</div>
+    <h1 class="proj-detail-title">Spinning Stars in OpenSpace</h1>
+    <p class="proj-detail-meta">Mark Popinchalk &middot; CUNY Graduate Center &amp; American Museum of Natural History</p>
+  </div>
+</section>
+
+<!-- ── Body ──────────────────────────────────────────────── -->
+<div class="proj-detail-body">
+  <div class="proj-detail-prose-wrap">
+
+    <h2 class="proj-detail-h2">About the project</h2>
+    <p class="proj-detail-p">Time is one of astronomy's greatest communication challenges. Stellar lifetimes run to billions of years; galactic processes span longer still. How do you convey timescales that dwarf the entirety of human civilization? Mark Popinchalk, a PhD student at the CUNY Graduate Center and Science Educator at the American Museum of Natural History, found a way in: stellar rotation.</p>
+    <p class="proj-detail-p">Stars slow their spin as they age &mdash; like a top that gradually decelerates on a table. Popinchalk's research group at AMNH uses NASA's Transiting Exoplanet Survey Satellite (TESS) to measure how fast stars rotate, turning that spin rate into an age estimate. This technique, called gyrochronology, gives astronomers a practical clock embedded in the stars themselves. The completed 2023 SCoPE Seed Grant project, supported through Arizona State University, brought this research into OpenSpace as a platform for interactive planetarium programming.</p>
+    <p class="proj-detail-p">Popinchalk is British-American, previously spent four years as a Science Educator at AMNH, co-hosts Astronomy on Tap NYC, and regularly presents at the Hayden Planetarium &mdash; making him both a working researcher and an experienced public communicator.</p>
+
+    <div class="proj-facts-row">
+      <span class="proj-fact">NASA Astrophysics Division</span>
+      <span class="proj-fact">TESS satellite data</span>
+      <span class="proj-fact">Gyrochronology</span>
+      <span class="proj-fact">Stellar rotation rates</span>
+      <span class="proj-fact">Hayden Planetarium</span>
+      <span class="proj-fact">Astronomy on Tap NYC</span>
+    </div>
+
+    <h2 class="proj-detail-h2">How OpenSpace was used</h2>
+    <p class="proj-detail-p">TESS observational data on stellar rotation rates was incorporated into OpenSpace for the first time, establishing a pipeline for bringing this NASA dataset into interactive planetarium presentations. The project produced a program guide for educators that demonstrates various cosmic timescales using the TESS dataset alongside other discoveries, giving planetarium presenters a ready-made framework for explaining stellar aging to live audiences.</p>
+    <p class="proj-detail-p">For the OpenSpace project team, this collaboration represented exactly the kind of scientific data pipeline they aim to build &mdash; a working researcher bringing real, current data into the software and creating reusable educational materials in the process.</p>
+
+    <div class="proj-quote">
+      <p class="proj-quote-text">"A good scientist is a good communicator, but it's a real treat to find a way to communicate our science to the public."</p>
+      <p class="proj-quote-attribution">Mark Popinchalk &middot; CUNY Graduate Center &amp; AMNH</p>
+    </div>
+
+    <div class="proj-quote">
+      <p class="proj-quote-text">"OpenSpace is a pipeline for disseminating NASA data and visualized content. This collaboration supports the needs of our SciAct project by bringing scientific data from the NASA Transiting Exoplanet Space Satellite (TESS) into OpenSpace software."</p>
+      <p class="proj-quote-attribution">Rosamond Kinzler, PhD &middot; OpenSpace PI, AMNH</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Explore more projects</h2>
+    <p class="section-lede">See how other researchers and educators are using OpenSpace to communicate science to new audiences.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../">Browse all projects</a>
+      <a class="btn-ghost-os" href="../../../install/version-0213.qmd">Download OpenSpace</a>
+    </div>
+  </div>
+</section>
+```

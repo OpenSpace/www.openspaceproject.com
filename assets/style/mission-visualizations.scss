@@ -48,19 +48,17 @@
   margin-left: calc(50% - 50vw);
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
-  padding-left:  clamp(1.5rem, 10vw, 12rem);
-  padding-right: clamp(1.5rem, 10vw, 12rem);
+  padding-left:  clamp(1.5rem, 5vw, 6rem);
+  padding-right: clamp(1.5rem, 5vw, 6rem);
 }
 
-.mv-section-heading {
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: $primaryAccent;
-  border-bottom: 1px solid rgba($primaryAccent, 0.15);
-  padding-bottom: 0.6rem;
-  margin-bottom: 1.75rem;
-  font-family: 'IBM Plex Mono', monospace;
+.mv-section-h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: $baseWhite;
+  line-height: 1.2;
+  margin: 0 0 2rem;
 }
 
 // ── How it works — 3-column capability strip ──────────────────
@@ -94,85 +92,55 @@
   margin: 0;
 }
 
-// ── Missions full-bleed section ───────────────────────────────
-.mv-missions-section {
+// ── Missions list (replaces card grid) ───────────────────────
+.mv-missions-list-section {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background: #0d1014;
+  background: $background;
+  padding: 4rem clamp(1.5rem, 5vw, 6rem);
 }
 
-.mv-missions-header {
-  padding-top: 3.5rem;
-  padding-bottom: 0.5rem;
-  padding-left:  clamp(1.5rem, 10vw, 12rem);
-  padding-right: clamp(1.5rem, 10vw, 12rem);
-}
-
-// ── Mission card grid ─────────────────────────────────────────
-.mv-grid {
+.mv-mission-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba($primaryAccent, 0.1);
+  align-items: start;
 
-  @media (max-width: 680px) {
+  &:first-of-type { border-top: none; }
+
+  @media (max-width: 760px) {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }
 
-.mv-card {
-  position: relative;
-  height: 420px;
+.mv-mission-img-wrap {
+  border-radius: 8px;
   overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  &:hover .mv-card-overlay {
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.96) 0%,
-      rgba(0, 0, 0, 0.62) 45%,
-      rgba(0, 0, 0, 0.18) 100%
-    );
-  }
+  border: 1px solid rgba($primaryAccent, 0.1);
+  flex-shrink: 0;
 }
 
-// Full-width card for last mission
-.mv-card-wide {
-  grid-column: 1 / -1;
-  height: 340px;
+.mv-mission-img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-// Dark gradient overlay
-.mv-card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.92) 0%,
-    rgba(0, 0, 0, 0.55) 40%,
-    rgba(0, 0, 0, 0.12) 100%
-  );
-  transition: background 0.4s ease;
-}
+.mv-mission-content {}
 
-// Text body — pinned to bottom
-.mv-card-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  padding: 0 2rem 2rem;
-}
-
-.mv-card-meta {
+.mv-mission-meta {
   display: flex;
   align-items: baseline;
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.mv-card-num {
+.mv-mission-num {
   font-size: 0.65rem;
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.14em;
@@ -180,7 +148,7 @@
   font-weight: 500;
 }
 
-.mv-card-agency {
+.mv-mission-agency {
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -188,29 +156,28 @@
   font-family: 'IBM Plex Mono', monospace;
 }
 
-.mv-card-name {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.1;
+.mv-mission-name {
+  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+  font-weight: 600;
+  color: $baseWhite;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   margin: 0 0 0.35rem;
 }
 
-.mv-card-tagline {
-  font-size: 0.7rem;
+.mv-mission-tagline {
+  font-size: 0.75rem;
   color: rgba($satelliteGray, 0.55);
   font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.04em;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.85rem;
 }
 
-.mv-card-desc {
-  font-size: 0.875rem;
-  line-height: 1.65;
-  color: rgba(255, 255, 255, 0.7);
+.mv-mission-desc {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: rgba($baseWhite, 0.78);
   margin: 0 0 1rem;
-  max-width: 560px;
 }
 
 .mv-facts-row {
@@ -262,20 +229,3 @@
   }
 }
 
-// ── Mobile ────────────────────────────────────────────────────
-@media (max-width: 680px) {
-  .mv-card,
-  .mv-card-wide {
-    height: 380px;
-    grid-column: auto;
-  }
-
-  .mv-card-body {
-    padding: 0 1.25rem 1.5rem;
-  }
-}
-
-// ── Reduced motion ────────────────────────────────────────────
-@media (prefers-reduced-motion: reduce) {
-  .mv-card-overlay { transition: none; }
-}

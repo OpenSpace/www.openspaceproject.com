@@ -1,0 +1,148 @@
+---
+pagetitle: "Community Slack — OpenSpace"
+description-meta: "Join the OpenSpace Slack — connect with planetarium professionals, educators, scientists, and developers building and using OpenSpace."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="slack-hero">
+  <div class="slack-hero-content">
+    <p class="slack-eyebrow">Community</p>
+    <h1 class="slack-hero-title">Where OpenSpace users connect</h1>
+    <p class="slack-hero-lede">The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help &mdash; in real time.</p>
+    <div class="slack-hero-actions">
+      <a class="btn-primary-os" href="https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w" target="_blank" rel="noopener">Join the Slack</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Intro ──────────────────────────────────────────────── -->
+<div class="slack-section">
+  <div class="slack-intro-grid">
+    <div class="slack-intro-text">
+      <h2 class="slack-h2">A community built for users</h2>
+      <p class="slack-prose">Whether you run a planetarium dome, teach with OpenSpace, contribute code, or are just getting started &mdash; Slack is the fastest way to get answers, share your work, and connect with the people who know OpenSpace best.</p>
+      <p class="slack-prose">Ask questions, report issues, share screenshots of your work, stay current on new releases, and get direct support from the core team and experienced community members worldwide.</p>
+    </div>
+    <div class="slack-highlights">
+      <div class="slack-highlight">
+        <span class="slack-highlight-label">Real-time support</span>
+        <span class="slack-highlight-desc">Get answers from the community and the core development team</span>
+      </div>
+      <div class="slack-highlight slack-highlight-divider">
+        <span class="slack-highlight-label">All experience levels</span>
+        <span class="slack-highlight-desc">First-time users, power users, and software contributors all in one place</span>
+      </div>
+      <div class="slack-highlight slack-highlight-divider">
+        <span class="slack-highlight-label">Global institutions</span>
+        <span class="slack-highlight-desc">Museums, planetariums, universities, and research centers on every continent</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Channels ──────────────────────────────────────────── -->
+<div class="slack-channels-section">
+  <h2 class="slack-h2">Find your channel</h2>
+  <p class="slack-channels-lede">The workspace is organized into focused channels. Here are some of the best places to start.</p>
+  <div class="slack-channels-grid">
+
+    <div class="slack-channel-group">
+      <p class="slack-channel-group-label">Get started</p>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#intros</span>
+        <span class="slack-channel-desc">Introduce yourself to the community</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#openspace-help</span>
+        <span class="slack-channel-desc">Ask questions and get answers</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#announcements</span>
+        <span class="slack-channel-desc">Software updates and community events</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#hub</span>
+        <span class="slack-channel-desc">Assets and content shared on the OpenSpace Hub</span>
+      </div>
+    </div>
+
+    <div class="slack-channel-group">
+      <p class="slack-channel-group-label">Technical</p>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#bugs-and-breaks</span>
+        <span class="slack-channel-desc">Report issues you've encountered</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#compiling</span>
+        <span class="slack-channel-desc">Build and compilation support</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#breaking-changes</span>
+        <span class="slack-channel-desc">Stay current on software changes</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#documentation</span>
+        <span class="slack-channel-desc">Contribute to OpenSpace documentation</span>
+      </div>
+    </div>
+
+    <div class="slack-channel-group">
+      <p class="slack-channel-group-label">Share &amp; inspire</p>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#showcase</span>
+        <span class="slack-channel-desc">Show off your OpenSpace work</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#video-making</span>
+        <span class="slack-channel-desc">Rendering and producing videos with OpenSpace</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#wishlist</span>
+        <span class="slack-channel-desc">Feature requests and ideas</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#events</span>
+        <span class="slack-channel-desc">Programs, conferences, and community gatherings</span>
+      </div>
+    </div>
+
+    <div class="slack-channel-group">
+      <p class="slack-channel-group-label">Your community</p>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#users-at-planetariums</span>
+        <span class="slack-channel-desc">Connect with planetarium professionals</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#users-at-museums-and-science-centers</span>
+        <span class="slack-channel-desc">Museum and science center network</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#users-at-higher-education-institutions</span>
+        <span class="slack-channel-desc">University and research communities</span>
+      </div>
+      <div class="slack-channel-item">
+        <span class="slack-channel-name">#random</span>
+        <span class="slack-channel-desc">Interesting news and off-topic conversation</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Ready to join?</h2>
+    <p class="section-lede">The OpenSpace community is open to everyone &mdash; users, educators, scientists, and developers at any experience level.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os slack-cta-btn" href="https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w" target="_blank" rel="noopener">Join the Slack</a>
+    </div>
+  </div>
+</section>
+```

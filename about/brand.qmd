@@ -1,0 +1,98 @@
+---
+pagetitle: "Brand & Attribution — OpenSpace"
+description-meta: "Guidelines for crediting OpenSpace in your work, plus logos and brand assets available for download."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<section class="about-hero">
+  <div class="os-container narrow">
+    <p class="feature-eyebrow">About</p>
+    <h1 class="feature-title-dark">Brand &amp; Attribution</h1>
+    <p class="use-cases-lede">Guidelines for crediting OpenSpace in publications, presentations, and media, plus logos available for download.</p>
+  </div>
+</section>
+
+<section class="about-body-section">
+  <div class="os-container narrow">
+
+    <h2 class="about-h2">Crediting OpenSpace</h2>
+    <p>If you use OpenSpace images, videos, or visualizations in publications, presentations, articles, or other media, please credit the OpenSpace Project. A standard credit line:</p>
+
+    <div class="brand-credit-block">
+      <p class="brand-credit-text">Visualization created with OpenSpace &mdash; openspaceproject.com</p>
+    </div>
+
+    <p>For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available in the <a href="https://docs.openspaceproject.com" target="_blank" rel="noopener">documentation</a>.</p>
+
+    <h2 class="about-h2">Usage guidelines</h2>
+    <p>OpenSpace is open-source software released under the MIT License. Images and visualizations produced with OpenSpace may be used freely for educational, editorial, and research purposes with appropriate credit. For commercial use or licensing questions, <a href="../contact.qmd">contact us</a>.</p>
+    <p>When using the OpenSpace name or logo, please follow these guidelines:</p>
+    <ul class="brand-guidelines-list">
+      <li>Do not alter, distort, or modify the logo in any way.</li>
+      <li>Do not use the logo to imply endorsement or affiliation without permission.</li>
+      <li>Maintain sufficient contrast &mdash; use the white logo on dark backgrounds and the black logo on light backgrounds.</li>
+      <li>Provide adequate clear space around the logo.</li>
+    </ul>
+
+    <h2 class="about-h2">Logo downloads</h2>
+    <p>The following logo files are available for use in accordance with the guidelines above.</p>
+
+  </div>
+</section>
+
+<section class="brand-logos-section">
+  <div class="os-container narrow">
+    <div class="brand-logo-grid">
+
+      <div class="brand-logo-card brand-logo-card--dark">
+        <div class="brand-logo-preview">
+          <img src="/assets/brand/horizontal-logo.webp" alt="OpenSpace horizontal logo, white">
+        </div>
+        <div class="brand-logo-meta">
+          <p class="brand-logo-name">Horizontal logo</p>
+          <p class="brand-logo-use">For dark backgrounds</p>
+          <a class="brand-dl-btn" href="/assets/brand/horizontal-logo.webp" download>Download</a>
+        </div>
+      </div>
+
+      <div class="brand-logo-card brand-logo-card--dark">
+        <div class="brand-logo-preview">
+          <img src="/assets/brand/logo.webp" alt="OpenSpace mark, white">
+        </div>
+        <div class="brand-logo-meta">
+          <p class="brand-logo-name">Mark</p>
+          <p class="brand-logo-use">For dark backgrounds</p>
+          <a class="brand-dl-btn" href="/assets/brand/logo.webp" download>Download</a>
+        </div>
+      </div>
+
+      <div class="brand-logo-card brand-logo-card--light">
+        <div class="brand-logo-preview">
+          <img src="/assets/brand/openspace_black.webp" alt="OpenSpace mark, black">
+        </div>
+        <div class="brand-logo-meta">
+          <p class="brand-logo-name">Mark (black)</p>
+          <p class="brand-logo-use">For light backgrounds</p>
+          <a class="brand-dl-btn" href="/assets/brand/openspace_black.webp" download>Download</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Questions about usage?</h2>
+    <p class="section-lede">For licensing, permissions, or anything not covered here, reach out directly.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../contact.qmd">Get in touch</a>
+    </div>
+  </div>
+</section>
+```

@@ -24,7 +24,7 @@ format:
 <div class="sw-section">
   <div class="sw-intro-grid">
     <div class="sw-intro-text">
-      <h2 class="sw-section-heading">What OpenSpace shows</h2>
+      <h2 class="sw-section-h2">What OpenSpace shows</h2>
       <p class="sw-prose">OpenSpace connects to real-time and historical data from NASA's Community Coordinated Modeling Center (CCMC) and NOAA's Space Weather Prediction Center. The result is a live visualization of the electromagnetic environment surrounding Earth — and the rest of the solar system.</p>
       <p class="sw-prose">Every particle field, every magnetic field line, every CME trajectory is drawn from actual simulation and observation data. This is the same data space weather forecasters use, made navigable.</p>
     </div>
@@ -46,83 +46,87 @@ format:
 </div>
 
 <!-- ── Space weather profiles ──────────────────────────────── -->
-<div class="sw-profiles-section">
-  <div class="sw-profiles-header">
-    <h2 class="sw-section-heading">Space weather profiles</h2>
+<div class="sw-events-section">
+  <h2 class="sw-section-h2">Space weather profiles</h2>
+
+  <div class="sw-event-item">
+    <div class="sw-event-img-wrap">
+      <img src="/assets/images/carousel/earth.webp"
+           alt="Earth from orbit — geomagnetic storm effects on the magnetosphere"
+           class="sw-event-img">
+    </div>
+    <div class="sw-event-content">
+      <div class="sw-event-meta">
+        <span class="sw-event-num">01</span>
+        <span class="sw-event-tag">Historical</span>
+      </div>
+      <h3 class="sw-event-name">Bastille Day 2000</h3>
+      <p class="sw-event-tagline">X5.7 solar flare &middot; July 14, 2000</p>
+      <p class="sw-event-desc">One of the most powerful solar storms of Solar Cycle 23 — an X5.7 flare and fast CME that triggered a severe geomagnetic storm, disrupted satellites, and produced aurora visible as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.</p>
+      <div class="sw-facts-row">
+        <span class="sw-fact">X5.7 flare classification</span>
+        <span class="sw-fact">Kp index reached 9</span>
+        <span class="sw-fact">ENLIL model from CCMC</span>
+      </div>
+    </div>
   </div>
 
-  <div class="sw-grid">
-
-    <!-- Bastille Day 2000 -->
-    <div class="sw-card" style="background-image:url('../assets/images/carousel/earth.webp'); background-position:center 40%">
-      <div class="sw-card-overlay"></div>
-      <div class="sw-card-body">
-        <div class="sw-card-meta">
-          <span class="sw-card-num">01</span>
-          <span class="sw-card-tag">Historical</span>
-        </div>
-        <h3 class="sw-card-name">Bastille Day 2000</h3>
-        <p class="sw-card-tagline">X5.7 solar flare · July 14, 2000</p>
-        <p class="sw-card-desc">One of the most powerful solar storms of Solar Cycle 23 — an X5.7 flare and fast CME that triggered a severe geomagnetic storm, disrupted satellites, and produced aurora visible as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.</p>
-        <div class="sw-facts-row">
-          <span class="sw-fact">X5.7 flare classification</span>
-          <span class="sw-fact">Kp index reached 9</span>
-          <span class="sw-fact">ENLIL model from CCMC</span>
-        </div>
+  <div class="sw-event-item">
+    <div class="sw-event-img-wrap">
+      <img src="/assets/images/banner/earth1.webp"
+           alt="Earth from space — near-miss Carrington event CME propagation"
+           class="sw-event-img">
+    </div>
+    <div class="sw-event-content">
+      <div class="sw-event-meta">
+        <span class="sw-event-num">02</span>
+        <span class="sw-event-tag">Historical</span>
+      </div>
+      <h3 class="sw-event-name">Solar Storm 2012</h3>
+      <p class="sw-event-tagline">Near-miss Carrington event &middot; July 23, 2012</p>
+      <p class="sw-event-desc">A double CME eruption that reached a speed of 2,500 km/s — among the fastest ever recorded — narrowly missed Earth by one week. Had it arrived, scientists estimate it could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.</p>
+      <div class="sw-facts-row">
+        <span class="sw-fact">CME speed ~2,500 km/s</span>
+        <span class="sw-fact">Missed Earth by 9 days</span>
+        <span class="sw-fact">ENLIL model from CCMC</span>
       </div>
     </div>
-
-    <!-- Solar Storm 2012 -->
-    <div class="sw-card" style="background-image:url('../assets/images/banner/earth1.webp'); background-position:center 35%">
-      <div class="sw-card-overlay" style="background:linear-gradient(to top, rgba(60,0,20,0.97) 0%, rgba(40,0,30,0.6) 40%, rgba(0,0,0,0.14) 100%)"></div>
-      <div class="sw-card-body">
-        <div class="sw-card-meta">
-          <span class="sw-card-num">02</span>
-          <span class="sw-card-tag">Historical</span>
-        </div>
-        <h3 class="sw-card-name">Solar Storm 2012</h3>
-        <p class="sw-card-tagline">Near-miss Carrington event · July 23, 2012</p>
-        <p class="sw-card-desc">A double CME eruption that reached a speed of 2,500 km/s — among the fastest ever recorded — narrowly missed Earth by one week. Had it arrived, scientists estimate it could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.</p>
-        <div class="sw-facts-row">
-          <span class="sw-fact">CME speed ~2,500 km/s</span>
-          <span class="sw-fact">Missed Earth by 9 days</span>
-          <span class="sw-fact">ENLIL model from CCMC</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Today's Sun -->
-    <div class="sw-card" style="background-image:url('../assets/images/carousel/goddard-openspace-mars.webp'); background-position:center 50%">
-      <div class="sw-card-overlay" style="background:linear-gradient(to top, rgba(0,10,50,0.97) 0%, rgba(0,10,50,0.6) 40%, rgba(0,0,0,0.14) 100%)"></div>
-      <div class="sw-card-body">
-        <div class="sw-card-meta">
-          <span class="sw-card-num">03</span>
-          <span class="sw-card-tag sw-card-tag-live">Live</span>
-        </div>
-        <h3 class="sw-card-name">Today's Sun</h3>
-        <p class="sw-card-tagline">Real-time solar conditions · updated continuously</p>
-        <p class="sw-card-desc">OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun–Earth system as it is right now.</p>
-        <div class="sw-facts-row">
-          <span class="sw-fact">Live data from NOAA SWPC</span>
-          <span class="sw-fact">ENLIL solar wind model</span>
-          <span class="sw-fact">BATS-R-US magnetosphere</span>
-          <span class="sw-fact">Ovation Prime aurora</span>
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <div class="sw-event-item">
+    <div class="sw-event-img-wrap">
+      <img src="/assets/images/carousel/Larsen+Ice+Shelf+breakup.webp"
+           alt="Larsen Ice Shelf breakup — time-varying Earth data in OpenSpace"
+           class="sw-event-img">
+    </div>
+    <div class="sw-event-content">
+      <div class="sw-event-meta">
+        <span class="sw-event-num">03</span>
+        <span class="sw-event-tag sw-event-tag-live">Live</span>
+      </div>
+      <h3 class="sw-event-name">Today's Sun</h3>
+      <p class="sw-event-tagline">Real-time solar conditions &middot; updated continuously</p>
+      <p class="sw-event-desc">OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun&ndash;Earth system as it is right now.</p>
+      <div class="sw-facts-row">
+        <span class="sw-fact">Live data from NOAA SWPC</span>
+        <span class="sw-fact">ENLIL solar wind model</span>
+        <span class="sw-fact">BATS-R-US magnetosphere</span>
+        <span class="sw-fact">Ovation Prime aurora</span>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- ── CTA ────────────────────────────────────────────────── -->
-<div class="sw-section">
-  <div class="impact-cta-card">
-    <h2>See space weather in action</h2>
-    <p>Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.</p>
-    <div class="sw-cta-buttons">
-      <a class="impact-cta-btn" href="../install/version-0213.qmd">Download OpenSpace</a>
-      <a class="sw-cta-btn-ghost" href="https://ccmc.gsfc.nasa.gov" target="_blank" rel="noopener">NASA CCMC</a>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">See space weather in action</h2>
+    <p class="section-lede">Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-ghost-os" href="https://ccmc.gsfc.nasa.gov" target="_blank" rel="noopener">NASA CCMC</a>
     </div>
   </div>
-</div>
+</section>
 ```

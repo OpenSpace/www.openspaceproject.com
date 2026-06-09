@@ -202,6 +202,8 @@ $navbar-hl:      #ecf5fb !default;
   color: white;
   border: 1px solid $os-overlay-light;
 
+  i, .bi { display: none; }
+
   &:hover {
     background: rgba(255, 255, 255, 0.1);
     color: white;
@@ -503,7 +505,7 @@ $navbar-hl:      #ecf5fb !default;
 
 // ---------- Final CTA ----------
 .cta-section {
-  padding: 4rem clamp(1.5rem, 10vw, 12rem) 5rem;
+  padding: 4rem clamp(1.5rem, 3vw, 3rem) 5rem;
   background: $background;
   position: relative;
   overflow: hidden;
@@ -542,6 +544,16 @@ $navbar-hl:      #ecf5fb !default;
   margin: 0 auto;
 
   &::before { display: none; }
+
+  .section-heading {
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+    white-space: nowrap;
+
+    @media (max-width: 600px) {
+      white-space: normal;
+      font-size: 1.25rem;
+    }
+  }
 
   .section-lede {
     text-align: center;

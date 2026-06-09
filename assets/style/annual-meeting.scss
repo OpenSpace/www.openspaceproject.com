@@ -1,86 +1,202 @@
 /*-- scss:rules --*/
 
 // =============================================================
-// Annual User Meeting page
-// Save at assets/style/annual-meeting.scss
-// Add to _quarto.yml theme list AFTER use-cases.scss
+// Annual User Meeting listing + detail pages
 // =============================================================
 
-// ---------- Intro section between hero and cards ----------
-.meetings-intro-section {
-  padding: 3rem 0 2rem;
-  background: white;
+// ── Meeting list section ──────────────────────────────────────
+.um-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: $background;
+  padding: 4rem 0;
+  border-top: 1px solid rgba($primaryAccent, 0.06);
+}
+
+.um-section .os-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left:  clamp(1rem, 2vw, 1.5rem);
+  padding-right: clamp(1rem, 2vw, 1.5rem);
+}
+
+// ── Meeting item row ──────────────────────────────────────────
+.um-item {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  gap: 3.5rem;
+  padding: 3rem 0;
+  border-top: 1px solid rgba($primaryAccent, 0.1);
+  align-items: center;
+  position: relative;
+
+  &:first-of-type { border-top: none; }
+
+  &:hover .um-img-wrap {
+    border-color: rgba($primaryAccent, 0.3);
+  }
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.um-item--past {
+  .um-img-wrap { opacity: 0.6; }
+  .um-title    { color: rgba($baseWhite, 0.7); }
+}
+
+// ── Image ─────────────────────────────────────────────────────
+.um-img-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba($primaryAccent, 0.12);
+  transition: border-color 0.2s ease;
+}
+
+.um-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+
+  @media (max-width: 820px) {
+    height: 260px;
+  }
+}
+
+// ── Body ──────────────────────────────────────────────────────
+.um-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.um-badge {
+  font-size: 0.58rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  background: rgba($vividAccentGreen, 0.15);
+  color: $vividAccentGreen;
+  border: 1px solid rgba($vividAccentGreen, 0.35);
+}
+
+.um-year {
+  font-size: 0.6rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.5);
+}
+
+.um-title {
+  font-size: clamp(1.375rem, 2.5vw, 1.875rem);
+  font-weight: 600;
+  color: $baseWhite;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.4rem;
+}
+
+// Stretched link — whole card clickable via title anchor
+.um-title-link {
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover { color: inherit; text-decoration: none; }
+}
+
+.um-action-link {
+  position: relative;
+  z-index: 1;
+}
+
+.um-location {
+  font-size: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgba($satelliteGray, 0.55);
+  letter-spacing: 0.04em;
+  margin: 0 0 0.85rem;
+}
+
+.um-desc {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: rgba($baseWhite, 0.75);
+  margin: 0 0 1.25rem;
+}
+
+.um-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $primaryAccent;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
+
+  i, .bi { display: none; }
+
+  &:hover { color: $baseWhite; text-decoration: none; }
+}
+
+// ── Meeting detail page prose (inside ds-venue-section) ───────
+.um-detail-body {
+  max-width: 720px;
 
   p {
-    font-size: 1.0625rem;
-    line-height: 1.7;
-    color: #2c2c2c;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-// ---------- Two-card grid (larger than use-cases grid) ----------
-.meetings-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  max-width: 960px;
-  margin: 0 auto;
-
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-  }
-}
-
-// ---------- Meeting card overrides ----------
-// Reuses .use-case-card from use-cases.scss but bumps height
-.meeting-card {
-  height: 380px;
-
-  @media (max-width: 720px) {
-    height: 320px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba($satelliteGray, 0.88);
+    margin: 0 0 1.25rem;
   }
 
-  .use-case-meta {
-    font-size: 0.8125rem;
-    margin-bottom: 0.5rem;
-  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.75rem;
 
-  .use-case-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    li {
+      font-size: 0.875rem;
+      line-height: 1.65;
+      color: rgba($satelliteGray, 0.75);
+      padding: 0.45rem 0 0.45rem 1.25rem;
+      border-bottom: 1px solid rgba($primaryAccent, 0.07);
+      position: relative;
 
-    @media (max-width: 720px) {
-      font-size: 1.25rem;
+      &:last-child { border-bottom: none; }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba($primaryAccent, 0.55);
+      }
+
+      a {
+        color: $primaryAccent;
+        text-decoration: none;
+        transition: color 0.15s ease;
+        i, .bi { display: none; }
+        &:hover { color: $baseWhite; text-decoration: none; }
+      }
     }
   }
-}
-
-// ---------- Status badge (top right of card) ----------
-.meeting-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 2;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.meeting-badge-upcoming {
-  background: rgba($primaryAccent, 0.85);
-  color: $background;
-}
-
-.meeting-badge-past {
-  background: rgba($greenColor, 0.15);
-  color: $baseWhite;
-  border: 1px solid rgba($greenColor, 0.4);
 }

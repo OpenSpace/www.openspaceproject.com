@@ -1,0 +1,62 @@
+---
+pagetitle: "Arecibo Wow! — OpenSpace Projects"
+description-meta: "Abel Mendez at the University of Puerto Rico uses OpenSpace to guide audiences through virtual tours of the Milky Way tied to the 50th anniversary of the Arecibo Message and the search for extraterrestrial intelligence."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="proj-detail-hero">
+  <div class="proj-detail-hero-inner">
+    <a class="proj-detail-back" href="../">← Projects</a>
+    <div class="proj-status status-complete">Completed &middot; 2024</div>
+    <h1 class="proj-detail-title">Arecibo Wow! Exploring Interstellar Communication</h1>
+    <p class="proj-detail-meta">Abel Mendez, PhD &middot; University of Puerto Rico at Arecibo &middot; Planetary Habitability Laboratory</p>
+  </div>
+</section>
+
+<!-- ── Body ──────────────────────────────────────────────── -->
+<div class="proj-detail-body">
+  <div class="proj-detail-prose-wrap">
+
+    <h2 class="proj-detail-h2">About the project</h2>
+    <p class="proj-detail-p">Two landmark moments in the history of humanity's search for extraterrestrial intelligence converged in 2024 and 2025: the 50th anniversary of the Arecibo Message (November 16, 2024), the first deliberate radio transmission from Earth toward other star systems, and the 48th anniversary of the Wow! Signal (August 2025), the strongest candidate radio signal ever detected that might represent an extraterrestrial source. Abel Mendez, an associate professor and director of the Planetary Habitability Laboratory at the University of Puerto Rico at Arecibo, built this SCoPE project around both milestones.</p>
+    <p class="proj-detail-p">Mendez is a planetary astrobiologist who developed the Earth Similarity Index and the Habitable Worlds Catalog, and is a NASA MIRS Fellow with research experience at multiple NASA facilities. His project integrates OpenSpace into outreach activities that guide audiences through the regions of the Milky Way most relevant to SETI research &mdash; exoplanet systems, star clusters, and habitable zones. All materials are produced in both English and Spanish for online accessibility, expanding the project's reach to Spanish-speaking communities worldwide.</p>
+
+    <div class="proj-facts-row">
+      <span class="proj-fact">NASA Astrophysics Division</span>
+      <span class="proj-fact">SETI research</span>
+      <span class="proj-fact">Arecibo Message 50th anniversary</span>
+      <span class="proj-fact">Wow! Signal 48th anniversary</span>
+      <span class="proj-fact">English &amp; Spanish materials</span>
+      <span class="proj-fact">Habitable Worlds Catalog</span>
+    </div>
+
+    <h2 class="proj-detail-h2">How OpenSpace was used</h2>
+    <p class="proj-detail-p">OpenSpace serves as the vehicle for interactive virtual tours of the Milky Way galaxy, enabling audiences to navigate through the cosmic context of SETI research &mdash; visiting exoplanet candidate systems, star clusters, and regions of the galaxy where the conditions for intelligent life might exist. These tours transform abstract concepts like interstellar distances and habitable zones into navigable, explorable spaces.</p>
+    <p class="proj-detail-p">The resulting presentations were designed for planetarium-style delivery and online distribution, making them accessible far beyond any single venue.</p>
+
+    <div class="proj-quote">
+      <p class="proj-quote-text">"The search for extraterrestrial civilizations and the pursuit of interstellar communications are among the most profound scientific endeavors of our time."</p>
+      <p class="proj-quote-attribution">Abel Mendez, PhD &middot; Director, Planetary Habitability Laboratory</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Explore more projects</h2>
+    <p class="section-lede">See how other researchers and educators are using OpenSpace to communicate science to new audiences.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../">Browse all projects</a>
+      <a class="btn-ghost-os" href="../../../install/version-0213.qmd">Download OpenSpace</a>
+    </div>
+  </div>
+</section>
+```

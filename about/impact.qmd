@@ -77,13 +77,15 @@ format:
 </div>
 
 <!-- ── CTA ────────────────────────────────────────────── -->
-<div class="impact-section">
-  <div class="impact-cta-card">
-    <h2>Using OpenSpace? Tell us about it.</h2>
-    <p>We track how OpenSpace is being used around the world for NASA reporting and community building. If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you — and may feature you in our annual reports and on this site.</p>
-    <a class="impact-cta-btn" href="mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution">Get in touch &rarr;</a>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Using OpenSpace? Tell us about it.</h2>
+    <p class="section-lede">If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you — and may feature you in our annual reports and on this site.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution">Get in touch</a>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- ── Leaflet + map init ──────────────────────────────── -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

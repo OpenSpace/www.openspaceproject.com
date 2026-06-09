@@ -258,6 +258,127 @@
   }
 }
 
+// ---------- Brand page ────────────────────────────────────────
+.brand-credit-block {
+  background: rgba($primaryAccent, 0.05);
+  border: 1px solid rgba($primaryAccent, 0.18);
+  border-left: 3px solid $primaryAccent;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.brand-credit-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9375rem;
+  color: $baseWhite;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.brand-guidelines-list {
+  margin: 0.75rem 0 1.5rem 1.25rem;
+  padding: 0;
+
+  li {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: rgba($baseWhite, 0.85);
+    margin-bottom: 0.5rem;
+  }
+}
+
+.brand-logos-section {
+  background: #0d1014;
+  padding: 3rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  border-top: 1px solid rgba($primaryAccent, 0.08);
+  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+}
+
+.brand-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brand-logo-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba($primaryAccent, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo-card--dark  { background: #0a0a0a; }
+.brand-logo-card--light { background: #f0f4f6; }
+
+.brand-logo-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  flex: 1;
+
+  img {
+    max-height: 60px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+}
+
+.brand-logo-meta {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba($primaryAccent, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.brand-logo-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $baseWhite;
+  margin: 0;
+  flex: 1;
+}
+
+.brand-logo-use {
+  font-size: 0.72rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgba($satelliteGray, 0.6);
+  margin: 0;
+}
+
+.brand-dl-btn {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: $primaryAccent;
+  border: 1px solid rgba($primaryAccent, 0.28);
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+
+  i, .bi { display: none; }
+
+  &:hover {
+    background: rgba($primaryAccent, 0.08);
+    color: $primaryAccent;
+    text-decoration: none;
+  }
+}
+
 // ---------- CTA (back to deepest dark) ----------
 .about-cta {
   background: $background;
@@ -312,16 +433,16 @@
 .institutions-section .os-container,
 .about-cta .os-container {
   max-width: none;
-  padding-left:  clamp(1.5rem, 10vw, 12rem);
-  padding-right: clamp(1.5rem, 10vw, 12rem);
+  padding-left:  clamp(1.5rem, 5vw, 6rem);
+  padding-right: clamp(1.5rem, 5vw, 6rem);
 }
 
 // Prose section: center the content block within the full-bleed section.
 .about-body-section .os-container {
   max-width: 800px;
   margin: 0 auto;
-  padding-left:  clamp(1.5rem, 4vw, 3rem);
-  padding-right: clamp(1.5rem, 4vw, 3rem);
+  padding-left:  clamp(1.5rem, 5vw, 6rem);
+  padding-right: clamp(1.5rem, 5vw, 6rem);
 }
 
 // ---------- Responsive timeline ----------

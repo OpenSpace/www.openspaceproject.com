@@ -82,6 +82,12 @@
   }
 .navbar .nav-link {
   transform: translateY(8px);
+  transition: color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    color: $baseWhite !important;
+  }
 }
 .navbar {
   position: relative;
@@ -161,6 +167,13 @@
     left: 0;
     right: 0;
     height: 0.75rem;
+  }
+
+  // Two-column layout for dropdowns with more than 4 items
+  .navbar .nav-item.dropdown:hover .dropdown-menu:has(> li:nth-child(5)) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    min-width: 640px;
   }
 }
 

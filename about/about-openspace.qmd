@@ -171,15 +171,14 @@ format:
   </div>
 </section>
 
-<section class="about-cta">
-  <div class="os-container narrow text-center">
-    <h2 class="about-h2">Get involved</h2>
-    <p>OpenSpace is built in the open by a community that welcomes new contributors. Whether you build planetarium shows, teach with OpenSpace, contribute code, or want to learn what the software can do at your institution &mdash; there's a way to engage.</p>
-    <p class="about-footer-link">
-      <a href="https://github.com/OpenSpace/OpenSpace">View on GitHub &rarr;</a> &nbsp;&middot;&nbsp;
-      <a href="../contact.qmd">Get in touch &rarr;</a> &nbsp;&middot;&nbsp;
-      <a href="../community/use-cases.qmd">See use cases &rarr;</a>
-    </p>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Get involved</h2>
+    <p class="section-lede">OpenSpace is built in the open by a community that welcomes new contributors — whether you run a planetarium, teach with OpenSpace, or contribute code.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="https://github.com/OpenSpace/OpenSpace" target="_blank" rel="noopener">View on GitHub</a>
+      <a class="btn-ghost-os" href="../contact.qmd">Get in touch</a>
+    </div>
   </div>
 </section>
 ```

@@ -34,7 +34,7 @@ format:
 <div class="gb-section">
   <div class="gb-intro-row">
     <div class="gb-intro-text-col">
-      <h2 class="gb-section-heading">Planetary surface rendering</h2>
+      <h2 class="gb-section-h2">Planetary surface rendering</h2>
       <p class="gb-prose">Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions — HiRISE, MOLA, LRO, Cassini — and renders them continuously at every scale. No load screens. No transitions. No second application.</p>
       <p class="gb-prose">Multiple data layers can be active and blended at once: base imagery, colorized elevation, scientific overlays, labels. A presenter can reveal and toggle them live during a show without pausing or switching scenes.</p>
     </div>
@@ -55,107 +55,69 @@ format:
   </div>
 </div>
 
-<!-- ── Worlds accordion ────────────────────────────────────── -->
+<!-- ── Worlds ──────────────────────────────────────────────── -->
 <div class="gb-worlds-section">
-  <div class="gb-panels" id="gbPanels">
+  <h2 class="gb-section-h2">Featured worlds</h2>
 
-    <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
-         style="background-image:url('../assets/images/carousel/mars-surface.webp')">
-      <div class="gb-panel-tint" style="background:rgba(55,18,0,0.3)"></div>
-      <div class="gb-panel-gradient"></div>
-      <span class="gb-panel-crosshair" aria-hidden="true">+</span>
-      <div class="gb-panel-num-wrap">
-        <span class="gb-panel-num">01</span>
-        <span class="gb-panel-num-label">HiRISE Mars</span>
-      </div>
-      <div class="gb-panel-body">
-        <p class="gb-panel-eyebrow">Mars</p>
-        <h3 class="gb-panel-title">Mars at full<br>resolution</h3>
-        <p class="gb-panel-desc">Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application.</p>
-      </div>
+  <div class="gb-world-item">
+    <div class="gb-world-img-wrap">
+      <img src="/assets/images/carousel/mars-surface.webp"
+           alt="HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
+           class="gb-world-img">
     </div>
-
-    <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
-         style="background-image:url('../assets/images/carousel/earth.webp')">
-      <div class="gb-panel-tint" style="background:rgba(0,18,55,0.4)"></div>
-      <div class="gb-panel-gradient"></div>
-      <span class="gb-panel-crosshair" aria-hidden="true">+</span>
-      <div class="gb-panel-num-wrap">
-        <span class="gb-panel-num">02</span>
-        <span class="gb-panel-num-label">Earth</span>
+    <div class="gb-world-content">
+      <div class="gb-world-meta">
+        <span class="gb-world-num">01</span>
+        <span class="gb-world-label">Mars</span>
       </div>
-      <div class="gb-panel-body">
-        <p class="gb-panel-eyebrow">Earth</p>
-        <h3 class="gb-panel-title">Earth from<br>orbit</h3>
-        <p class="gb-panel-desc">Satellite composites, real elevation terrain, and time-varying data — sea ice extent, atmospheric layers, live weather.</p>
-      </div>
+      <h3 class="gb-world-heading">Mars at full resolution</h3>
+      <p class="gb-world-tagline">HiRISE &middot; MOLA &middot; CTX</p>
+      <p class="gb-world-desc">Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application. HiRISE surface imagery and MOLA elevation data compose a continuous view from orbit to terrain.</p>
     </div>
-
-    <div class="gb-panel" tabindex="0" role="button" aria-expanded="false"
-         style="background-image:url('../assets/images/carousel/Burma+Tibet.webp')">
-      <div class="gb-panel-tint" style="background:rgba(0,28,18,0.32)"></div>
-      <div class="gb-panel-gradient"></div>
-      <span class="gb-panel-crosshair" aria-hidden="true">+</span>
-      <div class="gb-panel-num-wrap">
-        <span class="gb-panel-num">03</span>
-        <span class="gb-panel-num-label">Solar System</span>
-      </div>
-      <div class="gb-panel-body">
-        <p class="gb-panel-eyebrow">Solar System</p>
-        <h3 class="gb-panel-title">Any imaged<br>surface</h3>
-        <p class="gb-panel-desc">Apollo sites on the Moon. Cassini imagery of Titan. New Horizons coverage of Pluto — all at mission resolution.</p>
-      </div>
-    </div>
-
   </div>
-</div>
 
-<script>
-(function () {
-  var container = document.getElementById('gbPanels');
-  if (!container) return;
-  var panels = container.querySelectorAll('.gb-panel');
+  <div class="gb-world-item">
+    <div class="gb-world-img-wrap">
+      <img src="/assets/images/carousel/earth.webp"
+           alt="Earth from orbit rendered in OpenSpace"
+           class="gb-world-img">
+    </div>
+    <div class="gb-world-content">
+      <div class="gb-world-meta">
+        <span class="gb-world-num">02</span>
+        <span class="gb-world-label">Earth</span>
+      </div>
+      <h3 class="gb-world-heading">Earth from orbit</h3>
+      <p class="gb-world-tagline">BMNG &middot; ESRI &middot; SRTM</p>
+      <p class="gb-world-desc">Satellite composites, real elevation terrain, and time-varying data — sea ice extent, atmospheric layers, live weather. Watch the ice caps advance and retreat with actual observational data.</p>
+    </div>
+  </div>
 
-  panels.forEach(function (panel) {
-    panel.addEventListener('click', function () {
-      var isExpanded = panel.classList.contains('is-expanded');
-      panels.forEach(function (p) {
-        p.classList.remove('is-expanded');
-        p.setAttribute('aria-expanded', 'false');
-      });
-      if (!isExpanded) {
-        panel.classList.add('is-expanded');
-        panel.setAttribute('aria-expanded', 'true');
-        container.classList.add('has-expanded');
-      } else {
-        container.classList.remove('has-expanded');
-      }
-    });
+  <div class="gb-world-item">
+    <div class="gb-world-img-wrap">
+      <img src="/assets/images/carousel/goddard-openspace-mars.webp"
+           alt="Mars globe rendered in OpenSpace — HiRISE imagery and MOLA elevation"
+           class="gb-world-img">
+    </div>
+    <div class="gb-world-content">
+      <div class="gb-world-meta">
+        <span class="gb-world-num">03</span>
+        <span class="gb-world-label">Solar System</span>
+      </div>
+      <h3 class="gb-world-heading">Any imaged surface</h3>
+      <p class="gb-world-tagline">Moon &middot; Titan &middot; Pluto &middot; Europa</p>
+      <p class="gb-world-desc">Apollo sites on the Moon. Cassini imagery of Titan. New Horizons coverage of Pluto — all at mission resolution. Any world where spacecraft have returned imagery can be loaded into Globe Browsing.</p>
+    </div>
+  </div>
 
-    panel.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        panel.click();
-      }
-    });
-  });
-})();
-</script>
-
-<!-- ── Big image ──────────────────────────────────────────── -->
-<div class="gb-showcase-section">
-  <figure class="gb-showcase">
-    <img src="/assets/images/carousel/goddard-openspace-mars.webp" alt="Mars globe rendered in OpenSpace using HiRISE imagery and MOLA elevation data" class="gb-showcase-img">
-    <figcaption class="gb-showcase-caption">Mars in OpenSpace — HiRISE surface imagery draped over MOLA elevation data. Colors represent real topography from the Mars Orbiter Laser Altimeter.</figcaption>
-  </figure>
 </div>
 
 <!-- ── Data layers ────────────────────────────────────────── -->
 <div class="gb-section gb-section-alt">
   <div class="gb-split">
     <div class="gb-split-text">
-      <h2 class="gb-section-heading">Data layers</h2>
-      <h3 class="gb-split-title">Stack and reveal live</h3>
+      <h2 class="gb-section-h2">Data layers</h2>
+      <p class="gb-split-lede">Stack and reveal live</p>
       <p class="gb-prose">Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show — no pausing, no switching scenes, no prerendering.</p>
       <ul class="gb-feature-list">
         <li>Base imagery from multiple spacecraft missions</li>
@@ -236,14 +198,14 @@ format:
 </script>
 
 <!-- ── CTA ────────────────────────────────────────────────── -->
-<div class="gb-section">
-  <div class="impact-cta-card">
-    <h2>Start exploring planetary surfaces</h2>
-    <p>Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.</p>
-    <div class="gb-cta-buttons">
-      <a class="impact-cta-btn" href="../install/version-0213.qmd">Download OpenSpace</a>
-      <a class="gb-cta-btn-ghost" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Start exploring planetary surfaces</h2>
+    <p class="section-lede">Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-ghost-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
     </div>
   </div>
-</div>
+</section>
 ```

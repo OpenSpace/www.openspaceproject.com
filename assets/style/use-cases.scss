@@ -46,7 +46,7 @@
 .uc-grid-section {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: 3rem clamp(1.5rem, 6vw, 5rem) 4rem;
+  padding: 3rem clamp(1.5rem, 5vw, 6rem) 4rem;
   background: $background;
 }
 
@@ -291,7 +291,7 @@
 .uc-cta-section {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: 4rem clamp(1.5rem, 10vw, 12rem) 5rem;
+  padding: 4rem clamp(1.5rem, 3vw, 3rem) 5rem;
   position: relative;
   overflow: hidden;
 

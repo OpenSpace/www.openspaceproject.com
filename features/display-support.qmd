@@ -18,161 +18,110 @@ format:
   </div>
 </section>
 
-<!-- ── Anchor nav ─────────────────────────────────────────── -->
-<nav class="ds-anchor-nav" aria-label="Jump to section">
-  <button class="ds-anchor-link" onclick="var el=document.getElementById('dome-theaters');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Dome Theaters</button>
-  <button class="ds-anchor-link" onclick="var el=document.getElementById('classrooms-desktops');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Classrooms &amp; Desktops</button>
-  <button class="ds-anchor-link" onclick="var el=document.getElementById('museum-exhibits');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Museum Exhibits</button>
-  <button class="ds-anchor-link" onclick="var el=document.getElementById('fisheye');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-140,behavior:'smooth'})">Fisheye Rendering</button>
+<!-- ── Right-side dot nav ─────────────────────────────────── -->
+<nav class="ds-dot-nav" aria-label="Navigate to venue section">
+  <button class="ds-dot-nav-item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
+  <button class="ds-dot-nav-item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
+  <button class="ds-dot-nav-item" data-target="museum-exhibits" aria-label="Museum exhibits"></button>
+  <button class="ds-dot-nav-item" data-target="fisheye" aria-label="Fisheye rendering"></button>
+  <button class="ds-dot-nav-item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
 </nav>
 
 <!-- ── Dome Theaters ──────────────────────────────────────── -->
 <section class="ds-venue-section" id="dome-theaters">
-  <div class="ds-venue-image-area">
-    <img class="ds-venue-img ds-img--active"
-         src="/assets/images/venue-cards/Hayden_JWST.webp"
-         alt="Hayden Planetarium dome running OpenSpace with JWST data">
-    <img class="ds-venue-img"
-         src="/assets/images/carousel/earth.webp"
-         alt="Earth visualization in OpenSpace dome projection">
-    <img class="ds-venue-img"
-         src="/assets/images/carousel/goddard-openspace-mars.webp"
-         alt="Mars globe rendered in OpenSpace for dome display">
-    <div class="ds-img-dots">
-      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
-      <button class="ds-dot" aria-label="Image 2"></button>
-      <button class="ds-dot" aria-label="Image 3"></button>
-    </div>
-  </div>
-  <div class="ds-venue-text">
+  <div class="ds-venue-inner">
     <p class="ds-eyebrow">Planetarium</p>
     <h2 class="ds-venue-title">Dome theaters</h2>
-    <p class="ds-venue-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files — everything your dome already uses.</p>
-    <ul class="ds-venue-list">
-      <li>MPCDI mesh warping for any dome geometry</li>
-      <li>Multi-projector soft edge blending and masking</li>
-      <li>Fisheye, cylindrical, and equirectangular output modes</li>
-      <li>Compatible with portable inflatable and permanent fixed domes</li>
-      <li>Live presenter controls for real-time narration</li>
-    </ul>
-    <div class="ds-img-arrows">
-      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
-      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    <div class="ds-venue-img-wrap">
+      <img src="/assets/images/venue-cards/Hayden_JWST.webp"
+           alt="Hayden Planetarium dome running OpenSpace with JWST data"
+           class="ds-venue-img">
+    </div>
+    <div class="ds-venue-body">
+      <p class="ds-venue-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files — everything your dome already uses.</p>
+      <ul class="ds-venue-list">
+        <li>MPCDI mesh warping for any dome geometry</li>
+        <li>Multi-projector soft edge blending and masking</li>
+        <li>Fisheye, cylindrical, and equirectangular output modes</li>
+        <li>Compatible with portable inflatable and permanent fixed domes</li>
+        <li>Live presenter controls for real-time narration</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <!-- ── Classrooms & Desktops ──────────────────────────────── -->
-<section class="ds-venue-section ds-venue-section--reverse ds-venue-section--alt" id="classrooms-desktops">
-  <div class="ds-venue-image-area">
-    <img class="ds-venue-img ds-img--active"
-         src="/assets/images/venue-cards/AMNH_LWD students.webp"
-         alt="Students using OpenSpace in a classroom at AMNH">
-    <img class="ds-venue-img"
-         src="/assets/images/carousel/mars-surface.webp"
-         alt="Mars HiRISE surface as seen by students in OpenSpace">
-    <img class="ds-venue-img"
-         src="/assets/images/carousel/Burma+Tibet.webp"
-         alt="Earth terrain visualization in OpenSpace classroom">
-    <div class="ds-img-dots">
-      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
-      <button class="ds-dot" aria-label="Image 2"></button>
-      <button class="ds-dot" aria-label="Image 3"></button>
-    </div>
-  </div>
-  <div class="ds-venue-text">
+<section class="ds-venue-section ds-venue-section--alt" id="classrooms-desktops">
+  <div class="ds-venue-inner">
     <p class="ds-eyebrow">Classroom</p>
     <h2 class="ds-venue-title">Classrooms &amp; desktops</h2>
-    <p class="ds-venue-desc">OpenSpace runs on Windows, macOS, and Linux from a standard laptop or workstation. Single and multi-monitor setups work out of the box — deploy it across an entire school district for free.</p>
-    <ul class="ds-venue-list">
-      <li>Windows, macOS, and Linux — no licensing costs</li>
-      <li>Runs on consumer hardware, no specialist GPU required</li>
-      <li>Curated classroom profiles with lesson-ready content</li>
-      <li>Single-monitor and multi-screen desktop configurations</li>
-      <li>Projector and interactive whiteboard compatible</li>
-    </ul>
-    <div class="ds-img-arrows">
-      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
-      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    <div class="ds-venue-img-wrap">
+      <img src="/assets/images/venue-cards/AMNH_LWD students.webp"
+           alt="Students using OpenSpace in a classroom at AMNH"
+           class="ds-venue-img">
+    </div>
+    <div class="ds-venue-body">
+      <p class="ds-venue-desc">OpenSpace runs on Windows, macOS, and Linux from a standard laptop or workstation. Single and multi-monitor setups work out of the box — deploy it across an entire school district for free.</p>
+      <ul class="ds-venue-list">
+        <li>Windows, macOS, and Linux — no licensing costs</li>
+        <li>Runs on consumer hardware, no specialist GPU required</li>
+        <li>Curated classroom profiles with lesson-ready content</li>
+        <li>Single-monitor and multi-screen desktop configurations</li>
+        <li>Projector and interactive whiteboard compatible</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <!-- ── Museum Exhibits ────────────────────────────────────── -->
 <section class="ds-venue-section" id="museum-exhibits">
-  <div class="ds-venue-image-area">
-    <img class="ds-venue-img ds-img--active"
-         src="/assets/images/venue-cards/spaceship.webp"
-         alt="OpenSpace running in a museum exhibit">
-    <img class="ds-venue-img"
-         src="/assets/images/venue-cards/Hayden_JWST.webp"
-         alt="OpenSpace at the Hayden Planetarium exhibit">
-    <img class="ds-venue-img"
-         src="/assets/images/carousel/earth.webp"
-         alt="Earth visualization in a museum display">
-    <div class="ds-img-dots">
-      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
-      <button class="ds-dot" aria-label="Image 2"></button>
-      <button class="ds-dot" aria-label="Image 3"></button>
-    </div>
-  </div>
-  <div class="ds-venue-text">
+  <div class="ds-venue-inner">
     <p class="ds-eyebrow">Museum</p>
     <h2 class="ds-venue-title">Museum exhibits</h2>
-    <p class="ds-venue-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience; curators can update content remotely.</p>
-    <ul class="ds-venue-list">
-      <li>Touch and gesture input for kiosk-style exhibits</li>
-      <li>Custom UI profiles — lock to specific content or flight paths</li>
-      <li>Synchronized multi-display walls and segmented spheres</li>
-      <li>Auto-reset to home position after idle period</li>
-      <li>Supports permanent installations and traveling shows</li>
-    </ul>
-    <div class="ds-img-arrows">
-      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
-      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    <div class="ds-venue-img-wrap">
+      <img src="/assets/images/venue-cards/spaceship.webp"
+           alt="OpenSpace running in a museum exhibit"
+           class="ds-venue-img">
+    </div>
+    <div class="ds-venue-body">
+      <p class="ds-venue-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience; curators can update content remotely.</p>
+      <ul class="ds-venue-list">
+        <li>Touch and gesture input for kiosk-style exhibits</li>
+        <li>Custom UI profiles — lock to specific content or flight paths</li>
+        <li>Synchronized multi-display walls and segmented spheres</li>
+        <li>Auto-reset to home position after idle period</li>
+        <li>Supports permanent installations and traveling shows</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <!-- ── Fisheye Rendering ──────────────────────────────────── -->
-<section class="ds-venue-section ds-venue-section--reverse ds-venue-section--alt" id="fisheye">
-  <div class="ds-venue-image-area">
-    <img class="ds-venue-img ds-img--active"
-         src="/assets/images/carousel/goddard-openspace-mars.webp"
-         alt="Mars globe rendered in OpenSpace fisheye mode">
-    <img class="ds-venue-img"
-         src="/assets/images/carousel/earth.webp"
-         alt="Earth rendered in OpenSpace fisheye projection">
-    <img class="ds-venue-img"
-         src="/assets/images/banner/earth1.webp"
-         alt="Earth orbit view for fisheye dome rendering">
-    <div class="ds-img-dots">
-      <button class="ds-dot ds-dot--active" aria-label="Image 1"></button>
-      <button class="ds-dot" aria-label="Image 2"></button>
-      <button class="ds-dot" aria-label="Image 3"></button>
-    </div>
-  </div>
-  <div class="ds-venue-text">
+<section class="ds-venue-section ds-venue-section--alt" id="fisheye">
+  <div class="ds-venue-inner">
     <p class="ds-eyebrow">Rendering</p>
     <h2 class="ds-venue-title">Fisheye rendering</h2>
-    <p class="ds-venue-desc">OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>
-    <ul class="ds-venue-list">
-      <li>Native 180° fisheye — no post-process warping</li>
-      <li>Per-eye stereo rendering for 3D dome experiences</li>
-      <li>Supports 4K and 8K output resolutions</li>
-      <li>Equirectangular and cubemap outputs for previews</li>
-      <li>SPOUT output for integration with compositing tools</li>
-    </ul>
-    <div class="ds-img-arrows">
-      <button class="ds-arrow ds-arrow--prev" aria-label="Previous image">&#8249;</button>
-      <button class="ds-arrow ds-arrow--next" aria-label="Next image">&#8250;</button>
+    <div class="ds-venue-img-wrap">
+      <img src="/assets/images/carousel/goddard-openspace-mars.webp"
+           alt="Mars globe rendered in OpenSpace fisheye mode"
+           class="ds-venue-img">
+    </div>
+    <div class="ds-venue-body">
+      <p class="ds-venue-desc">OpenSpace's fisheye renderer reproduces the full 180&deg; hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>
+      <ul class="ds-venue-list">
+        <li>Native 180&deg; fisheye — no post-process warping</li>
+        <li>Per-eye stereo rendering for 3D dome experiences</li>
+        <li>Supports 4K and 8K output resolutions</li>
+        <li>Equirectangular and cubemap outputs for previews</li>
+        <li>SPOUT output for integration with compositing tools</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <!-- ── Technical capabilities ─────────────────────────────── -->
-<div class="ds-section ds-section-alt">
-  <h2 class="ds-section-heading">Technical capabilities</h2>
+<div class="ds-section ds-section-alt" id="technical-capabilities">
+  <h2 class="ds-section-h2">Technical capabilities</h2>
   <div class="ds-tech-grid">
     <div class="ds-tech-card">
       <h3 class="ds-tech-title">MPCDI support</h3>
@@ -202,39 +151,79 @@ format:
 </div>
 
 <!-- ── CTA ────────────────────────────────────────────────── -->
-<div class="ds-section">
-  <div class="impact-cta-card">
-    <h2>Set up OpenSpace for your venue</h2>
-    <p>The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.</p>
-    <div class="ds-cta-buttons">
-      <a class="impact-cta-btn" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-      <a class="ds-cta-btn-ghost" href="mailto:support@openspaceproject.com">Get in touch</a>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Set up OpenSpace for your venue</h2>
+    <p class="section-lede">The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
+      <a class="btn-ghost-os" href="mailto:support@openspaceproject.com">Get in touch</a>
     </div>
   </div>
-</div>
+</section>
 
 <script>
 (function () {
-  // Image gallery
-  var sections = document.querySelectorAll('.ds-venue-section');
-  sections.forEach(function (section) {
-    var imgs    = section.querySelectorAll('.ds-venue-img');
-    var dots    = section.querySelectorAll('.ds-dot');
-    var prevBtn = section.querySelector('.ds-arrow--prev');
-    var nextBtn = section.querySelector('.ds-arrow--next');
-    var total   = imgs.length;
-    var current = 0;
-
-    function goTo(i) {
-      current = (i + total) % total;
-      imgs.forEach(function (img, j) { img.classList.toggle('ds-img--active', j === current); });
-      dots.forEach(function (dot, j) { dot.classList.toggle('ds-dot--active', j === current); });
+  // Align the dot nav's right edge with the Download button's right edge
+  var dotNav = document.querySelector('.ds-dot-nav');
+  function alignNav() {
+    if (!dotNav) return;
+    var btn = document.querySelector('.nav-cta');
+    if (btn) {
+      var right = window.innerWidth - btn.getBoundingClientRect().right;
+      dotNav.style.right = Math.max(8, right) + 'px';
     }
+  }
+  alignNav();
+  window.addEventListener('resize', alignNav);
 
-    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); }); });
-    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); });
+  var navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
+  var sections = navItems.map(function (item) {
+    return document.getElementById(item.dataset.target);
+  }).filter(Boolean);
+  var currentIndex = 0;
+
+  function navbarHeight() {
+    var nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
+    return nav ? nav.offsetHeight + 12 : 80;
+  }
+
+  function setActive(index) {
+    currentIndex = Math.max(0, Math.min(index, sections.length - 1));
+    navItems.forEach(function (item, i) {
+      item.classList.toggle('is-active', i === currentIndex);
+    });
+  }
+
+  function goTo(index) {
+    index = Math.max(0, Math.min(index, sections.length - 1));
+    setActive(index);
+    var top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  navItems.forEach(function (item, i) {
+    item.addEventListener('click', function () { goTo(i); });
   });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); goTo(currentIndex + 1); }
+    if (e.key === 'ArrowUp')   { e.preventDefault(); goTo(currentIndex - 1); }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var idx = sections.indexOf(entry.target);
+          if (idx !== -1) setActive(idx);
+        }
+      });
+    }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 });
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+
+  setActive(0);
 })();
 </script>
 ```

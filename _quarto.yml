@@ -39,6 +39,11 @@ format:
       - "assets/style/tutorials.scss"
       - "assets/style/space-weather.scss"
       - "assets/style/display-support.scss"
+      - "assets/style/events.scss"
+      - "assets/style/slack.scss"
+      - "assets/style/projects.scss"
+      - "assets/style/imglib.scss"
+      - "assets/style/press.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html

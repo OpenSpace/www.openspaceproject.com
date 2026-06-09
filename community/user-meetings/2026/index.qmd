@@ -1,18 +1,175 @@
 ---
-sidebar: user-meeting-2026
+pagetitle: "2026 Annual User Meeting — OpenSpace"
+description-meta: "Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for three days of demos, training, and conversation."
+sidebar: false
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
 ---
 
-![](visc.webp)
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="ds-hero">
+  <div>
+    <p class="feature-eyebrow">Annual User Meeting &middot; 2026</p>
+    <h1>OpenSpace<br>User Meeting</h1>
+    <p class="ds-hero-lede">August 26&ndash;28, 2026 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
+  </div>
+</section>
 
-# OpenSpace User Meeting
-_August 26 – August 28, 2026_
+<!-- ── Right-side dot nav ─────────────────────────────────────── -->
+<nav class="ds-dot-nav" aria-label="Navigate to section">
+  <button class="ds-dot-nav-item is-active" data-target="about"         aria-label="About"></button>
+  <button class="ds-dot-nav-item"            data-target="venue"         aria-label="Venue"></button>
+  <button class="ds-dot-nav-item"            data-target="getting-here"  aria-label="Getting here"></button>
+  <button class="ds-dot-nav-item"            data-target="accommodation" aria-label="Accommodation"></button>
+  <button class="ds-dot-nav-item"            data-target="register"      aria-label="Register"></button>
+</nav>
 
-Join us for the second in-person user meeting in beautiful Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking. This is a great opportunity to:
+<!-- ── About ─────────────────────────────────────────────────── -->
+<section class="ds-venue-section" id="about">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">About</p>
+    <h2 class="ds-venue-title">Join us in Norrk&ouml;ping</h2>
+    <div class="um-detail-body">
+      <p>Join us for the second in-person OpenSpace User Meeting in Norrk&ouml;ping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.</p>
+      <p>This is a great opportunity to:</p>
+      <ul>
+        <li>Sharpen your OpenSpace skills</li>
+        <li>Explore the latest software features and updates</li>
+        <li>Connect with educators, planetarium professionals, researchers, and developers in the OpenSpace community</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  - Sharpen your OpenSpace skills
-  - Explore the latest software features and updates
-  - Connect with educators, planetarium professionals, researchers, and developers in the OpenSapce community
+<!-- ── Venue ─────────────────────────────────────────────────── -->
+<section class="ds-venue-section ds-venue-section--alt" id="venue">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Venue</p>
+    <h2 class="ds-venue-title">Visualization Center C</h2>
+    <div class="ds-venue-img-wrap">
+      <img src="visc.webp"
+           alt="Visualization Center C, Norrköping, Sweden"
+           class="ds-venue-img">
+    </div>
+    <div class="um-detail-body">
+      <p>We&rsquo;re excited to welcome you to the <a href="https://visualiseringscenter.se/en/" target="_blank" rel="noopener">Visualization Center C</a> in Norrk&ouml;ping &mdash; a digital science center with a full planetarium, driven in partnership with the Norrk&ouml;ping municipality and Link&ouml;ping University as a research environment.</p>
+      <p>Norrk&ouml;ping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.</p>
+    </div>
+  </div>
+</section>
 
-The [registration](https://visualiseringscenter.se/registration-openspace-user-meeting/) is **free**. We recommend to bring your own OpenSpace-compatible laptop for meeting as loaner devices are limited.
+<!-- ── Getting here ───────────────────────────────────────────── -->
+<section class="ds-venue-section" id="getting-here">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Getting here</p>
+    <h2 class="ds-venue-title">Travel &amp; airports</h2>
+    <div class="um-detail-body">
+      <p>Norrk&ouml;ping is easy to reach internationally. Recommended routes:</p>
+      <ul>
+        <li><strong>Stockholm Arlanda (ARN)</strong> &mdash; major international hub, roughly 90 minutes to Norrk&ouml;ping by train</li>
+        <li><strong>Link&ouml;ping City Airport (LPI)</strong> &mdash; direct connections to Amsterdam Schiphol (AMS), one of Europe&rsquo;s main airline hubs</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-Please contact [Alexander Bock](alexander.bock@liu.se) for any information about the meeting.
+<!-- ── Accommodation ──────────────────────────────────────────── -->
+<section class="ds-venue-section ds-venue-section--alt" id="accommodation">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Accommodation</p>
+    <h2 class="ds-venue-title">Where to stay</h2>
+    <div class="um-detail-body">
+      <p>Hotels in the city are around $100 per night. A few options near the venue:</p>
+      <ul>
+        <li><a href="https://ligula.se/en/profilhotels/profilhotels-president/" target="_blank" rel="noopener">Hotel President</a></li>
+        <li><a href="https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/" target="_blank" rel="noopener">Elite Grand H&ocirc;tel</a></li>
+        <li><a href="https://www.strawberry.se/hotell/sverige/norrkoping/comfort-hotel-norrkoping" target="_blank" rel="noopener">Hotel Comfort</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── Register ───────────────────────────────────────────────── -->
+<section class="ds-venue-section" id="register">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Registration</p>
+    <h2 class="ds-venue-title">Register for free</h2>
+    <div class="um-detail-body">
+      <p>Registration is <strong>free</strong>. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.</p>
+      <p>Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> with any questions about the meeting.</p>
+      <div class="ev-detail-links">
+        <a class="ev-btn-primary" href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register now</a>
+      </div>
+      <p class="ev-detail-back"><a href="../">&larr; All meetings</a></p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var dotNav = document.querySelector('.ds-dot-nav');
+  function alignNav() {
+    if (!dotNav) return;
+    var btn = document.querySelector('.nav-cta');
+    if (btn) {
+      var right = window.innerWidth - btn.getBoundingClientRect().right;
+      dotNav.style.right = Math.max(8, right) + 'px';
+    }
+  }
+  alignNav();
+  window.addEventListener('resize', alignNav);
+
+  var navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
+  var sections = navItems.map(function (item) {
+    return document.getElementById(item.dataset.target);
+  }).filter(Boolean);
+  var currentIndex = 0;
+
+  function navbarHeight() {
+    var nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
+    return nav ? nav.offsetHeight + 12 : 80;
+  }
+
+  function setActive(index) {
+    currentIndex = Math.max(0, Math.min(index, sections.length - 1));
+    navItems.forEach(function (item, i) {
+      item.classList.toggle('is-active', i === currentIndex);
+    });
+  }
+
+  function goTo(index) {
+    index = Math.max(0, Math.min(index, sections.length - 1));
+    setActive(index);
+    var top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  navItems.forEach(function (item, i) {
+    item.addEventListener('click', function () { goTo(i); });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); goTo(currentIndex + 1); }
+    if (e.key === 'ArrowUp')   { e.preventDefault(); goTo(currentIndex - 1); }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var idx = sections.indexOf(entry.target);
+          if (idx !== -1) setActive(idx);
+        }
+      });
+    }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 });
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+
+  setActive(0);
+})();
+</script>
+```

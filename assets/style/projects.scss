@@ -1,0 +1,315 @@
+/*-- scss:rules --*/
+
+// =============================================================
+// Projects page — index + individual project pages
+// =============================================================
+
+// ── Index hero ────────────────────────────────────────────────
+.proj-hero {
+  background: $background;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+}
+
+.proj-hero-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 3vw, 3rem);
+}
+
+.proj-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.75);
+  margin: 0 0 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.proj-hero-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+  color: $baseWhite;
+  border-bottom: none;
+}
+
+.proj-hero-lede {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: rgba($satelliteGray, 0.9);
+  margin: 0 auto;
+}
+
+// ── Grid section ──────────────────────────────────────────────
+.proj-grid-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 3rem clamp(1.5rem, 3vw, 3rem) 5rem;
+  background: $background;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Project card (linked) ─────────────────────────────────────
+.proj-card {
+  position: relative;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #111820;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover .proj-card-overlay,
+  &:focus-visible .proj-card-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.12) 0%,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.92) 100%
+    );
+  }
+
+  &:hover .proj-card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primaryAccent;
+    outline-offset: 3px;
+  }
+}
+
+.proj-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 25%,
+    rgba(0, 0, 0, 0.5) 65%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+  transition: background 0.3s ease;
+}
+
+.proj-card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 1.5rem 1.5rem;
+  z-index: 2;
+}
+
+.proj-card-meta {
+  font-size: 0.68rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  color: rgba($baseWhite, 0.7);
+  margin: 0 0 0.4rem;
+  line-height: 1.4;
+}
+
+.proj-card-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin: 0;
+  color: $baseWhite;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  border-bottom: none;
+}
+
+.proj-card-arrow {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 1rem;
+  color: $primaryAccent;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+// ── Status pill ───────────────────────────────────────────────
+.proj-status {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
+  margin-bottom: 1.25rem;
+
+  &.status-complete {
+    color: rgba($vividAccentGreen, 0.9);
+    background: rgba($vividAccentGreen, 0.08);
+    border: 1px solid rgba($vividAccentGreen, 0.25);
+  }
+
+  &.status-progress {
+    color: $primaryAccent;
+    background: rgba($primaryAccent, 0.08);
+    border: 1px solid rgba($primaryAccent, 0.25);
+  }
+}
+
+// ── Individual project page hero ──────────────────────────────
+.proj-detail-hero {
+  background: $background;
+  padding: 5rem 0 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.proj-detail-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 4rem);
+}
+
+.proj-detail-back {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.6);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $primaryAccent;
+    text-decoration: none;
+  }
+
+  i, .bi { display: none; }
+}
+
+.proj-detail-title {
+  font-size: clamp(1.875rem, 4vw, 2.875rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: $baseWhite;
+  margin: 0 0 1rem;
+  border-bottom: none;
+}
+
+.proj-detail-meta {
+  font-size: 0.9375rem;
+  color: rgba($satelliteGray, 0.8);
+  margin: 0;
+  line-height: 1.5;
+}
+
+// ── Individual project page body ──────────────────────────────
+.proj-detail-body {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 4rem 0 3rem;
+  background: $background;
+}
+
+.proj-detail-prose-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 4rem);
+}
+
+.proj-detail-h2 {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
+  color: $baseWhite;
+  margin: 2.5rem 0 1rem;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  padding-bottom: 0.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.proj-detail-p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba($baseWhite, 0.85);
+  margin: 0 0 1.25rem;
+}
+
+// ── Pull quote ────────────────────────────────────────────────
+.proj-quote {
+  margin: 3rem 0;
+  padding: 1.75rem 2rem;
+  border-left: 3px solid $primaryAccent;
+  background: rgba($primaryAccent, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+.proj-quote-text {
+  font-size: 1.0625rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba($baseWhite, 0.88);
+  margin: 0 0 0.75rem;
+}
+
+.proj-quote-attribution {
+  font-size: 0.8125rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.05em;
+  color: $primaryAccent;
+  margin: 0;
+}
+
+// ── Facts row ─────────────────────────────────────────────────
+.proj-facts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.proj-fact {
+  font-size: 0.7rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  color: rgba($satelliteGray, 0.8);
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba($primaryAccent, 0.18);
+  border-radius: 3px;
+  padding: 0.3rem 0.65rem;
+}
+
+// ── Reduced motion ────────────────────────────────────────────
+@media (prefers-reduced-motion: reduce) {
+  .proj-card-overlay { transition: none; }
+  .proj-card-arrow   { transition: none; }
+}

@@ -1,6 +1,5 @@
 ---
-title: "Annual User Meeting"
-pagetitle: "Annual User Meeting &mdash; OpenSpace"
+pagetitle: "Annual User Meeting — OpenSpace"
 description-meta: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
 format:
   html:
@@ -10,7 +9,8 @@ format:
 ---
 
 ```{=html}
-<section class="use-cases-hero">
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="about-hero">
   <div class="os-container narrow">
     <p class="feature-eyebrow">Community</p>
     <h1 class="feature-title-dark">Annual User Meeting</h1>
@@ -18,45 +18,68 @@ format:
   </div>
 </section>
 
-<section class="meetings-intro-section">
+<!-- ── Intro ──────────────────────────────────────────────── -->
+<section class="about-body-section">
   <div class="os-container narrow">
-    <p>The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover everything from new feature demos and dome integration techniques to use-case showcases and hands-on training. It&rsquo;s where the project&rsquo;s direction gets shaped &mdash; by the people building with it.</p>
+    <p>The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It&rsquo;s where the project&rsquo;s direction gets shaped &mdash; by the people building with it.</p>
   </div>
 </section>
 
-<section class="use-cases-grid-section">
+<!-- ── Meeting list ───────────────────────────────────────── -->
+<div class="um-section">
   <div class="os-container">
-    <div class="meetings-grid">
 
-      <a class="use-case-card meeting-card" href="user-meeting-2026.qmd" style="background-image: url('2026/visc.webp');" aria-label="2026 Annual User Meeting">
-        <div class="use-case-overlay"></div>
-        <div class="meeting-badge meeting-badge-upcoming">Upcoming</div>
-        <div class="use-case-text">
-          <p class="use-case-meta">June 2026 &middot; Norrk&ouml;ping, Sweden</p>
-          <h3 class="use-case-title">2026 Annual User Meeting</h3>
+    <div class="um-item">
+      <div class="um-img-wrap">
+        <img src="2026/visc.webp"
+             alt="Visualization Center C, Norrköping, Sweden"
+             class="um-img">
+      </div>
+      <div class="um-body">
+        <div class="um-meta">
+          <span class="um-badge">Upcoming</span>
+          <span class="um-year">2026</span>
         </div>
-      </a>
-
-      <a class="use-case-card meeting-card" href="user-meeting-2025.qmd" style="background-image: url('2025/hayden.webp');" aria-label="2025 Annual User Meeting">
-        <div class="use-case-overlay"></div>
-        <div class="meeting-badge meeting-badge-past">Recap</div>
-        <div class="use-case-text">
-          <p class="use-case-meta">June 2025 &middot; American Museum of Natural History</p>
-          <h3 class="use-case-title">2025 Annual User Meeting</h3>
-        </div>
-      </a>
-
+        <h3 class="um-title">
+          <a href="2026/" class="um-title-link">2026 Annual User Meeting</a>
+        </h3>
+        <p class="um-location">August 26&ndash;28 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
+        <p class="um-desc">Join the OpenSpace community in Norrk&ouml;ping for three days of demos, training sessions, hands-on workshops, and conversation about where the project is headed. Registration is free.</p>
+        <a href="2026/" class="um-link um-action-link">View details &rarr;</a>
+      </div>
     </div>
-  </div>
-</section>
 
-<section class="use-cases-cta">
-  <div class="os-container narrow text-center">
-    <h2 class="feature-h2">Stay in the loop</h2>
-    <p>Sign up to be notified when registration opens and to get session recaps.</p>
-    <p class="feature-footer-link">
-      <a href="../../contact.qmd">Get notified &rarr;</a> &nbsp;&middot;&nbsp; <a href="../events/index.qmd">Past events &rarr;</a>
-    </p>
+    <div class="um-item um-item--past">
+      <div class="um-img-wrap">
+        <img src="2025/hayden.webp"
+             alt="Hayden Planetarium, American Museum of Natural History, New York"
+             class="um-img">
+      </div>
+      <div class="um-body">
+        <div class="um-meta">
+          <span class="um-year">2025</span>
+        </div>
+        <h3 class="um-title">
+          <a href="2025/" class="um-title-link">2025 Annual User Meeting</a>
+        </h3>
+        <p class="um-location">July 31 &ndash; August 1 &middot; American Museum of Natural History, New York</p>
+        <p class="um-desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
+        <a href="2025/" class="um-link um-action-link">See recap &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Stay in the loop</h2>
+    <p class="section-lede">Sign up to be notified when registration opens and to receive session recaps after each meeting.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../../contact.qmd">Get notified</a>
+      <a class="btn-ghost-os" href="../events/index.qmd">Community events</a>
+    </div>
   </div>
 </section>
 ```

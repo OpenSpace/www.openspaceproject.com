@@ -32,6 +32,12 @@ website:
           - text: |
               <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Research</span></span><span class="nav-rich-desc">Master's theses, dissertations, and publications.</span></span>
             href: about/research.qmd
+          - text: |
+              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:badge"></iconify-icon></span><span class="nav-rich-title">Brand &amp; Attribution</span></span><span class="nav-rich-desc">Logos, credit guidelines, and usage policy.</span></span>
+            href: about/brand.qmd
+          - text: |
+              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:newspaper"></iconify-icon></span><span class="nav-rich-title">Press</span></span><span class="nav-rich-desc">OpenSpace in the news.</span></span>
+            href: about/press.qmd
       - text: Features
         menu:
           - text: |
@@ -48,18 +54,21 @@ website:
             href: features/display-support.qmd
       - text: Community
         menu:
-          - text: | 
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:building"></iconify-icon></span><span class="nav-rich-title">Use Cases</span></span><span class="nav-rich-desc">Examples of how institutions use OpenSpace.</span></span>
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:star"></iconify-icon></span><span class="nav-rich-title">Use Cases</span></span><span class="nav-rich-desc">Examples of how institutions use OpenSpace.</span></span>
             href: community/use-cases.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:calendar"></iconify-icon></span><span class="nav-rich-title">Events</span></span><span class="nav-rich-desc">Upcoming events and conferences.</span></span>
             href: community/events/index.qmd
-          - text: | 
+          - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:users"></iconify-icon></span><span class="nav-rich-title">Annual Meetings</span></span><span class="nav-rich-desc">Build your skills and connect with users at our annual meetings.</span></span>
             href: community/user-meetings/index.qmd
-          - text: | 
+          - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:message-circle"></iconify-icon></span><span class="nav-rich-title">Slack</span></span><span class="nav-rich-desc">Ask questions and share ideas with the OpenSpace community.</span></span>
             href: community/slack.qmd
+          - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:lightbulb"></iconify-icon></span><span class="nav-rich-title">Projects</span></span><span class="nav-rich-desc">Research and science communication projects powered by OpenSpace.</span></span>
+            href: community/projects/index.qmd
       - text: Resources
         menu:
           - text: |
@@ -69,7 +78,7 @@ website:
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Tutorials</span></span><span class="nav-rich-desc">Step-by-step walkthroughs for new users.</span></span>
             href: resources/tutorials.qmd
           - text: | 
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:image"></iconify-icon></span><span class="nav-rich-title">Images</span></span><span class="nav-rich-desc">Screenshots, renders, and visuals for download.</span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:image"></iconify-icon></span><span class="nav-rich-title">Image Library</span></span><span class="nav-rich-desc">Screenshots, renders, and visuals for download.</span></span>
             href: resources/images/index.qmd
 
           - text: |

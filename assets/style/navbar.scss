@@ -170,10 +170,14 @@
   }
 
   // Two-column layout for dropdowns with more than 4 items
+  // Right-aligned so it never overflows the viewport edge
   .navbar .nav-item.dropdown:hover .dropdown-menu:has(> li:nth-child(5)) {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     min-width: 640px;
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
   }
 }
 

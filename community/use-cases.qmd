@@ -124,16 +124,16 @@ format:
 </div>
 
 <!-- ── CTA ────────────────────────────────────────────────── -->
-<div class="uc-cta-section">
-  <div class="impact-cta-card">
-    <h2>Add your story</h2>
-    <p>If your institution is using OpenSpace, we'd love to feature it here.</p>
-    <div class="uc-cta-buttons">
-      <a class="impact-cta-btn" href="../../install/version-0213.qmd">Download OpenSpace</a>
-      <a class="uc-cta-btn-ghost" href="../../contact.qmd">Get in touch</a>
+<section class="cta-section">
+  <div class="cta-card">
+    <h2 class="section-heading">Add your story</h2>
+    <p class="section-lede">If your institution is using OpenSpace, we'd love to feature it here.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-os" href="../../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-ghost-os" href="../../contact.qmd">Get in touch</a>
     </div>
   </div>
-</div>
+</section>
 
 <script>
 (function () {

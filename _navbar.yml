@@ -82,6 +82,9 @@ website:
             href: resources/images/index.qmd
 
           - text: |
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:box"></iconify-icon></span><span class="nav-rich-title">Hub</span></span><span class="nav-rich-desc">Community-shared assets, profiles, and content.</span></span>
+            href: https://hub.openspaceproject.com/
+          - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:server"></iconify-icon></span><span class="nav-rich-title">Server Status</span></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
             href: https://uptime.openspaceproject.com
       - text: "<span class='nav-cta'>Download</span>"

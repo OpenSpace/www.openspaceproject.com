@@ -21,15 +21,14 @@ format:
   <div class="os-container narrow">
 
     <h2 class="about-h2">What is OpenSpace?</h2>
-    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using authoritative data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe &mdash; with the data presented as scientists actually use it.</p>
-    <p>The software is free, cross-platform (Windows, macOS, Linux), and developed openly on GitHub. It is not commercial software with a free tier; it is genuinely open source, supported by public research funding and contributed to by a global community of developers, scientists, and educators.</p>
+    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using authoritative data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe &mdash; with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub. </p>
 
     <h2 class="about-h2">Our mission</h2>
     <p>OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools &mdash; far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.</p>
-    <p>The project also serves the research community itself. Scientists use OpenSpace to communicate findings, plan missions, contextualize observations, and collaborate across institutions. The Asteroid Institute models near-Earth objects. NASA's Community Coordinated Modelling Center visualizes space weather. Planetarium directors build live shows that change with the latest data, not pre-rendered animation.</p>
+    <p>The project also serves the research community itself. Scientists use OpenSpace to communicate findings and collaborate across institutions.</p>
 
     <h2 class="about-h2">How it began</h2>
-    <p>OpenSpace started in 2014 as a collaboration between the American Museum of Natural History (AMNH) in New York, Link&ouml;ping University in Sweden, and the University of Utah's Scientific Computing and Imaging Institute. The founding team wanted to combine the visualization power AMNH had developed for the Hayden Planetarium with the open-source rendering research underway at Link&ouml;ping and Utah &mdash; and to share what emerged with the rest of the world.</p>
+    <p>OpenSpace started in 2010 as a collaboration between the American Museum of Natural History (AMNH) in New York, Link&ouml;ping University in Sweden. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Link&ouml;ping and to share what emerged with the rest of the world.</p>
     <p>Early work focused on dome rendering and globe browsing &mdash; the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds (space weather, satellite tracking).</p>
 
   </div>
@@ -43,13 +42,13 @@ format:
     <ol class="os-timeline">
 
       <li class="timeline-item">
-        <div class="timeline-year">2014<span class="timeline-dot"></span></div>
+        <div class="timeline-year">2010<span class="timeline-dot"></span></div>
         <div class="timeline-image">
           <img src="/images/about/timeline-2014-founding.jpg" alt="Hayden Planetarium dome">
         </div>
         <div class="timeline-content">
           <h3>Founding collaboration</h3>
-          <p>AMNH, Link&ouml;ping University, and the University of Utah's SCI Institute establish the OpenSpace project to build an open-source astrovisualization platform.</p>
+          <p>AMNH and Link&ouml;ping University establish the OpenSpace project to build an open-source astrovisualization platform.</p>
         </div>
       </li>
 

@@ -43,7 +43,6 @@ format:
       - "assets/style/slack.scss"
       - "assets/style/projects.scss"
       - "assets/style/imglib.scss"
-      - "assets/style/press.scss"
       - "assets/style/download.scss"
     include-after-body:
       - file: _template/hero.html

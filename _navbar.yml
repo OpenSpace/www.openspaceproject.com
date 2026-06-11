@@ -35,9 +35,6 @@ website:
           - text: |
               <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:badge"></iconify-icon></span><span class="nav-rich-title">Brand &amp; Attribution</span></span><span class="nav-rich-desc">Logos, credit guidelines, and usage policy.</span></span>
             href: about/brand.qmd
-          - text: |
-              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:newspaper"></iconify-icon></span><span class="nav-rich-title">Press</span></span><span class="nav-rich-desc">OpenSpace in the news.</span></span>
-            href: about/press.qmd
       - text: Features
         menu:
           - text: |

@@ -13,8 +13,8 @@ format:
 <section class="proj-hero">
   <div class="proj-hero-inner">
     <p class="proj-eyebrow">Community</p>
-    <h1 class="proj-hero-title">Projects powered by OpenSpace</h1>
-    <p class="proj-hero-lede">Through SCoPE, a NASA-funded science communication program at Arizona State University, researchers use OpenSpace to bring cutting-edge science directly to new audiences &mdash; in planetarium domes, classrooms, and communities.</p>
+    <h1 class="proj-hero-title">Built with OpenSpace</h1>
+    <p class="proj-hero-lede">Research visualizations, student experiments, and creative projects from the OpenSpace community.</p>
   </div>
 </section>
 

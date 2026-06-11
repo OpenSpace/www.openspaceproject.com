@@ -12,8 +12,8 @@ format:
 <section class="partners-hero">
   <div>
     <p class="feature-eyebrow">Partners</p>
-    <h1>Built with the world's best institutions</h1>
-    <p class="partners-hero-lede">OpenSpace is an international collaboration between universities, science museums, and planetariums united by a shared mission to make space exploration accessible to everyone.</p>
+    <h1>The Institutions behind OpenSpace</h1>
+    <p class="partners-hero-lede">A collaboration between universities, science museums, and planetariums in the US and Sweden, united by a shared mission to make space exploration accessible to everyone.</p>
   </div>
 </section>
 
@@ -21,17 +21,19 @@ format:
   <h2 class="partners-section-heading">University Partners</h2>
   <div class="partner-grid">
 
-    <a class="partner-card" href="https://liu.se/?l=en" target="_blank" rel="noopener">
+    <a class="partner-card" href="https://liu.se/en" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <span class="partner-logo-text">Linköping University</span>
+        <img class="partner-logo" src="/assets/images/institutions/LiU_white.webp" alt="Linköping University">
       </div>
+      <p class="partner-name">Linköping University</p>
       <p class="partner-blurb">A world leader in scientific visualization, LiU initiated the OpenSpace project in 2014 and has maintained a long-running series of collaborative internships with NASA GSFC and AMNH.</p>
     </a>
 
     <a class="partner-card" href="https://engineering.nyu.edu/research-innovation/centers/visualization-imaging-and-data-analysis-center-vida" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <span class="partner-logo-text">NYU Tandon ViDA Lab</span>
+        <img class="partner-logo" src="/assets/images/institutions/NYUTandon_White.png" alt="NYU Tandon School of Engineering">
       </div>
+      <p class="partner-name">NYU Tandon School of Engineering</p>
       <p class="partner-blurb">The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of open-source tools and NASA-partnered research to the OpenSpace collaboration.</p>
     </a>
 
@@ -109,6 +111,7 @@ format:
       <div class="partner-logo-area">
         <img class="partner-logo" src="/assets/images/institutions/hgandco_white.webp" alt="HG&amp;Co">
       </div>
+      <p class="partner-name">HG&amp;Co</p>
       <p class="partner-blurb">A visitor-centered planning and research firm working with museums, libraries, and cultural organizations on interpretive planning, needs assessments, and summative evaluations.</p>
     </a>
 

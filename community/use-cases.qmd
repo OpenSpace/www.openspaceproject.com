@@ -13,8 +13,8 @@ format:
 <section class="uc-hero">
   <div>
     <p class="uc-eyebrow">Use Cases</p>
-    <h1 class="uc-hero-title">Who's using OpenSpace</h1>
-    <p class="uc-hero-lede">From museum tilt tables to NASA's Wow Room — how institutions are putting OpenSpace in front of new audiences.</p>
+    <h1 class="uc-hero-title">OpenSpace in Action</h1>
+    <p class="uc-hero-lede">Real installations, real venues. See how institutions worldwide are using OpenSpace.</p>
   </div>
 </section>
 

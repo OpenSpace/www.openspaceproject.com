@@ -33,20 +33,19 @@ format:
 
 <section class="trusted-section">
   <div class="os-container">
-    <p class="trusted-label">Trusted by 100+ institutions worldwide</p>
+    <p class="trusted-label">Built in collaboration with</p>
     <div class="logo-grid">
-      <img src="assets/images/institutions/AMNH_Primary_WHITE.webp" data-light-src="assets/images/institutions/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History" class="institution-logo">
       <img src="assets/images/institutions/Adler_white.webp" data-light-src="assets/images/institutions/Adler_Black.webp" alt="Adler Planetarium" class="institution-logo">
-      <img src="assets/images/institutions/DMNS_white.webp" data-light-src="assets/images/institutions/DMNS_black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
+      <img src="assets/images/institutions/AMNH_Primary_WHITE.webp" data-light-src="assets/images/institutions/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History" class="institution-logo">
+<img src="assets/images/institutions/DMNS_white.webp" data-light-src="assets/images/institutions/DMNS_black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
+      <img src="assets/images/institutions/fiske_white.webp" alt="Fiske Planetarium" class="institution-logo">
       <img src="assets/images/institutions/hmns_white.webp" data-light-src="assets/images/institutions/hmns_black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
-      <img src="assets/images/institutions/MoS_white.webp" alt="Museum of Science Boston" class="institution-logo">
-      <img src="assets/images/institutions/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
-      <img src="assets/images/institutions/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
       <img src="assets/images/institutions/MiSci_color.webp" alt="Michigan Science Center" class="institution-logo">
-      <img src="assets/images/institutions/unsm_white.webp" alt="University of Nebraska State Museum" class="institution-logo">
-      <img src="assets/images/institutions/ars_white.webp" alt="Ars Electronica" class="institution-logo">
-
+      <img src="assets/images/institutions/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
+      <img src="assets/images/institutions/tekniska_white.webp" alt="Tekniska museet" class="institution-logo">
+      <img src="assets/images/institutions/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
     </div>
+    <p class="trusted-more"><a href="about/impact.html">Meet the 100+ organizations running OpenSpace →</a></p>
   </div>
 </section>
 

@@ -241,14 +241,13 @@ $navbar-hl:      #ecf5fb !default;
 }
 
 .logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2.5rem;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   width: 100%;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .institution-logo {
@@ -263,6 +262,22 @@ $navbar-hl:      #ecf5fb !default;
   &:hover {
     filter: grayscale(0%);
     opacity: 1;
+  }
+}
+
+.trusted-more {
+  text-align: center;
+  margin: 2rem 0 0;
+  font-size: 0.9rem;
+
+  a {
+    color: $os-text-muted;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $os-link;
+    }
   }
 }
 

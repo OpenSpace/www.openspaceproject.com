@@ -20,7 +20,6 @@ PAGES = [
     ("Impact",                            "about/impact.qmd"),
     ("Research",                          "about/research.qmd"),
     ("Brand & Attribution",               "about/brand.qmd"),
-    ("Press",                             "about/press.qmd"),
     ("Globe Browsing",                    "features/globe-browsing.qmd"),
     ("Mission Visualizations",            "features/mission-visualizations.qmd"),
     ("Space Weather",                     "features/space-weather.qmd"),
@@ -51,10 +50,19 @@ HTML_ENTITIES = [
     ("&times;", "×"),
     ("&rarr;",  "→"),
     ("&larr;",  "←"),
-    ("&times;", "×"),
     ("&copy;",  "©"),
     ("&nbsp;",  " "),
+    ("&rsquo;", "'"),
+    ("&lsquo;", "'"),
+    ("&rdquo;", "”"),
+    ("&ldquo;", "“"),
+    ("&hellip;","…"),
+    ("&bull;",  "•"),
+    ("&deg;",   "°"),
     ("&ouml;",  "ö"),
+    ("&ocirc;", "ô"),
+    ("&eacute;","é"),
+    ("&agrave;","à"),
     ("&lt;",    "<"),
     ("&gt;",    ">"),
 ]
@@ -96,15 +104,15 @@ def strip_quarto_fences(text):
 
 
 def clean_whitespace(text):
-    """Collapse excessive blank lines and strip trailing spaces."""
-    lines = [line.rstrip() for line in text.splitlines()]
-    # Collapse 3+ blank lines into 2
+    """Strip indentation, collapse blank lines, and strip trailing spaces."""
+    lines = [line.strip() for line in text.splitlines()]
+    # Collapse 2+ blank lines into 1
     result = []
     blank_count = 0
     for line in lines:
         if line == "":
             blank_count += 1
-            if blank_count <= 2:
+            if blank_count <= 1:
                 result.append(line)
         else:
             blank_count = 0

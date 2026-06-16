@@ -102,9 +102,9 @@ format:
     <p class="ds-eyebrow">Rendering</p>
     <h2 class="ds-venue-title">Fisheye rendering</h2>
     <div class="ds-venue-img-wrap">
-      <img src="/assets/images/carousel/goddard-openspace-mars.webp"
-           alt="Mars globe rendered in OpenSpace fisheye mode"
-           class="ds-venue-img">
+      <video class="ds-venue-img" autoplay loop muted playsinline>
+        <source src="/assets/videos/fisheye.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="ds-venue-body">
       <p class="ds-venue-desc">OpenSpace's fisheye renderer reproduces the full 180&deg; hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>

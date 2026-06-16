@@ -1,5 +1,5 @@
 ---
-pagetitle: "February OpenSpace Monthly Meeting — OpenSpace"
+pagetitle: "July OpenSpace Monthly Meeting — OpenSpace"
 description-meta: "Dive into the latest OpenSpace software development updates and participate in feedback sessions."
 format:
   html:
@@ -11,9 +11,9 @@ format:
 ```{=html}
 <section class="about-hero">
   <div class="os-container narrow">
-    <p class="feature-eyebrow">Monthly Meeting &middot; February 10, 2028</p>
-    <h1 class="feature-title-dark">February OpenSpace Monthly Meeting</h1>
-    <p class="ev-detail-time">Monday, February 10, 2028 &middot; 3:00&ndash;4:00 PM EST &middot; Zoom</p>
+    <p class="feature-eyebrow">Monthly Meeting &middot; July 13, 2026</p>
+    <h1 class="feature-title-dark">July OpenSpace Monthly Meeting</h1>
+    <p class="ev-detail-time">Monday, July 13, 2026 &middot; 3:00&ndash;4:00 PM EST &middot; Zoom</p>
   </div>
 </section>
 
@@ -23,7 +23,7 @@ format:
     <p>We&rsquo;ll wrap up with a chance for you to showcase your recent OpenSpace projects and discoveries. Don&rsquo;t miss out on this chance to stay informed and get your questions answered by our team of developers!</p>
 
     <div class="ev-detail-links">
-      <a class="ev-btn-primary" href="http://www.google.com/calendar/event?action=TEMPLATE&text=February%20OpenSpace%20Monthly%20Meeting&dates=20280210T200000Z/20280210T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
+      <a class="ev-btn-primary" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
       <a class="ev-btn-ghost" href="https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09" target="_blank" rel="noopener">Join Zoom</a>
     </div>
 

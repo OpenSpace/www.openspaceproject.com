@@ -2,21 +2,21 @@ def url = 'https://github.com/OpenSpace/www.openspaceproject.com';
 def branch = env.BRANCH_NAME
 
 // Uncomment all of this once we are ready to go live
-/*
 def mainTarget = "www.openspaceproject.com"
 def testingTarget = "testing.www.openspaceproject.com"
 
 def target;
-if (branch != "master") {
+if (branch == "master") {
+  target = mainTarget;
+}
+else if (branch != "testing") {
   target = testingTarget;
 }
 else {
-  target = mainTarget;
+  // Nothing do to for any other branch
+   currentBuild.result = "SUCCESS";
+   return;
 }
-*/
-
-// Remove this once we are going live
-def target = "testing.www.openspaceproject.com"
 
 node("server-misc") {
   stage("SCM") {

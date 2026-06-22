@@ -38,17 +38,17 @@ Real visualizations from real data — planetary surfaces, mission trajectories,
 Globe Browsing
 Mars surface from HiRISE imagery
 
-Mission visualizations
-Asteroid trajectories near Earth
+Small Bodies
+Asteroid belt around the solar system
 
 Digital Universe
-Galaxy cluster catalog
+Sloan Digital Sky Survey galaxy catalog
 
-Space weather
-Solar wind and magnetosphere
+Space Weather
+Earth's magnetosphere and field lines
 
-Mission visualizations
-JWST at Lagrange Point 2
+Mission Visualizations
+JWST unfolding animation
 
 ‹
 ›

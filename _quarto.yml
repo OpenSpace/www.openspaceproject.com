@@ -5,6 +5,7 @@ project:
     port: 12800
   resources:
     - assets/images/institutions/
+    - assets/images/carousel/
     - assets/brand/
     - assets/js/
 

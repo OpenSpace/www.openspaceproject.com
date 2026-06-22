@@ -43,6 +43,7 @@ format:
       <img src="assets/images/institutions/MiSci_color.webp" alt="Michigan Science Center" class="institution-logo">
       <img src="assets/images/institutions/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
       <img src="assets/images/institutions/tekniska_white.webp" alt="Tekniska museet" class="institution-logo">
+      <img src="assets/images/institutions/universeum.webp" alt="Universeum" class="institution-logo">
       <img src="assets/images/institutions/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
     </div>
     <p class="trusted-more"><a href="about/impact.html">Meet the 100+ organizations running OpenSpace →</a></p>
@@ -103,37 +104,38 @@ format:
         </div>
       </div>
 
-      <div class="content-slide" style="background-image: url('images/showcase/asteroid-trajectories.jpg');">
+      <div class="content-slide" style="background-image: url('assets/images/carousel/asteroids.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Mission visualizations</p>
-          <h3 class="content-slide-title">Asteroid trajectories near Earth</h3>
+          <p class="content-slide-eyebrow">Small Bodies</p>
+          <h3 class="content-slide-title">Asteroid belt around the solar system</h3>
         </div>
       </div>
 
-      <div class="content-slide" style="background-image: url('images/showcase/galaxy-cluster.jpg');">
+      <div class="content-slide" style="background-image: url('assets/images/carousel/SDSS.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Digital Universe</p>
-          <h3 class="content-slide-title">Galaxy cluster catalog</h3>
+          <h3 class="content-slide-title">Sloan Digital Sky Survey galaxy catalog</h3>
         </div>
       </div>
 
-      <div class="content-slide" style="background-image: url('images/showcase/space-weather.jpg');">
+      <div class="content-slide" style="background-image: url('assets/images/carousel/earth_magnetosphere.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Space weather</p>
-          <h3 class="content-slide-title">Solar wind and magnetosphere</h3>
+          <p class="content-slide-eyebrow">Space Weather</p>
+          <h3 class="content-slide-title">Earth's magnetosphere and field lines</h3>
         </div>
       </div>
 
-      <div class="content-slide" style="background-image: url('images/showcase/jwst-orbit.jpg');">
+      <div class="content-slide" style="background-image: url('assets/images/carousel/JWST.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Mission visualizations</p>
-          <h3 class="content-slide-title">JWST at Lagrange Point 2</h3>
+          <p class="content-slide-eyebrow">Mission Visualizations</p>
+          <h3 class="content-slide-title">JWST unfolding animation</h3>
         </div>
       </div>
+
 
     </div>
   </div>

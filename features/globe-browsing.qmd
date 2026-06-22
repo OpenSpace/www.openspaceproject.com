@@ -56,52 +56,52 @@ format:
 
   <div class="gb-world-item">
     <div class="gb-world-img-wrap">
+      <img src="/assets/images/features/andes-mountains.webp"
+           alt="Andes Mountains rendered in OpenSpace"
+           class="gb-world-img">
+    </div>
+    <div class="gb-world-content">
+      <div class="gb-world-meta">
+        <span class="gb-world-num">01</span>
+        <span class="gb-world-label">Earth</span>
+      </div>
+      <h3 class="gb-world-heading">Earth's terrain up close</h3>
+      <p class="gb-world-tagline">ESRI</p>
+      <p class="gb-world-desc">Fly the length of the Andes, descend into the Mariana Trench, or trace a river delta from source to sea. Real satellite imagery and elevation data give every mountain range, canyon, and coastline its true shape and scale.</p>
+    </div>
+  </div>
+
+  <div class="gb-world-item">
+    <div class="gb-world-img-wrap">
+      <img src="/assets/images/features/moon.webp"
+           alt="The Moon rendered in OpenSpace with LRO imagery"
+           class="gb-world-img">
+    </div>
+    <div class="gb-world-content">
+      <div class="gb-world-meta">
+        <span class="gb-world-num">02</span>
+        <span class="gb-world-label">Moon</span>
+      </div>
+      <h3 class="gb-world-heading">The Moon in detail</h3>
+      <p class="gb-world-tagline">LRO &middot; LOLA &middot; Kaguya</p>
+      <p class="gb-world-desc">Visit Apollo landing sites, trace the rilles of Vallis Schröteri, or zoom to the meter-scale surface texture of the lunar highlands. LRO imagery and LOLA elevation data render the Moon at full mission resolution.</p>
+    </div>
+  </div>
+
+  <div class="gb-world-item">
+    <div class="gb-world-img-wrap">
       <img src="/assets/images/carousel/mars-surface.webp"
            alt="HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
            class="gb-world-img">
     </div>
     <div class="gb-world-content">
       <div class="gb-world-meta">
-        <span class="gb-world-num">01</span>
+        <span class="gb-world-num">03</span>
         <span class="gb-world-label">Mars</span>
       </div>
       <h3 class="gb-world-heading">Mars at full resolution</h3>
       <p class="gb-world-tagline">HiRISE &middot; MOLA &middot; CTX</p>
       <p class="gb-world-desc">Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application. HiRISE surface imagery and MOLA elevation data compose a continuous view from orbit to terrain.</p>
-    </div>
-  </div>
-
-  <div class="gb-world-item">
-    <div class="gb-world-img-wrap">
-      <img src="/assets/images/carousel/earth.webp"
-           alt="Earth from orbit rendered in OpenSpace"
-           class="gb-world-img">
-    </div>
-    <div class="gb-world-content">
-      <div class="gb-world-meta">
-        <span class="gb-world-num">02</span>
-        <span class="gb-world-label">Earth</span>
-      </div>
-      <h3 class="gb-world-heading">Earth from orbit</h3>
-      <p class="gb-world-tagline">BMNG &middot; ESRI &middot; SRTM</p>
-      <p class="gb-world-desc">Satellite composites, real elevation terrain, and time-varying data — sea ice extent, atmospheric layers, live weather. Watch the ice caps advance and retreat with actual observational data.</p>
-    </div>
-  </div>
-
-  <div class="gb-world-item">
-    <div class="gb-world-img-wrap">
-      <img src="/assets/images/carousel/goddard-openspace-mars.webp"
-           alt="Mars globe rendered in OpenSpace — HiRISE imagery and MOLA elevation"
-           class="gb-world-img">
-    </div>
-    <div class="gb-world-content">
-      <div class="gb-world-meta">
-        <span class="gb-world-num">03</span>
-        <span class="gb-world-label">Solar System</span>
-      </div>
-      <h3 class="gb-world-heading">Any imaged surface</h3>
-      <p class="gb-world-tagline">Moon &middot; Titan &middot; Pluto &middot; Europa</p>
-      <p class="gb-world-desc">Apollo sites on the Moon. Cassini imagery of Titan. New Horizons coverage of Pluto — all at mission resolution. Any world where spacecraft have returned imagery can be loaded into Globe Browsing.</p>
     </div>
   </div>
 
@@ -124,21 +124,19 @@ format:
     </div>
     <div class="gb-split-visual">
       <div class="gb-layer-stack" id="gbLayerStack" role="button" tabindex="0" aria-label="Click to cycle through data layer examples">
-        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/goddard-openspace-mars.webp')">
-          <span class="gb-layer-label">Globe view</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/mars-surface.webp')">
-          <span class="gb-layer-label">Surface detail</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/Larsen+Ice+Shelf+breakup.webp')">
-          <span class="gb-layer-label">Time-series data</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/carousel/earth.webp')">
-          <span class="gb-layer-label">Base imagery</span>
-        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars1.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars2.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars3.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars4.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars5.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars6.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars7.webp')"></div>
       </div>
       <div class="gb-layer-footer">
         <div class="gb-layer-dots" id="gbLayerDots">
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
           <span class="gb-layer-dot"></span>
           <span class="gb-layer-dot"></span>
           <span class="gb-layer-dot"></span>

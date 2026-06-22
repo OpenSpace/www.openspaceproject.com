@@ -305,25 +305,25 @@ Real data from NASA, ESA, and planetary missions
 Featured worlds
 
 01
+Earth
+
+Earth's terrain up close
+ESRI
+Fly the length of the Andes, descend into the Mariana Trench, or trace a river delta from source to sea. Real satellite imagery and elevation data give every mountain range, canyon, and coastline its true shape and scale.
+
+02
+Moon
+
+The Moon in detail
+LRO · LOLA · Kaguya
+Visit Apollo landing sites, trace the rilles of Vallis Schröteri, or zoom to the meter-scale surface texture of the lunar highlands. LRO imagery and LOLA elevation data render the Moon at full mission resolution.
+
+03
 Mars
 
 Mars at full resolution
 HiRISE · MOLA · CTX
 Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application. HiRISE surface imagery and MOLA elevation data compose a continuous view from orbit to terrain.
-
-02
-Earth
-
-Earth from orbit
-BMNG · ESRI · SRTM
-Satellite composites, real elevation terrain, and time-varying data — sea ice extent, atmospheric layers, live weather. Watch the ice caps advance and retreat with actual observational data.
-
-03
-Solar System
-
-Any imaged surface
-Moon · Titan · Pluto · Europa
-Apollo sites on the Moon. Cassini imagery of Titan. New Horizons coverage of Pluto — all at mission resolution. Any world where spacecraft have returned imagery can be loaded into Globe Browsing.
 
 Data layers
 Stack and reveal live
@@ -334,14 +334,6 @@ Colorized elevation from MOLA, LOLA, and radar altimetry
 Scientific overlays — mineral maps, temperature, atmospheric data
 Time-varying data: watch ice caps advance and retreat
 Toggleable labels and graticules at any scale
-
-Globe view
-
-Surface detail
-
-Time-series data
-
-Base imagery
 
 Click to cycle layers
 

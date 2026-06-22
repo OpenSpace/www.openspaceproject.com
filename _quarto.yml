@@ -6,6 +6,7 @@ project:
   resources:
     - assets/images/institutions/
     - assets/images/carousel/
+    - assets/images/features/
     - assets/brand/
     - assets/js/
 

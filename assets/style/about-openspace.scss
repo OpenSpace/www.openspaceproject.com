@@ -318,7 +318,27 @@
 }
 
 .brand-logo-card--dark  { background: #0a0a0a; }
-.brand-logo-card--light { background: #f0f4f6; }
+.brand-logo-card--light {
+  background: #f0f4f6;
+
+  .brand-logo-meta {
+    background: rgba(255, 255, 255, 0.65);
+    border-top-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .brand-logo-name { color: #1a1a1a; }
+  .brand-logo-use  { color: rgba(0, 0, 0, 0.45); }
+
+  .brand-dl-btn {
+    color: darken($primaryAccent, 38%);
+    border-color: rgba(darken($primaryAccent, 30%), 0.4);
+
+    &:hover {
+      background: rgba(darken($primaryAccent, 30%), 0.08);
+      color: darken($primaryAccent, 42%);
+    }
+  }
+}
 
 .brand-logo-preview {
   display: flex;

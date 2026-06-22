@@ -377,6 +377,109 @@ hr {
 }
 
 
+// ── Footer newsletter ─────────────────────────────────────────
+.footer-nl {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba($primaryAccent, 0.1);
+}
+
+.fnl-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.fnl-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.55);
+  margin: 0 0 0.65rem;
+}
+
+.fnl-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.72rem;
+  color: rgba($satelliteGray, 0.38);
+}
+
+.fnl-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba($primaryAccent, 0.15);
+  border-radius: 6px;
+  color: $baseWhite;
+  font-size: 0.83rem;
+  padding: 0.45rem 0.8rem;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.15s, background 0.15s;
+
+  &::placeholder { color: rgba($satelliteGray, 0.35); }
+  &:focus {
+    border-color: rgba($primaryAccent, 0.4);
+    background: rgba(255, 255, 255, 0.07);
+  }
+}
+
+.fnl-btn {
+  background: transparent;
+  border: 1px solid rgba($primaryAccent, 0.15);
+  border-radius: 6px;
+  color: rgba($satelliteGray, 0.6);
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover {
+    border-color: rgba($primaryAccent, 0.4);
+    color: $primaryAccent;
+  }
+  &:disabled { opacity: 0.55; cursor: default; }
+}
+
+.fnl-btn-skip {
+  background: none;
+  border: none;
+  color: rgba($satelliteGray, 0.45);
+  font-size: 0.82rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover { color: rgba($satelliteGray, 0.75); }
+}
+
+.fnl-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fnl-msg {
+  font-size: 0.77rem;
+  margin: 0.45rem 0 0;
+  color: rgba($satelliteGray, 0.65);
+
+  &--error { color: #f87171; }
+}
+
+.fnl-success-sub {
+  font-size: 0.82rem;
+  color: rgba($satelliteGray, 0.55);
+  margin: 0.2rem 0 0;
+}
+
 @media (max-width: 768px) {
   .site-footer-inner {
     flex-direction: column;
@@ -395,6 +498,7 @@ hr {
     flex-direction: column;
     gap: 0.3rem;
   }
+
 }
 
 .navbar-logo {

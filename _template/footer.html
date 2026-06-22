@@ -40,6 +40,7 @@
   }
 </script>
 <footer class="site-footer">
+
   <div class="site-footer-inner">
 
     <div class="footer-brand">
@@ -56,6 +57,37 @@
         <a href="https://www.reddit.com/r/OpenSpaceProject" target="_blank" rel="noopener" aria-label="Reddit"><iconify-icon icon="fa7-brands:reddit"></iconify-icon></a>
         <a href="https://www.linkedin.com/company/openspace-project/" target="_blank" rel="noopener" aria-label="LinkedIn"><iconify-icon icon="fa7-brands:linkedin"></iconify-icon></a>
       </div>
+
+      <!-- Newsletter signup -->
+      <div class="footer-nl">
+
+        <div class="fnl-step" id="fnl-1">
+          <p class="fnl-label">Stay in the loop</p>
+          <input id="fnl-email" type="email" class="fnl-input" placeholder="Your email address" autocomplete="email">
+          <button id="fnl-next" class="fnl-btn" type="button">Subscribe</button>
+          <p class="fnl-msg" id="fnl-msg-1" hidden></p>
+        </div>
+
+        <div class="fnl-step" id="fnl-2" hidden>
+          <p class="fnl-label">A few quick questions <span class="fnl-optional">— all optional</span></p>
+          <input type="text" class="fnl-input" id="fnl-fname" placeholder="First name" autocomplete="given-name">
+          <input type="text" class="fnl-input" id="fnl-lname" placeholder="Last name" autocomplete="family-name">
+          <input type="text" class="fnl-input" id="fnl-affil" placeholder="Affiliation or interest">
+          <input type="text" class="fnl-input" id="fnl-how" placeholder="How did you hear about us?">
+          <div class="fnl-actions">
+            <button id="fnl-submit" class="fnl-btn" type="button">Complete signup</button>
+            <button id="fnl-skip" class="fnl-btn-skip" type="button">Skip</button>
+          </div>
+          <p class="fnl-msg" id="fnl-msg-2" hidden></p>
+        </div>
+
+        <div class="fnl-step" id="fnl-3" hidden>
+          <p class="fnl-label">You're subscribed!</p>
+          <p class="fnl-success-sub">Check your inbox for a confirmation email.</p>
+        </div>
+
+      </div>
+
     </div>
 
     <nav class="footer-links" aria-label="Footer navigation">
@@ -120,6 +152,106 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var _email = '';
+
+  function show(n) {
+    for (var i = 1; i <= 3; i++) {
+      var el = document.getElementById('fnl-' + i);
+      if (el) el.hidden = (i !== n);
+    }
+  }
+
+  function setMsg(step, msg, isError) {
+    var el = document.getElementById('fnl-msg-' + step);
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'fnl-msg' + (isError ? ' fnl-msg--error' : '');
+    el.hidden = !msg;
+  }
+
+  function val(id) {
+    var el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+  }
+
+  function submitToMailchimp(data) {
+    var btn = document.getElementById('fnl-submit');
+    if (btn) { btn.disabled = true; btn.textContent = 'Subscribing…'; }
+
+    data['b_4c1bf0cc740f267dc37ede3ff_002e0deef0'] = '';
+    var qs = Object.keys(data).map(function (k) {
+      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+    }).join('&');
+
+    var cb = 'mcSub' + Date.now();
+    var s = document.createElement('script');
+    s.src = 'https://amnh.us20.list-manage.com/subscribe/post-json?u=4c1bf0cc740f267dc37ede3ff&id=002e0deef0&' + qs + '&c=' + cb;
+
+    window[cb] = function (r) {
+      delete window[cb];
+      if (s.parentNode) s.parentNode.removeChild(s);
+      if (btn) { btn.disabled = false; btn.textContent = 'Complete signup'; }
+      if (r.result === 'success') {
+        show(3);
+      } else {
+        var msg = (r.msg || 'Something went wrong. Please try again.').replace(/^\d+ - /, '');
+        var tmp = document.createElement('div');
+        tmp.innerHTML = msg;
+        setMsg(2, tmp.textContent || msg, true);
+      }
+    };
+
+    s.onerror = function () {
+      delete window[cb];
+      if (btn) { btn.disabled = false; btn.textContent = 'Complete signup'; }
+      setMsg(2, 'Connection error. Please try again.', true);
+    };
+
+    document.head.appendChild(s);
+  }
+
+  var nextBtn = document.getElementById('fnl-next');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      setMsg(1, '', false);
+      var emailEl = document.getElementById('fnl-email');
+      var email = emailEl ? emailEl.value.trim() : '';
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setMsg(1, 'Please enter a valid email address.', true);
+        return;
+      }
+      _email = email;
+      show(2);
+    });
+  }
+
+  var submitBtn = document.getElementById('fnl-submit');
+  if (submitBtn) {
+    submitBtn.addEventListener('click', function () {
+      setMsg(2, '', false);
+      var data = { EMAIL: _email };
+      var fname = val('fnl-fname'), lname = val('fnl-lname'),
+          affil = val('fnl-affil'), how = val('fnl-how');
+      if (fname) data.FNAME = fname;
+      if (lname) data.LNAME = lname;
+      if (affil) data.MMERGE6 = affil;
+      if (how) data.MMERGE7 = how;
+      submitToMailchimp(data);
+    });
+  }
+
+  var skipBtn = document.getElementById('fnl-skip');
+  if (skipBtn) {
+    skipBtn.addEventListener('click', function () {
+      setMsg(2, '', false);
+      submitToMailchimp({ EMAIL: _email });
+    });
+  }
+})();
+</script>
 
 <script>
 (function () {

@@ -245,7 +245,7 @@ hr {
 
 .footer-social {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.6rem;
   font-size: 1.1rem;
 
@@ -368,7 +368,10 @@ hr {
   }
   &.status--degraded { background: #f8a306; }
   &.status--down { background: #dc3545; }
-  &.status--unknown { background: rgba($satelliteGray, 0.3); }
+  &.status--unknown {
+    background: #5cdd8b;
+    animation: status-pulse 2.5s ease-in-out infinite;
+  }
 }
 
 @keyframes status-pulse {

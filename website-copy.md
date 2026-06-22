@@ -269,7 +269,7 @@ Mark
 For dark backgrounds
 Download
 
-Mark (black)
+Horizontal logo
 For light backgrounds
 Download
 
@@ -288,8 +288,6 @@ Globe Browsing
 
 Fly from the Milky Wayto a single crater
 OpenSpace streams real spacecraft imagery and elevation data from NASA missions — cross fifteen orders of magnitude in one uncut, uninterrupted flight.
-
-The observable universe to Earth's surface — one continuous navigation in OpenSpace
 
 Planetary surface rendering
 Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions — HiRISE, MOLA, LRO, Cassini — and renders them continuously at every scale. No load screens. No transitions. No second application.

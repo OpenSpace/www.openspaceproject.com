@@ -77,10 +77,10 @@ format:
 
       <div class="brand-logo-card brand-logo-card--light">
         <div class="brand-logo-preview">
-          <img src="/assets/brand/openspace_black.webp" alt="OpenSpace mark, black">
+          <img src="/assets/brand/openspace_black.webp" alt="OpenSpace horizontal logo, black">
         </div>
         <div class="brand-logo-meta">
-          <p class="brand-logo-name">Mark (black)</p>
+          <p class="brand-logo-name">Horizontal logo</p>
           <p class="brand-logo-use">For light backgrounds</p>
           <a class="brand-dl-btn" href="/assets/brand/openspace_black.webp" download>Download</a>
         </div>

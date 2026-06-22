@@ -11,9 +11,15 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="dl-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Install</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-parent"><a href="version-0220.qmd">Version 0.22.0</a></span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Previous Versions</span>
+  </nav>
   <div class="dl-hero-inner">
-    <span class="dl-version-badge"><a href="version-0220.qmd" style="color:inherit;text-decoration:none;">← Back to current release</a></span>
-    <h1 class="dl-hero-title">Previous versions</h1>
+<h1 class="dl-hero-title">Previous versions</h1>
     <p class="dl-hero-lede">Windows binaries and release notes for older OpenSpace releases.</p>
   </div>
 </section>

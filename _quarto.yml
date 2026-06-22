@@ -42,8 +42,8 @@ format:
       - "assets/style/display-support.scss"
       - "assets/style/events.scss"
       - "assets/style/slack.scss"
-      - "assets/style/imglib.scss"
       - "assets/style/download.scss"
+      - "assets/style/contact.scss"
     include-after-body:
       - file: _template/hero.html
       - file: _template/footer.html

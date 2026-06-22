@@ -11,6 +11,11 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="dl-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Install</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Version 0.22.0</span>
+  </nav>
   <div class="dl-hero-inner">
     <span class="dl-version-badge">v0.22.0 &mdash; Latest Release</span>
     <h1 class="dl-hero-title">Explore the universe.<br>Free.</h1>
@@ -154,8 +159,7 @@ format:
     <p class="section-lede">The documentation covers installation, profiles, and configuration. The OpenSpace community on Slack is also here to help.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Read the docs</a>
-      <a class="btn-ghost-os" href="../community/slack.qmd">Join the Slack</a>
-    </div>
+      <a class="btn-ghost-os" href="../community/slack.qmd">Join the Slack</a>    </div>
   </div>
 </section>
 ```

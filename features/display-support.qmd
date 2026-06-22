@@ -161,7 +161,7 @@ format:
     <p class="section-lede">The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-      <a class="btn-ghost-os" href="mailto:support@openspaceproject.com">Get in touch</a>
+      <a class="btn-ghost-os" href="../contact.qmd">Get in touch</a>
     </div>
   </div>
 </section>

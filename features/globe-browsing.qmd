@@ -24,15 +24,6 @@ format:
   </div>
 </section>
 
-<!-- ── Video showcase ────────────────────────────────────── -->
-<div class="gb-video-section">
-  <div class="gb-video-wrap">
-    <video class="gb-video" autoplay muted loop playsinline>
-      <source src="/assets/videos/home-zoomout.mp4" type="video/mp4">
-    </video>
-  </div>
-  <p class="gb-video-caption">The observable universe to Earth's surface — one continuous navigation in OpenSpace</p>
-</div>
 
 <!-- ── Intro + Stats ─────────────────────────────────────── -->
 <div class="gb-section">

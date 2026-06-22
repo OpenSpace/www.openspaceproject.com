@@ -370,12 +370,12 @@ Missions
 01
 NASA
 
-New Horizons
-Pluto flyby · July 14, 2015
-Watch the historic flyby unfold from New Horizons' perspective — imaging targets appearing as they were captured during closest approach. Then pull back to see the full 9.5-year journey from Earth.
+Artemis
+Lunar return · 2022 – present
+Follow the Artemis program's return to the Moon — from Orion's trans-lunar trajectory and lunar orbit insertion to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.
 
-Closest approach at 12,500 km
-9.5-year journey from Earth
+First crewed lunar return since Apollo 17
+Orion capsule with SLS launch vehicle
 
 02
 NASA / ESA / CSA
@@ -385,22 +385,21 @@ L2 orbit · 2022 – present
 See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.
 
 Orbit at Sun–Earth L2 point
-6.5 m primary mirror
 
 03
-ESA
+NASA
 
-Rosetta & Philae
-Comet 67P · November 12, 2014
-Approach Comet Churyumov–Gerasimenko alongside Rosetta, then watch Philae's historic descent. Every orbital maneuver and instrument activation represented with real trajectory data.
+Apollo
+Moon landing · July 20, 1969
+Retrace the journey of Apollo 11 from launch to lunar landing and back. Real trajectory data puts the command module and lunar module at their exact positions — follow the translunar coast, orbit insertion, and descent to the Sea of Tranquility.
 
-10-year journey to Comet 67P
-First comet landing attempt
+First crewed Moon landing
+8-day mission, July 16–24, 1969
 
 04
 NASA
 
-Voyager 1 & 2
+Voyager
 Interstellar space · 1977 – present
 Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.
 
@@ -410,9 +409,9 @@ Grand Tour gravity-assist trajectory
 05
 NASA
 
-Mars 2020 / Perseverance
+Mars
 Jezero Crater · February 18, 2021
-Follow Perseverance's landing and navigate its traverse across the Martian surface. Fly the full journey from Earth to Mars and continue down to the rover's exact landing site — without leaving OpenSpace.
+The Mars profile includes both the Mars 2020 mission and Perseverance rover. Fly the full journey from Earth, follow the entry, descent, and landing at Jezero Crater, then navigate Perseverance's surface traverse using real mission data.
 
 Landing at Jezero Crater
 26+ km surface traverse

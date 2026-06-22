@@ -47,8 +47,8 @@ format:
 
   <div class="mv-mission-item">
     <div class="mv-mission-img-wrap">
-      <img src="/assets/images/carousel/Burma+Tibet.webp"
-           alt="New Horizons approaching Pluto — Earth terrain from orbit for context"
+      <img src="/assets/images/features/artemis.webp"
+           alt="Artemis mission visualization in OpenSpace"
            class="mv-mission-img">
     </div>
     <div class="mv-mission-content">
@@ -56,20 +56,20 @@ format:
         <span class="mv-mission-num">01</span>
         <span class="mv-mission-agency">NASA</span>
       </div>
-      <h3 class="mv-mission-name">New Horizons</h3>
-      <p class="mv-mission-tagline">Pluto flyby · July 14, 2015</p>
-      <p class="mv-mission-desc">Watch the historic flyby unfold from New Horizons' perspective — imaging targets appearing as they were captured during closest approach. Then pull back to see the full 9.5-year journey from Earth.</p>
+      <h3 class="mv-mission-name">Artemis</h3>
+      <p class="mv-mission-tagline">Lunar return · 2022 &ndash; present</p>
+      <p class="mv-mission-desc">Follow the Artemis program's return to the Moon — from Orion's trans-lunar trajectory and lunar orbit insertion to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.</p>
       <div class="mv-facts-row">
-        <span class="mv-fact">Closest approach at 12,500 km</span>
-        <span class="mv-fact">9.5-year journey from Earth</span>
+        <span class="mv-fact">First crewed lunar return since Apollo 17</span>
+        <span class="mv-fact">Orion capsule with SLS launch vehicle</span>
       </div>
     </div>
   </div>
 
   <div class="mv-mission-item">
     <div class="mv-mission-img-wrap">
-      <img src="/assets/images/venue-cards/Hayden_JWST.webp"
-           alt="James Webb Space Telescope visualization at the Hayden Planetarium"
+      <img src="/assets/images/features/jwst_pillarsofcreation.webp"
+           alt="Pillars of Creation imaged by the James Webb Space Telescope"
            class="mv-mission-img">
     </div>
     <div class="mv-mission-content">
@@ -82,36 +82,35 @@ format:
       <p class="mv-mission-desc">See JWST's actual orbit at the Sun&ndash;Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">Orbit at Sun&ndash;Earth L2 point</span>
-        <span class="mv-fact">6.5 m primary mirror</span>
       </div>
     </div>
   </div>
 
   <div class="mv-mission-item">
     <div class="mv-mission-img-wrap">
-      <img src="/assets/images/carousel/goddard-openspace-mars.webp"
-           alt="Mars globe rendered in OpenSpace — used for orbital mission context"
+      <img src="/assets/images/features/apollo11.webp"
+           alt="Apollo 11 mission visualization in OpenSpace"
            class="mv-mission-img">
     </div>
     <div class="mv-mission-content">
       <div class="mv-mission-meta">
         <span class="mv-mission-num">03</span>
-        <span class="mv-mission-agency">ESA</span>
+        <span class="mv-mission-agency">NASA</span>
       </div>
-      <h3 class="mv-mission-name">Rosetta &amp; Philae</h3>
-      <p class="mv-mission-tagline">Comet 67P · November 12, 2014</p>
-      <p class="mv-mission-desc">Approach Comet Churyumov&ndash;Gerasimenko alongside Rosetta, then watch Philae's historic descent. Every orbital maneuver and instrument activation represented with real trajectory data.</p>
+      <h3 class="mv-mission-name">Apollo</h3>
+      <p class="mv-mission-tagline">Moon landing · July 20, 1969</p>
+      <p class="mv-mission-desc">Retrace the journey of Apollo 11 from launch to lunar landing and back. Real trajectory data puts the command module and lunar module at their exact positions — follow the translunar coast, orbit insertion, and descent to the Sea of Tranquility.</p>
       <div class="mv-facts-row">
-        <span class="mv-fact">10-year journey to Comet 67P</span>
-        <span class="mv-fact">First comet landing attempt</span>
+        <span class="mv-fact">First crewed Moon landing</span>
+        <span class="mv-fact">8-day mission, July 16–24, 1969</span>
       </div>
     </div>
   </div>
 
   <div class="mv-mission-item">
     <div class="mv-mission-img-wrap">
-      <img src="/assets/images/carousel/earth.webp"
-           alt="Earth from orbit — departure point for the Voyager probes"
+      <img src="/assets/images/features/voyager.webp"
+           alt="Voyager spacecraft trajectory visualization in OpenSpace"
            class="mv-mission-img">
     </div>
     <div class="mv-mission-content">
@@ -119,7 +118,7 @@ format:
         <span class="mv-mission-num">04</span>
         <span class="mv-mission-agency">NASA</span>
       </div>
-      <h3 class="mv-mission-name">Voyager 1 &amp; 2</h3>
+      <h3 class="mv-mission-name">Voyager</h3>
       <p class="mv-mission-tagline">Interstellar space · 1977 &ndash; present</p>
       <p class="mv-mission-desc">Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.</p>
       <div class="mv-facts-row">
@@ -140,9 +139,9 @@ format:
         <span class="mv-mission-num">05</span>
         <span class="mv-mission-agency">NASA</span>
       </div>
-      <h3 class="mv-mission-name">Mars 2020 / Perseverance</h3>
+      <h3 class="mv-mission-name">Mars</h3>
       <p class="mv-mission-tagline">Jezero Crater · February 18, 2021</p>
-      <p class="mv-mission-desc">Follow Perseverance's landing and navigate its traverse across the Martian surface. Fly the full journey from Earth to Mars and continue down to the rover's exact landing site — without leaving OpenSpace.</p>
+      <p class="mv-mission-desc">The Mars profile includes both the Mars 2020 mission and Perseverance rover. Fly the full journey from Earth, follow the entry, descent, and landing at Jezero Crater, then navigate Perseverance's surface traverse using real mission data.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">Landing at Jezero Crater</span>
         <span class="mv-fact">26+ km surface traverse</span>

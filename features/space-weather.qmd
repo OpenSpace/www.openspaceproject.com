@@ -16,7 +16,7 @@ format:
     <span class="bc-sep">›</span>
     <span class="bc-current">Heliophysics</span>
   </nav>
-  <div class="sw-hero-bg" style="background-image:url('../assets/images/banner/earth1.webp')"></div>
+  <div class="sw-hero-bg" style="background-image:url('../assets/images/features/solar_wind.webp')"></div>
   <div class="sw-hero-overlay"></div>
   <div class="sw-hero-content">
     <h1 class="sw-hero-title">The Sun's reach, visualized in real data</h1>
@@ -55,8 +55,8 @@ format:
 
   <div class="sw-event-item">
     <div class="sw-event-img-wrap">
-      <img src="/assets/images/carousel/earth.webp"
-           alt="Earth from orbit — geomagnetic storm effects on the magnetosphere"
+      <img src="/assets/images/features/bastilleday.webp"
+           alt="Bastille Day 2000 solar storm visualization in OpenSpace"
            class="sw-event-img">
     </div>
     <div class="sw-event-content">
@@ -77,8 +77,8 @@ format:
 
   <div class="sw-event-item">
     <div class="sw-event-img-wrap">
-      <img src="/assets/images/banner/earth1.webp"
-           alt="Earth from space — near-miss Carrington event CME propagation"
+      <img src="/assets/images/features/solarstorm2012.webp"
+           alt="Solar Storm 2012 CME propagation visualization in OpenSpace"
            class="sw-event-img">
     </div>
     <div class="sw-event-content">
@@ -99,8 +99,8 @@ format:
 
   <div class="sw-event-item">
     <div class="sw-event-img-wrap">
-      <img src="/assets/images/carousel/Larsen+Ice+Shelf+breakup.webp"
-           alt="Larsen Ice Shelf breakup — time-varying Earth data in OpenSpace"
+      <img src="/assets/images/features/todays_sun.webp"
+           alt="Today's Sun — real-time solar conditions in OpenSpace"
            class="sw-event-img">
     </div>
     <div class="sw-event-content">

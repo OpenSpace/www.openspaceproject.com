@@ -11,8 +11,12 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="uc-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Community</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Use Cases</span>
+  </nav>
   <div>
-    <p class="uc-eyebrow">Use Cases</p>
     <h1 class="uc-hero-title">OpenSpace in Action</h1>
     <p class="uc-hero-lede">Real installations, real venues. See how institutions worldwide are using OpenSpace.</p>
   </div>

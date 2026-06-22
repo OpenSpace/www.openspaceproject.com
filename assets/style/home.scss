@@ -47,7 +47,10 @@ $navbar-hl:      #ecf5fb !default;
 
 // Reusable button base for our custom .btn-*-os classes
 @mixin os-button-base {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
   font-weight: 500;
@@ -178,6 +181,10 @@ $navbar-hl:      #ecf5fb !default;
   @include os-button-base;
   background: $vividAccentGreen;
   color: $os-deep-space;
+  i, .bi { display: none; }
+  // Quarto adds class="external" to external links and injects a ::after pseudo-element
+  // with margin-left:.2em and padding-right:.75em — this shifts the text left of center.
+  &::after { content: none !important; margin: 0 !important; padding: 0 !important; }
 
   &:hover {
     transform: translateY(-1px);
@@ -201,8 +208,8 @@ $navbar-hl:      #ecf5fb !default;
   background: transparent;
   color: white;
   border: 1px solid $os-overlay-light;
-
   i, .bi { display: none; }
+  &::after { content: none !important; margin: 0 !important; padding: 0 !important; }
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);

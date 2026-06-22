@@ -1,4 +1,38 @@
 <script>
+// Quarto extracts the first h1 from {=html} blocks and places it in
+// #title-block-header before the page content. Restore it into the hero
+// section so the layout is: breadcrumb → title → body.
+(function () {
+  var breadcrumb = document.querySelector('.page-breadcrumb');
+  if (!breadcrumb) return;
+  var titleBlock = document.getElementById('title-block-header');
+  if (!titleBlock) return;
+  var h1 = titleBlock.querySelector('h1');
+  if (!h1) return;
+  // Strip Quarto-added display classes; keep the original class(es).
+  ['title','display-1','display-2','display-3','display-4','display-5','display-6','display-7'].forEach(function(c) {
+    h1.classList.remove(c);
+  });
+  var heroSection = breadcrumb.parentElement;
+  // Image heroes (gb-hero, sw-hero): restore h1 inside the dedicated content
+  // container so it centres alongside the description via that container's flex.
+  var imgContent = heroSection.querySelector('.gb-hero-content, .sw-hero-content');
+  if (imgContent) {
+    imgContent.insertBefore(h1, imgContent.firstChild);
+    return;
+  }
+  // Text heroes: the h1 originally lived inside the first div child of the
+  // hero section. Put it back at the start of that container.
+  var contentDiv = breadcrumb.nextElementSibling;
+  if (contentDiv && contentDiv.tagName === 'DIV') {
+    contentDiv.insertBefore(h1, contentDiv.firstChild);
+    return;
+  }
+  // Fallback: insert directly after the breadcrumb nav.
+  breadcrumb.insertAdjacentElement('afterend', h1);
+})();
+</script>
+<script>
   if (!customElements.get('iconify-icon')) {
     var s = document.createElement('script');
     s.src = '/assets/js/iconify-icon.min.js';
@@ -33,6 +67,7 @@
           <li><a href="/about/partners.html">Partners</a></li>
           <li><a href="/about/impact.html">Impact</a></li>
           <li><a href="/about/research.html">Research</a></li>
+          <li><a href="/about/publications.html">Publications</a></li>
           <li><a href="/about/brand.html">Brand &amp; Attribution</a></li>
         </ul>
       </div>

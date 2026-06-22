@@ -10,8 +10,12 @@ format:
 
 ```{=html}
 <section class="partners-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">About</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Partners</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Partners</p>
     <h1>The Institutions behind OpenSpace</h1>
     <p class="partners-hero-lede">A collaboration between universities, science museums, and planetariums in the US and Sweden, united by a shared mission to make space exploration accessible to everyone.</p>
   </div>

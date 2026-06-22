@@ -48,8 +48,8 @@
   margin-left: calc(50% - 50vw);
   padding-top: 3.5rem;
   padding-bottom: 2rem;
-  padding-left: clamp(1.5rem, 5vw, 6rem);
-  padding-right: clamp(1.5rem, 5vw, 6rem);
+  padding-left:  clamp(1.5rem, 8vw, 12rem);
+  padding-right: clamp(1.5rem, 8vw, 12rem);
 }
 
 .research-section-heading {
@@ -124,9 +124,9 @@
 // Row card
 .thesis-row {
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: 168px 1fr;
   gap: 1.25rem;
-  padding: 1rem 1.1rem;
+  padding: 1.25rem 1.1rem;
   border-radius: 10px;
   align-items: center;
   transition: background 0.18s ease;
@@ -145,8 +145,8 @@
 }
 
 .thesis-photo {
-  width: 58px;
-  height: 58px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top center;
@@ -165,7 +165,7 @@
 }
 
 .thesis-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: $baseWhite;
   line-height: 1.4;
@@ -202,7 +202,7 @@
 }
 
 .thesis-author {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: rgba($satelliteGray, 0.65);
   line-height: 1.4;
   margin-bottom: 0.35rem;
@@ -259,7 +259,7 @@
 }
 
 .paper-row {
-  padding: 0.85rem 1.1rem;
+  padding: 1rem 1.1rem;
   border-radius: 10px;
   transition: background 0.18s ease;
 
@@ -273,7 +273,7 @@
 }
 
 .paper-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: $baseWhite;
   line-height: 1.4;
@@ -294,7 +294,7 @@
 }
 
 .paper-author {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: rgba($satelliteGray, 0.65);
   line-height: 1.5;
   margin-bottom: 0.35rem;

@@ -19,15 +19,6 @@
   padding: 0 clamp(1.5rem, 3vw, 3rem);
 }
 
-.slack-eyebrow {
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba($satelliteGray, 0.75);
-  margin: 0 0 1rem;
-  font-family: 'IBM Plex Mono', monospace;
-}
 
 .slack-hero-title {
   font-size: clamp(2rem, 4.5vw, 3.25rem);

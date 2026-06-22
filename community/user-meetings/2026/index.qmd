@@ -12,8 +12,14 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────────── -->
 <section class="ds-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Community</span>
+    <span class="bc-sep">›</span>
+    <a href="/community/user-meetings/">Annual Meetings</a>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">2026</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Annual User Meeting &middot; 2026</p>
     <h1>OpenSpace<br>User Meeting</h1>
     <p class="ds-hero-lede">August 26&ndash;28, 2026 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
   </div>

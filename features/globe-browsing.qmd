@@ -11,10 +11,14 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="gb-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Features</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Globe Browsing</span>
+  </nav>
   <div class="gb-hero-bg" style="background-image:url('../assets/images/banner/mars.webp')"></div>
   <div class="gb-hero-overlay"></div>
   <div class="gb-hero-content">
-    <p class="gb-eyebrow">Globe Browsing</p>
     <h1 class="gb-hero-title">Fly from the Milky Way<br>to a single crater</h1>
     <p class="gb-hero-lede">OpenSpace streams real spacecraft imagery and elevation data from NASA missions — cross fifteen orders of magnitude in one uncut, uninterrupted flight.</p>
   </div>

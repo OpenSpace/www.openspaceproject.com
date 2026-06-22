@@ -23,8 +23,12 @@ format:
 
 ```{=html}
 <section class="team-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">About</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Team</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Team</p>
     <h1>The people behind OpenSpace</h1>
     <p class="team-hero-lede">An international consortium of researchers, engineers, educators, and students building open-source astrovisualization.</p>
   </div>

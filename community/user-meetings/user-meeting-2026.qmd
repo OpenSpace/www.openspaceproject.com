@@ -10,8 +10,14 @@ format:
 
 ```{=html}
 <section class="about-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Community</span>
+    <span class="bc-sep">›</span>
+    <a href="/community/user-meetings/">Annual Meetings</a>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">2026</span>
+  </nav>
   <div class="os-container narrow">
-    <p class="feature-eyebrow">Annual User Meeting &middot; 2026</p>
     <h1 class="feature-title-dark">2026 Annual User Meeting</h1>
     <p class="ev-detail-time">August 26&ndash;28, 2026 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
   </div>

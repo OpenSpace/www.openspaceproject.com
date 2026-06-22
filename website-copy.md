@@ -69,11 +69,14 @@ View on GitHub
 # About OpenSpace
 
 About
+›
+About OpenSpace
+
 An open-source universe
 OpenSpace makes the latest data from NASA missions, observatories, and research institutions explorable by anyone — in planetariums, classrooms, and on personal computers.
 
 What is OpenSpace?
-OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using authoritative data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe — with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub.
+OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe — with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub.
 
 Our mission
 OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools — far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.
@@ -81,55 +84,7 @@ The project also serves the research community itself. Scientists use OpenSpace 
 
 How it began
 OpenSpace started in 2010 as a collaboration between the American Museum of Natural History (AMNH) in New York, Linköping University in Sweden. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Linköping and to share what emerged with the rest of the world.
-Early work focused on dome rendering and globe browsing — the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds (space weather, satellite tracking).
-
-Project timeline
-Major milestones in the OpenSpace project.
-
-2010
-
-Founding collaboration
-AMNH and Linköping University establish the OpenSpace project to build an open-source astrovisualization platform.
-
-2015
-
-Breakfast at Pluto
-On July 14th, New Horizons reached closest approach to Pluto. OpenSpace hosted a live worldwide event — dubbed "Breakfast at Pluto" — with approximately 1,000 participants watching the flyby visualization in real time via YouTube livestream. Earlier that year, Carter Emmart gave the project's first public demo at the IMERSA conference in Denver.
-
-2016
-
-Rosetta mission visualization
-Following the success of New Horizons, development focus shifted to visualizing ESA's Rosetta spacecraft in orbit around comet 67P/Churyumov–Gerasimenko, expanding the platform's mission visualization capabilities.
-
-2018
-
-First public release
-Version 0.10 is released to the public on GitHub, making the software freely available to museums, educators, and developers.
-
-2020
-
-Globe Browsing matures
-The Globe Browsing system reaches feature completeness, enabling seamless navigation from solar system to planet surfaces using NASA's HiRISE Mars imagery, Earth satellite data, and lunar reconnaissance.
-
-2022
-
-200+ institutions worldwide
-OpenSpace adoption surpasses 200 active institutional users across museums, planetariums, universities, and research centers on six continents.
-
-2024
-
-NYU Tandon joins
-NYU Tandon School of Engineering joins the founding consortium, expanding the project's technical research base.
-
-2025
-
-Annual User Meeting at AMNH
-The community gathers at the American Museum of Natural History for the annual user meeting, with attendees from across the global OpenSpace network.
-
-2026
-
-Annual User Meeting at Norrköping
-The community meets in Norrköping, Sweden — home of Linköping University and the Visualization Center C, where much of OpenSpace's foundational research was developed.
+Early work focused on dome rendering and globe browsing — the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds.
 
 Get involved
 OpenSpace is built in the open by a community that welcomes new contributors — whether you run a planetarium, teach with OpenSpace, or contribute code.
@@ -141,7 +96,10 @@ Get in touch
 
 # Team
 
+About
+›
 Team
+
 The people behind OpenSpace
 An international consortium of researchers, engineers, educators, and students building open-source astrovisualization.
 
@@ -157,7 +115,10 @@ Developers
 
 # Partners
 
+About
+›
 Partners
+
 The Institutions behind OpenSpace
 A collaboration between universities, science museums, and planetariums in the US and Sweden, united by a shared mission to make space exploration accessible to everyone.
 
@@ -201,7 +162,10 @@ A visitor-centered planning and research firm working with museums, libraries, a
 
 # Impact
 
+About
+›
 Impact
+
 OpenSpace around the world
 From planetarium domes to research labs, OpenSpace is running on every continent. Here's a look at our global footprint, annual progress, and how you can be part of the story.
 
@@ -245,7 +209,10 @@ Get in touch
 
 # Research
 
+About
+›
 Research
+
 Academic Research & Publications
 OpenSpace sits at the intersection of scientific visualization research and public outreach. Explore the theses and papers that shape it.
 
@@ -264,15 +231,14 @@ Linköping University (LiU)
 ::: {#theses}
 :::
 
-Publications
-::: {#papers}
-:::
-
 ---
 
 # Brand & Attribution
 
 About
+›
+Brand & Attribution
+
 Brand & Attribution
 Guidelines for crediting OpenSpace in publications, presentations, and media, plus logos available for download.
 
@@ -316,7 +282,10 @@ Get in touch
 
 # Globe Browsing
 
+Features
+›
 Globe Browsing
+
 Fly from the Milky Wayto a single crater
 OpenSpace streams real spacecraft imagery and elevation data from NASA missions — cross fifteen orders of magnitude in one uncut, uninterrupted flight.
 
@@ -388,7 +357,10 @@ Documentation
 
 # Mission Visualizations
 
+Features
+›
 Mission Visualizations
+
 Ride alongside the spacecraft — at the moment it happened
 OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA, ESA, and JAXA archives.
 
@@ -466,7 +438,10 @@ Documentation
 
 # Space Weather
 
-Space Weather
+Features
+›
+Heliophysics
+
 The Sun's reach, visualized in real data
 From solar wind to coronal mass ejections — OpenSpace streams live and historical space weather data so you can see what the Sun is doing to our solar system right now.
 
@@ -529,7 +504,10 @@ NASA CCMC
 
 # Display Support
 
+Features
+›
 Display Support
+
 Any screen. Any venue.
 From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and tiled wall support built in.
 
@@ -607,7 +585,10 @@ Get in touch
 
 # Use Cases
 
+Community
+›
 Use Cases
+
 OpenSpace in Action
 Real installations, real venues. See how institutions worldwide are using OpenSpace.
 
@@ -651,6 +632,9 @@ Get in touch
 # Community Slack
 
 Community
+›
+Slack
+
 Where OpenSpace users connect
 The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help — in real time.
 
@@ -780,6 +764,9 @@ _File not found: community/projects/lost-city/index.qmd_
 # Events
 
 Community
+›
+Events
+
 Events
 Monthly community meetings, annual user conferences, and special events — open to the full OpenSpace community.
 
@@ -815,6 +802,9 @@ Software development updates, community feedback sessions, and an opportunity to
 # Annual User Meetings
 
 Community
+›
+Annual Meetings
+
 Annual User Meeting
 Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next.
 
@@ -847,7 +837,12 @@ Community events
 
 # 2025 Annual User Meeting
 
-Annual User Meeting · 2025
+Community
+›
+Annual Meetings
+›
+2025
+
 OpenSpaceUser Meeting
 July 31 – August 1, 2025 · American Museum of Natural History, New York
 
@@ -887,7 +882,12 @@ Beyond the formal program, the meeting offered space for the kind of side conver
 
 # 2026 Annual User Meeting
 
-Annual User Meeting · 2026
+Community
+›
+Annual Meetings
+›
+2026
+
 OpenSpaceUser Meeting
 August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 
@@ -1021,7 +1021,10 @@ Join the Slack
 
 # Tutorials
 
+Resources
+›
 Tutorials
+
 Get started with OpenSpace
 Step-by-step video guides covering installation, navigation, and the user interface — everything you need to take your first flight.
 

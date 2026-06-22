@@ -11,8 +11,12 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="tut-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Resources</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Tutorials</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Tutorials</p>
     <h1>Get started with OpenSpace</h1>
     <p class="tut-hero-lede">Step-by-step video guides covering installation, navigation, and the user interface — everything you need to take your first flight.</p>
   </div>

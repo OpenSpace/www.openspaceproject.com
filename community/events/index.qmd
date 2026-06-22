@@ -11,8 +11,12 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="about-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Community</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Events</span>
+  </nav>
   <div class="os-container narrow">
-    <p class="feature-eyebrow">Community</p>
     <h1 class="feature-title-dark">Events</h1>
     <p class="use-cases-lede">Monthly community meetings, annual user conferences, and special events — open to the full OpenSpace community.</p>
   </div>

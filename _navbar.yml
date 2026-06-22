@@ -30,8 +30,11 @@ website:
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:bar-chart-2"></iconify-icon></span><span class="nav-rich-title">Impact</span></span><span class="nav-rich-desc">Global reach, startup data, and NASA annual reports.</span></span>
             href: about/impact.qmd
           - text: |
-              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Research</span></span><span class="nav-rich-desc">Master's theses, dissertations, and publications.</span></span>
+              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Research</span></span><span class="nav-rich-desc">Master's theses and dissertations from the LiU program.</span></span>
             href: about/research.qmd
+          - text: |
+              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:file-text"></iconify-icon></span><span class="nav-rich-title">Publications</span></span><span class="nav-rich-desc">Academic papers and conference proceedings.</span></span>
+            href: about/publications.qmd
           - text: |
               <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:badge"></iconify-icon></span><span class="nav-rich-title">Brand &amp; Attribution</span></span><span class="nav-rich-desc">Logos, credit guidelines, and usage policy.</span></span>
             href: about/brand.qmd
@@ -44,7 +47,7 @@ website:
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:rocket"></iconify-icon></span><span class="nav-rich-title">Mission Visualizations</span></span><span class="nav-rich-desc">Fly with New Horizons, JWST, Rosetta, and more.</span></span>
             href: features/mission-visualizations.qmd
           - text: |
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:sun"></iconify-icon></span><span class="nav-rich-title">Space Weather</span></span><span class="nav-rich-desc">Solar wind, CMEs, and magnetosphere visualization.</span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:sun"></iconify-icon></span><span class="nav-rich-title">Heliophysics</span></span><span class="nav-rich-desc">Solar wind, CMEs, and magnetosphere visualization.</span></span>
             href: features/space-weather.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:film"></iconify-icon></span><span class="nav-rich-title">Versatile Display Support</span></span><span class="nav-rich-desc">Domes, multi-projector walls, and networked sessions.</span></span>

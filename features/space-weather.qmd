@@ -11,10 +11,14 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="sw-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Features</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Heliophysics</span>
+  </nav>
   <div class="sw-hero-bg" style="background-image:url('../assets/images/banner/earth1.webp')"></div>
   <div class="sw-hero-overlay"></div>
   <div class="sw-hero-content">
-    <p class="sw-eyebrow">Space Weather</p>
     <h1 class="sw-hero-title">The Sun's reach, visualized in real data</h1>
     <p class="sw-hero-lede">From solar wind to coronal mass ejections — OpenSpace streams live and historical space weather data so you can see what the Sun is doing to our solar system right now.</p>
   </div>

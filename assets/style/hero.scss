@@ -105,3 +105,62 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
+// ---------- Page breadcrumbs ----------
+// Quarto extracts the first h1 from {=html} blocks into #title-block-header,
+// placing it before the page content. The footer JS restores it to the correct
+// position (inside the hero, after the breadcrumb nav). These CSS rules hide
+// the now-empty title block and remove the padding Quarto reserves for it.
+main:has(.page-breadcrumb) #title-block-header {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+main:has(.page-breadcrumb) {
+  padding-top: 0 !important;
+}
+
+// Breadcrumb is the first child of each hero section. It is absolutely
+// positioned so it sits flush at the top without affecting the flow.
+// The increased padding-top gives ~4.5 rem of clear space between the
+// breadcrumb bar and the centered title below it.
+section:has(> .page-breadcrumb) {
+  position: relative;
+  padding-top: 7rem !important;
+}
+
+section > .page-breadcrumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.page-breadcrumb {
+  display: block;
+  text-align: left;
+  padding: 0.6rem clamp(1.5rem, 8vw, 12rem);
+  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  font-size: 0.72rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.05em;
+  color: rgba($satelliteGray, 0.5);
+  line-height: 1;
+
+  a {
+    color: rgba($satelliteGray, 0.5);
+    text-decoration: none;
+    transition: color 0.15s;
+    &:hover { color: $primaryAccent; }
+  }
+
+  .bc-sep {
+    margin: 0 0.45rem;
+    color: rgba($satelliteGray, 0.25);
+  }
+
+  .bc-current {
+    color: rgba($satelliteGray, 0.85);
+  }
+}

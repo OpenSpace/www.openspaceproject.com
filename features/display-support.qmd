@@ -11,8 +11,12 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="ds-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Features</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Display Support</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Display Support</p>
     <h1>Any screen. Any venue.</h1>
     <p class="ds-hero-lede">From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and tiled wall support built in.</p>
   </div>

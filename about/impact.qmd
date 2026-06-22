@@ -13,8 +13,12 @@ format:
 
 ```{=html}
 <section class="impact-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">About</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Impact</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Impact</p>
     <h1>OpenSpace around the world</h1>
     <p class="impact-hero-lede">From planetarium domes to research labs, OpenSpace is running on every continent. Here's a look at our global footprint, annual progress, and how you can be part of the story.</p>
   </div>

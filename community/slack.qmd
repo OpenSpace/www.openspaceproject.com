@@ -11,8 +11,12 @@ format:
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="slack-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">Community</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Slack</span>
+  </nav>
   <div class="slack-hero-content">
-    <p class="slack-eyebrow">Community</p>
     <h1 class="slack-hero-title">Where OpenSpace users connect</h1>
     <p class="slack-hero-lede">The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help &mdash; in real time.</p>
     <div class="slack-hero-actions">

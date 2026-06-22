@@ -10,8 +10,12 @@ format:
 
 ```{=html}
 <section class="about-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">About</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Brand &amp; Attribution</span>
+  </nav>
   <div class="os-container narrow">
-    <p class="feature-eyebrow">About</p>
     <h1 class="feature-title-dark">Brand &amp; Attribution</h1>
     <p class="use-cases-lede">Guidelines for crediting OpenSpace in publications, presentations, and media, plus logos available for download.</p>
   </div>

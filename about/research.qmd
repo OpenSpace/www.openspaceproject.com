@@ -10,14 +10,6 @@ listing:
     contents: ../assets/research.yml
     page-size: 9999
     sort: "year desc"
-  - id: papers
-    type: custom
-    template: ../_template/paper-row.ejs.md
-    contents: ../assets/academia.yml
-    include:
-      type: "paper"
-    page-size: 9999
-    sort: "year desc"
 format:
   html:
     page-layout: full
@@ -27,8 +19,12 @@ format:
 
 ```{=html}
 <section class="research-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">About</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Research</span>
+  </nav>
   <div>
-    <p class="feature-eyebrow">Research</p>
     <h1>Academic Research &amp; Publications</h1>
     <p class="research-hero-lede">OpenSpace sits at the intersection of scientific visualization research and public outreach. Explore the theses and papers that shape it.</p>
   </div>
@@ -54,16 +50,6 @@ format:
 ```
 
 ::: {#theses}
-:::
-
-```{=html}
-</div>
-
-<div class="research-section">
-  <h2 class="research-section-heading">Publications</h2>
-```
-
-::: {#papers}
 :::
 
 ```{=html}

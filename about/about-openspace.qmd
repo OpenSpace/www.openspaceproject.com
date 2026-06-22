@@ -10,8 +10,12 @@ format:
 
 ```{=html}
 <section class="about-hero">
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <span class="bc-parent">About</span>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">About OpenSpace</span>
+  </nav>
   <div class="os-container narrow">
-    <p class="feature-eyebrow">About</p>
     <h1 class="feature-title-dark">An open-source universe</h1>
     <p class="use-cases-lede">OpenSpace makes the latest data from NASA missions, observatories, and research institutions explorable by anyone &mdash; in planetariums, classrooms, and on personal computers.</p>
   </div>
@@ -21,7 +25,7 @@ format:
   <div class="os-container narrow">
 
     <h2 class="about-h2">What is OpenSpace?</h2>
-    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using authoritative data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe &mdash; with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub. </p>
+    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe &mdash; with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub. </p>
 
     <h2 class="about-h2">Our mission</h2>
     <p>OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools &mdash; far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.</p>
@@ -29,120 +33,11 @@ format:
 
     <h2 class="about-h2">How it began</h2>
     <p>OpenSpace started in 2010 as a collaboration between the American Museum of Natural History (AMNH) in New York, Link&ouml;ping University in Sweden. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Link&ouml;ping and to share what emerged with the rest of the world.</p>
-    <p>Early work focused on dome rendering and globe browsing &mdash; the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds (space weather, satellite tracking).</p>
+    <p>Early work focused on dome rendering and globe browsing &mdash; the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds.</p>
 
   </div>
 </section>
 
-<section class="timeline-section">
-  <div class="os-container">
-    <h2 class="about-h2 text-center">Project timeline</h2>
-    <p class="about-section-lede text-center">Major milestones in the OpenSpace project.</p>
-
-    <ol class="os-timeline">
-
-      <li class="timeline-item">
-        <div class="timeline-year">2010<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2014-founding.jpg" alt="Hayden Planetarium dome">
-        </div>
-        <div class="timeline-content">
-          <h3>Founding collaboration</h3>
-          <p>AMNH and Link&ouml;ping University establish the OpenSpace project to build an open-source astrovisualization platform.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2015<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2016-pluto.jpg" alt="Pluto from New Horizons spacecraft">
-        </div>
-        <div class="timeline-content">
-          <h3>Breakfast at Pluto</h3>
-          <p>On July 14th, New Horizons reached closest approach to Pluto. OpenSpace hosted a live worldwide event &mdash; dubbed "Breakfast at Pluto" &mdash; with approximately 1,000 participants watching the flyby visualization in real time via YouTube livestream. Earlier that year, Carter Emmart gave the project's first public demo at the IMERSA conference in Denver.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2016<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2015-nasa.jpg" alt="Rosetta spacecraft at comet 67P">
-        </div>
-        <div class="timeline-content">
-          <h3>Rosetta mission visualization</h3>
-          <p>Following the success of New Horizons, development focus shifted to visualizing ESA's Rosetta spacecraft in orbit around comet 67P/Churyumov&ndash;Gerasimenko, expanding the platform's mission visualization capabilities.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2018<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2018-release.jpg" alt="GitHub release page">
-        </div>
-        <div class="timeline-content">
-          <h3>First public release</h3>
-          <p>Version 0.10 is released to the public on GitHub, making the software freely available to museums, educators, and developers.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2020<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2020-mars.jpg" alt="Mars surface from HiRISE">
-        </div>
-        <div class="timeline-content">
-          <h3>Globe Browsing matures</h3>
-          <p>The Globe Browsing system reaches feature completeness, enabling seamless navigation from solar system to planet surfaces using NASA's HiRISE Mars imagery, Earth satellite data, and lunar reconnaissance.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2022<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2022-institutions.jpg" alt="World map showing OpenSpace user institutions">
-        </div>
-        <div class="timeline-content">
-          <h3>200+ institutions worldwide</h3>
-          <p>OpenSpace adoption surpasses 200 active institutional users across museums, planetariums, universities, and research centers on six continents.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2024<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2024-nyu.jpg" alt="NYU Tandon">
-        </div>
-        <div class="timeline-content">
-          <h3>NYU Tandon joins</h3>
-          <p>NYU Tandon School of Engineering joins the founding consortium, expanding the project's technical research base.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="timeline-year">2025<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2025-amnh.jpg" alt="AMNH meeting">
-        </div>
-        <div class="timeline-content">
-          <h3>Annual User Meeting at AMNH</h3>
-          <p>The community gathers at the American Museum of Natural History for the annual user meeting, with attendees from across the global OpenSpace network.</p>
-        </div>
-      </li>
-
-      <li class="timeline-item timeline-item-future">
-        <div class="timeline-year">2026<span class="timeline-dot"></span></div>
-        <div class="timeline-image">
-          <img src="/images/about/timeline-2026-norrkoping.jpg" alt="Visualization Center C in Norrk&ouml;ping">
-        </div>
-        <div class="timeline-content">
-          <h3>Annual User Meeting at Norrk&ouml;ping</h3>
-          <p>The community meets in Norrk&ouml;ping, Sweden &mdash; home of Link&ouml;ping University and the Visualization Center C, where much of OpenSpace's foundational research was developed.</p>
-        </div>
-      </li>
-
-    </ol>
-  </div>
-</section>
 
 
 <section class="cta-section">

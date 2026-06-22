@@ -69,7 +69,7 @@ website:
       - text: Resources
         menu:
           - text: |
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:book-open"></iconify-icon></span><span class="nav-rich-title">Documentation</span></span><span class="nav-rich-desc">Getting Started guide, configuration, and API details.</span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:book-open"></iconify-icon></span><span class="nav-rich-title">Documentation</span><iconify-icon icon="lucide:external-link" class="nav-ext-icon"></iconify-icon></span><span class="nav-rich-desc">Getting Started guide, configuration, and API details.</span></span>
             href: https://docs.openspaceproject.com
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Tutorials</span></span><span class="nav-rich-desc">Step-by-step walkthroughs for new users.</span></span>
@@ -79,10 +79,10 @@ website:
             href: resources/images/index.qmd
 
           - text: |
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:box"></iconify-icon></span><span class="nav-rich-title">Hub</span></span><span class="nav-rich-desc">Community-shared assets, profiles, and content.</span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:box"></iconify-icon></span><span class="nav-rich-title">Hub</span><iconify-icon icon="lucide:external-link" class="nav-ext-icon"></iconify-icon></span><span class="nav-rich-desc">Community-shared assets, profiles, and content.</span></span>
             href: https://hub.openspaceproject.com/
           - text: |
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:server"></iconify-icon></span><span class="nav-rich-title">Server Status</span></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:server"></iconify-icon></span><span class="nav-rich-title">Server Status</span><iconify-icon icon="lucide:external-link" class="nav-ext-icon"></iconify-icon></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
             href: https://uptime.openspaceproject.com
       - text: "<span class='nav-cta'>Download</span>"
-        href: install/version-0213.qmd
+        href: install/version-0220.qmd

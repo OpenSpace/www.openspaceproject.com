@@ -22,6 +22,15 @@ $dropdown-link-active-bg: $background;
 
 
 /*-- scss:rules --*/
+
+// Quarto's mobile grid has minmax(500px,...) on body-content columns, which
+// overflows the viewport on narrow screens. This makes calc(50% - 50vw) in
+// full-bleed sections miscalculate, shifting content right and clipping it.
+// overflow-x: hidden collapses that overflow so 50% == 50vw.
+html {
+  overflow-x: hidden;
+}
+
 h3, h4 {
   color: $softAccentYellow;
 }
@@ -252,15 +261,33 @@ hr {
 }
 
 .footer-links {
-  display: flex;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  flex-wrap: wrap;
+  flex: 1;
+
+  // Install (last child) sits below About on desktop
+  .footer-col:last-child {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+    .footer-col:last-child { grid-column: auto; grid-row: auto; }
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-col {
-  flex: 1;
-  min-width: 120px;
+  min-width: 0;
 
   .footer-col-head {
     font-family: 'TeX Gyre Adventor', 'Century Gothic', sans-serif;

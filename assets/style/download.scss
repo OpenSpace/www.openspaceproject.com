@@ -250,6 +250,20 @@
     }
   }
 
+  &--text {
+    background: transparent;
+    color: rgba($primaryAccent, 0.7);
+    border: none;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    font-weight: 500;
+
+    &:hover {
+      color: $primaryAccent;
+      text-decoration: none;
+    }
+  }
+
   &--glass {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(8px);
@@ -508,6 +522,72 @@
 
   a {
     color: $primaryAccent;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+// ── Previous versions table ───────────────────────────────────
+.dl-prev-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 4rem clamp(1.5rem, 5vw, 6rem) 5rem;
+  background: $background;
+}
+
+.dl-prev-table {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto 2rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  thead tr {
+    border-bottom: 1px solid rgba($satelliteGray, 0.2);
+  }
+
+  th {
+    text-align: left;
+    padding: 0 1rem 0.75rem 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba($satelliteGray, 0.5);
+  }
+
+  td {
+    padding: 0.9rem 1rem 0.9rem 0;
+    color: rgba($satelliteGray, 0.85);
+    border-bottom: 1px solid rgba($satelliteGray, 0.08);
+    vertical-align: middle;
+
+    &:first-child { font-weight: 600; color: $baseWhite; }
+
+    a {
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+.dl-prev-platform {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba($satelliteGray, 0.45);
+  min-width: 4rem;
+}
+
+.dl-prev-older {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  color: rgba($satelliteGray, 0.55);
+
+  a {
     text-decoration: none;
     &:hover { text-decoration: underline; }
   }

@@ -1,6 +1,6 @@
 ---
-pagetitle: "Download OpenSpace — v0.21.3"
-description-meta: "Download OpenSpace v0.21.3 — free, open-source astrovisualization software for Windows. Source builds available for macOS and Linux."
+pagetitle: "Download OpenSpace — v0.22.0"
+description-meta: "Download OpenSpace v0.22.0 — free, open-source astrovisualization software for Windows. Source builds available for Linux."
 format:
   html:
     page-layout: full
@@ -12,15 +12,15 @@ format:
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="dl-hero">
   <div class="dl-hero-inner">
-    <span class="dl-version-badge">v0.21.3 &mdash; Latest Release</span>
+    <span class="dl-version-badge">v0.22.0 &mdash; Latest Release</span>
     <h1 class="dl-hero-title">Explore the universe.<br>Free.</h1>
     <p class="dl-hero-lede">Open-source astrovisualization software built for planetarium domes, classrooms, and personal computers.</p>
     <div class="dl-hero-actions">
-      <a class="dl-btn-primary" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip">
+      <a class="dl-btn-primary" href="https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download for Windows
       </a>
-      <a class="dl-btn-ghost" href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3" target="_blank" rel="noopener">
+      <a class="dl-btn-ghost" href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0" target="_blank" rel="noopener">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         View release notes on GitHub
       </a>
@@ -39,11 +39,14 @@ format:
       <h3 class="dl-platform-name">Windows</h3>
       <p class="dl-platform-desc">Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.</p>
       <div class="dl-platform-actions">
-        <a class="dl-platform-btn dl-platform-btn--glass" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip">
-          Download v0.21.3 (full)
+        <a class="dl-platform-btn dl-platform-btn--glass" href="https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip">
+          Download v0.22.0 (full)
         </a>
-        <a class="dl-platform-btn dl-platform-btn--glass" href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3-minimal.zip">
-          Download v0.21.3 (lightweight)
+        <a class="dl-platform-btn dl-platform-btn--glass" href="https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip">
+          Download v0.22.0 (lightweight)
+        </a>
+        <a class="dl-platform-btn dl-platform-btn--text" href="previous-versions.qmd">
+          View previous versions
         </a>
       </div>
     </div>
@@ -138,7 +141,7 @@ format:
 
     <div class="dl-note">
       <h4 class="dl-note-title">Updating from a previous version</h4>
-      <p class="dl-note-body">Use the <a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3-minimal.zip">lightweight download</a> if you're updating an existing installation. Copy your <code>sync</code> and <code>user</code> folders from the previous version into the new OpenSpace directory.</p>
+      <p class="dl-note-body">Use the <a href="https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip">lightweight download</a> if you're updating an existing installation. Copy your <code>sync</code> and <code>user</code> folders from the previous version into the new OpenSpace directory.</p>
     </div>
 
   </div>

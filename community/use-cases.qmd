@@ -133,7 +133,7 @@ format:
     <h2 class="section-heading">Add your story</h2>
     <p class="section-lede">If your institution is using OpenSpace, we'd love to feature it here.</p>
     <div class="hero-actions">
-      <a class="btn-primary-os" href="../../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-primary-os" href="../../install/version-0220.qmd">Download OpenSpace</a>
       <a class="btn-ghost-os" href="../../contact.qmd">Get in touch</a>
     </div>
   </div>

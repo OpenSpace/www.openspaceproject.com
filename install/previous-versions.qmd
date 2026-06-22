@@ -1,0 +1,172 @@
+---
+pagetitle: "Previous Versions — OpenSpace"
+description-meta: "Download previous versions of OpenSpace astrovisualization software for Windows."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+---
+
+```{=html}
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="dl-hero">
+  <div class="dl-hero-inner">
+    <span class="dl-version-badge"><a href="version-0220.qmd" style="color:inherit;text-decoration:none;">← Back to current release</a></span>
+    <h1 class="dl-hero-title">Previous versions</h1>
+    <p class="dl-hero-lede">Windows binaries and release notes for older OpenSpace releases.</p>
+  </div>
+</section>
+
+<!-- ── Versions table ────────────────────────────────────── -->
+<div class="dl-prev-section">
+  <table class="dl-prev-table">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Released</th>
+        <th>Downloads</th>
+        <th>Release notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>v0.21.4</td>
+        <td>April 2026</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.21.4/OpenSpace-0.21.4.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.21.4/OpenSpace-0.21.4_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.4" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.21.3</td>
+        <td>December 2025</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.21.2</td>
+        <td>July 2025</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.21.2/OpenSpace-0.21.2.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.21.2/OpenSpace-0.21.2_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.2" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.21.1</td>
+        <td>July 2025</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.21.1/OpenSpace-0.21.1.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.21.1/OpenSpace-0.21.1_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.1" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.21.0</td>
+        <td>June 2025</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.21.0/OpenSpace-0.21.0.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.21.0/OpenSpace-0.21.0_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.0" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.20.1</td>
+        <td>July 2024</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.20.1/OpenSpace-0.20.1.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.20.1/OpenSpace-0.20.1_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.1" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.20.0</td>
+        <td>June 2024</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.20.0/OpenSpace-0.20.0.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.20.0/OpenSpace-0.20.0_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.0" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.19.2</td>
+        <td>April 2024</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.19.2/OpenSpace-0.19.2.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.19.2/OpenSpace-0.19.2_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.2" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.19.1</td>
+        <td>September 2023</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.19.1/OpenSpace-0.19.1.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.19.1/OpenSpace-0.19.1_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.1" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.19.0</td>
+        <td>June 2023</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.19.0/OpenSpace-0.19.0.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.19.0/OpenSpace-0.19.0_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.0" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.18.2</td>
+        <td>January 2023</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.18.2/OpenSpace-0.18.2.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.18.2/OpenSpace-0.18.2_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.2" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.18.1</td>
+        <td>November 2022</td>
+        <td>
+          <a href="https://data.openspaceproject.com/release/0.18.1/OpenSpace-0.18.1.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.18.1/OpenSpace-0.18.1_minimal.zip">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.1" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+      <tr>
+        <td>v0.18.0</td>
+        <td>May 2022</td>
+        <td>
+          <span class="dl-prev-platform">Windows</span>
+          <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.zip">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.zip">Lightweight</a><br>
+          <span class="dl-prev-platform">Mac</span>
+          <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.pkg">Full</a>
+          &middot;
+          <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.pkg">Lightweight</a>
+        </td>
+        <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.0" target="_blank" rel="noopener">GitHub</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="dl-prev-older">For versions older than v0.18.0, visit the <a href="https://github.com/OpenSpace/OpenSpace/releases" target="_blank" rel="noopener">GitHub releases page</a>.</p>
+</div>
+```

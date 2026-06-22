@@ -159,7 +159,7 @@ format:
     <h2 class="section-heading">Start flying with spacecraft</h2>
     <p class="section-lede">Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.</p>
     <div class="hero-actions">
-      <a class="btn-primary-os" href="../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-primary-os" href="../install/version-0220.qmd">Download OpenSpace</a>
       <a class="btn-ghost-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
     </div>
   </div>

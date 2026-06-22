@@ -7,11 +7,11 @@
       currentYear = item.year;
 %>
   <div class="thesis-year-group">
-    <div class="thesis-year-label"><%- item.year %></div>
+    <div class="thesis-year-label" data-year="<%- item.year %>"><%- item.year %></div>
 <%
     }
 %>
-    <div class="thesis-row">
+    <div class="thesis-row" data-partner="<%- item.partner %>" data-year="<%- item.year %>">
       <div class="thesis-photos">
         <% if (item.image1) { %>
         <img

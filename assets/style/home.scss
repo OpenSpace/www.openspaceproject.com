@@ -71,7 +71,7 @@ $navbar-hl:      #ecf5fb !default;
 .os-container {
   max-width: $os-container-max;
   margin: 0 auto;
-  padding: 0 12rem;
+  padding: 0 clamp(1.5rem, 8vw, 12rem);
 }
 
 // Full-bleed container — stretches to viewport edge regardless of Quarto column layout
@@ -142,9 +142,11 @@ $navbar-hl:      #ecf5fb !default;
   .hero-content {
     position: relative;
     z-index: 2;
+    width: 100%;
     max-width: 800px;
     padding: 0 1.5rem;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .hero-title {
@@ -155,10 +157,10 @@ $navbar-hl:      #ecf5fb !default;
     color: white;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    white-space: nowrap;
     text-align: center;
     z-index: 2;
     position: relative;
+    padding: 0 1.5rem;
   }
 
   .hero-lede {
@@ -330,7 +332,7 @@ $navbar-hl:      #ecf5fb !default;
 // Allow venues-section's inner container to go full width for the grid
 .venues-section .os-container {
   max-width: 100%;
-  padding: 0 12rem;
+  padding: 0 clamp(1.5rem, 8vw, 12rem);
 }
 
 .venues-section .section-heading {
@@ -420,7 +422,7 @@ $navbar-hl:      #ecf5fb !default;
 
   > .section-heading,
   > .section-lede {
-    padding-left: 12rem;
+    padding-left: clamp(1.5rem, 8vw, 12rem);
   }
 
   > .section-lede {
@@ -441,8 +443,8 @@ $navbar-hl:      #ecf5fb !default;
       content: '';
       position: absolute;
       bottom: 0;
-      left: 12rem;
-      width: calc(#{$os-container-max} - 24rem);
+      left: clamp(1.5rem, 8vw, 12rem);
+      width: calc(#{$os-container-max} - 2 * clamp(1.5rem, 8vw, 12rem));
       height: 1px;
       background: rgba($primaryAccent, 0.15);
     }

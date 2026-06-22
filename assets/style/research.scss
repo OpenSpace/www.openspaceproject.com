@@ -90,7 +90,26 @@
     border: 1px solid rgba($primaryAccent, 0.1);
     padding: 0.3rem 0.75rem;
     border-radius: 20px;
+    cursor: pointer;
+    appearance: none;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+
+    &:hover {
+      background: rgba($primaryAccent, 0.12);
+      border-color: rgba($primaryAccent, 0.3);
+      color: $primaryAccent;
+    }
+
+    &.is-active {
+      background: rgba($primaryAccent, 0.18);
+      border-color: rgba($primaryAccent, 0.5);
+      color: $primaryAccent;
+    }
   }
+}
+
+.thesis-hidden {
+  display: none !important;
 }
 
 // ---------- Thesis list ----------

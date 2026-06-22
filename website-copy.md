@@ -39,7 +39,7 @@ Globe Browsing
 Mars surface from HiRISE imagery
 
 Small Bodies
-Asteroid belt around the solar system
+Asteroid trajectories near Earth
 
 Digital Universe
 Sloan Digital Sky Survey galaxy catalog
@@ -938,84 +938,7 @@ Register now
 
 # Download
 
-v0.21.3 — Latest Release
-Explore the universe.Free.
-Open-source astrovisualization software built for planetarium domes, classrooms, and personal computers.
-
-Download for Windows
-
-View release notes on GitHub
-
-Windows · Linux (source)
-
-Platforms
-
-Windows
-Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.
-
-Download v0.21.3 (full)
-
-Download v0.21.3 (lightweight)
-
-Linux
-No pre-compiled binary for Linux. Source code is freely available on GitHub — build instructions are in the documentation.
-
-View source on GitHub
-
-Build instructions
-
-System requirements
-
-Minimum
-
-CPU
-Intel Core i5 or equivalent
-
-GPU
-NVIDIA GTX 1060 or comparable
-
-RAM
-8 GB
-
-VRAM
-4 GB
-
-OS
-Windows 10
-
-Recommended
-
-CPU
-Modern Intel Core i7 / AMD Ryzen 7
-
-GPU
-NVIDIA RTX 3070 or better
-
-RAM
-16 GB or more
-
-VRAM
-6 GB or more
-
-OS
-Windows 10 or newer
-
-Before you install
-
-Windows C++ Redistributable
-OpenSpace requires the Microsoft Visual C++ Redistributable for Visual Studio 2022. A copy is included in the downloaded folder. If you see "VCRUNTIME140_1.dll was not found," install it to resolve the error.
-
-Network access
-OpenSpace will request internet access on first launch — a standard Windows security prompt. Granting permission is required for full functionality, including the user interface and live data features.
-
-Updating from a previous version
-Use the lightweight download if you're updating an existing installation. Copy your sync and user folders from the previous version into the new OpenSpace directory.
-
-Need help getting started?
-The documentation covers installation, profiles, and configuration. The OpenSpace community on Slack is also here to help.
-
-Read the docs
-Join the Slack
+_File not found: install/version-0213.qmd_
 
 ---
 

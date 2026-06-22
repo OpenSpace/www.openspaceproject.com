@@ -25,7 +25,7 @@ format:
   <div class="hero-content">
     <p class="hero-lede">Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
     <div class="hero-actions">
-      <a href="install/version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
+      <a href="install/version-0220.qmd" class="btn-primary-os">Download OpenSpace</a>
       <a href="features.html" class="btn-ghost-os">Explore features</a>
     </div>
   </div>
@@ -108,7 +108,7 @@ format:
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Small Bodies</p>
-          <h3 class="content-slide-title">Asteroid belt around the solar system</h3>
+          <h3 class="content-slide-title">Asteroid trajectories near Earth</h3>
         </div>
       </div>
 
@@ -215,7 +215,7 @@ format:
     <h2 class="section-heading">Start exploring</h2>
     <p class="section-lede">Free. Open source. Cross-platform.</p>
     <div class="hero-actions">
-      <a href="install/version-0213.qmd" class="btn-primary-os">Download OpenSpace</a>
+      <a href="install/version-0220.qmd" class="btn-primary-os">Download OpenSpace</a>
       <a href="https://github.com/OpenSpace/OpenSpace" class="btn-ghost-os">View on GitHub</a>
     </div>
   </div>

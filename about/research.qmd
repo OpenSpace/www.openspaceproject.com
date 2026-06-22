@@ -35,17 +35,17 @@ format:
 <div class="research-section">
   <h2 class="research-section-heading">Master's Thesis Program</h2>
   <p class="liu-program-desc">
-    Since 2013, <strong>Linköping University's</strong> Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology and Engineering program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
+    Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology and Engineering program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
   </p>
   <p class="liu-program-desc">
     Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.
   </p>
   <div class="liu-partners">
-    <span class="liu-partner-tag">American Museum of Natural History (AMNH)</span>
-    <span class="liu-partner-tag">Community Coordinated Modeling Center (CCMC)</span>
-    <span class="liu-partner-tag">Scientific Computing and Imaging Institute (SCI)</span>
-    <span class="liu-partner-tag">New York University (NYU)</span>
-    <span class="liu-partner-tag">Linköping University (LiU)</span>
+    <button class="liu-partner-tag" data-partner="AMNH">American Museum of Natural History (AMNH)</button>
+    <button class="liu-partner-tag" data-partner="CCMC">Community Coordinated Modeling Center (CCMC)</button>
+    <button class="liu-partner-tag" data-partner="SCI">Scientific Computing and Imaging Institute (SCI)</button>
+    <button class="liu-partner-tag" data-partner="NYU">New York University (NYU)</button>
+    <button class="liu-partner-tag" data-partner="LiU">Linköping University (LiU)</button>
   </div>
 ```
 
@@ -54,4 +54,36 @@ format:
 
 ```{=html}
 </div>
+
+<script>
+(function () {
+  var active = null;
+
+  function filter(partner) {
+    active = partner;
+
+    document.querySelectorAll('.liu-partner-tag').forEach(function (btn) {
+      btn.classList.toggle('is-active', btn.dataset.partner === partner);
+    });
+
+    document.querySelectorAll('.thesis-row').forEach(function (row) {
+      row.classList.toggle('thesis-hidden', !!partner && row.dataset.partner !== partner);
+    });
+
+    document.querySelectorAll('.thesis-year-label').forEach(function (label) {
+      var year = label.dataset.year;
+      var hasVisible = !!document.querySelector(
+        '.thesis-row:not(.thesis-hidden)[data-year="' + year + '"]'
+      );
+      label.classList.toggle('thesis-hidden', !hasVisible);
+    });
+  }
+
+  document.querySelectorAll('.liu-partner-tag').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filter(active === btn.dataset.partner ? null : btn.dataset.partner);
+    });
+  });
+})();
+</script>
 ```

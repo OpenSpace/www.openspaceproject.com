@@ -128,7 +128,7 @@ format:
     <h2 class="section-heading">See space weather in action</h2>
     <p class="section-lede">Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.</p>
     <div class="hero-actions">
-      <a class="btn-primary-os" href="../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-primary-os" href="../install/version-0220.qmd">Download OpenSpace</a>
       <a class="btn-ghost-os" href="https://ccmc.gsfc.nasa.gov" target="_blank" rel="noopener">NASA CCMC</a>
     </div>
   </div>

@@ -207,7 +207,7 @@ format:
     <h2 class="section-heading">Start exploring planetary surfaces</h2>
     <p class="section-lede">Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.</p>
     <div class="hero-actions">
-      <a class="btn-primary-os" href="../install/version-0213.qmd">Download OpenSpace</a>
+      <a class="btn-primary-os" href="../install/version-0220.qmd">Download OpenSpace</a>
       <a class="btn-ghost-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
     </div>
   </div>

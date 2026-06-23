@@ -3,3 +3,6 @@ _site
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Large video files — serve from CDN/external storage
+assets/videos/

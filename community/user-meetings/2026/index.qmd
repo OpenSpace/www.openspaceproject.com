@@ -11,7 +11,7 @@ format:
 
 ```{=html}
 <!-- ── Hero ──────────────────────────────────────────────────── -->
-<section class="ds-hero">
+<section class="ds-hero" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../../../assets/images/user-meetings/LiU_earth.webp'); background-size: cover; background-position: center;">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
     <span class="bc-sep">›</span>
@@ -29,6 +29,7 @@ format:
 <nav class="ds-dot-nav" aria-label="Navigate to section">
   <button class="ds-dot-nav-item is-active" data-target="about"         aria-label="About"></button>
   <button class="ds-dot-nav-item"            data-target="venue"         aria-label="Venue"></button>
+  <button class="ds-dot-nav-item"            data-target="schedule"      aria-label="Schedule"></button>
   <button class="ds-dot-nav-item"            data-target="getting-here"  aria-label="Getting here"></button>
   <button class="ds-dot-nav-item"            data-target="accommodation" aria-label="Accommodation"></button>
   <button class="ds-dot-nav-item"            data-target="register"      aria-label="Register"></button>
@@ -68,8 +69,159 @@ format:
   </div>
 </section>
 
+<!-- ── Schedule ───────────────────────────────────────────────── -->
+<section class="ds-venue-section" id="schedule">
+  <div class="ds-venue-inner">
+    <p class="ds-eyebrow">Program</p>
+    <h2 class="ds-venue-title">Agenda</h2>
+    <p class="um-schedule-note">Schedule is subject to change.</p>
+
+    <h3 class="um-day-heading">Wednesday, August 26</h3>
+    <div class="um-schedule-wrap">
+      <table class="um-schedule-table">
+        <thead>
+          <tr><th>Time</th><th>Track 1</th><th>Track 2</th><th>Track 3</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="um-sched-time">09:30 – 10:00</td>
+            <td colspan="3">Welcome and Kickoff — Community, Updates &amp; What's Ahead</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">10:00 – 10:30</td>
+            <td colspan="3">Introductions</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">10:30 – 12:30</td>
+            <td>OpenSpace 101 Workshop: Getting Started</td>
+            <td>Coding and Scripting</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">12:30 – 14:00</td>
+            <td class="um-sched-break" colspan="3">Lunch on your own</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">14:00 – 15:00</td>
+            <td>OpenSpace 201 Workshop: Included Profiles</td>
+            <td>Maps and Georeferenced Data</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">15:00 – 16:00</td>
+            <td class="um-sched-break">Coffee Break</td>
+            <td class="um-sched-empty">—</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">16:00 – 18:00</td>
+            <td>OpenSpace 202 Workshop: Included Profiles</td>
+            <td>3D Models and Trajectories</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">18:00 – 19:00</td>
+            <td colspan="3">Once Upon the Moon — Dome movie</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time"></td>
+            <td class="um-sched-break" colspan="3">Dinner on your own</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="um-day-heading">Thursday, August 27</h3>
+    <div class="um-schedule-wrap">
+      <table class="um-schedule-table">
+        <thead>
+          <tr><th>Time</th><th>Track 1</th><th>Track 2</th><th>Track 3</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="um-sched-time">09:30 – 11:30</td>
+            <td>ShowComposer</td>
+            <td>AssetBuilder</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">11:30 – 12:30</td>
+            <td>The Night's Sky</td>
+            <td>OpenSpace on Multichannel Systems</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">12:30 – 14:00</td>
+            <td class="um-sched-break" colspan="3">Lunch on your own</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">14:00 – 15:00</td>
+            <td>OpenSpace 301 Workshop: Create custom Profiles</td>
+            <td>Setting up OpenSpace in Display Environments</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">15:00 – 16:00</td>
+            <td class="um-sched-break">Coffee Break</td>
+            <td class="um-sched-empty">—</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">16:00 – 17:00</td>
+            <td>Creating pre-rendered movies from OpenSpace</td>
+            <td class="um-sched-empty">—</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">17:00 – 19:00</td>
+            <td>Dome Show and Tell, Presentation Tips &amp; Tricks</td>
+            <td class="um-sched-empty">—</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time"></td>
+            <td class="um-sched-break" colspan="3">Dinner on your own</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="um-day-heading">Friday, August 28</h3>
+    <div class="um-schedule-wrap">
+      <table class="um-schedule-table">
+        <thead>
+          <tr><th>Time</th><th>Track 1</th><th>Track 2</th><th>Track 3</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="um-sched-time">09:30 – 11:00</td>
+            <td>Giving Presentations in OpenSpace, a case study</td>
+            <td>C-Play</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">11:00 – 12:00</td>
+            <td>OpenSpace: Quo vadis?</td>
+            <td class="um-sched-empty">—</td>
+            <td>Developer Helpdesk / Jam Session</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time">12:00 – 12:30</td>
+            <td colspan="3">Farewell and Thank you</td>
+          </tr>
+          <tr>
+            <td class="um-sched-time"></td>
+            <td class="um-sched-break" colspan="3">End of the official program</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
 <!-- ── Getting here ───────────────────────────────────────────── -->
-<section class="ds-venue-section" id="getting-here">
+<section class="ds-venue-section ds-venue-section--alt" id="getting-here">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Getting here</p>
     <h2 class="ds-venue-title">Travel &amp; airports</h2>
@@ -84,7 +236,7 @@ format:
 </section>
 
 <!-- ── Accommodation ──────────────────────────────────────────── -->
-<section class="ds-venue-section ds-venue-section--alt" id="accommodation">
+<section class="ds-venue-section" id="accommodation">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Accommodation</p>
     <h2 class="ds-venue-title">Where to stay</h2>
@@ -100,7 +252,7 @@ format:
 </section>
 
 <!-- ── Register ───────────────────────────────────────────────── -->
-<section class="ds-venue-section" id="register">
+<section class="ds-venue-section ds-venue-section--alt" id="register">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Registration</p>
     <h2 class="ds-venue-title">Register for free</h2>

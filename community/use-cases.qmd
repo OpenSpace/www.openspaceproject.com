@@ -6,6 +6,8 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+resources:
+  - ../assets/images/use-cases/towson.webp
 ---
 
 ```{=html}
@@ -26,8 +28,8 @@ format:
 <div class="uc-grid-section">
   <div class="uc-grid">
 
-    <div class="uc-card" role="button" tabindex="0" data-case="museum-life-science"
-         style="background-image:url('../../assets/images/use-cases/Museum%20of%20Life%20and%20Science-Tilty%20Table.webp'); background-position:center 50%">
+        <div class="uc-card" role="button" tabindex="0" data-case="museum-life-science"
+          style="background-image:url('/assets/images/use-cases/mols_tiltatable.webp'); background-position:center 50%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Museum of Life &amp; Science · Durham, NC</p>
@@ -49,12 +51,12 @@ format:
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Lawrence Hall of Science · Berkeley, CA</p>
-        <h3 class="uc-card-title">Visitors Take Control of the Dome</h3>
+        <h3 class="uc-card-title">Visitors Control the Dome</h3>
       </div>
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="houston"
-         style="background-image:url('../../assets/images/use-cases/Houston.webp'); background-position:center 50%">
+         style="background-image:url('../../assets/images/use-cases/Houston.webp'); background-position:center 40%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Houston Museum of Natural Science · Houston, TX</p>
@@ -63,11 +65,11 @@ format:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="towson"
-         style="background-image:url('../../assets/images/carousel/Burma+Tibet.webp'); background-position:center 40%">
+         style="background-image:url('/assets/images/use-cases/towson.webp'); background-position:center 40%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Towson University Planetarium · Baltimore County, MD</p>
-        <h3 class="uc-card-title">From Sunrise to Sunset</h3>
+        <h3 class="uc-card-title">OpenSpace Takes Audiences from Sunrise to Sunset</h3>
       </div>
     </div>
 
@@ -107,6 +109,8 @@ format:
       </div>
     </div>
 
+    
+
   </div>
 </div>
 
@@ -134,7 +138,7 @@ format:
     <p class="section-lede">If your institution is using OpenSpace, we'd love to feature it here.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="../../install/version-0220.qmd">Download OpenSpace</a>
-      <a class="btn-ghost-os" href="../../contact.qmd">Get in touch</a>
+      <a class="btn-ghost-os" href="../contact.qmd">Get in touch</a>
     </div>
   </div>
 </section>
@@ -146,7 +150,7 @@ format:
       title: 'Real Time Planet Exploration at Full Tilt',
       institution: 'Museum of Life & Science',
       location: 'Durham, North Carolina',
-      img: '../../assets/images/use-cases/Museum%20of%20Life%20and%20Science-Tilty%20Table.webp',
+      img: '/assets/images/use-cases/mols_tiltatable.webp',
       imgAlt: 'A visitor uses a tilt table with live OpenSpace visuals at the Museum of Life & Science',
       body: 'Live OpenSpace visuals shift and rotate on this tilt table, so Museum visitors can explore a planet from all directions with just the flick of a wrist. This hands-on design allows individuals to steer around the surface of the Earth with the speed and focus of the visitor\'s choosing. OpenSpace delivers near real-time views of our dynamic planet.',
       tags: ['Interactive exhibit', 'Real-time data', 'Public museum']
@@ -182,7 +186,7 @@ format:
       title: 'OpenSpace Takes Audiences from Sunrise to Sunset',
       institution: 'The Towson University Planetarium',
       location: 'Baltimore County, Maryland',
-      img: '../../assets/images/carousel/Burma+Tibet.webp',
+      img: '/assets/images/use-cases/towson.webp',
       imgAlt: 'A view of Earth from space as shown in OpenSpace',
       body: 'What do kids from Title One schools, scout troops, older adults with dementia and their caregivers, and the state Higher Education Commission all have in common? These are all audiences at Towson University\'s planetarium. The planetarium director chooses to use OpenSpace for talks and shows, as it "gives a better viewing experience and uses real data." The growth of OpenSpace users increases growth in both the software and in new content areas, creating a more powerful system over time.',
       tags: ['Diverse audiences', 'Planetarium', 'University']
@@ -222,7 +226,8 @@ format:
       imgAlt: 'A scientist presenting OpenSpace data visualizations at a conference',
       body: 'Scientists regularly share their work using OpenSpace on the NASA Hyperwall at conferences — including the Geological Society of America, American Geophysical Union, and American Astronomical Society. OpenSpace\'s impressive visualizations and the ability to interact with those visualizations supports in-depth peer discussions in conference settings.',
       tags: ['Scientific conferences', 'NASA Hyperwall', 'Peer discussion']
-    }
+    },
+    
   };
 
   var modal     = document.getElementById('ucModal');

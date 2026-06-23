@@ -117,7 +117,7 @@ format:
     { pattern: /\/features\/display-support/,        section: 'Features', page: 'Display Support',        pageHref: '/features/display-support.html' },
     { pattern: /\/features\/globe-browsing/,         section: 'Features', page: 'Globe Browsing',         pageHref: '/features/globe-browsing.html' },
     { pattern: /\/features\/mission-visualizations/, section: 'Features', page: 'Mission Visualizations', pageHref: '/features/mission-visualizations.html' },
-    { pattern: /\/features\/space-weather/,          section: 'Features', page: 'Space Weather',          pageHref: '/features/space-weather.html' },
+    { pattern: /\/features\/heliophysics/,            section: 'Features', page: 'Heliophysics',            pageHref: '/features/heliophysics.html' },
     { pattern: /\/install\/version-0220/,  section: 'Install', page: 'Version 0.22.0', pageHref: '/install/version-0220.html' },
     { pattern: /\/install\/previous/,      section: 'Install', page: 'Previous Versions', pageHref: '/install/previous-versions.html' },
   ];

@@ -200,3 +200,73 @@
     }
   }
 }
+
+// ── Schedule ──────────────────────────────────────────────────
+
+.um-schedule-note {
+  font-size: 0.8rem;
+  color: rgba($satelliteGray, 0.45);
+  font-style: italic;
+  margin: -0.5rem 0 2rem;
+}
+
+.um-day-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $primaryAccent;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+
+  &:first-of-type { margin-top: 0; }
+}
+
+.um-schedule-wrap {
+  overflow-x: auto;
+  margin-bottom: 0.5rem;
+}
+
+.um-schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+
+  th {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    background: rgba($primaryAccent, 0.07);
+    color: rgba($primaryAccent, 0.8);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba($primaryAccent, 0.18);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.6rem 0.75rem;
+    vertical-align: top;
+    border-bottom: 1px solid rgba($satelliteGray, 0.07);
+    color: rgba($baseWhite, 0.82);
+    line-height: 1.5;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .um-sched-time {
+    color: rgba($satelliteGray, 0.5);
+    font-size: 0.78rem;
+    white-space: nowrap;
+    width: 7rem;
+  }
+
+  .um-sched-empty {
+    color: rgba($satelliteGray, 0.2);
+  }
+
+  .um-sched-break {
+    color: rgba($satelliteGray, 0.5);
+    font-style: italic;
+  }
+}

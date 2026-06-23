@@ -155,7 +155,7 @@
 .ds-venue-inner {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  padding: 0 clamp(1.5rem, 8vw, 12rem);
 }
 
 .ds-eyebrow {
@@ -253,8 +253,8 @@
   margin-left: calc(50% - 50vw);
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
-  padding-left:  clamp(1.5rem, 5vw, 6rem);
-  padding-right: clamp(1.5rem, 5vw, 6rem);
+  padding-left:  clamp(1.5rem, 8vw, 12rem);
+  padding-right: clamp(1.5rem, 8vw, 12rem);
   scroll-margin-top: 80px;
 }
 

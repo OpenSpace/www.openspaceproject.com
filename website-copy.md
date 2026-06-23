@@ -427,67 +427,7 @@ Documentation
 
 # Space Weather
 
-Features
-›
-Heliophysics
-
-The Sun's reach, visualized in real data
-From solar wind to coronal mass ejections — OpenSpace streams live and historical space weather data so you can see what the Sun is doing to our solar system right now.
-
-What OpenSpace shows
-OpenSpace connects to real-time and historical data from NASA's Community Coordinated Modeling Center (CCMC) and NOAA's Space Weather Prediction Center. The result is a live visualization of the electromagnetic environment surrounding Earth — and the rest of the solar system.
-Every particle field, every magnetic field line, every CME trajectory is drawn from actual simulation and observation data. This is the same data space weather forecasters use, made navigable.
-
-Live
-Real-time data from NASA CCMC and NOAA SWPC
-
-ENLIL
-Solar wind simulation model powering CME tracking
-
-BATS-R-US
-Magnetospheric MHD model for field-line visualization
-
-Space weather profiles
-
-01
-Historical
-
-Bastille Day 2000
-X5.7 solar flare · July 14, 2000
-One of the most powerful solar storms of Solar Cycle 23 — an X5.7 flare and fast CME that triggered a severe geomagnetic storm, disrupted satellites, and produced aurora visible as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.
-
-X5.7 flare classification
-Kp index reached 9
-ENLIL model from CCMC
-
-02
-Historical
-
-Solar Storm 2012
-Near-miss Carrington event · July 23, 2012
-A double CME eruption that reached a speed of 2,500 km/s — among the fastest ever recorded — narrowly missed Earth by one week. Had it arrived, scientists estimate it could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.
-
-CME speed ~2,500 km/s
-Missed Earth by 9 days
-ENLIL model from CCMC
-
-03
-Live
-
-Today's Sun
-Real-time solar conditions · updated continuously
-OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun–Earth system as it is right now.
-
-Live data from NOAA SWPC
-ENLIL solar wind model
-BATS-R-US magnetosphere
-Ovation Prime aurora
-
-See space weather in action
-Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.
-
-Download OpenSpace
-NASA CCMC
+_File not found: features/space-weather.qmd_
 
 ---
 
@@ -588,13 +528,13 @@ B612's Asteroid Institute
 OpenSpace Defends the Planet
 
 Lawrence Hall of Science · Berkeley, CA
-Visitors Take Control of the Dome
+Visitors Control the Dome
 
 Houston Museum of Natural Science · Houston, TX
 Gaming with OpenSpace
 
 Towson University Planetarium · Baltimore County, MD
-From Sunrise to Sunset
+OpenSpace Takes Audiences from Sunrise to Sunset
 
 Marston Exploration Theater, ASU · Tempe, AZ
 Passers-By Fly High
@@ -895,6 +835,106 @@ Visualization Center C
 
 We're excited to welcome you to the Visualization Center C in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.
 Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.
+
+Program
+Agenda
+Schedule is subject to change.
+
+Wednesday, August 26
+
+TimeTrack 1Track 2Track 3
+
+09:30 – 10:00
+Welcome and Kickoff — Community, Updates & What's Ahead
+
+10:00 – 10:30
+Introductions
+
+10:30 – 12:30
+OpenSpace 101 Workshop: Getting Started
+Coding and Scripting
+Developer Helpdesk / Jam Session
+
+12:30 – 14:00
+Lunch on your own
+
+14:00 – 15:00
+OpenSpace 201 Workshop: Included Profiles
+Maps and Georeferenced Data
+Developer Helpdesk / Jam Session
+
+15:00 – 16:00
+Coffee Break
+—
+Developer Helpdesk / Jam Session
+
+16:00 – 18:00
+OpenSpace 202 Workshop: Included Profiles
+3D Models and Trajectories
+Developer Helpdesk / Jam Session
+
+18:00 – 19:00
+Once Upon the Moon — Dome movie
+
+Dinner on your own
+
+Thursday, August 27
+
+TimeTrack 1Track 2Track 3
+
+09:30 – 11:30
+ShowComposer
+AssetBuilder
+Developer Helpdesk / Jam Session
+
+11:30 – 12:30
+The Night's Sky
+OpenSpace on Multichannel Systems
+Developer Helpdesk / Jam Session
+
+12:30 – 14:00
+Lunch on your own
+
+14:00 – 15:00
+OpenSpace 301 Workshop: Create custom Profiles
+Setting up OpenSpace in Display Environments
+Developer Helpdesk / Jam Session
+
+15:00 – 16:00
+Coffee Break
+—
+Developer Helpdesk / Jam Session
+
+16:00 – 17:00
+Creating pre-rendered movies from OpenSpace
+—
+Developer Helpdesk / Jam Session
+
+17:00 – 19:00
+Dome Show and Tell, Presentation Tips & Tricks
+—
+Developer Helpdesk / Jam Session
+
+Dinner on your own
+
+Friday, August 28
+
+TimeTrack 1Track 2Track 3
+
+09:30 – 11:00
+Giving Presentations in OpenSpace, a case study
+C-Play
+Developer Helpdesk / Jam Session
+
+11:00 – 12:00
+OpenSpace: Quo vadis?
+—
+Developer Helpdesk / Jam Session
+
+12:00 – 12:30
+Farewell and Thank you
+
+End of the official program
 
 Getting here
 Travel & airports

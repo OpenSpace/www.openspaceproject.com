@@ -49,9 +49,9 @@ format:
   </div>
 </div>
 
-<!-- ── Space weather profiles ──────────────────────────────── -->
+<!-- ── Heliophysics profiles ──────────────────────────────── -->
 <div class="sw-events-section">
-  <h2 class="sw-section-h2">Space weather profiles</h2>
+  <h2 class="sw-section-h2">Heliophysics profiles</h2>
 
   <div class="sw-event-item">
     <div class="sw-event-img-wrap">
@@ -121,6 +121,100 @@ format:
   </div>
 
 </div>
+
+<!-- ── SDO wavelengths ─────────────────────────────────────── -->
+<div class="gb-section gb-section-alt">
+  <div class="gb-split">
+    <div class="gb-split-text">
+      <h2 class="gb-section-h2">The Sun in every wavelength</h2>
+      <p class="gb-split-lede">SDO sees what the eye cannot</p>
+      <p class="sw-prose">NASA's Solar Dynamics Observatory captures the Sun continuously across ten wavelength channels, each revealing a different layer of solar activity — from the cool chromosphere to 20-million-degree flare plasma. OpenSpace loads these AIA image sequences so you can switch between wavelengths in real time and watch the same event unfold at different temperatures.</p>
+      <ul class="gb-feature-list">
+        <li>304 Å — chromosphere and transition region (~50,000 K)</li>
+        <li>171 Å — quiet corona and coronal loops (~600,000 K)</li>
+        <li>193 Å — corona and hot post-flare plasma (~1.2 MK)</li>
+        <li>211 Å — active regions in the outer corona (~2 MK)</li>
+        <li>131 Å — flares and erupting filaments (~10 MK)</li>
+        <li>94 Å — flare cores at peak intensity (~6.3 MK)</li>
+      </ul>
+    </div>
+    <div class="gb-split-visual">
+      <div class="gb-layer-stack" id="swSdoStack" role="button" tabindex="0" aria-label="Click to cycle through SDO wavelength examples">
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_304.webp')">
+          <span class="gb-layer-label">304 Å — chromosphere</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_171.webp')">
+          <span class="gb-layer-label">171 Å — corona</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_193.webp')">
+          <span class="gb-layer-label">193 Å — hot plasma</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_211.webp')">
+          <span class="gb-layer-label">211 Å — active regions</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_131.webp')">
+          <span class="gb-layer-label">131 Å — eruptions</span>
+        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_094.webp')">
+          <span class="gb-layer-label">94 Å — flare cores</span>
+        </div>
+      </div>
+      <div class="gb-layer-footer">
+        <div class="gb-layer-dots" id="swSdoDots">
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+          <span class="gb-layer-dot"></span>
+        </div>
+        <span class="gb-layer-hint">Click to cycle wavelengths</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var stack = document.getElementById('swSdoStack');
+  if (!stack) return;
+  var cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
+  var dots  = Array.from(document.querySelectorAll('#swSdoDots .gb-layer-dot'));
+  var total = cards.length;
+  var current = 0;
+  var states = ['gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden'];
+
+  function render() {
+    cards.forEach(function (card, i) {
+      states.forEach(function (s) { card.classList.remove(s); });
+      var offset = (i - current + total) % total;
+      card.classList.add(states[Math.min(offset, states.length - 1)]);
+    });
+    dots.forEach(function (dot, i) {
+      dot.classList.toggle('active', i === current);
+    });
+  }
+
+  stack.addEventListener('click', function () {
+    current = (current + 1) % total;
+    render();
+  });
+
+  stack.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      current = (current + 1) % total;
+      render();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      current = (current - 1 + total) % total;
+      render();
+    }
+  });
+
+  render();
+})();
+</script>
 
 <!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">

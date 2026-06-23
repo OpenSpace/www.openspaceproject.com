@@ -50,6 +50,12 @@ Earth's magnetosphere and field lines
 Mission Visualizations
 JWST unfolding animation
 
+Heliophysics
+Solar magnetic field lines from PFSS model
+
+Globe Browsing
+Sea surface temperature from satellite data
+
 ‹
 ›
 
@@ -351,8 +357,8 @@ Features
 ›
 Mission Visualizations
 
-Ride alongside the spacecraft — at the moment it happened
-OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA, ESA, and JAXA archives.
+Ride alongside the spacecraft at the moment it happened
+OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA and ESA archives.
 
 How it works
 
@@ -375,23 +381,23 @@ Lunar return · 2022 – present
 Follow the Artemis program's return to the Moon — from Orion's trans-lunar trajectory and lunar orbit insertion to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.
 
 First crewed lunar return since Apollo 17
-Orion capsule with SLS launch vehicle
+Orion capsule
 
 02
 NASA / ESA / CSA
 
 James Webb Space Telescope
 L2 orbit · 2022 – present
-See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.
+See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away and visualize the deep fields it has surveyed.
 
-Orbit at Sun–Earth L2 point
+Animated model
 
 03
 NASA
 
 Apollo
 Moon landing · July 20, 1969
-Retrace the journey of Apollo 11 from launch to lunar landing and back. Real trajectory data puts the command module and lunar module at their exact positions — follow the translunar coast, orbit insertion, and descent to the Sea of Tranquility.
+Real trajectory data puts the command module and lunar module at their exact positions.
 
 First crewed Moon landing
 8-day mission, July 16–24, 1969
@@ -411,11 +417,10 @@ NASA
 
 Mars
 Jezero Crater · February 18, 2021
-The Mars profile includes both the Mars 2020 mission and Perseverance rover. Fly the full journey from Earth, follow the entry, descent, and landing at Jezero Crater, then navigate Perseverance's surface traverse using real mission data.
+The Mars profile includes both Insight and Perseverance rover.
 
 Landing at Jezero Crater
 26+ km surface traverse
-Ingenuity: first powered flight on Mars
 
 Start flying with spacecraft
 Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.

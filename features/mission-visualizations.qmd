@@ -17,8 +17,8 @@ format:
     <span class="bc-current">Mission Visualizations</span>
   </nav>
   <div>
-    <h1>Ride alongside the spacecraft — at the moment it happened</h1>
-    <p class="mv-hero-lede">OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA, ESA, and JAXA archives.</p>
+    <h1>Ride alongside the spacecraft at the moment it happened</h1>
+    <p class="mv-hero-lede">OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA and ESA archives.</p>
   </div>
 </section>
 
@@ -61,7 +61,7 @@ format:
       <p class="mv-mission-desc">Follow the Artemis program's return to the Moon — from Orion's trans-lunar trajectory and lunar orbit insertion to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">First crewed lunar return since Apollo 17</span>
-        <span class="mv-fact">Orion capsule with SLS launch vehicle</span>
+        <span class="mv-fact">Orion capsule</span>
       </div>
     </div>
   </div>
@@ -79,9 +79,9 @@ format:
       </div>
       <h3 class="mv-mission-name">James Webb Space Telescope</h3>
       <p class="mv-mission-tagline">L2 orbit · 2022 &ndash; present</p>
-      <p class="mv-mission-desc">See JWST's actual orbit at the Sun&ndash;Earth L2 point 1.5 million km away, follow its observation pointing in real time, and visualize the deep fields it has surveyed.</p>
+      <p class="mv-mission-desc">See JWST's actual orbit at the Sun&ndash;Earth L2 point 1.5 million km away and visualize the deep fields it has surveyed.</p>
       <div class="mv-facts-row">
-        <span class="mv-fact">Orbit at Sun&ndash;Earth L2 point</span>
+        <span class="mv-fact">Animated model</span>
       </div>
     </div>
   </div>
@@ -99,7 +99,7 @@ format:
       </div>
       <h3 class="mv-mission-name">Apollo</h3>
       <p class="mv-mission-tagline">Moon landing · July 20, 1969</p>
-      <p class="mv-mission-desc">Retrace the journey of Apollo 11 from launch to lunar landing and back. Real trajectory data puts the command module and lunar module at their exact positions — follow the translunar coast, orbit insertion, and descent to the Sea of Tranquility.</p>
+      <p class="mv-mission-desc">Real trajectory data puts the command module and lunar module at their exact positions.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">First crewed Moon landing</span>
         <span class="mv-fact">8-day mission, July 16–24, 1969</span>
@@ -141,11 +141,10 @@ format:
       </div>
       <h3 class="mv-mission-name">Mars</h3>
       <p class="mv-mission-tagline">Jezero Crater · February 18, 2021</p>
-      <p class="mv-mission-desc">The Mars profile includes both the Mars 2020 mission and Perseverance rover. Fly the full journey from Earth, follow the entry, descent, and landing at Jezero Crater, then navigate Perseverance's surface traverse using real mission data.</p>
+      <p class="mv-mission-desc">The Mars profile includes both Insight and Perseverance rover.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">Landing at Jezero Crater</span>
         <span class="mv-fact">26+ km surface traverse</span>
-        <span class="mv-fact">Ingenuity: first powered flight on Mars</span>
       </div>
     </div>
   </div>

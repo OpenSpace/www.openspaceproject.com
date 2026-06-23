@@ -16,7 +16,7 @@ format:
     <span class="bc-sep">›</span>
     <span class="bc-current">Heliophysics</span>
   </nav>
-  <div class="sw-hero-bg" style="background-image:url('../assets/images/features/solar_wind.webp')"></div>
+  <div class="sw-hero-bg" style="background-image:url('../assets/images/features/bastilleday2.webp')"></div>
   <div class="sw-hero-overlay"></div>
   <div class="sw-hero-content">
     <h1 class="sw-hero-title">The Sun's reach, visualized in real data</h1>
@@ -77,7 +77,7 @@ format:
 
   <div class="sw-event-item">
     <div class="sw-event-img-wrap">
-      <img src="/assets/images/features/solarstorm2012.webp"
+      <img src="/assets/images/features/solarstorm.webp"
            alt="Solar Storm 2012 CME propagation visualization in OpenSpace"
            class="sw-event-img">
     </div>
@@ -140,30 +140,12 @@ format:
     </div>
     <div class="gb-split-visual">
       <div class="gb-layer-stack" id="swSdoStack" role="button" tabindex="0" aria-label="Click to cycle through SDO wavelength examples">
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_304.webp')">
-          <span class="gb-layer-label">304 Å — chromosphere</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_171.webp')">
-          <span class="gb-layer-label">171 Å — corona</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_193.webp')">
-          <span class="gb-layer-label">193 Å — hot plasma</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_211.webp')">
-          <span class="gb-layer-label">211 Å — active regions</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_131.webp')">
-          <span class="gb-layer-label">131 Å — eruptions</span>
-        </div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo_094.webp')">
-          <span class="gb-layer-label">94 Å — flare cores</span>
-        </div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/SDO1.webp'); background-size: 160%;"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/SDO2.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/SDO3.webp')"></div>
       </div>
       <div class="gb-layer-footer">
         <div class="gb-layer-dots" id="swSdoDots">
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
           <span class="gb-layer-dot"></span>
           <span class="gb-layer-dot"></span>
           <span class="gb-layer-dot"></span>

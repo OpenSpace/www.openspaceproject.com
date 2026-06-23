@@ -96,13 +96,13 @@ format:
   <div class="content-carousel" id="contentCarousel">
     <div class="content-carousel-track" id="carouselTrack">
 
-      <div class="content-slide" style="background-image: url('assets/images/carousel/mars-surface.webp');">
+      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/mars-surface.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Globe Browsing</p>
           <h3 class="content-slide-title">Mars surface from HiRISE imagery</h3>
         </div>
-      </div>
+      </a>
 
       <div class="content-slide" style="background-image: url('assets/images/carousel/asteroids.webp');">
         <div class="content-slide-overlay"></div>
@@ -120,21 +120,37 @@ format:
         </div>
       </div>
 
-      <div class="content-slide" style="background-image: url('assets/images/carousel/earth_magnetosphere.webp');">
+      <a class="content-slide" href="features/heliophysics.html" style="background-image: url('assets/images/carousel/earth_magnetosphere.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Space Weather</p>
           <h3 class="content-slide-title">Earth's magnetosphere and field lines</h3>
         </div>
-      </div>
+      </a>
 
-      <div class="content-slide" style="background-image: url('assets/images/carousel/JWST.webp');">
+      <a class="content-slide" href="features/mission-visualizations.html" style="background-image: url('assets/images/carousel/JWST.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Mission Visualizations</p>
           <h3 class="content-slide-title">JWST unfolding animation</h3>
         </div>
-      </div>
+      </a>
+
+      <a class="content-slide" href="features/heliophysics.html" style="background-image: url('assets/images/carousel/pfss.webp');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Heliophysics</p>
+          <h3 class="content-slide-title">Solar magnetic field lines from PFSS model</h3>
+        </div>
+      </a>
+
+      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/seasurfacetemp.webp');">
+        <div class="content-slide-overlay"></div>
+        <div class="content-slide-text">
+          <p class="content-slide-eyebrow">Globe Browsing</p>
+          <h3 class="content-slide-title">Sea surface temperature from satellite data</h3>
+        </div>
+      </a>
 
 
     </div>

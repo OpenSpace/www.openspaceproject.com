@@ -9,7 +9,7 @@
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  min-height: 76vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 30%;
+  background-position: center bottom;
   z-index: 0;
 }
 

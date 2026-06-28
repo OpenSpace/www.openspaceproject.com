@@ -1,0 +1,35 @@
+<script>
+// Quarto extracts the first h1 from {=html} blocks and places it in #title-block-header
+// before the page content. Restore it into the hero section so the layout is:
+// breadcrumb -> title -> body
+(() => {
+  let breadcrumb = document.querySelector('.page-breadcrumb');
+  if (!breadcrumb) return;
+  let titleBlock = document.getElementById('title-block-header');
+  if (!titleBlock) return;
+  let h1 = titleBlock.querySelector('h1');
+  if (!h1) return;
+
+  // Strip Quarto-added display classes; keep the original class(es)
+  let quartoClasses = [ 'title', 'display-1', 'display-2', 'display-3', 'display-4',
+    'display-5', 'display-6', 'display-7'];
+  quartoClasses.forEach((c) => { h1.classList.remove(c); });
+  let heroSection = breadcrumb.parentElement;
+  // Image heroes (gb-hero, sw-hero): restore h1 inside the dedicated content container so
+  // it centers alongside the description via that container's flex
+  let imgContent = heroSection.querySelector('.gb-hero-content, .sw-hero-content');
+  if (imgContent) {
+    imgContent.insertBefore(h1, imgContent.firstChild);
+    return;
+  }
+  // Text heroes: the h1 originally lived inside the first div child of the hero section.
+  // Put it back at the start of that container
+  let contentDiv = breadcrumb.nextElementSibling;
+  if (contentDiv && contentDiv.tagName === 'DIV') {
+    contentDiv.insertBefore(h1, contentDiv.firstChild);
+    return;
+  }
+  // Fallback: insert directly after the breadcrumb nav
+  breadcrumb.insertAdjacentElement('afterend', h1);
+})();
+</script>

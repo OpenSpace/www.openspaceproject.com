@@ -1,51 +1,10 @@
-<script>
-// Quarto extracts the first h1 from {=html} blocks and places it in
-// #title-block-header before the page content. Restore it into the hero
-// section so the layout is: breadcrumb → title → body.
-(function () {
-  var breadcrumb = document.querySelector('.page-breadcrumb');
-  if (!breadcrumb) return;
-  var titleBlock = document.getElementById('title-block-header');
-  if (!titleBlock) return;
-  var h1 = titleBlock.querySelector('h1');
-  if (!h1) return;
-  // Strip Quarto-added display classes; keep the original class(es).
-  ['title','display-1','display-2','display-3','display-4','display-5','display-6','display-7'].forEach(function(c) {
-    h1.classList.remove(c);
-  });
-  var heroSection = breadcrumb.parentElement;
-  // Image heroes (gb-hero, sw-hero): restore h1 inside the dedicated content
-  // container so it centres alongside the description via that container's flex.
-  var imgContent = heroSection.querySelector('.gb-hero-content, .sw-hero-content');
-  if (imgContent) {
-    imgContent.insertBefore(h1, imgContent.firstChild);
-    return;
-  }
-  // Text heroes: the h1 originally lived inside the first div child of the
-  // hero section. Put it back at the start of that container.
-  var contentDiv = breadcrumb.nextElementSibling;
-  if (contentDiv && contentDiv.tagName === 'DIV') {
-    contentDiv.insertBefore(h1, contentDiv.firstChild);
-    return;
-  }
-  // Fallback: insert directly after the breadcrumb nav.
-  breadcrumb.insertAdjacentElement('afterend', h1);
-})();
-</script>
-<script>
-  if (!customElements.get('iconify-icon')) {
-    var s = document.createElement('script');
-    s.src = '/assets/js/iconify-icon.min.js';
-    document.head.appendChild(s);
-  }
-</script>
 <footer class="site-footer">
 
   <div class="site-footer-inner">
 
     <div class="footer-brand">
       <a href="/" class="footer-logo-link">
-        <img src="/assets/brand/horizontal-logo.webp" alt="OpenSpace" class="footer-logo">
+        <img src="/assets/brand/horizontal_logo.webp" alt="OpenSpace" class="footer-logo">
       </a>
       <p class="footer-tagline">Open-source astronomy visualization</p>
       <div class="footer-social">
@@ -151,18 +110,18 @@
 </footer>
 
 <script>
-(function () {
-  var _email = '';
+(() => {
+  let _email = '';
 
   function show(n) {
-    for (var i = 1; i <= 3; i++) {
-      var el = document.getElementById('fnl-' + i);
+    for (let i = 1; i <= 3; i++) {
+      let el = document.getElementById('fnl-' + i);
       if (el) el.hidden = (i !== n);
     }
   }
 
   function setMsg(step, msg, isError) {
-    var el = document.getElementById('fnl-msg-' + step);
+    let el = document.getElementById('fnl-msg-' + step);
     if (!el) return;
     el.textContent = msg;
     el.className = 'fnl-msg' + (isError ? ' fnl-msg--error' : '');
@@ -170,21 +129,24 @@
   }
 
   function val(id) {
-    var el = document.getElementById(id);
+    let el = document.getElementById(id);
     return el ? el.value.trim() : '';
   }
 
   function submitToMailchimp(data) {
-    var btn = document.getElementById('fnl-submit');
-    if (btn) { btn.disabled = true; btn.textContent = 'Subscribing…'; }
+    let btn = document.getElementById('fnl-submit');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Subscribing...';
+    }
 
     data['b_4c1bf0cc740f267dc37ede3ff_002e0deef0'] = '';
-    var qs = Object.keys(data).map(function (k) {
+    let qs = Object.keys(data).map((k) => {
       return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
     }).join('&');
 
-    var cb = 'mcSub' + Date.now();
-    var s = document.createElement('script');
+    let cb = `mcSub${Date.now()}`;
+    let s = document.createElement('script');
     s.src = 'https://amnh.us20.list-manage.com/subscribe/post-json?u=4c1bf0cc740f267dc37ede3ff&id=002e0deef0&' + qs + '&c=' + cb;
 
     window[cb] = function (r) {
@@ -193,7 +155,8 @@
       if (btn) { btn.disabled = false; btn.textContent = 'Complete signup'; }
       if (r.result === 'success') {
         show(3);
-      } else {
+      }
+      else {
         var msg = (r.msg || 'Something went wrong. Please try again.').replace(/^\d+ - /, '');
         var tmp = document.createElement('div');
         tmp.innerHTML = msg;
@@ -201,21 +164,24 @@
       }
     };
 
-    s.onerror = function () {
+    s.onerror = () => {
       delete window[cb];
-      if (btn) { btn.disabled = false; btn.textContent = 'Complete signup'; }
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = 'Complete signup';
+      }
       setMsg(2, 'Connection error. Please try again.', true);
     };
 
     document.head.appendChild(s);
   }
 
-  var nextBtn = document.getElementById('fnl-next');
+  let nextBtn = document.getElementById('fnl-next');
   if (nextBtn) {
-    nextBtn.addEventListener('click', function () {
+    nextBtn.addEventListener('click', () => {
       setMsg(1, '', false);
-      var emailEl = document.getElementById('fnl-email');
-      var email = emailEl ? emailEl.value.trim() : '';
+      let emailEl = document.getElementById('fnl-email');
+      let email = emailEl ? emailEl.value.trim() : '';
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         setMsg(1, 'Please enter a valid email address.', true);
         return;
@@ -225,16 +191,21 @@
     });
   }
 
-  var submitBtn = document.getElementById('fnl-submit');
+  let submitBtn = document.getElementById('fnl-submit');
   if (submitBtn) {
-    submitBtn.addEventListener('click', function () {
+    submitBtn.addEventListener('click', () => {
       setMsg(2, '', false);
-      var data = { EMAIL: _email };
-      var fname = val('fnl-fname'), lname = val('fnl-lname'),
-          affil = val('fnl-affil'), how = val('fnl-how');
+      let data = { EMAIL: _email };
+      let fname = val('fnl-fname');
       if (fname) data.FNAME = fname;
+
+      let lname = val('fnl-lname');
       if (lname) data.LNAME = lname;
+
+      let affil = val('fnl-affil');
       if (affil) data.MMERGE6 = affil;
+
+      let how = val('fnl-how');
       if (how) data.MMERGE7 = how;
       submitToMailchimp(data);
     });
@@ -242,7 +213,7 @@
 
   var skipBtn = document.getElementById('fnl-skip');
   if (skipBtn) {
-    skipBtn.addEventListener('click', function () {
+    skipBtn.addEventListener('click', () => {
       setMsg(2, '', false);
       submitToMailchimp({ EMAIL: _email });
     });
@@ -251,25 +222,37 @@
 </script>
 
 <script>
-(function () {
-  var LABELS = { up: 'All Systems Operational', degraded: 'Partial Outage', down: 'Major Outage', unknown: 'All Systems Operational' };
+(() => {
+  let LABELS = {
+    up: 'All Systems Operational',
+    degraded: 'Partial Outage',
+    down: 'Major Outage',
+    unknown: 'All Systems Operational'
+  };
+
   function setStatus(key) {
-    var dot = document.getElementById('status-dot');
-    var text = document.getElementById('status-text');
-    if (dot) dot.className = 'status-dot status--' + key;
+    let dot = document.getElementById('status-dot');
+    if (dot) dot.className = `status-dot status--${key}`;
+
+    let text = document.getElementById('status-text');
     if (text) text.textContent = LABELS[key] || LABELS.unknown;
   }
   fetch('https://uptime.openspaceproject.com/api/status-page/heartbeat/all')
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      var beats = data.heartbeatList || {};
-      var ids = Object.keys(beats);
-      if (!ids.length) { setStatus('unknown'); return; }
-      var anyDown = false, anyUp = false;
-      ids.forEach(function (id) {
-        var list = beats[id];
+    .then((r) => { return r.json(); })
+    .then((data) => {
+      let beats = data.heartbeatList || {};
+      let ids = Object.keys(beats);
+      if (!ids.length) {
+        setStatus('unknown');
+        return;
+      }
+
+      let anyDown = false;
+      let anyUp = false;
+      ids.forEach((id) => {
+        let list = beats[id];
         if (!list || !list.length) return;
-        var latest = list[list.length - 1];
+        let latest = list[list.length - 1];
         if (latest.status === 1) anyUp = true;
         else anyDown = true;
       });
@@ -277,6 +260,6 @@
       else if (anyDown) setStatus('down');
       else setStatus('up');
     })
-    .catch(function () { setStatus('unknown'); });
+    .catch(() => { setStatus('unknown'); });
 })();
 </script>

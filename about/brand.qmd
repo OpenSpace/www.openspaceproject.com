@@ -55,12 +55,12 @@ format:
 
       <div class="brand-logo-card brand-logo-card--dark">
         <div class="brand-logo-preview">
-          <img src="/assets/brand/horizontal-logo.webp" alt="OpenSpace horizontal logo, white">
+          <img src="/assets/brand/horizontal_logo.webp" alt="OpenSpace horizontal logo, white">
         </div>
         <div class="brand-logo-meta">
           <p class="brand-logo-name">Horizontal logo</p>
           <p class="brand-logo-use">For dark backgrounds</p>
-          <a class="brand-dl-btn" href="/assets/brand/horizontal-logo.webp" download>Download</a>
+          <a class="brand-dl-btn" href="/assets/brand/horizontal_logo.webp" download>Download</a>
         </div>
       </div>
 

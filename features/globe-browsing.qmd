@@ -53,7 +53,7 @@ format:
 
   <div class="gb-world-item">
     <div class="gb-world-img-wrap">
-      <img src="/assets/images/features/andes-mountains.webp"
+      <img src="/assets/images/features/andes_mountains.webp"
            alt="Andes Mountains rendered in OpenSpace"
            class="gb-world-img">
     </div>
@@ -87,7 +87,7 @@ format:
 
   <div class="gb-world-item">
     <div class="gb-world-img-wrap">
-      <img src="/assets/images/carousel/mars-surface.webp"
+      <img src="/assets/images/carousel/mars_surface.webp"
            alt="HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
            class="gb-world-img">
     </div>
@@ -120,13 +120,13 @@ format:
     </div>
     <div class="gb-split-visual">
       <div class="gb-layer-stack" id="gbLayerStack" role="button" tabindex="0" aria-label="Click to cycle through data layer examples">
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars1.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars2.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars3.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars4.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars5.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars6.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars7.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-1.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-2.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-3.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-4.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-5.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-6.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-7.webp')"></div>
       </div>
       <div class="gb-layer-footer">
         <div class="gb-layer-dots" id="gbLayerDots">

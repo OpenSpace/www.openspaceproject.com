@@ -27,7 +27,7 @@ format:
 
     <div class="ev-item">
       <div class="ev-img-wrap">
-        <img src="/assets/images/venue-cards/Hayden_JWST.webp"
+        <img src="/assets/images/venue-cards/hayden_jwst.webp"
              alt="Hayden Planetarium — venue for OpenSpace community events"
              class="ev-img">
       </div>
@@ -55,7 +55,7 @@ format:
 
     <div class="ev-item ev-item--past">
       <div class="ev-img-wrap">
-        <img src="/assets/images/venue-cards/AMNH_LWD students.webp"
+        <img src="/assets/images/venue-cards/amnh_lwd_students.webp"
              alt="Students at AMNH using OpenSpace"
              class="ev-img">
       </div>

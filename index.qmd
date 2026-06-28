@@ -35,16 +35,16 @@ format:
   <div class="os-container">
     <p class="trusted-label">Built in collaboration with</p>
     <div class="logo-grid">
-      <img src="assets/images/institutions/Adler_white.webp" data-light-src="assets/images/institutions/Adler_Black.webp" alt="Adler Planetarium" class="institution-logo">
-      <img src="assets/images/institutions/AMNH_Primary_WHITE.webp" data-light-src="assets/images/institutions/AMNH_Primary_BLACK.webp" alt="American Museum of Natural History" class="institution-logo">
-<img src="assets/images/institutions/DMNS_white.webp" data-light-src="assets/images/institutions/DMNS_black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
-      <img src="assets/images/institutions/fiske_white.webp" alt="Fiske Planetarium" class="institution-logo">
-      <img src="assets/images/institutions/hmns_white.webp" data-light-src="assets/images/institutions/hmns_black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
-      <img src="assets/images/institutions/MiSci_color.webp" alt="Michigan Science Center" class="institution-logo">
-      <img src="assets/images/institutions/ncmns_white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
-      <img src="assets/images/institutions/tekniska_white.webp" alt="Tekniska museet" class="institution-logo">
+      <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium" class="institution-logo">
+      <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History" class="institution-logo">
+<img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
+      <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium" class="institution-logo">
+      <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
+      <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center" class="institution-logo">
+      <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
+      <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet" class="institution-logo">
       <img src="assets/images/institutions/universeum.webp" alt="Universeum" class="institution-logo">
-      <img src="assets/images/institutions/vcc_white.webp" alt="Visualization Center C" class="institution-logo">
+      <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" class="institution-logo">
     </div>
     <p class="trusted-more"><a href="about/impact.html">Meet the 100+ organizations running OpenSpace →</a></p>
   </div>
@@ -57,7 +57,7 @@ format:
     <div class="venue-grid">
 
       <a href="features/display-support.html#dome-theaters" class="venue-card">
-        <img src="assets/images/venue-cards/Hayden_JWST.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
+        <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
         <div class="venue-body">
           <h3>Planetarium domes</h3>
           <p>Drive fixed and portable domes with multi-projector blending, fisheye, and MPCDI support. Built-in tools for warp, edge-blend, and calibration.</p>
@@ -66,7 +66,7 @@ format:
       </a>
 
       <a href="features/display-support.html#classrooms-desktops" class="venue-card">
-        <img src="assets/images/venue-cards/AMNH_LWD students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
+        <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
         <div class="venue-body">
           <h3>Classrooms</h3>
           <p>Bring the solar system, deep space, and live mission data into any classroom. Free, cross-platform, with curated profiles and lesson-ready content.</p>
@@ -96,7 +96,7 @@ format:
   <div class="content-carousel" id="contentCarousel">
     <div class="content-carousel-track" id="carouselTrack">
 
-      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/mars-surface.webp');">
+      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/mars_surface.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Globe Browsing</p>
@@ -112,7 +112,7 @@ format:
         </div>
       </div>
 
-      <div class="content-slide" style="background-image: url('assets/images/carousel/SDSS.webp');">
+      <div class="content-slide" style="background-image: url('assets/images/carousel/sdss.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Digital Universe</p>
@@ -128,7 +128,7 @@ format:
         </div>
       </a>
 
-      <a class="content-slide" href="features/mission-visualizations.html" style="background-image: url('assets/images/carousel/JWST.webp');">
+      <a class="content-slide" href="features/mission-visualizations.html" style="background-image: url('assets/images/carousel/jwst.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Mission Visualizations</p>
@@ -144,7 +144,7 @@ format:
         </div>
       </a>
 
-      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/seasurfacetemp.webp');">
+      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/sea_surface_temperature.webp');">
         <div class="content-slide-overlay"></div>
         <div class="content-slide-text">
           <p class="content-slide-eyebrow">Globe Browsing</p>
@@ -209,17 +209,17 @@ format:
 
   <div class="funder-marquee">
     <div class="funder-track">
-      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/NASA_Grantee_color_with_outline.webp" alt="NASA Grantee" class="funder-logo"></a>
-      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/wallenberg_white.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
-      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc_white.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
-      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsrådet_white.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
-      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/RS_white.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee" class="funder-logo"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
 
-      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/NASA_Grantee_color_with_outline.webp" alt="NASA Grantee" class="funder-logo"></a>
-      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/wallenberg_white.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
-      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc_white.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
-      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsrådet_white.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
-      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/RS_white.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee" class="funder-logo"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
     </div>
   </div>
 

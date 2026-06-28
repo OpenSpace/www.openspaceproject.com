@@ -10,7 +10,7 @@ format:
 ---
 
 ```{=html}
-<section class="ds-hero" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../../../assets/images/user-meetings/LiU_earth.webp'); background-size: cover; background-position: center;">
+<section class="ds-hero" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../../../assets/images/user-meetings/liu_earth.webp'); background-size: cover; background-position: center;">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
     <span class="bc-sep">›</span>

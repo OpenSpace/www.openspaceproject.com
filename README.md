@@ -16,7 +16,7 @@ File formats and tools used in the webpage:
 
 ## File locations
   - `assets`: Assets used globally for the webpage itself
-    - `assets/images`: General folder for images
+    - `assets/images`: General folder for images. Images should have a naming scheme of separating individual words using `_`. If multiple images are present for a single name, `-1`, `-2`, etc are appended. If a specific image variant is used (black, white, color, ...) it is separate with `--`, for example `logo--white.webp`
       - `assets/images/banner`: Images used for the hero banner section. Images in this folder should be of the aspect ratio φ:1 (1.61803398874989:1)
       - `assets/images/carousel`: Iamges that are automatically rotated through in the main page carousel
       - `assets/images/resources`: Images that will end up automatically on the resources page

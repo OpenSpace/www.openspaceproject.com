@@ -44,7 +44,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="lawrence"
-         style="background-image:url('../../assets/images/use-cases/Lawrence-9.7..23-0013.webp'); background-position:center 40%">
+         style="background-image:url('../../assets/images/use-cases/lawrence.webp'); background-position:center 40%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Lawrence Hall of Science · Berkeley, CA</p>
@@ -53,7 +53,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="houston"
-         style="background-image:url('../../assets/images/use-cases/Houston.webp'); background-position:center 40%">
+         style="background-image:url('../../assets/images/use-cases/houston.webp'); background-position:center 40%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Houston Museum of Natural Science · Houston, TX</p>
@@ -71,7 +71,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="asu"
-         style="background-image:url('../../assets/images/use-cases/Color%20Corrected%20Arizona%20State%20Photo.webp'); background-position:center 40%">
+         style="background-image:url('../../assets/images/use-cases/arizona_state.webp'); background-position:center 40%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Marston Exploration Theater, ASU · Tempe, AZ</p>
@@ -80,7 +80,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="wow-room"
-         style="background-image:url('../../assets/images/use-cases/Wow%20room%20Color%20Corrected.webp'); background-position:center 50%">
+         style="background-image:url('../../assets/images/use-cases/wow_room.webp'); background-position:center 50%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">NASA Goddard CCMC · Greenbelt, MD</p>
@@ -89,7 +89,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="rachel-smith"
-         style="background-image:url('../../assets/images/use-cases/Rachel%20talk.webp'); background-position:center 30%">
+         style="background-image:url('../../assets/images/use-cases/ncmns.webp'); background-position:center 30%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">Dr. Rachel Smith · Raleigh, NC</p>
@@ -98,7 +98,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="hyperwall"
-         style="background-image:url('../../assets/images/use-cases/Rachel%20from%20conference.webp'); background-position:center 40%">
+         style="background-image:url('../../assets/images/use-cases/hyperwall.webp'); background-position:center 40%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">NASA Hyperwall · Conferences nationwide</p>
@@ -151,7 +151,7 @@ resources:
       title: 'OpenSpace Defends the Planet',
       institution: 'B612\'s Asteroid Institute',
       location: '',
-      img: '../../assets/images/use-cases/B612%20asteroids.webp',
+      img: '../../assets/images/use-cases/b612_asteroids.webp',
       imgAlt: 'Visualization of asteroid trajectories near Earth rendered in OpenSpace',
       body: '"Ed Lu wants to save Earth from killer asteroids." A New York Times article (May 31, 2022) describes how Astronaut Lu and the team at B612\'s Asteroid Institute use OpenSpace software within their workflow to follow asteroids\' trajectories, assessing whether danger is posed to Earth. OpenSpace\'s capability to incorporate new data as it emerges allows these scientists and engineers to contextualize and visualize current data developed from their Asteroid Discovery Analysis and Mapping (ADAM) platform.',
       tags: ['Scientific research', 'Planetary defense', 'Live data']
@@ -160,7 +160,7 @@ resources:
       title: 'OpenSpace Gives Visitors Control of the Planetarium Dome',
       institution: 'The Lawrence Hall of Science',
       location: 'Berkeley, California',
-      img: '../../assets/images/use-cases/Lawrence-9.7..23-0013.webp',
+      img: '../../assets/images/use-cases/lawrence.webp',
       imgAlt: 'Visitors at the Lawrence Hall of Science piloting the planetarium dome with OpenSpace',
       body: 'OpenSpace began by focusing on enabling live presentations by professionals in planetarium domes. Now a new program at The Lawrence invites anyone to become "Planetarium Pilots." No experience with the software is needed. By tapping on a tablet, visitors can take themselves (and everyone watching) to the moon and back, all over the universe, or anywhere in between. Voice-overs explain the space science behind the visuals as visitors fly around space.',
       tags: ['Planetarium', 'Public engagement', 'Visitor-led exploration']
@@ -169,7 +169,7 @@ resources:
       title: 'Gaming with OpenSpace',
       institution: 'Houston Museum of Natural Science',
       location: 'Houston, Texas',
-      img: '../../assets/images/use-cases/Houston.webp',
+      img: '../../assets/images/use-cases/houston.webp',
       imgAlt: 'Visitors at the Houston Museum of Natural Science playing an OpenSpace-based space science game',
       body: 'In Texas, OpenSpace videos and photos form the backbone of HMNS\'s space science game lab. The lab has a family focus, fostering increased social engagement through the room\'s fifteen-plus stations and seating. In addition to families, the lab attracts visitors of all ages looking for a quiet space of collaborative learning. For kids and by kids — high school interns programmed the games using content they captured themselves within OpenSpace.',
       tags: ['K–12 education', 'Games', 'Family learning']
@@ -196,7 +196,7 @@ resources:
       title: 'Step Into the Wow Room',
       institution: 'Goddard\'s Community Coordinated Modelling Center',
       location: 'Greenbelt, Maryland',
-      img: '../../assets/images/use-cases/Wow%20room%20Color%20Corrected.webp',
+      img: '../../assets/images/use-cases/wow_room.webp',
       imgAlt: 'Visitors seated in the Wow Room at NASA Goddard CCMC watching an OpenSpace visualization on a curved screen',
       body: 'The Community Coordinated Modelling Center (CCMC) uses OpenSpace in their "Wow Room," a space at the Center for engaging high-profile guests — whether they are national policy makers or senior NASA leadership. Four projectors and a curved screen create an immersive experience that helps make the case for the importance of supporting space and Earth science research.',
       tags: ['Policy outreach', 'Immersive display', 'NASA']
@@ -205,7 +205,7 @@ resources:
       title: 'To Infinity and Beyond: OpenSpace as a Powerful Outreach Tool',
       institution: 'Dr. Rachel Smith — Super User',
       location: 'Raleigh, North Carolina',
-      img: '../../assets/images/use-cases/Rachel%20talk.webp',
+      img: '../../assets/images/use-cases/ncmns.webp',
       imgAlt: 'Dr. Rachel Smith giving a presentation with OpenSpace visualizations',
       body: 'Dr. Rachel Smith uses OpenSpace in research, teaching, and museum exhibitions. OpenSpace\'s data-rich visualizations enable Dr. Smith\'s compelling outreach to a wide variety of audiences including retirement communities, science conferences, and public policy groups.',
       tags: ['Super User', 'Research', 'Public outreach']
@@ -214,7 +214,7 @@ resources:
       title: 'Talking Peer-to-Peer',
       institution: 'The NASA Hyperwall',
       location: 'Scientific conferences nationwide',
-      img: '../../assets/images/use-cases/Rachel%20from%20conference.webp',
+      img: '../../assets/images/use-cases/hyperwall.webp',
       imgAlt: 'A scientist presenting OpenSpace data visualizations at a conference',
       body: 'Scientists regularly share their work using OpenSpace on the NASA Hyperwall at conferences — including the Geological Society of America, American Geophysical Union, and American Astronomical Society. OpenSpace\'s impressive visualizations and the ability to interact with those visualizations supports in-depth peer discussions in conference settings.',
       tags: ['Scientific conferences', 'NASA Hyperwall', 'Peer discussion']

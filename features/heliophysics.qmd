@@ -15,7 +15,7 @@ format:
     <span class="bc-sep">›</span>
     <span class="bc-current">Heliophysics</span>
   </nav>
-  <div class="sw-hero-bg" style="background-image:url('../assets/images/features/bastilleday2.webp')"></div>
+  <div class="sw-hero-bg" style="background-image:url('../assets/images/features/bastilleday=2.webp')"></div>
   <div class="sw-hero-overlay"></div>
   <div class="sw-hero-content">
     <h1 class="sw-hero-title">The Sun's reach, visualized in real data</h1>
@@ -52,7 +52,7 @@ format:
 
   <div class="sw-event-item">
     <div class="sw-event-img-wrap">
-      <img src="/assets/images/features/bastilleday.webp"
+      <img src="/assets/images/features/bastilleday-1.webp"
            alt="Bastille Day 2000 solar storm visualization in OpenSpace"
            class="sw-event-img">
     </div>
@@ -136,9 +136,9 @@ format:
     </div>
     <div class="gb-split-visual">
       <div class="gb-layer-stack" id="swSdoStack" role="button" tabindex="0" aria-label="Click to cycle through SDO wavelength examples">
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/SDO1.webp'); background-size: 160%;"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/SDO2.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/SDO3.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo-1.webp'); background-size: 160%;"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo-2.webp')"></div>
+        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo-3.webp')"></div>
       </div>
       <div class="gb-layer-footer">
         <div class="gb-layer-dots" id="swSdoDots">

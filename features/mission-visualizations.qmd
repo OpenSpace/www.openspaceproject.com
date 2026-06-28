@@ -127,7 +127,7 @@ format:
 
   <div class="mv-mission-item">
     <div class="mv-mission-img-wrap">
-      <img src="/assets/images/carousel/mars-surface.webp"
+      <img src="/assets/images/carousel/mars_surface.webp"
            alt="Mars surface from HiRISE — Perseverance landing site terrain"
            class="mv-mission-img">
     </div>

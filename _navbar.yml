@@ -1,7 +1,7 @@
 website:
   navbar:
     title: false
-    logo: "/assets/brand/horizontal-logo.webp"
+    logo: "/assets/brand/horizontal_logo.webp"
     logo-alt: "OpenSpace"
     # background:
     # foreground:

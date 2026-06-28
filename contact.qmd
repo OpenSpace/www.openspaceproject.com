@@ -23,7 +23,6 @@ format:
 
 <div class="contact-body">
 
-  <!-- ── Form ── -->
   <div class="contact-form-wrap">
     <h2>Send a message</h2>
     <form id="contact-form" novalidate>
@@ -49,7 +48,6 @@ format:
     </form>
   </div>
 
-  <!-- ── Slack sidebar ── -->
   <div class="contact-slack-wrap">
     <h2>Also on Slack</h2>
     <p>For real-time help, the OpenSpace Slack is active with community members, educators, and developers.</p>
@@ -59,16 +57,16 @@ format:
 </div>
 
 <script>
-(function () {
-  var form = document.getElementById('contact-form');
+(() => {
+  let form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
-    var errorEl = document.getElementById('cf-error');
+    let errorEl = document.getElementById('cf-error');
 
-    var email   = form.querySelector('#cf-email').value.trim();
-    var message = form.querySelector('#cf-message').value.trim();
+    let email = form.querySelector('#cf-email').value.trim();
+    let message = form.querySelector('#cf-message').value.trim();
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       errorEl.textContent = 'Please enter a valid email address.';
@@ -82,61 +80,13 @@ format:
     }
     errorEl.hidden = true;
 
-    var name    = form.querySelector('#cf-name').value.trim();
-    var subject = form.querySelector('#cf-subject').value.trim() || 'OpenSpace inquiry';
-    var body    = (name ? 'From: ' + name + '\n' : '') +
-                  'Email: ' + email + '\n\n' +
-                  message;
+    let name = form.querySelector('#cf-name').value.trim();
+    let subject = form.querySelector('#cf-subject').value.trim() || 'OpenSpace inquiry';
+    let body = `${(name ? `From: ${name}\n` : '')}Email: ${email}\n\n${message}`;
 
     window.location.href = 'mailto:support@openspaceproject.com' +
-      '?subject=' + encodeURIComponent(subject) +
-      '&body='    + encodeURIComponent(body);
+      `?subject=${encodeURIComponent(subject)}` + `&body=${encodeURIComponent(body)}`;
   });
-})();
-</script>
-
-<script>
-(function () {
-  var ref = document.referrer;
-  if (!ref) return;
-  var bc = document.querySelector('.page-breadcrumb');
-  if (!bc) return;
-
-  var trails = [
-    { pattern: /\/about\/about-openspace/, section: 'About', page: 'About OpenSpace', pageHref: '/about/about-openspace.html' },
-    { pattern: /\/about\/brand/,           section: 'About', page: 'Brand & Attribution', pageHref: '/about/brand.html' },
-    { pattern: /\/about\/team/,            section: 'About', page: 'Team',           pageHref: '/about/team.html' },
-    { pattern: /\/about\/partners/,        section: 'About', page: 'Partners',       pageHref: '/about/partners.html' },
-    { pattern: /\/about\/impact/,          section: 'About', page: 'Impact',         pageHref: '/about/impact.html' },
-    { pattern: /\/about\/research/,        section: 'About', page: 'Research',       pageHref: '/about/research.html' },
-    { pattern: /\/about\/publications/,    section: 'About', page: 'Publications',   pageHref: '/about/publications.html' },
-    { pattern: /\/community\/use-cases/,   section: 'Community', page: 'Use Cases',  pageHref: '/community/use-cases.html' },
-    { pattern: /\/community\/events/,      section: 'Community', page: 'Events',     pageHref: '/community/events/' },
-    { pattern: /\/community\/user-meetings/, section: 'Community', page: 'Annual Meetings', pageHref: '/community/user-meetings/' },
-    { pattern: /\/community\/slack/,       section: 'Community', page: 'Slack',      pageHref: '/community/slack.html' },
-    { pattern: /\/features\/display-support/,        section: 'Features', page: 'Display Support',        pageHref: '/features/display-support.html' },
-    { pattern: /\/features\/globe-browsing/,         section: 'Features', page: 'Globe Browsing',         pageHref: '/features/globe-browsing.html' },
-    { pattern: /\/features\/mission-visualizations/, section: 'Features', page: 'Mission Visualizations', pageHref: '/features/mission-visualizations.html' },
-    { pattern: /\/features\/heliophysics/,            section: 'Features', page: 'Heliophysics',            pageHref: '/features/heliophysics.html' },
-    { pattern: /\/install\/version-0220/,  section: 'Install', page: 'Version 0.22.0', pageHref: '/install/version-0220.html' },
-    { pattern: /\/install\/previous/,      section: 'Install', page: 'Previous Versions', pageHref: '/install/previous-versions.html' },
-  ];
-
-  for (var i = 0; i < trails.length; i++) {
-    var t = trails[i];
-    if (t.pattern.test(ref)) {
-      var midSpan = t.pageHref
-        ? '<span class="bc-parent"><a href="' + t.pageHref + '">' + t.page + '</a></span>'
-        : '<span class="bc-parent">' + t.page + '</span>';
-      bc.innerHTML =
-        '<span class="bc-parent">' + t.section + '</span>' +
-        '<span class="bc-sep">›</span>' +
-        midSpan +
-        '<span class="bc-sep">›</span>' +
-        '<span class="bc-current">Contact</span>';
-      return;
-    }
-  }
 })();
 </script>
 ```

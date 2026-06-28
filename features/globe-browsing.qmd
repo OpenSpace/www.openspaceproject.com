@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="gb-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Features</span>
@@ -25,7 +24,6 @@ format:
 </section>
 
 
-<!-- ── Intro + Stats ─────────────────────────────────────── -->
 <div class="gb-section">
   <div class="gb-intro-row">
     <div class="gb-intro-text-col">
@@ -50,7 +48,6 @@ format:
   </div>
 </div>
 
-<!-- ── Worlds ──────────────────────────────────────────────── -->
 <div class="gb-worlds-section">
   <h2 class="gb-section-h2">Featured worlds</h2>
 
@@ -83,7 +80,7 @@ format:
         <span class="gb-world-label">Moon</span>
       </div>
       <h3 class="gb-world-heading">The Moon in detail</h3>
-      <p class="gb-world-tagline">LRO &middot; LOLA &middot; Kaguya</p>
+      <p class="gb-world-tagline">LRO · LOLA · Kaguya</p>
       <p class="gb-world-desc">Visit Apollo landing sites, trace the rilles of Vallis Schröteri, or zoom to the meter-scale surface texture of the lunar highlands. LRO imagery and LOLA elevation data render the Moon at full mission resolution.</p>
     </div>
   </div>
@@ -100,14 +97,13 @@ format:
         <span class="gb-world-label">Mars</span>
       </div>
       <h3 class="gb-world-heading">Mars at full resolution</h3>
-      <p class="gb-world-tagline">HiRISE &middot; MOLA &middot; CTX</p>
+      <p class="gb-world-tagline">HiRISE · MOLA · CTX</p>
       <p class="gb-world-desc">Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application. HiRISE surface imagery and MOLA elevation data compose a continuous view from orbit to terrain.</p>
     </div>
   </div>
 
 </div>
 
-<!-- ── Data layers ────────────────────────────────────────── -->
 <div class="gb-section gb-section-alt">
   <div class="gb-split">
     <div class="gb-split-text">
@@ -149,37 +145,38 @@ format:
 </div>
 
 <script>
-(function () {
-  var stack = document.getElementById('gbLayerStack');
+(() => {
+  let stack = document.getElementById('gbLayerStack');
   if (!stack) return;
-  var cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
-  var dots  = Array.from(document.querySelectorAll('#gbLayerDots .gb-layer-dot'));
-  var total = cards.length;
-  var current = 0;
-  var states = ['gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden'];
+  let cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
+  let dots = Array.from(document.querySelectorAll('#gbLayerDots .gb-layer-dot'));
+  let total = cards.length;
+  let current = 0;
+  let states = [ 'gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden' ];
 
   function render() {
-    cards.forEach(function (card, i) {
-      states.forEach(function (s) { card.classList.remove(s); });
-      var offset = (i - current + total) % total;
+    cards.forEach((card, i) => {
+      states.forEach((s) => { card.classList.remove(s); });
+      let offset = (i - current + total) % total;
       card.classList.add(states[Math.min(offset, states.length - 1)]);
     });
-    dots.forEach(function (dot, i) {
+    dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === current);
     });
   }
 
-  stack.addEventListener('click', function () {
+  stack.addEventListener('click', () => {
     current = (current + 1) % total;
     render();
   });
 
-  stack.addEventListener('keydown', function (e) {
+  stack.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
       e.preventDefault();
       current = (current + 1) % total;
       render();
-    } else if (e.key === 'ArrowLeft') {
+    }
+    else if (e.key === 'ArrowLeft') {
       e.preventDefault();
       current = (current - 1 + total) % total;
       render();
@@ -190,7 +187,6 @@ format:
 })();
 </script>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Start exploring planetary surfaces</h2>

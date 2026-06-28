@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="sw-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Features</span>
@@ -24,7 +23,6 @@ format:
   </div>
 </section>
 
-<!-- ── What is space weather ──────────────────────────────── -->
 <div class="sw-section">
   <div class="sw-intro-grid">
     <div class="sw-intro-text">
@@ -49,7 +47,6 @@ format:
   </div>
 </div>
 
-<!-- ── Heliophysics profiles ──────────────────────────────── -->
 <div class="sw-events-section">
   <h2 class="sw-section-h2">Heliophysics profiles</h2>
 
@@ -65,7 +62,7 @@ format:
         <span class="sw-event-tag">Historical</span>
       </div>
       <h3 class="sw-event-name">Bastille Day 2000</h3>
-      <p class="sw-event-tagline">X5.7 solar flare &middot; July 14, 2000</p>
+      <p class="sw-event-tagline">X5.7 solar flare · July 14, 2000</p>
       <p class="sw-event-desc">One of the most powerful solar storms of Solar Cycle 23 — an X5.7 flare and fast CME that triggered a severe geomagnetic storm, disrupted satellites, and produced aurora visible as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.</p>
       <div class="sw-facts-row">
         <span class="sw-fact">X5.7 flare classification</span>
@@ -87,7 +84,7 @@ format:
         <span class="sw-event-tag">Historical</span>
       </div>
       <h3 class="sw-event-name">Solar Storm 2012</h3>
-      <p class="sw-event-tagline">Near-miss Carrington event &middot; July 23, 2012</p>
+      <p class="sw-event-tagline">Near-miss Carrington event · July 23, 2012</p>
       <p class="sw-event-desc">A double CME eruption that reached a speed of 2,500 km/s — among the fastest ever recorded — narrowly missed Earth by one week. Had it arrived, scientists estimate it could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.</p>
       <div class="sw-facts-row">
         <span class="sw-fact">CME speed ~2,500 km/s</span>
@@ -109,8 +106,8 @@ format:
         <span class="sw-event-tag sw-event-tag-live">Live</span>
       </div>
       <h3 class="sw-event-name">Today's Sun</h3>
-      <p class="sw-event-tagline">Real-time solar conditions &middot; updated continuously</p>
-      <p class="sw-event-desc">OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun&ndash;Earth system as it is right now.</p>
+      <p class="sw-event-tagline">Real-time solar conditions · updated continuously</p>
+      <p class="sw-event-desc">OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun–Earth system as it is right now.</p>
       <div class="sw-facts-row">
         <span class="sw-fact">Live data from NOAA SWPC</span>
         <span class="sw-fact">ENLIL solar wind model</span>
@@ -122,7 +119,6 @@ format:
 
 </div>
 
-<!-- ── SDO wavelengths ─────────────────────────────────────── -->
 <div class="gb-section gb-section-alt">
   <div class="gb-split">
     <div class="gb-split-text">
@@ -157,37 +153,38 @@ format:
 </div>
 
 <script>
-(function () {
-  var stack = document.getElementById('swSdoStack');
+(() => {
+  let stack = document.getElementById('swSdoStack');
   if (!stack) return;
-  var cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
-  var dots  = Array.from(document.querySelectorAll('#swSdoDots .gb-layer-dot'));
-  var total = cards.length;
-  var current = 0;
-  var states = ['gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden'];
+  let cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
+  let dots = Array.from(document.querySelectorAll('#swSdoDots .gb-layer-dot'));
+  let total = cards.length;
+  let current = 0;
+  let states = ['gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden'];
 
   function render() {
-    cards.forEach(function (card, i) {
-      states.forEach(function (s) { card.classList.remove(s); });
-      var offset = (i - current + total) % total;
+    cards.forEach((card, i) => {
+      states.forEach((s) => { card.classList.remove(s); });
+      let offset = (i - current + total) % total;
       card.classList.add(states[Math.min(offset, states.length - 1)]);
     });
-    dots.forEach(function (dot, i) {
+    dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === current);
     });
   }
 
-  stack.addEventListener('click', function () {
+  stack.addEventListener('click', () => {
     current = (current + 1) % total;
     render();
   });
 
-  stack.addEventListener('keydown', function (e) {
+  stack.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
       e.preventDefault();
       current = (current + 1) % total;
       render();
-    } else if (e.key === 'ArrowLeft') {
+    }
+    else if (e.key === 'ArrowLeft') {
       e.preventDefault();
       current = (current - 1 + total) % total;
       render();
@@ -198,7 +195,6 @@ format:
 })();
 </script>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">See space weather in action</h2>

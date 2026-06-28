@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="dl-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Install</span>
@@ -17,7 +16,7 @@ format:
     <span class="bc-current">Version 0.22.0</span>
   </nav>
   <div class="dl-hero-inner">
-    <span class="dl-version-badge">v0.22.0 &mdash; Latest Release</span>
+    <span class="dl-version-badge">v0.22.0 — Latest Release</span>
     <h1 class="dl-hero-title">Explore the universe.<br>Free.</h1>
     <p class="dl-hero-lede">Open-source astrovisualization software built for planetarium domes, classrooms, and personal computers.</p>
     <div class="dl-hero-actions">
@@ -30,11 +29,10 @@ format:
         View release notes on GitHub
       </a>
     </div>
-    <p class="dl-hero-platforms">Windows &middot; Linux (source)</p>
+    <p class="dl-hero-platforms">Windows · Linux (source)</p>
   </div>
 </section>
 
-<!-- ── Platforms ─────────────────────────────────────────── -->
 <div class="dl-platforms-section">
   <p class="dl-section-heading">Platforms</p>
   <div class="dl-platform-grid">
@@ -59,7 +57,7 @@ format:
     <div class="dl-platform-card">
       <div class="dl-platform-icon"><iconify-icon icon="fa7-brands:linux"></iconify-icon></div>
       <h3 class="dl-platform-name">Linux</h3>
-      <p class="dl-platform-desc">No pre-compiled binary for Linux. Source code is freely available on GitHub &mdash; build instructions are in the documentation.</p>
+      <p class="dl-platform-desc">No pre-compiled binary for Linux. Source code is freely available on GitHub — build instructions are in the documentation.</p>
       <div class="dl-platform-actions">
         <a class="dl-platform-btn dl-platform-btn--glass" href="https://github.com/OpenSpace/OpenSpace" target="_blank" rel="noopener">
           View source on GitHub
@@ -69,11 +67,9 @@ format:
         </a>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- ── System requirements ───────────────────────────────── -->
 <div class="dl-reqs-section">
   <p class="dl-section-heading">System requirements</p>
   <div class="dl-reqs-grid">
@@ -125,11 +121,9 @@ format:
         <span class="dl-reqs-value">Windows 10 or newer</span>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- ── Notes ─────────────────────────────────────────────── -->
 <div class="dl-notes-section">
   <p class="dl-section-heading">Before you install</p>
   <div class="dl-notes-grid">
@@ -141,7 +135,7 @@ format:
 
     <div class="dl-note">
       <h4 class="dl-note-title">Network access</h4>
-      <p class="dl-note-body">OpenSpace will request internet access on first launch &mdash; a standard Windows security prompt. Granting permission is required for full functionality, including the user interface and live data features.</p>
+      <p class="dl-note-body">OpenSpace will request internet access on first launch — a standard Windows security prompt. Granting permission is required for full functionality, including the user interface and live data features.</p>
     </div>
 
     <div class="dl-note">
@@ -152,7 +146,6 @@ format:
   </div>
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Need help getting started?</h2>

@@ -1,5 +1,5 @@
 ---
-pagetitle: "About OpenSpace &mdash; The project, its origins, and its future"
+pagetitle: "About OpenSpace — The project, its origins, and its future"
 description-meta: "OpenSpace is an open-source astrovisualization software project developed by an international consortium of museums, universities, and research institutions, supported by NASA."
 format:
   html:
@@ -17,7 +17,7 @@ format:
   </nav>
   <div class="os-container narrow">
     <h1 class="feature-title-dark">An open-source universe</h1>
-    <p class="use-cases-lede">OpenSpace makes the latest data from NASA missions, observatories, and research institutions explorable by anyone &mdash; in planetariums, classrooms, and on personal computers.</p>
+    <p class="use-cases-lede">OpenSpace makes the latest data from NASA missions, observatories, and research institutions explorable by anyone — in planetariums, classrooms, and on personal computers.</p>
   </div>
 </section>
 
@@ -25,16 +25,16 @@ format:
   <div class="os-container narrow">
 
     <h2 class="about-h2">What is OpenSpace?</h2>
-    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe &mdash; with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub. </p>
+    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe — with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub. </p>
 
     <h2 class="about-h2">Our mission</h2>
-    <p>OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools &mdash; far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.</p>
-    <p>The project also serves the research community itself. Scientists use OpenSpace to communicate findings and collaborate across institutions.</p>
+    <p>OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools — far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.</p>
+    <p>The project also serves the research community itself. Scientists use OpenSpace to discover new aspects about our universe and can then quickly communicate these findings and collaborate across institutions.</p>
+    <p>Providing OpenSpace to the world as a free and open-source software allows the largest number of people to benefit from these visualizations to reach the goal of spreading the beauty of the universe and how were able to figure it all out</p>
 
     <h2 class="about-h2">How it began</h2>
-    <p>OpenSpace started in 2010 as a collaboration between the American Museum of Natural History (AMNH) in New York, Link&ouml;ping University in Sweden. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Link&ouml;ping and to share what emerged with the rest of the world.</p>
-    <p>Early work focused on dome rendering and globe browsing &mdash; the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds.</p>
-
+    <p>OpenSpace started in 2013 as a collaboration between the American Museum of Natural History (AMNH) in New York, Linköping University in Sweden, and the Community Coordinated Modelling Center at NASA Goddard. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Linköping and the ongoing heliophysics resaearch at Goddard to be able to share what emerged with the rest of the world.</p>
+    <p>Early work focused on visualizing volumetric heliophysics datasets and mission visualization in dome theaters, with the New Horizons flyby at Pluto in July 2015 being among the first public releases of the software. Later, other missions (watching Rosetta orbit comet 67P), globe browsing, and large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds followed, including the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data.</p>
   </div>
 </section>
 

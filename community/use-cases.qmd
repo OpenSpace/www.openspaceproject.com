@@ -11,7 +11,6 @@ resources:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="uc-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
@@ -24,15 +23,13 @@ resources:
   </div>
 </section>
 
-<!-- ── Photo grid ────────────────────────────────────────── -->
 <div class="uc-grid-section">
   <div class="uc-grid">
-
-        <div class="uc-card" role="button" tabindex="0" data-case="museum-life-science"
+    <div class="uc-card" role="button" tabindex="0" data-case="museum-life-science"
           style="background-image:url('/assets/images/use-cases/mols_tiltatable.webp'); background-position:center 50%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
-        <p class="uc-card-meta">Museum of Life &amp; Science · Durham, NC</p>
+        <p class="uc-card-meta">Museum of Life & Science · Durham, NC</p>
         <h3 class="uc-card-title">Real Time Planet Exploration at Full Tilt</h3>
       </div>
     </div>
@@ -108,13 +105,9 @@ resources:
         <h3 class="uc-card-title">Talking Peer-to-Peer</h3>
       </div>
     </div>
-
-    
-
   </div>
 </div>
 
-<!-- ── Modal ─────────────────────────────────────────────── -->
 <div class="uc-modal" id="ucModal" aria-modal="true" role="dialog" aria-label="Use case detail" aria-hidden="true">
   <div class="uc-modal-backdrop"></div>
   <div class="uc-modal-box">
@@ -131,7 +124,6 @@ resources:
   </div>
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Add your story</h2>
@@ -227,7 +219,6 @@ resources:
       body: 'Scientists regularly share their work using OpenSpace on the NASA Hyperwall at conferences — including the Geological Society of America, American Geophysical Union, and American Astronomical Society. OpenSpace\'s impressive visualizations and the ability to interact with those visualizations supports in-depth peer discussions in conference settings.',
       tags: ['Scientific conferences', 'NASA Hyperwall', 'Peer discussion']
     },
-    
   };
 
   var modal     = document.getElementById('ucModal');

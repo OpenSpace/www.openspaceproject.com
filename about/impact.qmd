@@ -1,6 +1,6 @@
 ---
 pagetitle: "Impact — OpenSpace"
-description-meta: "OpenSpace's global reach — where it runs, NASA annual reports, and how to get involved."
+description-meta: "OpenSpace's global reach — where it runs, annual reports, and how to get involved."
 format:
   html:
     page-layout: full
@@ -24,10 +24,10 @@ format:
   </div>
 </section>
 
-<!-- ── Startup map ─────────────────────────────────────── -->
+<!-- Startup map -->
 <div class="impact-section">
   <h2 class="impact-section-heading">Where OpenSpace runs</h2>
-  <p class="impact-section-lede">Every point on this map represents a unique location where OpenSpace has been started. Startup data is collected anonymously and powers our NASA reporting.</p>
+  <p class="impact-section-lede">Every point on this map represents a unique location where OpenSpace has been started. Startup data is collected anonymously and powers our reporting.</p>
 
   <div id="impact-startup-map"></div>
 
@@ -37,7 +37,7 @@ format:
   </div>
 </div>
 
-<!-- ── Annual reports ──────────────────────────────────── -->
+<!-- Annual reports -->
 <div class="impact-section impact-section-alt">
   <h2 class="impact-section-heading">Annual reports</h2>
   <p class="impact-section-lede">OpenSpace is funded in part by NASA's Science Activation Program under award No. NNX16AB93A. We publish a report each year documenting project progress, reach, and outcomes.</p>
@@ -80,7 +80,7 @@ format:
   </p>
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────── -->
+<!-- CTA -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Using OpenSpace? Tell us about it.</h2>
@@ -91,7 +91,7 @@ format:
   </div>
 </section>
 
-<!-- ── Leaflet + map init ──────────────────────────────── -->
+<!-- Leaflet + map init -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 function initImpactMap() {
@@ -113,8 +113,8 @@ function initImpactMap() {
 
   var accent = getComputedStyle(document.documentElement).getPropertyValue('--os-accent').trim() || '#a2e7fb';
 
-  (data.places || []).forEach(function (place) {
-    var r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
+  (data.places || []).forEach(place => {
+    let r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
     L.circleMarker([place.lat, place.lng], {
       radius: r,
       color: accent,
@@ -123,11 +123,11 @@ function initImpactMap() {
       weight: 1,
       opacity: 0.75
     }).addTo(leafletMap).bindPopup(
-      '<strong style="color:#000">' + place.total + '</strong> launch' + (place.total !== 1 ? 'es' : '')
+      `<strong style="color:#000">${place.total}</strong> launch${(place.total !== 1 ? 'es' : '')}`
     );
   });
 
-  setTimeout(function () { leafletMap.invalidateSize(); }, 200);
+  setTimeout(() => { leafletMap.invalidateSize(); }, 200);
 }
 </script>
 <script src="https://status.openspaceproject.com/data.js" async onload="initImpactMap()"></script>

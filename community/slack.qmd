@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="slack-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
@@ -18,19 +17,18 @@ format:
   </nav>
   <div class="slack-hero-content">
     <h1 class="slack-hero-title">Where OpenSpace users connect</h1>
-    <p class="slack-hero-lede">The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help &mdash; in real time.</p>
+    <p class="slack-hero-lede">The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help — in real time.</p>
     <div class="slack-hero-actions">
       <a class="btn-primary-os" href="https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w" target="_blank" rel="noopener">Join the Slack</a>
     </div>
   </div>
 </section>
 
-<!-- ── Intro ──────────────────────────────────────────────── -->
 <div class="slack-section">
   <div class="slack-intro-grid">
     <div class="slack-intro-text">
       <h2 class="slack-h2">A community built for users</h2>
-      <p class="slack-prose">Whether you run a planetarium dome, teach with OpenSpace, contribute code, or are just getting started &mdash; Slack is the fastest way to get answers, share your work, and connect with the people who know OpenSpace best.</p>
+      <p class="slack-prose">Whether you run a planetarium dome, teach with OpenSpace, contribute code, or are just getting started — Slack is the fastest way to get answers, share your work, and connect with the people who know OpenSpace best.</p>
       <p class="slack-prose">Ask questions, report issues, share screenshots of your work, stay current on new releases, and get direct support from the core team and experienced community members worldwide.</p>
     </div>
     <div class="slack-highlights">
@@ -50,7 +48,6 @@ format:
   </div>
 </div>
 
-<!-- ── Channels ──────────────────────────────────────────── -->
 <div class="slack-channels-section">
   <h2 class="slack-h2">Find your channel</h2>
   <p class="slack-channels-lede">The workspace is organized into focused channels. Here are some of the best places to start.</p>
@@ -97,7 +94,7 @@ format:
     </div>
 
     <div class="slack-channel-group">
-      <p class="slack-channel-group-label">Share &amp; inspire</p>
+      <p class="slack-channel-group-label">Share & inspire</p>
       <div class="slack-channel-item">
         <span class="slack-channel-name">#showcase</span>
         <span class="slack-channel-desc">Show off your OpenSpace work</span>
@@ -139,11 +136,10 @@ format:
   </div>
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Ready to join?</h2>
-    <p class="section-lede">The OpenSpace community is open to everyone &mdash; users, educators, scientists, and developers at any experience level.</p>
+    <p class="section-lede">The OpenSpace community is open to everyone — users, educators, scientists, and developers at any experience level.</p>
     <div class="hero-actions">
       <a class="btn-primary-os slack-cta-btn" href="https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w" target="_blank" rel="noopener">Join the Slack</a>
     </div>

@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="about-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
@@ -22,7 +21,6 @@ format:
   </div>
 </section>
 
-<!-- ── Upcoming events ───────────────────────────────────── -->
 <section class="ev-section about-body-section">
   <div class="os-container narrow">
     <h2 class="about-h2" style="margin-top:0">Upcoming</h2>
@@ -40,7 +38,7 @@ format:
         <h3 class="ev-title">
           <a href="2026-07%20Monthly%20Meeting/" class="ev-title-link">July OpenSpace Monthly Meeting</a>
         </h3>
-        <p class="ev-time">Monday, July 13, 2026 &middot; 3:00&ndash;4:00 PM EST</p>
+        <p class="ev-time">Monday, July 13, 2026 · 3:00–4:00 PM EST</p>
         <p class="ev-desc">Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
         <div class="ev-actions">
           <a class="ev-btn-primary ev-action-link" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
@@ -51,7 +49,6 @@ format:
   </div>
 </section>
 
-<!-- ── Past events ────────────────────────────────────────── -->
 <section class="ev-section ev-section--past">
   <div class="os-container narrow">
     <h2 class="about-h2" style="margin-top:0">Past events</h2>
@@ -69,7 +66,7 @@ format:
         <h3 class="ev-title">
           <a href="2025-12%20Monthly%20Meeting/" class="ev-title-link">December OpenSpace Monthly Meeting</a>
         </h3>
-        <p class="ev-time">Monday, December 8, 2025 &middot; 3:00&ndash;4:00 PM EST</p>
+        <p class="ev-time">Monday, December 8, 2025 · 3:00–4:00 PM EST</p>
         <p class="ev-desc">Software development updates, community feedback sessions, and an opportunity to showcase recent OpenSpace projects and discoveries.</p>
       </div>
     </div>
@@ -87,7 +84,7 @@ format:
         <h3 class="ev-title">
           <a href="2025-11%20Monthly%20Meeting/" class="ev-title-link">November OpenSpace Monthly Meeting</a>
         </h3>
-        <p class="ev-time">Monday, November 10, 2025 &middot; 3:00&ndash;4:00 PM EST</p>
+        <p class="ev-time">Monday, November 10, 2025 · 3:00–4:00 PM EST</p>
         <p class="ev-desc">Software development updates, community feedback sessions, and an opportunity to showcase recent OpenSpace projects and discoveries.</p>
       </div>
     </div>

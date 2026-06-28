@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="tut-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Resources</span>
@@ -22,7 +21,6 @@ format:
   </div>
 </section>
 
-<!-- ── Video grid ─────────────────────────────────────────── -->
 <div class="tut-section">
   <h2 class="tut-section-heading">Getting started · v0.21.0</h2>
 
@@ -76,7 +74,6 @@ format:
   </div>
 </div>
 
-<!-- ── More resources ─────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">More learning resources</h2>

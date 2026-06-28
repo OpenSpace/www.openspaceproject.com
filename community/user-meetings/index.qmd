@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="about-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
@@ -22,14 +21,12 @@ format:
   </div>
 </section>
 
-<!-- ── Intro ──────────────────────────────────────────────── -->
 <section class="about-body-section">
   <div class="os-container narrow">
-    <p>The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It&rsquo;s where the project&rsquo;s direction gets shaped &mdash; by the people building with it.</p>
+    <p>The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.</p>
   </div>
 </section>
 
-<!-- ── Meeting list ───────────────────────────────────────── -->
 <div class="um-section">
   <div class="os-container">
 
@@ -47,8 +44,8 @@ format:
         <h3 class="um-title">
           <a href="2026/" class="um-title-link">2026 Annual User Meeting</a>
         </h3>
-        <p class="um-location">August 26&ndash;28 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
-        <p class="um-desc">Join the OpenSpace community in Norrk&ouml;ping for three days of demos, training sessions, hands-on workshops, and conversation about where the project is headed. Registration is free.</p>
+        <p class="um-location">August 26–28 · Visualization Center C, Norrköping, Sweden</p>
+        <p class="um-desc">Join the OpenSpace community in Norrköping for three days of demos, training sessions, hands-on workshops, and conversation about where the project is headed. Registration is free.</p>
         <a href="2026/" class="um-link um-action-link">View details &rarr;</a>
       </div>
     </div>
@@ -66,23 +63,22 @@ format:
         <h3 class="um-title">
           <a href="2025/" class="um-title-link">2025 Annual User Meeting</a>
         </h3>
-        <p class="um-location">July 31 &ndash; August 1 &middot; American Museum of Natural History, New York</p>
+        <p class="um-location">July 31 – August 1 · American Museum of Natural History, New York</p>
         <p class="um-desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
-        <a href="2025/" class="um-link um-action-link">See recap &rarr;</a>
+        <a href="2025/recap" class="um-link um-action-link">See recap &rarr;</a>
       </div>
     </div>
 
   </div>
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Stay in the loop</h2>
     <p class="section-lede">Sign up to be notified when registration opens and to receive session recaps after each meeting.</p>
     <div class="hero-actions">
-      <a class="btn-primary-os" href="../../contact.qmd">Get notified</a>
-      <a class="btn-ghost-os" href="../events/index.qmd">Community events</a>
+      <a class="btn-primary-os" href="/contact.qmd">Get notified</a>
+      <a class="btn-ghost-os" href="/community/events/index.qmd">Community events</a>
     </div>
   </div>
 </section>

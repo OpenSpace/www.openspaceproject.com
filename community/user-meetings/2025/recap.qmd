@@ -19,7 +19,7 @@ format:
   </nav>
   <div class="os-container narrow">
     <h1 class="feature-title-dark">2025 Annual User Meeting</h1>
-    <p class="ev-detail-time">July 31 &ndash; August 1, 2025 &middot; American Museum of Natural History, New York</p>
+    <p class="ev-detail-time">July 31 – August 1, 2025 · American Museum of Natural History, New York</p>
   </div>
 </section>
 
@@ -61,7 +61,7 @@ format:
     <p class="ds-eyebrow">Community</p>
     <h2 class="ds-venue-title">Community moments</h2>
     <div class="um-detail-body">
-      <p>Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward &mdash; in the AMNH planetarium, over coffee, and during informal evening meetups. New collaborations between institutions started here, and several feature requests in the current roadmap trace directly to discussions during the meeting.</p>
+      <p>Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward — in the AMNH planetarium, over coffee, and during informal evening meetups. New collaborations between institutions started here, and several feature requests in the current roadmap trace directly to discussions during the meeting.</p>
       <p class="ev-detail-back"><a href="index.qmd">&larr; All meetings</a></p>
     </div>
   </div>

@@ -10,6 +10,14 @@ listing:
     contents: ../assets/research.yml
     page-size: 9999
     sort: "year desc"
+  - id: papers
+    type: custom
+    template: ../_template/paper-row.ejs.md
+    contents: ../assets/academia.yml
+    include:
+      type: "paper"
+    page-size: 9999
+    sort: "year desc"
 format:
   html:
     page-layout: full
@@ -25,7 +33,7 @@ format:
     <span class="bc-current">Research</span>
   </nav>
   <div>
-    <h1>Academic Research &amp; Publications</h1>
+    <h1>Academic Research & Publications</h1>
     <p class="research-hero-lede">OpenSpace sits at the intersection of scientific visualization research and public outreach. Explore the theses and papers that shape it.</p>
   </div>
 </section>
@@ -35,7 +43,7 @@ format:
 <div class="research-section">
   <h2 class="research-section-heading">Master's Thesis Program</h2>
   <p class="liu-program-desc">
-    Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology and Engineering program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
+    Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
   </p>
   <p class="liu-program-desc">
     Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.
@@ -55,35 +63,51 @@ format:
 ```{=html}
 </div>
 
+
 <script>
-(function () {
-  var active = null;
+(() => {
+  let active = null;
 
   function filter(partner) {
     active = partner;
 
-    document.querySelectorAll('.liu-partner-tag').forEach(function (btn) {
+    document.querySelectorAll('.liu-partner-tag').forEach((btn) => {
       btn.classList.toggle('is-active', btn.dataset.partner === partner);
     });
 
-    document.querySelectorAll('.thesis-row').forEach(function (row) {
+    document.querySelectorAll('.thesis-row').forEach((row) => {
       row.classList.toggle('thesis-hidden', !!partner && row.dataset.partner !== partner);
     });
 
-    document.querySelectorAll('.thesis-year-label').forEach(function (label) {
-      var year = label.dataset.year;
-      var hasVisible = !!document.querySelector(
-        '.thesis-row:not(.thesis-hidden)[data-year="' + year + '"]'
+    document.querySelectorAll('.thesis-year-label').forEach((label) => {
+      let year = label.dataset.year;
+      let hasVisible = !!document.querySelector(
+        `.thesis-row:not(.thesis-hidden)[data-year="${year}"]`
       );
       label.classList.toggle('thesis-hidden', !hasVisible);
     });
   }
 
-  document.querySelectorAll('.liu-partner-tag').forEach(function (btn) {
-    btn.addEventListener('click', function () {
+  document.querySelectorAll('.liu-partner-tag').forEach((btn) => {
+    btn.addEventListener('click', () => {
       filter(active === btn.dataset.partner ? null : btn.dataset.partner);
     });
   });
 })();
 </script>
+```
+
+```{=html}
+<div class="research-section">
+  <h2 class="research-section-heading">Publications</h2>
+  <p class="liu-program-desc">
+    Pushing the boundaries of visualization in the public arena has been in the DNA of the project from its inception. The academic papers listed here have been written about individual features of OpenSpace, descriptions of the software package as a whole, or studies that involved OpenSpace as an engine. Being able to combine novel visualization research with the ability to perform outreach with these techniques is one of the elements that makes OpenSpace so unique.
+  </p>
+```
+
+::: {#papers}
+:::
+
+```{=html}
+</div>
 ```

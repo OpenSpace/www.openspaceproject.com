@@ -10,7 +10,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────────── -->
 <section class="ds-hero" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../../../assets/images/user-meetings/LiU_earth.webp'); background-size: cover; background-position: center;">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Community</span>
@@ -21,11 +20,10 @@ format:
   </nav>
   <div>
     <h1>OpenSpace<br>User Meeting</h1>
-    <p class="ds-hero-lede">August 26&ndash;28, 2026 &middot; Visualization Center C, Norrk&ouml;ping, Sweden</p>
+    <p class="ds-hero-lede">August 26–28, 2026 · Visualization Center C, Norrköping, Sweden</p>
   </div>
 </section>
 
-<!-- ── Right-side dot nav ─────────────────────────────────────── -->
 <nav class="ds-dot-nav" aria-label="Navigate to section">
   <button class="ds-dot-nav-item is-active" data-target="about"         aria-label="About"></button>
   <button class="ds-dot-nav-item"            data-target="venue"         aria-label="Venue"></button>
@@ -35,13 +33,12 @@ format:
   <button class="ds-dot-nav-item"            data-target="register"      aria-label="Register"></button>
 </nav>
 
-<!-- ── About ─────────────────────────────────────────────────── -->
 <section class="ds-venue-section" id="about">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">About</p>
-    <h2 class="ds-venue-title">Join us in Norrk&ouml;ping</h2>
+    <h2 class="ds-venue-title">Join us in Norrköping</h2>
     <div class="um-detail-body">
-      <p>Join us for the second in-person OpenSpace User Meeting in Norrk&ouml;ping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.</p>
+      <p>Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.</p>
       <p>This is a great opportunity to:</p>
       <ul>
         <li>Sharpen your OpenSpace skills</li>
@@ -52,7 +49,6 @@ format:
   </div>
 </section>
 
-<!-- ── Venue ─────────────────────────────────────────────────── -->
 <section class="ds-venue-section ds-venue-section--alt" id="venue">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Venue</p>
@@ -63,13 +59,12 @@ format:
            class="ds-venue-img">
     </div>
     <div class="um-detail-body">
-      <p>We&rsquo;re excited to welcome you to the <a href="https://visualiseringscenter.se/en/" target="_blank" rel="noopener">Visualization Center C</a> in Norrk&ouml;ping &mdash; a digital science center with a full planetarium, driven in partnership with the Norrk&ouml;ping municipality and Link&ouml;ping University as a research environment.</p>
-      <p>Norrk&ouml;ping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.</p>
+      <p>We&rsquo;re excited to welcome you to the <a href="https://visualiseringscenter.se/en/" target="_blank" rel="noopener">Visualization Center C</a> in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.</p>
+      <p>Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.</p>
     </div>
   </div>
 </section>
 
-<!-- ── Schedule ───────────────────────────────────────────────── -->
 <section class="ds-venue-section" id="schedule">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Program</p>
@@ -85,7 +80,7 @@ format:
         <tbody>
           <tr>
             <td class="um-sched-time">09:30 – 10:00</td>
-            <td colspan="3">Welcome and Kickoff — Community, Updates &amp; What's Ahead</td>
+            <td colspan="3">Welcome and Kickoff — Community, Updates & What's Ahead</td>
           </tr>
           <tr>
             <td class="um-sched-time">10:00 – 10:30</td>
@@ -174,7 +169,7 @@ format:
           </tr>
           <tr>
             <td class="um-sched-time">17:00 – 19:00</td>
-            <td>Dome Show and Tell, Presentation Tips &amp; Tricks</td>
+            <td>Dome Show and Tell, Presentation Tips & Tricks</td>
             <td class="um-sched-empty">—</td>
             <td>Developer Helpdesk / Jam Session</td>
           </tr>
@@ -220,22 +215,20 @@ format:
   </div>
 </section>
 
-<!-- ── Getting here ───────────────────────────────────────────── -->
 <section class="ds-venue-section ds-venue-section--alt" id="getting-here">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Getting here</p>
-    <h2 class="ds-venue-title">Travel &amp; airports</h2>
+    <h2 class="ds-venue-title">Travel & airports</h2>
     <div class="um-detail-body">
-      <p>Norrk&ouml;ping is easy to reach internationally. Recommended routes:</p>
+      <p>Norrköping is easy to reach internationally. Recommended routes:</p>
       <ul>
-        <li><strong>Stockholm Arlanda (ARN)</strong> &mdash; major international hub, roughly 90 minutes to Norrk&ouml;ping by train</li>
-        <li><strong>Link&ouml;ping City Airport (LPI)</strong> &mdash; direct connections to Amsterdam Schiphol (AMS), one of Europe&rsquo;s main airline hubs</li>
+        <li><strong>Stockholm Arlanda (ARN)</strong> — major international hub, roughly 90 minutes to Norrköping by train</li>
+        <li><strong>Linköping City Airport (LPI)</strong> — direct connections to Amsterdam Schiphol (AMS), one of Europe&rsquo;s main airline hubs</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ── Accommodation ──────────────────────────────────────────── -->
 <section class="ds-venue-section" id="accommodation">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Accommodation</p>
@@ -251,7 +244,6 @@ format:
   </div>
 </section>
 
-<!-- ── Register ───────────────────────────────────────────────── -->
 <section class="ds-venue-section ds-venue-section--alt" id="register">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Registration</p>
@@ -268,33 +260,33 @@ format:
 </section>
 
 <script>
-(function () {
-  var dotNav = document.querySelector('.ds-dot-nav');
+(() => {
+  let dotNav = document.querySelector('.ds-dot-nav');
   function alignNav() {
     if (!dotNav) return;
-    var btn = document.querySelector('.nav-cta');
+    let btn = document.querySelector('.nav-cta');
     if (btn) {
-      var right = window.innerWidth - btn.getBoundingClientRect().right;
+      let right = window.innerWidth - btn.getBoundingClientRect().right;
       dotNav.style.right = Math.max(8, right) + 'px';
     }
   }
   alignNav();
   window.addEventListener('resize', alignNav);
 
-  var navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
-  var sections = navItems.map(function (item) {
+  let navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
+  let sections = navItems.map((item) => {
     return document.getElementById(item.dataset.target);
   }).filter(Boolean);
-  var currentIndex = 0;
+  let currentIndex = 0;
 
   function navbarHeight() {
-    var nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
+    let nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
     return nav ? nav.offsetHeight + 12 : 80;
   }
 
   function setActive(index) {
     currentIndex = Math.max(0, Math.min(index, sections.length - 1));
-    navItems.forEach(function (item, i) {
+    navItems.forEach((item, i) => {
       item.classList.toggle('is-active', i === currentIndex);
     });
   }
@@ -302,29 +294,29 @@ format:
   function goTo(index) {
     index = Math.max(0, Math.min(index, sections.length - 1));
     setActive(index);
-    var top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
+    let top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
     window.scrollTo({ top: top, behavior: 'smooth' });
   }
 
-  navItems.forEach(function (item, i) {
-    item.addEventListener('click', function () { goTo(i); });
+  navItems.forEach((item, i) => {
+    item.addEventListener('click', () => { goTo(i); });
   });
 
-  document.addEventListener('keydown', function (e) {
+  document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown') { e.preventDefault(); goTo(currentIndex + 1); }
     if (e.key === 'ArrowUp')   { e.preventDefault(); goTo(currentIndex - 1); }
   });
 
   if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          var idx = sections.indexOf(entry.target);
+          let idx = sections.indexOf(entry.target);
           if (idx !== -1) setActive(idx);
         }
       });
     }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 });
-    sections.forEach(function (s) { observer.observe(s); });
+    sections.forEach((s) => { observer.observe(s); });
   }
 
   setActive(0);

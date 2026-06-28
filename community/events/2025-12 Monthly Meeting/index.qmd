@@ -19,7 +19,7 @@ format:
   </nav>
   <div class="os-container narrow">
     <h1 class="feature-title-dark">December OpenSpace Monthly Meeting</h1>
-    <p class="ev-detail-time">Monday, December 8, 2025 &middot; 3:00&ndash;4:00 PM EST &middot; Zoom</p>
+    <p class="ev-detail-time">Monday, December 8, 2025 · 3:00–4:00 PM EST · Zoom</p>
   </div>
 </section>
 

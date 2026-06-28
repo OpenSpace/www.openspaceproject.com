@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="ds-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Features</span>
@@ -22,7 +21,6 @@ format:
   </div>
 </section>
 
-<!-- ── Right-side dot nav ─────────────────────────────────── -->
 <nav class="ds-dot-nav" aria-label="Navigate to venue section">
   <button class="ds-dot-nav-item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
   <button class="ds-dot-nav-item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
@@ -31,7 +29,6 @@ format:
   <button class="ds-dot-nav-item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
 </nav>
 
-<!-- ── Dome Theaters ──────────────────────────────────────── -->
 <section class="ds-venue-section" id="dome-theaters">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Planetarium</p>
@@ -54,11 +51,10 @@ format:
   </div>
 </section>
 
-<!-- ── Classrooms & Desktops ──────────────────────────────── -->
 <section class="ds-venue-section ds-venue-section--alt" id="classrooms-desktops">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Classroom</p>
-    <h2 class="ds-venue-title">Classrooms &amp; desktops</h2>
+    <h2 class="ds-venue-title">Classrooms & desktops</h2>
     <div class="ds-venue-img-wrap">
       <img src="/assets/images/venue-cards/AMNH_LWD students.webp"
            alt="Students using OpenSpace in a classroom at AMNH"
@@ -77,7 +73,6 @@ format:
   </div>
 </section>
 
-<!-- ── Museum Exhibits ────────────────────────────────────── -->
 <section class="ds-venue-section" id="museum-exhibits">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Museum</p>
@@ -100,7 +95,6 @@ format:
   </div>
 </section>
 
-<!-- ── Fisheye Rendering ──────────────────────────────────── -->
 <section class="ds-venue-section ds-venue-section--alt" id="fisheye">
   <div class="ds-venue-inner">
     <p class="ds-eyebrow">Rendering</p>
@@ -123,7 +117,6 @@ format:
   </div>
 </section>
 
-<!-- ── Technical capabilities ─────────────────────────────── -->
 <div class="ds-section ds-section-alt" id="technical-capabilities">
   <h2 class="ds-section-h2">Technical capabilities</h2>
   <div class="ds-tech-grid">
@@ -154,7 +147,6 @@ format:
   </div>
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Set up OpenSpace for your venue</h2>
@@ -167,34 +159,33 @@ format:
 </section>
 
 <script>
-(function () {
-  // Align the dot nav's right edge with the Download button's right edge
-  var dotNav = document.querySelector('.ds-dot-nav');
+(() => {
+  let dotNav = document.querySelector('.ds-dot-nav');
   function alignNav() {
     if (!dotNav) return;
-    var btn = document.querySelector('.nav-cta');
+    let btn = document.querySelector('.nav-cta');
     if (btn) {
-      var right = window.innerWidth - btn.getBoundingClientRect().right;
+      let right = window.innerWidth - btn.getBoundingClientRect().right;
       dotNav.style.right = Math.max(8, right) + 'px';
     }
   }
   alignNav();
   window.addEventListener('resize', alignNav);
 
-  var navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
-  var sections = navItems.map(function (item) {
+  let navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
+  let sections = navItems.map((item) => {
     return document.getElementById(item.dataset.target);
   }).filter(Boolean);
-  var currentIndex = 0;
+  let currentIndex = 0;
 
   function navbarHeight() {
-    var nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
+    let nav = document.querySelector('.navbar, .quarto-navbar, header.navbar');
     return nav ? nav.offsetHeight + 12 : 80;
   }
 
   function setActive(index) {
     currentIndex = Math.max(0, Math.min(index, sections.length - 1));
-    navItems.forEach(function (item, i) {
+    navItems.forEach((item, i) => {
       item.classList.toggle('is-active', i === currentIndex);
     });
   }
@@ -202,29 +193,29 @@ format:
   function goTo(index) {
     index = Math.max(0, Math.min(index, sections.length - 1));
     setActive(index);
-    var top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
+    let top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
     window.scrollTo({ top: top, behavior: 'smooth' });
   }
 
-  navItems.forEach(function (item, i) {
-    item.addEventListener('click', function () { goTo(i); });
+  navItems.forEach((item, i) => {
+    item.addEventListener('click', () => { goTo(i); });
   });
 
-  document.addEventListener('keydown', function (e) {
+  document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown') { e.preventDefault(); goTo(currentIndex + 1); }
     if (e.key === 'ArrowUp')   { e.preventDefault(); goTo(currentIndex - 1); }
   });
 
   if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          var idx = sections.indexOf(entry.target);
+          let idx = sections.indexOf(entry.target);
           if (idx !== -1) setActive(idx);
         }
       });
     }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 });
-    sections.forEach(function (s) { observer.observe(s); });
+    sections.forEach((s) => { observer.observe(s); });
   }
 
   setActive(0);

@@ -6,3 +6,5 @@ _site
 
 # Large video files — serve from CDN/external storage
 assets/videos/
+
+/.luarc.json

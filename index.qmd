@@ -90,7 +90,7 @@ format:
 <section class="content-carousel-section">
   <div class="os-container">
     <h2 class="section-heading">See what's possible</h2>
-    <p class="section-lede">Real visualizations from real data &mdash; planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
+    <p class="section-lede">Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
   </div>
 
   <div class="content-carousel" id="contentCarousel">
@@ -166,7 +166,7 @@ format:
 </section>
 
 <script>
-(function() {
+(() => {
   const track = document.getElementById('carouselTrack');
   const dotsContainer = document.getElementById('carouselDots');
   const prevBtn = document.getElementById('carouselPrev');
@@ -189,7 +189,7 @@ format:
     current = Math.max(0, Math.min(index, total - 1));
     const slide = slides[0];
     const slideWidth = slide.offsetWidth + 14;
-    track.style.transform = 'translateX(-' + (current * slideWidth) + 'px)';
+    track.style.transform = `translateX(-${(current * slideWidth)}px)`;
     dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
       d.classList.toggle('active', i === current);
     });
@@ -236,5 +236,4 @@ format:
     </div>
   </div>
 </section>
-
 ```

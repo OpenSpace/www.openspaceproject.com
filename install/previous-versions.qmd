@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="dl-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Install</span>
@@ -24,7 +23,6 @@ format:
   </div>
 </section>
 
-<!-- ── Versions table ────────────────────────────────────── -->
 <div class="dl-prev-section">
   <table class="dl-prev-table">
     <thead>
@@ -41,7 +39,7 @@ format:
         <td>April 2026</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.21.4/OpenSpace-0.21.4.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.21.4/OpenSpace-0.21.4_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.4" target="_blank" rel="noopener">GitHub</a></td>
@@ -51,7 +49,7 @@ format:
         <td>December 2025</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3" target="_blank" rel="noopener">GitHub</a></td>
@@ -61,7 +59,7 @@ format:
         <td>July 2025</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.21.2/OpenSpace-0.21.2.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.21.2/OpenSpace-0.21.2_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.2" target="_blank" rel="noopener">GitHub</a></td>
@@ -71,7 +69,7 @@ format:
         <td>July 2025</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.21.1/OpenSpace-0.21.1.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.21.1/OpenSpace-0.21.1_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.1" target="_blank" rel="noopener">GitHub</a></td>
@@ -81,7 +79,7 @@ format:
         <td>June 2025</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.21.0/OpenSpace-0.21.0.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.21.0/OpenSpace-0.21.0_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.0" target="_blank" rel="noopener">GitHub</a></td>
@@ -91,7 +89,7 @@ format:
         <td>July 2024</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.20.1/OpenSpace-0.20.1.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.20.1/OpenSpace-0.20.1_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.1" target="_blank" rel="noopener">GitHub</a></td>
@@ -101,7 +99,7 @@ format:
         <td>June 2024</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.20.0/OpenSpace-0.20.0.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.20.0/OpenSpace-0.20.0_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.0" target="_blank" rel="noopener">GitHub</a></td>
@@ -111,7 +109,7 @@ format:
         <td>April 2024</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.19.2/OpenSpace-0.19.2.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.19.2/OpenSpace-0.19.2_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.2" target="_blank" rel="noopener">GitHub</a></td>
@@ -121,7 +119,7 @@ format:
         <td>September 2023</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.19.1/OpenSpace-0.19.1.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.19.1/OpenSpace-0.19.1_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.1" target="_blank" rel="noopener">GitHub</a></td>
@@ -131,7 +129,7 @@ format:
         <td>June 2023</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.19.0/OpenSpace-0.19.0.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.19.0/OpenSpace-0.19.0_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.0" target="_blank" rel="noopener">GitHub</a></td>
@@ -141,7 +139,7 @@ format:
         <td>January 2023</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.18.2/OpenSpace-0.18.2.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.18.2/OpenSpace-0.18.2_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.2" target="_blank" rel="noopener">GitHub</a></td>
@@ -151,7 +149,7 @@ format:
         <td>November 2022</td>
         <td>
           <a href="https://data.openspaceproject.com/release/0.18.1/OpenSpace-0.18.1.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.18.1/OpenSpace-0.18.1_minimal.zip">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.1" target="_blank" rel="noopener">GitHub</a></td>
@@ -162,11 +160,11 @@ format:
         <td>
           <span class="dl-prev-platform">Windows</span>
           <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.zip">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.zip">Lightweight</a><br>
           <span class="dl-prev-platform">Mac</span>
           <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.pkg">Full</a>
-          &middot;
+          ·
           <a href="https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.pkg">Lightweight</a>
         </td>
         <td><a href="https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.0" target="_blank" rel="noopener">GitHub</a></td>

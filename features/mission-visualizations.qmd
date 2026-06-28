@@ -9,7 +9,6 @@ format:
 ---
 
 ```{=html}
-<!-- ── Hero ──────────────────────────────────────────────── -->
 <section class="mv-hero">
   <nav class="page-breadcrumb" aria-label="Breadcrumb">
     <span class="bc-parent">Features</span>
@@ -22,7 +21,6 @@ format:
   </div>
 </section>
 
-<!-- ── How it works ───────────────────────────────────────── -->
 <div class="mv-section">
   <h2 class="mv-section-h2">How it works</h2>
   <div class="mv-caps-grid">
@@ -41,7 +39,6 @@ format:
   </div>
 </div>
 
-<!-- ── Missions list ───────────────────────────────────────── -->
 <div class="mv-missions-list-section">
   <h2 class="mv-section-h2">Missions</h2>
 
@@ -57,7 +54,7 @@ format:
         <span class="mv-mission-agency">NASA</span>
       </div>
       <h3 class="mv-mission-name">Artemis</h3>
-      <p class="mv-mission-tagline">Lunar return · 2022 &ndash; present</p>
+      <p class="mv-mission-tagline">Lunar return · 2022 – present</p>
       <p class="mv-mission-desc">Follow the Artemis program's return to the Moon — from Orion's trans-lunar trajectory and lunar orbit insertion to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">First crewed lunar return since Apollo 17</span>
@@ -78,8 +75,8 @@ format:
         <span class="mv-mission-agency">NASA / ESA / CSA</span>
       </div>
       <h3 class="mv-mission-name">James Webb Space Telescope</h3>
-      <p class="mv-mission-tagline">L2 orbit · 2022 &ndash; present</p>
-      <p class="mv-mission-desc">See JWST's actual orbit at the Sun&ndash;Earth L2 point 1.5 million km away and visualize the deep fields it has surveyed.</p>
+      <p class="mv-mission-tagline">L2 orbit · 2022 – present</p>
+      <p class="mv-mission-desc">See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away and visualize the deep fields it has surveyed.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">Animated model</span>
       </div>
@@ -119,7 +116,7 @@ format:
         <span class="mv-mission-agency">NASA</span>
       </div>
       <h3 class="mv-mission-name">Voyager</h3>
-      <p class="mv-mission-tagline">Interstellar space · 1977 &ndash; present</p>
+      <p class="mv-mission-tagline">Interstellar space · 1977 – present</p>
       <p class="mv-mission-desc">Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.</p>
       <div class="mv-facts-row">
         <span class="mv-fact">Both probes beyond the heliosphere</span>
@@ -151,7 +148,6 @@ format:
 
 </div>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
 <section class="cta-section">
   <div class="cta-card">
     <h2 class="section-heading">Start flying with spacecraft</h2>

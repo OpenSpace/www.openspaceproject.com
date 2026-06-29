@@ -7,7 +7,7 @@ listing:
   - id: theses
     type: custom
     template: ../_template/thesis-row.ejs.md
-    contents: ../assets/research.yml
+    contents: ../assets/theses.yml
     page-size: 9999
     sort: "year desc"
   - id: papers
@@ -37,9 +37,7 @@ format:
     <p class="research-hero-lede">OpenSpace sits at the intersection of scientific visualization research and public outreach. Explore the theses and papers that shape it.</p>
   </div>
 </section>
-```
 
-```{=html}
 <div class="research-section">
   <h2 class="research-section-heading">Master's Thesis Program</h2>
   <p class="liu-program-desc">

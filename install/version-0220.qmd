@@ -94,7 +94,7 @@ format:
       </div>
       <div class="dl-reqs-row">
         <span class="dl-reqs-label">OS</span>
-        <span class="dl-reqs-value">Windows 10</span>
+        <span class="dl-reqs-value">Windows 10/11 or Linux</span>
       </div>
     </div>
 
@@ -118,7 +118,7 @@ format:
       </div>
       <div class="dl-reqs-row">
         <span class="dl-reqs-label">OS</span>
-        <span class="dl-reqs-value">Windows 10 or newer</span>
+        <span class="dl-reqs-value">Windows 10/11 or Linux</span>
       </div>
     </div>
   </div>
@@ -152,7 +152,8 @@ format:
     <p class="section-lede">The documentation covers installation, profiles, and configuration. The OpenSpace community on Slack is also here to help.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Read the docs</a>
-      <a class="btn-ghost-os" href="../community/slack.qmd">Join the Slack</a>    </div>
+      <a class="btn-ghost-os" href="../community/slack.qmd">Join the Slack</a>
+    </div>
   </div>
 </section>
 ```

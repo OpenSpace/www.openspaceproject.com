@@ -117,7 +117,7 @@ hero:
 
     <a class="partner-card" href="https://www.hgandco.com/" target="_blank" rel="noopener">
       <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/hgandco_white.webp" alt="HG&Co">
+        <img class="partner-logo" src="/assets/images/institutions/hgandco--white.webp" alt="HG&Co">
       </div>
       <p class="partner-name">HG&Co</p>
       <p class="partner-blurb">A visitor-centered planning and research firm working with museums, libraries, and cultural organizations on interpretive planning, needs assessments, and summative evaluations.</p>

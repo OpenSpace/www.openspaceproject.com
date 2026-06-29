@@ -14,6 +14,17 @@ hero:
     - "Use Cases"
   lede: >
     Real installations, real venues. See how institutions worldwide are using OpenSpace.
+
+cta:
+  heading: "Add your story"
+  actions:
+    - text: "Download OpenSpace"
+      link: "/install/version-0220.qmd"
+      style: "primary"
+    - text: "Get in touch"
+      link: "/community/contact.qmd"
+      style: "ghost"
+  lede: "If your institution is using OpenSpace, we'd love to feature it here."
 ---
 
 ```{=html}
@@ -118,16 +129,6 @@ hero:
   </div>
 </div>
 
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Add your story</h2>
-    <p class="section-lede">If your institution is using OpenSpace, we'd love to feature it here.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="../../install/version-0220.qmd">Download OpenSpace</a>
-      <a class="btn-ghost-os" href="/community/contact.qmd">Get in touch</a>
-    </div>
-  </div>
-</section>
 
 <script>
 (function () {

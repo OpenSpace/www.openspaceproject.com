@@ -16,6 +16,20 @@ hero:
   lede: >
     OpenSpace streams real spacecraft imagery and elevation data from NASA missions —
     cross fifteen orders of magnitude in one uncut, uninterrupted flight.
+
+cta:
+  heading: "Start exploring planetary surfaces"
+  actions:
+    - text: "Download OpenSpace"
+      link: "/install/version-0220.qmd"
+      style: "primary"
+    - text: "Documentation"
+      link: "https://docs.openspaceproject.com"
+      style: "ghost"
+      external: true
+  lede: >
+    Globe Browsing is built into every copy of OpenSpace. Download free, or browse the
+    documentation to see what data is available for each world.
 ---
 
 ```{=html}
@@ -181,15 +195,5 @@ hero:
   render();
 })();
 </script>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Start exploring planetary surfaces</h2>
-    <p class="section-lede">Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="../install/version-0220.qmd">Download OpenSpace</a>
-      <a class="btn-ghost-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-    </div>
-  </div>
-</section>
 ```
+

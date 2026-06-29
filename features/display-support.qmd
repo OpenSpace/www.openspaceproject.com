@@ -16,6 +16,20 @@ hero:
     From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your
     display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and
     tiled wall support built in.
+
+cta:
+  heading: "Set up OpenSpace for your venue"
+  actions:
+    - text: "Documentation"
+      link: "https://docs.openspaceproject.com"
+      style: "primary"
+      external: true
+    - text: "Get in touch"
+      link: "/community/contact.qmd"
+      style: "ghost"
+  lede: >
+    The documentation covers every display configuration in detail. Or get in touch — the
+    team helps institutions configure OpenSpace for their specific setup.
 ---
 
 ```{=html}
@@ -144,15 +158,4 @@ hero:
     </div>
   </div>
 </div>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Set up OpenSpace for your venue</h2>
-    <p class="section-lede">The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-      <a class="btn-ghost-os" href="/community/contact.qmd">Get in touch</a>
-    </div>
-  </div>
-</section>
 ```

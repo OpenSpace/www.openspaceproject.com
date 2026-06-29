@@ -13,6 +13,19 @@ hero:
     - "Community"
     - "Annual Meetings"
   lede: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
+
+cta:
+  heading: "Stay in the loop"
+  actions:
+    - text: "Get notified"
+      link: "/community/contact.qmd"
+      style: "primary"
+    - text: "Community events"
+      link: "/community/events/index.qmd"
+      style: "ghost"
+  lede: >
+    Sign up to be notified when registration opens and to receive session recaps after
+    each meeting.
 ---
 
 ```{=html}
@@ -66,15 +79,4 @@ hero:
 
   </div>
 </div>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Stay in the loop</h2>
-    <p class="section-lede">Sign up to be notified when registration opens and to receive session recaps after each meeting.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="/community/contact.qmd">Get notified</a>
-      <a class="btn-ghost-os" href="/community/events/index.qmd">Community events</a>
-    </div>
-  </div>
-</section>
 ```

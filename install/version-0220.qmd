@@ -16,6 +16,20 @@ hero:
   lede: >
     Open-source astrovisualization software built for planetarium domes, classrooms, and
     personal computers.
+
+cta:
+  heading: "Need help getting started?"
+  actions:
+    - text: "Read the docs"
+      link: "https://docs.openspaceproject.com"
+      style: "primary"
+      external: true
+    - text: "Join the Slack"
+      link: "/community/slack.qmd"
+      style: "ghost"
+  lede: >
+    The documentation covers installation, profiles, and configuration. The OpenSpace
+    community on Slack is also here to help.
 ---
 
 ```{=html}
@@ -145,15 +159,4 @@ hero:
 
   </div>
 </div>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Need help getting started?</h2>
-    <p class="section-lede">The documentation covers installation, profiles, and configuration. The OpenSpace community on Slack is also here to help.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Read the docs</a>
-      <a class="btn-ghost-os" href="../community/slack.qmd">Join the Slack</a>
-    </div>
-  </div>
-</section>
 ```

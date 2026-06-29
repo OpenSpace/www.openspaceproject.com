@@ -19,6 +19,17 @@ hero:
     The OpenSpace Slack is where planetarium professionals, educators, scientists,
     developers, and enthusiasts come together to learn, share, and get help — in real
     time.
+
+cta:
+  heading: "Ready to join?"
+  actions:
+    - text: "Join the Slack"
+      link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
+      style: "primary"
+      external: true
+  lede: >
+    The OpenSpace community is open to everyone — users, educators, scientists, and
+    developers at any experience level.
 ---
 
 ```{=html}
@@ -133,14 +144,4 @@ hero:
 
   </div>
 </div>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Ready to join?</h2>
-    <p class="section-lede">The OpenSpace community is open to everyone — users, educators, scientists, and developers at any experience level.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os slack-cta-btn" href="https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w" target="_blank" rel="noopener">Join the Slack</a>
-    </div>
-  </div>
-</section>
 ```

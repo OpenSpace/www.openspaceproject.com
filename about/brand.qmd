@@ -15,6 +15,15 @@ hero:
   lede: >
     Guidelines for crediting OpenSpace in publications, presentations, and media, plus
     logos available for download.
+
+cta:
+  heading: "Questions about usage?"
+  actions:
+    - text: "Get in touch"
+      link: "/community/contact.qmd"
+      style: "primary"
+  lede: >
+    For licensing, permissions, or anything not covered here, reach out directly.
 ---
 
 ```{=html}
@@ -86,14 +95,6 @@ hero:
     </div>
   </div>
 </section>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Questions about usage?</h2>
-    <p class="section-lede">For licensing, permissions, or anything not covered here, reach out directly.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="/community/contact.qmd">Get in touch</a>
-    </div>
-  </div>
-</section>
 ```
+
+

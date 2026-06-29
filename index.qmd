@@ -9,6 +9,18 @@ format:
     anchor-sections: false
     theme:
       - assets/style/home.scss
+
+cta:
+  heading: "Start exploring"
+  actions:
+    - text: "Download OpenSpace"
+      link: "/install/version-0220.qmd"
+      style: "primary"
+    - text: "View on GitHub"
+      link: "https://github.com/OpenSpace/OpenSpace"
+      style: "ghost"
+      external: true
+  lede: "Free. Open source. Cross-platform."
 ---
 
 ```{=html}
@@ -224,15 +236,5 @@ format:
 
   <p class="funder-disclaimer">Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.</p>
 </section>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Start exploring</h2>
-    <p class="section-lede">Free. Open source. Cross-platform.</p>
-    <div class="hero-actions">
-      <a href="install/version-0220.qmd" class="btn-primary-os">Download OpenSpace</a>
-      <a href="https://github.com/OpenSpace/OpenSpace" class="btn-ghost-os">View on GitHub</a>
-    </div>
-  </div>
-</section>
 ```
+

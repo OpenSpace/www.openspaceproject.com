@@ -19,6 +19,16 @@ hero:
     From planetarium domes to research labs, OpenSpace is running on every continent.
     Here's a look at our global footprint, annual progress, and how you can be part of the
     story.
+
+cta:
+  heading: "Using OpenSpace? Tell us about it."
+  actions:
+    - text: "Get in touch"
+      link: "mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution"
+      style: "primary"
+  lede: >
+    If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you —
+    and may feature you in our annual reports and on this site.
 ---
 
 ```{=html}
@@ -78,16 +88,6 @@ hero:
   </p>
 </div>
 
-<!-- CTA -->
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Using OpenSpace? Tell us about it.</h2>
-    <p class="section-lede">If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you — and may feature you in our annual reports and on this site.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution">Get in touch</a>
-    </div>
-  </div>
-</section>
 
 <!-- Leaflet + map init -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

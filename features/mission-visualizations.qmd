@@ -15,6 +15,20 @@ hero:
   lede: >
     OpenSpace recreates real missions using actual trajectory data, instrument footprints,
     and observation timelines from NASA and ESA archives.
+
+cta:
+  heading: "Start flying with spacecraft"
+  actions:
+    - text: "Download OpenSpace"
+      link: "/install/version-0220.qmd"
+      style: "primary"
+    - text: "Documentation"
+      link: "https://docs.openspaceproject.com"
+      style: "ghost"
+      external: true
+  lede: >
+    Every mission listed here is available in OpenSpace today. Download free, then open
+    the mission profiles from the launcher.
 ---
 
 ```{=html}
@@ -144,15 +158,4 @@ hero:
   </div>
 
 </div>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Start flying with spacecraft</h2>
-    <p class="section-lede">Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="../install/version-0220.qmd">Download OpenSpace</a>
-      <a class="btn-ghost-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-    </div>
-  </div>
-</section>
 ```

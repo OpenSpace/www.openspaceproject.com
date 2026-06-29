@@ -16,6 +16,20 @@ hero:
   lede: >
     From solar wind to coronal mass ejections — OpenSpace streams live and historical
     space weather data so you can see what the Sun is doing to our solar system right now.
+
+cta:
+  heading: "See space weather in action"
+  actions:
+    - text: "Download OpenSpace"
+      link: "/install/version-0220.qmd"
+      style: "primary"
+    - text: "NASA CCMC"
+      link: "https://ccmc.gsfc.nasa.gov"
+      style: "ghost"
+      external: true
+  lede: >
+    Space weather visualization is built into OpenSpace. Download it free, or visit the
+    CCMC to explore the underlying data models.
 ---
 
 ```{=html}
@@ -190,15 +204,4 @@ hero:
   render();
 })();
 </script>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">See space weather in action</h2>
-    <p class="section-lede">Space weather visualization is built into OpenSpace. Download it free, or visit the CCMC to explore the underlying data models.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="../install/version-0220.qmd">Download OpenSpace</a>
-      <a class="btn-ghost-os" href="https://ccmc.gsfc.nasa.gov" target="_blank" rel="noopener">NASA CCMC</a>
-    </div>
-  </div>
-</section>
 ```

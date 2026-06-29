@@ -1,0 +1,64 @@
+/*-- scss:rules --*/
+
+.cta-section {
+  padding: 4rem clamp(1.5rem, 3vw, 3rem) 5rem;
+  background: $background;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #d9da6d, #3dbdee);
+    opacity: 0.22;
+    filter: blur(60px);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover::before {
+    animation: ucGlowMorph 4s ease-in-out infinite;
+    opacity: 0.32;
+  }
+}
+
+.cta-card {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba($baseWhite, 0.18);
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+
+  &::before { display: none; }
+
+  .section-heading {
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+    white-space: nowrap;
+
+    @media (max-width: 600px) {
+      white-space: normal;
+      font-size: 1.25rem;
+    }
+  }
+
+  .section-lede {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 540px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}

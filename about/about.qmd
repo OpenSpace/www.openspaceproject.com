@@ -16,36 +16,41 @@ hero:
     OpenSpace makes the latest data from NASA missions, observatories, and research
     institutions explorable by anyone — in planetariums, classrooms, and on personal
     computers.
+
+cta:
+  heading: "Get involved"
+  actions:
+    - text: "View on GitHub"
+      link: "https://github.com/OpenSpace/OpenSpace"
+      style: "primary"
+      external: true
+    - text: "Get in touch"
+      link: "/community/contact.qmd"
+      style: "ghost"
+  lede: >
+    OpenSpace is built in the open by a community that welcomes new contributors — whether
+    you run a planetarium, teach with OpenSpace, or contribute code.
 ---
 
-```{=html}
-<section class="about-body-section">
-  <div class="os-container narrow">
+::: {.about-body-section}
+::: {.os-container .narrow}
 
-    <h2 class="about-h2">What is OpenSpace?</h2>
-    <p>OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe — with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub. </p>
+## What is OpenSpace?
 
-    <h2 class="about-h2">Our mission</h2>
-    <p>OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools — far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.</p>
-    <p>The project also serves the research community itself. Scientists use OpenSpace to discover new aspects about our universe and can then quickly communicate these findings and collaborate across institutions.</p>
-    <p>Providing OpenSpace to the world as a free and open-source software allows the largest number of people to benefit from these visualizations to reach the goal of spreading the beauty of the universe and how were able to figure it all out</p>
+OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe — with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub.
 
-    <h2 class="about-h2">How it began</h2>
-    <p>OpenSpace started in 2013 as a collaboration between the American Museum of Natural History (AMNH) in New York, Linköping University in Sweden, and the Community Coordinated Modelling Center at NASA Goddard. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Linköping and the ongoing heliophysics resaearch at Goddard to be able to share what emerged with the rest of the world.</p>
-    <p>Early work focused on visualizing volumetric heliophysics datasets and mission visualization in dome theaters, with the New Horizons flyby at Pluto in July 2015 being among the first public releases of the software. Later, other missions (watching Rosetta orbit comet 67P), globe browsing, and large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds followed, including the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data.</p>
-  </div>
-</section>
+## Our mission
 
+OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools — far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.
 
+The project also serves the research community itself. Scientists use OpenSpace to discover new aspects about our universe and can then quickly communicate these findings and collaborate across institutions.
 
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">Get involved</h2>
-    <p class="section-lede">OpenSpace is built in the open by a community that welcomes new contributors — whether you run a planetarium, teach with OpenSpace, or contribute code.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="https://github.com/OpenSpace/OpenSpace" target="_blank" rel="noopener">View on GitHub</a>
-      <a class="btn-ghost-os" href="/community/contact.qmd">Get in touch</a>
-    </div>
-  </div>
-</section>
-```
+Providing OpenSpace to the world as a free and open-source software allows the largest number of people to benefit from these visualizations to reach the goal of spreading the beauty of the universe and how were able to figure it all out.
+
+## How it began
+
+OpenSpace started in 2013 as a collaboration between the American Museum of Natural History (AMNH) in New York, Linköping University in Sweden, and the Community Coordinated Modelling Center at NASA Goddard. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Linköping and the ongoing heliophysics resaearch at Goddard to be able to share what emerged with the rest of the world.
+
+Early work focused on visualizing volumetric heliophysics datasets and mission visualization in dome theaters, with the New Horizons flyby at Pluto in July 2015 being among the first public releases of the software. Later, other missions (watching Rosetta orbit comet 67P), globe browsing, and large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds followed, including the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data.
+:::
+:::

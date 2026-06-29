@@ -15,6 +15,20 @@ hero:
   lede: >
     Step-by-step video guides covering installation, navigation, and the user interface —
     everything you need to take your first flight.
+
+cta:
+  heading: "More learning resources"
+  actions:
+    - text: "Documentation"
+      link: "https://docs.openspaceproject.com"
+      style: "primary"
+      external: true
+    - text: "Join the Slack"
+      link: "/community/slack.qmd"
+      style: "ghost"
+  lede: >
+    The full documentation covers every feature in depth. The community Slack is the best
+    place to ask questions and connect with other OpenSpace users.
 ---
 
 ```{=html}
@@ -70,15 +84,4 @@ hero:
 
   </div>
 </div>
-
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">More learning resources</h2>
-    <p class="section-lede">The full documentation covers every feature in depth. The community Slack is the best place to ask questions and connect with other OpenSpace users.</p>
-    <div class="hero-actions">
-      <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-      <a class="btn-ghost-os" href="../community/slack.html">Join the Slack</a>
-    </div>
-  </div>
-</section>
 ```

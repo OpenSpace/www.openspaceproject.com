@@ -4,43 +4,6 @@
 // Impact page — startup map, annual reports, CTA
 // =============================================================
 
-// ---------- Page hero ----------
-.impact-hero {
-  background: $background;
-  color: white;
-  padding: 5rem 0 4rem;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  text-align: center;
-
-  .feature-eyebrow {
-    display: block;
-    font-size: 0.75rem;
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba($satelliteGray, 0.75);
-    margin: 0 0 1rem;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin: 0 0 1.25rem;
-    color: $baseWhite;
-  }
-
-  .impact-hero-lede {
-    font-size: 1.0625rem;
-    line-height: 1.6;
-    color: rgba($satelliteGray, 0.9);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
 // ---------- Section wrappers ----------
 .impact-section {
   width: 100vw;
@@ -98,7 +61,9 @@
     font-family: 'IBM Plex Mono', monospace;
     letter-spacing: 0.04em;
 
-    &:hover { text-decoration: underline; }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -134,7 +99,9 @@
     color: $primaryAccent;
     transform: translateY(-2px);
 
-    .chip-icon { color: $primaryAccent; }
+    .chip-icon {
+      color: $primaryAccent;
+    }
   }
 }
 
@@ -147,7 +114,9 @@
   a {
     color: rgba($primaryAccent, 0.7);
     text-decoration: none;
-    &:hover { text-decoration: underline; }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

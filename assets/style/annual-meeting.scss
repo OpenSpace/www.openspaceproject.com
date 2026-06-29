@@ -16,7 +16,7 @@
 .um-section .os-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding-left:  clamp(1rem, 2vw, 1.5rem);
+  padding-left: clamp(1rem, 2vw, 1.5rem);
   padding-right: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -252,7 +252,9 @@
     line-height: 1.5;
   }
 
-  tr:last-child td { border-bottom: none; }
+  tr:last-child td {
+    border-bottom: none;
+  }
 
   .um-sched-time {
     color: rgba($satelliteGray, 0.5);

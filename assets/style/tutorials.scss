@@ -14,10 +14,6 @@
   padding-right: clamp(1.5rem, 5vw, 6rem);
 }
 
-.tut-section-alt {
-  background: #0d1014;
-}
-
 .tut-section-heading {
   font-size: 0.7rem;
   letter-spacing: 0.18em;
@@ -107,36 +103,4 @@
   color: rgba($satelliteGray, 0.75);
   margin: 0;
   flex: 1;
-}
-
-// ── CTA ───────────────────────────────────────────────────────
-.tut-cta-buttons {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.tut-cta-btn-ghost {
-  display: inline-block;
-  background: transparent;
-  color: $primaryAccent;
-  border: 1px solid rgba($primaryAccent, 0.3);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
-  letter-spacing: 0.01em;
-
-  i, .bi { display: none; }
-
-  &:hover {
-    border-color: rgba($primaryAccent, 0.7);
-    background: rgba($primaryAccent, 0.06);
-    transform: translateY(-2px);
-    color: $primaryAccent;
-    text-decoration: none;
-  }
 }

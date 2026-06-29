@@ -74,13 +74,6 @@ $navbar-hl:      #ecf5fb !default;
   padding: 0 clamp(1.5rem, 8vw, 12rem);
 }
 
-// Full-bleed container — stretches to viewport edge regardless of Quarto column layout
-.os-container-full {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding: 0;
-}
-
 .text-center {
   text-align: center;
 }
@@ -169,6 +162,11 @@ $navbar-hl:      #ecf5fb !default;
     margin: 0 0 2rem;
     color: rgba($baseWhite, 0.9);
   }
+
+  @media (max-width: 768px) {
+    height: 75vh;
+    min-height: 500px;
+  }
 }
 
 .hero-actions {
@@ -183,10 +181,18 @@ $navbar-hl:      #ecf5fb !default;
   @include os-button-base;
   background: $vividAccentGreen;
   color: $os-deep-space;
-  i, .bi { display: none; }
+
+  i, .bi {
+    display: none;
+  }
+
   // Quarto adds class="external" to external links and injects a ::after pseudo-element
   // with margin-left:.2em and padding-right:.75em — this shifts the text left of center.
-  &::after { content: none !important; margin: 0 !important; padding: 0 !important; }
+  &::after {
+    content: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   &:hover {
     transform: translateY(-1px);
@@ -195,38 +201,26 @@ $navbar-hl:      #ecf5fb !default;
   }
 }
 
-.btn-primary-dark {
-  background: $os-text-primary;
-  color: $background;
-
-  &:hover {
-    background: lighten($os-text-primary, 10%);
-    color: $baseWhite;
-  }
-}
-
 .btn-ghost-os {
   @include os-button-base;
   background: transparent;
   color: white;
   border: 1px solid $os-overlay-light;
-  i, .bi { display: none; }
-  &::after { content: none !important; margin: 0 !important; padding: 0 !important; }
+
+  i, .bi {
+    display: none;
+  }
+
+  &::after {
+    content: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
     color: white;
     text-decoration: none;
-  }
-}
-
-.btn-ghost-dark {
-  color: $os-text-primary;
-  border-color: rgba(0, 0, 0, 0.2);
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: $os-text-primary;
   }
 }
 
@@ -238,6 +232,10 @@ $navbar-hl:      #ecf5fb !default;
   position: relative;
   z-index: 10;
 
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .trusted-label {
@@ -326,6 +324,11 @@ $navbar-hl:      #ecf5fb !default;
   // Venue grid breaks out of container to full width
   .venue-grid {
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -449,6 +452,11 @@ $navbar-hl:      #ecf5fb !default;
       background: rgba($primaryAccent, 0.15);
     }
   }
+
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .funder-marquee {
@@ -497,6 +505,11 @@ $navbar-hl:      #ecf5fb !default;
       display: none;
     }
   }
+
+  @media (max-width: 768px) {
+    animation-duration: $os-marquee-mobile-duration;
+    gap: 5rem;
+  }
 }
 
 .funder-logo {
@@ -506,6 +519,11 @@ $navbar-hl:      #ecf5fb !default;
   height: auto;
   opacity: 0.7;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    max-height: 48px;
+    max-width: 140px;
+  }
 }
 
 @keyframes scroll-funders {
@@ -522,41 +540,10 @@ $navbar-hl:      #ecf5fb !default;
   padding: 0 1.5rem;
   text-align: center;
 }
+
 .funders-section {
   overflow: hidden;
   max-width: 100vw;
-}
-
-// ---------- Final CTA ----------
-
-
-// ---------- Responsive ----------
-@media (max-width: 768px) {
-  .hero-section {
-    height: 75vh;
-    min-height: 500px;
-  }
-
-  .venues-section,
-  .funders-section,
-  .trusted-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .cta-card {
-    padding: 2.5rem 1.5rem;
-  }
-
-  .funder-track {
-    animation-duration: $os-marquee-mobile-duration;
-    gap: 5rem;
-  }
-
-  .funder-logo {
-    max-height: 48px;
-    max-width: 140px;
-  }
 }
 
 // ---------- Quarto full-bleed overrides ----------
@@ -588,36 +575,6 @@ main:has(.hero-section) #title-block-header {
 // ensure the section wrapper doesn't clip them
 .content-carousel-section {
   overflow: hidden;
-}
-
-// ---------- Reduced motion ----------
-@media (prefers-reduced-motion: reduce) {
-  .hero-video {
-    display: none;
-  }
-
-  .hero-section {
-    background: $os-deep-space center / cover;
-  }
-
-  .venue-card,
-  .btn-primary-os,
-  .btn-ghost-os {
-    transition: none;
-  }
-
-  .funder-track {
-    animation: none;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .funder-marquee {
-    mask-image: none;
-    -webkit-mask-image: none;
-  }
 }
 
 #quarto-document-content {

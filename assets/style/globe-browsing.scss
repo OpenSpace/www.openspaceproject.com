@@ -4,39 +4,6 @@
 // Globe Browsing feature page
 // =============================================================
 
-// ── Video showcase ────────────────────────────────────────────
-.gb-video-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  background: $background;
-  padding: 0 clamp(1.5rem, 8vw, 12rem);
-}
-
-.gb-video-wrap {
-  position: relative;
-  width: 100%;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba($primaryAccent, 0.12);
-  background: #000;
-}
-
-.gb-video {
-  width: 100%;
-  max-height: 580px;
-  object-fit: cover;
-  display: block;
-}
-
-.gb-video-caption {
-  font-size: 0.8rem;
-  color: rgba($satelliteGray, 0.45);
-  text-align: center;
-  margin: 0.75rem 0 0;
-  font-family: 'IBM Plex Mono', monospace;
-  letter-spacing: 0.02em;
-}
-
 // ── Section wrapper ───────────────────────────────────────────
 .gb-section {
   width: 100vw;
@@ -60,21 +27,15 @@
   margin: 0 0 1.25rem;
 }
 
-.gb-section-lede {
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  color: rgba($satelliteGray, 0.8);
-  max-width: 640px;
-  margin: 0 0 2rem;
-}
-
 .gb-prose {
   font-size: 1.0rem;
   line-height: 1.8;
   color: rgba($baseWhite, 0.82);
   margin: 0 0 1.1rem;
 
-  &:last-child { margin-bottom: 0; }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // ── Intro + stats row ─────────────────────────────────────────
@@ -139,7 +100,9 @@
   border-top: 1px solid rgba($primaryAccent, 0.1);
   align-items: center;
 
-  &:first-of-type { border-top: none; }
+  &:first-of-type {
+    border-top: none;
+  }
 
   @media (max-width: 820px) {
     grid-template-columns: 1fr;
@@ -164,8 +127,6 @@
     height: 220px;
   }
 }
-
-.gb-world-content {}
 
 .gb-world-meta {
   display: flex;
@@ -262,7 +223,9 @@
       opacity: 0.7;
     }
 
-    &:last-child { border-bottom: none; }
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
@@ -333,23 +296,6 @@
   transform: translate(-2px, -3px) rotate(-0.5deg);
 }
 
-// Layer label chip
-.gb-layer-label {
-  position: absolute;
-  bottom: 0.75rem;
-  left: 0.75rem;
-  font-size: 0.63rem;
-  font-family: 'IBM Plex Mono', monospace;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $primaryAccent;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 0.25rem 0.55rem;
-  border-radius: 4px;
-  border: 1px solid rgba($primaryAccent, 0.28);
-  pointer-events: none;
-}
-
 // Dots + hint row
 .gb-layer-footer {
   display: flex;
@@ -399,41 +345,4 @@
   color: rgba($satelliteGray, 0.38);
   letter-spacing: 0.07em;
   text-transform: uppercase;
-}
-
-// ── CTA ───────────────────────────────────────────────────────
-.gb-cta-buttons {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.gb-cta-btn-ghost {
-  display: inline-block;
-  background: transparent;
-  color: $primaryAccent;
-  border: 1px solid rgba($primaryAccent, 0.3);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
-  letter-spacing: 0.01em;
-
-  i, .bi { display: none; }
-
-  &:hover {
-    border-color: rgba($primaryAccent, 0.7);
-    background: rgba($primaryAccent, 0.06);
-    transform: translateY(-2px);
-    color: $primaryAccent;
-    text-decoration: none;
-  }
-}
-
-// ── Reduced motion ────────────────────────────────────────────
-@media (prefers-reduced-motion: reduce) {
-  .gb-video { display: none; }
 }

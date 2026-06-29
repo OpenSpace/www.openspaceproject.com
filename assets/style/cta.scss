@@ -61,4 +61,8 @@
   .hero-actions {
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    padding: 2.5rem 1.5rem;
+  }
 }

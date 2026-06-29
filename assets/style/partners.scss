@@ -30,6 +30,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.25rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 // ---------- Card ----------
@@ -69,16 +73,6 @@
   opacity: 0.85;
 }
 
-// Text fallback for partners without a logo
-.partner-logo-text {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: $baseWhite;
-  line-height: 1.3;
-  transition: color 0.18s;
-}
-
 // Partner name (shown below logo)
 .partner-name {
   font-size: 0.9rem;
@@ -89,7 +83,9 @@
   transition: color 0.18s;
 
   // Hide Quarto external-link icon inside partner name
-  i, .bi { display: none; }
+  i, .bi {
+    display: none;
+  }
 }
 
 // Short blurb
@@ -99,11 +95,4 @@
   color: rgba($satelliteGray, 0.75);
   margin: 0;
   flex: 1;
-}
-
-// ---------- Responsive ----------
-@media (max-width: 600px) {
-  .partner-grid {
-    grid-template-columns: 1fr;
-  }
 }

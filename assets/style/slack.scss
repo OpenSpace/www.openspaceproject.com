@@ -11,12 +11,12 @@
   padding: 5rem 12rem;
   background: $background;
 
-  @media (max-width: 900px) {
-    padding: 4rem 3rem;
-  }
-
   @media (max-width: 560px) {
     padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 4rem 3rem;
   }
 }
 
@@ -40,10 +40,6 @@
   margin: 0 0 1.25rem;
   border-bottom: 1px solid rgba($primaryAccent, 0.15);
   padding-bottom: 0.5rem;
-}
-
-.slack-h2-center {
-  text-align: center;
 }
 
 .slack-prose {
@@ -91,12 +87,12 @@
   border-top: 1px solid rgba($primaryAccent, 0.08);
   border-bottom: 1px solid rgba($primaryAccent, 0.08);
 
-  @media (max-width: 900px) {
-    padding: 4rem 3rem 4.5rem;
-  }
-
   @media (max-width: 560px) {
     padding: 3rem 1.5rem 4rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 4rem 3rem 4.5rem;
   }
 }
 
@@ -112,12 +108,12 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
 
-  @media (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -155,16 +151,4 @@
   font-size: 0.8125rem;
   line-height: 1.55;
   color: rgba($satelliteGray, 0.75);
-}
-
-// ── CTA button — suppress external link icon ──────────────────
-.slack-cta-btn {
-  i, .bi { display: none; }
-}
-
-// ── Reduced motion ────────────────────────────────────────────
-@media (prefers-reduced-motion: reduce) {
-  .slack-hero-actions .btn-primary-os {
-    transition: none;
-  }
 }

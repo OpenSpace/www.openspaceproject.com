@@ -17,12 +17,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -249,88 +249,10 @@
   padding: 0.25rem 0.55rem;
 }
 
-// ── CTA ───────────────────────────────────────────────────────
-.uc-cta-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding: 4rem clamp(1.5rem, 3vw, 3rem) 5rem;
-  position: relative;
-  overflow: hidden;
-
-  // Round spotlight with linear logo gradient, centered on the bottom edge
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
-    background: linear-gradient(to top right, #d9da6d, #3dbdee);
-    opacity: 0.22;
-    filter: blur(60px);
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-  }
-
-  &:hover::before {
-    animation: ucGlowMorph 4s ease-in-out infinite;
-    opacity: 0.32;
-  }
-
-  // Transparent grey card, styled like the ghost button
-  .impact-cta-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba($baseWhite, 0.18);
-    backdrop-filter: none;
-
-    &::before { display: none; }
-  }
-}
-
-.uc-cta-buttons {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.uc-cta-btn-ghost {
-  display: inline-block;
-  background: transparent;
-  color: $primaryAccent;
-  border: 1px solid rgba($primaryAccent, 0.3);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
-
-  i, .bi { display: none; }
-
-  &:hover {
-    border-color: rgba($primaryAccent, 0.7);
-    background: rgba($primaryAccent, 0.06);
-    transform: translateY(-2px);
-    color: $primaryAccent;
-    text-decoration: none;
-  }
-}
-
 @keyframes ucGlowMorph {
   0%   { filter: blur(60px) hue-rotate(0deg);   transform: translate(-50%, -50%) scale(1); }
   25%  { filter: blur(68px) hue-rotate(30deg);  transform: translate(-51%, -51%) scale(1.06); }
   50%  { filter: blur(60px) hue-rotate(60deg);  transform: translate(-50%, -50%) scale(1); }
   75%  { filter: blur(64px) hue-rotate(20deg);  transform: translate(-49%, -51%) scale(1.04); }
   100% { filter: blur(60px) hue-rotate(0deg);   transform: translate(-50%, -50%) scale(1); }
-}
-
-// ── Reduced motion ────────────────────────────────────────────
-@media (prefers-reduced-motion: reduce) {
-  .uc-card-overlay        { transition: none; }
-  .uc-modal               { transition: none; }
-  .uc-modal-box           { transition: none; }
-  .uc-cta-section:hover::before { animation: none; }
 }

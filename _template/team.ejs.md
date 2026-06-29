@@ -25,9 +25,6 @@
           <div class="team-card-role"><%- item.title %></div>
           <% } %>
           <div class="team-card-affil"><%- item.affiliation %></div>
-          <% if (item.thesis_affiliation) { %>
-          <div class="team-card-thesis"><%- item.thesis_affiliation %></div>
-          <% } %>
         </div>
       </div>
 

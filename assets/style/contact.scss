@@ -13,6 +13,12 @@
   grid-template-columns: 1fr 300px;
   gap: 4rem;
   align-items: start;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin: 2.5rem auto;
+  }
 }
 
 // ── Form ──────────────────────────────────────────────────────
@@ -50,14 +56,20 @@
     width: 100%;
     transition: border-color 0.15s, background 0.15s;
 
-    &::placeholder { color: rgba($satelliteGray, 0.3); }
+    &::placeholder {
+      color: rgba($satelliteGray, 0.3);
+    }
+
     &:focus {
       border-color: rgba($primaryAccent, 0.4);
       background: rgba(255, 255, 255, 0.07);
     }
   }
 
-  textarea { resize: vertical; min-height: 130px; }
+  textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
 }
 
 .cf-required {
@@ -97,13 +109,5 @@
     line-height: 1.65;
     color: rgba($satelliteGray, 0.7);
     margin: 0 0 1.25rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .contact-body {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    margin: 2.5rem auto;
   }
 }

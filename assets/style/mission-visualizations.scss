@@ -70,7 +70,9 @@
   border-top: 1px solid rgba($primaryAccent, 0.1);
   align-items: start;
 
-  &:first-of-type { border-top: none; }
+  &:first-of-type {
+    border-top: none;
+  }
 
   @media (max-width: 760px) {
     grid-template-columns: 1fr;
@@ -92,8 +94,6 @@
   object-position: center;
   display: block;
 }
-
-.mv-mission-content {}
 
 .mv-mission-meta {
   display: flex;
@@ -158,36 +158,3 @@
   border-radius: 3px;
   padding: 0.25rem 0.55rem;
 }
-
-// ── CTA ───────────────────────────────────────────────────────
-.mv-cta-buttons {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.mv-cta-btn-ghost {
-  display: inline-block;
-  background: transparent;
-  color: $primaryAccent;
-  border: 1px solid rgba($primaryAccent, 0.3);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.75rem 1.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
-  letter-spacing: 0.01em;
-
-  i, .bi { display: none; }
-
-  &:hover {
-    border-color: rgba($primaryAccent, 0.7);
-    background: rgba($primaryAccent, 0.06);
-    transform: translateY(-2px);
-    color: $primaryAccent;
-    text-decoration: none;
-  }
-}
-

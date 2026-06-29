@@ -559,9 +559,3 @@ hr {
         top: 95%;
     }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .btn-beam::before   { animation: none; }
-  .status--up         { animation: none; }
-  .funder-track       { animation: none; }
-}

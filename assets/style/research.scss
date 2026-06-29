@@ -4,43 +4,6 @@
 // Research page — thesis row cards & publications table
 // =============================================================
 
-// ---------- Page hero ----------
-.research-hero {
-  background: $background;
-  color: white;
-  padding: 5rem 0 4rem;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  text-align: center;
-
-  .feature-eyebrow {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba($satelliteGray, 0.7);
-    margin: 0 0 1rem;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin: 0 0 1.25rem;
-    color: $baseWhite;
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
-
-  .research-hero-lede {
-    font-size: 1.0625rem;
-    line-height: 1.6;
-    color: rgba($satelliteGray, 0.9);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
 // ---------- Section layout ----------
 // Left/right padding mirrors the homepage .os-container (12rem at wide screens)
 .research-section {
@@ -153,6 +116,12 @@
   &:hover {
     background: rgba($primaryAccent, 0.04);
   }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.9rem 0.75rem;
+  }
 }
 
 // Photos column
@@ -161,6 +130,10 @@
   gap: 0.4rem;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+  }
 }
 
 .thesis-photo {
@@ -171,6 +144,11 @@
   object-position: top center;
   border: 1.5px solid rgba($satelliteGray, 0.15);
   flex-shrink: 0;
+
+  @media (max-width: 600px) {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .thesis-photo-placeholder {
@@ -329,22 +307,4 @@
   border: 1px solid rgba($softAccentYellow, 0.2);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
-}
-
-// ---------- Responsive ----------
-@media (max-width: 600px) {
-  .thesis-row {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    padding: 0.9rem 0.75rem;
-  }
-
-  .thesis-photos {
-    justify-content: flex-start;
-  }
-
-  .thesis-photo {
-    width: 48px;
-    height: 48px;
-  }
 }

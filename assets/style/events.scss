@@ -33,7 +33,9 @@
   align-items: start;
   position: relative; // needed for stretched link
 
-  &:first-of-type { border-top: none; }
+  &:first-of-type {
+    border-top: none;
+  }
 
   // Subtle hover lift on the image
   &:hover .ev-img-wrap {
@@ -57,7 +59,10 @@
     inset: 0;
   }
 
-  &:hover { color: inherit; text-decoration: none; }
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 // Action links must sit above the stretched-link overlay
@@ -110,7 +115,9 @@
   letter-spacing: -0.01em;
   margin: 0 0 0.35rem;
 
-  .ev-item--past & { color: rgba($baseWhite, 0.6); }
+  .ev-item--past & {
+    color: rgba($baseWhite, 0.6);
+  }
 }
 
 .ev-time {
@@ -134,14 +141,6 @@
 }
 
 // ── Detail page ───────────────────────────────────────────────
-.ev-detail-time {
-  font-size: 0.875rem;
-  font-family: 'IBM Plex Mono', monospace;
-  color: rgba($satelliteGray, 0.65);
-  letter-spacing: 0.04em;
-  margin: 0;
-}
-
 .ev-detail-links {
   display: flex;
   gap: 0.75rem;
@@ -161,7 +160,10 @@
     font-size: 0.8125rem;
     transition: color 0.15s ease;
 
-    &:hover { color: $primaryAccent; text-decoration: none; }
+    &:hover {
+      color: $primaryAccent;
+      text-decoration: none;
+    }
   }
 }
 
@@ -184,7 +186,9 @@
   transition: opacity 0.15s ease, transform 0.15s ease;
   letter-spacing: 0.01em;
 
-  i, .bi { display: none; }
+  i, .bi {
+    display: none;
+  }
 
   &:hover {
     opacity: 0.88;
@@ -207,7 +211,9 @@
   transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
   letter-spacing: 0.01em;
 
-  i, .bi { display: none; }
+  i, .bi {
+    display: none;
+  }
 
   &:hover {
     border-color: rgba($primaryAccent, 0.65);

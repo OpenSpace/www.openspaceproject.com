@@ -54,6 +54,14 @@
   background-size: cover;
   background-position: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+  @media (max-width: 640px) {
+    flex-basis: 90%; height: 320px;
+  }
+
+  @media (max-width: 992px) {
+    flex-basis: 80%; height: 360px;
+  }
 }
 
 a.content-slide {
@@ -66,14 +74,6 @@ a.content-slide {
     transform: scale(1.015);
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
   }
-}
-
-@media (max-width: 992px) {
-  .content-slide { flex-basis: 80%; height: 360px; }
-}
-
-@media (max-width: 640px) {
-  .content-slide { flex-basis: 90%; height: 320px; }
 }
 
 .content-slide-overlay {
@@ -154,9 +154,13 @@ a.content-slide {
   }
 }
 
-.carousel-dot:hover:not(.active) { background: rgba($satelliteGray, 0.7); }
+.carousel-dot:hover:not(.active) {
+  background: rgba($satelliteGray, 0.7);
+}
 
-.carousel-buttons { display: flex; gap: 0.625rem; }
+.carousel-buttons {
+  display: flex; gap: 0.625rem;
+}
 
 .carousel-btn {
   width: 38px;
@@ -171,17 +175,21 @@ a.content-slide {
   align-items: center;
   justify-content: center;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
 
-.carousel-btn:hover {
-  background: $vividAccentGreen;
-  color: $background;
-  border-color: $vividAccentGreen;
-}
+  &:hover {
+    background: $vividAccentGreen;
+    color: $background;
+    border-color: $vividAccentGreen;
+  }
 
-.carousel-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-.carousel-btn:disabled:hover { background: rgba($background, 0.65); color: $baseWhite; border-color: rgba($baseWhite, 0.3); }
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 
-@media (prefers-reduced-motion: reduce) {
-  .content-carousel-track { transition: none; }
+  &:disabled:hover {
+    background: rgba($background, 0.65);
+    color: $baseWhite;
+    border-color: rgba($baseWhite, 0.3);
+  }
 }

@@ -1,6 +1,0 @@
-title: Hero
-author: OpenSpace
-organization: openspace
-contributes:
-  shortcodes:
-    - hero.lua

@@ -6,23 +6,18 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Previous versions"
+  breadcrumbs:
+    - "Install"
+    - text: "Version 0.22.0"
+      link: "version-0220.qmd"
+    - "Previous Versions"
+  lede: "Windows binaries and release notes for older OpenSpace releases."
 ---
 
 ```{=html}
-<section class="dl-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Install</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-parent"><a href="version-0220.qmd">Version 0.22.0</a></span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Previous Versions</span>
-  </nav>
-  <div class="dl-hero-inner">
-<h1 class="dl-hero-title">Previous versions</h1>
-    <p class="dl-hero-lede">Windows binaries and release notes for older OpenSpace releases.</p>
-  </div>
-</section>
-
 <div class="dl-prev-section">
   <table class="dl-prev-table">
     <thead>

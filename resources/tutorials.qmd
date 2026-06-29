@@ -6,21 +6,18 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Get started with OpenSpace"
+  breadcrumbs:
+    - "Resources"
+    - "Tutorials"
+  lede: >
+    Step-by-step video guides covering installation, navigation, and the user interface —
+    everything you need to take your first flight.
 ---
 
 ```{=html}
-<section class="tut-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Resources</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Tutorials</span>
-  </nav>
-  <div>
-    <h1>Get started with OpenSpace</h1>
-    <p class="tut-hero-lede">Step-by-step video guides covering installation, navigation, and the user interface — everything you need to take your first flight.</p>
-  </div>
-</section>
-
 <div class="tut-section">
   <h2 class="tut-section-heading">Getting started · v0.21.0</h2>
 

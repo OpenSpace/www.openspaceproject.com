@@ -6,21 +6,18 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Ride alongside the spacecraft at the moment it happened"
+  breadcrumbs:
+    - "Features"
+    - "Mission Visualizations"
+  lede: >
+    OpenSpace recreates real missions using actual trajectory data, instrument footprints,
+    and observation timelines from NASA and ESA archives.
 ---
 
 ```{=html}
-<section class="mv-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Features</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Mission Visualizations</span>
-  </nav>
-  <div>
-    <h1>Ride alongside the spacecraft at the moment it happened</h1>
-    <p class="mv-hero-lede">OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA and ESA archives.</p>
-  </div>
-</section>
-
 <div class="mv-section">
   <h2 class="mv-section-h2">How it works</h2>
   <div class="mv-caps-grid">

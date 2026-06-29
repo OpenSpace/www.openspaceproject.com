@@ -6,23 +6,19 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "The Sun's reach, visualized in real data"
+  breadcrumbs:
+    - "Features"
+    - "Heliophysics"
+  image: "/assets/images/features/bastilleday-2.webp"
+  lede: >
+    From solar wind to coronal mass ejections — OpenSpace streams live and historical
+    space weather data so you can see what the Sun is doing to our solar system right now.
 ---
 
 ```{=html}
-<section class="sw-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Features</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Heliophysics</span>
-  </nav>
-  <div class="sw-hero-bg" style="background-image:url('../assets/images/features/bastilleday=2.webp')"></div>
-  <div class="sw-hero-overlay"></div>
-  <div class="sw-hero-content">
-    <h1 class="sw-hero-title">The Sun's reach, visualized in real data</h1>
-    <p class="sw-hero-lede">From solar wind to coronal mass ejections — OpenSpace streams live and historical space weather data so you can see what the Sun is doing to our solar system right now.</p>
-  </div>
-</section>
-
 <div class="sw-section">
   <div class="sw-intro-grid">
     <div class="sw-intro-text">

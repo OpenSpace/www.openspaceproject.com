@@ -6,9 +6,17 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
----
 
-{{< hero parent="Features" current="Display Support" title="Any screen. Any venue." "From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and tiled wall support built in." >}}
+hero:
+  title: "Any screen. Any venue."
+  breadcrumbs:
+    - "Features"
+    - "Display Support"
+  lede: >
+    From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your
+    display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and
+    tiled wall support built in.
+---
 
 ```{=html}
 <nav class="ds-dot-nav" aria-label="Navigate to venue section">
@@ -143,7 +151,7 @@ format:
     <p class="section-lede">The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="https://docs.openspaceproject.com" target="_blank" rel="noopener">Documentation</a>
-      <a class="btn-ghost-os" href="../contact.qmd">Get in touch</a>
+      <a class="btn-ghost-os" href="/community/contact.qmd">Get in touch</a>
     </div>
   </div>
 </section>

@@ -1,49 +1,5 @@
 /*-- scss:rules --*/
 
-// =============================================================
-// About page styles — dark mode with varied section backgrounds
-// Save at assets/style/about.scss
-// Add to _quarto.yml theme list AFTER use-cases.scss
-// =============================================================
-
-// ---------- Hero (deepest dark) ----------
-.about-hero {
-  background: $background;
-  color: white;
-  padding: 5rem 0 4rem;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  text-align: center;
-}
-
-
-.about-hero .feature-eyebrow {
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba($satelliteGray, 0.75);
-  margin: 0 0 1rem;
-}
-
-.about-hero .feature-title-dark {
-  font-size: clamp(2rem, 4.5vw, 3.25rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin: 0 0 1.25rem;
-  color: $baseWhite;
-}
-
-.about-hero .use-cases-lede {
-  display: block;
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: rgba($baseWhite, 0.9);
-  max-width: 640px;
-  margin: 0 auto;
-}
-
 // ---------- Body prose section (standard dark) ----------
 .about-body-section {
   background: $background;

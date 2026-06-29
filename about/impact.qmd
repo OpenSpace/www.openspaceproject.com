@@ -9,21 +9,19 @@ format:
     include-in-header:
       text: |
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+hero:
+  title: "OpenSpace around the world"
+  breadcrumbs:
+    - "About"
+    - "Impact"
+  lede: >
+    From planetarium domes to research labs, OpenSpace is running on every continent.
+    Here's a look at our global footprint, annual progress, and how you can be part of the
+    story.
 ---
 
 ```{=html}
-<section class="impact-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">About</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Impact</span>
-  </nav>
-  <div>
-    <h1>OpenSpace around the world</h1>
-    <p class="impact-hero-lede">From planetarium domes to research labs, OpenSpace is running on every continent. Here's a look at our global footprint, annual progress, and how you can be part of the story.</p>
-  </div>
-</section>
-
 <!-- Startup map -->
 <div class="impact-section">
   <h2 class="impact-section-heading">Where OpenSpace runs</h2>

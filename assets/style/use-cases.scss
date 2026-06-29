@@ -4,35 +4,6 @@
 // Use Cases page
 // =============================================================
 
-// ── Hero ──────────────────────────────────────────────────────
-.uc-hero {
-  background: $background;
-  color: white;
-  padding: 5rem 0 4rem;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  text-align: center;
-
-}
-
-.uc-hero-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin: 0 auto 1.25rem;
-  color: $baseWhite;
-  max-width: 760px;
-}
-
-.uc-hero-lede {
-  font-size: 1.0625rem;
-  line-height: 1.6;
-  color: rgba($satelliteGray, 0.9);
-  max-width: 560px;
-  margin: 0 auto;
-}
-
 // ── Grid section ──────────────────────────────────────────────
 .uc-grid-section {
   width: 100vw;

@@ -6,24 +6,22 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Where OpenSpace users connect"
+  breadcrumbs:
+    - "Community"
+    - "Slack"
+  action:
+    text: "Join the Slack"
+    link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
+  lede: >
+    The OpenSpace Slack is where planetarium professionals, educators, scientists,
+    developers, and enthusiasts come together to learn, share, and get help — in real
+    time.
 ---
 
 ```{=html}
-<section class="slack-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Community</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Slack</span>
-  </nav>
-  <div class="slack-hero-content">
-    <h1 class="slack-hero-title">Where OpenSpace users connect</h1>
-    <p class="slack-hero-lede">The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help — in real time.</p>
-    <div class="slack-hero-actions">
-      <a class="btn-primary-os" href="https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w" target="_blank" rel="noopener">Join the Slack</a>
-    </div>
-  </div>
-</section>
-
 <div class="slack-section">
   <div class="slack-intro-grid">
     <div class="slack-intro-text">

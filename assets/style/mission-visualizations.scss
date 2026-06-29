@@ -4,44 +4,6 @@
 // Mission Visualizations page
 // =============================================================
 
-// ── Hero ──────────────────────────────────────────────────────
-.mv-hero {
-  background: $background;
-  color: white;
-  padding: 5rem 0 4rem;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  text-align: center;
-
-  .feature-eyebrow {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba($satelliteGray, 0.7);
-    margin: 0 0 1rem;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin: 0 auto 1.25rem;
-    color: $baseWhite;
-    max-width: 760px;
-  }
-}
-
-.mv-hero-lede {
-  font-size: 1.0625rem;
-  line-height: 1.6;
-  color: rgba($satelliteGray, 0.9);
-  max-width: 580px;
-  margin: 0 auto;
-}
-
 // ── Section wrapper ───────────────────────────────────────────
 .mv-section {
   width: 100vw;

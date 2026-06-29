@@ -8,8 +8,7 @@ format:
     toc: false
     anchor-sections: false
     theme:
-      - styles/brand.scss
-      - styles/home.scss
+      - assets/style/home.scss
 ---
 
 ```{=html}

@@ -7,23 +7,18 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "OpenSpace User Meeting"
+  breadcrumbs:
+    - "Community"
+    - text: "Annual Meetings"
+      link: "/community/user-meetings/"
+    - "2025"
+  lede: "July 31 – August 1, 2025 · American Museum of Natural History, New York"
 ---
 
 ```{=html}
-<section class="ds-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Community</span>
-    <span class="bc-sep">›</span>
-    <a href="/community/user-meetings/">Annual Meetings</a>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">2025</span>
-  </nav>
-  <div>
-    <h1>OpenSpace<br>User Meeting</h1>
-    <p class="ds-hero-lede">July 31 – August 1, 2025 · American Museum of Natural History, New York</p>
-  </div>
-</section>
-
 <nav class="ds-dot-nav" aria-label="Navigate to section">
   <button class="ds-dot-nav-item is-active" data-target="recap"      aria-label="Recap"></button>
   <button class="ds-dot-nav-item"            data-target="sessions"   aria-label="Sessions"></button>

@@ -23,21 +23,18 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Academic Research & Publications"
+  breadcrumbs:
+    - "About"
+    - "Research"
+  lede: >
+    OpenSpace sits at the intersection of scientific visualization research and public
+    outreach. Explore the theses and papers that shape it.
 ---
 
 ```{=html}
-<section class="research-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">About</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Research</span>
-  </nav>
-  <div>
-    <h1>Academic Research & Publications</h1>
-    <p class="research-hero-lede">OpenSpace sits at the intersection of scientific visualization research and public outreach. Explore the theses and papers that shape it.</p>
-  </div>
-</section>
-
 <div class="research-section">
   <h2 class="research-section-heading">Master's Thesis Program</h2>
   <p class="liu-program-desc">

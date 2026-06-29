@@ -6,21 +6,18 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Brand & Attribution"
+  breadcrumbs:
+    - "About"
+    - "Brand & Attribution"
+  lede: >
+    Guidelines for crediting OpenSpace in publications, presentations, and media, plus
+    logos available for download.
 ---
 
 ```{=html}
-<section class="about-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">About</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Brand & Attribution</span>
-  </nav>
-  <div class="os-container narrow">
-    <h1 class="feature-title-dark">Brand & Attribution</h1>
-    <p class="use-cases-lede">Guidelines for crediting OpenSpace in publications, presentations, and media, plus logos available for download.</p>
-  </div>
-</section>
-
 <section class="about-body-section">
   <div class="os-container narrow">
 
@@ -34,7 +31,7 @@ format:
     <p>For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available in the <a href="https://docs.openspaceproject.com" target="_blank" rel="noopener">documentation</a>.</p>
 
     <h2 class="about-h2">Usage guidelines</h2>
-    <p>OpenSpace is open-source software released under the MIT License. Images and visualizations produced with OpenSpace may be used freely for educational, editorial, and research purposes with appropriate credit. For commercial use or licensing questions, <a href="/contact.qmd">contact us</a>.</p>
+    <p>OpenSpace is open-source software released under the MIT License. Images and visualizations produced with OpenSpace may be used freely for educational, editorial, and research purposes with appropriate credit. For commercial use or licensing questions, <a href="/community/contact.qmd">contact us</a>.</p>
     <p>When using the OpenSpace name or logo, please follow these guidelines:</p>
     <ul class="brand-guidelines-list">
       <li>Do not alter, distort, or modify the logo in any way.</li>
@@ -95,7 +92,7 @@ format:
     <h2 class="section-heading">Questions about usage?</h2>
     <p class="section-lede">For licensing, permissions, or anything not covered here, reach out directly.</p>
     <div class="hero-actions">
-      <a class="btn-primary-os" href="../contact.qmd">Get in touch</a>
+      <a class="btn-primary-os" href="/community/contact.qmd">Get in touch</a>
     </div>
   </div>
 </section>

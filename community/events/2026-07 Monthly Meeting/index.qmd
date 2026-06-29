@@ -6,23 +6,17 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: July OpenSpace Monthly Meeting
+  breadcrumbs:
+    - "Community"
+    - "Events"
+    - "July 2026"
+  lede: "Monday, July 13, 2026 · 3:00–4:00 PM EST · Zoom"
 ---
 
 ```{=html}
-<section class="about-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Community</span>
-    <span class="bc-sep">›</span>
-    <a href="/community/events/">Events</a>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">July 2026</span>
-  </nav>
-  <div class="os-container narrow">
-    <h1 class="feature-title-dark">July OpenSpace Monthly Meeting</h1>
-    <p class="ev-detail-time">Monday, July 13, 2026 · 3:00–4:00 PM EST · Zoom</p>
-  </div>
-</section>
-
 <section class="about-body-section">
   <div class="os-container narrow">
     <p>Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>

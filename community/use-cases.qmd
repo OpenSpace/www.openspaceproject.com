@@ -6,23 +6,17 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
-resources:
-  - ../assets/images/use-cases/towson.webp
+
+hero:
+  title: "OpenSpace in Action"
+  breadcrumbs:
+    - "Community"
+    - "Use Cases"
+  lede: >
+    Real installations, real venues. See how institutions worldwide are using OpenSpace.
 ---
 
 ```{=html}
-<section class="uc-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Community</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Use Cases</span>
-  </nav>
-  <div>
-    <h1 class="uc-hero-title">OpenSpace in Action</h1>
-    <p class="uc-hero-lede">Real installations, real venues. See how institutions worldwide are using OpenSpace.</p>
-  </div>
-</section>
-
 <div class="uc-grid-section">
   <div class="uc-grid">
     <div class="uc-card" role="button" tabindex="0" data-case="museum-life-science"
@@ -35,7 +29,7 @@ resources:
     </div>
 
     <div class="uc-card" role="button" tabindex="0" data-case="b612"
-         style="background-image:url('../../assets/images/use-cases/B612%20asteroids.webp'); background-position:center 50%">
+         style="background-image:url('../../assets/images/use-cases/b612_asteroids.webp'); background-position:center 50%">
       <div class="uc-card-overlay"></div>
       <div class="uc-card-text">
         <p class="uc-card-meta">B612's Asteroid Institute</p>
@@ -130,7 +124,7 @@ resources:
     <p class="section-lede">If your institution is using OpenSpace, we'd love to feature it here.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="../../install/version-0220.qmd">Download OpenSpace</a>
-      <a class="btn-ghost-os" href="../contact.qmd">Get in touch</a>
+      <a class="btn-ghost-os" href="/community/contact.qmd">Get in touch</a>
     </div>
   </div>
 </section>

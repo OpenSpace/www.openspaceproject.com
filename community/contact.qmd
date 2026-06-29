@@ -6,21 +6,16 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "Get in touch"
+  breadcrumbs:
+    - "Community"
+    - "Contact"
+  lede: "Have a question, bug report, or want to learn more? We're happy to help."
 ---
 
 ```{=html}
-<section class="contact-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">Community</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">Contact</span>
-  </nav>
-  <div>
-    <h1>Get in touch</h1>
-    <p class="contact-hero-lede">Have a question, bug report, or want to learn more? We're happy to help.</p>
-  </div>
-</section>
-
 <div class="contact-body">
 
   <div class="contact-form-wrap">

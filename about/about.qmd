@@ -6,21 +6,19 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+
+hero:
+  title: "An open-source universe"
+  breadcrumbs:
+    - "About"
+    - "About OpenSpace"
+  lede: >
+    OpenSpace makes the latest data from NASA missions, observatories, and research
+    institutions explorable by anyone — in planetariums, classrooms, and on personal
+    computers.
 ---
 
 ```{=html}
-<section class="about-hero">
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <span class="bc-parent">About</span>
-    <span class="bc-sep">›</span>
-    <span class="bc-current">About OpenSpace</span>
-  </nav>
-  <div class="os-container narrow">
-    <h1 class="feature-title-dark">An open-source universe</h1>
-    <p class="use-cases-lede">OpenSpace makes the latest data from NASA missions, observatories, and research institutions explorable by anyone — in planetariums, classrooms, and on personal computers.</p>
-  </div>
-</section>
-
 <section class="about-body-section">
   <div class="os-container narrow">
 
@@ -46,7 +44,7 @@ format:
     <p class="section-lede">OpenSpace is built in the open by a community that welcomes new contributors — whether you run a planetarium, teach with OpenSpace, or contribute code.</p>
     <div class="hero-actions">
       <a class="btn-primary-os" href="https://github.com/OpenSpace/OpenSpace" target="_blank" rel="noopener">View on GitHub</a>
-      <a class="btn-ghost-os" href="../contact.qmd">Get in touch</a>
+      <a class="btn-ghost-os" href="/community/contact.qmd">Get in touch</a>
     </div>
   </div>
 </section>

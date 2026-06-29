@@ -4,9 +4,7 @@ project:
   preview:
     port: 12800
   resources:
-    - assets/images/institutions/
-    - assets/images/carousel/
-    - assets/images/features/
+    - assets/images/
     - assets/brand/
     - assets/js/
 
@@ -31,7 +29,7 @@ format:
       - "assets/style/annual-meeting.scss"
       - "assets/style/content-carousel.scss"
       - "assets/style/home.scss"
-      - "assets/style/about-openspace.scss"
+      - "assets/style/about.scss"
       - "assets/style/team.scss"
       - "assets/style/research.scss"
       - "assets/style/partners.scss"
@@ -123,6 +121,7 @@ execute:
 
 filters:
   - panel-accordion
+  - openspace/hero
 
 extensions:
   iconify:

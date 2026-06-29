@@ -134,6 +134,7 @@ extensions:
     # rotate: "90deg"
     mode: "svg"
     style: "color: #ecf5fb;"
+  openspace:
 
 # List of available icons:  https://fontawesome.com/search?ic=free-collection
 # List of available icons:  https://icon-sets.iconify.design/   via   https://github.com/mcanouil/quarto-iconify

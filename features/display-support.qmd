@@ -33,26 +33,29 @@ cta:
 ---
 
 ```{=html}
-<nav class="ds-dot-nav" aria-label="Navigate to venue section">
-  <button class="ds-dot-nav-item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
-  <button class="ds-dot-nav-item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
-  <button class="ds-dot-nav-item" data-target="museum-exhibits" aria-label="Museum exhibits"></button>
-  <button class="ds-dot-nav-item" data-target="fisheye" aria-label="Fisheye rendering"></button>
-  <button class="ds-dot-nav-item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
+<nav class="dot-nav" aria-label="Navigate to venue section">
+  <button class="dot-nav-item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
+  <button class="dot-nav-item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
+  <button class="dot-nav-item" data-target="museum-exhibits" aria-label="Museum exhibits"></button>
+  <button class="dot-nav-item" data-target="fisheye" aria-label="Fisheye rendering"></button>
+  <button class="dot-nav-item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
 </nav>
+```
 
-<section class="ds-venue-section" id="dome-theaters">
-  <div class="ds-venue-inner">
+
+
+
+```{=html}
+<section class="ds-section" id="dome-theaters">
+  <div class="ds-inner">
     <p class="ds-eyebrow">Planetarium</p>
-    <h2 class="ds-venue-title">Dome theaters</h2>
-    <div class="ds-venue-img-wrap">
-      <img src="/assets/images/venue-cards/hayden_jwst.webp"
-           alt="Hayden Planetarium dome running OpenSpace with JWST data"
-           class="ds-venue-img">
-    </div>
-    <div class="ds-venue-body">
-      <p class="ds-venue-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.</p>
-      <ul class="ds-venue-list">
+    <h2 class="ds-title">Dome theaters</h2>
+    <img src="/assets/images/venue-cards/hayden_jwst.webp"
+         alt="Hayden Planetarium dome running OpenSpace with JWST data"
+         class="ds-img">
+    <div class="ds-body">
+      <p class="ds-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.</p>
+      <ul class="ds-list">
         <li>MPCDI mesh warping for any dome geometry</li>
         <li>Multi-projector soft edge blending and masking</li>
         <li>Fisheye, cylindrical, and equirectangular output modes</li>
@@ -63,18 +66,16 @@ cta:
   </div>
 </section>
 
-<section class="ds-venue-section ds-venue-section--alt" id="classrooms-desktops">
-  <div class="ds-venue-inner">
+<section class="ds-section ds-section--alt" id="classrooms-desktops">
+  <div class="ds-inner">
     <p class="ds-eyebrow">Classroom</p>
-    <h2 class="ds-venue-title">Classrooms & desktops</h2>
-    <div class="ds-venue-img-wrap">
-      <img src="/assets/images/venue-cards/amnh_lwd_students.webp"
-           alt="Students using OpenSpace in a classroom at AMNH"
-           class="ds-venue-img">
-    </div>
-    <div class="ds-venue-body">
-      <p class="ds-venue-desc">OpenSpace runs on Windows and Linux from a standard laptop or workstation.</p>
-      <ul class="ds-venue-list">
+    <h2 class="ds-title">Classrooms & desktops</h2>
+    <img src="/assets/images/venue-cards/amnh_lwd_students.webp"
+         alt="Students using OpenSpace in a classroom at AMNH"
+         class="ds-img">
+    <div class="ds-body">
+      <p class="ds-desc">OpenSpace runs on Windows and Linux from a standard laptop or workstation.</p>
+      <ul class="ds-list">
         <li>Windows and Linux — no licensing costs</li>
         <li>Runs on laptops with gaming graphics cards</li>
         <li>Single-monitor and multi-screen desktop configurations</li>
@@ -84,18 +85,16 @@ cta:
   </div>
 </section>
 
-<section class="ds-venue-section" id="museum-exhibits">
-  <div class="ds-venue-inner">
+<section class="ds-section" id="museum-exhibits">
+  <div class="ds-inner">
     <p class="ds-eyebrow">Museum</p>
-    <h2 class="ds-venue-title">Museum exhibits</h2>
-    <div class="ds-venue-img-wrap">
-      <img src="/assets/images/venue-cards/spaceship.webp"
-           alt="OpenSpace running in a museum exhibit"
-           class="ds-venue-img">
-    </div>
-    <div class="ds-venue-body">
-      <p class="ds-venue-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium</p>
-      <ul class="ds-venue-list">
+    <h2 class="ds-title">Museum exhibits</h2>
+    <img src="/assets/images/venue-cards/spaceship.webp"
+         alt="OpenSpace running in a museum exhibit"
+         class="ds-img">
+    <div class="ds-body">
+      <p class="ds-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium</p>
+      <ul class="ds-list">
         <li>Touch and gesture input for kiosk-style exhibits</li>
         <li>Custom UI profiles — lock to specific content or flight paths</li>
         <li>Synchronized multi-display walls and segmented spheres</li>
@@ -105,18 +104,16 @@ cta:
   </div>
 </section>
 
-<section class="ds-venue-section ds-venue-section--alt" id="fisheye">
-  <div class="ds-venue-inner">
+<section class="ds-section ds-section--alt" id="fisheye">
+  <div class="ds-inner">
     <p class="ds-eyebrow">Rendering</p>
-    <h2 class="ds-venue-title">Fisheye rendering</h2>
-    <div class="ds-venue-img-wrap">
-      <video class="ds-venue-img" autoplay loop muted playsinline>
-        <source src="/assets/videos/fisheye.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="ds-venue-body">
-      <p class="ds-venue-desc">OpenSpace's fisheye renderer reproduces the full 180&deg; hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>
-      <ul class="ds-venue-list">
+    <h2 class="ds-title">Fisheye rendering</h2>
+    <video class="ds-img" autoplay loop muted playsinline>
+      <source src="/assets/videos/fisheye.mp4" type="video/mp4">
+    </video>
+    <div class="ds-body">
+      <p class="ds-desc">OpenSpace's fisheye renderer reproduces the full 180&deg; hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>
+      <ul class="ds-list">
         <li>Native 180&deg; fisheye — no post-process warping</li>
         <li>Per-eye stereo rendering for 3D dome experiences</li>
         <li>Supports 4K and 8K output resolutions</li>
@@ -127,33 +124,44 @@ cta:
   </div>
 </section>
 
-<div class="ds-section ds-section-alt" id="technical-capabilities">
-  <h2 class="ds-section-h2">Technical capabilities</h2>
-  <div class="ds-tech-grid">
-    <div class="ds-tech-card">
-      <h3 class="ds-tech-title">MPCDI support</h3>
-      <p class="ds-tech-desc">Reads industry-standard MPCDI calibration files for precise mesh warping and blending on any dome or curved screen.</p>
-    </div>
-    <div class="ds-tech-card">
-      <h3 class="ds-tech-title">Edge blending</h3>
-      <p class="ds-tech-desc">Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.</p>
-    </div>
-    <div class="ds-tech-card">
-      <h3 class="ds-tech-title">Projection modes</h3>
-      <p class="ds-tech-desc">Fisheye, equirectangular, cylindrical, and perspective projections, all switchable via config for any screen geometry.</p>
-    </div>
-    <div class="ds-tech-card">
-      <h3 class="ds-tech-title">Multi-node sync</h3>
-      <p class="ds-tech-desc">Synchronized rendering across multiple GPUs and machines for tiled video walls and segmented spheres.</p>
-    </div>
-    <div class="ds-tech-card">
-      <h3 class="ds-tech-title">Window configs</h3>
-      <p class="ds-tech-desc">A single JSON file describes your entire display setup. Switch between venues without reinstalling.</p>
-    </div>
-    <div class="ds-tech-card">
-      <h3 class="ds-tech-title">Cross-platform</h3>
-      <p class="ds-tech-desc">Windows, macOS, and Linux. Runs on consumer hardware and professional visualization clusters alike.</p>
-    </div>
-  </div>
-</div>
 ```
+
+::: {.ds-section .ds-section--alt #technical-capabilities}
+
+## Technical capabilities
+
+::: {.card-grid}
+
+::: {.card}
+### MPCDI support
+Reads industry-standard MPCDI calibration files for precise mesh warping and blending on any dome or curved screen.
+:::
+
+::: {.card}
+### Edge blending
+Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
+:::
+
+::: {.card}
+### Projection modes
+Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
+:::
+
+::: {.card}
+### Multi-node sync
+Synchronized rendering across multiple GPUs and machines for tiled video walls and segmented spheres.
+:::
+
+::: {.card}
+### Window configs
+A single JSON file describes your entire display setup. Switch between venues without reinstalling.
+:::
+
+::: {.card}
+### Cross-platform
+Windows, macOS, and Linux. Runs on consumer hardware and professional visualization clusters alike.
+:::
+
+:::
+
+:::

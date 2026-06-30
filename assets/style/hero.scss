@@ -1,11 +1,11 @@
 /*-- scss:rules --*/
 
 .hero {
+  @include full-bleed;
+
   background: $background;
   color: white;
   padding: 5rem clamp(1.5rem, 8vw, 12rem) 4rem;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
   text-align: center;
 
   h1 {
@@ -58,6 +58,8 @@
 /* Only apply styles when a hero image is present */
 body:has(img.hero) {
   #title-block-header.quarto-title-block {
+    @include full-bleed;
+
     position: relative;
     min-height: 30vh;
     background-color: transparent !important;
@@ -65,8 +67,6 @@ body:has(img.hero) {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding-left: 0;
     padding-right: 0;
@@ -127,16 +127,6 @@ body:has(img.hero) {
 /* Hide the hero image element itself */
 img.hero {
   display: none !important;
-}
-
-.os-container {
-  max-width: 1200px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 // ---------- Page breadcrumbs ----------

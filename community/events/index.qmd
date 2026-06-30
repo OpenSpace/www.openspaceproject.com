@@ -18,7 +18,7 @@ hero:
 
 ```{=html}
 <section class="ev-section about-body-section">
-  <div class="os-container narrow">
+  <div class="os-container">
     <h2 class="about-h2" style="margin-top:0">Upcoming</h2>
 
     <div class="ev-item">
@@ -46,7 +46,7 @@ hero:
 </section>
 
 <section class="ev-section ev-section--past">
-  <div class="os-container narrow">
+  <div class="os-container">
     <h2 class="about-h2" style="margin-top:0">Past events</h2>
 
     <div class="ev-item ev-item--past">

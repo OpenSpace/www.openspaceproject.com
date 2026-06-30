@@ -1,26 +1,15 @@
 /*-- scss:rules --*/
 
-// =============================================================
-// Annual User Meeting listing + detail pages
-// =============================================================
-
-// ── Meeting list section ──────────────────────────────────────
+// Meeting list section
 .um-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  @include full-bleed;
+
   background: $background;
   padding: 4rem 0;
   border-top: 1px solid rgba($primaryAccent, 0.06);
 }
 
-.um-section .os-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-left: clamp(1rem, 2vw, 1.5rem);
-  padding-right: clamp(1rem, 2vw, 1.5rem);
-}
-
-// ── Meeting item row ──────────────────────────────────────────
+// Meeting item row
 .um-item {
   display: grid;
   grid-template-columns: 55% 1fr;
@@ -30,7 +19,9 @@
   align-items: center;
   position: relative;
 
-  &:first-of-type { border-top: none; }
+  &:first-of-type {
+    border-top: none;
+  }
 
   &:hover .um-img-wrap {
     border-color: rgba($primaryAccent, 0.3);
@@ -43,11 +34,16 @@
 }
 
 .um-item--past {
-  .um-img-wrap { opacity: 0.6; }
-  .um-title    { color: rgba($baseWhite, 0.7); }
+  .um-img-wrap {
+    opacity: 0.6;
+  }
+
+  .um-title {
+    color: rgba($baseWhite, 0.7);
+  }
 }
 
-// ── Image ─────────────────────────────────────────────────────
+// Image
 .um-img-wrap {
   border-radius: 10px;
   overflow: hidden;
@@ -67,7 +63,7 @@
   }
 }
 
-// ── Body ──────────────────────────────────────────────────────
+// Body
 .um-meta {
   display: flex;
   align-items: center;
@@ -116,7 +112,10 @@
     inset: 0;
   }
 
-  &:hover { color: inherit; text-decoration: none; }
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .um-action-link {
@@ -147,12 +146,16 @@
   letter-spacing: 0.01em;
   transition: color 0.15s ease;
 
-  i, .bi { display: none; }
+  i, .bi {
+    display: none;
+  }
 
-  &:hover { color: $baseWhite; text-decoration: none; }
+  &:hover {
+    color: $baseWhite;
+    text-decoration: none;
+  }
 }
 
-// ── Meeting detail page prose (inside ds-venue-section) ───────
 .um-detail-body {
   max-width: 720px;
 
@@ -194,14 +197,21 @@
         color: $primaryAccent;
         text-decoration: none;
         transition: color 0.15s ease;
-        i, .bi { display: none; }
-        &:hover { color: $baseWhite; text-decoration: none; }
+
+        i, .bi {
+          display: none;
+        }
+
+        &:hover {
+          color: $baseWhite;
+          text-decoration: none;
+        }
       }
     }
   }
 }
 
-// ── Schedule ──────────────────────────────────────────────────
+// Schedule
 
 .um-schedule-note {
   font-size: 0.8rem;
@@ -218,7 +228,9 @@
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba($primaryAccent, 0.15);
 
-  &:first-of-type { margin-top: 0; }
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .um-schedule-wrap {
@@ -270,5 +282,115 @@
   .um-sched-break {
     color: rgba($satelliteGray, 0.5);
     font-style: italic;
+  }
+}
+
+
+
+
+
+
+.venue-section {
+  @include full-bleed;
+
+  background: $background;
+  padding: 5rem 0 4.5rem;
+  scroll-margin-top: 80px;
+  border-top: 1px solid rgba($primaryAccent, 0.06);
+
+  &.venue-section--alt {
+    background: #0d1014;
+  }
+}
+
+.venue-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 8vw, 12rem);
+}
+
+.venue-eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $primaryAccent;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0 0 0.6rem;
+}
+
+.venue-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: $baseWhite;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: 0 0 2rem;
+}
+
+.venue-img {
+  width: 100%;
+  height: clamp(280px, 42vw, 540px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba($primaryAccent, 0.12);
+  margin-bottom: 2.5rem;
+}
+
+#fisheye .venue-img {
+  width: min(100%, 80vh);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 2.5rem;
+}
+
+.venue-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.venue-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba($satelliteGray, 0.88);
+  margin: 0;
+}
+
+.venue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: rgba($satelliteGray, 0.75);
+    padding: 0.45rem 0 0.45rem 1.25rem;
+    border-bottom: 1px solid rgba($primaryAccent, 0.07);
+    position: relative;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba($primaryAccent, 0.55);
+    }
   }
 }

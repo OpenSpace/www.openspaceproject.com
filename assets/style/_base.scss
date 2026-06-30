@@ -1,0 +1,37 @@
+//
+// _base.scss:  Global, page-agnostic foundation
+//
+// This file contains site-wide element styling that isn't a named component — html/body,
+// headings h1–h6, links, hr, the global sections, containers, and structural overrides
+// for Quarto chrome (nav-footer, title block, breadcrumbs)
+
+/*-- scss:defaults --*/
+$body-bg: $background;
+$body-color: $textColor;
+$link-color: $softAccentYellow;
+$link-hover-color: lighten($softAccentYellow, 8%);
+$headings-color: $primaryAccent;
+$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
+$font-family-monospace: 'IBM Plex Mono', monospace;
+$headings-font-family: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
+$headings-font-weight: 300;
+$headings-letter-spacing: 0.02em;
+$navbar-bg: rgba(#000000, 0.97);
+$navbar-fg: $satelliteGray;
+$navbar-hl: $primaryAccent;
+$footer-bg: darken($background, 2%);
+$footer-fg: $satelliteGray;
+$dropdown-link-hover-color: $softAccentYellow;
+$dropdown-link-hover-bg: $background;
+$dropdown-link-active-bg: $background;
+
+/*-- scss:rules --*/
+
+
+.os-container {
+  max-width: $os-container-max;
+  margin: 0 auto auto !important;
+  padding: 0 clamp(1.5rem, 8vw, 12rem);
+  width: 100%;
+  box-sizing: border-box;
+}

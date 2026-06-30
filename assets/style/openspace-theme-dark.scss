@@ -1,26 +1,3 @@
-@import "./brand.scss";
-
-/*-- scss:defaults --*/
-$body-bg: $background;
-$body-color: $textColor;
-$link-color: $softAccentYellow;
-$link-hover-color: lighten($softAccentYellow, 8%);
-$headings-color: $primaryAccent;
-$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
-$font-family-monospace: 'IBM Plex Mono', monospace;
-$headings-font-family: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
-$headings-font-weight: 300;
-$headings-letter-spacing: 0.02em;
-$navbar-bg: rgba(#000000, 0.97);
-$navbar-fg: $satelliteGray;
-$navbar-hl: $primaryAccent;
-$footer-bg: darken($background, 2%);
-$footer-fg: $satelliteGray;
-$dropdown-link-hover-color: $softAccentYellow;
-$dropdown-link-hover-bg: $background;
-$dropdown-link-active-bg: $background;
-
-
 /*-- scss:rules --*/
 
 // Quarto's mobile grid has minmax(500px,...) on body-content columns, which

@@ -5,10 +5,9 @@
 // =============================================================
 
 // ---------- Section layout ----------
-// Left/right padding mirrors the homepage .os-container (12rem at wide screens)
 .research-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  @include full-bleed;
+
   padding-top: 3.5rem;
   padding-bottom: 2rem;
   padding-left:  clamp(1.5rem, 8vw, 12rem);

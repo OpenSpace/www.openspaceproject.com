@@ -1,48 +1,3 @@
-/*-- scss:defaults --*/
-
-// =============================================================
-// OpenSpace homepage theme
-// Place this at: styles/home.scss
-// Reference in YAML as: theme: [cosmo, styles/home.scss]
-// =============================================================
-
-// ---------- Brand colors (concrete values matching brand.scss) ----------
-$os-deep-space:    #0a0a0a;           // = $background
-$os-text-primary:  #ecf5fb;           // = $baseWhite
-$os-text-muted:    #b8c8ca;           // = $satelliteGray
-$os-text-faint:    rgba(#b8c8ca, 0.7); // = rgba($satelliteGray, 0.7)
-$os-link:          #d0f884;           // = $vividAccentGreen (vivid lime)
-$os-surface:       #2b2a2a;
-$os-surface-alt:   #1d1d1d;
-$os-border-faint:  rgba(#3dbdee, 0.08); // = rgba($primaryAccent, 0.08)
-$os-overlay-light: rgba(#ecf5fb, 0.4);  // = rgba($baseWhite, 0.4)
-
-// ---------- Typography scale ----------
-$os-hero-title-min:    2.5rem;
-$os-hero-title-max:    4.5rem;
-$os-section-title-min: 1.75rem;
-$os-section-title-max: 2.5rem;
-
-// ---------- Layout ----------
-$os-container-max:    1200px;
-$os-section-padding:  5rem;
-$os-card-radius:      12px;
-$os-button-radius:    6px;
-
-// ---------- Marquee ----------
-$os-marquee-duration: 30s;
-$os-marquee-mobile-duration: 22s;
-
-// ---------- Bootstrap variable overrides ----------
-// Lets the rest of the site (nav, body text, default buttons) pick up our brand
-$primary:        $os-link !default;
-$body-color:     $os-text-primary !default;
-$link-color:     $os-link !default;
-$navbar-bg:      $os-deep-space !default;
-$navbar-fg:      rgba(#b8c8ca, 0.85) !default;
-$navbar-hl:      #ecf5fb !default;
-
-
 /*-- scss:mixins --*/
 
 // Reusable button base for our custom .btn-*-os classes
@@ -68,11 +23,7 @@ $navbar-hl:      #ecf5fb !default;
 /*-- scss:rules --*/
 
 // ---------- Layout helpers ----------
-.os-container {
-  max-width: $os-container-max;
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 8vw, 12rem);
-}
+
 
 .text-center {
   text-align: center;
@@ -80,9 +31,9 @@ $navbar-hl:      #ecf5fb !default;
 
 // ---------- Hero ----------
 .hero-section {
+  @include full-bleed;
+
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
   height: 90vh;
   min-height: 600px;
   overflow: hidden;
@@ -566,8 +517,8 @@ main:has(.hero-section) #title-block-header {
 .funders-section,
 .cta-section,
 .hero-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  @include full-bleed;
+
   box-sizing: border-box;
 }
 

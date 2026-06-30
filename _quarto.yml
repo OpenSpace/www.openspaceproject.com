@@ -21,7 +21,12 @@ format:
   html:
     quarto-required: 1.9.*
     theme:
-      - "assets/style/brand.scss"
+      - "assets/style/_base.scss"
+      - "assets/style/_tokens.scss"
+      - "assets/style/_mixins.scss"
+      - "assets/style/_components.scss"
+      - "assets/style/_pages.scss"
+
       - "assets/style/openspace-theme-dark.scss"
       - "assets/style/hero.scss"
       - "assets/style/cta.scss"
@@ -123,8 +128,7 @@ execute:
 
 filters:
   - panel-accordion
-  - openspace/cta
-  - openspace/hero
+  - openspace
 
 extensions:
   iconify:

@@ -1,8 +1,8 @@
-title: Hero
+title: OpenSpace Specific Extensions
 author: OpenSpace Team
 version: 1.0.0
 quarto-required: ">=1.9.0"
 contributes:
   filters:
-    - hero.lua
-
+    - filters/cta.lua
+    - filters/hero.lua

@@ -17,8 +17,8 @@ hero:
 ---
 
 ```{=html}
-<section class="about-body-section">
-  <div class="os-container narrow">
+<section class="ev-section">
+  <div class="os-container">
     <p>Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
     <p>We wrapped up with a chance for attendees to showcase their recent OpenSpace projects and discoveries.</p>
 

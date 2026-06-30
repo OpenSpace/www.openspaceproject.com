@@ -20,19 +20,19 @@ hero:
 ---
 
 ```{=html}
-<nav class="ds-dot-nav" aria-label="Navigate to section">
-  <button class="ds-dot-nav-item is-active" data-target="about"         aria-label="About"></button>
-  <button class="ds-dot-nav-item"            data-target="venue"         aria-label="Venue"></button>
-  <button class="ds-dot-nav-item"            data-target="schedule"      aria-label="Schedule"></button>
-  <button class="ds-dot-nav-item"            data-target="getting-here"  aria-label="Getting here"></button>
-  <button class="ds-dot-nav-item"            data-target="accommodation" aria-label="Accommodation"></button>
-  <button class="ds-dot-nav-item"            data-target="register"      aria-label="Register"></button>
+<nav class="dot-nav" aria-label="Navigate to section">
+  <button class="dot-nav-item is-active" data-target="about" aria-label="About"></button>
+  <button class="dot-nav-item" data-target="venue" aria-label="Venue"></button>
+  <button class="dot-nav-item" data-target="schedule" aria-label="Schedule"></button>
+  <button class="dot-nav-item" data-target="getting-here" aria-label="Getting here"></button>
+  <button class="dot-nav-item" data-target="accommodation" aria-label="Accommodation"></button>
+  <button class="dot-nav-item" data-target="register" aria-label="Register"></button>
 </nav>
 
-<section class="ds-venue-section" id="about">
-  <div class="ds-venue-inner">
-    <p class="ds-eyebrow">About</p>
-    <h2 class="ds-venue-title">Join us in Norrköping</h2>
+<section class="venue-section" id="about">
+  <div class="venue-inner">
+    <p class="venue-eyebrow">About</p>
+    <h2 class="venue-title">Join us in Norrköping</h2>
     <div class="um-detail-body">
       <p>Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.</p>
       <p>This is a great opportunity to:</p>
@@ -45,26 +45,24 @@ hero:
   </div>
 </section>
 
-<section class="ds-venue-section ds-venue-section--alt" id="venue">
-  <div class="ds-venue-inner">
-    <p class="ds-eyebrow">Venue</p>
-    <h2 class="ds-venue-title">Visualization Center C</h2>
-    <div class="ds-venue-img-wrap">
-      <img src="visc.webp"
-           alt="Visualization Center C, Norrköping, Sweden"
-           class="ds-venue-img">
-    </div>
+<section class="venue-section venue-section--alt" id="venue">
+  <div class="venue-inner">
+    <p class="venue-eyebrow">Venue</p>
+    <h2 class="venue-title">Visualization Center C</h2>
+    <img src="visc.webp"
+          alt="Visualization Center C, Norrköping, Sweden"
+          class="venue-img">
     <div class="um-detail-body">
-      <p>We&rsquo;re excited to welcome you to the <a href="https://visualiseringscenter.se/en/" target="_blank" rel="noopener">Visualization Center C</a> in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.</p>
+      <p>We're excited to welcome you to the <a href="https://visualiseringscenter.se/en/" target="_blank" rel="noopener">Visualization Center C</a> in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.</p>
       <p>Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.</p>
     </div>
   </div>
 </section>
 
-<section class="ds-venue-section" id="schedule">
-  <div class="ds-venue-inner">
-    <p class="ds-eyebrow">Program</p>
-    <h2 class="ds-venue-title">Agenda</h2>
+<section class="venue-section" id="schedule">
+  <div class="venue-inner">
+    <p class="venue-eyebrow">Program</p>
+    <h2 class="venue-title">Agenda</h2>
     <p class="um-schedule-note">Schedule is subject to change.</p>
 
     <h3 class="um-day-heading">Wednesday, August 26</h3>
@@ -211,39 +209,39 @@ hero:
   </div>
 </section>
 
-<section class="ds-venue-section ds-venue-section--alt" id="getting-here">
-  <div class="ds-venue-inner">
-    <p class="ds-eyebrow">Getting here</p>
-    <h2 class="ds-venue-title">Travel & airports</h2>
+<section class="venue-section venue-section--alt" id="getting-here">
+  <div class="venue-inner">
+    <p class="venue-eyebrow">Getting here</p>
+    <h2 class="venue-title">Travel & airports</h2>
     <div class="um-detail-body">
       <p>Norrköping is easy to reach internationally. Recommended routes:</p>
       <ul>
         <li><strong>Stockholm Arlanda (ARN)</strong> — major international hub, roughly 90 minutes to Norrköping by train</li>
-        <li><strong>Linköping City Airport (LPI)</strong> — direct connections to Amsterdam Schiphol (AMS), one of Europe&rsquo;s main airline hubs</li>
+        <li><strong>Linköping City Airport (LPI)</strong> — direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="ds-venue-section" id="accommodation">
-  <div class="ds-venue-inner">
-    <p class="ds-eyebrow">Accommodation</p>
-    <h2 class="ds-venue-title">Where to stay</h2>
+<section class="venue-section" id="accommodation">
+  <div class="venue-inner">
+    <p class="venue-eyebrow">Accommodation</p>
+    <h2 class="venue-title">Where to stay</h2>
     <div class="um-detail-body">
       <p>Hotels in the city are around $100 per night. A few options near the venue:</p>
       <ul>
         <li><a href="https://ligula.se/en/profilhotels/profilhotels-president/" target="_blank" rel="noopener">Hotel President</a></li>
-        <li><a href="https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/" target="_blank" rel="noopener">Elite Grand H&ocirc;tel</a></li>
+        <li><a href="https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/" target="_blank" rel="noopener">Elite Grand Hôtel</a></li>
         <li><a href="https://www.strawberry.se/hotell/sverige/norrkoping/comfort-hotel-norrkoping" target="_blank" rel="noopener">Hotel Comfort</a></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="ds-venue-section ds-venue-section--alt" id="register">
-  <div class="ds-venue-inner">
-    <p class="ds-eyebrow">Registration</p>
-    <h2 class="ds-venue-title">Register for free</h2>
+<section class="venue-section venue-section--alt" id="register">
+  <div class="venue-inner">
+    <p class="venue-eyebrow">Registration</p>
+    <h2 class="venue-title">Register for free</h2>
     <div class="um-detail-body">
       <p>Registration is <strong>free</strong>. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.</p>
       <p>Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> with any questions about the meeting.</p>

@@ -205,10 +205,12 @@ cta:
 ];
 
 function initImpactMap() {
-  var mapEl = document.getElementById('impact-startup-map');
-  if (!mapEl || typeof L === 'undefined' || typeof data === 'undefined') return;
+  let mapEl = document.getElementById('impact-startup-map');
+  if (!mapEl || typeof L === 'undefined' || typeof data === 'undefined') {
+    return;
+  }
 
-  var leafletMap = L.map('impact-startup-map', {
+  let leafletMap = L.map('impact-startup-map', {
     center: [20, 0],
     zoom: 2,
     scrollWheelZoom: false,
@@ -221,11 +223,11 @@ function initImpactMap() {
     maxZoom: 19
   }).addTo(leafletMap);
 
-  var accent = '#a2e7fb';
-  var orgAccent = '#d0f884';
+  let accent = '#a2e7fb';
+  let orgAccent = '#d0f884';
 
   // Build startup layer
-  var startupLayer = L.layerGroup();
+  let startupLayer = L.layerGroup();
 
   (data.places || []).forEach(place => {
     let r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
@@ -242,8 +244,8 @@ function initImpactMap() {
   });
 
   // Build org layer
-  var orgLayer = L.layerGroup();
-  ORG_DATA.forEach(function (org) {
+  let orgLayer = L.layerGroup();
+  ORG_DATA.forEach((org) => {
     L.circleMarker([org.lat, org.lng], {
       radius: 7,
       color: orgAccent,
@@ -257,20 +259,25 @@ function initImpactMap() {
   });
 
   // Toggle logic
-  var footerText = document.getElementById('impact-map-footer-text');
-  var toggleBtns = document.querySelectorAll('.impact-toggle-btn');
+  let footerText = document.getElementById('impact-map-footer-text');
+  let toggleBtns = document.querySelectorAll('.impact-toggle-btn');
 
   function showLayer(layerName) {
-    toggleBtns.forEach(function (b) { b.classList.remove('is-active'); });
+    toggleBtns.forEach((b) => { b.classList.remove('is-active'); });
     document.querySelector('.impact-toggle-btn[data-layer="' + layerName + '"]').classList.add('is-active');
     if (layerName === 'startups') {
       leafletMap.removeLayer(orgLayer);
       startupLayer.addTo(leafletMap);
-      if (footerText) footerText.textContent = 'Each marker = a unique startup location · Circle size scales with launch count';
-    } else {
+      if (footerText) {
+        footerText.textContent = 'Each marker = a unique startup location · Circle size scales with launch count';
+      }
+    }
+    else {
       leafletMap.removeLayer(startupLayer);
       orgLayer.addTo(leafletMap);
-      if (footerText) footerText.textContent = '103 organizations across 25+ countries';
+      if (footerText) {
+        footerText.textContent = '103 organizations across 25+ countries';
+      }
     }
   }
 
@@ -289,41 +296,55 @@ function initImpactMap() {
 }
 
 // Lazy-load Leaflet + data.js when the map scrolls near the viewport
-(function () {
-  var loaded = false;
+(() => {
+  let loaded = false;
   function loadMapAssets() {
-    if (loaded) return;
+    if (loaded) {
+      return;
+    }
     loaded = true;
 
-    var leafletReady = false;
-    var dataReady = false;
+    let leafletReady = false;
+    let dataReady = false;
     function tryInit() {
-      if (leafletReady && dataReady) initImpactMap();
+      if (leafletReady && dataReady) {
+        initImpactMap();
+      }
     }
 
-    var css = document.createElement('link');
+    let css = document.createElement('link');
     css.rel = 'stylesheet';
     css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
     document.head.appendChild(css);
 
-    var js = document.createElement('script');
+    let js = document.createElement('script');
     js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-    js.onload = function () { leafletReady = true; tryInit(); };
+    js.onload = () => {
+      leafletReady = true;
+      tryInit();
+    };
     document.head.appendChild(js);
 
-    var dataJs = document.createElement('script');
+    let dataJs = document.createElement('script');
     dataJs.src = 'https://status.openspaceproject.com/data.js';
-    dataJs.onload = function () { dataReady = true; tryInit(); };
+    dataJs.onload = () => {
+      dataReady = true;
+      tryInit();
+    };
     document.head.appendChild(dataJs);
   }
 
-  var mapEl = document.getElementById('impact-startup-map');
+  let mapEl = document.getElementById('impact-startup-map');
   if ('IntersectionObserver' in window && mapEl) {
-    var obs = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting) { obs.disconnect(); loadMapAssets(); }
+    let obs = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        obs.disconnect();
+        loadMapAssets();
+      }
     }, { rootMargin: '300px' });
     obs.observe(mapEl);
-  } else {
+  }
+  else {
     loadMapAssets();
   }
 })();

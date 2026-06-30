@@ -28,7 +28,7 @@ cta:
 
 ```{=html}
 <section class="about-body-section">
-  <div class="os-container narrow">
+  <div class="os-container">
 
     <h2 class="about-h2">Crediting OpenSpace</h2>
     <p>If you use OpenSpace images, videos, or visualizations in publications, presentations, articles, or other media, please credit the OpenSpace Project. A standard credit line:</p>
@@ -56,7 +56,7 @@ cta:
 </section>
 
 <section class="brand-logos-section">
-  <div class="os-container narrow">
+  <div class="os-container">
     <div class="brand-logo-grid">
 
       <div class="brand-logo-card brand-logo-card--dark">

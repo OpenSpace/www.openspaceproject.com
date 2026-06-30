@@ -6,8 +6,8 @@
 
 // ── Section wrapper ───────────────────────────────────────────
 .tut-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  @include full-bleed;
+
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   padding-left:  clamp(1.5rem, 5vw, 6rem);

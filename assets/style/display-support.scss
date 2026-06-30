@@ -1,122 +1,28 @@
 /*-- scss:rules --*/
 
-// =============================================================
-// Display Support page
-// =============================================================
+.ds-section {
+  @include full-bleed;
 
-// ── Right-side dot nav ────────────────────────────────────────
-.ds-dot-nav {
-  position: fixed;
-  right: 2rem; // JS overrides this to match the Download button's right edge
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
-  z-index: 200;
-
-  @media (max-width: 900px) {
-    display: none;
-  }
-}
-
-.ds-dot-nav-item {
-  position: relative;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba($satelliteGray, 0.22);
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: background 0.25s ease;
-  appearance: none;
-  -webkit-appearance: none;
-  box-shadow: none;
-
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  // orbit ring — shown when active
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 1px solid rgba($primaryAccent, 0.5);
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                opacity 0.3s ease;
-    pointer-events: none;
-  }
-
-  // label — shown on hover, appears to the left
-  &::after {
-    content: attr(aria-label);
-    position: absolute;
-    right: calc(100% + 1rem);
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.6rem;
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba($satelliteGray, 0.7);
-    white-space: nowrap;
-    background: rgba($background, 0.88);
-    padding: 0.2rem 0.55rem;
-    border-radius: 4px;
-    border: 1px solid rgba($primaryAccent, 0.12);
-    opacity: 0;
-    transition: opacity 0.18s ease;
-    pointer-events: none;
-  }
-
-  &:hover {
-    background: rgba($satelliteGray, 0.55);
-
-    &::after {
-      opacity: 1;
-    }
-  }
-
-  &:focus-visible {
-    outline: 2px solid $primaryAccent;
-    outline-offset: 4px;
-  }
-
-  &.is-active {
-    background: $vividAccentGreen;
-
-    &::before {
-      border-color: rgba($vividAccentGreen, 0.5);
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-    }
-  }
-}
-
-// ── Venue sections (new: vertical heading → image → body) ─────
-.ds-venue-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
   background: $background;
-  padding: 5rem 0 4.5rem;
+  padding: 3.5rem clamp(1.5rem, 8vw, 12rem);
   scroll-margin-top: 80px;
   border-top: 1px solid rgba($primaryAccent, 0.06);
 
-  &.ds-venue-section--alt {
+  h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: $baseWhite;
+    line-height: 1.2;
+    margin: 0 0 2rem;
+  }
+
+  &.ds-section--alt {
     background: #0d1014;
   }
 }
 
-.ds-venue-inner {
+.ds-inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 clamp(1.5rem, 8vw, 12rem);
@@ -131,7 +37,7 @@
   margin: 0 0 0.6rem;
 }
 
-.ds-venue-title {
+.ds-title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: $baseWhite;
@@ -140,30 +46,25 @@
   margin: 0 0 2rem;
 }
 
-.ds-venue-img-wrap {
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid rgba($primaryAccent, 0.12);
-  margin-bottom: 2.5rem;
-}
-
-.ds-venue-img {
+.ds-img {
   width: 100%;
   height: clamp(280px, 42vw, 540px);
   object-fit: cover;
   object-position: center;
   display: block;
+  border-radius: 12px;
+  border: 1px solid rgba($primaryAccent, 0.12);
+  margin-bottom: 2.5rem;
 }
 
-#fisheye .ds-venue-img {
+#fisheye .ds-img {
   width: min(100%, 80vh);
   height: auto;
   aspect-ratio: 1 / 1;
-  margin: 0 auto;
+  margin: 0 auto 2.5rem;
 }
 
-.ds-venue-body {
+.ds-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -175,14 +76,14 @@
   }
 }
 
-.ds-venue-desc {
+.ds-desc {
   font-size: 1rem;
   line-height: 1.8;
   color: rgba($satelliteGray, 0.88);
   margin: 0;
 }
 
-.ds-venue-list {
+.ds-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -211,70 +112,4 @@
       background: rgba($primaryAccent, 0.55);
     }
   }
-}
-
-// ── Shared section wrapper ────────────────────────────────────
-.ds-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-  padding-left:  clamp(1.5rem, 8vw, 12rem);
-  padding-right: clamp(1.5rem, 8vw, 12rem);
-  scroll-margin-top: 80px;
-}
-
-.ds-section-alt {
-  background: #0d1014;
-}
-
-.ds-section-h2 {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: $baseWhite;
-  line-height: 1.2;
-  margin: 0 0 2rem;
-}
-
-// ── Technical capabilities ────────────────────────────────────
-.ds-tech-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-
-  @media (max-width: 520px) {
-    grid-template-columns: 1fr;
-  }
-
-  @media (max-width: 860px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.ds-tech-card {
-  background: $background;
-  border: 1px solid rgba($primaryAccent, 0.15);
-  border-radius: 16px;
-  padding: 1.5rem 1.75rem;
-  transition: border-color 0.22s ease, transform 0.22s ease;
-
-  &:hover {
-    border-color: rgba($primaryAccent, 0.4);
-    transform: translateY(-2px);
-  }
-}
-
-.ds-tech-title {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: $baseWhite;
-  margin: 0 0 0.5rem;
-}
-
-.ds-tech-desc {
-  font-size: 0.8125rem;
-  line-height: 1.65;
-  color: rgba($satelliteGray, 0.72);
-  margin: 0;
 }

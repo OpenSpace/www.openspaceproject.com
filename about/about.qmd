@@ -33,7 +33,7 @@ cta:
 ---
 
 ::: {.about-body-section}
-::: {.os-container .narrow}
+::: {.os-container}
 
 ## What is OpenSpace?
 

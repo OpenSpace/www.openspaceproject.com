@@ -60,54 +60,19 @@ Sea surface temperature from satellite data
 ›
 
 Funded by
-OpenSpace is non-commercial software supported by a coalition of public research funders.
+OpenSpace is grateful to be supported by the following public research funders.
 
 Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.
-
-Start exploring
-Free. Open source. Cross-platform.
-
-Download OpenSpace
-View on GitHub
 
 ---
 
 # About OpenSpace
 
-About
-›
-About OpenSpace
-
-An open-source universe
-OpenSpace makes the latest data from NASA missions, observatories, and research institutions explorable by anyone — in planetariums, classrooms, and on personal computers.
-
-What is OpenSpace?
-OpenSpace is open-source software for interactive astrovisualization. It renders the universe at scales from spacecraft instruments to galactic structure, using data from NASA, ESA, and scientific institutions around the world. Built for planetarium domes, museum exhibits, classrooms, and any computer that can run modern graphics, OpenSpace lets users navigate continuously from Earth's surface out to the edge of the observable universe — with the data presented as scientists actually use it. The software is free, cross-platform (Windows, Linux), and developed openly on GitHub.
-
-Our mission
-OpenSpace exists to make the universe accessible. The vast majority of what humans have learned about space lives in research papers, mission databases, and specialist tools — far from public reach. We believe that data this important shouldn't require a PhD to see. By giving museums, planetariums, teachers, and citizens the same visualization capabilities that researchers use, OpenSpace turns the universe into something anyone can explore.
-The project also serves the research community itself. Scientists use OpenSpace to communicate findings and collaborate across institutions.
-
-How it began
-OpenSpace started in 2010 as a collaboration between the American Museum of Natural History (AMNH) in New York, Linköping University in Sweden. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Linköping and to share what emerged with the rest of the world.
-Early work focused on dome rendering and globe browsing — the ability to seamlessly transition from a global view of a planet down to surface-level imagery using real spacecraft data. From there, the software grew to handle mission visualizations (flying with New Horizons to Pluto, watching Rosetta orbit comet 67P), large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds.
-
-Get involved
-OpenSpace is built in the open by a community that welcomes new contributors — whether you run a planetarium, teach with OpenSpace, or contribute code.
-
-View on GitHub
-Get in touch
+_File not found: about/about-openspace.qmd_
 
 ---
 
 # Team
-
-About
-›
-Team
-
-The people behind OpenSpace
-An international consortium of researchers, engineers, educators, and students building open-source astrovisualization.
 
 Project Leadership
 ::: {#admin}
@@ -121,17 +86,15 @@ Developers
 
 # Partners
 
-About
-›
-Partners
-
-The Institutions behind OpenSpace
-A collaboration between universities, science museums, and planetariums in the US and Sweden, united by a shared mission to make space exploration accessible to everyone.
-
-University Partners
+Stewarding Institutions
 
 Linköping University
-A world leader in scientific visualization, LiU initiated the OpenSpace project in 2014 and has maintained a long-running series of collaborative internships with NASA GSFC and AMNH.
+A world leader in scientific visualization, LiU initiated the OpenSpace project in 2013 and has maintained a long-running series of collaborative internships with NASA GSFC, AMNH, and others.
+
+American Museum of Natural History
+One of the world's largest natural history museums, AMNH is a leader in science visualization and has a distinguished record of NASA partnerships that enhance science education for global audiences.
+
+University Partners
 
 NYU Tandon School of Engineering
 The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of open-source tools and NASA-partnered research to the OpenSpace collaboration.
@@ -140,9 +103,6 @@ SCI Institute — University of Utah
 An internationally recognized leader in visualization and scientific computing, SCI develops robust open-source software packages deployed broadly across scientific research communities.
 
 Informal Science Institution Partners
-
-American Museum of Natural History
-One of the world's largest natural history museums, AMNH is a leader in science visualization and has a distinguished record of NASA partnerships that enhance science education for global audiences.
 
 Adler Planetarium
 The United States' first planetarium, Adler connects people to space science through exhibitions, dome theaters, and citizen science programming from its home in Chicago.
@@ -168,15 +128,11 @@ A visitor-centered planning and research firm working with museums, libraries, a
 
 # Impact
 
-About
-›
-Impact
-
-OpenSpace around the world
-From planetarium domes to research labs, OpenSpace is running on every continent. Here's a look at our global footprint, annual progress, and how you can be part of the story.
-
 Where OpenSpace runs
-Every point on this map represents a unique location where OpenSpace has been started. Startup data is collected anonymously and powers our NASA reporting.
+Explore anonymous startup locations from our usage data, or see the 100+ organizations currently running OpenSpace around the world.
+
+Startup locations
+Organizations
 
 Each marker = a unique startup location  ·  Circle size scales with launch count
 View full usage stats →
@@ -206,25 +162,13 @@ OpenSpace is funded in part by NASA's Science Activation Program under award No.
 
 Annual reports are submitted to NASA's Science Activation Program. For questions about our reporting, contact us at support@openspaceproject.com.
 
-Using OpenSpace? Tell us about it.
-If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you — and may feature you in our annual reports and on this site.
-
-Get in touch
-
 ---
 
 # Research
 
-About
-›
-Research
-
-Academic Research & Publications
-OpenSpace sits at the intersection of scientific visualization research and public outreach. Explore the theses and papers that shape it.
-
 Master's Thesis Program
 
-Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology and Engineering program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
+Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
 
 Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.
 
@@ -237,16 +181,16 @@ Linköping University (LiU)
 ::: {#theses}
 :::
 
+Publications
+
+Pushing the boundaries of visualization in the public arena has been in the DNA of the project from its inception. The academic papers listed here have been written about individual features of OpenSpace, descriptions of the software package as a whole, or studies that involved OpenSpace as an engine. Being able to combine novel visualization research with the ability to perform outreach with these techniques is one of the elements that makes OpenSpace so unique.
+
+::: {#papers}
+:::
+
 ---
 
 # Brand & Attribution
-
-About
-›
-Brand & Attribution
-
-Brand & Attribution
-Guidelines for crediting OpenSpace in publications, presentations, and media, plus logos available for download.
 
 Crediting OpenSpace
 If you use OpenSpace images, videos, or visualizations in publications, presentations, articles, or other media, please credit the OpenSpace Project. A standard credit line:
@@ -279,34 +223,21 @@ Horizontal logo
 For light backgrounds
 Download
 
-Questions about usage?
-For licensing, permissions, or anything not covered here, reach out directly.
-
-Get in touch
-
 ---
 
 # Globe Browsing
 
-Features
-›
-Globe Browsing
-
-Fly from the Milky Wayto a single crater
-OpenSpace streams real spacecraft imagery and elevation data from NASA missions — cross fifteen orders of magnitude in one uncut, uninterrupted flight.
-
 Planetary surface rendering
-Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions — HiRISE, MOLA, LRO, Cassini — and renders them continuously at every scale. No load screens. No transitions. No second application.
-Multiple data layers can be active and blended at once: base imagery, colorized elevation, scientific overlays, labels. A presenter can reveal and toggle them live during a show without pausing or switching scenes.
+Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions (HiRISE, MOLA, LRO, Cassini) and renders them continuously at every scale. No load screens. No transitions. No second application.
 
-15
-Orders of magnitude — Milky Way to a boulder on Mars
+Real mission data
+Every surface is built from actual spacecraft imagery and elevation measurements: HiRISE and MOLA for Mars, LRO for the Moon, Cassini for the outer planets. No artist approximations.
 
-0
-Load screens between any two scales
+Continuous at every scale
+Fly from interstellar space to the texture of Martian regolith in one uncut flight, fifteen orders of magnitude with no load screens, no transitions, no second application.
 
-100%
-Real data from NASA, ESA, and planetary missions
+Live layer blending
+Stack base imagery, colorized elevation, scientific overlays, and labels simultaneously. Toggle and blend layers live during a presentation without pausing or switching scenes.
 
 Featured worlds
 
@@ -333,43 +264,44 @@ Land at Jezero Crater, follow Perseverance's traverse, then pull back to the ful
 
 Data layers
 Stack and reveal live
-Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show — no pausing, no switching scenes, no prerendering.
+Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show with no pausing, no switching scenes, and no prerendering needed.
 
 Base imagery from multiple spacecraft missions
 Colorized elevation from MOLA, LOLA, and radar altimetry
-Scientific overlays — mineral maps, temperature, atmospheric data
+Scientific overlays including mineral maps, temperature, and atmospheric data
 Time-varying data: watch ice caps advance and retreat
 Toggleable labels and graticules at any scale
 
 Click to cycle layers
 
-Start exploring planetary surfaces
-Globe Browsing is built into every copy of OpenSpace. Download free, or browse the documentation to see what data is available for each world.
-
-Download OpenSpace
-Documentation
-
 ---
 
 # Mission Visualizations
 
-Features
-›
-Mission Visualizations
+::: {.mv-section}
 
-Ride alongside the spacecraft at the moment it happened
-OpenSpace recreates real missions using actual trajectory data, instrument footprints, and observation timelines from NASA and ESA archives.
+## How it works
 
-How it works
+::: {.feature-grid}
 
-Real trajectory data
+::: {.institution-card}
+### Real trajectory data
 SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time. Every flyby happens at the moment it really did.
+:::
 
-Instrument footprints
-Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured — with actual pointing direction.
+::: {.institution-card}
+### Instrument footprints
+Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured, with actual pointing direction.
+:::
 
-Full time control
+::: {.institution-card}
+### Full time control
 Play, rewind, scrub, or accelerate to any moment in a mission's history. Combine with Globe Browsing to fly from Earth to a planet's surface in one continuous view.
+:::
+
+:::
+
+:::
 
 Missions
 
@@ -378,55 +310,35 @@ NASA
 
 Artemis
 Lunar return · 2022 – present
-Follow the Artemis program's return to the Moon — from Orion's trans-lunar trajectory and lunar orbit insertion to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.
-
-First crewed lunar return since Apollo 17
-Orion capsule
+Follow the Artemis program's return to the Moon, from Orion's trans-lunar trajectory and lunar orbit insertion all the way to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.
 
 02
 NASA / ESA / CSA
 
 James Webb Space Telescope
 L2 orbit · 2022 – present
-See JWST's actual orbit at the Sun–Earth L2 point 1.5 million km away and visualize the deep fields it has surveyed.
-
-Animated model
+See JWST's actual orbit at the Sun-Earth L2 point, 1.5 million km from home, and explore the deep fields it has surveyed since launch.
 
 03
 NASA
 
 Apollo
 Moon landing · July 20, 1969
-Real trajectory data puts the command module and lunar module at their exact positions.
-
-First crewed Moon landing
-8-day mission, July 16–24, 1969
+Watch the command module and lunar module at their exact positions throughout the mission. Scrub through the full eight-day flight, from liftoff at Cape Kennedy to splashdown in the Pacific.
 
 04
 NASA
 
 Voyager
 Interstellar space · 1977 – present
-Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune — out to interstellar space. Scrub through decades of flight in seconds.
-
-Both probes beyond the heliosphere
-Grand Tour gravity-assist trajectory
+Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune, out to interstellar space. Scrub through decades of flight in seconds.
 
 05
 NASA
 
 Mars
 Jezero Crater · February 18, 2021
-The Mars profile includes both Insight and Perseverance rover.
-
-Landing at Jezero Crater
-26+ km surface traverse
-
-Start flying with spacecraft
-Every mission listed here is available in OpenSpace today. Download free, then open the mission profiles from the launcher.
-
-Download OpenSpace
-Documentation
+The Mars profile covers both InSight and the Perseverance rover. Follow Perseverance's traverse across Jezero Crater using real trajectory data, then pull back to see the full landing sequence from orbit.
 
 ---
 
@@ -438,17 +350,10 @@ _File not found: features/space-weather.qmd_
 
 # Display Support
 
-Features
-›
-Display Support
-
-Any screen. Any venue.
-From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and tiled wall support built in.
-
 Planetarium
 Dome theaters
 
-Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files — everything your dome already uses.
+Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.
 
 MPCDI mesh warping for any dome geometry
 Multi-projector soft edge blending and masking
@@ -459,23 +364,21 @@ Live presenter controls for real-time narration
 Classroom
 Classrooms & desktops
 
-OpenSpace runs on Windows, macOS, and Linux from a standard laptop or workstation. Single and multi-monitor setups work out of the box — deploy it across an entire school district for free.
+OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
-Windows, macOS, and Linux — no licensing costs
-Runs on consumer hardware, no specialist GPU required
-Curated classroom profiles with lesson-ready content
+Windows and Linux — no licensing costs
+Runs on laptops with gaming graphics cards
 Single-monitor and multi-screen desktop configurations
 Projector and interactive whiteboard compatible
 
 Museum
 Museum exhibits
 
-Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience; curators can update content remotely.
+Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium
 
 Touch and gesture input for kiosk-style exhibits
 Custom UI profiles — lock to specific content or flight paths
 Synchronized multi-display walls and segmented spheres
-Auto-reset to home position after idle period
 Supports permanent installations and traveling shows
 
 Rendering
@@ -498,7 +401,7 @@ Edge blending
 Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
 
 Projection modes
-Fisheye, equirectangular, cylindrical, and perspective projections — switchable via config for any screen geometry.
+Fisheye, equirectangular, cylindrical, and perspective projections, all switchable via config for any screen geometry.
 
 Multi-node sync
 Synchronized rendering across multiple GPUs and machines for tiled video walls and segmented spheres.
@@ -509,22 +412,9 @@ A single JSON file describes your entire display setup. Switch between venues wi
 Cross-platform
 Windows, macOS, and Linux. Runs on consumer hardware and professional visualization clusters alike.
 
-Set up OpenSpace for your venue
-The documentation covers every display configuration in detail. Or get in touch — the team helps institutions configure OpenSpace for their specific setup.
-
-Documentation
-Get in touch
-
 ---
 
 # Use Cases
-
-Community
-›
-Use Cases
-
-OpenSpace in Action
-Real installations, real venues. See how institutions worldwide are using OpenSpace.
 
 Museum of Life & Science · Durham, NC
 Real Time Planet Exploration at Full Tilt
@@ -555,37 +445,13 @@ Talking Peer-to-Peer
 
 ×
 
-Add your story
-If your institution is using OpenSpace, we'd love to feature it here.
-
-Download OpenSpace
-Get in touch
-
 ---
 
 # Community Slack
 
-Community
-›
-Slack
-
-Where OpenSpace users connect
-The OpenSpace Slack is where planetarium professionals, educators, scientists, developers, and enthusiasts come together to learn, share, and get help — in real time.
-
-Join the Slack
-
 A community built for users
 Whether you run a planetarium dome, teach with OpenSpace, contribute code, or are just getting started — Slack is the fastest way to get answers, share your work, and connect with the people who know OpenSpace best.
 Ask questions, report issues, share screenshots of your work, stay current on new releases, and get direct support from the core team and experienced community members worldwide.
-
-Real-time support
-Get answers from the community and the core development team
-
-All experience levels
-First-time users, power users, and software contributors all in one place
-
-Global institutions
-Museums, planetariums, universities, and research centers on every continent
 
 Find your channel
 The workspace is organized into focused channels. Here are some of the best places to start.
@@ -646,11 +512,6 @@ University and research communities
 #random
 Interesting news and off-topic conversation
 
-Ready to join?
-The OpenSpace community is open to everyone — users, educators, scientists, and developers at any experience level.
-
-Join the Slack
-
 ---
 
 # Projects
@@ -697,13 +558,6 @@ _File not found: community/projects/lost-city/index.qmd_
 
 # Events
 
-Community
-›
-Events
-
-Events
-Monthly community meetings, annual user conferences, and special events — open to the full OpenSpace community.
-
 Upcoming
 
 Monthly Meeting
@@ -735,14 +589,13 @@ Software development updates, community feedback sessions, and an opportunity to
 
 # Annual User Meetings
 
-Community
-›
-Annual Meetings
-
-Annual User Meeting
-Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next.
+::: {.um-section}
+::: {.os-container}
 
 The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
+
+:::
+:::
 
 Upcoming
 2026
@@ -761,24 +614,9 @@ July 31 – August 1 · American Museum of Natural History, New York
 The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.
 See recap →
 
-Stay in the loop
-Sign up to be notified when registration opens and to receive session recaps after each meeting.
-
-Get notified
-Community events
-
 ---
 
 # 2025 Annual User Meeting
-
-Community
-›
-Annual Meetings
-›
-2025
-
-OpenSpaceUser Meeting
-July 31 – August 1, 2025 · American Museum of Natural History, New York
 
 Recap
 A look back
@@ -815,15 +653,6 @@ Beyond the formal program, the meeting offered space for the kind of side conver
 ---
 
 # 2026 Annual User Meeting
-
-Community
-›
-Annual Meetings
-›
-2026
-
-OpenSpaceUser Meeting
-August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 
 About
 Join us in Norrköping
@@ -978,13 +807,6 @@ _File not found: install/version-0213.qmd_
 
 # Tutorials
 
-Resources
-›
-Tutorials
-
-Get started with OpenSpace
-Step-by-step video guides covering installation, navigation, and the user interface — everything you need to take your first flight.
-
 Getting started · v0.21.0
 
 Tutorial 0
@@ -998,11 +820,5 @@ Load your first profile and take your first flight — navigating the solar syst
 Tutorial 2
 User Interface
 A complete walkthrough of the OpenSpace UI — panels, menus, time controls, and navigation tools.
-
-More learning resources
-The full documentation covers every feature in depth. The community Slack is the best place to ask questions and connect with other OpenSpace users.
-
-Documentation
-Join the Slack
 
 ---

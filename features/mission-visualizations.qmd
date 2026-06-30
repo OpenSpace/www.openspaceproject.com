@@ -29,114 +29,84 @@ cta:
   lede: >
     Every mission listed here is available in OpenSpace today. Download it free and open
     the mission profiles from the launcher.
+
+listing:
+  - id: missions
+    type: custom
+    template: ../_template/rich-list.ejs.md
+    contents:
+      - image: "/assets/images/features/artemis.webp"
+        alt: "Artemis mission visualization in OpenSpace"
+        tag: "NASA"
+        title: "Artemis"
+        tagline: "Lunar return · 2022 – present"
+        description: >
+          Follow the Artemis program's return to the Moon, from Orion's trans-lunar
+          trajectory and lunar orbit insertion all the way to the surface. Real trajectory
+          data places the spacecraft at its exact position for every phase of the mission.
+      - image: "/assets/images/features/jwst_pillarsofcreation.webp"
+        alt: "Pillars of Creation imaged by the James Webb Space Telescope"
+        tag: "NASA / ESA / CSA"
+        title: "James Webb Space Telescope"
+        tagline: "L2 orbit · 2022 – present"
+        description: >
+          See JWST's actual orbit at the Sun-Earth L2 point, 1.5 million km from home, and
+          explore the deep fields it has surveyed since launch.
+      - image: "/assets/images/features/apollo11.webp"
+        alt: "Apollo 11 mission visualization in OpenSpace"
+        tag: "NASA"
+        title: "Apollo"
+        tagline: "Moon landing · July 20, 1969"
+        description: >
+          Watch the command module and lunar module at their exact positions throughout the
+          mission. Scrub through the full eight-day flight, from liftoff at Cape Kennedy to
+          splashdown in the Pacific.
+      - image: "/assets/images/features/voyager.webp"
+        alt: "Voyager spacecraft trajectory visualization in OpenSpace"
+        tag: "NASA"
+        title: "Voyager"
+        tagline: "Interstellar space · 1977 – present"
+        description: >
+          Trace the full 48-year journey of both probes through planetary encounters with
+          Jupiter, Saturn, Uranus, and Neptune, out to interstellar space. Scrub through
+          decades of flight in seconds.
+      - image: "/assets/images/carousel/mars_surface.webp"
+        alt: "Mars surface from HiRISE, Perseverance landing site terrain"
+        tag: "NASA"
+        title: "Mars"
+        tagline: "Jezero Crater · February 18, 2021"
+        description: >
+          The Mars profile covers both InSight and the Perseverance rover. Follow
+          Perseverance's traverse across Jezero Crater using real trajectory data, then pull
+          back to see the full landing sequence from orbit.
 ---
 
-```{=html}
-<div class="mv-section">
-  <h2 class="mv-section-h2">How it works</h2>
-  <div class="mv-caps-grid">
-    <div class="institution-card">
-      <h3>Real trajectory data</h3>
-      <p>SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time. Every flyby happens at the moment it really did.</p>
-    </div>
-    <div class="institution-card">
-      <h3>Instrument footprints</h3>
-      <p>Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured, with actual pointing direction.</p>
-    </div>
-    <div class="institution-card">
-      <h3>Full time control</h3>
-      <p>Play, rewind, scrub, or accelerate to any moment in a mission's history. Combine with Globe Browsing to fly from Earth to a planet's surface in one continuous view.</p>
-    </div>
-  </div>
-</div>
+::: {.mv-section}
 
-<div class="mv-missions-list-section">
-  <h2 class="mv-section-h2">Missions</h2>
+## How it works
 
-  <div class="mv-mission-item">
-    <div class="mv-mission-img-wrap">
-      <img src="/assets/images/features/artemis.webp"
-           alt="Artemis mission visualization in OpenSpace"
-           class="mv-mission-img">
-    </div>
-    <div class="mv-mission-content">
-      <div class="mv-mission-meta">
-        <span class="mv-mission-num">01</span>
-        <span class="mv-mission-agency">NASA</span>
-      </div>
-      <h3 class="mv-mission-name">Artemis</h3>
-      <p class="mv-mission-tagline">Lunar return · 2022 – present</p>
-      <p class="mv-mission-desc">Follow the Artemis program's return to the Moon, from Orion's trans-lunar trajectory and lunar orbit insertion all the way to the surface. Real trajectory data places the spacecraft at its exact position for every phase of the mission.</p>
-    </div>
-  </div>
+::: {.card-grid}
 
-  <div class="mv-mission-item">
-    <div class="mv-mission-img-wrap">
-      <img src="/assets/images/features/jwst_pillarsofcreation.webp"
-           alt="Pillars of Creation imaged by the James Webb Space Telescope"
-           class="mv-mission-img">
-    </div>
-    <div class="mv-mission-content">
-      <div class="mv-mission-meta">
-        <span class="mv-mission-num">02</span>
-        <span class="mv-mission-agency">NASA / ESA / CSA</span>
-      </div>
-      <h3 class="mv-mission-name">James Webb Space Telescope</h3>
-      <p class="mv-mission-tagline">L2 orbit · 2022 – present</p>
-      <p class="mv-mission-desc">See JWST's actual orbit at the Sun-Earth L2 point, 1.5 million km from home, and explore the deep fields it has surveyed since launch.</p>
-    </div>
-  </div>
+::: {.card}
+### Real trajectory data
+SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time. Every flyby happens at the moment it really did.
+:::
 
-  <div class="mv-mission-item">
-    <div class="mv-mission-img-wrap">
-      <img src="/assets/images/features/apollo11.webp"
-           alt="Apollo 11 mission visualization in OpenSpace"
-           class="mv-mission-img">
-    </div>
-    <div class="mv-mission-content">
-      <div class="mv-mission-meta">
-        <span class="mv-mission-num">03</span>
-        <span class="mv-mission-agency">NASA</span>
-      </div>
-      <h3 class="mv-mission-name">Apollo</h3>
-      <p class="mv-mission-tagline">Moon landing · July 20, 1969</p>
-      <p class="mv-mission-desc">Watch the command module and lunar module at their exact positions throughout the mission. Scrub through the full eight-day flight, from liftoff at Cape Kennedy to splashdown in the Pacific.</p>
-    </div>
-  </div>
+::: {.card}
+### Instrument footprints
+Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured, with actual pointing direction.
+:::
 
-  <div class="mv-mission-item">
-    <div class="mv-mission-img-wrap">
-      <img src="/assets/images/features/voyager.webp"
-           alt="Voyager spacecraft trajectory visualization in OpenSpace"
-           class="mv-mission-img">
-    </div>
-    <div class="mv-mission-content">
-      <div class="mv-mission-meta">
-        <span class="mv-mission-num">04</span>
-        <span class="mv-mission-agency">NASA</span>
-      </div>
-      <h3 class="mv-mission-name">Voyager</h3>
-      <p class="mv-mission-tagline">Interstellar space · 1977 – present</p>
-      <p class="mv-mission-desc">Trace the full 48-year journey of both probes through planetary encounters with Jupiter, Saturn, Uranus, and Neptune, out to interstellar space. Scrub through decades of flight in seconds.</p>
-    </div>
-  </div>
+::: {.card}
+### Full time control
+Play, rewind, scrub, or accelerate to any moment in a mission's history. Combine with Globe Browsing to fly from Earth to a planet's surface in one continuous view.
+:::
 
-  <div class="mv-mission-item">
-    <div class="mv-mission-img-wrap">
-      <img src="/assets/images/carousel/mars_surface.webp"
-           alt="Mars surface from HiRISE, Perseverance landing site terrain"
-           class="mv-mission-img">
-    </div>
-    <div class="mv-mission-content">
-      <div class="mv-mission-meta">
-        <span class="mv-mission-num">05</span>
-        <span class="mv-mission-agency">NASA</span>
-      </div>
-      <h3 class="mv-mission-name">Mars</h3>
-      <p class="mv-mission-tagline">Jezero Crater · February 18, 2021</p>
-      <p class="mv-mission-desc">The Mars profile covers both InSight and the Perseverance rover. Follow Perseverance's traverse across Jezero Crater using real trajectory data, then pull back to see the full landing sequence from orbit.</p>
-    </div>
-  </div>
+:::
 
-</div>
-```
+## Missions
+
+::: {#missions}
+:::
+
+:::

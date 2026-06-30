@@ -28,13 +28,15 @@ cta:
     each meeting.
 ---
 
-```{=html}
-<section class="about-body-section">
-  <div class="os-container narrow">
-    <p>The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.</p>
-  </div>
-</section>
+::: {.um-section}
+::: {.os-container}
 
+The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
+
+:::
+:::
+
+```{=html}
 <div class="um-section">
   <div class="os-container">
 

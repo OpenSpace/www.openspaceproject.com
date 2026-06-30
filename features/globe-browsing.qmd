@@ -30,88 +30,78 @@ cta:
   lede: >
     Globe Browsing is built into every copy of OpenSpace. Download free, or browse the
     documentation to see what data is available for each world.
+
+listing:
+  - id: globes
+    type: custom
+    template: ../_template/rich-list.ejs.md
+    contents:
+      - image: "/assets/images/features/andes_mountains.webp"
+        alt: "Andes Mountains rendered in OpenSpace"
+        tag: "Earth"
+        title: "Earth's terrain up close"
+        tagline: "ESRI"
+        description: >
+          Fly the length of the Andes, descend into the Mariana Trench, or trace a river
+          delta from source to sea. Real satellite imagery and elevation data give every
+          mountain range, canyon, and coastline its true shape and scale.
+      - image: "/assets/images/features/moon.webp"
+        alt: "The Moon rendered in OpenSpace with LRO imagery"
+        tag: "Moon"
+        title: "The Moon in detail"
+        tagline: "LRO · LOLA · Kaguya"
+        description: >
+          Visit Apollo landing sites, trace the rilles of Vallis Schröteri, or zoom to the
+          meter-scale surface texture of the lunar highlands. LRO imagery and LOLA
+          elevation data render the Moon at full mission resolution.
+      - image: "/assets/images/carousel/mars_surface.webp"
+        alt: "HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
+        tag: "Mars"
+        title: "Mars at full resolution"
+        tagline: "HiRISE · MOLA · CTX"
+        description: >
+          Land at Jezero Crater, follow Perseverance's traverse, then pull back to the
+          full planet — without leaving the application. HiRISE surface imagery and MOLA
+          elevation data compose a continuous view from orbit to terrain.
 ---
 
+::: {.gb-section}
+
+## Planetary surface rendering
+
+Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions (HiRISE, MOLA, LRO, Cassini) and renders them continuously at every scale. No load screens. No transitions. No second application.
+
+::: {.card-grid}
+
+::: {.card}
+### Real mission data
+Every surface is built from actual spacecraft imagery and elevation measurements: HiRISE and MOLA for Mars, LRO for the Moon, Cassini for the outer planets. No artist approximations.
+:::
+
+::: {.card}
+### Continuous at every scale
+Fly from interstellar space to the texture of Martian regolith in one uncut flight, fifteen orders of magnitude with no load screens, no transitions, no second application.
+:::
+
+::: {.card}
+### Live layer blending
+Stack base imagery, colorized elevation, scientific overlays, and labels simultaneously. Toggle and blend layers live during a presentation without pausing or switching scenes.
+:::
+
+:::
+
+## Featured worlds
+
+::: {#globes}
+:::
+
+:::
+
 ```{=html}
-<div class="gb-section">
-  <h2 class="gb-section-h2">Planetary surface rendering</h2>
-  <p class="gb-prose">Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions (HiRISE, MOLA, LRO, Cassini) and renders them continuously at every scale. No load screens. No transitions. No second application.</p>
-  <div class="mv-caps-grid" style="margin-top:2.5rem">
-    <div class="institution-card">
-      <h3>Real mission data</h3>
-      <p>Every surface is built from actual spacecraft imagery and elevation measurements: HiRISE and MOLA for Mars, LRO for the Moon, Cassini for the outer planets. No artist approximations.</p>
-    </div>
-    <div class="institution-card">
-      <h3>Continuous at every scale</h3>
-      <p>Fly from interstellar space to the texture of Martian regolith in one uncut flight, fifteen orders of magnitude with no load screens, no transitions, no second application.</p>
-    </div>
-    <div class="institution-card">
-      <h3>Live layer blending</h3>
-      <p>Stack base imagery, colorized elevation, scientific overlays, and labels simultaneously. Toggle and blend layers live during a presentation without pausing or switching scenes.</p>
-    </div>
-  </div>
-</div>
-
-<div class="gb-worlds-section">
-  <h2 class="gb-section-h2">Featured worlds</h2>
-
-  <div class="gb-world-item">
-    <div class="gb-world-img-wrap">
-      <img src="/assets/images/features/andes_mountains.webp"
-           alt="Andes Mountains rendered in OpenSpace"
-           class="gb-world-img">
-    </div>
-    <div class="gb-world-content">
-      <div class="gb-world-meta">
-        <span class="gb-world-num">01</span>
-        <span class="gb-world-label">Earth</span>
-      </div>
-      <h3 class="gb-world-heading">Earth's terrain up close</h3>
-      <p class="gb-world-tagline">ESRI</p>
-      <p class="gb-world-desc">Fly the length of the Andes, descend into the Mariana Trench, or trace a river delta from source to sea. Real satellite imagery and elevation data give every mountain range, canyon, and coastline its true shape and scale.</p>
-    </div>
-  </div>
-
-  <div class="gb-world-item">
-    <div class="gb-world-img-wrap">
-      <img src="/assets/images/features/moon.webp"
-           alt="The Moon rendered in OpenSpace with LRO imagery"
-           class="gb-world-img">
-    </div>
-    <div class="gb-world-content">
-      <div class="gb-world-meta">
-        <span class="gb-world-num">02</span>
-        <span class="gb-world-label">Moon</span>
-      </div>
-      <h3 class="gb-world-heading">The Moon in detail</h3>
-      <p class="gb-world-tagline">LRO · LOLA · Kaguya</p>
-      <p class="gb-world-desc">Visit Apollo landing sites, trace the rilles of Vallis Schröteri, or zoom to the meter-scale surface texture of the lunar highlands. LRO imagery and LOLA elevation data render the Moon at full mission resolution.</p>
-    </div>
-  </div>
-
-  <div class="gb-world-item">
-    <div class="gb-world-img-wrap">
-      <img src="/assets/images/carousel/mars_surface.webp"
-           alt="HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
-           class="gb-world-img">
-    </div>
-    <div class="gb-world-content">
-      <div class="gb-world-meta">
-        <span class="gb-world-num">03</span>
-        <span class="gb-world-label">Mars</span>
-      </div>
-      <h3 class="gb-world-heading">Mars at full resolution</h3>
-      <p class="gb-world-tagline">HiRISE · MOLA · CTX</p>
-      <p class="gb-world-desc">Land at Jezero Crater, follow Perseverance's traverse, then pull back to the full planet — without leaving the application. HiRISE surface imagery and MOLA elevation data compose a continuous view from orbit to terrain.</p>
-    </div>
-  </div>
-
-</div>
-
 <div class="gb-section gb-section-alt">
   <div class="gb-split">
-    <div class="gb-split-text">
-      <h2 class="gb-section-h2">Data layers</h2>
+    <div>
+      <h2>Data layers</h2>
       <p class="gb-split-lede">Stack and reveal live</p>
       <p class="gb-prose">Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show with no pausing, no switching scenes, and no prerendering needed.</p>
       <ul class="gb-feature-list">
@@ -122,7 +112,7 @@ cta:
         <li>Toggleable labels and graticules at any scale</li>
       </ul>
     </div>
-    <div class="gb-split-visual">
+    <div>
       <div class="gb-layer-stack" id="gbLayerStack" role="button" tabindex="0" aria-label="Click to cycle through data layer examples">
         <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-1.webp')"></div>
         <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-2.webp')"></div>

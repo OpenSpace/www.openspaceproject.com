@@ -6,8 +6,8 @@
 
 // ── Grid section ──────────────────────────────────────────────
 .uc-grid-section {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  @include full-bleed;
+
   padding: 3rem clamp(1.5rem, 5vw, 6rem) 4rem;
   background: $background;
 }

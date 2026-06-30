@@ -252,6 +252,16 @@
 
 // ---------- Mobile (under 992px) ----------
 @media (max-width: 991px) {
+  .navbar {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important;
+  }
+
+  .navbar .navbar-logo {
+    max-height: 40px;
+    width: auto;
+  }
+
   .navbar .dropdown-menu {
     min-width: 100%;
     box-shadow: none;

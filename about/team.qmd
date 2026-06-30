@@ -26,7 +26,18 @@ hero:
     - "About"
     - "Team"
   lede: >
-    An international consortium of researchers, engineers, educators, and students building open-source astrovisualization.
+    OpenSpace is built by researchers, engineers, educators, and students spread across
+    institutions on multiple continents. Here's who makes it happen.
+
+cta:
+  heading: "A team built on research"
+  actions:
+    - text: "View research"
+      link: "research.qmd"
+      style: "primary"
+  lede: >
+    A big part of the team is graduate students whose research directly drives new
+    capabilities in OpenSpace. See what they've been working on.
 ---
 
 ```{=html}

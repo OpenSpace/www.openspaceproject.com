@@ -61,7 +61,7 @@ local function render_cta(cta_meta)
 
       local target = ""
       if action["external"] == true then
-        target = ' target="_blank" rel="noopener"'
+        class = class .. ' external'
       end
 
       action_parts[#action_parts + 1] =

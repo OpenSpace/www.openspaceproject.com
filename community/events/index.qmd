@@ -37,7 +37,7 @@ hero:
         <p class="ev-time">Monday, July 13, 2026 · 3:00–4:00 PM EST</p>
         <p class="ev-desc">Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
         <div class="ev-actions">
-          <a class="ev-btn-primary ev-action-link" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
+          <a class="ev-btn-primary ev-action-link external" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@
   margin-left: calc(50% - 50vw);
   padding-top: 3.5rem;
   padding-bottom: 3rem;
-  padding-left:  clamp(1.5rem, 8vw, 12rem);
+  padding-left: clamp(1.5rem, 8vw, 12rem);
   padding-right: clamp(1.5rem, 8vw, 12rem);
 }
 
@@ -35,6 +35,38 @@
   color: rgba($satelliteGray, 0.8);
   max-width: 640px;
   margin: 0 0 1.75rem;
+}
+
+// ---------- Map layer toggle ----------
+.impact-map-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.impact-toggle-btn {
+  background: transparent;
+  border: 1px solid rgba($primaryAccent, 0.25);
+  color: rgba($satelliteGray, 0.65);
+  font-size: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+
+  &:hover {
+    border-color: rgba($primaryAccent, 0.55);
+    color: $primaryAccent;
+  }
+
+  &.is-active {
+    border-color: $primaryAccent;
+    color: $primaryAccent;
+    background: rgba($primaryAccent, 0.08);
+  }
 }
 
 // ---------- Startup map ----------

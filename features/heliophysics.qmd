@@ -1,5 +1,5 @@
 ---
-pagetitle: "Space Weather — OpenSpace"
+pagetitle: "Heliophysics — OpenSpace"
 description-meta: "OpenSpace visualizes real solar wind, magnetosphere, CME, and aurora data from NASA — from live conditions to historical storm events."
 format:
   html:
@@ -14,8 +14,9 @@ hero:
     - "Heliophysics"
   image: "/assets/images/features/bastilleday-2.webp"
   lede: >
-    From solar wind to coronal mass ejections — OpenSpace streams live and historical
-    space weather data so you can see what the Sun is doing to our solar system right now.
+    OpenSpace visualizes live and historical space weather data so you can see exactly
+    what the Sun is doing to our solar system, from solar wind all the way to coronal mass
+    ejections.
 
 cta:
   heading: "See space weather in action"
@@ -28,31 +29,22 @@ cta:
       style: "ghost"
       external: true
   lede: >
-    Space weather visualization is built into OpenSpace. Download it free, or visit the
-    CCMC to explore the underlying data models.
+    Space weather visualization is built right into OpenSpace. Download it free, or head
+    over to the CCMC to explore the underlying data models.
 ---
 
 ```{=html}
 <div class="sw-section">
-  <div class="sw-intro-grid">
-    <div class="sw-intro-text">
-      <h2 class="sw-section-h2">What OpenSpace shows</h2>
-      <p class="sw-prose">OpenSpace connects to real-time and historical data from NASA's Community Coordinated Modeling Center (CCMC) and NOAA's Space Weather Prediction Center. The result is a live visualization of the electromagnetic environment surrounding Earth — and the rest of the solar system.</p>
-      <p class="sw-prose">Every particle field, every magnetic field line, every CME trajectory is drawn from actual simulation and observation data. This is the same data space weather forecasters use, made navigable.</p>
+  <h2 class="sw-section-h2">Built with NASA CCMC scientists</h2>
+  <p class="sw-prose">OpenSpace's heliophysics tools were built in close collaboration with scientists at NASA's Community Coordinated Modeling Center (CCMC), the group behind the operational space weather models that forecasters rely on every day. What you're seeing isn't an approximation of solar activity. It's the actual simulation data, made explorable in 3D.</p>
+  <div class="mv-caps-grid" style="margin-top:2.5rem">
+    <div class="institution-card">
+      <h3>Real operational models</h3>
+      <p>OpenSpace runs on ENLIL and BATS-R-US, the same models CCMC scientists use for real-world forecasting. Every particle field and magnetic field line comes from actual simulation data.</p>
     </div>
-    <div class="sw-stats">
-      <div class="sw-stat">
-        <span class="sw-stat-num">Live</span>
-        <span class="sw-stat-label">Real-time data from NASA CCMC and NOAA SWPC</span>
-      </div>
-      <div class="sw-stat sw-stat-divider">
-        <span class="sw-stat-num">ENLIL</span>
-        <span class="sw-stat-label">Solar wind simulation model powering CME tracking</span>
-      </div>
-      <div class="sw-stat sw-stat-divider">
-        <span class="sw-stat-num">BATS-R-US</span>
-        <span class="sw-stat-label">Magnetospheric MHD model for field-line visualization</span>
-      </div>
+    <div class="institution-card">
+      <h3>Historical storm archive</h3>
+      <p>Step back through some of the biggest solar events on record, including Bastille Day 2000 and the 2012 near-miss CME, using the same archived model runs that researchers study today.</p>
     </div>
   </div>
 </div>
@@ -73,12 +65,7 @@ cta:
       </div>
       <h3 class="sw-event-name">Bastille Day 2000</h3>
       <p class="sw-event-tagline">X5.7 solar flare · July 14, 2000</p>
-      <p class="sw-event-desc">One of the most powerful solar storms of Solar Cycle 23 — an X5.7 flare and fast CME that triggered a severe geomagnetic storm, disrupted satellites, and produced aurora visible as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.</p>
-      <div class="sw-facts-row">
-        <span class="sw-fact">X5.7 flare classification</span>
-        <span class="sw-fact">Kp index reached 9</span>
-        <span class="sw-fact">ENLIL model from CCMC</span>
-      </div>
+      <p class="sw-event-desc">One of the most powerful solar storms of Solar Cycle 23, this X5.7 flare triggered a severe geomagnetic storm that disrupted satellites and pushed the aurora as far south as Texas and the Mediterranean. OpenSpace recreates the full event using ENLIL simulation data from NASA CCMC.</p>
     </div>
   </div>
 
@@ -95,12 +82,7 @@ cta:
       </div>
       <h3 class="sw-event-name">Solar Storm 2012</h3>
       <p class="sw-event-tagline">Near-miss Carrington event · July 23, 2012</p>
-      <p class="sw-event-desc">A double CME eruption that reached a speed of 2,500 km/s — among the fastest ever recorded — narrowly missed Earth by one week. Had it arrived, scientists estimate it could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.</p>
-      <div class="sw-facts-row">
-        <span class="sw-fact">CME speed ~2,500 km/s</span>
-        <span class="sw-fact">Missed Earth by 9 days</span>
-        <span class="sw-fact">ENLIL model from CCMC</span>
-      </div>
+      <p class="sw-event-desc">This double CME eruption hit speeds around 2,500 km/s, making it one of the fastest on record, and narrowly missed Earth by about a week. Scientists estimate a direct hit could have caused a Carrington-level geomagnetic storm. OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.</p>
     </div>
   </div>
 
@@ -116,14 +98,8 @@ cta:
         <span class="sw-event-tag sw-event-tag-live">Live</span>
       </div>
       <h3 class="sw-event-name">Today's Sun</h3>
-      <p class="sw-event-tagline">Real-time solar conditions · updated continuously</p>
-      <p class="sw-event-desc">OpenSpace streams current solar wind speed, density, and magnetic field data from NOAA's Space Weather Prediction Center. See live CME propagation modeled by ENLIL, the magnetosphere responding in real time via BATS-R-US, and the aurora oval updating with each Kp measurement — all in one continuous view of the Sun–Earth system as it is right now.</p>
-      <div class="sw-facts-row">
-        <span class="sw-fact">Live data from NOAA SWPC</span>
-        <span class="sw-fact">ENLIL solar wind model</span>
-        <span class="sw-fact">BATS-R-US magnetosphere</span>
-        <span class="sw-fact">Ovation Prime aurora</span>
-      </div>
+      <p class="sw-event-tagline">Real-time solar conditions</p>
+      <p class="sw-event-desc">Watch CME propagation modeled by ENLIL, see the magnetosphere respond in real time via BATS-R-US, and track the aurora oval as it updates with each new Kp measurement. All in one continuous view of the Sun-Earth system.</p>
     </div>
   </div>
 
@@ -132,16 +108,16 @@ cta:
 <div class="gb-section gb-section-alt">
   <div class="gb-split">
     <div class="gb-split-text">
-      <h2 class="gb-section-h2">The Sun in every wavelength</h2>
+      <h2 class="gb-section-h2">The Sun in multiple wavelengths</h2>
       <p class="gb-split-lede">SDO sees what the eye cannot</p>
-      <p class="sw-prose">NASA's Solar Dynamics Observatory captures the Sun continuously across ten wavelength channels, each revealing a different layer of solar activity — from the cool chromosphere to 20-million-degree flare plasma. OpenSpace loads these AIA image sequences so you can switch between wavelengths in real time and watch the same event unfold at different temperatures.</p>
+      <p class="sw-prose">NASA's Solar Dynamics Observatory captures the Sun nonstop across ten wavelength channels, each one revealing a different layer of solar activity, from the cool chromosphere all the way up to 20-million-degree flare plasma. OpenSpace lets you load these image sequences and switch between wavelengths to watch the same event play out at different temperatures.</p>
       <ul class="gb-feature-list">
-        <li>304 Å — chromosphere and transition region (~50,000 K)</li>
-        <li>171 Å — quiet corona and coronal loops (~600,000 K)</li>
-        <li>193 Å — corona and hot post-flare plasma (~1.2 MK)</li>
-        <li>211 Å — active regions in the outer corona (~2 MK)</li>
-        <li>131 Å — flares and erupting filaments (~10 MK)</li>
-        <li>94 Å — flare cores at peak intensity (~6.3 MK)</li>
+        <li>304 Å: chromosphere and transition region (~50,000 K)</li>
+        <li>171 Å: quiet corona and coronal loops (~600,000 K)</li>
+        <li>193 Å: corona and hot post-flare plasma (~1.2 MK)</li>
+        <li>211 Å: active regions in the outer corona (~2 MK)</li>
+        <li>131 Å: flares and erupting filaments (~10 MK)</li>
+        <li>94 Å: flare cores at peak intensity (~6.3 MK)</li>
       </ul>
     </div>
     <div class="gb-split-visual">

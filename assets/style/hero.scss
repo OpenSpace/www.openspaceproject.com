@@ -3,7 +3,7 @@
 .hero {
   background: $background;
   color: white;
-  padding: 5rem 0 4rem;
+  padding: 5rem clamp(1.5rem, 8vw, 12rem) 4rem;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   text-align: center;

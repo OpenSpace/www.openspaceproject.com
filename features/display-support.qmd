@@ -13,9 +13,9 @@ hero:
     - "Features"
     - "Display Support"
   lede: >
-    From a personal laptop to a 30-meter planetarium dome — OpenSpace adapts to your
-    display with fisheye rendering, MPCDI mesh warping, multi-projector blending, and
-    tiled wall support built in.
+    OpenSpace adapts to your display whether you're running on a personal laptop or a
+    30-meter planetarium dome, with fisheye rendering, MPCDI mesh warping, multi-projector
+    blending, and tiled wall support built in.
 
 cta:
   heading: "Set up OpenSpace for your venue"
@@ -28,8 +28,8 @@ cta:
       link: "/community/contact.qmd"
       style: "ghost"
   lede: >
-    The documentation covers every display configuration in detail. Or get in touch — the
-    team helps institutions configure OpenSpace for their specific setup.
+    The documentation covers every display configuration in detail. Or get in touch and
+    the team can help you configure OpenSpace for your specific setup.
 ---
 
 ```{=html}
@@ -51,7 +51,7 @@ cta:
            class="ds-venue-img">
     </div>
     <div class="ds-venue-body">
-      <p class="ds-venue-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files — everything your dome already uses.</p>
+      <p class="ds-venue-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.</p>
       <ul class="ds-venue-list">
         <li>MPCDI mesh warping for any dome geometry</li>
         <li>Multi-projector soft edge blending and masking</li>
@@ -73,11 +73,10 @@ cta:
            class="ds-venue-img">
     </div>
     <div class="ds-venue-body">
-      <p class="ds-venue-desc">OpenSpace runs on Windows, macOS, and Linux from a standard laptop or workstation. Single and multi-monitor setups work out of the box — deploy it across an entire school district for free.</p>
+      <p class="ds-venue-desc">OpenSpace runs on Windows and Linux from a standard laptop or workstation.</p>
       <ul class="ds-venue-list">
-        <li>Windows, macOS, and Linux — no licensing costs</li>
-        <li>Runs on consumer hardware, no specialist GPU required</li>
-        <li>Curated classroom profiles with lesson-ready content</li>
+        <li>Windows and Linux — no licensing costs</li>
+        <li>Runs on laptops with gaming graphics cards</li>
         <li>Single-monitor and multi-screen desktop configurations</li>
         <li>Projector and interactive whiteboard compatible</li>
       </ul>
@@ -95,12 +94,11 @@ cta:
            class="ds-venue-img">
     </div>
     <div class="ds-venue-body">
-      <p class="ds-venue-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience; curators can update content remotely.</p>
+      <p class="ds-venue-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium</p>
       <ul class="ds-venue-list">
         <li>Touch and gesture input for kiosk-style exhibits</li>
         <li>Custom UI profiles — lock to specific content or flight paths</li>
         <li>Synchronized multi-display walls and segmented spheres</li>
-        <li>Auto-reset to home position after idle period</li>
         <li>Supports permanent installations and traveling shows</li>
       </ul>
     </div>
@@ -142,7 +140,7 @@ cta:
     </div>
     <div class="ds-tech-card">
       <h3 class="ds-tech-title">Projection modes</h3>
-      <p class="ds-tech-desc">Fisheye, equirectangular, cylindrical, and perspective projections — switchable via config for any screen geometry.</p>
+      <p class="ds-tech-desc">Fisheye, equirectangular, cylindrical, and perspective projections, all switchable via config for any screen geometry.</p>
     </div>
     <div class="ds-tech-card">
       <h3 class="ds-tech-title">Multi-node sync</h3>

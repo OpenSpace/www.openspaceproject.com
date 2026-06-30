@@ -21,6 +21,19 @@
   color: $baseWhite;
   line-height: 1.2;
   margin: 0 0 2rem;
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba($primaryAccent, 0.15);
+  }
 }
 
 .sw-prose {
@@ -57,7 +70,7 @@
 }
 
 .sw-stat-divider {
-  border-top: 1px solid rgba($primaryAccent, 0.1);
+  border-top: 1px solid rgba($primaryAccent, 0.08);
 }
 
 .sw-stat-num {
@@ -88,7 +101,7 @@
   grid-template-columns: 45% 1fr;
   gap: 3rem;
   padding: 2.5rem 0;
-  border-top: 1px solid rgba($primaryAccent, 0.1);
+  border-top: 1px solid rgba($primaryAccent, 0.08);
   align-items: start;
 
   &:first-of-type {
@@ -114,6 +127,10 @@
   object-fit: cover;
   object-position: center;
   display: block;
+
+  @media (max-width: 760px) {
+    height: 200px;
+  }
 }
 
 .sw-event-meta {

@@ -57,7 +57,7 @@ cta:
       <img src="assets/images/institutions/universeum.webp" alt="Universeum" class="institution-logo">
       <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" class="institution-logo">
     </div>
-    <p class="trusted-more"><a href="about/impact.html">Meet the 100+ organizations running OpenSpace →</a></p>
+    <p class="trusted-more"><a href="about/impact.html#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
   </div>
 </section>
 
@@ -216,7 +216,7 @@ cta:
 
 <section class="funders-section">
   <h2 class="section-heading text-center">Funded by</h2>
-  <p class="section-lede text-center">OpenSpace is non-commercial software supported by a coalition of public research funders.</p>
+  <p class="section-lede text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
 
   <div class="funder-marquee">
     <div class="funder-track">

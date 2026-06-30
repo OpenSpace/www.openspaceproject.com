@@ -15,6 +15,7 @@
 --       action:
 --         text: "Join the Slack"
 --         link: "http://example.org"
+--         external: true
 --       lede: "From a personal laptop to a 30-meter planetarium dome ..."
 --     ---
 --
@@ -79,12 +80,16 @@ local function render_hero(hero_meta)
   local action = hero_meta["action"]
   local action_text = nil
   local action_link = nil
+  local action_external = ""
   if action ~= nil then
     if action["text"] ~= nil then
       action_text = pandoc.utils.stringify(action["text"])
     end
     if action["link"] ~= nil then
       action_link = pandoc.utils.stringify(action["link"])
+    end
+    if action["external"] ~= nil and action["external"] then
+      action_external = "external"
     end
   end
 
@@ -113,7 +118,7 @@ local function render_hero(hero_meta)
   if action_text ~= nil and action_link ~= nil then
     action_html = [[
     <div class="hero-actions">
-      <a class="btn-primary-os" href="]] .. action_link .. [[" target="_blank" rel="noopener">]] .. action_text .. [[</a>
+      <a class="btn-primary-os ]] .. action_external .. [[" href="]] .. action_link .. [[" target="_blank" rel="noopener">]] .. action_text .. [[</a>
     </div>]]
   end
 

@@ -14,8 +14,8 @@ hero:
     - "Globe Browsing"
   image: "/assets/images/banner/mars.webp"
   lede: >
-    OpenSpace streams real spacecraft imagery and elevation data from NASA missions —
-    cross fifteen orders of magnitude in one uncut, uninterrupted flight.
+    OpenSpace streams real spacecraft imagery and elevation data from NASA missions. Cross
+    fifteen orders of magnitude in one uncut, uninterrupted flight.
 
 cta:
   heading: "Start exploring planetary surfaces"
@@ -34,25 +34,20 @@ cta:
 
 ```{=html}
 <div class="gb-section">
-  <div class="gb-intro-row">
-    <div class="gb-intro-text-col">
-      <h2 class="gb-section-h2">Planetary surface rendering</h2>
-      <p class="gb-prose">Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions — HiRISE, MOLA, LRO, Cassini — and renders them continuously at every scale. No load screens. No transitions. No second application.</p>
-      <p class="gb-prose">Multiple data layers can be active and blended at once: base imagery, colorized elevation, scientific overlays, labels. A presenter can reveal and toggle them live during a show without pausing or switching scenes.</p>
+  <h2 class="gb-section-h2">Planetary surface rendering</h2>
+  <p class="gb-prose">Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions (HiRISE, MOLA, LRO, Cassini) and renders them continuously at every scale. No load screens. No transitions. No second application.</p>
+  <div class="mv-caps-grid" style="margin-top:2.5rem">
+    <div class="institution-card">
+      <h3>Real mission data</h3>
+      <p>Every surface is built from actual spacecraft imagery and elevation measurements: HiRISE and MOLA for Mars, LRO for the Moon, Cassini for the outer planets. No artist approximations.</p>
     </div>
-    <div class="gb-stats-col">
-      <div class="gb-stat">
-        <span class="gb-stat-number">15</span>
-        <span class="gb-stat-label">Orders of magnitude — Milky Way to a boulder on Mars</span>
-      </div>
-      <div class="gb-stat gb-stat-divider">
-        <span class="gb-stat-number">0</span>
-        <span class="gb-stat-label">Load screens between any two scales</span>
-      </div>
-      <div class="gb-stat gb-stat-divider">
-        <span class="gb-stat-number">100%</span>
-        <span class="gb-stat-label">Real data from NASA, ESA, and planetary missions</span>
-      </div>
+    <div class="institution-card">
+      <h3>Continuous at every scale</h3>
+      <p>Fly from interstellar space to the texture of Martian regolith in one uncut flight, fifteen orders of magnitude with no load screens, no transitions, no second application.</p>
+    </div>
+    <div class="institution-card">
+      <h3>Live layer blending</h3>
+      <p>Stack base imagery, colorized elevation, scientific overlays, and labels simultaneously. Toggle and blend layers live during a presentation without pausing or switching scenes.</p>
     </div>
   </div>
 </div>
@@ -118,11 +113,11 @@ cta:
     <div class="gb-split-text">
       <h2 class="gb-section-h2">Data layers</h2>
       <p class="gb-split-lede">Stack and reveal live</p>
-      <p class="gb-prose">Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show — no pausing, no switching scenes, no prerendering.</p>
+      <p class="gb-prose">Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show with no pausing, no switching scenes, and no prerendering needed.</p>
       <ul class="gb-feature-list">
         <li>Base imagery from multiple spacecraft missions</li>
         <li>Colorized elevation from MOLA, LOLA, and radar altimetry</li>
-        <li>Scientific overlays — mineral maps, temperature, atmospheric data</li>
+        <li>Scientific overlays including mineral maps, temperature, and atmospheric data</li>
         <li>Time-varying data: watch ice caps advance and retreat</li>
         <li>Toggleable labels and graticules at any scale</li>
       </ul>

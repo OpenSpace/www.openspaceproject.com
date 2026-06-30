@@ -9,6 +9,9 @@ format:
     include-in-header:
       text: |
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="preconnect" href="https://unpkg.com" crossorigin>
+        <link rel="preconnect" href="https://status.openspaceproject.com" crossorigin>
+        <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin>
 
 hero:
   title: "OpenSpace around the world"
@@ -35,12 +38,17 @@ cta:
 <!-- Startup map -->
 <div class="impact-section">
   <h2 class="impact-section-heading">Where OpenSpace runs</h2>
-  <p class="impact-section-lede">Every point on this map represents a unique location where OpenSpace has been started. Startup data is collected anonymously and powers our reporting.</p>
+  <p class="impact-section-lede">Explore anonymous startup locations from our usage data, or see the 100+ organizations currently running OpenSpace around the world.</p>
+
+  <div class="impact-map-toggle">
+    <button class="impact-toggle-btn is-active" data-layer="startups">Startup locations</button>
+    <button class="impact-toggle-btn" data-layer="orgs">Organizations</button>
+  </div>
 
   <div id="impact-startup-map"></div>
 
   <div class="impact-map-footer">
-    <span>Each marker = a unique startup location &nbsp;·&nbsp; Circle size scales with launch count</span>
+    <span id="impact-map-footer-text">Each marker = a unique startup location &nbsp;·&nbsp; Circle size scales with launch count</span>
     <a href="https://status.openspaceproject.com/" target="_blank" rel="noopener">View full usage stats &rarr;</a>
   </div>
 </div>
@@ -90,8 +98,112 @@ cta:
 
 
 <!-- Leaflet + map init -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
+  var ORG_DATA = [
+  { name: "Adler Planetarium", city: "Chicago, IL", lat: 41.8781, lng: -87.6298 },
+  { name: "American Museum of Natural History", city: "New York, NY", lat: 40.7750, lng: -73.9715 },
+  { name: "California Academy of Sciences", city: "San Francisco, CA", lat: 37.7749, lng: -122.4194 },
+  { name: "Denver Museum of Nature & Science", city: "Denver, CO", lat: 39.7475, lng: -104.9429 },
+  { name: "Houston Museum of Natural Science", city: "Houston, TX", lat: 29.7604, lng: -95.3698 },
+  { name: "North Carolina Museum of Natural Sciences", city: "Raleigh, NC", lat: 35.7796, lng: -78.6382 },
+  { name: "Appalachian State University", city: "Boone, NC", lat: 36.2168, lng: -81.6746 },
+  { name: "City College of New York (CCNY) Planetarium", city: "New York, NY", lat: 40.8193, lng: -73.9484 },
+  { name: "Lower Eastside Girls Club", city: "New York, NY", lat: 40.7208, lng: -73.9774 },
+  { name: "Museum of Life and Science", city: "Durham, NC", lat: 35.994, lng: -78.8986 },
+  { name: "Museum of Science, Boston", city: "Boston, MA", lat: 42.3601, lng: -71.0589 },
+  { name: "Paulucci Space Theater", city: "Hibbing, MN", lat: 47.4271, lng: -92.9377 },
+  { name: "Planetarium at P-Tech", city: "Paterson, NJ", lat: 40.9168, lng: -74.1718 },
+  { name: "Stockton Astronomical Society", city: "Stockton, CA", lat: 37.9577, lng: -121.2908 },
+  { name: "Springfield Science Museum", city: "Springfield, MA", lat: 42.1015, lng: -72.5898 },
+  { name: "Suffolk County Community College", city: "Selden, NY", lat: 40.8676, lng: -73.0287 },
+  { name: "Tesla Science Center at Wardenclyffe", city: "Shoreham, NY", lat: 40.9496, lng: -72.8993 },
+  { name: "Towson University", city: "Towson, MD", lat: 39.4015, lng: -76.6019 },
+  { name: "University of Nebraska–Lincoln Ralph Mueller Planetarium", city: "Lincoln, NE", lat: 40.8136, lng: -96.7026 },
+  { name: "Versant Power Astronomy Center, University of Maine", city: "Orono, ME", lat: 44.8838, lng: -68.6706 },
+  { name: "Anchorage Museum", city: "Anchorage, AK", lat: 61.2181, lng: -149.9003 },
+  { name: "Applied Research Laboratory at the University of Texas at Austin", city: "Austin, TX", lat: 30.3866, lng: -97.7269 },
+  { name: "Asheville Museum of Science", city: "Asheville, NC", lat: 35.5951, lng: -82.5515 },
+  { name: "ASU School of Earth & Space Exploration", city: "Tempe, AZ", lat: 33.4255, lng: -111.94 },
+  { name: "ASU Thunderbird School of Global Management", city: "Phoenix, AZ", lat: 33.4484, lng: -112.074 },
+  { name: "Austin Community College", city: "Austin, TX", lat: 30.3769, lng: -97.7207 },
+  { name: "Brookhaven National Laboratory", city: "Upton, NY", lat: 40.869, lng: -72.887 },
+  { name: "Charleston Planetarium Society", city: "Charleston, SC", lat: 32.7765, lng: -79.9311 },
+  { name: "Como Park Elementary School", city: "Saint Paul, MN", lat: 44.9537, lng: -93.09 },
+  { name: "Connecticut Science Center", city: "Hartford, CT", lat: 41.7658, lng: -72.6734 },
+  { name: "Fiske Planetarium, University of Colorado Boulder", city: "Boulder, CO", lat: 40.015, lng: -105.2705 },
+  { name: "Flandrau Planetarium, University of Arizona", city: "Tucson, AZ", lat: 32.2226, lng: -110.9747 },
+  { name: "Hampden Sydney College", city: "Hampden Sydney, VA", lat: 37.2434, lng: -78.4622 },
+  { name: "Herndon High School", city: "Herndon, VA", lat: 38.9696, lng: -77.3861 },
+  { name: "Hubble Planetarium", city: "Brooklyn, NY", lat: 40.6084, lng: -73.9549 },
+  { name: "Imiloa Astronomy Center", city: "Hilo, HI", lat: 19.7074, lng: -155.0885 },
+  { name: "Institute of American Indian Arts", city: "Santa Fe, NM", lat: 35.687, lng: -105.9378 },
+  { name: "Intrepid Sea, Air & Space Museum", city: "New York, NY", lat: 40.7648, lng: -74.0008 },
+  { name: "Jim and Linda Lee Planetarium", city: "Prescott, AZ", lat: 34.54, lng: -112.4685 },
+  { name: "Laurel Highland School District", city: "Fayette County, PA", lat: 39.9001, lng: -79.7164 },
+  { name: "Lawrence Hall of Science", city: "Berkeley, CA", lat: 37.8715, lng: -122.273 },
+  { name: "Mankato East High School", city: "Mankato, MN", lat: 44.1636, lng: -93.9994 },
+  { name: "Mayo High School", city: "Rochester, MN", lat: 44.0121, lng: -92.4802 },
+  { name: "Michigan Science Center", city: "Detroit, MI", lat: 42.3314, lng: -83.0458 },
+  { name: "Minnesota State University Moorhead (MSUM) Planetarium", city: "Moorhead, MN", lat: 46.8738, lng: -96.7678 },
+  { name: "Muscle Shoals Middle School", city: "Muscle Shoals, AL", lat: 34.7448, lng: -87.6675 },
+  { name: "New Brighton Area Schools", city: "New Brighton, PA", lat: 40.7251, lng: -80.3098 },
+  { name: "New York University Tandon School of Engineering", city: "Brooklyn, NY", lat: 40.6942, lng: -73.9866 },
+  { name: "Nyx Space", city: "Golden, CO", lat: 39.7555, lng: -105.2211 },
+  { name: "Oakton High School", city: "Oakton, VA", lat: 38.8815, lng: -77.3061 },
+  { name: "One World Immersive", city: "Denver, CO", lat: 39.7360, lng: -104.9849 },
+  { name: "Raritan Valley Community College", city: "Branchburg, NJ", lat: 40.5717, lng: -74.7035 },
+  { name: "Science Museum of Western Virginia", city: "Roanoke, VA", lat: 37.271, lng: -79.9414 },
+  { name: "Sci-Port Discovery Center", city: "Shreveport, LA", lat: 32.5252, lng: -93.7502 },
+  { name: "Southwest Minnesota State University (SMSU)", city: "Marshall, MN", lat: 44.4469, lng: -95.7894 },
+  { name: "Spherical", city: "Oakland, CA", lat: 37.8044, lng: -122.2712 },
+  { name: "StoryDome", city: "Langley, WA", lat: 48.0357, lng: -122.4057 },
+  { name: "The B612 Foundation", city: "Mill Valley, CA", lat: 37.906, lng: -122.545 },
+  { name: "The Human Space Program", city: "Natick, MA", lat: 42.2834, lng: -71.3495 },
+  { name: "The Journey Museum", city: "Rapid City, SD", lat: 44.0805, lng: -103.231 },
+  { name: "University of North Dakota", city: "Grand Forks, ND", lat: 47.9253, lng: -97.0329 },
+  { name: "University of Utah", city: "Salt Lake City, UT", lat: 40.7608, lng: -111.891 },
+  { name: "University of Washington Planetarium", city: "Seattle, WA", lat: 47.6062, lng: -122.3321 },
+  { name: "Wauwatosa West High School", city: "Wauwatosa, WI", lat: 43.0494, lng: -88.0076 },
+  { name: "West Springfield High School", city: "West Springfield, VA", lat: 38.7837, lng: -77.2364 },
+  { name: "West Virginia University", city: "Morgantown, WV", lat: 39.6295, lng: -79.9559 },
+  { name: "Williamsville Space Lab Planetarium", city: "Williamsville, NY", lat: 42.9645, lng: -78.7392 },
+  { name: "Norrköping Visualization Center C", city: "Norrköping, Sweden", lat: 58.5877, lng: 16.1924 },
+  { name: "SpaceDome Mobile Planetarium", city: "Zürich, Switzerland", lat: 47.3769, lng: 8.5417 },
+  { name: "Tekniska Museet", city: "Stockholm, Sweden", lat: 59.3293, lng: 18.0686 },
+  { name: "Ars Electronica Center", city: "Linz, Austria", lat: 48.3069, lng: 14.2858 },
+  { name: "Astro Group South Sardinia", city: "Castiadas, Sardinia, Italy", lat: 39.3167, lng: 9.45 },
+  { name: "Astrolab Iris", city: "Ieper, Belgium", lat: 50.85, lng: 2.8833 },
+  { name: "Bromsgrove School", city: "Bromsgrove, United Kingdom", lat: 52.3334, lng: -2.0608 },
+  { name: "Exploratório — Centro Ciência Viva de Coimbra", city: "Coimbra, Portugal", lat: 40.2033, lng: -8.4103 },
+  { name: "Naturhistorisches Museum Wien", city: "Vienna, Austria", lat: 48.2051, lng: 16.3594 },
+  { name: "Sonnenborgh", city: "Utrecht, Netherlands", lat: 52.0907, lng: 5.1214 },
+  { name: "Technical University of Munich", city: "Munich, Germany", lat: 48.1351, lng: 11.582 },
+  { name: "The Admiral Vasile Urseanu Astronomical Observatory", city: "Bucharest, Romania", lat: 44.4268, lng: 26.1025 },
+  { name: "Umevatoriet", city: "Umeå, Sweden", lat: 63.8258, lng: 20.263 },
+  { name: "Universeum", city: "Gothenburg, Sweden", lat: 57.7089, lng: 11.9746 },
+  { name: "Universidad de Córdoba", city: "Córdoba, Spain", lat: 37.8882, lng: -4.7794 },
+  { name: "University of Groningen", city: "Groningen, Netherlands", lat: 53.2194, lng: 6.5665 },
+  { name: "Malmö Museum", city: "Malmö, Sweden", lat: 55.605, lng: 13.0038 },
+  { name: "VEGA Haus der Natur observatory", city: "Salzburg, Austria", lat: 47.8095, lng: 13.055 },
+  { name: "WonderDome", city: "Sheffield, United Kingdom", lat: 53.3811, lng: -1.4701 },
+  { name: "ZOOM Children’s Museum", city: "Vienna, Austria", lat: 48.2030, lng: 16.3565 },
+  { name: "H.R. MacMillan Space Centre", city: "Vancouver, British Columbia", lat: 49.2827, lng: -123.1207 },
+  { name: "Aquatarium", city: "Brockville, Ontario, Canada", lat: 44.5897, lng: -75.6843 },
+  { name: "IMERSS", city: "Galiano Island, BC, Canada", lat: 48.9097, lng: -123.4631 },
+  { name: "Ontario Science Centre", city: "Toronto, Ontario", lat: 43.6532, lng: -79.3832 },
+  { name: "Mochileros Astronómicos / Planetario Canopus", city: "Asunción, Paraguay", lat: -25.2637, lng: -57.5759 },
+  { name: "New Zealand Astrobiology Network", city: "Carterton, New Zealand", lat: -41.0231, lng: 175.529 },
+  { name: "Spaceward Bound NZ", city: "New Zealand", lat: -41.2865, lng: 174.7762 },
+  { name: "University of New South Wales Wollongong", city: "Wollongong, Australia", lat: -34.4248, lng: 150.8931 },
+  { name: "The Naval Hill Planetarium at the Centre for Earth and Space", city: "Bloemfontein, South Africa", lat: -29.0852, lng: 26.1596 },
+  { name: "African Circular Business Alliance", city: "Cape Town, South Africa", lat: -33.9249, lng: 18.4241 },
+  { name: "ATTARIK Foundation", city: "Casablanca, Morocco", lat: 33.5731, lng: -7.5898 },
+  { name: "Ghana Planetarium", city: "Accra, Ghana", lat: 5.6037, lng: -0.187 },
+  { name: "University of Cape Town", city: "Cape Town, South Africa", lat: -33.9545, lng: 18.4563 },
+  { name: "Sri Sathya Sai Space Theatre", city: "Puttaparthi, India", lat: 14.1667, lng: 77.8 },
+  { name: "Traveling Universe", city: "Chiang Mai, Thailand", lat: 18.7883, lng: 98.9853 }
+];
+
 function initImpactMap() {
   var mapEl = document.getElementById('impact-startup-map');
   if (!mapEl || typeof L === 'undefined' || typeof data === 'undefined') return;
@@ -109,7 +221,11 @@ function initImpactMap() {
     maxZoom: 19
   }).addTo(leafletMap);
 
-  var accent = getComputedStyle(document.documentElement).getPropertyValue('--os-accent').trim() || '#a2e7fb';
+  var accent = '#a2e7fb';
+  var orgAccent = '#d0f884';
+
+  // Build startup layer
+  var startupLayer = L.layerGroup();
 
   (data.places || []).forEach(place => {
     let r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
@@ -120,13 +236,96 @@ function initImpactMap() {
       fillOpacity: 0.45,
       weight: 1,
       opacity: 0.75
-    }).addTo(leafletMap).bindPopup(
+    }).addTo(startupLayer).bindPopup(
       `<strong style="color:#000">${place.total}</strong> launch${(place.total !== 1 ? 'es' : '')}`
     );
   });
 
+  // Build org layer
+  var orgLayer = L.layerGroup();
+  ORG_DATA.forEach(function (org) {
+    L.circleMarker([org.lat, org.lng], {
+      radius: 7,
+      color: orgAccent,
+      fillColor: orgAccent,
+      fillOpacity: 0.5,
+      weight: 1.5,
+      opacity: 0.9
+    }).addTo(orgLayer).bindPopup(
+      '<strong style="color:#000">' + org.name + '</strong><br><span style="color:#555;font-size:0.85em">' + org.city + '</span>'
+    );
+  });
+
+  // Toggle logic
+  var footerText = document.getElementById('impact-map-footer-text');
+  var toggleBtns = document.querySelectorAll('.impact-toggle-btn');
+
+  function showLayer(layerName) {
+    toggleBtns.forEach(function (b) { b.classList.remove('is-active'); });
+    document.querySelector('.impact-toggle-btn[data-layer="' + layerName + '"]').classList.add('is-active');
+    if (layerName === 'startups') {
+      leafletMap.removeLayer(orgLayer);
+      startupLayer.addTo(leafletMap);
+      if (footerText) footerText.textContent = 'Each marker = a unique startup location · Circle size scales with launch count';
+    } else {
+      leafletMap.removeLayer(startupLayer);
+      orgLayer.addTo(leafletMap);
+      if (footerText) footerText.textContent = '103 organizations across 25+ countries';
+    }
+  }
+
+  toggleBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () { showLayer(btn.dataset.layer); });
+  });
+
+  // Show orgs layer if linked directly via #orgs
+  if (window.location.hash === '#orgs') {
+    showLayer('orgs');
+  } else {
+    showLayer('startups');
+  }
+
   setTimeout(() => { leafletMap.invalidateSize(); }, 200);
 }
+
+// Lazy-load Leaflet + data.js when the map scrolls near the viewport
+(function () {
+  var loaded = false;
+  function loadMapAssets() {
+    if (loaded) return;
+    loaded = true;
+
+    var leafletReady = false;
+    var dataReady = false;
+    function tryInit() {
+      if (leafletReady && dataReady) initImpactMap();
+    }
+
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(css);
+
+    var js = document.createElement('script');
+    js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    js.onload = function () { leafletReady = true; tryInit(); };
+    document.head.appendChild(js);
+
+    var dataJs = document.createElement('script');
+    dataJs.src = 'https://status.openspaceproject.com/data.js';
+    dataJs.onload = function () { dataReady = true; tryInit(); };
+    document.head.appendChild(dataJs);
+  }
+
+  var mapEl = document.getElementById('impact-startup-map');
+  if ('IntersectionObserver' in window && mapEl) {
+    var obs = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { obs.disconnect(); loadMapAssets(); }
+    }, { rootMargin: '300px' });
+    obs.observe(mapEl);
+  } else {
+    loadMapAssets();
+  }
+})();
 </script>
-<script src="https://status.openspaceproject.com/data.js" async onload="initImpactMap()"></script>
 ```

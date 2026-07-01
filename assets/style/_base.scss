@@ -61,6 +61,46 @@ hr {
   border-color: rgba($color-accent-primary, 0.2);
 }
 
+table {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto 2rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  thead tr {
+    border-bottom: 1px solid rgba($color-text, 0.2);
+  }
+
+  th {
+    text-align: left;
+    padding: 0 1rem 0.75rem 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba($color-text, 0.5);
+  }
+
+  td {
+    padding: 0.9rem 1rem 0.9rem 0;
+    color: rgba($color-text, 0.85);
+    border-bottom: 1px solid rgba($color-text, 0.08);
+    vertical-align: middle;
+
+    &:first-child {
+      font-weight: 600; color: $color-text-highlight;
+    }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: block;

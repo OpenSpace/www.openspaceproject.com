@@ -318,3 +318,27 @@
     }
   }
 }
+
+.page-download-prev-platform {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba($color-text, 0.45);
+  min-width: 4rem;
+}
+
+.page-download-prev-older {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  color: rgba($color-text, 0.55);
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

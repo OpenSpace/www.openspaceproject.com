@@ -1,14 +1,14 @@
 ```{=html}
-<div class="uc-grid">
+<div class="page-usecases-grid">
 <%
   for (const item of items) {
 %>
   <div
-    class="uc-card"
+    class="page-usecases-card"
     role="button"
     tabindex="0"
     data-case="<%- item.id %>"
-    style="background-image:url('<%- item.image %>'); background-position: center 50%"
+    style="background-image:url('<%- item.image %>');"
     data-id="<%- item.id %>"
     data-image="<%- item.image %>"
     data-image_alt="<%- item.image_alt %>"
@@ -19,27 +19,25 @@
     data-body="<%- item.body %>"
     data-tags="<%- item.tags.join("|||||") %>"
   >
-    <div class="uc-card-overlay"></div>
-    <div class="uc-card-text">
-      <p class="uc-card-meta"><%- item.institution %> <%- item.location ? `· ${item.location}` : "" %></p>
-      <h3 class="uc-card-title"><%- item.shorttitle ? item.shorttitle : item.title %></h3>
+    <div class="page-usecases-card-overlay"></div>
+    <div class="page-usecases-card-text">
+      <p><%- item.institution %> <%- item.location ? `· ${item.location}` : "" %></p>
+      <h3><%- item.shorttitle ? item.shorttitle : item.title %></h3>
     </div>
   </div>
 <% } %>
 </div>
 
-<div class="uc-modal" id="ucModal" aria-modal="true" role="dialog" aria-label="Use case detail" aria-hidden="true">
-  <div class="uc-modal-backdrop"></div>
-  <div class="uc-modal-box">
-    <button class="uc-modal-close" aria-label="Close">&times;</button>
-    <div class="uc-modal-img-wrap">
-      <img class="uc-modal-img" src="" alt="" />
-    </div>
-    <div class="uc-modal-content">
-      <p class="uc-modal-meta"></p>
-      <h2 class="uc-modal-title"></h2>
-      <p class="uc-modal-body"></p>
-      <div class="uc-modal-tags"></div>
+<div class="page-usecases-modal" id="ucModal" aria-modal="true" role="dialog" aria-label="Use case detail" aria-hidden="true">
+  <div class="page-usecases-modal-backdrop"></div>
+  <div class="page-usecases-modal-box">
+    <button class="page-usecases-modal-close" aria-label="Close">&times;</button>
+    <img class="page-usecases-modal-img" src="" alt="" />
+    <div class="page-usecases-modal-content">
+      <p class="page-usecases-modal-meta"></p>
+      <h2 class="page-usecases-modal-title"></h2>
+      <p class="page-usecases-modal-body"></p>
+      <div class="page-usecases-modal-tags"></div>
     </div>
   </div>
 </div>
@@ -47,13 +45,13 @@
 <script>
 (function () {
   let modal = document.getElementById('ucModal');
-  let modalImg = modal.querySelector('.uc-modal-img');
-  let modalMeta = modal.querySelector('.uc-modal-meta');
-  let modalTitle = modal.querySelector('.uc-modal-title');
-  let modalBody = modal.querySelector('.uc-modal-body');
-  let modalTags = modal.querySelector('.uc-modal-tags');
-  let closeBtn = modal.querySelector('.uc-modal-close');
-  let backdrop = modal.querySelector('.uc-modal-backdrop');
+  let modalImg = modal.querySelector('.page-usecases-modal-img');
+  let modalMeta = modal.querySelector('.page-usecases-modal-meta');
+  let modalTitle = modal.querySelector('.page-usecases-modal-title');
+  let modalBody = modal.querySelector('.page-usecases-modal-body');
+  let modalTags = modal.querySelector('.page-usecases-modal-tags');
+  let closeBtn = modal.querySelector('.page-usecases-modal-close');
+  let backdrop = modal.querySelector('.page-usecases-modal-backdrop');
   let lastFocused = null;
 
   function openModal(card) {
@@ -64,7 +62,7 @@
     modalTitle.textContent = card.dataset.title;
     modalBody.textContent = card.dataset.body;
     modalTags.innerHTML = card.dataset.tags.split("|||||").map(function (t) {
-      return '<span class="uc-modal-tag">' + t + '</span>';
+      return '<span class="page-usecases-modal-tag">' + t + '</span>';
     }).join('');
     modal.setAttribute('aria-hidden', 'false');
     modal.classList.add('is-open');
@@ -81,7 +79,7 @@
     }
   }
 
-  document.querySelectorAll('.uc-card').forEach((card) => {
+  document.querySelectorAll('.page-usecases-card').forEach((card) => {
     card.addEventListener('click', () => {
       lastFocused = card;
       openModal(card);

@@ -671,6 +671,7 @@ body:has(.page-breadcrumb) main {
   font-family: $font-monospace;
   letter-spacing: 0.05em;
   color: rgba($color-text, 0.5);
+  background: $color-bg;
   line-height: 1;
 
   a {

@@ -31,7 +31,6 @@ format:
       - "assets/style/cta.scss"
 
       - "assets/style/navbar.scss"
-      - "assets/style/use-cases.scss"
       - "assets/style/annual-meeting.scss"
       - "assets/style/content-carousel.scss"
       - "assets/style/home.scss"
@@ -47,7 +46,6 @@ format:
       - "assets/style/display-support.scss"
       - "assets/style/events.scss"
       - "assets/style/slack.scss"
-      - "assets/style/download.scss"
       - "assets/style/contact.scss"
     include-after-body:
       - file: _template/dotnav.html

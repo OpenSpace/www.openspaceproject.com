@@ -11,7 +11,7 @@ listing:
   - id: usecases
     type: custom
     template: ../_template/use-cases.ejs.md
-    contents: ../assets/use-cases.yml
+    contents: ../assets/listing/use-cases.yml
 
 hero:
   title: "OpenSpace in Action"

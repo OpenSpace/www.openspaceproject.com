@@ -5,13 +5,13 @@ listing:
   - id: admin
     type: custom
     template: ../_template/team.ejs.md
-    contents: ../assets/team.yml
+    contents: ../assets/listing/team.yml
     include:
       type: "{admin,coordinator,advisor}"
   - id: developer
     type: custom
     template: ../_template/team.ejs.md
-    contents: "../assets/team.yml"
+    contents: "../assets/listing/team.yml"
     include:
       type: developer
 format:

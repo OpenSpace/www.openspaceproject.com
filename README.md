@@ -26,8 +26,7 @@ File formats and tools used in the webpage:
     - `assets/logos`: Logos for softwares, institutions
     - `asset/style`: SCSS style files used for the webpage
     - `asset/team`: Information about team members
-    - `asset/academia.yml`: Information about the academic output
-    - `asset/team.yml`: Information about the different team members
+    - `asset/listing`: Different listings that are used to generate content on different pages. Each `.yml` in this folder is named after the webpage on which it is used
   - `events`: A list of events that will automatically be added to the events page. Each event should be in a subfolder that has a `index.qmd`
   - `resources`: Resources that are provided by the webpage for external use
   - `_template`: Partial pages that are included or EJS file templates used by other pages

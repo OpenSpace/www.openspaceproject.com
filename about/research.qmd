@@ -7,13 +7,13 @@ listing:
   - id: theses
     type: custom
     template: ../_template/thesis-row.ejs.md
-    contents: ../assets/theses.yml
+    contents: ../assets/listing/theses.yml
     page-size: 9999
     sort: "year desc"
   - id: papers
     type: custom
     template: ../_template/paper-row.ejs.md
-    contents: ../assets/academia.yml
+    contents: ../assets/listing/academia.yml
     include:
       type: "paper"
     page-size: 9999

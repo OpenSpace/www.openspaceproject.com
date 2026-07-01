@@ -1,5 +1,12 @@
 #
 # Admin / Project leadership
+# Fields:
+#   - name: The name
+#   - title: The title within the OpenSpace project
+#   - affiliation: The primary affiliation
+#   - image: The image of the person
+#   - type: The role the person was fulfilling within the project. Must be one of
+#           {admin, admin-previous, coordinator, developer, developer-previous, student}
 #
 - name: Anders Ynnerman
   title: Project Management
@@ -53,6 +60,22 @@
   affiliation: American Museum of Natural History
   image: "01_megan_villa.webp"
   type: coordinator
+
+
+
+#
+# Previous Coordinators
+#
+- name: Kayla Nussbaum
+  title: Project Coordinator
+  affiliation: American Museum of Natural History
+  image: "01_kayla_nussbaum.webp"
+  type: coordinator-previous
+- name: Camera Walrond
+  title: Project Coordinator
+  affiliation: American Museum of Natural History
+  image: "02_camera_walrond.webp"
+  type: coordinator-previous
 
 
 

@@ -19,7 +19,7 @@ cta:
   heading: "Add your story"
   actions:
     - text: "Download OpenSpace"
-      link: "/install/version-0220.qmd"
+      link: "/install/download.qmd"
       style: "primary"
     - text: "Get in touch"
       link: "/community/contact.qmd"

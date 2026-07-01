@@ -1,0 +1,142 @@
+---
+pagetitle: "Download OpenSpace — v0.22.0"
+description-meta: "Download OpenSpace v0.22.0 — free, open-source astrovisualization software for Windows. Source builds available for Linux."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+
+hero:
+  title: "Explore the universe.<br>Free."
+  breadcrumbs:
+    - "Install"
+    - "Version 0.22.0"
+  badge: "v0.22.0 — Latest Release"
+  lede: >
+    Open-source astrovisualization software built for planetarium domes, classrooms, and
+    personal computers.
+
+cta:
+  heading: "Need help getting started?"
+  actions:
+    - text: "Read the docs"
+      link: "https://docs.openspaceproject.com"
+      style: "primary"
+      external: true
+    - text: "Join the Slack"
+      link: "/community/slack.qmd"
+      style: "ghost"
+  lede: >
+    The documentation covers installation, profiles, and configuration. The OpenSpace
+    community on Slack is also here to help.
+---
+
+::: {.page-download-actions}
+[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download-btn-primary}
+
+[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download-btn-ghost target="_blank" rel="noopener"}
+:::
+
+::: {.page-download-summary}
+Windows · Linux (source)
+:::
+
+::::: {.content-section}
+
+## Platforms
+
+:::: {.page-download-platforms}
+
+::: {.page-download-platform}
+{{< iconify fa7-brands:windows >}}
+
+### Windows
+
+Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.
+
+[Download v0.22.0 (full)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip)
+
+[Download v0.22.0 (lightweight)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip)
+
+[View previous versions](previous-versions.qmd){.is-text}
+:::
+
+::: {.page-download-platform}
+{{< iconify fa7-brands:linux >}}
+
+### Linux
+
+No pre-compiled binary for Linux. Source code is freely available on GitHub — build instructions are in the documentation.
+
+[View source on GitHub](https://github.com/OpenSpace/OpenSpace){target="_blank" rel="noopener"}
+
+[Build instructions](https://docs.openspaceproject.com/latest/getting-started/install/index.html){target="_blank" rel="noopener"}
+:::
+
+::::
+
+:::::
+
+:::: {.content-section .page-download-requirements}
+
+## System requirements
+
+::: {.page-download-requirements-panel}
+Minimum
+
+CPU
+: Intel Core i5 or equivalent
+
+GPU
+: NVIDIA GTX 1060 or comparable
+
+RAM
+: 8 GB
+
+VRAM
+: 4 GB
+
+OS
+: Windows 10/11 or Linux
+:::
+
+::: {.page-download-requirements-panel .is-recommended}
+Recommended
+
+CPU
+: Modern Intel Core i7 / AMD Ryzen 7
+
+GPU
+: NVIDIA RTX 3070 or better
+
+RAM
+: 16 GB or more
+
+VRAM
+: 6 GB or more
+
+OS
+: Windows 10/11 or Linux
+:::
+
+::::
+
+
+:::: {.content-section}
+
+## Before you install
+
+::: {.page-download-notes}
+
+### Windows C++ Redistributable
+OpenSpace requires the [Microsoft Visual C++ Redistributable for Visual Studio 2022](https://aka.ms/vs/17/release/vc_redist.x64.exe). A copy is included in the downloaded folder. If you see "VCRUNTIME140_1.dll was not found," install it to resolve the error.
+
+### Network access
+OpenSpace will request internet access on first launch — a standard Windows security prompt. Granting permission is required for full functionality, including the user interface and live data features.
+
+### Updating from a previous version
+Use the [lightweight download](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip) if you're updating an existing installation. Copy your `sync` and `user` folders from the previous version into the new OpenSpace directory.
+:::
+
+::::

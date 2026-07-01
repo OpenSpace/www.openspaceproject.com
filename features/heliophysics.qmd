@@ -22,7 +22,7 @@ cta:
   heading: "See space weather in action"
   actions:
     - text: "Download OpenSpace"
-      link: "/install/version-0220.qmd"
+      link: "/install/download.qmd"
       style: "primary"
     - text: "NASA CCMC"
       link: "https://ccmc.gsfc.nasa.gov"
@@ -96,11 +96,11 @@ Step back through some of the biggest solar events on record, including Bastille
 
 
 ```{=html}
-<div class="gb-section gb-section-alt">
-  <div class="gb-split">
+<div class="sw-section sw-section-alt">
+  <div class="sw-split">
     <div>
       <h2>The Sun in multiple wavelengths</h2>
-      <p class="gb-split-lede">SDO sees what the eye cannot</p>
+      <p class="sw-split-lede">SDO sees what the eye cannot</p>
       <p class="sw-prose">NASA's Solar Dynamics Observatory captures the Sun nonstop across ten wavelength channels, each one revealing a different layer of solar activity, from the cool chromosphere all the way up to 20-million-degree flare plasma. OpenSpace lets you load these image sequences and switch between wavelengths to watch the same event play out at different temperatures.</p>
       <ul class="gb-feature-list">
         <li>304 Å: chromosphere and transition region (~50,000 K)</li>

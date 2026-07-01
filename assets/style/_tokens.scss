@@ -55,6 +55,14 @@ $font-monospace: $os-font-monospace;
 
 
 
+//
+// Typography parameters
+//
+$section-inset: clamp(1.5rem, 8vw, 12rem);
+$section-pad-top: 4.5rem;
+$section-pad-bottom: 3rem;
+
+
 
 
 // Typography scale

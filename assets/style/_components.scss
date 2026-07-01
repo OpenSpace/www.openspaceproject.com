@@ -9,12 +9,26 @@
 
 /*-- scss:rules --*/
 
-
 //
 // General sections
 //
-.section {
-  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
+.content-section {
+  padding: $section-pad-top $section-inset $section-pad-bottom;
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
+
+  &:nth-child(odd of .content-section)  { background: $color-bg; }
+  &:nth-child(even of .content-section) { background: $color-surface; }
+
+  h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $color-text;
+    border-bottom: 1px solid rgba($color-accent-primary, 0.08);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .section-heading {

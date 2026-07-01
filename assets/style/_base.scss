@@ -7,21 +7,28 @@
 
 /*-- scss:defaults --*/
 $primary: $color-link !default;
+
 $body-bg: $color-bg;
 $body-color: $color-text;
+
 $link-color: $color-accent-soft;
 $link-hover-color: lighten($color-accent-soft, 8%);
+
 $font-family-sans-serif: $font-body;
 $font-family-monospace: $font-monospace;
+
 $headings-font-family: $font-headings;
 $headings-font-weight: 300;
 $headings-color: $color-accent-primary;
 $headings-letter-spacing: 0.02em;
+
 $navbar-fg: rgba($color-text, 0.85);
 $navbar-hl: $color-accent-primary;
 $navbar-bg: $color-bg;
+
 $footer-fg: $color-text;
 $footer-bg: darken($color-bg, 2%);
+
 $dropdown-link-hover-color: $color-accent-soft;
 $dropdown-link-hover-bg: $color-bg;
 $dropdown-link-active-bg: $color-bg;
@@ -59,4 +66,4 @@ hr {
     display: block;
     top: 95%;
   }
-} 
+}

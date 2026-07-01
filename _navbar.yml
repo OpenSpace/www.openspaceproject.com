@@ -81,4 +81,4 @@ website:
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:server"></iconify-icon></span><span class="nav-rich-title">Server Status</span><iconify-icon icon="lucide:external-link" class="nav-ext-icon"></iconify-icon></span><span class="nav-rich-desc">Live uptime for OpenSpace data services.</span></span>
             href: https://uptime.openspaceproject.com
       - text: "<span class='nav-cta'>Download</span>"
-        href: install/version-0220.qmd
+        href: install/download.qmd

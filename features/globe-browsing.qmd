@@ -21,7 +21,7 @@ cta:
   heading: "Start exploring planetary surfaces"
   actions:
     - text: "Download OpenSpace"
-      link: "/install/version-0220.qmd"
+      link: "/install/download.qmd"
       style: "primary"
     - text: "Documentation"
       link: "https://docs.openspaceproject.com"

@@ -12,7 +12,7 @@ hero:
   breadcrumbs:
     - "Install"
     - text: "Version 0.22.0"
-      link: "version-0220.qmd"
+      link: "download.qmd"
     - "Previous Versions"
   lede: "Windows binaries and release notes for older OpenSpace releases."
 ---

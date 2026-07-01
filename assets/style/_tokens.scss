@@ -2,59 +2,73 @@
 // _tokens.scss:  Design tokens (single source of truth)
 //
 // This file contains brand colors, font-family stacks, type scale, spacing/inset values,
-// letter-spacing & radius constants. anything referenced by name elsewhere (e.g.
-// $primaryAccent, $font-mono, or $section-inset)
+// letter-spacing & radius constants. anything referenced by name elsewhere
 
 /*-- scss:defaults --*/
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
-// Brand colors
-$os-deep-space:    #0a0a0a;
-$os-text-primary:  #ecf5fb;
-$os-text-muted:    #b8c8ca;
-$os-text-faint:    rgba(#b8c8ca, 0.7);
-$os-link:          #d0f884;
-$os-surface:       #2b2a2a;
-$os-surface-alt:   #1d1d1d;
-$os-border-faint:  rgba(#3dbdee, 0.08);
-$os-overlay-light: rgba(#ecf5fb, 0.4);
+//
+// This first block defines the raw colors used on the webpage. None of the os- prefixed
+// variables should be used anywhere else. Instead use the role-based variables defined
+// further below
+//
 
-// Brand Colors
-$background: #0a0a0a;
-$baseWhite: #ecf5fb;
-$satelliteGray: #b8c8ca;
-$primaryAccent: #3dbdee;
-$vividAccentGreen: #d0f884;
-$softAccentYellow: #e8fbc2;
-$greenColor: #d0f4ea;
-$textColor: $satelliteGray;
+// Brand elements                   // From Visual Identity document
+$os-deep-space: #0a0a0a;          // #0b1b1d
+$os-prime-blue: #3dbdee;          // #a3e7fc
+$os-flare-yellow: #d0f884;        // #e8fcc2
+$os-soft-yellow: #e8fbc2;
+$os-satellite-gray: #b8c8ca;
+$os-terra-green: #d0f4ea;
+$os-base-white: #ecf5fb;          // #edf5fc
+$os-attention-red: #de4e4e;
+$os-attention-yellow: #e07c56;
+$os-surface-highlight: #0d1014;
+
+$os-font-headings: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
+$os-font-body: 'IBM Plex Sans', sans-serif;
+$os-font-monospace: 'IBM Plex Mono', monospace;
+
+
+
+//
+// This block defines the role-based colors. These should be used elsewhere in other style
+// sheets
+//
+$color-text: $os-satellite-gray;
+$color-text-highlight: $os-base-white;
+$color-text-muted: $os-satellite-gray;
+$color-text-faint: rgba($os-satellite-gray, 0.7);
+$color-link:  $os-flare-yellow;
+$color-overlay-light: rgba($os-base-white, 0.4);
+
+$color-bg: $os-deep-space;
+$color-surface: $os-surface-highlight;
+$color-accent-primary: $os-prime-blue;
+$color-accent-secondary: $os-flare-yellow;
+$color-accent-soft: $os-soft-yellow;
+
+$font-headings: $os-font-headings;
+$font-body: $os-font-body;
+$font-monospace: $os-font-monospace;
 
 
 
 
 
 // Typography scale
-$os-hero-title-min:    2.5rem;
-$os-hero-title-max:    4.5rem;
+$os-hero-title-min: 2.5rem;
+$os-hero-title-max: 4.5rem;
 $os-section-title-min: 1.75rem;
 $os-section-title-max: 2.5rem;
 
-// ---------- Layout ----------
-$os-container-max:    1200px;
-$os-section-padding:  5rem;
-$os-card-radius:      12px;
-$os-button-radius:    6px;
+// Layout
+$os-container-max: 1200px;
+$os-section-padding: 5rem;
+$os-card-radius: 12px;
+$os-button-radius: 6px;
 
-// ---------- Marquee ----------
+// Marquee
 $os-marquee-duration: 30s;
 $os-marquee-mobile-duration: 22s;
-
-// ---------- Bootstrap variable overrides ----------
-// Lets the rest of the site (nav, body text, default buttons) pick up our brand
-$primary:        $os-link !default;
-$body-color:     $os-text-primary !default;
-$link-color:     $os-link !default;
-$navbar-bg:      $os-deep-space !default;
-$navbar-fg:      rgba(#b8c8ca, 0.85) !default;
-$navbar-hl:      #ecf5fb !default;

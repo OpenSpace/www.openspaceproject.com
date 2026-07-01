@@ -12,7 +12,7 @@
 }
 
 .ev-section--past {
-  background: #0d1014;
+  background: $color-surface;
 }
 
 // ── Event item row ────────────────────────────────────────────
@@ -21,7 +21,7 @@
   grid-template-columns: 260px 1fr;
   gap: 3rem;
   padding: 2.5rem 0;
-  border-top: 1px solid rgba($primaryAccent, 0.1);
+  border-top: 1px solid rgba($color-accent-primary, 0.1);
   align-items: start;
   position: relative; // needed for stretched link
 
@@ -31,7 +31,7 @@
 
   // Subtle hover lift on the image
   &:hover .ev-img-wrap {
-    border-color: rgba($primaryAccent, 0.3);
+    border-color: rgba($color-accent-primary, 0.3);
   }
 
   @media (max-width: 760px) {
@@ -67,7 +67,7 @@
 .ev-img-wrap {
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid rgba($primaryAccent, 0.1);
+  border: 1px solid rgba($color-accent-primary, 0.1);
   flex-shrink: 0;
 
   .ev-item--past & {
@@ -93,29 +93,29 @@
 
 .ev-tag {
   font-size: 0.6rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba($satelliteGray, 0.5);
+  color: rgba($color-text, 0.5);
 }
 
 .ev-title {
   font-size: clamp(1.125rem, 2vw, 1.375rem);
   font-weight: 600;
-  color: $baseWhite;
+  color: $color-text-highlight;
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin: 0 0 0.35rem;
 
   .ev-item--past & {
-    color: rgba($baseWhite, 0.6);
+    color: rgba($color-text-highlight, 0.6);
   }
 }
 
 .ev-time {
   font-size: 0.75rem;
-  font-family: 'IBM Plex Mono', monospace;
-  color: rgba($satelliteGray, 0.55);
+  font-family: $font-monospace;
+  color: rgba($color-text, 0.55);
   letter-spacing: 0.04em;
   margin: 0 0 0.85rem;
 }
@@ -123,11 +123,11 @@
 .ev-desc {
   font-size: 0.9375rem;
   line-height: 1.75;
-  color: rgba($baseWhite, 0.75);
+  color: rgba($color-text-highlight, 0.75);
   margin: 0 0 1.25rem;
 
   .ev-item--past & {
-    color: rgba($baseWhite, 0.45);
+    color: rgba($color-text-highlight, 0.45);
     margin-bottom: 0;
   }
 }
@@ -145,15 +145,15 @@
   font-size: 0.875rem;
 
   a {
-    color: rgba($satelliteGray, 0.6);
+    color: rgba($color-text, 0.6);
     text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: $font-monospace;
     letter-spacing: 0.04em;
     font-size: 0.8125rem;
     transition: color 0.15s ease;
 
     &:hover {
-      color: $primaryAccent;
+      color: $color-accent-primary;
       text-decoration: none;
     }
   }
@@ -169,8 +169,8 @@
 .ev-btn-primary {
   display: inline-flex;
   align-items: center;
-  background: $vividAccentGreen;
-  color: $background;
+  background: $color-accent-secondary;
+  color: $color-bg;
   font-size: 0.8125rem;
   font-weight: 600;
   padding: 0.6rem 1.4rem;
@@ -197,7 +197,7 @@
     opacity: 0.88;
     transform: translateY(-1px);
     text-decoration: none;
-    color: $background;
+    color: $color-bg;
   }
 }
 
@@ -205,8 +205,8 @@
   display: inline-flex;
   align-items: center;
   background: transparent;
-  color: $primaryAccent;
-  border: 1px solid rgba($primaryAccent, 0.3);
+  color: $color-accent-primary;
+  border: 1px solid rgba($color-accent-primary, 0.3);
   font-size: 0.8125rem;
   font-weight: 600;
   padding: 0.6rem 1.4rem;
@@ -230,10 +230,10 @@
   }
 
   &:hover {
-    border-color: rgba($primaryAccent, 0.65);
-    background: rgba($primaryAccent, 0.06);
+    border-color: rgba($color-accent-primary, 0.65);
+    background: rgba($color-accent-primary, 0.06);
     transform: translateY(-1px);
-    color: $primaryAccent;
+    color: $color-accent-primary;
     text-decoration: none;
   }
 }

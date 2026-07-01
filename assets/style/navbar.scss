@@ -9,9 +9,23 @@
 .navbar {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  border-bottom: 0px solid rgba($color-accent-primary, 0.15);
 }
-@media (min-width: 992px) {
 
+.navbar-brand {
+  font-family: $font-headings;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  color: $color-accent-primary !important;
+}
+
+.nav-link {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+@media (min-width: 992px) {
   // Force the outer navbar container to be a horizontal flex row
   .navbar > .navbar-container,
   .navbar .navbar-container {
@@ -80,19 +94,18 @@
   .navbar .nav-link:has(.nav-cta) {
     margin-left: 1rem;
   }
-.navbar .nav-link {
-  transform: translateY(8px);
-  transition: color 0.15s ease;
 
-  &:hover,
-  &:focus {
-    color: $baseWhite !important;
+  .navbar .nav-link {
+    transform: translateY(8px);
+    transition: color 0.15s ease;
+
+    &:hover, &:focus {
+      color: $color-text-highlight !important;
+    }
   }
-}
-.navbar {
-  position: relative;
-}
-
+  .navbar {
+    position: relative;
+  }
 }
 
 // ---------- Dropdown menu container ----------
@@ -119,13 +132,13 @@
 
   &:hover,
   &:focus {
-    background: rgba($primaryAccent, 0.08);
+    background: rgba($color-accent-primary, 0.08);
 
     .nav-rich-icon {
-      background: $vividAccentGreen;
+      background: $color-accent-secondary;
 
       iconify-icon {
-        color: $background;
+        color: $color-bg;
       }
     }
   }
@@ -199,13 +212,13 @@
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background: rgba($satelliteGray, 0.25);
+  background: rgba($color-text, 0.25);
   flex-shrink: 0;
   transition: background 0.15s ease;
 
   iconify-icon {
     font-size: 1.1rem;
-    color: $vividAccentGreen;
+    color: $color-accent-secondary;
     transition: color 0.15s ease;
   }
 }
@@ -213,13 +226,13 @@
 .nav-rich-title {
   font-weight: 600;
   font-size: 0.9375rem;
-  color: $baseWhite;
+  color: $color-text-highlight;
   line-height: 1.3;
 }
 
 .nav-ext-icon {
   font-size: 0.7rem;
-  color: rgba($satelliteGray, 0.5);
+  color: rgba($color-text, 0.5);
   margin-left: auto;
   flex-shrink: 0;
 }
@@ -227,7 +240,7 @@
 .nav-rich-desc {
   display: block;
   font-size: 0.8125rem;
-  color: $satelliteGray;
+  color: $color-text;
   line-height: 1.45;
   font-weight: 400;
 }
@@ -235,9 +248,9 @@
 // ---------- Download CTA button ----------
 .navbar .nav-cta {
   display: inline-block;
-  background: $background;
-  color: $baseWhite;
-  border: 1px solid $vividAccentGreen;
+  background: $color-bg;
+  color: $color-text-highlight;
+  border: 1px solid $color-accent-secondary;
   padding: 0.45rem 1.1rem;
   border-radius: 6px;
   font-weight: 500;
@@ -246,8 +259,8 @@
 
 .navbar .nav-link:hover .nav-cta,
 .navbar .nav-link:focus .nav-cta {
-  background: $vividAccentGreen;
-  color: $background;
+  background: $color-accent-secondary;
+  color: $color-bg;
 }
 
 // ---------- Mobile (under 992px) ----------

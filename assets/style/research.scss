@@ -18,22 +18,22 @@
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $primaryAccent;
-  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  color: $color-accent-primary;
+  border-bottom: 1px solid rgba($color-accent-primary, 0.15);
   padding-bottom: 0.6rem;
   margin-bottom: 0.5rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
 }
 
 // ---------- LiU program description ----------
 .liu-program-desc {
   font-size: 0.9375rem;
   line-height: 1.7;
-  color: rgba($satelliteGray, 0.9);
+  color: rgba($color-text, 0.9);
   margin: 1.25rem 0 2rem;
 
   strong {
-    color: $softAccentYellow;
+    color: $color-accent-soft;
   }
 }
 
@@ -45,11 +45,11 @@
 
   .liu-partner-tag {
     font-size: 0.7rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: $font-monospace;
     letter-spacing: 0.06em;
-    color: rgba($satelliteGray, 0.8);
-    background: rgba($primaryAccent, 0.06);
-    border: 1px solid rgba($primaryAccent, 0.1);
+    color: rgba($color-text, 0.8);
+    background: rgba($color-accent-primary, 0.06);
+    border: 1px solid rgba($color-accent-primary, 0.1);
     padding: 0.3rem 0.75rem;
     border-radius: 20px;
     cursor: pointer;
@@ -57,15 +57,15 @@
     transition: background 0.15s, border-color 0.15s, color 0.15s;
 
     &:hover {
-      background: rgba($primaryAccent, 0.12);
-      border-color: rgba($primaryAccent, 0.3);
-      color: $primaryAccent;
+      background: rgba($color-accent-primary, 0.12);
+      border-color: rgba($color-accent-primary, 0.3);
+      color: $color-accent-primary;
     }
 
     &.is-active {
-      background: rgba($primaryAccent, 0.18);
-      border-color: rgba($primaryAccent, 0.5);
-      color: $primaryAccent;
+      background: rgba($color-accent-primary, 0.18);
+      border-color: rgba($color-accent-primary, 0.5);
+      color: $color-accent-primary;
     }
   }
 }
@@ -87,13 +87,13 @@
 }
 
 .thesis-year-label {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   font-size: 0.65rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba($primaryAccent, 0.55);
+  color: rgba($color-accent-primary, 0.55);
   padding: 1.5rem 0 0.5rem;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
   margin-top: 0.5rem;
 
   &:first-child {
@@ -113,7 +113,7 @@
   transition: background 0.18s ease;
 
   &:hover {
-    background: rgba($primaryAccent, 0.04);
+    background: rgba($color-accent-primary, 0.04);
   }
 
   @media (max-width: 600px) {
@@ -141,7 +141,7 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: top center;
-  border: 1.5px solid rgba($satelliteGray, 0.15);
+  border: 1.5px solid rgba($color-text, 0.15);
   flex-shrink: 0;
 
   @media (max-width: 600px) {
@@ -151,8 +151,8 @@
 }
 
 .thesis-photo-placeholder {
-  background: rgba($primaryAccent, 0.06);
-  border: 1.5px dashed rgba($primaryAccent, 0.1);
+  background: rgba($color-accent-primary, 0.06);
+  border: 1.5px dashed rgba($color-accent-primary, 0.1);
 }
 
 // Content column
@@ -163,16 +163,16 @@
 .thesis-title {
   font-size: 1rem;
   font-weight: 500;
-  color: $baseWhite;
+  color: $color-text-highlight;
   line-height: 1.4;
   margin-bottom: 0.3rem;
 
   a {
-    color: $baseWhite;
+    color: $color-text-highlight;
     text-decoration: none;
 
     &:hover {
-      color: $primaryAccent;
+      color: $color-accent-primary;
     }
   }
 
@@ -185,10 +185,10 @@
 .thesis-degree-badge {
   display: inline-block;
   font-size: 0.6rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.1em;
-  color: $softAccentYellow;
-  border: 1px solid rgba($softAccentYellow, 0.4);
+  color: $color-accent-soft;
+  border: 1px solid rgba($color-accent-soft, 0.4);
   padding: 0.1rem 0.45rem;
   border-radius: 3px;
   margin-left: 0.5rem;
@@ -199,7 +199,7 @@
 
 .thesis-author {
   font-size: 0.8125rem;
-  color: rgba($satelliteGray, 0.65);
+  color: rgba($color-text, 0.65);
   line-height: 1.4;
   margin-bottom: 0.35rem;
 }
@@ -207,11 +207,11 @@
 .thesis-partner-badge {
   display: inline-block;
   font-size: 0.62rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.08em;
-  color: rgba($primaryAccent, 0.7);
-  background: rgba($primaryAccent, 0.07);
-  border: 1px solid rgba($primaryAccent, 0.15);
+  color: rgba($color-accent-primary, 0.7);
+  background: rgba($color-accent-primary, 0.07);
+  border: 1px solid rgba($color-accent-primary, 0.15);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }
@@ -239,13 +239,13 @@
 }
 
 .paper-year-label {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   font-size: 0.65rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba($primaryAccent, 0.55);
+  color: rgba($color-accent-primary, 0.55);
   padding: 1.5rem 1.1rem 0.5rem;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
   margin-top: 0.5rem;
 
   &:first-child {
@@ -260,7 +260,7 @@
   transition: background 0.18s ease;
 
   &:hover {
-    background: rgba($primaryAccent, 0.04);
+    background: rgba($color-accent-primary, 0.04);
   }
 }
 
@@ -271,16 +271,16 @@
 .paper-title {
   font-size: 1rem;
   font-weight: 500;
-  color: $baseWhite;
+  color: $color-text-highlight;
   line-height: 1.4;
   margin-bottom: 0.3rem;
 
   a {
-    color: $baseWhite;
+    color: $color-text-highlight;
     text-decoration: none;
 
     &:hover {
-      color: $softAccentYellow;
+      color: $color-accent-soft;
     }
   }
 
@@ -291,7 +291,7 @@
 
 .paper-author {
   font-size: 0.8125rem;
-  color: rgba($satelliteGray, 0.65);
+  color: rgba($color-text, 0.65);
   line-height: 1.5;
   margin-bottom: 0.35rem;
 }
@@ -299,11 +299,11 @@
 .paper-venue-badge {
   display: inline-block;
   font-size: 0.62rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.08em;
-  color: rgba($softAccentYellow, 0.85);
-  background: rgba($softAccentYellow, 0.07);
-  border: 1px solid rgba($softAccentYellow, 0.2);
+  color: rgba($color-accent-soft, 0.85);
+  background: rgba($color-accent-soft, 0.07);
+  border: 1px solid rgba($color-accent-soft, 0.2);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }

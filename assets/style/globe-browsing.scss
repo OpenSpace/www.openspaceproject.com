@@ -9,23 +9,23 @@
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 600;
     letter-spacing: -0.01em;
-    color: $baseWhite;
+    color: $color-text-highlight;
     line-height: 1.2;
     margin: 0 0 2rem;
-    border-bottom: 1px solid rgba($primaryAccent, 0.15);
+    border-bottom: 1px solid rgba($color-accent-primary, 0.15);
     padding-bottom: 0.5rem;
     position: relative;
   }
 }
 
 .gb-section-alt {
-  background: #0d1014;
+  background: $color-surface;
 }
 
 .gb-prose {
   font-size: 1.0rem;
   line-height: 1.8;
-  color: rgba($baseWhite, 0.82);
+  color: rgba($color-text-highlight, 0.82);
   margin: 0 0 1.1rem;
 
   &:last-child {
@@ -49,7 +49,7 @@
 .gb-split-lede {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 500;
-  color: rgba($satelliteGray, 0.85);
+  color: rgba($color-text, 0.85);
   line-height: 1.4;
   margin: 0 0 1rem;
   letter-spacing: -0.01em;
@@ -63,9 +63,9 @@
   li {
     font-size: 0.875rem;
     line-height: 1.65;
-    color: rgba($satelliteGray, 0.82);
+    color: rgba($color-text, 0.82);
     padding: 0.5rem 0 0.5rem 1.25rem;
-    border-bottom: 1px solid rgba($primaryAccent, 0.07);
+    border-bottom: 1px solid rgba($color-accent-primary, 0.07);
     position: relative;
 
     &::before {
@@ -77,7 +77,7 @@
       width: 4px;
       height: 4px;
       border-radius: 50%;
-      background: $primaryAccent;
+      background: $color-accent-primary;
       opacity: 0.7;
     }
 
@@ -102,7 +102,7 @@
     position: absolute;
     inset: 0;
     border-radius: 16px;
-    outline: 2px solid $primaryAccent;
+    outline: 2px solid $color-accent-primary;
     outline-offset: 4px;
     pointer-events: none;
   }
@@ -119,10 +119,10 @@
   right: 30px;
   bottom: 0;
   border-radius: 14px;
-  border: 1px solid rgba($primaryAccent, 0.18);
+  border: 1px solid rgba($color-accent-primary, 0.18);
   background-size: cover;
   background-position: center;
-  background-color: #0d1014;
+  background-color: $color-surface;
   overflow: hidden;
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
               opacity  0.45s ease;
@@ -179,12 +179,12 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: rgba($primaryAccent, 0.22);
+  background: rgba($color-accent-primary, 0.22);
   flex-shrink: 0;
   transition: background 0.25s ease;
 
   &.active {
-    background: $primaryAccent;
+    background: $color-accent-primary;
 
     &::before {
       content: '';
@@ -194,7 +194,7 @@
       width: 22px;
       height: 22px;
       border-radius: 50%;
-      border: 1px solid rgba($primaryAccent, 0.38);
+      border: 1px solid rgba($color-accent-primary, 0.38);
       transform: translate(-50%, -50%);
       pointer-events: none;
     }
@@ -203,8 +203,8 @@
 
 .gb-layer-hint {
   font-size: 0.68rem;
-  font-family: 'IBM Plex Mono', monospace;
-  color: rgba($satelliteGray, 0.38);
+  font-family: $font-monospace;
+  color: rgba($color-text, 0.38);
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }

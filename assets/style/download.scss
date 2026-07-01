@@ -15,7 +15,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: $vividAccentGreen;
+  background: $color-accent-secondary;
   color: #0a0a0a;
   font-weight: 700;
   font-size: 1.0625rem;
@@ -37,13 +37,13 @@
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba($vividAccentGreen, 0.25);
+    box-shadow: 0 6px 24px rgba($color-accent-secondary, 0.25);
     color: #0a0a0a;
     text-decoration: none;
   }
 
   &:focus-visible {
-    outline: 2px solid $primaryAccent;
+    outline: 2px solid $color-accent-primary;
     outline-offset: 3px;
   }
 }
@@ -53,7 +53,7 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 0.875rem;
-  color: rgba($satelliteGray, 0.8);
+  color: rgba($color-text, 0.8);
   text-decoration: none;
   transition: color 0.15s ease;
 
@@ -68,12 +68,12 @@
   }
 
   &:hover {
-    color: $baseWhite;
+    color: $color-text-highlight;
     text-decoration: none;
   }
 
   &:focus-visible {
-    outline: 2px solid $primaryAccent;
+    outline: 2px solid $color-accent-primary;
     outline-offset: 3px;
   }
 }
@@ -81,9 +81,9 @@
 .dl-platforms {
   margin-top: 1.5rem;
   font-size: 0.75rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.08em;
-  color: rgba($satelliteGray, 0.65);
+  color: rgba($color-text, 0.65);
   text-align: center;
 }
 
@@ -92,9 +92,9 @@
   @include full-bleed;
 
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 4.5rem;
-  background: #0d1014;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
-  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  background: $color-surface;
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
 }
 
 .dl-platform-grid {
@@ -108,8 +108,8 @@
 }
 
 .dl-platform-card {
-  background: #0d1014;
-  border: 1px solid rgba($primaryAccent, 0.15);
+  background: $color-surface;
+  border: 1px solid rgba($color-accent-primary, 0.15);
   border-radius: 12px;
   padding: 2rem 1.75rem;
   display: flex;
@@ -118,7 +118,7 @@
   transition: border-color 0.22s ease, transform 0.22s ease;
 
   &:hover {
-    border-color: rgba($primaryAccent, 0.55);
+    border-color: rgba($color-accent-primary, 0.55);
     transform: translateY(-3px);
   }
 }
@@ -132,14 +132,14 @@
 
   iconify-icon {
     font-size: 2rem;
-    color: $baseWhite;
+    color: $color-text-highlight;
   }
 }
 
 .dl-platform-name {
   font-size: 1.125rem;
   font-weight: 600;
-  color: $baseWhite;
+  color: $color-text-highlight;
   margin: 0;
   border-bottom: none;
 }
@@ -147,7 +147,7 @@
 .dl-platform-desc {
   font-size: 0.875rem;
   line-height: 1.6;
-  color: rgba($satelliteGray, 0.75);
+  color: rgba($color-text, 0.75);
   margin: 0;
   flex: 1;
 }
@@ -178,16 +178,16 @@
   }
 
   &:focus-visible {
-    outline: 2px solid $primaryAccent;
+    outline: 2px solid $color-accent-primary;
     outline-offset: 3px;
   }
 
   &--primary {
-    background: $vividAccentGreen;
+    background: $color-accent-secondary;
     color: #0a0a0a;
 
     &:hover {
-      background: lighten($vividAccentGreen, 5%);
+      background: lighten($color-accent-secondary, 5%);
       color: #0a0a0a;
       text-decoration: none;
       transform: translateY(-1px);
@@ -196,38 +196,38 @@
 
   &--secondary {
     background: transparent;
-    color: rgba($satelliteGray, 0.8);
-    border: 1px solid rgba($satelliteGray, 0.2);
+    color: rgba($color-text, 0.8);
+    border: 1px solid rgba($color-text, 0.2);
 
     &:hover {
-      border-color: rgba($satelliteGray, 0.45);
-      color: $baseWhite;
+      border-color: rgba($color-text, 0.45);
+      color: $color-text-highlight;
       text-decoration: none;
     }
   }
 
   &--ghost {
     background: transparent;
-    color: rgba($satelliteGray, 0.6);
-    border: 1px solid rgba($primaryAccent, 0.15);
+    color: rgba($color-text, 0.6);
+    border: 1px solid rgba($color-accent-primary, 0.15);
 
     &:hover {
-      border-color: rgba($primaryAccent, 0.4);
-      color: $primaryAccent;
+      border-color: rgba($color-accent-primary, 0.4);
+      color: $color-accent-primary;
       text-decoration: none;
     }
   }
 
   &--text {
     background: transparent;
-    color: rgba($primaryAccent, 0.7);
+    color: rgba($color-accent-primary, 0.7);
     border: none;
     padding-top: 0.35rem;
     padding-bottom: 0.35rem;
     font-weight: 500;
 
     &:hover {
-      color: $primaryAccent;
+      color: $color-accent-primary;
       text-decoration: none;
     }
   }
@@ -236,13 +236,13 @@
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    color: $baseWhite;
+    color: $color-text-highlight;
     border: 1px solid rgba(255, 255, 255, 0.12);
 
     &:hover {
       background: rgba(255, 255, 255, 0.11);
-      border-color: rgba($primaryAccent, 0.45);
-      color: $primaryAccent;
+      border-color: rgba($color-accent-primary, 0.45);
+      color: $color-accent-primary;
       text-decoration: none;
       transform: translateY(-1px);
     }
@@ -254,16 +254,16 @@
   @include full-bleed;
 
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 4.5rem;
-  background: $background;
+  background: $color-bg;
 }
 
 .dl-section-heading {
   font-size: 0.7rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $primaryAccent;
-  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  color: $color-accent-primary;
+  border-bottom: 1px solid rgba($color-accent-primary, 0.15);
   padding-bottom: 0.6rem;
   margin-bottom: 2rem;
 }
@@ -280,26 +280,26 @@
 
 .dl-reqs-panel {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba($primaryAccent, 0.1);
+  border: 1px solid rgba($color-accent-primary, 0.1);
   border-radius: 12px;
   padding: 1.75rem;
 
   &--recommended {
-    border-color: rgba($primaryAccent, 0.2);
-    background: rgba($primaryAccent, 0.03);
+    border-color: rgba($color-accent-primary, 0.2);
+    background: rgba($color-accent-primary, 0.03);
   }
 }
 
 .dl-reqs-panel-title {
   font-size: 0.7rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba($satelliteGray, 0.6);
+  color: rgba($color-text, 0.6);
   margin: 0 0 1.25rem;
 
   .dl-reqs-panel--recommended & {
-    color: $primaryAccent;
+    color: $color-accent-primary;
   }
 }
 
@@ -309,7 +309,7 @@
   align-items: baseline;
   gap: 1rem;
   padding: 0.6rem 0;
-  border-top: 1px solid rgba($primaryAccent, 0.07);
+  border-top: 1px solid rgba($color-accent-primary, 0.07);
 
   &:first-of-type {
     border-top: none;
@@ -319,15 +319,15 @@
 
 .dl-reqs-label {
   font-size: 0.8125rem;
-  color: rgba($satelliteGray, 0.55);
-  font-family: 'IBM Plex Mono', monospace;
+  color: rgba($color-text, 0.55);
+  font-family: $font-monospace;
   letter-spacing: 0.04em;
   white-space: nowrap;
 }
 
 .dl-reqs-value {
   font-size: 0.875rem;
-  color: $baseWhite;
+  color: $color-text-highlight;
   text-align: right;
   line-height: 1.4;
 }
@@ -337,9 +337,9 @@
   @include full-bleed;
 
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 4.5rem;
-  background: #0d1014;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
-  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  background: $color-surface;
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
 }
 
 .dl-notes-grid {
@@ -362,7 +362,7 @@
 .dl-note-title {
   font-size: 0.875rem;
   font-weight: 600;
-  color: $baseWhite;
+  color: $color-text-highlight;
   margin: 0;
   border-bottom: none;
 }
@@ -370,11 +370,11 @@
 .dl-note-body {
   font-size: 0.875rem;
   line-height: 1.7;
-  color: rgba($satelliteGray, 0.72);
+  color: rgba($color-text, 0.72);
   margin: 0;
 
   a {
-    color: $primaryAccent;
+    color: $color-accent-primary;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -387,7 +387,7 @@
   @include full-bleed;
 
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 5rem;
-  background: $background;
+  background: $color-bg;
 }
 
 .dl-prev-table {
@@ -398,7 +398,7 @@
   font-size: 0.9rem;
 
   thead tr {
-    border-bottom: 1px solid rgba($satelliteGray, 0.2);
+    border-bottom: 1px solid rgba($color-text, 0.2);
   }
 
   th {
@@ -408,17 +408,17 @@
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: rgba($satelliteGray, 0.5);
+    color: rgba($color-text, 0.5);
   }
 
   td {
     padding: 0.9rem 1rem 0.9rem 0;
-    color: rgba($satelliteGray, 0.85);
-    border-bottom: 1px solid rgba($satelliteGray, 0.08);
+    color: rgba($color-text, 0.85);
+    border-bottom: 1px solid rgba($color-text, 0.08);
     vertical-align: middle;
 
     &:first-child {
-      font-weight: 600; color: $baseWhite;
+      font-weight: 600; color: $color-text-highlight;
     }
 
     a {
@@ -436,7 +436,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgba($satelliteGray, 0.45);
+  color: rgba($color-text, 0.45);
   min-width: 4rem;
 }
 
@@ -444,7 +444,7 @@
   max-width: 860px;
   margin: 0 auto;
   font-size: 0.875rem;
-  color: rgba($satelliteGray, 0.55);
+  color: rgba($color-text, 0.55);
 
   a {
     text-decoration: none;

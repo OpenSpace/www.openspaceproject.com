@@ -3,7 +3,7 @@
 .hero {
   @include full-bleed;
 
-  background: $background;
+  background: $color-bg;
   color: white;
   padding: 5rem clamp(1.5rem, 8vw, 12rem) 4rem;
   text-align: center;
@@ -14,14 +14,14 @@
     line-height: 1.08;
     letter-spacing: -0.025em;
     margin: 0 auto 1.25rem;
-    color: $baseWhite;
+    color: $color-text-highlight;
     max-width: 750px;
   }
 
   p.hero-lede {
     font-size: 1.0625rem;
     line-height: 1.6;
-    color: rgba($satelliteGray, 0.9);
+    color: rgba($color-text, 0.9);
     max-width: 600px;
     margin: 0 auto 2.5rem;
   }
@@ -40,11 +40,11 @@
   .hero-badge {
     display: inline-block;
     font-size: 0.7rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: $font-monospace;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: $primaryAccent;
-    border: 1px solid rgba($primaryAccent, 0.3);
+    color: $color-accent-primary;
+    border: 1px solid rgba($color-accent-primary, 0.3);
     border-radius: 20px;
     padding: 0.3rem 0.9rem;
     margin-bottom: 1.5rem;
@@ -164,26 +164,29 @@ section > .page-breadcrumb {
   display: block;
   text-align: left;
   padding: 0.6rem clamp(1.5rem, 8vw, 12rem);
-  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
   font-size: 0.72rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   letter-spacing: 0.05em;
-  color: rgba($satelliteGray, 0.5);
+  color: rgba($color-text, 0.5);
   line-height: 1;
 
   a {
-    color: rgba($satelliteGray, 0.5);
+    color: rgba($color-text, 0.5);
     text-decoration: none;
     transition: color 0.15s;
-    &:hover { color: $primaryAccent; }
+
+    &:hover {
+      color: $color-accent-primary;
+    }
   }
 
   .bc-sep {
     margin: 0 0.45rem;
-    color: rgba($satelliteGray, 0.25);
+    color: rgba($color-text, 0.25);
   }
 
   .bc-current {
-    color: rgba($satelliteGray, 0.85);
+    color: rgba($color-text, 0.85);
   }
 }

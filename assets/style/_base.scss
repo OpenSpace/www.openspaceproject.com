@@ -6,21 +6,45 @@
 // for Quarto chrome (nav-footer, title block, breadcrumbs)
 
 /*-- scss:defaults --*/
-$body-bg: $background;
-$body-color: $textColor;
-$link-color: $softAccentYellow;
-$link-hover-color: lighten($softAccentYellow, 8%);
-$headings-color: $primaryAccent;
-$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
-$font-family-monospace: 'IBM Plex Mono', monospace;
-$headings-font-family: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
+$primary: $color-link !default;
+$body-bg: $color-bg;
+$body-color: $color-text;
+$link-color: $color-accent-soft;
+$link-hover-color: lighten($color-accent-soft, 8%);
+$font-family-sans-serif: $font-body;
+$font-family-monospace: $font-monospace;
+$headings-font-family: $font-headings;
 $headings-font-weight: 300;
+$headings-color: $color-accent-primary;
 $headings-letter-spacing: 0.02em;
-$navbar-bg: rgba(#000000, 0.97);
-$navbar-fg: $satelliteGray;
-$navbar-hl: $primaryAccent;
-$footer-bg: darken($background, 2%);
-$footer-fg: $satelliteGray;
-$dropdown-link-hover-color: $softAccentYellow;
-$dropdown-link-hover-bg: $background;
-$dropdown-link-active-bg: $background;
+$navbar-fg: rgba($color-text, 0.85);
+$navbar-hl: $color-accent-primary;
+$navbar-bg: $color-bg;
+$footer-fg: $color-text;
+$footer-bg: darken($color-bg, 2%);
+$dropdown-link-hover-color: $color-accent-soft;
+$dropdown-link-hover-bg: $color-bg;
+$dropdown-link-active-bg: $color-bg;
+
+/*-- scss:rules --*/
+
+// Quarto's mobile grid has minmax(500px,...) on body-content columns, which
+// overflows the viewport on narrow screens. This makes calc(50% - 50vw) in
+// full-bleed sections miscalculate, shifting content right and clipping it.
+// overflow-x: hidden collapses that overflow so 50% == 50vw.
+html {
+  overflow-x: hidden;
+}
+
+h3, h4 {
+  color: $color-accent-soft;
+}
+
+strong {
+  color: $color-accent-soft;
+  font-weight: 600;
+}
+
+hr {
+  border-color: rgba($color-accent-primary, 0.2);
+}

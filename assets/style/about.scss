@@ -4,14 +4,14 @@
 .about-body-section {
   @include full-bleed;
 
-  background: $background;
+  background: $color-bg;
   padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
-  color: $baseWhite;
+  color: $color-text-highlight;
 
   p {
     font-size: 1.0625rem;
     line-height: 1.75;
-    color: rgba($baseWhite, 0.9);
+    color: rgba($color-text-highlight, 0.9);
     margin: 0 0 1.25rem;
   }
 
@@ -20,8 +20,8 @@
     font-weight: 600;
     letter-spacing: -0.01em;
     margin: 2.5rem 0 1.25rem;
-    color: $baseWhite;
-    border-bottom: 1px solid rgba($primaryAccent, 0.15);
+    color: $color-text-highlight;
+    border-bottom: 1px solid rgba($color-accent-primary, 0.15);
     padding-bottom: 0.5rem;
   }
 }
@@ -31,8 +31,8 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   margin: 2.5rem 0 1.25rem;
-  color: $baseWhite;
-  border-bottom: 1px solid rgba($primaryAccent, 0.15);
+  color: $color-text-highlight;
+  border-bottom: 1px solid rgba($color-accent-primary, 0.15);
   padding-bottom: 0.5rem;
 }
 
@@ -42,18 +42,18 @@
 
 // ---------- Brand page ────────────────────────────────────────
 .brand-credit-block {
-  background: rgba($primaryAccent, 0.05);
-  border: 1px solid rgba($primaryAccent, 0.18);
-  border-left: 3px solid $primaryAccent;
+  background: rgba($color-accent-primary, 0.05);
+  border: 1px solid rgba($color-accent-primary, 0.18);
+  border-left: 3px solid $color-accent-primary;
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.5rem;
   margin: 1.25rem 0 1.5rem;
 }
 
 .brand-credit-text {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-monospace;
   font-size: 0.9375rem;
-  color: $baseWhite;
+  color: $color-text-highlight;
   margin: 0;
   letter-spacing: 0.02em;
 }
@@ -65,7 +65,7 @@
   li {
     font-size: 1.0625rem;
     line-height: 1.7;
-    color: rgba($baseWhite, 0.85);
+    color: rgba($color-text-highlight, 0.85);
     margin-bottom: 0.5rem;
   }
 }
@@ -73,10 +73,10 @@
 .brand-logos-section {
   @include full-bleed;
 
-  background: #0d1014;
+  background: $color-surface;
   padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
-  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
 }
 
 .brand-logo-grid {
@@ -92,7 +92,7 @@
 .brand-logo-card {
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid rgba($primaryAccent, 0.12);
+  border: 1px solid rgba($color-accent-primary, 0.12);
   display: flex;
   flex-direction: column;
 }
@@ -110,12 +110,12 @@
   .brand-logo-use  { color: rgba(0, 0, 0, 0.45); }
 
   .brand-dl-btn {
-    color: darken($primaryAccent, 38%);
-    border-color: rgba(darken($primaryAccent, 30%), 0.4);
+    color: darken($color-accent-primary, 38%);
+    border-color: rgba(darken($color-accent-primary, 30%), 0.4);
 
     &:hover {
-      background: rgba(darken($primaryAccent, 30%), 0.08);
-      color: darken($primaryAccent, 42%);
+      background: rgba(darken($color-accent-primary, 30%), 0.08);
+      color: darken($color-accent-primary, 42%);
     }
   }
 }
@@ -138,7 +138,7 @@
 
 .brand-logo-meta {
   padding: 1rem 1.25rem;
-  border-top: 1px solid rgba($primaryAccent, 0.1);
+  border-top: 1px solid rgba($color-accent-primary, 0.1);
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -148,24 +148,24 @@
 .brand-logo-name {
   font-size: 0.875rem;
   font-weight: 600;
-  color: $baseWhite;
+  color: $color-text-highlight;
   margin: 0;
   flex: 1;
 }
 
 .brand-logo-use {
   font-size: 0.72rem;
-  font-family: 'IBM Plex Mono', monospace;
-  color: rgba($satelliteGray, 0.6);
+  font-family: $font-monospace;
+  color: rgba($color-text, 0.6);
   margin: 0;
 }
 
 .brand-dl-btn {
   display: inline-block;
   font-size: 0.72rem;
-  font-family: 'IBM Plex Mono', monospace;
-  color: $primaryAccent;
-  border: 1px solid rgba($primaryAccent, 0.28);
+  font-family: $font-monospace;
+  color: $color-accent-primary;
+  border: 1px solid rgba($color-accent-primary, 0.28);
   border-radius: 4px;
   padding: 0.25rem 0.65rem;
   text-decoration: none;
@@ -175,8 +175,8 @@
   i, .bi { display: none; }
 
   &:hover {
-    background: rgba($primaryAccent, 0.08);
-    color: $primaryAccent;
+    background: rgba($color-accent-primary, 0.08);
+    color: $color-accent-primary;
     text-decoration: none;
   }
 }

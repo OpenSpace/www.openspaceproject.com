@@ -43,8 +43,8 @@
   justify-content: center;
   gap: 1.75rem;
   color: white;
-  background-color: $background;
-  padding-bottom: clamp(200px, 28vh, 380px);
+  background-color: $color-bg;
+  padding: 5rem 0 clamp(200px, 28vh, 380px);
 
   .hero-video-wrap {
     position: absolute;
@@ -61,7 +61,7 @@
       left: 0;
       right: 0;
       height: clamp(140px, 24vh, 320px);
-      background: linear-gradient(to bottom, transparent 0%, $background 100%);
+      background: linear-gradient(to bottom, transparent 0%, $color-bg 100%);
       pointer-events: none;
     }
   }
@@ -98,7 +98,7 @@
     font-weight: 600;
     line-height: 1.1;
     margin: 0;
-    color: white;
+    color: $color-text-highlight;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     text-align: center;
@@ -111,7 +111,7 @@
     font-size: 1.25rem;
     line-height: 1.5;
     margin: 0 0 2rem;
-    color: rgba($baseWhite, 0.9);
+    color: rgba($color-text-highlight, 0.9);
   }
 
   @media (max-width: 768px) {
@@ -130,8 +130,8 @@
 // ---------- Buttons ----------
 .btn-primary-os {
   @include os-button-base;
-  background: $vividAccentGreen;
-  color: $os-deep-space;
+  background: $color-accent-secondary;
+  color: $color-bg;
 
   i, .bi {
     display: none;
@@ -147,7 +147,7 @@
 
   &:hover {
     transform: translateY(-1px);
-    color: $os-deep-space;
+    color: $color-bg;
     text-decoration: none;
   }
 }
@@ -156,7 +156,7 @@
   @include os-button-base;
   background: transparent;
   color: white;
-  border: 1px solid $os-overlay-light;
+  border: 1px solid $color-overlay-light;
 
   i, .bi {
     display: none;
@@ -178,7 +178,7 @@
 // ---------- Trusted by ----------
 .trusted-section {
   padding: 3rem 0;
-  background: $background;
+  background: $color-bg;
   margin-top: clamp(-360px, -26vh, -180px);
   position: relative;
   z-index: 10;
@@ -194,7 +194,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: $os-text-muted;
+  color: $color-text-muted;
   margin: 0 0 2.5rem;
 }
 
@@ -229,12 +229,12 @@
   font-size: 0.9rem;
 
   a {
-    color: $os-text-muted;
+    color: $color-text-muted;
     text-decoration: none;
     transition: color 0.2s ease;
 
     &:hover {
-      color: $os-link;
+      color: $color-link;
     }
   }
 }
@@ -245,12 +245,12 @@
   font-weight: 600;
   margin: 0 0 0.75rem;
   letter-spacing: -0.01em;
-  color: $os-text-primary;
+  color: $color-text-highlight;
 }
 
 .section-lede {
   font-size: 1.125rem;
-  color: $os-text-muted;
+  color: $color-text-muted;
   margin: 0 0 3rem;
   max-width: 640px;
   line-height: 1.6;
@@ -264,7 +264,7 @@
 // ---------- Venue cards ----------
 .venues-section {
   @include full-bleed;
-  background: $background;
+  background: $color-bg;
 
   // Section heading/lede stay centered
   padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
@@ -310,8 +310,8 @@
 }
 
 .venue-card {
-  background: #0d1014;
-  border: 1px solid rgba($primaryAccent, 0.12);
+  background: $color-surface;
+  border: 1px solid rgba($color-accent-primary, 0.12);
   border-radius: $os-card-radius;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -325,7 +325,7 @@
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    border-color: rgba($primaryAccent, 0.3);
+    border-color: rgba($color-accent-primary, 0.3);
     text-decoration: none;
     color: inherit;
   }
@@ -347,12 +347,12 @@
       font-size: 1.25rem;
       font-weight: 600;
       margin: 0 0 0.75rem;
-      color: $baseWhite;
+      color: $color-text-highlight;
     }
 
     p {
       margin: 0 0 1rem;
-      color: rgba($satelliteGray, 0.8);
+      color: rgba($color-text, 0.8);
       line-height: 1.6;
       flex-grow: 1;
     }
@@ -360,7 +360,7 @@
 
   .venue-link {
     display: inline-block;
-    color: $primaryAccent;
+    color: $color-accent-primary;
     font-weight: 500;
   }
 }
@@ -369,7 +369,7 @@
 // ---------- Funders marquee ----------
 .funders-section {
   @include os-section-padding;
-  background: $background;
+  background: $color-bg;
 
   > .section-heading,
   > .section-lede {
@@ -397,7 +397,7 @@
       left: clamp(1.5rem, 8vw, 12rem);
       width: calc(#{$os-container-max} - 2 * clamp(1.5rem, 8vw, 12rem));
       height: 1px;
-      background: rgba($primaryAccent, 0.15);
+      background: rgba($color-accent-primary, 0.15);
     }
   }
 
@@ -481,7 +481,7 @@
 
 .funder-disclaimer {
   font-size: 0.75rem;
-  color: $os-text-faint;
+  color: $color-text-faint;
   line-height: 1.5;
   max-width: 640px;
   margin: 0 auto;

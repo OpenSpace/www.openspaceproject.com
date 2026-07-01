@@ -1,336 +1,28 @@
 /*-- scss:rules --*/
 
-// Quarto's mobile grid has minmax(500px,...) on body-content columns, which
-// overflows the viewport on narrow screens. This makes calc(50% - 50vw) in
-// full-bleed sections miscalculate, shifting content right and clipping it.
-// overflow-x: hidden collapses that overflow so 50% == 50vw.
-html {
-  overflow-x: hidden;
-}
 
-h3, h4 {
-  color: $softAccentYellow;
-}
-
-strong {
-  color: $softAccentYellow;
-  font-weight: 600;
-}
-
-hr {
-  border-color: rgba($primaryAccent, 0.2);
-}
-
-.navbar {
-  border-bottom: 0px solid rgba($primaryAccent, 0.15);
-}
-
-.navbar-brand {
-  font-family: 'TeX Gyre Adventor', 'Century Gothic', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
-  color: $primaryAccent !important;
-}
-
-.nav-link {
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.82rem;
-}
-
-
-
-// Hero section on homepage
-.hero-section {
-  padding: 5rem 0 4rem;
-  text-align: center;
-
-  h1 {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    color: $baseWhite;
-    font-weight: 300;
-  }
-
-  .version-badge {
-    font-size: 0.9rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: $softAccentYellow;
-    margin-bottom: 1.2rem;
-  }
-}
-
-.btn-download {
-  background-color: $primaryAccent;
-  color: $background;
-  border: none;
-  padding: 0.7rem 2.2rem;
-  font-family: 'TeX Gyre Adventor', sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0.4rem;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: lighten($primaryAccent, 8%);
-    color: $background;
-    text-decoration: none;
-  }
-}
-
-.btn-outline-accent {
-  background-color: transparent;
-  color: $satelliteGray;
-  border: 1px solid rgba($satelliteGray, 0.4);
-  padding: 0.55rem 1.4rem;
-  font-family: 'TeX Gyre Adventor', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0.3rem;
-  transition: border-color 0.2s, color 0.2s;
-
-  &:hover {
-    border-color: $primaryAccent;
-    color: $primaryAccent;
-    text-decoration: none;
-  }
-}
-
-@property --beam-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes border-beam {
-  to { --beam-angle: 360deg; }
-}
-
-.btn-beam {
-  position: relative;
-  display: inline-block;
-  isolation: isolate;
-  padding: 0.7rem 2.2rem;
-  font-family: 'TeX Gyre Adventor', sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $satelliteGray;
-  background: $background;
-  transition: color 0.2s;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    padding: 1px;
-    background: conic-gradient(
-      from var(--beam-angle),
-      rgba($satelliteGray, 0.25) 0%,
-      rgba($satelliteGray, 0.25) 78%,
-      rgba($primaryAccent, 0.6) 84%,
-      $primaryAccent 88%,
-      rgba(255, 255, 255, 0.9) 91%,
-      $primaryAccent 94%,
-      rgba($satelliteGray, 0.25) 100%
-    );
-    animation: border-beam 3s linear infinite;
-    -webkit-mask:
-      linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask:
-      linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-  }
-
-  &:hover {
-    color: $primaryAccent;
-    text-decoration: none;
-  }
-}
-
-.resource-links {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.4rem;
-}
 
 // Section headings
 .section-heading {
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $satelliteGray;
-  border-bottom: 1px solid rgba($primaryAccent, 0.08);
+  color: $color-text;
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-}
-
-// Hide the Quarto-generated page-footer (replaced by custom .site-footer)
-.nav-footer {
-  display: none;
-}
-
-// Custom site footer
-.site-footer {
-  background: darken($background, 2%);
-  border-top: 1px solid rgba($primaryAccent, 0.12);
-  padding: 3rem 2rem 1.5rem;
-  font-size: 0.85rem;
-  color: rgba($satelliteGray, 0.7);
-}
-
-.site-footer-inner {
-  display: flex;
-  gap: 3rem;
-  max-width: 1000px;
-  margin: 0 auto 2rem;
-  align-items: flex-start;
-}
-
-.footer-brand {
-  flex: 0 0 220px;
-
-  .footer-logo {
-    max-width: 180px;
-    height: auto;
-    display: block;
-    margin-bottom: 0.8rem;
-  }
-
-  .footer-tagline {
-    font-size: 0.78rem;
-    color: rgba($satelliteGray, 0.7);
-    margin: 0 0 1.2rem;
-    letter-spacing: 0.02em;
-  }
-}
-
-.footer-social {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0.6rem;
-  font-size: 1.1rem;
-
-  a {
-    color: rgba($satelliteGray, 0.75);
-    text-decoration: none;
-    transition: color 0.2s;
-    display: flex;
-    align-items: center;
-
-    &:hover { color: $softAccentYellow; }
-  }
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  flex: 1;
-
-  // Install (last child) sits below About on desktop
-  .footer-col:last-child {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(3, 1fr);
-    .footer-col:last-child { grid-column: auto; grid-row: auto; }
-  }
-
-  @media (max-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 400px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.footer-col {
-  min-width: 0;
-
-  .footer-col-head {
-    font-family: 'TeX Gyre Adventor', 'Century Gothic', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: $primaryAccent;
-    margin: 0 0 0.8rem;
-    font-weight: 400;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      margin-bottom: 0.45rem;
-    }
-
-    a {
-      color: rgba($satelliteGray, 0.8);
-      text-decoration: none;
-      font-size: 0.82rem;
-      transition: color 0.2s;
-
-      &:hover { color: $satelliteGray; }
-    }
-  }
-}
-
-.footer-bottom {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgba($primaryAccent, 0.08);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 0.75rem;
-  color: rgba($satelliteGray, 0.6);
-
-  a {
-    color: rgba($satelliteGray, 0.7);
-    text-decoration: none;
-
-    &:hover { color: $satelliteGray; }
-  }
-}
-
-.footer-bottom-legal {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .system-status {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: rgba($satelliteGray, 0.6) !important;
+  color: rgba($color-text, 0.6) !important;
   font-size: 0.75rem;
 
-  &:hover { color: rgba($satelliteGray, 0.7) !important; }
+  &:hover {
+    color: rgba($color-text, 0.7) !important;
+  }
 }
 
 .status-dot {
@@ -343,8 +35,15 @@ hr {
     background: #5cdd8b;
     animation: status-pulse 2.5s ease-in-out infinite;
   }
-  &.status--degraded { background: #f8a306; }
-  &.status--down { background: #dc3545; }
+
+  &.status--degraded {
+    background: #f8a306;
+  }
+
+  &.status--down {
+    background: #dc3545;
+  }
+
   &.status--unknown {
     background: #5cdd8b;
     animation: status-pulse 2.5s ease-in-out infinite;
@@ -352,137 +51,12 @@ hr {
 }
 
 @keyframes status-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(92, 221, 139, 0.5); }
-  50% { box-shadow: 0 0 0 4px rgba(92, 221, 139, 0); }
-}
-
-
-// ── Footer newsletter ─────────────────────────────────────────
-.footer-nl {
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba($primaryAccent, 0.1);
-}
-
-.fnl-step {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.fnl-label {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba($satelliteGray, 0.55);
-  margin: 0 0 0.65rem;
-}
-
-.fnl-optional {
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 0.72rem;
-  color: rgba($satelliteGray, 0.38);
-}
-
-.fnl-input {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba($primaryAccent, 0.15);
-  border-radius: 6px;
-  color: $baseWhite;
-  font-size: 0.83rem;
-  padding: 0.45rem 0.8rem;
-  font-family: inherit;
-  outline: none;
-  width: 100%;
-  transition: border-color 0.15s, background 0.15s;
-
-  &::placeholder { color: rgba($satelliteGray, 0.35); }
-  &:focus {
-    border-color: rgba($primaryAccent, 0.4);
-    background: rgba(255, 255, 255, 0.07);
+  0%, 100% {
+    box-shadow: 0 0 0 0 #5cdd8b80;
   }
-}
-
-.fnl-btn {
-  background: transparent;
-  border: 1px solid rgba($primaryAccent, 0.15);
-  border-radius: 6px;
-  color: rgba($satelliteGray, 0.6);
-  font-size: 0.82rem;
-  font-weight: 600;
-  font-family: inherit;
-  padding: 0.45rem 1.1rem;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: border-color 0.15s, color 0.15s;
-
-  &:hover {
-    border-color: rgba($primaryAccent, 0.4);
-    color: $primaryAccent;
+  50% {
+    box-shadow: 0 0 0 4px #5cdd8b00;
   }
-  &:disabled { opacity: 0.55; cursor: default; }
-}
-
-.fnl-btn-skip {
-  background: none;
-  border: none;
-  color: rgba($satelliteGray, 0.45);
-  font-size: 0.82rem;
-  font-family: inherit;
-  cursor: pointer;
-  padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-
-  &:hover { color: rgba($satelliteGray, 0.75); }
-}
-
-.fnl-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.fnl-msg {
-  font-size: 0.77rem;
-  margin: 0.45rem 0 0;
-  color: rgba($satelliteGray, 0.65);
-
-  &--error { color: #f87171; }
-}
-
-.fnl-success-sub {
-  font-size: 0.82rem;
-  color: rgba($satelliteGray, 0.55);
-  margin: 0.2rem 0 0;
-}
-
-@media (max-width: 768px) {
-  .site-footer-inner {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .footer-brand {
-    flex: none;
-  }
-
-  .footer-links {
-    gap: 1.5rem;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-}
-
-.navbar-logo {
-  max-height: 50px;
 }
 
 // Quarto content area
@@ -495,7 +69,6 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .slideshow {
   position: relative;
@@ -531,8 +104,8 @@ hr {
 }
 
 @media (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        top: 95%;
-    }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    top: 95%;
+  }
 }

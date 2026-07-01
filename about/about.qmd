@@ -33,7 +33,6 @@ cta:
 ---
 
 ::: {.about-body-section}
-::: {.os-container}
 
 ## What is OpenSpace?
 
@@ -52,5 +51,4 @@ Providing OpenSpace to the world as a free and open-source software allows the l
 OpenSpace started in 2013 as a collaboration between the American Museum of Natural History (AMNH) in New York, Linköping University in Sweden, and the Community Coordinated Modelling Center at NASA Goddard. The founding team wanted to combine the artistic visualization AMNH had developed for the Hayden Planetarium with the visualization and rendering research underway at Linköping and the ongoing heliophysics resaearch at Goddard to be able to share what emerged with the rest of the world.
 
 Early work focused on visualizing volumetric heliophysics datasets and mission visualization in dome theaters, with the New Horizons flyby at Pluto in July 2015 being among the first public releases of the software. Later, other missions (watching Rosetta orbit comet 67P), globe browsing, and large-scale astronomical catalogs (millions of stars and galaxies from Gaia and other surveys), and live data feeds followed, including the ability to move seamlessly from a global view of a planet down to surface-level imagery using real spacecraft data.
-:::
 :::

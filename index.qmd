@@ -43,66 +43,60 @@ cta:
 </section>
 
 <section class="trusted-section">
-  <div class="os-container">
-    <p class="trusted-label">Built in collaboration with</p>
-    <div class="logo-grid">
-      <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium" class="institution-logo">
-      <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History" class="institution-logo">
+  <p class="trusted-label">Built in collaboration with</p>
+  <div class="logo-grid">
+    <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium" class="institution-logo">
+    <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History" class="institution-logo">
 <img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
-      <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium" class="institution-logo">
-      <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
-      <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center" class="institution-logo">
-      <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
-      <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet" class="institution-logo">
-      <img src="assets/images/institutions/universeum.webp" alt="Universeum" class="institution-logo">
-      <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" class="institution-logo">
-    </div>
-    <p class="trusted-more"><a href="about/impact.html#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
+    <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium" class="institution-logo">
+    <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
+    <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center" class="institution-logo">
+    <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
+    <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet" class="institution-logo">
+    <img src="assets/images/institutions/universeum.webp" alt="Universeum" class="institution-logo">
+    <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" class="institution-logo">
   </div>
+  <p class="trusted-more"><a href="about/impact.html#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
 
 <section class="venues-section">
-  <div class="os-container">
-    <h2 class="section-heading">Built for every venue</h2>
-    <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
-    <div class="venue-grid">
+  <h2 class="section-heading">Built for every venue</h2>
+  <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
+  <div class="venue-grid">
 
-      <a href="features/display-support.html#dome-theaters" class="venue-card">
-        <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
-        <div class="venue-body">
-          <h3>Planetarium domes</h3>
-          <p>Drive fixed and portable domes with multi-projector blending, fisheye, and MPCDI support. Built-in tools for warp, edge-blend, and calibration.</p>
-          <span class="venue-link">Learn more →</span>
-        </div>
-      </a>
+    <a href="features/display-support.html#dome-theaters" class="venue-card">
+      <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
+      <div class="venue-body">
+        <h3>Planetarium domes</h3>
+        <p>Drive fixed and portable domes with multi-projector blending, fisheye, and MPCDI support. Built-in tools for warp, edge-blend, and calibration.</p>
+        <span class="venue-link">Learn more →</span>
+      </div>
+    </a>
 
-      <a href="features/display-support.html#classrooms-desktops" class="venue-card">
-        <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
-        <div class="venue-body">
-          <h3>Classrooms</h3>
-          <p>Bring the solar system, deep space, and live mission data into any classroom. Free, cross-platform, with curated profiles and lesson-ready content.</p>
-          <span class="venue-link">Learn more →</span>
-        </div>
-      </a>
+    <a href="features/display-support.html#classrooms-desktops" class="venue-card">
+      <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
+      <div class="venue-body">
+        <h3>Classrooms</h3>
+        <p>Bring the solar system, deep space, and live mission data into any classroom. Free, cross-platform, with curated profiles and lesson-ready content.</p>
+        <span class="venue-link">Learn more →</span>
+      </div>
+    </a>
 
-      <a href="features/display-support.html#museum-exhibits" class="venue-card">
-        <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" class="venue-img">
-        <div class="venue-body">
-          <h3>Museum exhibits</h3>
-          <p>Power immersive permanent and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
-          <span class="venue-link">Learn more →</span>
-        </div>
-      </a>
+    <a href="features/display-support.html#museum-exhibits" class="venue-card">
+      <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" class="venue-img">
+      <div class="venue-body">
+        <h3>Museum exhibits</h3>
+        <p>Power immersive permanent and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
+        <span class="venue-link">Learn more →</span>
+      </div>
+    </a>
 
-    </div>
   </div>
 </section>
 
 <section class="content-carousel-section">
-  <div class="os-container">
-    <h2 class="section-heading">See what's possible</h2>
-    <p class="section-lede">Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
-  </div>
+  <h2 class="section-heading">See what's possible</h2>
+  <p class="section-lede">Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
 
   <div class="content-carousel" id="contentCarousel">
     <div class="content-carousel-track" id="carouselTrack">

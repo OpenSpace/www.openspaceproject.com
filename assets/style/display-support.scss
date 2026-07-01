@@ -4,7 +4,9 @@
   @include full-bleed;
 
   background: $background;
-  padding: 3.5rem clamp(1.5rem, 8vw, 12rem);
+  padding: 0 clamp(1.5rem, 8vw, 12rem);
+  max-width: 1000px;
+  margin: 0 auto;
   scroll-margin-top: 80px;
   border-top: 1px solid rgba($primaryAccent, 0.06);
 
@@ -20,12 +22,6 @@
   &.ds-section--alt {
     background: #0d1014;
   }
-}
-
-.ds-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 8vw, 12rem);
 }
 
 .ds-eyebrow {

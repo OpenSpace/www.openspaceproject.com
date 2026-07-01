@@ -24,14 +24,3 @@ $footer-fg: $satelliteGray;
 $dropdown-link-hover-color: $softAccentYellow;
 $dropdown-link-hover-bg: $background;
 $dropdown-link-active-bg: $background;
-
-/*-- scss:rules --*/
-
-
-.os-container {
-  max-width: $os-container-max;
-  margin: 0 auto auto !important;
-  padding: 0 clamp(1.5rem, 8vw, 12rem);
-  width: 100%;
-  box-sizing: border-box;
-}

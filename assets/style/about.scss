@@ -5,7 +5,7 @@
   @include full-bleed;
 
   background: $background;
-  padding: 4.5rem 0 3rem;
+  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
   color: $baseWhite;
 
   p {
@@ -74,7 +74,7 @@
   @include full-bleed;
 
   background: #0d1014;
-  padding: 3rem 0 4rem;
+  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
   border-top: 1px solid rgba($primaryAccent, 0.08);
   border-bottom: 1px solid rgba($primaryAccent, 0.08);
 }
@@ -179,12 +179,4 @@
     color: $primaryAccent;
     text-decoration: none;
   }
-}
-
-// All about/brand section containers use homepage-aligned padding.
-.about-body-section .os-container,
-.brand-logos-section .os-container {
-  max-width: none;
-  padding-left:  clamp(1.5rem, 8vw, 12rem);
-  padding-right: clamp(1.5rem, 8vw, 12rem);
 }

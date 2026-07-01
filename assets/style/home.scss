@@ -263,14 +263,11 @@
 
 // ---------- Venue cards ----------
 .venues-section {
-  @include os-section-padding;
+  @include full-bleed;
   background: $background;
 
   // Section heading/lede stay centered
-  > .os-container > .section-heading,
-  > .os-container > .section-lede {
-    max-width: $os-container-max;
-  }
+  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
 
   // Venue grid breaks out of container to full width
   .venue-grid {

@@ -5,7 +5,7 @@
   @include full-bleed;
 
   background: $background;
-  padding: 4rem 0;
+  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
   border-top: 1px solid rgba($primaryAccent, 0.06);
 }
 

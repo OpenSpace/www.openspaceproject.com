@@ -18,16 +18,14 @@ hero:
 
 ```{=html}
 <section class="ev-section">
-  <div class="os-container">
-    <p>Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
-    <p>We'll wrap up with a chance for you to showcase your recent OpenSpace projects and discoveries. Don't miss out on this chance to stay informed and get your questions answered by our team of developers!</p>
+  <p>Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
+  <p>We'll wrap up with a chance for you to showcase your recent OpenSpace projects and discoveries. Don't miss out on this chance to stay informed and get your questions answered by our team of developers!</p>
 
-    <div class="ev-detail-links">
-      <a class="ev-btn-primary external" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
-      <a class="ev-btn-ghost external" href="https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09" target="_blank" rel="noopener">Join Zoom</a>
-    </div>
-
-    <p class="ev-detail-back"><a href="../">&larr; All events</a></p>
+  <div class="ev-detail-links">
+    <a class="ev-btn-primary external" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
+    <a class="ev-btn-ghost external" href="https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09" target="_blank" rel="noopener">Join Zoom</a>
   </div>
+
+  <p class="ev-detail-back"><a href="../">&larr; All events</a></p>
 </section>
 ```

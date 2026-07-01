@@ -1,7 +1,8 @@
 /*-- scss:rules --*/
 
 .content-carousel-section {
-  padding: 5rem 0 6rem;
+  @include full-bleed;
+  padding: 5rem clamp(1.5rem, 8vw, 12rem) 6rem;
   background: $background;
 }
 

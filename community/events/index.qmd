@@ -18,73 +18,67 @@ hero:
 
 ```{=html}
 <section class="ev-section about-body-section">
-  <div class="os-container">
-    <h2 class="about-h2" style="margin-top:0">Upcoming</h2>
+  <h2 class="about-h2" style="margin-top:0">Upcoming</h2>
 
-    <div class="ev-item">
-      <div class="ev-img-wrap">
-        <img src="/assets/images/venue-cards/hayden_jwst.webp"
-             alt="Hayden Planetarium — venue for OpenSpace community events"
-             class="ev-img">
+  <div class="ev-item">
+    <div class="ev-img-wrap">
+      <img src="/assets/images/venue-cards/hayden_jwst.webp"
+            alt="Hayden Planetarium — venue for OpenSpace community events"
+            class="ev-img">
+    </div>
+    <div class="ev-body">
+      <div class="ev-meta">
+        <span class="ev-tag">Monthly Meeting</span>
       </div>
-      <div class="ev-body">
-        <div class="ev-meta">
-          <span class="ev-tag">Monthly Meeting</span>
-        </div>
-        <h3 class="ev-title">
-          <a href="2026-07%20Monthly%20Meeting/" class="ev-title-link">July OpenSpace Monthly Meeting</a>
-        </h3>
-        <p class="ev-time">Monday, July 13, 2026 · 3:00–4:00 PM EST</p>
-        <p class="ev-desc">Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
-        <div class="ev-actions">
-          <a class="ev-btn-primary ev-action-link external" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
-        </div>
+      <h3 class="ev-title">
+        <a href="2026-07%20Monthly%20Meeting/" class="ev-title-link">July OpenSpace Monthly Meeting</a>
+      </h3>
+      <p class="ev-time">Monday, July 13, 2026 · 3:00–4:00 PM EST</p>
+      <p class="ev-desc">Dive into the latest OpenSpace software development updates and participate in feedback sessions. This community meeting is a great opportunity to learn, share, and connect with fellow OpenSpace users.</p>
+      <div class="ev-actions">
+        <a class="ev-btn-primary ev-action-link external" href="http://www.google.com/calendar/event?action=TEMPLATE&text=July%20OpenSpace%20Monthly%20Meeting&dates=20260713T200000Z/20260713T210000Z" target="_blank" rel="noopener">Add to Calendar</a>
       </div>
     </div>
-
   </div>
 </section>
 
 <section class="ev-section ev-section--past">
-  <div class="os-container">
-    <h2 class="about-h2" style="margin-top:0">Past events</h2>
+  <h2 class="about-h2" style="margin-top:0">Past events</h2>
 
-    <div class="ev-item ev-item--past">
-      <div class="ev-img-wrap">
-        <img src="/assets/images/venue-cards/amnh_lwd_students.webp"
-             alt="Students at AMNH using OpenSpace"
-             class="ev-img">
-      </div>
-      <div class="ev-body">
-        <div class="ev-meta">
-          <span class="ev-tag">Monthly Meeting</span>
-        </div>
-        <h3 class="ev-title">
-          <a href="2025-12%20Monthly%20Meeting/" class="ev-title-link">December OpenSpace Monthly Meeting</a>
-        </h3>
-        <p class="ev-time">Monday, December 8, 2025 · 3:00–4:00 PM EST</p>
-        <p class="ev-desc">Software development updates, community feedback sessions, and an opportunity to showcase recent OpenSpace projects and discoveries.</p>
-      </div>
+  <div class="ev-item ev-item--past">
+    <div class="ev-img-wrap">
+      <img src="/assets/images/venue-cards/amnh_lwd_students.webp"
+            alt="Students at AMNH using OpenSpace"
+            class="ev-img">
     </div>
-
-    <div class="ev-item ev-item--past">
-      <div class="ev-img-wrap">
-        <img src="/assets/images/venue-cards/spaceship.webp"
-             alt="OpenSpace running in a museum exhibit"
-             class="ev-img">
+    <div class="ev-body">
+      <div class="ev-meta">
+        <span class="ev-tag">Monthly Meeting</span>
       </div>
-      <div class="ev-body">
-        <div class="ev-meta">
-          <span class="ev-tag">Monthly Meeting</span>
-        </div>
-        <h3 class="ev-title">
-          <a href="2025-11%20Monthly%20Meeting/" class="ev-title-link">November OpenSpace Monthly Meeting</a>
-        </h3>
-        <p class="ev-time">Monday, November 10, 2025 · 3:00–4:00 PM EST</p>
-        <p class="ev-desc">Software development updates, community feedback sessions, and an opportunity to showcase recent OpenSpace projects and discoveries.</p>
-      </div>
+      <h3 class="ev-title">
+        <a href="2025-12%20Monthly%20Meeting/" class="ev-title-link">December OpenSpace Monthly Meeting</a>
+      </h3>
+      <p class="ev-time">Monday, December 8, 2025 · 3:00–4:00 PM EST</p>
+      <p class="ev-desc">Software development updates, community feedback sessions, and an opportunity to showcase recent OpenSpace projects and discoveries.</p>
     </div>
+  </div>
 
+  <div class="ev-item ev-item--past">
+    <div class="ev-img-wrap">
+      <img src="/assets/images/venue-cards/spaceship.webp"
+            alt="OpenSpace running in a museum exhibit"
+            class="ev-img">
+    </div>
+    <div class="ev-body">
+      <div class="ev-meta">
+        <span class="ev-tag">Monthly Meeting</span>
+      </div>
+      <h3 class="ev-title">
+        <a href="2025-11%20Monthly%20Meeting/" class="ev-title-link">November OpenSpace Monthly Meeting</a>
+      </h3>
+      <p class="ev-time">Monday, November 10, 2025 · 3:00–4:00 PM EST</p>
+      <p class="ev-desc">Software development updates, community feedback sessions, and an opportunity to showcase recent OpenSpace projects and discoveries.</p>
+    </div>
   </div>
 </section>
 ```

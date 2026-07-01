@@ -11,7 +11,8 @@ hero:
   title: December OpenSpace Monthly Meeting
   breadcrumbs:
     - "Community"
-    - "Events"
+    - text: "Events"
+      link: "/community/events/"
     - "December 2025"
   lede: "Monday, December 8, 2025 · 3:00–4:00 PM EST · Zoom"
 ---

@@ -1,35 +1,38 @@
 <script>
 // Quarto extracts the first h1 from {=html} blocks and places it in #title-block-header
-// before the page content. Restore it into the hero section so the layout is:
-// breadcrumb -> title -> body
+// before the page content. Restore it into the hero section (breadcrumb -> title -> body),
+// then relocate the breadcrumb into #quarto-header so it renders as a sub-bar below the
+// navbar and hides/reveals together with the headroom navbar on scroll.
 (() => {
   let breadcrumb = document.querySelector('.page-breadcrumb');
   if (!breadcrumb) return;
-  let titleBlock = document.getElementById('title-block-header');
-  if (!titleBlock) return;
-  let h1 = titleBlock.querySelector('h1');
-  if (!h1) return;
 
-  // Strip Quarto-added display classes; keep the original class(es)
-  let quartoClasses = [ 'title', 'display-1', 'display-2', 'display-3', 'display-4',
-    'display-5', 'display-6', 'display-7'];
-  quartoClasses.forEach((c) => { h1.classList.remove(c); });
+  // Capture the breadcrumb's original position in the hero before moving it, so the h1
+  // can be restored relative to it.
   let heroSection = breadcrumb.parentElement;
-  // Image heroes (gb-hero, sw-hero): restore h1 inside the dedicated content container so
-  // it centers alongside the description via that container's flex
-  let imgContent = heroSection.querySelector('.gb-hero-content, .sw-hero-content');
-  if (imgContent) {
-    imgContent.insertBefore(h1, imgContent.firstChild);
-    return;
-  }
-  // Text heroes: the h1 originally lived inside the first div child of the hero section.
-  // Put it back at the start of that container
   let contentDiv = breadcrumb.nextElementSibling;
-  if (contentDiv && contentDiv.tagName === 'DIV') {
-    contentDiv.insertBefore(h1, contentDiv.firstChild);
-    return;
+
+  let titleBlock = document.getElementById('title-block-header');
+  let h1 = titleBlock ? titleBlock.querySelector('h1') : null;
+  if (h1) {
+    // Strip Quarto-added display classes; keep the original class(es)
+    let quartoClasses = ['title', 'display-1', 'display-2', 'display-3', 'display-4',
+      'display-5', 'display-6', 'display-7'];
+    quartoClasses.forEach((c) => { h1.classList.remove(c); });
+
+    if (contentDiv && contentDiv.tagName === 'DIV') {
+      // Text heroes: the h1 originally lived inside the first div child of the hero section.
+      contentDiv.insertBefore(h1, contentDiv.firstChild);
+    } else {
+      // Fallback: insert directly after the breadcrumb nav.
+      breadcrumb.insertAdjacentElement('afterend', h1);
+    }
   }
-  // Fallback: insert directly after the breadcrumb nav
-  breadcrumb.insertAdjacentElement('afterend', h1);
+
+  // Move the breadcrumb out of the hero and into the site header as a sub-bar.
+  let quartoHeader = document.getElementById('quarto-header');
+  if (quartoHeader) {
+    quartoHeader.appendChild(breadcrumb);
+  }
 })();
 </script>

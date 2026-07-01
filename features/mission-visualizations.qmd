@@ -34,51 +34,8 @@ listing:
   - id: missions
     type: custom
     template: ../_template/rich-list.ejs.md
-    contents:
-      - image: "/assets/images/features/artemis.webp"
-        alt: "Artemis mission visualization in OpenSpace"
-        tag: "NASA"
-        title: "Artemis"
-        tagline: "Lunar return · 2022 – present"
-        description: >
-          Follow the Artemis program's return to the Moon, from Orion's trans-lunar
-          trajectory and lunar orbit insertion all the way to the surface. Real trajectory
-          data places the spacecraft at its exact position for every phase of the mission.
-      - image: "/assets/images/features/jwst_pillarsofcreation.webp"
-        alt: "Pillars of Creation imaged by the James Webb Space Telescope"
-        tag: "NASA / ESA / CSA"
-        title: "James Webb Space Telescope"
-        tagline: "L2 orbit · 2022 – present"
-        description: >
-          See JWST's actual orbit at the Sun-Earth L2 point, 1.5 million km from home, and
-          explore the deep fields it has surveyed since launch.
-      - image: "/assets/images/features/apollo11.webp"
-        alt: "Apollo 11 mission visualization in OpenSpace"
-        tag: "NASA"
-        title: "Apollo"
-        tagline: "Moon landing · July 20, 1969"
-        description: >
-          Watch the command module and lunar module at their exact positions throughout the
-          mission. Scrub through the full eight-day flight, from liftoff at Cape Kennedy to
-          splashdown in the Pacific.
-      - image: "/assets/images/features/voyager.webp"
-        alt: "Voyager spacecraft trajectory visualization in OpenSpace"
-        tag: "NASA"
-        title: "Voyager"
-        tagline: "Interstellar space · 1977 – present"
-        description: >
-          Trace the full 48-year journey of both probes through planetary encounters with
-          Jupiter, Saturn, Uranus, and Neptune, out to interstellar space. Scrub through
-          decades of flight in seconds.
-      - image: "/assets/images/carousel/mars_surface.webp"
-        alt: "Mars surface from HiRISE, Perseverance landing site terrain"
-        tag: "NASA"
-        title: "Mars"
-        tagline: "Jezero Crater · February 18, 2021"
-        description: >
-          The Mars profile covers both InSight and the Perseverance rover. Follow
-          Perseverance's traverse across Jezero Crater using real trajectory data, then pull
-          back to see the full landing sequence from orbit.
+    contents: ../assets/listing/mission-visualizations.yml
+
 ---
 
 ::: {.mv-section}

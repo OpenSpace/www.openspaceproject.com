@@ -1,0 +1,43 @@
+#
+# Examples for heliophysics
+#
+# Fields:
+#   - title: Title of the example
+#   - tag: Classification of the example as a single string
+#   - image: Path to a representative image
+#   - alt: Alt text for the image
+#   - tagline: Short informative tag line
+#   - description: Longer paragraph of description for the example
+#
+
+- image: "/assets/images/features/bastilleday-1.webp"
+  alt: "Bastille Day 2000 solar storm visualization in OpenSpace"
+  tag: "Historical"
+  title: "Bastille Day 2000"
+  tagline: "X5.7 solar flare · July 14, 2000"
+  description: >
+    One of the most powerful solar storms of Solar Cycle 23, this X5.7 flare
+    triggered a severe geomagnetic storm that disrupted satellites and pushed the
+    aurora as far south as Texas and the Mediterranean. OpenSpace recreates the full
+    event using ENLIL simulation data from NASA CCMC.
+
+- image: "/assets/images/features/solarstorm.webp"
+  alt: "Solar Storm 2012 CME propagation visualization in OpenSpace"
+  tag: "Historical"
+  title: "Solar Storm 2012"
+  tagline: "Near-miss Carrington event · July 23, 2012"
+  description: >
+    This double CME eruption hit speeds around 2,500 km/s, making it one of the
+    fastest on record, and narrowly missed Earth by about a week. Scientists
+    estimate a direct hit could have caused a Carrington-level geomagnetic storm.
+    OpenSpace visualizes the full propagation using ENLIL data from NASA CCMC.
+
+- image: "/assets/images/features/todays_sun.webp"
+  alt: "Today's Sun — real-time solar conditions in OpenSpace"
+  tag: "Live"
+  title: "Today's Sun"
+  tagline: "Real-time solar conditions"
+  description: >
+    Watch CME propagation modeled by ENLIL, see the magnetosphere respond in real
+    time via BATS-R-US, and track the aurora oval as it updates with each new Kp
+    measurement. All in one continuous view of the Sun-Earth system.

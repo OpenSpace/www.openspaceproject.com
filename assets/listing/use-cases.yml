@@ -31,12 +31,13 @@
     - Interactive exhibit
     - Real-time data
     - Public museum
+
 - id: b612
   image: /assets/images/use-cases/b612_asteroids.webp
   image_alt: >
     Visualization of asteroid trajectories near Earth rendered in OpenSpace
   institution: B612's Asteroid Institute
-  location: 
+  location:
   title: OpenSpace Defends the Planet
   body: >
     "Ed Lu wants to save Earth from killer asteroids." A New York Times article (May 31,
@@ -50,6 +51,7 @@
     - Scientific research
     - Planetary defense
     - Live data
+
 - id: lawrence
   image: /assets/images/use-cases/lawrence.webp
   image_alt: >
@@ -69,6 +71,7 @@
     - Planetarium
     - Public engagement
     - Visitor-led exploration
+
 - id: houston
   image: /assets/images/use-cases/houston.webp
   image_alt: >
@@ -88,6 +91,7 @@
     - K–12 education
     - Games
     - Family learning
+
 - id: towson
   image: /assets/images/use-cases/towson.webp
   image_alt: A view of Earth from space as shown in OpenSpace
@@ -105,6 +109,7 @@
     - Diverse audiences
     - Planetarium
     - University
+
 - id: asu
   image: /assets/images/use-cases/arizona_state.webp
   image_alt: >
@@ -124,6 +129,7 @@
     - Interactive kiosk
     - Panoramic display
     - University
+
 - id: wow-room
   image: /assets/images/use-cases/wow_room.webp
   image_alt: >
@@ -142,6 +148,7 @@
     - Policy outreach
     - Immersive display
     - NASA
+
 - id: ncmns
   image: /assets/images/use-cases/ncmns.webp
   image_alt: >
@@ -159,6 +166,7 @@
     - Super User
     - Research
     - Public outreach
+
 - id: hyperwall
   image: /assets/images/use-cases/hyperwall.webp
   image_alt: >

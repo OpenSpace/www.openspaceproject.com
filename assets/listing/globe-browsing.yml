@@ -1,0 +1,41 @@
+#
+# Examples for globe browsing
+#
+# Fields:
+#   - title: Title of the example
+#   - tag: Classification of the example as a single string
+#   - image: Path to a representative image
+#   - alt: Alt text for the image
+#   - tagline: Short informative tag line
+#   - description: Longer paragraph of description for the example
+#
+
+- image: "/assets/images/features/andes_mountains.webp"
+  alt: "Andes Mountains rendered in OpenSpace"
+  tag: "Earth"
+  title: "Earth's terrain up close"
+  tagline: "ESRI"
+  description: >
+    Fly the length of the Andes, descend into the Mariana Trench, or trace a river
+    delta from source to sea. Real satellite imagery and elevation data give every
+    mountain range, canyon, and coastline its true shape and scale.
+
+- image: "/assets/images/features/moon.webp"
+  alt: "The Moon rendered in OpenSpace with LRO imagery"
+  tag: "Moon"
+  title: "The Moon in detail"
+  tagline: "LRO · LOLA · Kaguya"
+  description: >
+    Visit Apollo landing sites, trace the rilles of Vallis Schröteri, or zoom to the
+    meter-scale surface texture of the lunar highlands. LRO imagery and LOLA
+    elevation data render the Moon at full mission resolution.
+
+- image: "/assets/images/carousel/mars_surface.webp"
+  alt: "HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
+  tag: "Mars"
+  title: "Mars at full resolution"
+  tagline: "HiRISE · MOLA · CTX"
+  description: >
+    Land at Jezero Crater, follow Perseverance's traverse, then pull back to the
+    full planet — without leaving the application. HiRISE surface imagery and MOLA
+    elevation data compose a continuous view from orbit to terrain.

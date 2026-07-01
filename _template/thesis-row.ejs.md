@@ -13,38 +13,31 @@
 %>
     <div class="thesis-row" data-partner="<%- item.partner %>" data-year="<%- item.year %>">
       <div class="thesis-photos">
-        <% if (item.image1) { %>
-        <img
-          src="/assets/team/<%- item.image1_dir || 'student' %>/<%- item.image1 %>"
-          alt="<%- item.author %>"
-          class="thesis-photo"
-          loading="lazy"
-        >
-        <% } %>
-        <% if (item.image2) { %>
-        <img
-          src="/assets/team/student/<%- item.image2 %>"
-          alt=""
-          class="thesis-photo"
-          loading="lazy"
-        >
-        <% } %>
-        <% if (!item.image1) { %>
-        <div class="thesis-photo thesis-photo-placeholder"></div>
+        <% for (const author of item.authors) { %>
+          <% if (author.image) { %>
+          <img
+            src="/assets/team/<%- author.image_dir || 'student' %>/<%- author.image %>"
+            alt="<%- author.name %>"
+            class="thesis-photo"
+            loading="lazy"
+          >
+          <% } else { %>
+            <div class="thesis-photo thesis-photo-placeholder"></div>
+          <% } %>
         <% } %>
       </div>
       <div class="thesis-content">
         <div class="thesis-title">
           <% if (item.link) { %>
-          <a href="<%- item.link %>" target="_blank" rel="noopener noreferrer"><%- item.title %></a>
+            <a href="<%- item.link %>" target="_blank" rel="noopener noreferrer"><%- item.title %></a>
           <% } else { %>
-          <%- item.title %>
+            <%- item.title %>
           <% } %>
           <% if (item.degree === 'phd') { %>
-          <span class="thesis-degree-badge">PhD</span>
+            <span class="thesis-degree-badge">PhD</span>
           <% } %>
         </div>
-        <div class="thesis-author"><%- item.author %></div>
+        <div class="thesis-author"><%- item.authors.map((a => a.name)).join(" & ") %></div>
         <div class="thesis-partner-badge"><%- item.partner %></div>
       </div>
     </div>

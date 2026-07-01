@@ -6,8 +6,6 @@
 
 // ── Intro section ─────────────────────────────────────────────
 .slack-section {
-  @include full-bleed;
-
   padding: 5rem 12rem;
   background: $color-bg;
 
@@ -39,8 +37,6 @@
 
 // ── Channels section ──────────────────────────────────────────
 .slack-channels-section {
-  @include full-bleed;
-
   padding: 5rem 12rem 5.5rem;
   background: rgba(255, 255, 255, 0.02);
   border-top: 1px solid rgba($color-accent-primary, 0.08);

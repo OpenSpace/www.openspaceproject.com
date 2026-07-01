@@ -27,7 +27,6 @@ format:
       - "assets/style/_components.scss"
       - "assets/style/_pages.scss"
 
-      - "assets/style/openspace-theme-dark.scss"
       - "assets/style/hero.scss"
       - "assets/style/cta.scss"
 

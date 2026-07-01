@@ -4,7 +4,3 @@
 // This file contains @mixin / @function definitions and the helper tokens they need.
 
 /*-- scss:mixins --*/
-@mixin full-bleed() {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-}

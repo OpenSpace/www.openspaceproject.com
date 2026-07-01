@@ -31,8 +31,6 @@
 
 // ---------- Hero ----------
 .hero-section {
-  @include full-bleed;
-
   position: relative;
   height: 90vh;
   min-height: 600px;
@@ -177,6 +175,9 @@
 
 // ---------- Trusted by ----------
 .trusted-section {
+  width: 50%;
+  margin-left: 25%;
+
   padding: 3rem 0;
   background: $color-bg;
   margin-top: clamp(-360px, -26vh, -180px);
@@ -263,7 +264,6 @@
 
 // ---------- Venue cards ----------
 .venues-section {
-  @include full-bleed;
   background: $color-bg;
 
   // Section heading/lede stay centered
@@ -514,8 +514,6 @@ main:has(.hero-section) #title-block-header {
 .funders-section,
 .cta-section,
 .hero-section {
-  @include full-bleed;
-
   box-sizing: border-box;
 }
 

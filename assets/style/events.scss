@@ -6,8 +6,6 @@
 
 // ── Section wrappers ──────────────────────────────────────────
 .ev-section {
-  @include full-bleed;
-
   padding: 4rem clamp(1.5rem, 8vw, 12rem) 3rem;
 }
 

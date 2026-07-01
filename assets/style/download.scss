@@ -89,8 +89,6 @@
 
 // ── Platform cards ────────────────────────────────────────────
 .dl-platforms-section {
-  @include full-bleed;
-
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 4.5rem;
   background: $color-surface;
   border-top: 1px solid rgba($color-accent-primary, 0.08);
@@ -251,8 +249,6 @@
 
 // ── System requirements ───────────────────────────────────────
 .dl-reqs-section {
-  @include full-bleed;
-
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 4.5rem;
   background: $color-bg;
 }
@@ -334,8 +330,6 @@
 
 // ── Notes section ─────────────────────────────────────────────
 .dl-notes-section {
-  @include full-bleed;
-
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 4.5rem;
   background: $color-surface;
   border-top: 1px solid rgba($color-accent-primary, 0.08);
@@ -384,8 +378,6 @@
 
 // ── Previous versions table ───────────────────────────────────
 .dl-prev-section {
-  @include full-bleed;
-
   padding: 4rem clamp(1.5rem, 5vw, 6rem) 5rem;
   background: $color-bg;
 }

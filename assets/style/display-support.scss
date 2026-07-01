@@ -1,8 +1,6 @@
 /*-- scss:rules --*/
 
 .ds-section {
-  @include full-bleed;
-
   background: $color-bg;
   padding: 0 clamp(1.5rem, 8vw, 12rem);
   max-width: 1000px;

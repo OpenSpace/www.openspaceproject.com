@@ -11,6 +11,24 @@
 
 
 //
+// General sections
+//
+.section {
+  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
+}
+
+.section-heading {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $color-text;
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+//
 // A regular grid that contains sub-divs with a title and some text. The number of grid
 // elements adjusts automatically
 //
@@ -517,4 +535,93 @@
   font-size: 0.82rem;
   color: rgba($color-text, 0.55);
   margin: 0.2rem 0 0;
+}
+
+
+
+//
+// Image Carousel that automatically switched between images
+//
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+  }
+}
+
+
+
+//
+// System status indicator included in the footer
+//
+.system-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba($color-text, 0.6) !important;
+  font-size: 0.75rem;
+
+  &:hover {
+    color: rgba($color-text, 0.7) !important;
+  }
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &.status--up {
+    background: #5cdd8b;
+    animation: status-pulse 2.5s ease-in-out infinite;
+  }
+
+  &.status--degraded {
+    background: #f8a306;
+  }
+
+  &.status--down {
+    background: #dc3545;
+  }
+
+  &.status--unknown {
+    background: #5cdd8b;
+    animation: status-pulse 2.5s ease-in-out infinite;
+  }
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 #5cdd8b80;
+  }
+  50% {
+    box-shadow: 0 0 0 4px #5cdd8b00;
+  }
 }

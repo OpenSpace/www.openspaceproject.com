@@ -36,6 +36,11 @@ html {
   overflow-x: hidden;
 }
 
+main {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
 h3, h4 {
   color: $color-accent-soft;
 }
@@ -48,3 +53,10 @@ strong {
 hr {
   border-color: rgba($color-accent-primary, 0.2);
 }
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    top: 95%;
+  }
+} 

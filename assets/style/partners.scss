@@ -6,8 +6,6 @@
 
 // ---------- Section wrappers ----------
 .partners-section {
-  @include full-bleed;
-
   padding-top: 3.5rem;
   padding-bottom: 2rem;
   padding-left:  clamp(1.5rem, 8vw, 12rem);

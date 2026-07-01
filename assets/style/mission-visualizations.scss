@@ -1,8 +1,6 @@
 /*-- scss:rules --*/
 
 .mv-section {
-  @include full-bleed;
-
   padding: 3.5rem clamp(1.5rem, 8vw, 12rem);
 
   h2 {

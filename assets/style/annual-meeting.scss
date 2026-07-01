@@ -1,14 +1,5 @@
 /*-- scss:rules --*/
 
-// Meeting list section
-.um-section {
-  @include full-bleed;
-
-  background: $color-bg;
-  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
-  border-top: 1px solid rgba($color-accent-primary, 0.06);
-}
-
 // Meeting item row
 .um-item {
   display: grid;
@@ -291,8 +282,6 @@
 
 
 .venue-section {
-  @include full-bleed;
-
   background: $color-bg;
   padding: 5rem 0 4.5rem;
   scroll-margin-top: 80px;

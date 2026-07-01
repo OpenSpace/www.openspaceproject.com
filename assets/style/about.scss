@@ -1,9 +1,7 @@
 /*-- scss:rules --*/
 
-// ---------- Body prose section (standard dark) ----------
+// Body prose section (standard dark)
 .about-body-section {
-  @include full-bleed;
-
   background: $color-bg;
   padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
   color: $color-text-highlight;
@@ -40,7 +38,7 @@
   margin-top: 0;
 }
 
-// ---------- Brand page ────────────────────────────────────────
+// Brand page
 .brand-credit-block {
   background: rgba($color-accent-primary, 0.05);
   border: 1px solid rgba($color-accent-primary, 0.18);
@@ -71,8 +69,6 @@
 }
 
 .brand-logos-section {
-  @include full-bleed;
-
   background: $color-surface;
   padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
   border-top: 1px solid rgba($color-accent-primary, 0.08);
@@ -97,7 +93,10 @@
   flex-direction: column;
 }
 
-.brand-logo-card--dark  { background: #0a0a0a; }
+.brand-logo-card--dark  {
+  background: #0a0a0a;
+}
+
 .brand-logo-card--light {
   background: #f0f4f6;
 
@@ -106,8 +105,13 @@
     border-top-color: rgba(0, 0, 0, 0.08);
   }
 
-  .brand-logo-name { color: #1a1a1a; }
-  .brand-logo-use  { color: rgba(0, 0, 0, 0.45); }
+  .brand-logo-name {
+    color: #1a1a1a;
+  }
+
+  .brand-logo-use {
+    color: rgba(0, 0, 0, 0.45);
+  }
 
   .brand-dl-btn {
     color: darken($color-accent-primary, 38%);
@@ -172,7 +176,9 @@
   white-space: nowrap;
   transition: background 0.15s ease;
 
-  i, .bi { display: none; }
+  i, .bi {
+    display: none;
+  }
 
   &:hover {
     background: rgba($color-accent-primary, 0.08);

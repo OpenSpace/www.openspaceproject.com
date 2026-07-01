@@ -38,7 +38,7 @@ listing:
 
 ---
 
-::: {.mv-section}
+::: {.content-section}
 
 ## How it works
 

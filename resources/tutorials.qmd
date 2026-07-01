@@ -29,59 +29,17 @@ cta:
   lede: >
     The full documentation covers every feature in depth. The community Slack is the best
     place to ask questions and connect with other OpenSpace users.
+
+listing:
+  - id: tutorials
+    type: custom
+    template: ../_template/tutorial.ejs.md
+    contents: ../assets/listing/tutorials.yml
 ---
 
-```{=html}
-<div class="tut-section">
-  <h2 class="tut-section-heading">Getting started · v0.21.0</h2>
+::: {.content-section}
 
-  <div class="tut-grid">
+::: {#tutorials}
+:::
 
-    <div class="tut-card">
-      <div class="tut-embed-wrap">
-        <iframe src="https://www.youtube.com/embed/DY5mugXgivw"
-                title="Tutorial 0. Download and Installation (0.21.0)"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"></iframe>
-      </div>
-      <div class="tut-card-body">
-        <p class="tut-eyebrow">Tutorial 0</p>
-        <h3 class="tut-title">Download and Installation</h3>
-        <p class="tut-desc">Install OpenSpace 0.21.0 on Windows, macOS, or Linux — from download to first launch.</p>
-      </div>
-    </div>
-
-    <div class="tut-card">
-      <div class="tut-embed-wrap">
-        <iframe src="https://www.youtube.com/embed/VaawmfV4zak"
-                title="Tutorial 1. Getting Started (0.21.0)"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"></iframe>
-      </div>
-      <div class="tut-card-body">
-        <p class="tut-eyebrow">Tutorial 1</p>
-        <h3 class="tut-title">Getting Started</h3>
-        <p class="tut-desc">Load your first profile and take your first flight — navigating the solar system from Earth to the outer planets.</p>
-      </div>
-    </div>
-
-    <div class="tut-card">
-      <div class="tut-embed-wrap">
-        <iframe src="https://www.youtube.com/embed/qy7fIQA7YoE"
-                title="Tutorial 2. User Interface (0.21.0)"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"></iframe>
-      </div>
-      <div class="tut-card-body">
-        <p class="tut-eyebrow">Tutorial 2</p>
-        <h3 class="tut-title">User Interface</h3>
-        <p class="tut-desc">A complete walkthrough of the OpenSpace UI — panels, menus, time controls, and navigation tools.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-```
+:::

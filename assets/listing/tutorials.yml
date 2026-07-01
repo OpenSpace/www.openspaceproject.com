@@ -1,0 +1,33 @@
+#
+# List of video tutorials
+#
+# Fields:
+#   - title: Title of the video
+#   - header: Short title
+#   - video: Link to the tutorial video
+#   - alt: Alt text for the video
+#   - description: Longer paragraph of description for the example
+#
+
+- title: Download and Installation
+  header: Tutorial 0
+  video: https://www.youtube.com/embed/DY5mugXgivw
+  alt: Tutorial 0. Download and Installation (0.21.0)
+  description: >
+    Install OpenSpace 0.21.0 on Windows, macOS, or Linux — from download to first launch.
+
+- title: Getting Started
+  header: Tutorial 1
+  video: https://www.youtube.com/embed/VaawmfV4zak
+  alt: Tutorial 1. Getting Started (0.21.0)
+  description: >
+    Load your first profile and take your first flight — navigating the solar system from
+    Earth to the outer planets.
+
+- title: Tutorial 2
+  header: Tutorial 2
+  video: https://www.youtube.com/embed/qy7fIQA7YoE
+  alt: Tutorial 2. User Interface (0.21.0)
+  description: >
+    A complete walkthrough of the OpenSpace UI — panels, menus, time controls, and
+    navigation tools.

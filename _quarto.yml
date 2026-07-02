@@ -29,7 +29,6 @@ format:
 
       - "assets/style/annual-meeting.scss"
       - "assets/style/home.scss"
-      - "assets/style/about.scss"
       - "assets/style/impact.scss"
       - "assets/style/display-support.scss"
     include-after-body:

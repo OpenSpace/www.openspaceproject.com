@@ -1386,3 +1386,138 @@
     flex: 1;
   }
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//   Brand                                                                              //
+//     about/brand.qmd                                                                  //
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+.page-brand-credit-text {
+  background: rgba($color-accent-primary, 0.05);
+  border: 1px solid rgba($color-accent-primary, 0.18);
+  border-left: 3px solid $color-accent-primary;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.25rem 0 1.5rem;
+
+  font-family: $font-monospace;
+  font-size: 0.9375rem;
+  color: $color-text-highlight;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.page-brand-logo-grid {
+  background: $color-surface;
+  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
+  border-top: 1px solid rgba($color-accent-primary, 0.08);
+  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+
+  .page-brand-logo-card {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba($color-accent-primary, 0.12);
+      display: flex;
+      flex-direction: column;
+
+      img {
+        flex: 1;
+        margin: auto;
+        padding: 2rem 1.5rem;
+        max-height: calc(60px + 4rem);
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+
+      .page-brand-logo-meta {
+        padding: 1rem 1.25rem;
+        border-top: 1px solid rgba($color-accent-primary, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: rgba(0, 0, 0, 0.3);
+
+        h3 {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: $color-text-highlight;
+          margin: 0;
+          flex: 1;
+        }
+
+        p {
+          font-size: 0.72rem;
+          font-family: $font-monospace;
+          color: rgba($color-text, 0.6);
+          margin: 0;
+        }
+
+        a {
+          display: inline-block;
+          font-size: 0.72rem;
+          font-family: $font-monospace;
+          color: $color-accent-primary;
+          border: 1px solid rgba($color-accent-primary, 0.28);
+          border-radius: 4px;
+          padding: 0.25rem 0.65rem;
+          text-decoration: none;
+          white-space: nowrap;
+          transition: background 0.15s ease;
+
+          i, .bi {
+            display: none;
+          }
+
+          &:hover {
+            background: rgba($color-accent-primary, 0.08);
+            color: $color-accent-primary;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--dark  {
+        background: #0a0a0a;
+      }
+
+      &--light {
+        background: #f0f4f6;
+
+        .page-brand-logo-meta {
+          background: rgba(255, 255, 255, 0.65);
+          border-top-color: rgba(0, 0, 0, 0.08);
+
+          h3 {
+            color: #1a1a1a;
+          }
+
+          p {
+            color: #000000;
+          }
+
+          a {
+            color: darken($color-accent-primary, 38%);
+            border-color: rgba(darken($color-accent-primary, 30%), 0.4);
+
+            &:hover {
+              background: rgba(darken($color-accent-primary, 30%), 0.08);
+              color: darken($color-accent-primary, 42%);
+            }
+          }
+        }
+      }
+    }
+  }
+

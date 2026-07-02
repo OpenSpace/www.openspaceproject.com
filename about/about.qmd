@@ -32,7 +32,7 @@ cta:
     you run a planetarium, teach with OpenSpace, or contribute code.
 ---
 
-::: {.about-body-section}
+::: {.content-section}
 
 ## What is OpenSpace?
 

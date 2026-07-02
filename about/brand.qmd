@@ -26,69 +26,73 @@ cta:
     For licensing, permissions, or anything not covered here, reach out directly.
 ---
 
-```{=html}
-<section class="about-body-section">
-  <h2 class="about-h2">Crediting OpenSpace</h2>
-  <p>If you use OpenSpace images, videos, or visualizations in publications, presentations, articles, or other media, please credit the OpenSpace Project. A standard credit line:</p>
+::: {.content-section}
 
-  <div class="brand-credit-block">
-    <p class="brand-credit-text">Visualization created with OpenSpace — openspaceproject.com</p>
-  </div>
+## Crediting OpenSpace
+If you use OpenSpace images, videos, or visualizations in publications, presentations, articles, or other media, please credit the OpenSpace Project. A standard credit line:
 
-  <p>For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available in the <a href="https://docs.openspaceproject.com" target="_blank" rel="noopener">documentation</a>.</p>
-
-  <h2 class="about-h2">Usage guidelines</h2>
-  <p>OpenSpace is open-source software released under the MIT License. Images and visualizations produced with OpenSpace may be used freely for educational, editorial, and research purposes with appropriate credit. For commercial use or licensing questions, <a href="/community/contact.qmd">contact us</a>.</p>
-  <p>When using the OpenSpace name or logo, please follow these guidelines:</p>
-  <ul class="brand-guidelines-list">
-    <li>Do not alter, distort, or modify the logo in any way.</li>
-    <li>Do not use the logo to imply endorsement or affiliation without permission.</li>
-    <li>Maintain sufficient contrast — use the white logo on dark backgrounds and the black logo on light backgrounds.</li>
-    <li>Provide adequate clear space around the logo.</li>
-  </ul>
-
-  <h2 class="about-h2">Logo downloads</h2>
-  <p>The following logo files are available for use in accordance with the guidelines above.</p>
-</section>
-
-<section class="brand-logos-section">
-  <div class="brand-logo-grid">
-
-    <div class="brand-logo-card brand-logo-card--dark">
-      <div class="brand-logo-preview">
-        <img src="/assets/brand/horizontal_logo.webp" alt="OpenSpace horizontal logo, white">
-      </div>
-      <div class="brand-logo-meta">
-        <p class="brand-logo-name">Horizontal logo</p>
-        <p class="brand-logo-use">For dark backgrounds</p>
-        <a class="brand-dl-btn" href="/assets/brand/horizontal_logo.webp" download>Download</a>
-      </div>
-    </div>
-
-    <div class="brand-logo-card brand-logo-card--dark">
-      <div class="brand-logo-preview">
-        <img src="/assets/brand/logo.webp" alt="OpenSpace mark, white">
-      </div>
-      <div class="brand-logo-meta">
-        <p class="brand-logo-name">Mark</p>
-        <p class="brand-logo-use">For dark backgrounds</p>
-        <a class="brand-dl-btn" href="/assets/brand/logo.webp" download>Download</a>
-      </div>
-    </div>
-
-    <div class="brand-logo-card brand-logo-card--light">
-      <div class="brand-logo-preview">
-        <img src="/assets/brand/openspace_black.webp" alt="OpenSpace horizontal logo, black">
-      </div>
-      <div class="brand-logo-meta">
-        <p class="brand-logo-name">Horizontal logo</p>
-        <p class="brand-logo-use">For light backgrounds</p>
-        <a class="brand-dl-btn" href="/assets/brand/openspace_black.webp" download>Download</a>
-      </div>
-    </div>
-
-  </div>
-</section>
+```{.page-brand-credit-text}
+Visualization created with OpenSpace — openspaceproject.com
 ```
+For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available in the [documentation](https://docs.openspaceproject.com).
+
+:::
+
+::: {.content-section}
+
+## Usage guidelines
+OpenSpace is open-source software released under the MIT License. Images and visualizations produced with OpenSpace may be used freely for educational, editorial, and research purposes with appropriate credit. For commercial use or licensing questions, [contact us](/community/contact.qmd).
+
+When using the OpenSpace name or logo, please follow these guidelines:
+
+  - Do not alter, distort, or modify the logo in any way.
+  - Do not use the logo to imply endorsement or affiliation without permission.
+  - Maintain sufficient contrast — use the white logo on dark backgrounds and the black logo on light backgrounds.
+  - Provide adequate clear space around the logo.
+
+:::
+
+::: {.content-section}
+
+## Logo downloads
+The following logo files are available for use in accordance with the guidelines above.
+
+:::
+
+
+
+::: {.page-brand-logo-grid}
+
+:::: {.page-brand-logo-card .brand-logo-card--dark}
+![](/assets/brand/horizontal_logo.webp){fig-alt="OpenSpace horizontal logo, white"}
+
+::::: {.page-brand-logo-meta}
+### Horizontal logo
+For dark backgrounds
+[Download](/assets/brand/horizontal_logo.webp){download=""}
+:::::
+::::
+
+:::: {.page-brand-logo-card .page-brand-logo-card--dark}
+![](/assets/brand/logo.webp){fig-alt="OpenSpace mark, white"}
+
+::::: {.page-brand-logo-meta}
+### Mark
+For dark backgrounds
+[Download](/assets/brand/logo.webp){download=""}
+:::::
+::::
+
+:::: {.page-brand-logo-card .page-brand-logo-card--light}
+![](/assets/brand/openspace_black.webp){fig-alt="OpenSpace horizontal logo, black"}
+
+::::: {.page-brand-logo-meta}
+### Horizontal logo
+For light backgrounds
+[Download](/assets/brand/openspace_black.webp){download=""}
+:::::
+::::
+
+:::
 
 

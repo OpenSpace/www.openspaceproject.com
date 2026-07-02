@@ -1,0 +1,139 @@
+/*-- scss:rules --*/
+
+.page-usermeeting-item {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  gap: 3.5rem;
+  padding: 3rem 0;
+  border-top: 1px solid rgba($color-accent-primary, 0.1);
+  align-items: center;
+  position: relative;
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+  &:hover img {
+    border-color: rgba($color-accent-primary, 0.3);
+  }
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  &--past {
+    img {
+      opacity: 0.4;
+    }
+
+    h3 {
+      color: rgba($color-text-highlight, 0.5);
+    }
+  }
+
+  & > img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid rgba($color-accent-primary, 0.12);
+    transition: border-color 0.2s ease;
+
+    @media (max-width: 820px) {
+      height: 260px;
+    }
+  }
+
+  .page-usermeeting-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.6rem;
+
+    .page-usermeeting-badge {
+      font-size: 0.58rem;
+      font-family: $font-monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      background: rgba($color-accent-secondary, 0.15);
+      color: $color-accent-secondary;
+      border: 1px solid rgba($color-accent-secondary, 0.35);
+    }
+
+    .page-usermeeting-year {
+      font-size: 0.6rem;
+      font-family: $font-monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($color-text, 0.5);
+    }
+  }
+
+  .page-usermeeting-location {
+    font-size: 0.75rem;
+    font-family: $font-monospace;
+    color: rgba($color-text, 0.55);
+    letter-spacing: 0.04em;
+    margin: 0 0 0.85rem;
+  }
+
+  .page-usermeeting-desc {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    color: rgba($color-text-highlight, 0.75);
+    margin: 0 0 1.25rem;
+  }
+
+  .page-usermeeting-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $color-accent-primary;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 0.15s ease;
+
+      position: relative;
+    z-index: 1;
+
+    i, .bi {
+      display: none;
+    }
+
+    &:hover {
+      color: $color-text-highlight;
+      text-decoration: none;
+    }
+  }
+
+  h3 {
+    font-size: clamp(1.375rem, 2.5vw, 1.875rem);
+    font-weight: 600;
+    color: $color-text-highlight;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.4rem;
+
+    // Stretched link
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+      }
+
+      &:hover {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}

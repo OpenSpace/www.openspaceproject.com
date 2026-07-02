@@ -1,0 +1,90 @@
+/*-- scss:rules --*/
+
+.page-impact-map-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-impact-toggle-btn {
+  background: transparent;
+  border: 1px solid rgba($color-accent-primary, 0.25);
+  color: rgba($color-text, 0.65);
+  font-size: 0.75rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+
+  &:hover {
+    border-color: rgba($color-accent-primary, 0.55);
+    color: $color-accent-primary;
+  }
+
+  &.is-active {
+    border-color: $color-accent-primary;
+    color: $color-accent-primary;
+    background: rgba($color-accent-primary, 0.08);
+  }
+}
+
+// Startup map
+#page-impact-startup-map {
+  height: 460px;
+  border-radius: 12px;
+  border: 1px solid rgba($color-accent-primary, 0.2);
+  background: #111111;
+}
+
+.page-impact-map-footer {
+  margin-top: 0.85rem;
+  font-size: 0.8125rem;
+  color: rgba($color-text, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  a {
+    color: $color-accent-primary;
+    text-decoration: none;
+    font-family: $font-monospace;
+    letter-spacing: 0.04em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Annual reports
+.page-impact-reports-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: $color-surface;
+    border: 1px solid rgba($color-accent-primary, 0.2);
+    border-radius: 8px;
+    padding: 0.55rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $color-text-highlight;
+    text-decoration: none;
+    transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+    &:hover {
+      border-color: rgba($color-accent-primary, 0.55);
+      color: $color-accent-primary;
+      transform: translateY(-2px);
+    }
+  }
+}

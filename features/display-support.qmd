@@ -6,6 +6,7 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+    theme: ../assets/style/page/display-support.scss
 
 hero:
   title: "Any screen. Any venue."
@@ -105,9 +106,11 @@ Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays fo
 
 ## Fisheye rendering
 
+```{=html}
 <video class="page-displaysupport-img" autoplay loop muted playsinline>
   <source src="/assets/videos/fisheye.mp4" type="video/mp4">
 </video>
+```
 
 ::: {.page-displaysupport-body}
 OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.
@@ -117,12 +120,13 @@ OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of vi
   - Supports 4K and 8K output resolutions
   - Equirectangular and cubemap outputs for previews
   - SPOUT output for integration with compositing tools
-:::
 
 :::
 
+:::
 
-::: {.ds-section #technical-capabilities}
+
+::: {.content-section #technical-capabilities}
 
 ## Technical capabilities
 

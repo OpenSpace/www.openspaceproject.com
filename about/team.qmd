@@ -1,24 +1,12 @@
 ---
 pagetitle: "Team — OpenSpace"
 description-meta: "The people behind the OpenSpace project."
-listing:
-  - id: admin
-    type: custom
-    template: ../_template/team.ejs.md
-    contents: ../assets/listing/team.yml
-    include:
-      type: "{admin,coordinator,advisor}"
-  - id: developer
-    type: custom
-    template: ../_template/team.ejs.md
-    contents: "../assets/listing/team.yml"
-    include:
-      type: developer
 format:
   html:
     page-layout: full
     toc: false
     anchor-sections: false
+    theme: ../assets/style/page/team.scss
 
 hero:
   title: "The people behind OpenSpace"
@@ -38,6 +26,20 @@ cta:
   lede: >
     A big part of the team is graduate students whose research directly drives new
     capabilities in OpenSpace. See what they've been working on.
+
+listing:
+  - id: admin
+    type: custom
+    template: ../_template/team.ejs.md
+    contents: ../assets/listing/team.yml
+    include:
+      type: "{admin,coordinator,advisor}"
+  - id: developer
+    type: custom
+    template: ../_template/team.ejs.md
+    contents: "../assets/listing/team.yml"
+    include:
+      type: developer
 ---
 
 ::: {.content-section}

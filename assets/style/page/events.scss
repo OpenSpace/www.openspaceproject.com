@@ -1,0 +1,103 @@
+/*-- scss:rules --*/
+
+.page-events-item {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba($color-accent-primary, 0.1);
+  align-items: start;
+  position: relative;
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+  &:hover img {
+    border-color: rgba($color-accent-primary, 0.3);
+  }
+
+  & > img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba($color-accent-primary, 0.1);
+
+    .page-events-item--past & {
+      opacity: 0.55;
+    }
+  }
+
+  .page-events-body > h3 {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    font-weight: 600;
+    color: $color-text-highlight;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.35rem;
+
+    .page-events-item--past & {
+      color: rgba($color-text-highlight, 0.6);
+    }
+
+    & > a {
+      color: inherit;
+      text-decoration: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+      }
+
+      &:hover {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    .page-events-tag {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-size: 0.6rem;
+      font-family: $font-monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($color-text, 0.5);
+    }
+
+    .page-events-time {
+      font-size: 0.75rem;
+      font-family: $font-monospace;
+      color: rgba($color-text, 0.75);
+      letter-spacing: 0.04em;
+      margin: 0 0 0.85rem;
+    }
+
+    .page-events-desc {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: rgba($color-text-highlight, 0.75);
+      margin: 0 0 1.25rem;
+
+      .page-events-item--past & {
+        color: rgba($color-text-highlight, 0.45);
+        margin-bottom: 0;
+      }
+    }
+
+    .page-events-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

@@ -1,9 +1,9 @@
 <script>
-// Provides a navigation bar on the right sight with orbit-like dots that can be used to
+// Provides a navigation bar on the right side with orbit-like dots that can be used to
 // navigate between different headers of the page
 
 (() => {
-  let dotNav = document.querySelector('.ds-dot-nav');
+  let dotNav = document.querySelector('.dot-nav');
   function alignNav() {
     if (!dotNav) return;
     let btn = document.querySelector('.nav-cta');
@@ -15,7 +15,7 @@
   alignNav();
   window.addEventListener('resize', alignNav);
 
-  let navItems = Array.from(document.querySelectorAll('.ds-dot-nav-item'));
+  let navItems = Array.from(document.querySelectorAll('.dot-nav-item'));
   let sections = navItems.map((item) => {
     return document.getElementById(item.dataset.target);
   }).filter(Boolean);

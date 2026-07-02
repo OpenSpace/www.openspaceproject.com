@@ -1,30 +1,29 @@
 ```{=html}
-<div class="team-grid">
+<div class="page-team-grid">
 <% for (const item of items) { %>
-  <div class="team-card" tabindex="0" aria-label="<%- item.name %>">
-    <div class="team-card-inner">
+  <div class="page-team-card" tabindex="0" aria-label="<%- item.name %>">
+    <div class="page-team-card-inner">
 
-      <div class="team-card-front">
+      <div class="page-team-card-front">
         <img
           src="/assets/team/<%- item.type %>/<%- item.image %>"
           alt="<%- item.name %>"
-          class="team-card-photo"
         >
-        <div class="team-card-info">
-          <div class="team-card-name"><%- item.name %></div>
+        <div class="page-team-card-info">
+          <h3><%- item.name %></h3>
           <% if (item.title) { %>
-          <div class="team-card-role"><%- item.title %></div>
+          <span><%- item.title %></span>
           <% } %>
         </div>
       </div>
 
-      <div class="team-card-back">
-        <div class="team-card-back-inner">
-          <div class="team-card-name"><%- item.name %></div>
+      <div class="page-team-card-back">
+        <div class="page-team-card-back-inner">
+          <h3><%- item.name %></h3>
           <% if (item.title) { %>
-          <div class="team-card-role"><%- item.title %></div>
+          <h4><%- item.title %></h4>
           <% } %>
-          <div class="team-card-affil"><%- item.affiliation %></div>
+          <span><%- item.affiliation %></span>
         </div>
       </div>
 

@@ -35,7 +35,6 @@ format:
       - "assets/style/content-carousel.scss"
       - "assets/style/home.scss"
       - "assets/style/about.scss"
-      - "assets/style/team.scss"
       - "assets/style/research.scss"
       - "assets/style/partners.scss"
       - "assets/style/impact.scss"

@@ -40,24 +40,20 @@ cta:
     capabilities in OpenSpace. See what they've been working on.
 ---
 
-```{=html}
-<div class="team-section">
-  <h2 class="team-section-heading">Project Leadership</h2>
-```
+::: {.content-section}
+
+## Project Leadership
 
 ::: {#admin}
 :::
 
-```{=html}
-</div>
+:::
 
-<div class="team-section">
-  <h2 class="team-section-heading">Developers</h2>
-```
+::: {.content-section}
+
+## Developers
 
 ::: {#developer}
 :::
 
-```{=html}
-</div>
-```
+:::

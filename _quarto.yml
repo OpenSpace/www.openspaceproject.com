@@ -28,7 +28,6 @@ format:
       - "assets/style/_pages.scss"
 
       - "assets/style/home.scss"
-      - "assets/style/impact.scss"
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html

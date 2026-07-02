@@ -3,6 +3,21 @@ pagetitle: "Research — OpenSpace"
 description-meta: "Academic research, master's theses, and publications from the OpenSpace project."
 aliases:
   - academia.html
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+
+hero:
+  title: "Academic Research & Publications"
+  breadcrumbs:
+    - "About"
+    - "Research"
+  lede: >
+    OpenSpace sits at the intersection of scientific visualization research and public
+    outreach. Explore the theses and papers that shape it.
+
 listing:
   - id: theses
     type: custom
@@ -18,20 +33,6 @@ listing:
       type: "paper"
     page-size: 9999
     sort: "year desc"
-format:
-  html:
-    page-layout: full
-    toc: false
-    anchor-sections: false
-
-hero:
-  title: "Academic Research & Publications"
-  breadcrumbs:
-    - "About"
-    - "Research"
-  lede: >
-    OpenSpace sits at the intersection of scientific visualization research and public
-    outreach. Explore the theses and papers that shape it.
 ---
 
 ::: {.content-section}

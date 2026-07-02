@@ -28,14 +28,14 @@ cta:
     each meeting.
 ---
 
-::: {.um-section}
+::: {.content-section}
 
 The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
 
 :::
 
 ```{=html}
-<div class="um-section">
+<div class="content-section">
   <div class="um-item">
     <div class="um-img-wrap">
       <img src="2026/visc.webp"

@@ -245,10 +245,7 @@ hero:
     <div class="um-detail-body">
       <p>Registration is <strong>free</strong>. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.</p>
       <p>Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> with any questions about the meeting.</p>
-      <div class="ev-detail-links">
-        <a class="ev-btn-primary" href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register now</a>
-      </div>
-      <p class="ev-detail-back"><a href="../">&larr; All meetings</a></p>
+      <a class="btn-primary-os" href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register now</a>
     </div>
   </div>
 </section>

@@ -65,9 +65,7 @@ hero:
     <h2 class="venue-title">Session recordings</h2>
     <div class="um-detail-body">
       <p>Recordings from the 2025 sessions are available on YouTube. The full playlist includes workshops, lightning talks, and presentations from both days of the meeting.</p>
-      <div class="ev-detail-links">
-        <a class="ev-btn-primary" href="https://www.youtube.com/playlist?list=PLzXWit_1TXstdi_g92k8YIPGaEVG13iJ2" target="_blank" rel="noopener">Watch on YouTube</a>
-      </div>
+      <a class="btn-primary-os" href="https://www.youtube.com/playlist?list=PLzXWit_1TXstdi_g92k8YIPGaEVG13iJ2" target="_blank" rel="noopener">Watch on YouTube</a>
     </div>
   </div>
 </section>
@@ -78,7 +76,6 @@ hero:
     <h2 class="venue-title">Community moments</h2>
     <div class="um-detail-body">
       <p>Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward — in the AMNH planetarium, over coffee, and during informal evening meetups. New collaborations between institutions started here, and several feature requests in the current roadmap trace directly to discussions during the meeting.</p>
-      <p class="ev-detail-back"><a href="../">&larr; All meetings</a></p>
     </div>
   </div>
 </section>

@@ -1,0 +1,76 @@
+#
+# Events
+#
+# Fields:
+#   - title: The title of the event
+#   - datetime: The date in "YYYY-MM-DD HH:mm" format with the time specified in UTC.
+#   - type: The type of the event as a free string
+#   - image: The path to the image to use for the event
+#   - alt: The alt text for the image
+#   - description: A descriptive text
+#   - description_past (optional): If specified, this description text is used when the
+#                                  event has passed. If it is not specified, the
+#                                  description is used
+#   - generate_calendar: Determines whether a "Add to Calendar" with the date should be
+#                        automatically generated
+#   - cta (optional): Call to action buttons
+#     - text: Button text
+#       link: Link for the CTA button
+#       show_when_passed: Determines whether the CTA should be shown when the event has
+#                         passed
+#   - page (optional): Path to a page with additional information
+#
+
+- title: July OpenSpace Monthly Meeting
+  datetime: "2026-07-13 19:00"
+  type: Monthly Meeting
+  image: /assets/images/venue-cards/hayden_jwst.webp
+  alt: Hayden Planetarium — venue for OpenSpace community events
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: December OpenSpace Monthly Meeting
+  datetime: "2025-12-08 20:00"
+  type: Monthly Meeting
+  image: /assets/images/venue-cards/amnh_lwd_students.webp
+  alt: Students at AMNH using OpenSpace
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: November OpenSpace Monthly Meeting
+  datetime: "2025-11-10 20:00"
+  type: Monthly Meeting
+  image: /assets/images/venue-cards/spaceship.webp
+  alt: OpenSpace running in a museum exhibit
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false

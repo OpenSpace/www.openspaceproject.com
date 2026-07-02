@@ -42,9 +42,6 @@ format:
       - "assets/style/globe-browsing.scss"
       - "assets/style/space-weather.scss"
       - "assets/style/display-support.scss"
-      - "assets/style/events.scss"
-      - "assets/style/slack.scss"
-      - "assets/style/contact.scss"
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html

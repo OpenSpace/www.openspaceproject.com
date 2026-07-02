@@ -20,6 +20,10 @@ cta:
       link: "https://github.com/OpenSpace/OpenSpace"
       style: "ghost"
       external: true
+    # - text: "Join Slack
+    #   link: "https://github.com/OpenSpace/OpenSpace"
+    #   style: "primary"
+    #   external: true
   lede: "Free. Open source. Cross-platform."
 ---
 

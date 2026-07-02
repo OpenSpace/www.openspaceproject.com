@@ -37,9 +37,16 @@ listing:
     type: custom
     template: ../_template/rich-list.ejs.md
     contents: ../assets/listing/heliophysics.yml
+  - id: images
+    type: custom
+    template: ../_template/image-stack.ejs.md
+    contents:
+      - image: /assets/images/features/sdo-1.webp
+      - image: /assets/images/features/sdo-2.webp
+      - image: /assets/images/features/sdo-3.webp
 ---
 
-::: {.sw-section}
+::: {.content-section}
 
 ## Built with NASA CCMC scientists
 OpenSpace's heliophysics tools were built in close collaboration with scientists at NASA's Community Coordinated Modeling Center (CCMC), the group behind the operational space weather models that forecasters rely on every day. What you're seeing isn't an approximation of solar activity. It's the actual simulation data, made explorable in 3D.
@@ -65,81 +72,30 @@ Step back through some of the biggest solar events on record, including Bastille
 
 :::
 
+::: {.content-section}
 
-```{=html}
-<div class="sw-section sw-section-alt">
-  <div class="sw-split">
-    <div>
-      <h2>The Sun in multiple wavelengths</h2>
-      <p class="sw-split-lede">SDO sees what the eye cannot</p>
-      <p class="sw-prose">NASA's Solar Dynamics Observatory captures the Sun nonstop across ten wavelength channels, each one revealing a different layer of solar activity, from the cool chromosphere all the way up to 20-million-degree flare plasma. OpenSpace lets you load these image sequences and switch between wavelengths to watch the same event play out at different temperatures.</p>
-      <ul class="gb-feature-list">
-        <li>304 Å: chromosphere and transition region (~50,000 K)</li>
-        <li>171 Å: quiet corona and coronal loops (~600,000 K)</li>
-        <li>193 Å: corona and hot post-flare plasma (~1.2 MK)</li>
-        <li>211 Å: active regions in the outer corona (~2 MK)</li>
-        <li>131 Å: flares and erupting filaments (~10 MK)</li>
-        <li>94 Å: flare cores at peak intensity (~6.3 MK)</li>
-      </ul>
-    </div>
-    <div>
-      <div class="gb-layer-stack" id="swSdoStack" role="button" tabindex="0" aria-label="Click to cycle through SDO wavelength examples">
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo-1.webp'); background-size: 160%;"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo-2.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/sdo-3.webp')"></div>
-      </div>
-      <div class="gb-layer-footer">
-        <div class="gb-layer-dots" id="swSdoDots">
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-        </div>
-        <span class="gb-layer-hint">Click to cycle wavelengths</span>
-      </div>
-    </div>
-  </div>
-</div>
+::: {.image-stack}
 
-<script>
-(() => {
-  let stack = document.getElementById('swSdoStack');
-  if (!stack) return;
-  let cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
-  let dots = Array.from(document.querySelectorAll('#swSdoDots .gb-layer-dot'));
-  let total = cards.length;
-  let current = 0;
-  let states = ['gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden'];
+::: {.image-stack__text}
 
-  function render() {
-    cards.forEach((card, i) => {
-      states.forEach((s) => { card.classList.remove(s); });
-      let offset = (i - current + total) % total;
-      card.classList.add(states[Math.min(offset, states.length - 1)]);
-    });
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === current);
-    });
-  }
+## The Sun in multiple wavelengths
 
-  stack.addEventListener('click', () => {
-    current = (current + 1) % total;
-    render();
-  });
+### SDO sees what the eye cannot
 
-  stack.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      current = (current + 1) % total;
-      render();
-    }
-    else if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      current = (current - 1 + total) % total;
-      render();
-    }
-  });
+NASA's Solar Dynamics Observatory captures the Sun nonstop across ten wavelength channels, each one revealing a different layer of solar activity, from the cool chromosphere all the way up to 20-million-degree flare plasma. OpenSpace lets you load these image sequences and switch between wavelengths to watch the same event play out at different temperatures.
 
-  render();
-})();
-</script>
-```
+  - 304 Å: chromosphere and transition region (~50,000 K)
+  - 171 Å: quiet corona and coronal loops (~600,000 K)
+  - 193 Å: corona and hot post-flare plasma (~1.2 MK)
+  - 211 Å: active regions in the outer corona (~2 MK)
+  - 131 Å: flares and erupting filaments (~10 MK)
+  - 94 Å: flare cores at peak intensity (~6.3 MK)
+
+:::
+
+::: {#images}
+:::
+
+:::
+
+:::

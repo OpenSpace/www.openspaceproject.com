@@ -36,9 +36,20 @@ listing:
     type: custom
     template: ../_template/rich-list.ejs.md
     contents: ../assets/listing/globe-browsing.yml
+  - id: images
+    type: custom
+    template: ../_template/image-stack.ejs.md
+    contents:
+      - image: /assets/images/features/mars-1.webp
+      - image: /assets/images/features/mars-2.webp
+      - image: /assets/images/features/mars-3.webp
+      - image: /assets/images/features/mars-4.webp
+      - image: /assets/images/features/mars-5.webp
+      - image: /assets/images/features/mars-6.webp
+      - image: /assets/images/features/mars-7.webp
 ---
 
-::: {.gb-section}
+::: {.content-section}
 
 ## Planetary surface rendering
 
@@ -70,88 +81,29 @@ Stack base imagery, colorized elevation, scientific overlays, and labels simulta
 
 :::
 
-```{=html}
-<div class="gb-section gb-section-alt">
-  <div class="gb-split">
-    <div>
-      <h2>Data layers</h2>
-      <p class="gb-split-lede">Stack and reveal live</p>
-      <p class="gb-prose">Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show with no pausing, no switching scenes, and no prerendering needed.</p>
-      <ul class="gb-feature-list">
-        <li>Base imagery from multiple spacecraft missions</li>
-        <li>Colorized elevation from MOLA, LOLA, and radar altimetry</li>
-        <li>Scientific overlays including mineral maps, temperature, and atmospheric data</li>
-        <li>Time-varying data: watch ice caps advance and retreat</li>
-        <li>Toggleable labels and graticules at any scale</li>
-      </ul>
-    </div>
-    <div>
-      <div class="gb-layer-stack" id="gbLayerStack" role="button" tabindex="0" aria-label="Click to cycle through data layer examples">
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-1.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-2.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-3.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-4.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-5.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-6.webp')"></div>
-        <div class="gb-layer-card" style="background-image:url('../assets/images/features/mars-7.webp')"></div>
-      </div>
-      <div class="gb-layer-footer">
-        <div class="gb-layer-dots" id="gbLayerDots">
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-          <span class="gb-layer-dot"></span>
-        </div>
-        <span class="gb-layer-hint">Click to cycle layers</span>
-      </div>
-    </div>
-  </div>
-</div>
+::: {.content-section}
 
-<script>
-(() => {
-  let stack = document.getElementById('gbLayerStack');
-  if (!stack) return;
-  let cards = Array.from(stack.querySelectorAll('.gb-layer-card'));
-  let dots = Array.from(document.querySelectorAll('#gbLayerDots .gb-layer-dot'));
-  let total = cards.length;
-  let current = 0;
-  let states = [ 'gb-layer-front', 'gb-layer-mid', 'gb-layer-back', 'gb-layer-hidden' ];
+::: {.image-stack}
 
-  function render() {
-    cards.forEach((card, i) => {
-      states.forEach((s) => { card.classList.remove(s); });
-      let offset = (i - current + total) % total;
-      card.classList.add(states[Math.min(offset, states.length - 1)]);
-    });
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === current);
-    });
-  }
+::: {.image-stack__text}
 
-  stack.addEventListener('click', () => {
-    current = (current + 1) % total;
-    render();
-  });
+## Data layers
 
-  stack.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      current = (current + 1) % total;
-      render();
-    }
-    else if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      current = (current - 1 + total) % total;
-      render();
-    }
-  });
+### Stack and reveal live
 
-  render();
-})();
-</script>
-```
+Multiple data layers can be active at once and blended in real time. A presenter can toggle them live during a show with no pausing, no switching scenes, and no prerendering needed.
 
+  - Base imagery from multiple spacecraft missions
+  - Colorized elevation from MOLA, LOLA, and radar altimetry
+  - Scientific overlays including mineral maps, temperature, and atmospheric data
+  - Time-varying data: watch ice caps advance and retreat
+  - Toggleable labels and graticules at any scale
+
+:::
+
+::: {#images}
+:::
+
+:::
+
+:::

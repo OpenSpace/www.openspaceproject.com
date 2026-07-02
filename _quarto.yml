@@ -36,8 +36,6 @@ format:
       - "assets/style/home.scss"
       - "assets/style/about.scss"
       - "assets/style/impact.scss"
-      - "assets/style/globe-browsing.scss"
-      - "assets/style/space-weather.scss"
       - "assets/style/display-support.scss"
     include-after-body:
       - file: _template/dotnav.html

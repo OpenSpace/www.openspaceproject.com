@@ -6,14 +6,14 @@ aliases:
 listing:
   - id: theses
     type: custom
-    template: ../_template/thesis-row.ejs.md
+    template: ../_template/theses.ejs.md
     contents: ../assets/listing/theses.yml
     page-size: 9999
     sort: "year desc"
   - id: papers
     type: custom
-    template: ../_template/paper-row.ejs.md
-    contents: ../assets/listing/academia.yml
+    template: ../_template/publications.ejs.md
+    contents: ../assets/listing/publications.yml
     include:
       type: "paper"
     page-size: 9999
@@ -34,75 +34,24 @@ hero:
     outreach. Explore the theses and papers that shape it.
 ---
 
-```{=html}
-<div class="research-section">
-  <h2 class="research-section-heading">Master's Thesis Program</h2>
-  <p class="liu-program-desc">
-    Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
-  </p>
-  <p class="liu-program-desc">
-    Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.
-  </p>
-  <div class="liu-partners">
-    <button class="liu-partner-tag" data-partner="AMNH">American Museum of Natural History (AMNH)</button>
-    <button class="liu-partner-tag" data-partner="CCMC">Community Coordinated Modeling Center (CCMC)</button>
-    <button class="liu-partner-tag" data-partner="SCI">Scientific Computing and Imaging Institute (SCI)</button>
-    <button class="liu-partner-tag" data-partner="NYU">New York University (NYU)</button>
-    <button class="liu-partner-tag" data-partner="LiU">Linköping University (LiU)</button>
-  </div>
-```
+::: {.content-section}
+
+## Master's Thesis Program
+Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
+
+Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.
 
 ::: {#theses}
 :::
 
-```{=html}
-</div>
+:::
 
+::: {.content-section}
 
-<script>
-(() => {
-  let active = null;
-
-  function filter(partner) {
-    active = partner;
-
-    document.querySelectorAll('.liu-partner-tag').forEach((btn) => {
-      btn.classList.toggle('is-active', btn.dataset.partner === partner);
-    });
-
-    document.querySelectorAll('.thesis-row').forEach((row) => {
-      row.classList.toggle('thesis-hidden', !!partner && row.dataset.partner !== partner);
-    });
-
-    document.querySelectorAll('.thesis-year-label').forEach((label) => {
-      let year = label.dataset.year;
-      let hasVisible = !!document.querySelector(
-        `.thesis-row:not(.thesis-hidden)[data-year="${year}"]`
-      );
-      label.classList.toggle('thesis-hidden', !hasVisible);
-    });
-  }
-
-  document.querySelectorAll('.liu-partner-tag').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      filter(active === btn.dataset.partner ? null : btn.dataset.partner);
-    });
-  });
-})();
-</script>
-```
-
-```{=html}
-<div class="research-section">
-  <h2 class="research-section-heading">Publications</h2>
-  <p class="liu-program-desc">
-    Pushing the boundaries of visualization in the public arena has been in the DNA of the project from its inception. The academic papers listed here have been written about individual features of OpenSpace, descriptions of the software package as a whole, or studies that involved OpenSpace as an engine. Being able to combine novel visualization research with the ability to perform outreach with these techniques is one of the elements that makes OpenSpace so unique.
-  </p>
-```
+## Publications
+Pushing the boundaries of visualization in the public arena has been in the DNA of the project from its inception. The academic papers listed here have been written about individual features of OpenSpace, descriptions of the software package as a whole, or studies that involved OpenSpace as an engine. Being able to combine novel visualization research with the ability to perform outreach with these techniques is one of the elements that makes OpenSpace so unique.
 
 ::: {#papers}
 :::
 
-```{=html}
-</div>
-```
+:::

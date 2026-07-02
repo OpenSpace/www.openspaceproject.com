@@ -15,114 +15,54 @@ hero:
   lede: >
     A collaboration between universities, science museums, and planetariums in the US and
     Sweden, united by a shared mission to make space exploration accessible to everyone.
+
+listing:
+  - id: stewards
+    type: custom
+    template: ../_template/partners.ejs.md
+    contents: ../assets/listing/partners.yml
+    include:
+      type: steward
+  - id: university
+    type: custom
+    template: ../_template/partners.ejs.md
+    contents: ../assets/listing/partners.yml
+    include:
+      type: university
+  - id: isi
+    type: custom
+    template: ../_template/partners.ejs.md
+    contents: ../assets/listing/partners.yml
+    include:
+      type: isi
+  - id: evaluator
+    type: custom
+    template: ../_template/partners.ejs.md
+    contents: ../assets/listing/partners.yml
+    include:
+      type: evaluator
 ---
 
-```{=html}
-<div class="partners-section">
-  <h2 class="partners-section-heading">Stewarding Institutions</h2>
-  <div class="partner-grid">
+::: {.content-section}
 
-    <a class="partner-card" href="https://liu.se/en" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/liu--white.webp" alt="Linköping University">
-      </div>
-      <p class="partner-name">Linköping University</p>
-      <p class="partner-blurb">A world leader in scientific visualization, LiU initiated the OpenSpace project in 2013 and has maintained a long-running series of collaborative internships with NASA GSFC, AMNH, and others.</p>
-    </a>
+## Stewarding Institutions
 
-    <a class="partner-card" href="https://www.amnh.org/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/amnh--white.webp" data-light-src="/assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History">
-      </div>
-      <p class="partner-name">American Museum of Natural History</p>
-      <p class="partner-blurb">One of the world's largest natural history museums, AMNH is a leader in science visualization and has a distinguished record of NASA partnerships that enhance science education for global audiences.</p>
-    </a>
+::: {#stewards}
+:::
 
-  </div>
-</div>
+## University Partners
 
-<div class="partners-section">
-  <h2 class="partners-section-heading">University Partners</h2>
-  <div class="partner-grid">
+::: {#university}
+:::
 
-    <a class="partner-card" href="https://engineering.nyu.edu/research-innovation/centers/visualization-imaging-and-data-analysis-center-vida" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/nyu_tandon--white.png" alt="NYU Tandon School of Engineering">
-      </div>
-      <p class="partner-name">NYU Tandon School of Engineering</p>
-      <p class="partner-blurb">The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of open-source tools and NASA-partnered research to the OpenSpace collaboration.</p>
-    </a>
+## Informal Science Institution Partners
 
-    <a class="partner-card" href="https://www.sci.utah.edu/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/sci--white.webp" alt="SCI Institute">
-      </div>
-      <p class="partner-name">SCI Institute — University of Utah</p>
-      <p class="partner-blurb">An internationally recognized leader in visualization and scientific computing, SCI develops robust open-source software packages deployed broadly across scientific research communities.</p>
-    </a>
+::: {#isi}
+:::
 
-  </div>
-</div>
+## Project Evaluator
 
-<div class="partners-section">
-  <h2 class="partners-section-heading">Informal Science Institution Partners</h2>
-  <div class="partner-grid">
+::: {#evaluator}
+:::
 
-    <a class="partner-card" href="https://www.adlerplanetarium.org/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/adler--white.webp" data-light-src="/assets/images/institutions/adler--black.webp" alt="Adler Planetarium">
-      </div>
-      <p class="partner-name">Adler Planetarium</p>
-      <p class="partner-blurb">The United States' first planetarium, Adler connects people to space science through exhibitions, dome theaters, and citizen science programming from its home in Chicago.</p>
-    </a>
-
-    <a class="partner-card" href="https://www.calacademy.org/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/cas--white.webp" alt="California Academy of Sciences">
-      </div>
-      <p class="partner-name">California Academy of Sciences</p>
-      <p class="partner-blurb">The Academy's Morrison Planetarium showcases cutting-edge scientific data on its 75-foot-diameter screen, making it one of the most technologically advanced planetariums in the world.</p>
-    </a>
-
-    <a class="partner-card" href="https://www.dmns.org/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/dmns--white.webp" data-light-src="/assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science">
-      </div>
-      <p class="partner-name">Denver Museum of Nature & Science</p>
-      <p class="partner-blurb">The Rocky Mountain region's leading resource for informal science education, DMNS helps visitors experience the natural wonders of Colorado, Earth, and the universe.</p>
-    </a>
-
-    <a class="partner-card" href="https://www.hmns.org/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/hmns--white.webp" data-light-src="/assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science">
-      </div>
-      <p class="partner-name">Houston Museum of Natural Science</p>
-      <p class="partner-blurb">Home to the Burke Baker Planetarium, HMNS has fostered wonder for natural science since 1909 through exhibitions and immersive dome experiences that give visitors the feeling of traveling through space.</p>
-    </a>
-
-    <a class="partner-card" href="https://www.naturalsciences.org/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences">
-      </div>
-      <p class="partner-name">North Carolina Museum of Natural Sciences</p>
-      <p class="partner-blurb">The largest natural history museum in the Southeast, NCMNS illuminates nature and inspires its conservation through science education, research, and citizen science programs.</p>
-    </a>
-
-  </div>
-</div>
-
-<div class="partners-section">
-  <h2 class="partners-section-heading">Project Evaluator</h2>
-  <div class="partner-grid" style="max-width: 340px;">
-
-    <a class="partner-card" href="https://www.hgandco.com/" target="_blank" rel="noopener">
-      <div class="partner-logo-area">
-        <img class="partner-logo" src="/assets/images/institutions/hgandco--white.webp" alt="HG&Co">
-      </div>
-      <p class="partner-name">HG&Co</p>
-      <p class="partner-blurb">A visitor-centered planning and research firm working with museums, libraries, and cultural organizations on interpretive planning, needs assessments, and summative evaluations.</p>
-    </a>
-
-  </div>
-</div>
-```
+:::

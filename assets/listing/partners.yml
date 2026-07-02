@@ -1,0 +1,106 @@
+#
+# Partners
+#
+# Fields:
+#   - name: Name of the institution
+#   - type: Classification, must be one of {steward, university, isi, evaluator}
+#   - logo: The path to the intitution logo
+#   - link: A link to the institution's homepage
+#   - description: A short description of the institution
+#
+
+- name: Linköping University
+  type: steward
+  logo: /assets/images/institutions/liu--white.webp
+  link: https://liu.se/en
+  description: >
+    A world leader in scientific visualization, LiU initiated the OpenSpace project in
+    2013 and has maintained a long-running series of collaborative internships with NASA
+    GSFC, AMNH, and others.
+
+- name: American Museum of Natural History
+  type: steward
+  logo: /assets/images/institutions/amnh--white.webp
+  link: https://www.amnh.org/
+  description: >
+    One of the world's largest natural history museums, AMNH is a leader in science
+    visualization and has a distinguished record of NASA partnerships that enhance
+    science education for global audiences.
+
+- name: NYU Tandon School of Engineering
+  type: university
+  logo: /assets/images/institutions/nyu_tandon--white.png
+  link: https://engineering.nyu.edu/research-innovation/centers/visualization-imaging-and-data-analysis-center-vida
+  description: >
+    The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of
+    open-source tools and NASA-partnered research to the OpenSpace collaboration.
+
+- name: SCI Institute — University of Utah
+  type: university
+  logo: /assets/images/institutions/sci--white.webp
+  link: https://www.sci.utah.edu/
+  description: >
+    An internationally recognized leader in visualization and scientific computing, SCI
+    develops robust open-source software packages deployed broadly across scientific
+    research communities.
+
+- name: Adler Planetarium
+  type: isi
+  logo: /assets/images/institutions/adler--white.webp
+  link: https://www.adlerplanetarium.org/
+  description: >
+    The United States' first planetarium, Adler connects people to space science through
+    exhibitions, dome theaters, and citizen science programming from its home in Chicago.
+
+- name: California Academy of Sciences
+  type: isi
+  logo: /assets/images/institutions/cas--white.webp
+  link: https://www.calacademy.org/
+  description: >
+    The Academy's Morrison Planetarium showcases cutting-edge scientific data on its
+    75-foot-diameter screen, making it one of the most technologically advanced
+    planetariums in the world.
+
+- name: Denver Museum of Nature & Science
+  type: isi
+  logo: /assets/images/institutions/dmns--white.webp
+  link: https://www.dmns.org/
+  description: >
+    The Rocky Mountain region's leading resource for informal science education, DMNS
+    helps visitors experience the natural wonders of Colorado, Earth, and the universe.
+
+- name: Houston Museum of Natural Science
+  type: isi
+  logo: /assets/images/institutions/hmns--white.webp
+  link: https://www.hmns.org/
+  description: >
+    Home to the Burke Baker Planetarium, HMNS has fostered wonder for natural science
+    since 1909 through exhibitions and immersive dome experiences that give visitors the
+    feeling of traveling through space.
+
+- name: North Carolina Museum of Natural Sciences
+  type: isi
+  logo: /assets/images/institutions/ncmns--white.webp
+  link: https://www.naturalsciences.org/
+  description: >
+    The largest natural history museum in the Southeast, NCMNS illuminates nature and
+    inspires its conservation through science education, research, and citizen science
+    programs.
+
+- name: Visualization Center C
+  type: isi
+  logo: /assets/images/institutions/visc--white.webp
+  link: https://www.visualiseringscenter.se/en
+  description: >
+    Located in Norrköping, Sweden, Visualization Center C is a world-leading hub for
+    scientific visualization, home to the Wisdome dome theater, and a long-standing
+    collaborator in the OpenSpace project alongside Linköping University.
+
+- name: HG&Co
+  type: evaluator
+  logo: /assets/images/institutions/hgandco--white.webp
+  link: https://www.hgandco.com/
+  description: >
+    A visitor-centered planning and research firm working with museums, libraries, and
+    cultural organizations on interpretive planning, needs assessments, and summative
+    evaluations.

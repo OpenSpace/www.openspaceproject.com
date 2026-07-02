@@ -1666,3 +1666,39 @@
   }
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//   Display Support                                                                    //
+//     features/display-support.qmd                                                     //
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+.page-displaysupport-img {
+  width: 100%;
+  height: clamp(280px, 42vw, 540px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba($color-accent-primary, 0.12);
+  margin-bottom: 2.5rem;
+
+  #fisheye & {
+    width: min(100%, 80vh);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 2.5rem;
+  }
+}
+
+.page-displaysupport-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

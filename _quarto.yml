@@ -29,7 +29,6 @@ format:
 
       - "assets/style/home.scss"
       - "assets/style/impact.scss"
-      - "assets/style/display-support.scss"
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html

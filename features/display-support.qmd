@@ -42,83 +42,87 @@ cta:
 </nav>
 ```
 
+::: {.content-section #dome-theaters}
+
+## Dome theaters
+
+![](/assets/images/venue-cards/hayden_jwst.webp){.page-displaysupport-img fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
+
+::: {.page-displaysupport-body}
+Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.
+
+  - Mesh warping for any dome geometry
+  - Multi-projector soft edge blending and masking
+  - Fisheye, cylindrical, and equirectangular output modes
+  - Compatible with portable inflatable and permanent fixed domes
+  - Live presenter controls for real-time narration
+
+:::
+
+:::
 
 
+::: {.content-section #classrooms-desktops}
 
-```{=html}
-<section class="ds-section" id="dome-theaters">
-  <p class="ds-eyebrow">Planetarium</p>
-  <h2 class="ds-title">Dome theaters</h2>
-  <img src="/assets/images/venue-cards/hayden_jwst.webp"
-        alt="Hayden Planetarium dome running OpenSpace with JWST data"
-        class="ds-img">
-  <div class="ds-body">
-    <p class="ds-desc">Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.</p>
-    <ul class="ds-list">
-      <li>MPCDI mesh warping for any dome geometry</li>
-      <li>Multi-projector soft edge blending and masking</li>
-      <li>Fisheye, cylindrical, and equirectangular output modes</li>
-      <li>Compatible with portable inflatable and permanent fixed domes</li>
-      <li>Live presenter controls for real-time narration</li>
-    </ul>
-  </div>
-</section>
+## Classrooms & desktops
 
-<section class="ds-section ds-section--alt" id="classrooms-desktops">
-  <p class="ds-eyebrow">Classroom</p>
-  <h2 class="ds-title">Classrooms & desktops</h2>
-  <img src="/assets/images/venue-cards/amnh_lwd_students.webp"
-        alt="Students using OpenSpace in a classroom at AMNH"
-        class="ds-img">
-  <div class="ds-body">
-    <p class="ds-desc">OpenSpace runs on Windows and Linux from a standard laptop or workstation.</p>
-    <ul class="ds-list">
-      <li>Windows and Linux — no licensing costs</li>
-      <li>Runs on laptops with gaming graphics cards</li>
-      <li>Single-monitor and multi-screen desktop configurations</li>
-      <li>Projector and interactive whiteboard compatible</li>
-    </ul>
-  </div>
-</section>
+![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-displaysupport-img fig-alt="Students using OpenSpace in a classroom at AMNH"}
 
-<section class="ds-section" id="museum-exhibits">
-  <p class="ds-eyebrow">Museum</p>
-  <h2 class="ds-title">Museum exhibits</h2>
-  <img src="/assets/images/venue-cards/spaceship.webp"
-        alt="OpenSpace running in a museum exhibit"
-        class="ds-img">
-  <div class="ds-body">
-    <p class="ds-desc">Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium</p>
-    <ul class="ds-list">
-      <li>Touch and gesture input for kiosk-style exhibits</li>
-      <li>Custom UI profiles — lock to specific content or flight paths</li>
-      <li>Synchronized multi-display walls and segmented spheres</li>
-      <li>Supports permanent installations and traveling shows</li>
-    </ul>
-  </div>
-</section>
+::: {.page-displaysupport-body}
 
-<section class="ds-section ds-section--alt" id="fisheye">
-  <p class="ds-eyebrow">Rendering</p>
-  <h2 class="ds-title">Fisheye rendering</h2>
-  <video class="ds-img" autoplay loop muted playsinline>
-    <source src="/assets/videos/fisheye.mp4" type="video/mp4">
-  </video>
-  <div class="ds-body">
-    <p class="ds-desc">OpenSpace's fisheye renderer reproduces the full 180&deg; hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.</p>
-    <ul class="ds-list">
-      <li>Native 180&deg; fisheye — no post-process warping</li>
-      <li>Per-eye stereo rendering for 3D dome experiences</li>
-      <li>Supports 4K and 8K output resolutions</li>
-      <li>Equirectangular and cubemap outputs for previews</li>
-      <li>SPOUT output for integration with compositing tools</li>
-    </ul>
-  </div>
-</section>
+OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
-```
+  - Windows and Linux — no licensing costs
+  - Runs on laptops with gaming graphics cards
+  - Single-monitor and multi-screen desktop configurations
+  - Projector and interactive whiteboard compatible
 
-::: {.ds-section .ds-section--alt #technical-capabilities}
+:::
+
+:::
+
+
+::: {.content-section #museum-exhibits}
+
+## Museum exhibits
+
+![](/assets/images/venue-cards/spaceship.webp){.page-displaysupport-img fig-alt="OpenSpace running in a museum exhibit"}
+
+::: {.page-displaysupport-body}
+Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium.
+
+  - Touch and gesture input for kiosk-style exhibits
+  - Custom UI profiles — lock to specific content or flight paths
+  - Synchronized multi-display walls and segmented spheres
+  - Supports permanent installations and traveling shows
+
+:::
+
+:::
+
+
+::: {.content-section #fisheye}
+
+## Fisheye rendering
+
+<video class="page-displaysupport-img" autoplay loop muted playsinline>
+  <source src="/assets/videos/fisheye.mp4" type="video/mp4">
+</video>
+
+::: {.page-displaysupport-body}
+OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.
+
+  - Native 180° fisheye — no post-process warping
+  - Per-eye stereo rendering for 3D dome experiences
+  - Supports 4K and 8K output resolutions
+  - Equirectangular and cubemap outputs for previews
+  - SPOUT output for integration with compositing tools
+:::
+
+:::
+
+
+::: {.ds-section #technical-capabilities}
 
 ## Technical capabilities
 

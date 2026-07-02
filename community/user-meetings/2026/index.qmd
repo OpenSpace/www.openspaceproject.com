@@ -1,5 +1,5 @@
 ---
-pagetitle: "2026 Annual User Meeting — OpenSpace"
+pagetitle: "2026 User Meeting — OpenSpace"
 description-meta: "Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for three days of demos, training, and conversation."
 sidebar: false
 format:
@@ -12,7 +12,7 @@ hero:
   title: "OpenSpace User Meeting"
   breadcrumbs:
     - "Community"
-    - text: "Annual Meetings"
+    - text: "User Meetings"
       link: "/community/user-meetings/"
     - "2026"
   image: "/assets/images/user-meetings/liu_earth.webp"

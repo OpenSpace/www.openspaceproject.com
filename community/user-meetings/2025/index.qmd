@@ -1,6 +1,6 @@
 ---
-pagetitle: "2025 Annual User Meeting — OpenSpace"
-description-meta: "Recap of the 2025 OpenSpace Annual User Meeting at the American Museum of Natural History — sessions, highlights, and community moments."
+pagetitle: "2025 User Meeting — OpenSpace"
+description-meta: "Recap of the 2025 OpenSpace User Meeting at the American Museum of Natural History — sessions, highlights, and community moments."
 sidebar: false
 format:
   html:
@@ -12,7 +12,7 @@ hero:
   title: "OpenSpace User Meeting"
   breadcrumbs:
     - "Community"
-    - text: "Annual Meetings"
+    - text: "User Meetings"
       link: "/community/user-meetings/"
     - "2025"
   lede: "July 31 – August 1, 2025 · American Museum of Natural History, New York"

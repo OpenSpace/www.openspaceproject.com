@@ -1,5 +1,5 @@
 ---
-pagetitle: "Annual User Meeting — OpenSpace"
+pagetitle: "User Meeting — OpenSpace"
 description-meta: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
 format:
   html:
@@ -8,10 +8,10 @@ format:
     anchor-sections: false
 
 hero:
-  title: "Annual User Meeting"
+  title: "User Meeting"
   breadcrumbs:
     - "Community"
-    - "Annual Meetings"
+    - "User Meetings"
   lede: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
 
 cta:
@@ -30,7 +30,7 @@ cta:
 
 ::: {.content-section}
 
-The Annual User Meeting brings together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
+The User Meetings bring together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
 
 :::
 
@@ -48,7 +48,7 @@ The Annual User Meeting brings together planetarium operators, museum staff, edu
         <span class="um-year">2026</span>
       </div>
       <h3 class="um-title">
-        <a href="2026/" class="um-title-link">2026 Annual User Meeting</a>
+        <a href="2026/" class="um-title-link">2026 User Meeting</a>
       </h3>
       <p class="um-location">August 26–28 · Visualization Center C, Norrköping, Sweden</p>
       <p class="um-desc">Join the OpenSpace community in Norrköping for three days of demos, training sessions, hands-on workshops, and conversation about where the project is headed. Registration is free.</p>
@@ -67,7 +67,7 @@ The Annual User Meeting brings together planetarium operators, museum staff, edu
         <span class="um-year">2025</span>
       </div>
       <h3 class="um-title">
-        <a href="2025/" class="um-title-link">2025 Annual User Meeting</a>
+        <a href="2025/" class="um-title-link">2025 User Meeting</a>
       </h3>
       <p class="um-location">July 31 – August 1 · American Museum of Natural History, New York</p>
       <p class="um-desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>

@@ -101,6 +101,19 @@ table {
   }
 }
 
+
+main:has(.page-main-hero) {
+  padding-top: 0 !important;
+}
+
+main:has(.page-main-hero) #title-block-header {
+  display: none !important;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+}
+
 @media (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: block;

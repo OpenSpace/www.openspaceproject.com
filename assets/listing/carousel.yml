@@ -1,0 +1,42 @@
+#
+# Content Carousel for the main page
+#
+# Fields:
+#   - title: The title of the image
+#   - eyebrow: The eyebrow text
+#   - image: The path to the image
+#   - link (optional): A path to the page with more information
+#
+
+- title: Mars surface from HiRISE imagery
+  eyebrow: Globe Browsing
+  image: assets/images/carousel/mars_surface.webp
+  link: features/globe-browsing
+
+- title: Asteroid trajectories near Earth
+  eyebrow: Small Bodies
+  image: assets/images/carousel/asteroids.webp
+
+- title: Sloan Digital Sky Survey galaxy catalog
+  eyebrow: Digital Universe
+  image: assets/images/carousel/sdss.webp
+
+- title: Earth's magnetosphere and field lines
+  eyebrow: Space Weather
+  image: assets/images/carousel/earth_magnetosphere.webp
+  link: features/heliophysics
+
+- title: JWST unfolding animation
+  eyebrow: Mission Visualizations
+  image: assets/images/carousel/jwst.webp
+  link: features/mission-visualizations
+
+- title: Solar magnetic field lines from PFSS model
+  eyebrow: Heliophysics
+  image: assets/images/carousel/pfss.webp
+  link: features/heliophysics
+
+- title: Sea surface temperature from satellite data
+  eyebrow: Globe Browsing
+  image: assets/images/carousel/sea_surface_temperature.webp
+  link: features/globe-browsing

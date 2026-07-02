@@ -7,8 +7,6 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
-    theme:
-      - assets/style/home.scss
 
 cta:
   heading: "Start exploring"
@@ -25,20 +23,26 @@ cta:
     #   style: "primary"
     #   external: true
   lede: "Free. Open source. Cross-platform."
+
+listing:
+  - id: carousel
+    type: custom
+    template: _template/carousel.ejs.md
+    contents: assets/listing/carousel.yml
 ---
 
 ```{=html}
-<section class="hero-section">
-  <div class="hero-video-wrap">
-    <video autoplay muted loop playsinline poster="images/hero-poster.jpg" class="hero-video">
+<section class="page-main-hero">
+  <div class="page-main-hero-video-wrap">
+    <video autoplay muted loop playsinline poster="assets/images/hero-poster.webp">
       <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
       <source src="videos/home-zoomout.webm" type="video/webm">
     </video>
-    <div class="hero-overlay"></div>
+    <div class="page-main-hero-overlay"></div>
   </div>
-  <h1 class="hero-title">Explore a Universe of Data</h1>
-  <div class="hero-content">
-    <p class="hero-lede">Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
+  <h1>Explore a Universe of Data</h1>
+  <div class="page-main-hero-content">
+    <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
     <div class="hero-actions">
       <a href="install/download.qmd" class="btn-primary-os">Download OpenSpace</a>
       <a href="features/globe-browsing.qmd" class="btn-ghost-os">Explore features</a>
@@ -46,193 +50,93 @@ cta:
   </div>
 </section>
 
-<section class="trusted-section">
-  <p class="trusted-label">Built in collaboration with</p>
-  <div class="logo-grid">
-    <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium" class="institution-logo">
-    <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History" class="institution-logo">
-<img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science" class="institution-logo">
-    <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium" class="institution-logo">
-    <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science" class="institution-logo">
-    <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center" class="institution-logo">
-    <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences" class="institution-logo">
-    <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet" class="institution-logo">
-    <img src="assets/images/institutions/universeum.webp" alt="Universeum" class="institution-logo">
-    <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" class="institution-logo">
+<section class="page-main-trusted-section">
+  <p class="page-main-trusted-label">Built in collaboration with</p>
+  <div class="page-main-logo-grid">
+    <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium">
+    <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History">
+    <img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science">
+    <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium">
+    <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science">
+    <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center">
+    <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences">
+    <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet">
+    <img src="assets/images/institutions/universeum.webp" alt="Universeum">
+    <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C">
   </div>
-  <p class="trusted-more"><a href="about/impact.html#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
+  <p class="page-main-trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
 
-<section class="venues-section">
-  <h2 class="section-heading">Built for every venue</h2>
+<section class="page-main-venues-section">
+  <h2>Built for every venue</h2>
   <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
-  <div class="venue-grid">
+  <div class="page-main-venue-grid">
 
-    <a href="features/display-support.html#dome-theaters" class="venue-card">
-      <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running" class="venue-img">
-      <div class="venue-body">
+    <a href="features/display-support.qmd#dome-theaters">
+      <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running">
+      <div>
         <h3>Planetarium domes</h3>
         <p>Drive fixed and portable domes with multi-projector blending, fisheye, and MPCDI support. Built-in tools for warp, edge-blend, and calibration.</p>
-        <span class="venue-link">Learn more →</span>
+        <span>Learn more →</span>
       </div>
     </a>
 
-    <a href="features/display-support.html#classrooms-desktops" class="venue-card">
-      <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom" class="venue-img">
-      <div class="venue-body">
+    <a href="features/display-support.qmd#classrooms-desktops">
+      <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom">
+      <div>
         <h3>Classrooms</h3>
         <p>Bring the solar system, deep space, and live mission data into any classroom. Free, cross-platform, with curated profiles and lesson-ready content.</p>
-        <span class="venue-link">Learn more →</span>
+        <span>Learn more →</span>
       </div>
     </a>
 
-    <a href="features/display-support.html#museum-exhibits" class="venue-card">
-      <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" class="venue-img">
-      <div class="venue-body">
+    <a href="features/display-support.qmd#museum-exhibits">
+      <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit">
+      <div>
         <h3>Museum exhibits</h3>
         <p>Power immersive permanent and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
-        <span class="venue-link">Learn more →</span>
+        <span>Learn more →</span>
       </div>
     </a>
 
   </div>
 </section>
 
+
 <section class="content-carousel-section">
-  <h2 class="section-heading">See what's possible</h2>
+  <h2>See what's possible</h2>
   <p class="section-lede">Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
+```
 
-  <div class="content-carousel" id="contentCarousel">
-    <div class="content-carousel-track" id="carouselTrack">
+::: {#carousel}
+:::
 
-      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/mars_surface.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Globe Browsing</p>
-          <h3 class="content-slide-title">Mars surface from HiRISE imagery</h3>
-        </div>
-      </a>
-
-      <div class="content-slide" style="background-image: url('assets/images/carousel/asteroids.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Small Bodies</p>
-          <h3 class="content-slide-title">Asteroid trajectories near Earth</h3>
-        </div>
-      </div>
-
-      <div class="content-slide" style="background-image: url('assets/images/carousel/sdss.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Digital Universe</p>
-          <h3 class="content-slide-title">Sloan Digital Sky Survey galaxy catalog</h3>
-        </div>
-      </div>
-
-      <a class="content-slide" href="features/heliophysics.html" style="background-image: url('assets/images/carousel/earth_magnetosphere.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Space Weather</p>
-          <h3 class="content-slide-title">Earth's magnetosphere and field lines</h3>
-        </div>
-      </a>
-
-      <a class="content-slide" href="features/mission-visualizations.html" style="background-image: url('assets/images/carousel/jwst.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Mission Visualizations</p>
-          <h3 class="content-slide-title">JWST unfolding animation</h3>
-        </div>
-      </a>
-
-      <a class="content-slide" href="features/heliophysics.html" style="background-image: url('assets/images/carousel/pfss.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Heliophysics</p>
-          <h3 class="content-slide-title">Solar magnetic field lines from PFSS model</h3>
-        </div>
-      </a>
-
-      <a class="content-slide" href="features/globe-browsing.html" style="background-image: url('assets/images/carousel/sea_surface_temperature.webp');">
-        <div class="content-slide-overlay"></div>
-        <div class="content-slide-text">
-          <p class="content-slide-eyebrow">Globe Browsing</p>
-          <h3 class="content-slide-title">Sea surface temperature from satellite data</h3>
-        </div>
-      </a>
-
-
-    </div>
-  </div>
-
-  <div class="carousel-controls">
-    <div class="carousel-dots" id="carouselDots"></div>
-    <div class="carousel-buttons">
-      <button class="carousel-btn" id="carouselPrev" aria-label="Previous slide">&#8249;</button>
-      <button class="carousel-btn" id="carouselNext" aria-label="Next slide">&#8250;</button>
-    </div>
-  </div>
+```{=html}
 </section>
 
-<script>
-(() => {
-  const track = document.getElementById('carouselTrack');
-  const dotsContainer = document.getElementById('carouselDots');
-  const prevBtn = document.getElementById('carouselPrev');
-  const nextBtn = document.getElementById('carouselNext');
-  if (!track) return;
 
-  const slides = track.querySelectorAll('.content-slide');
-  const total = slides.length;
-  let current = 0;
 
-  for (let i = 0; i < total; i++) {
-    const dot = document.createElement('button');
-    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-    dot.addEventListener('click', () => goTo(i));
-    dotsContainer.appendChild(dot);
-  }
-
-  function goTo(index) {
-    current = Math.max(0, Math.min(index, total - 1));
-    const slide = slides[0];
-    const slideWidth = slide.offsetWidth + 14;
-    track.style.transform = `translateX(-${(current * slideWidth)}px)`;
-    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
-      d.classList.toggle('active', i === current);
-    });
-    prevBtn.disabled = current === 0;
-    nextBtn.disabled = current === total - 1;
-  }
-
-  prevBtn.addEventListener('click', () => goTo(current - 1));
-  nextBtn.addEventListener('click', () => goTo(current + 1));
-  goTo(0);
-})();
-</script>
-
-<section class="funders-section">
-  <h2 class="section-heading text-center">Funded by</h2>
+<section class="page-main-funders-section">
+  <h2>Funded by</h2>
   <p class="section-lede text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
 
-  <div class="funder-marquee">
-    <div class="funder-track">
-      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee" class="funder-logo"></a>
-      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
-      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
-      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
-      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
+  <div class="page-main-funder-marquee">
+    <div class="page-main-funder-track">
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen"></a>
 
-      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee" class="funder-logo"></a>
-      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation" class="funder-logo"></a>
-      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre" class="funder-logo"></a>
-      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet" class="funder-logo"></a>
-      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen" class="funder-logo"></a>
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen"></a>
     </div>
   </div>
 
-  <p class="funder-disclaimer">Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.</p>
+  <p class="page-main-funder-disclaimer">Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.</p>
 </section>
 ```
 

@@ -4,3 +4,22 @@
 // This file contains @mixin / @function definitions and the helper tokens they need.
 
 /*-- scss:mixins --*/
+
+// Reusable button base for our custom .btn-*-os classes
+@mixin os-button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: $os-button-radius;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+}
+
+@mixin os-section-padding {
+  padding: $os-section-padding 0;
+}

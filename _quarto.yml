@@ -26,8 +26,6 @@ format:
       - "assets/style/_mixins.scss"
       - "assets/style/_components.scss"
       - "assets/style/_pages.scss"
-
-      - "assets/style/home.scss"
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html

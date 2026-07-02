@@ -27,7 +27,6 @@ format:
       - "assets/style/_components.scss"
       - "assets/style/_pages.scss"
 
-      - "assets/style/annual-meeting.scss"
       - "assets/style/home.scss"
       - "assets/style/impact.scss"
       - "assets/style/display-support.scss"

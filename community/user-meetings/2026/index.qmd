@@ -28,225 +28,113 @@ hero:
   <button class="dot-nav-item" data-target="accommodation" aria-label="Accommodation"></button>
   <button class="dot-nav-item" data-target="register" aria-label="Register"></button>
 </nav>
-
-<section class="venue-section" id="about">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">About</p>
-    <h2 class="venue-title">Join us in Norrköping</h2>
-    <div class="um-detail-body">
-      <p>Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.</p>
-      <p>This is a great opportunity to:</p>
-      <ul>
-        <li>Sharpen your OpenSpace skills</li>
-        <li>Explore the latest software features and updates</li>
-        <li>Connect with educators, planetarium professionals, researchers, and developers in the OpenSpace community</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section venue-section--alt" id="venue">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Venue</p>
-    <h2 class="venue-title">Visualization Center C</h2>
-    <img src="visc.webp"
-          alt="Visualization Center C, Norrköping, Sweden"
-          class="venue-img">
-    <div class="um-detail-body">
-      <p>We're excited to welcome you to the <a href="https://visualiseringscenter.se/en/" target="_blank" rel="noopener">Visualization Center C</a> in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.</p>
-      <p>Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.</p>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section" id="schedule">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Program</p>
-    <h2 class="venue-title">Agenda</h2>
-    <p class="um-schedule-note">Schedule is subject to change.</p>
-
-    <h3 class="um-day-heading">Wednesday, August 26</h3>
-    <div class="um-schedule-wrap">
-      <table class="um-schedule-table">
-        <thead>
-          <tr><th>Time</th><th>Track 1</th><th>Track 2</th><th>Track 3</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="um-sched-time">09:30 – 10:00</td>
-            <td colspan="3">Welcome and Kickoff — Community, Updates & What's Ahead</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">10:00 – 10:30</td>
-            <td colspan="3">Introductions</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">10:30 – 12:30</td>
-            <td>OpenSpace 101 Workshop: Getting Started</td>
-            <td>Coding and Scripting</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">12:30 – 14:00</td>
-            <td class="um-sched-break" colspan="3">Lunch on your own</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">14:00 – 15:00</td>
-            <td>OpenSpace 201 Workshop: Included Profiles</td>
-            <td>Maps and Georeferenced Data</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">15:00 – 16:00</td>
-            <td class="um-sched-break">Coffee Break</td>
-            <td class="um-sched-empty">—</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">16:00 – 18:00</td>
-            <td>OpenSpace 202 Workshop: Included Profiles</td>
-            <td>3D Models and Trajectories</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">18:00 – 19:00</td>
-            <td colspan="3">Once Upon the Moon — Dome movie</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time"></td>
-            <td class="um-sched-break" colspan="3">Dinner on your own</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="um-day-heading">Thursday, August 27</h3>
-    <div class="um-schedule-wrap">
-      <table class="um-schedule-table">
-        <thead>
-          <tr><th>Time</th><th>Track 1</th><th>Track 2</th><th>Track 3</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="um-sched-time">09:30 – 11:30</td>
-            <td>ShowComposer</td>
-            <td>AssetBuilder</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">11:30 – 12:30</td>
-            <td>The Night's Sky</td>
-            <td>OpenSpace on Multichannel Systems</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">12:30 – 14:00</td>
-            <td class="um-sched-break" colspan="3">Lunch on your own</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">14:00 – 15:00</td>
-            <td>OpenSpace 301 Workshop: Create custom Profiles</td>
-            <td>Setting up OpenSpace in Display Environments</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">15:00 – 16:00</td>
-            <td class="um-sched-break">Coffee Break</td>
-            <td class="um-sched-empty">—</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">16:00 – 17:00</td>
-            <td>Creating pre-rendered movies from OpenSpace</td>
-            <td class="um-sched-empty">—</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">17:00 – 19:00</td>
-            <td>Dome Show and Tell, Presentation Tips & Tricks</td>
-            <td class="um-sched-empty">—</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time"></td>
-            <td class="um-sched-break" colspan="3">Dinner on your own</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="um-day-heading">Friday, August 28</h3>
-    <div class="um-schedule-wrap">
-      <table class="um-schedule-table">
-        <thead>
-          <tr><th>Time</th><th>Track 1</th><th>Track 2</th><th>Track 3</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="um-sched-time">09:30 – 11:00</td>
-            <td>Giving Presentations in OpenSpace, a case study</td>
-            <td>C-Play</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">11:00 – 12:00</td>
-            <td>OpenSpace: Quo vadis?</td>
-            <td class="um-sched-empty">—</td>
-            <td>Developer Helpdesk / Jam Session</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time">12:00 – 12:30</td>
-            <td colspan="3">Farewell and Thank you</td>
-          </tr>
-          <tr>
-            <td class="um-sched-time"></td>
-            <td class="um-sched-break" colspan="3">End of the official program</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-  </div>
-</section>
-
-<section class="venue-section venue-section--alt" id="getting-here">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Getting here</p>
-    <h2 class="venue-title">Travel & airports</h2>
-    <div class="um-detail-body">
-      <p>Norrköping is easy to reach internationally. Recommended routes:</p>
-      <ul>
-        <li><strong>Stockholm Arlanda (ARN)</strong> — major international hub, roughly 90 minutes to Norrköping by train</li>
-        <li><strong>Linköping City Airport (LPI)</strong> — direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section" id="accommodation">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Accommodation</p>
-    <h2 class="venue-title">Where to stay</h2>
-    <div class="um-detail-body">
-      <p>Hotels in the city are around $100 per night. A few options near the venue:</p>
-      <ul>
-        <li><a href="https://ligula.se/en/profilhotels/profilhotels-president/" target="_blank" rel="noopener">Hotel President</a></li>
-        <li><a href="https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/" target="_blank" rel="noopener">Elite Grand Hôtel</a></li>
-        <li><a href="https://www.strawberry.se/hotell/sverige/norrkoping/comfort-hotel-norrkoping" target="_blank" rel="noopener">Hotel Comfort</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section venue-section--alt" id="register">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Registration</p>
-    <h2 class="venue-title">Register for free</h2>
-    <div class="um-detail-body">
-      <p>Registration is <strong>free</strong>. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.</p>
-      <p>Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> with any questions about the meeting.</p>
-      <a class="btn-primary-os" href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register now</a>
-    </div>
-  </div>
-</section>
 ```
+
+::: {.content-section #about}
+
+## Join us in Norrköping
+
+Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.
+
+This is a great opportunity to:
+
+  - Sharpen your OpenSpace skills
+  - Explore the latest software features and updates
+  - Connect with educators, planetarium professionals, researchers, and developers in the OpenSpace community
+
+:::
+
+::: {.content-section #venue}
+
+## Visualization Center C
+
+![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
+
+We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.
+
+Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.
+
+
+:::
+
+::: {.content-section #schedule}
+
+## Agenda
+
+Schedule is subject to change.
+
+### Wednesday, August 26
+
+| Time                     | Track 1                                                  | Track 2                     | Track 3                            |
+| ------------------------ | -------------------------------------------------------- | --------------------------- | ---------------------------------- |
+| 09:30 – 10:00<br>(30m)   | Welcome and Kickoff<br>Community, Updates & What's Ahead | ---                         | ---                                |
+| 10:00 – 10:30<br>(30m)   | Introductions                                            | ---                         | ---                                |
+| 10:30 – 12:30<br>(2h)    | OpenSpace 101 Workshop: Getting Started                  | Coding and Scripting        | Developer Helpdesk/<br>Jam Session |
+| 12:30 – 14:00<br>(1h30m) | Lunch on your own                                        | ---                         | ---                                |
+| 14:00 – 15:00<br>(1h)    | OpenSpace 201 Workshop: Included Profiles                | Maps and Georeferenced Data | Developer Helpdesk/<br>Jam Session |
+| 15:00 – 16:00<br>(1h)    | Coffee Break                                             | ---                         | Developer Helpdesk/<br>Jam Session |
+| 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
+| 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie                         | ---                         | ---                                |
+|                          | Dinner on your own                                       |                             |                                    |
+
+### Thursday, August 27
+
+
+| Time                     | Track 1                                        | Track 2                                      | Track 3                            |
+| ------------------------ | ---------------------------------------------- | -------------------------------------------- | ---------------------------------- |
+| 09:30 – 11:30<br>(1h30m) | ShowComposer                                   | AssetBuilder                                 | Developer Helpdesk/<br>Jam Session |
+| 11:30 – 12:30<br>(1h)    | The Night's Sky                                | OpenSpace on Multichannel Systems            | Developer Helpdesk/<br>Jam Session |
+| 12:30 – 14:00<br>(1h30m) | Lunch on your own                              | ---                                          | ---                                |
+| 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Setting up OpenSpace in Display Environments | Developer Helpdesk/<br>Jam Session |
+| 15:00 – 16:00<br>(1h)    | Coffee Break                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
+| 16:00 – 17:00<br>(1h)    | Creating pre-rendered movies from OpenSpace    | ---                                          | Developer Helpdesk/<br>Jam Session |
+| 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks | ---                                          | Developer Helpdesk/<br>Jam Session |
+|                          | Dinner on your own                             |                                              |                                    |
+
+### Friday, August 28
+
+| Time                     | Track 1                                         | Track 2 | Track 3                            |
+| ------------------------ | ----------------------------------------------- | ------- | ---------------------------------- |
+| 09:30 – 11:00<br>(1h30m) | Giving Presentations in OpenSpace, a case study | C-Play  | Developer Helpdesk/<br>Jam Session |
+| 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | Developer Helpdesk/<br>Jam Session |
+| 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |
+|                          | End of the official program                     |         |                                    |
+
+
+:::
+
+::: {.content-section #getting-here}
+
+## Travel & airports
+
+Norrköping is easy to reach internationally. Recommended routes:
+
+  - **Stockholm Arlanda (ARN)** — major international hub, roughly 90 minutes to Norrköping by train
+  - **Linköping City Airport (LPI)** — direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs
+
+:::
+
+::: {.content-section #accommodation}
+
+## Where to stay
+
+Hotels in the city are around $100 per night. A few options near the venue:
+
+  - [Hotel President](https://ligula.se/en/profilhotels/profilhotels-president/)
+  - [Elite Grand Hôtel](https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/)
+  - [Hotel Comfort](https://www.strawberry.se/hotell/sverige/norrkoping/comfort-hotel-norrkoping)
+
+:::
+
+
+::: {.content-section #register}
+
+## Register for free
+
+Registration is **free**. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.
+
+Contact [Alexander Bock](mailto:alexander.bock@liu.se) or [Support](mailto:support@openspaceproject.com) with any questions about the meeting.
+
+[Register now](https://visualiseringscenter.se/registration-openspace-user-meeting/){.btn-primary-os}
+
+:::

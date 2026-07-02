@@ -25,58 +25,49 @@ hero:
   <button class="dot-nav-item" data-target="recordings" aria-label="Recordings"></button>
   <button class="dot-nav-item" data-target="community" aria-label="Community"></button>
 </nav>
-
-<section class="venue-section" id="recap">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Recap</p>
-    <h2 class="venue-title">A look back</h2>
-    <img src="hayden.webp"
-          alt="Hayden Planetarium, American Museum of Natural History, New York"
-          class="venue-img">
-    <div class="um-detail-body">
-      <p>Held at the American Museum of Natural History in New York, the 2025 meeting was the first in-person OpenSpace user gathering. Planetarium directors, museum educators, university researchers, and the OpenSpace development team came together for two days of workshops, presentations, and hands-on sessions — with evening events in the Hayden Planetarium and Invisible Worlds Theater.</p>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section venue-section--alt" id="sessions">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Program</p>
-    <h2 class="venue-title">Sessions</h2>
-    <div class="um-detail-body">
-      <p>The two-day program covered something for every level — from first-time users to advanced developers. Sessions ran in parallel tracks across the Davis Classrooms and Hayden Planetarium.</p>
-      <ul>
-        <li>Kickoff: Community, updates & what's ahead — Alex Bock & Megan Villa</li>
-        <li>OpenSpace 101 & custom profiles workshops — Micah Acinapura</li>
-        <li>Lua scripting & content import workshops — Alex Bock</li>
-        <li>ShowComposer, rendered video & configuration files</li>
-        <li>Multi-channel domes: CPlay and CTroll — Christian Ready, Dylan Salas</li>
-        <li>Portable planetariums — Sarah Treadwell, Josh Roberts</li>
-        <li>Lightning presentations from Carter Emmart, Jackie Faherty, Brian Abbott, KaChun Yu, and more</li>
-        <li>Evening: planetarium shows in the Hayden and Invisible Worlds theaters</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section" id="recordings">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Watch</p>
-    <h2 class="venue-title">Session recordings</h2>
-    <div class="um-detail-body">
-      <p>Recordings from the 2025 sessions are available on YouTube. The full playlist includes workshops, lightning talks, and presentations from both days of the meeting.</p>
-      <a class="btn-primary-os" href="https://www.youtube.com/playlist?list=PLzXWit_1TXstdi_g92k8YIPGaEVG13iJ2" target="_blank" rel="noopener">Watch on YouTube</a>
-    </div>
-  </div>
-</section>
-
-<section class="venue-section venue-section--alt" id="community">
-  <div class="venue-inner">
-    <p class="venue-eyebrow">Community</p>
-    <h2 class="venue-title">Community moments</h2>
-    <div class="um-detail-body">
-      <p>Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward — in the AMNH planetarium, over coffee, and during informal evening meetups. New collaborations between institutions started here, and several feature requests in the current roadmap trace directly to discussions during the meeting.</p>
-    </div>
-  </div>
-</section>
 ```
+
+::: {.content-section #recap}
+
+## A look back
+
+![](hayden.webp){fig-alt="Hayden Planetarium, American Museum of Natural History, New York"}
+
+Held at the American Museum of Natural History in New York, the 2025 meeting was the first in-person OpenSpace user gathering. Planetarium directors, museum educators, university researchers, and the OpenSpace development team came together for two days of workshops, presentations, and hands-on sessions — with evening events in the Hayden Planetarium and Invisible Worlds Theater.
+
+:::
+
+::: {.content-section #sessions}
+
+## Sessions
+
+The two-day program covered something for every level — from first-time users to advanced developers. Sessions ran in parallel tracks across the Davis Classrooms and Hayden Planetarium.
+
+  - Kickoff: Community, updates & what's ahead — Alex Bock & Megan Villa
+  - OpenSpace 101 & custom profiles workshops — Micah Acinapura
+  - Lua scripting & content import workshops — Alex Bock
+  - ShowComposer, rendered video & configuration files
+  - Multi-channel domes: C-Play and C-Troll — Christian Ready, Dylan Salas
+  - Portable planetariums — Sarah Treadwell, Josh Roberts
+  - Lightning presentations from Carter Emmart, Jackie Faherty, Brian Abbott, KaChun Yu, and more
+  - Evening: planetarium shows in the Hayden and Invisible Worlds theaters
+
+:::
+
+::: {.content-section #recordings}
+
+## Session recordings
+
+Recordings from the 2025 sessions are available on YouTube. The full playlist includes workshops, lightning talks, and presentations from both days of the meeting.
+
+[Watch on YouTube](https://www.youtube.com/playlist?list=PLzXWit_1TXstdi_g92k8YIPGaEVG13iJ2){.btn-primary-os}
+
+:::
+
+::: {.content-section #community}
+
+## Community moments
+
+Beyond the formal program, the meeting offered space for the kind of side conversations that move projects forward — in the AMNH planetarium, over coffee, and during informal evening meetups. New collaborations between institutions started here, and several feature requests in the current roadmap trace directly to discussions during the meeting.
+
+:::

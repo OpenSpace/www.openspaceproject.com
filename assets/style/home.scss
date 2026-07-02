@@ -335,6 +335,11 @@
     height: 220px;
     object-fit: cover;
     display: block;
+
+    object-position: center;
+    border-radius: 12px;
+    border: 1px solid rgba($color-accent-primary, 0.12);
+    margin-bottom: 2.5rem;
   }
 
   .venue-body {
@@ -342,6 +347,14 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+
+    gap: 4rem;
+    align-items: start;
+
+    @media (max-width: 760px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
 
     h3 {
       font-size: 1.25rem;

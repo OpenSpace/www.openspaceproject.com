@@ -27,12 +27,7 @@ format:
       - "assets/style/_components.scss"
       - "assets/style/_pages.scss"
 
-      - "assets/style/hero.scss"
-      - "assets/style/cta.scss"
-
-      - "assets/style/navbar.scss"
       - "assets/style/annual-meeting.scss"
-      - "assets/style/content-carousel.scss"
       - "assets/style/home.scss"
       - "assets/style/about.scss"
       - "assets/style/impact.scss"

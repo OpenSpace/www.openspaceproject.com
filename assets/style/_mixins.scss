@@ -64,3 +64,56 @@
   letter-spacing: -0.01em;
   color: $color-text-highlight;
 }
+// Compact bordered "pill" link that lifts on hover and shifts its border/text
+// toward the accent color. Pass $bg/$border to vary the fill.
+@mixin pill-link(
+  $bg: $color-surface-primary,
+  $border: rgba($color-accent-primary, 0.2)
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid $border;
+  border-radius: $layout-border-radius-small;
+  background: $bg;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $color-text-highlight;
+  text-decoration: none;
+  transition:
+    transform $animation-duration-fast ease,
+    border-color $animation-duration-base ease,
+    color $animation-duration-base ease,
+    background $animation-duration-base ease;
+
+  &:hover {
+    border-color: rgba($color-accent-primary, 0.55);
+    color: $color-accent-primary;
+  }
+}
+
+// Text input styling shared by form fields (contact form, 404 search box).
+// Set border-radius and sizing at the call site.
+@mixin text-input {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba($color-accent-primary, 0.15);
+  color: $color-text-highlight;
+  font-size: 0.9rem;
+  font-family: inherit;
+  padding: 0.6rem 0.9rem;
+  outline: none;
+  transition:
+    border-color $animation-duration-fast,
+    background $animation-duration-fast;
+
+  &::placeholder {
+    color: rgba($color-text, 0.3);
+  }
+
+  &:focus {
+    border-color: rgba($color-accent-primary, 0.4);
+    background: rgba(255, 255, 255, 0.07);
+  }
+}

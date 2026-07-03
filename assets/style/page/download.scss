@@ -226,29 +226,21 @@
   }
 
   a {
-    @include card-hover-lift;
+    @include pill-link(
+      $bg: rgba(255, 255, 255, 0.06),
+      $border: rgba(255, 255, 255, 0.12)
+    );
 
-    display: block;
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
     padding: 0.65rem 1.25rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: $layout-border-radius-small;
-    background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    font-size: 0.875rem;
     font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: $color-text-highlight;
-    transition: background $animation-duration-fast ease;
 
     &:hover {
-      border-color: rgba($color-accent-primary, 0.45);
       background: rgba(255, 255, 255, 0.11);
-      color: $color-accent-primary;
     }
 
     &.is-text {

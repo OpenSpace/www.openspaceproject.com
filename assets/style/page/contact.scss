@@ -3,13 +3,13 @@
 .page-contact-body {
   max-width: 860px;
   margin: 4rem auto;
-  padding: 0 clamp(1.5rem, 5vw, 2rem);
+  padding: $layout-section-padding-wide;
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 4rem;
   align-items: start;
 
-  @media (max-width: 700px) {
+  @media (max-width: $bp-md) {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     margin: 2.5rem auto;
@@ -79,7 +79,7 @@
 
   .page-contact-form-error {
     font-size: 0.78rem;
-    color: #f87171;
+    color: $color-attention-alert;
     margin: 0.5rem 0 0;
   }
 }

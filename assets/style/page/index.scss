@@ -70,7 +70,7 @@
   }
 
   h1 {
-    font-size: clamp($os-section-title-min, 3vw, $os-section-title-max);
+    font-size: clamp($layout-section-title-min, 3vw, $layout-section-title-max);
     font-weight: 600;
     line-height: 1.1;
     margin: 0;
@@ -90,7 +90,7 @@
     flex-wrap: wrap;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $bp-md) {
     height: 75vh;
     min-height: 500px;
   }
@@ -157,7 +157,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $bp-md) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -166,8 +166,7 @@
 .page-main-venues-section {
   background: $color-bg;
 
-  // Section heading/lede stay centered
-  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
+  padding: $layout-section-padding-wide;
 
   // Venue grid breaks out of container to full width
   .page-main-venue-grid {
@@ -175,7 +174,7 @@
   }
 
   h2 {
-    font-size: clamp($os-section-title-min, 3vw, $os-section-title-max);
+    font-size: clamp($layout-section-title-min, 3vw, $layout-section-title-max);
     font-weight: 600;
     margin: 0 0 0.75rem;
     letter-spacing: -0.01em;
@@ -191,12 +190,14 @@
     box-sizing: border-box;
 
     & > a {
+      @include card-hover-lift;
+
       background: $color-surface;
       border: 1px solid rgba($color-accent-primary, 0.12);
-      border-radius: $os-card-radius;
+      border-radius: $layout-card-radius;
       overflow: hidden;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
       display: flex;
       flex-direction: column;
       text-decoration: none;
@@ -204,7 +205,6 @@
       position: relative;
 
       &:hover {
-        transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         border-color: rgba($color-accent-primary, 0.3);
         text-decoration: none;
@@ -232,7 +232,7 @@
         gap: 4rem;
         align-items: start;
 
-        @media (max-width: 760px) {
+        @media (max-width: $bp-md) {
           grid-template-columns: 1fr;
           gap: 2rem;
         }
@@ -259,21 +259,22 @@
       }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: $bp-lg) {
       grid-template-columns: 1fr;
       max-width: 480px;
       margin: 0 auto;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $bp-md) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 .page-main-funders-section {
-  @include os-section-padding;
+  padding: $layout-section-padding-wide;
+
   background: $color-bg;
 
   overflow: hidden;
@@ -282,7 +283,7 @@
   padding-left: clamp(1.5rem, 8vw, 12rem);
 
   h2 {
-    font-size: clamp($os-section-title-min, 3vw, $os-section-title-max);
+    font-size: clamp($layout-section-title-min, 3vw, $layout-section-title-max);
     font-weight: 600;
     margin: 0 0 0.75rem;
     letter-spacing: -0.01em;
@@ -295,7 +296,7 @@
       position: absolute;
       bottom: 0;
       left: clamp(1.5rem, 8vw, 12rem);
-      width: calc(#{$os-container-max} - 2 * clamp(1.5rem, 8vw, 12rem));
+      width: calc(#{$layout-container-max} - 2 * clamp(1.5rem, 8vw, 12rem));
       height: 1px;
       background: rgba($color-accent-primary, 0.15);
     }
@@ -339,7 +340,7 @@
       width: max-content;
       align-items: center;
       padding: 0.5rem 2rem;
-      animation: page-main-scroll-funders $os-marquee-duration linear infinite;
+      animation: page-main-scroll-funders $animation-marquee-duration linear infinite;
 
       @keyframes page-main-scroll-funders {
         from { transform: translateX(0); }
@@ -363,14 +364,14 @@
         opacity: 0.7;
         flex-shrink: 0;
 
-        @media (max-width: 768px) {
+        @media (max-width: $bp-md) {
           max-height: 48px;
           max-width: 140px;
         }
       }
 
-      @media (max-width: 768px) {
-        animation-duration: $os-marquee-mobile-duration;
+      @media (max-width: $bp-md) {
+        animation-duration: $animation-marquee-duration--mobile;
         gap: 5rem;
       }
     }
@@ -386,7 +387,7 @@
     text-align: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $bp-md) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }

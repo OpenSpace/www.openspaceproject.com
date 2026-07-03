@@ -12,7 +12,7 @@
 //
 
 .cta-section {
-  padding: 4rem clamp(1.5rem, 3vw, 3rem) 5rem;
+  padding: $layout-section-padding-wide;
   background: $color-bg;
   position: relative;
   overflow: hidden;
@@ -26,7 +26,7 @@
     width: 200px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(to top right, #d9da6d, #3dbdee);
+    background: linear-gradient(to top right, $color-accent-secondary, $color-accent-primary);
     opacity: 0.22;
     filter: blur(60px);
     pointer-events: none;
@@ -50,23 +50,15 @@
   max-width: 680px;
   margin: 0 auto;
 
-  &::before { display: none; }
-
-  .section-heading {
-    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
-    white-space: nowrap;
-
-    @media (max-width: 600px) {
-      white-space: normal;
-      font-size: 1.25rem;
-    }
+  &::before {
+    display: none;
   }
 
   .hero-actions {
     justify-content: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $bp-md) {
     padding: 2.5rem 1.5rem;
   }
 }

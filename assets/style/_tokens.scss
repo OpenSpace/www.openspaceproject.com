@@ -14,16 +14,17 @@
 // further below
 //
 
-// Brand elements                   // From Visual Identity document
-$os-deep-space: #0a0a0a;          // #0b1b1d
-$os-prime-blue: #3dbdee;          // #a3e7fc
-$os-flare-yellow: #d0f884;        // #e8fcc2
+// Brand elements
+$os-deep-space: #0a0a0a;
+$os-prime-blue: #3dbdee;
+$os-flare-yellow: #d0f884;
 $os-soft-yellow: #e8fbc2;
 $os-satellite-gray: #b8c8ca;
 $os-terra-green: #d0f4ea;
-$os-base-white: #ecf5fb;          // #edf5fc
-$os-attention-red: #de4e4e;
-$os-attention-yellow: #e07c56;
+$os-base-white: #ecf5fb;
+$os-attention-alert: #de4e4e;
+$os-attention-warning: #e07c56;
+$os-attention-okay: #5cdd8b;
 $os-surface-highlight: #0d1014;
 
 $os-font-headings: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
@@ -33,8 +34,7 @@ $os-font-monospace: 'IBM Plex Mono', monospace;
 
 
 //
-// This block defines the role-based colors. These should be used elsewhere in other style
-// sheets
+// Colors
 //
 $color-text: $os-satellite-gray;
 $color-text-highlight: $os-base-white;
@@ -49,34 +49,40 @@ $color-accent-primary: $os-prime-blue;
 $color-accent-secondary: $os-flare-yellow;
 $color-accent-soft: $os-soft-yellow;
 
+$color-attention-alert: $os-attention-alert;
+$color-attention-warning: $os-attention-warning;
+$color-attention-okay: $os-attention-okay;
+
+//
+// Fonts
+//
 $font-headings: $os-font-headings;
 $font-body: $os-font-body;
 $font-monospace: $os-font-monospace;
 
-
-
 //
-// Typography parameters
-//
-$section-inset: clamp(1.5rem, 8vw, 12rem);
-$section-pad-top: 4.5rem;
-$section-pad-bottom: 3rem;
-
-
-
-
-// Typography scale
-$os-hero-title-min: 2.5rem;
-$os-hero-title-max: 4.5rem;
-$os-section-title-min: 1.75rem;
-$os-section-title-max: 2.5rem;
-
 // Layout
-$os-container-max: 1200px;
-$os-section-padding: 5rem;
-$os-card-radius: 12px;
-$os-button-radius: 6px;
+//
+$layout-section-padding-wide: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
+$layout-section-padding-narrow: 4.5rem clamp(2.5rem, 8vw, 12rem) 3rem;
 
-// Marquee
-$os-marquee-duration: 30s;
-$os-marquee-mobile-duration: 22s;
+$layout-section-title-min: 1.75rem;
+$layout-section-title-max: 2.5rem;
+
+$layout-container-max: 1200px;
+$layout-card-radius: 12px;
+$layout-button-radius: 6px;
+
+//
+// Breakpoints
+//
+$bp-tn: 400px;
+$bp-sm: 600px;
+$bp-md: 768px;
+$bp-lg: 992px;
+
+//
+// Animations
+//
+$animation-marquee-duration: 30s;
+$animation-marquee-duration--mobile: 22s;

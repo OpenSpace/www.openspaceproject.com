@@ -15,39 +15,24 @@
 //
 
 .content-carousel-section {
-  padding: 5rem clamp(1.5rem, 8vw, 12rem) 6rem;
+  padding: $layout-section-padding-wide;
   background: $color-bg;
 
   h2 {
-    font-size: clamp($os-section-title-min, 3vw, $os-section-title-max);
+    font-size: clamp($layout-section-title-min, 3vw, $layout-section-title-max);
     font-weight: 600;
     margin: 0 0 0.75rem;
     letter-spacing: -0.01em;
     color: $color-text-highlight;
   }
-}
 
-.content-carousel-section .os-container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 8vw, 12rem);
-}
-
-.content-carousel-section .section-heading {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  font-weight: 600;
-  margin: 0 0 0.5rem;
-  letter-spacing: -0.01em;
-  color: $color-text-highlight;
-  padding-left: 0;
-}
-
-.content-carousel-section .section-lede {
-  font-size: 1.125rem;
-  color: $color-text;
-  margin: 0 0 2.5rem;
-  line-height: 1.6;
-  padding-left: 0;
+  .section-lede {
+    font-size: 1.125rem;
+    color: $color-text;
+    margin: 0 0 2.5rem;
+    line-height: 1.6;
+    padding-left: 0;
+  }
 }
 
 .content-carousel {
@@ -76,12 +61,14 @@
   background-position: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 
-  @media (max-width: 640px) {
-    flex-basis: 90%; height: 320px;
+  @media (max-width: $bp-sm) {
+    flex-basis: 90%;
+    height: 320px;
   }
 
-  @media (max-width: 992px) {
-    flex-basis: 80%; height: 360px;
+  @media (max-width: $bp-lg) {
+    flex-basis: 80%;
+    height: 360px;
   }
 }
 
@@ -133,7 +120,7 @@ a.content-slide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.75rem clamp(1.5rem, 8vw, 12rem) 0;
+  padding: $layout-section-padding-wide;
   max-width: 100%;
   margin: 0;
 }

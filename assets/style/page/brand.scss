@@ -16,14 +16,14 @@
 
 .page-brand-logo-grid {
   background: $color-surface;
-  padding: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
+  padding: $layout-section-padding-wide;
   border-top: 1px solid rgba($color-accent-primary, 0.08);
   border-bottom: 1px solid rgba($color-accent-primary, 0.08);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 
-  @media (max-width: 680px) {
+  @media (max-width: $bp-sm) {
     grid-template-columns: 1fr;
   }
 
@@ -94,7 +94,7 @@
     }
 
     &--dark  {
-      background: #0a0a0a;
+      background: $color-bg;
     }
 
     &--light {

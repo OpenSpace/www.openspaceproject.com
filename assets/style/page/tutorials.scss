@@ -1,28 +1,27 @@
 /*-- scss:rules --*/
 
 .page-tutorial-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  @include card-grid(3);
 
-  @media (max-width: 960px) {
+  @media (max-width: $bp-lg) {
     grid-template-columns: 1fr;
     max-width: 640px;
     margin: 0 auto;
   }
 
   .page-tutorial-card {
+    @include card-hover-lift;
+
     background: $color-surface;
     border: 1px solid rgba($color-accent-primary, 0.15);
     border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: border-color 0.22s ease, transform 0.22s ease;
+    transition: border-color 0.22s ease;
 
     &:hover {
       border-color: rgba($color-accent-primary, 0.4);
-      transform: translateY(-3px);
     }
 
     iframe {
@@ -40,11 +39,9 @@
       flex-direction: column;
 
       & > h4 {
-        font-size: 0.65rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
+        @include eyebrow-label(0.65rem);
+
         color: $color-accent-primary;
-        font-family: $font-monospace;
         margin: 0 0 0.4rem;
       }
 

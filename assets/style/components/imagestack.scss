@@ -67,7 +67,7 @@
     }
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: $bp-md) {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
@@ -92,7 +92,7 @@
     pointer-events: none;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: $bp-sm) {
     height: 240px;
   }
 
@@ -180,11 +180,9 @@
   }
 
   .image-stack__hint {
-    font-size: 0.68rem;
-    font-family: $font-monospace;
+    @include eyebrow-label(0.68rem);
+
     color: rgba($color-text, 0.38);
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
   }
 }
 

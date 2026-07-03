@@ -1,17 +1,7 @@
 /*-- scss:rules --*/
 
 .page-usecases-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-
-  @media (max-width: 560px) {
-    grid-template-columns: 1fr;
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  @include card-grid(3);
 }
 
 .page-usecases-card {
@@ -33,7 +23,7 @@
       rgba(#000000, 0.92) 100%
     );
     border: 1px solid rgba($color-accent-primary, 0.35);
-    border-radius: $os-card-radius;
+    border-radius: $layout-card-radius;
   }
 
   &:focus-visible {
@@ -125,7 +115,7 @@
     transform: translateY(0);
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: $bp-sm) {
     grid-template-columns: 1fr;
     grid-template-rows: 220px 1fr;
     max-height: 88vh;
@@ -146,16 +136,14 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 680px) {
+  @media (max-width: $bp-sm) {
     padding: 1.5rem 1.25rem 1.5rem;
   }
 
   .page-usecases-modal-meta {
-    font-size: 0.7rem;
-    font-family: $font-monospace;
-    letter-spacing: 0.1em;
+    @include eyebrow-label(0.7rem);
+
     color: $color-accent-primary;
-    text-transform: uppercase;
     margin: 0 0 0.75rem;
     line-height: 1.5;
   }

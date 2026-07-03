@@ -68,6 +68,8 @@
   gap: 0.65rem;
 
   a {
+    @include card-hover-lift;
+
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
@@ -79,12 +81,11 @@
     font-weight: 500;
     color: $color-text-highlight;
     text-decoration: none;
-    transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+    transition: border-color 0.18s ease, color 0.18s ease;
 
     &:hover {
       border-color: rgba($color-accent-primary, 0.55);
       color: $color-accent-primary;
-      transform: translateY(-2px);
     }
   }
 }

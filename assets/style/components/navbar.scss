@@ -5,7 +5,7 @@
 //
 // Overrides Quarto's Bootstrap navbar to lay out as a proper horizontal flex row on
 // desktop, where the brand sits left and the nav links sit right. On mobile the standard
-// Bootstrap collapse/hamburger behaviour is preserved. Dropdowns use a frosted-glass card
+// Bootstrap collapse/hamburger behavior is preserved. Dropdowns use a frosted-glass card
 // style and switch to a two-column grid when they contain five or more items.
 // `.nav-rich` / `.nav-rich-icon` / `.nav-rich-desc` compose the rich link items inside
 // those dropdowns. `.nav-cta` styles the Download button as an outlined pill that fills
@@ -32,7 +32,7 @@
   font-size: 0.82rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bp-lg) {
   // Force the outer navbar container to be a horizontal flex row
   .navbar > .navbar-container,
   .navbar .navbar-container {
@@ -120,11 +120,11 @@
   min-width: 320px;
   padding: 0.5rem;
   border-radius: 16px;
-  border: 1px solid rgba(162, 231, 251, 0.12);
+  border: 1px solid rgba($color-accent-primary, 0.12);
   box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.2),
     0 16px 40px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(162, 231, 251, 0.04) inset;
+    0 0 0 1px rgba($color-accent-primary, 0.04) inset;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -154,7 +154,7 @@
     text-decoration: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: $bp-lg) {
   .navbar .navbar-container {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
@@ -168,7 +168,7 @@
     border: 0 !important;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: $bp-lg) {
   .navbar .nav-item.dropdown:hover .dropdown-menu {
     display: block;
   }
@@ -270,8 +270,7 @@
   color: $color-bg;
 }
 
-// ---------- Mobile (under 992px) ----------
-@media (max-width: 991px) {
+@media (max-width: $bp-lg) {
   .navbar {
     padding-top: 0.875rem !important;
     padding-bottom: 0.875rem !important;

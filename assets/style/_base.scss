@@ -114,7 +114,7 @@ main:has(.page-main-hero) #title-block-header {
   margin-top: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bp-lg) {
   .dropdown:hover .dropdown-menu {
     display: block;
     top: 95%;

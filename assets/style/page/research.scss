@@ -6,10 +6,8 @@
   gap: 0;
 
   .page-research-paper-year-label {
-    font-family: $font-monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+    @include eyebrow-label(0.65rem);
+
     color: rgba($color-accent-primary, 0.55);
     padding: 1.5rem 1.1rem 0.5rem;
     border-top: 1px solid rgba($color-accent-primary, 0.08);
@@ -114,10 +112,8 @@
   gap: 0;
 
   .page-research-thesis-year-label {
-    font-family: $font-monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+    @include eyebrow-label(0.65rem);
+
     color: rgba($color-accent-primary, 0.55);
     padding: 1.5rem 0 0.5rem;
     border-top: 1px solid rgba($color-accent-primary, 0.08);
@@ -157,13 +153,13 @@
         border: 1.5px solid rgba($color-text, 0.15);
         flex-shrink: 0;
 
-        @media (max-width: 600px) {
+        @media (max-width: $bp-sm) {
           width: 48px;
           height: 48px;
         }
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: $bp-sm) {
         justify-content: flex-start;
       }
     }
@@ -226,7 +222,7 @@
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: $bp-sm) {
       grid-template-columns: 1fr;
       gap: 0.75rem;
       padding: 0.9rem 0.75rem;

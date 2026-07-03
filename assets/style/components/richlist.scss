@@ -25,7 +25,7 @@
       border-radius: 8px;
       border: 1px solid rgba($color-accent-primary, 0.1);
 
-      @media (max-width: 760px) {
+      @media (max-width: $bp-md) {
         height: 200px;
       }
     }
@@ -45,11 +45,9 @@
       }
 
       .rich-list-item-tag {
-        font-size: 0.6rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
+        @include eyebrow-label(0.6rem);
+
         color: rgba($color-text, 0.5);
-        font-family: $font-monospace;
       }
     }
 
@@ -77,7 +75,7 @@
       margin: 0 0 1rem;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: $bp-md) {
       grid-template-columns: 1fr;
       gap: 1.25rem;
     }

@@ -60,12 +60,10 @@
     }
 
     .page-events-tag {
+      @include eyebrow-label(0.6rem);
+
       display: inline-block;
       margin-bottom: 0.5rem;
-      font-size: 0.6rem;
-      font-family: $font-monospace;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
       color: rgba($color-text, 0.5);
     }
 
@@ -96,7 +94,7 @@
     }
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: $bp-md) {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }

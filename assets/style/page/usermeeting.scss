@@ -17,7 +17,7 @@
     border-color: rgba($color-accent-primary, 0.3);
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: $bp-md) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
@@ -42,7 +42,7 @@
     border: 1px solid rgba($color-accent-primary, 0.12);
     transition: border-color 0.2s ease;
 
-    @media (max-width: 820px) {
+    @media (max-width: $bp-md) {
       height: 260px;
     }
   }
@@ -54,10 +54,8 @@
     margin-bottom: 0.6rem;
 
     .page-usermeeting-badge {
-      font-size: 0.58rem;
-      font-family: $font-monospace;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      @include eyebrow-label(0.6rem);
+
       font-weight: 600;
       padding: 0.2rem 0.6rem;
       border-radius: 100px;
@@ -67,10 +65,7 @@
     }
 
     .page-usermeeting-year {
-      font-size: 0.6rem;
-      font-family: $font-monospace;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      @include eyebrow-label(0.6rem);
       color: rgba($color-text, 0.5);
     }
   }

@@ -2,6 +2,8 @@
 
 .btn-primary-os {
   @include os-button-base;
+  @include card-hover-lift;
+
   background: $color-accent-secondary;
   color: $color-bg;
 
@@ -18,7 +20,6 @@
   }
 
   &:hover {
-    transform: translateY(-1px);
     color: $color-bg;
     text-decoration: none;
   }

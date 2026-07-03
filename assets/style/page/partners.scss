@@ -1,28 +1,23 @@
 /*-- scss:rules --*/
 
 .page-partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.25rem;
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
+  @include card-grid(auto-fill);
 }
 
 .page-partners-card {
+  @include card-hover-lift;
+
   background: $color-surface;
   border: 1px solid rgba($color-accent-primary, 0.15);
   border-radius: 12px;
   padding: 1.75rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.22s ease, transform 0.22s ease;
+  transition: border-color 0.22s ease;
   text-decoration: none;
 
   &:hover {
     border-color: rgba($color-accent-primary, 0.55);
-    transform: translateY(-3px);
   }
 
   img {

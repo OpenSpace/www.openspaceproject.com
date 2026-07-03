@@ -5,9 +5,8 @@
 // elements adjusts automatically
 //
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem;
+  @include card-grid(auto-fit);
+
   margin-bottom: 2rem;
 
   .card {
@@ -32,7 +31,7 @@
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: $bp-sm) {
     gap: 1.5rem;
   }
 }

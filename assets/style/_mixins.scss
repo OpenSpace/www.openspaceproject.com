@@ -14,14 +14,10 @@
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: $os-button-radius;
+  border-radius: $layout-button-radius;
   text-decoration: none;
   transition: transform 0.15s ease, background 0.15s ease;
   cursor: pointer;
-}
-
-@mixin os-section-padding {
-  padding: $os-section-padding 0;
 }
 
 // External-link icon for CTA buttons — mask-image renders in currentColor
@@ -44,4 +40,25 @@
   mask-position: center;
   margin-left: 0.4em;
   padding: 0 !important;
+}
+
+@mixin eyebrow-label($size) {
+  font-family: $font-monospace;
+  font-size: $size;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@mixin card-hover-lift {
+  transition: transform 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@mixin card-grid($layout) {
+  display: grid;
+  grid-template-columns: repeat($layout, minmax(280px, 1fr));
+  gap: 1.25rem;
 }

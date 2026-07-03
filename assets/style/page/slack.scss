@@ -5,11 +5,11 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
 
-  @media (max-width: 560px) {
+  @media (max-width: $bp-sm) {
     grid-template-columns: 1fr;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: $bp-lg) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -19,10 +19,8 @@
   flex-direction: column;
 
   h3 {
-    font-size: 0.7rem;
-    font-family: $font-monospace;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    @include eyebrow-label(0.7rem);
+
     color: $color-accent-primary;
     margin: 0 0 0.75rem;
   }

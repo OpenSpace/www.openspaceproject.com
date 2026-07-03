@@ -96,9 +96,9 @@ local function render_hero(hero_meta)
   local crumb_parts = {}
   for index, crumb in ipairs(crumbs) do
     if index > 1 then
-      crumb_parts[#crumb_parts + 1] = '<span class="bc-sep">›</span>'
+      crumb_parts[#crumb_parts + 1] = '<span class="breadcrumb-separator">›</span>'
     end
-    local class = (index == #crumbs) and "bc-current" or "bc-parent"
+    local class = (index == #crumbs) and "breadcrumb-current" or "breadcrumb-parent"
     if crumb.link ~= nil then
       crumb_parts[#crumb_parts + 1] =
         '<a class="' .. class .. '" href="' .. crumb.link .. '">' .. crumb.text .. '</a>'
@@ -129,7 +129,7 @@ local function render_hero(hero_meta)
 
   return [[
 <section class="hero" ]] .. style .. [[>
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
     ]] .. breadcrumb_html .. [[
   </nav>
   <div>

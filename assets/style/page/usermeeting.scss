@@ -38,9 +38,9 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    border-radius: 10px;
+    border-radius: $layout-border-radius;
     border: 1px solid rgba($color-accent-primary, 0.12);
-    transition: border-color 0.2s ease;
+    transition: border-color $animation-duration-base ease;
 
     @media (max-width: $bp-md) {
       height: 260px;
@@ -58,7 +58,7 @@
 
       font-weight: 600;
       padding: 0.2rem 0.6rem;
-      border-radius: 100px;
+      border-radius: $layout-border-radius;
       background: rgba($color-accent-secondary, 0.15);
       color: $color-accent-secondary;
       border: 1px solid rgba($color-accent-secondary, 0.35);
@@ -91,7 +91,7 @@
     color: $color-accent-primary;
     text-decoration: none;
     letter-spacing: 0.01em;
-    transition: color 0.15s ease;
+    transition: color $animation-duration-fast ease;
 
       position: relative;
     z-index: 1;

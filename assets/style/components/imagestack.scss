@@ -86,7 +86,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 16px;
+    border-radius: $layout-border-radius;
     outline: 2px solid $color-accent-primary;
     outline-offset: 4px;
     pointer-events: none;
@@ -102,11 +102,11 @@
     left: 0;
     right: 30px;
     bottom: 0;
-    border-radius: 14px;
+    border-radius: $layout-border-radius;
     border: 1px solid rgba($color-accent-primary, 0.18);
     background-size: cover;
     background-position: center;
-    background-color: $color-surface;
+    background-color: $color-surface-primary;
     overflow: hidden;
     transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
                 opacity 0.45s ease;
@@ -158,7 +158,7 @@
       border-radius: 50%;
       background: rgba($color-accent-primary, 0.22);
       flex-shrink: 0;
-      transition: background 0.25s ease;
+      transition: background $animation-duration-base ease;
 
       &.active {
         background: $color-accent-primary;

@@ -55,19 +55,19 @@ listing:
 
 Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions (HiRISE, MOLA, LRO, Cassini) and renders them continuously at every scale. No load screens. No transitions. No second application.
 
-::: {.card-grid}
+::: {.feature-grid}
 
-::: {.card}
+::: {.feature-card}
 ### Real mission data
 Every surface is built from actual spacecraft imagery and elevation measurements: HiRISE and MOLA for Mars, LRO for the Moon, Cassini for the outer planets. No artist approximations.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Continuous at every scale
 Fly from interstellar space to the texture of Martian regolith in one uncut flight, fifteen orders of magnitude with no load screens, no transitions, no second application.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Live layer blending
 Stack base imagery, colorized elevation, scientific overlays, and labels simultaneously. Toggle and blend layers live during a presentation without pausing or switching scenes.
 :::

@@ -15,9 +15,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.4rem 1rem;
-  border-radius: 6px;
+  border-radius: $layout-border-radius;
   cursor: pointer;
-  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  transition:
+    border-color $animation-duration-fast ease,
+    color $animation-duration-fast ease,
+    background $animation-duration-fast ease;
 
   &:hover {
     border-color: rgba($color-accent-primary, 0.55);
@@ -34,9 +37,9 @@
 // Startup map
 #page-impact-startup-map {
   height: 460px;
-  border-radius: 12px;
+  border-radius: $layout-border-radius;
   border: 1px solid rgba($color-accent-primary, 0.2);
-  background: #111111;
+  background: $color-bg;
 }
 
 .page-impact-map-footer {
@@ -73,15 +76,17 @@
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    background: $color-surface;
+    background: $color-surface-primary;
     border: 1px solid rgba($color-accent-primary, 0.2);
-    border-radius: 8px;
+    border-radius: $layout-border-radius;
     padding: 0.55rem 1rem;
     font-size: 0.875rem;
     font-weight: 500;
     color: $color-text-highlight;
     text-decoration: none;
-    transition: border-color 0.18s ease, color 0.18s ease;
+    transition:
+      border-color $animation-duration-fast ease,
+      color $animation-duration-fast ease;
 
     &:hover {
       border-color: rgba($color-accent-primary, 0.55);

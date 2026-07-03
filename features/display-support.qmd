@@ -130,34 +130,34 @@ OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of vi
 
 ## Technical capabilities
 
-::: {.card-grid}
+::: {.feature-grid}
 
-::: {.card}
+::: {.feature-card}
 ### MPCDI support
 Reads industry-standard MPCDI calibration files for precise mesh warping and blending on any dome or curved screen.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Edge blending
 Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Projection modes
 Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Multi-node sync
 Synchronized rendering across multiple GPUs and machines for tiled video walls and segmented spheres.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Window configs
 A single JSON file describes your entire display setup. Switch between venues without reinstalling.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Cross-platform
 Windows, macOS, and Linux. Runs on consumer hardware and professional visualization clusters alike.
 :::

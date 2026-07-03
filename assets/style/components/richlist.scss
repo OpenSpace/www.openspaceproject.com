@@ -22,8 +22,8 @@
       object-fit: cover;
       object-position: center;
       display: block;
-      border-radius: 8px;
-      border: 1px solid rgba($color-accent-primary, 0.1);
+      border-radius: $layout-border-radius;
+      border: 1px solid $color-border-subtle;
 
       @media (max-width: $bp-md) {
         height: 200px;

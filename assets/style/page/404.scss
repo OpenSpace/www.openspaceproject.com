@@ -46,13 +46,15 @@
       flex: 1;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba($color-accent-primary, 0.15);
-      border-radius: 8px;
+      border-radius: $layout-border-radius;
       color: $color-text-highlight;
       font-size: 0.9rem;
       font-family: inherit;
       padding: 0.6rem 0.9rem;
       outline: none;
-      transition: border-color 0.15s, background 0.15s;
+      transition:
+        border-color $animation-duration-fast,
+        background $animation-duration-fast;
 
       &::placeholder {
         color: rgba($color-text, 0.3);

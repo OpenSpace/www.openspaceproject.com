@@ -3,9 +3,10 @@
 %button-base {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: $layout-button-padding;
   font-weight: 500;
-  border-radius: $layout-button-radius;
+  border-radius: $layout-border-radius-small;
   text-decoration: none;
   transition:
     background $animation-button-transition ease,

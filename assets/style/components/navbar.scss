@@ -104,7 +104,7 @@
 
   .navbar .nav-link {
     transform: translateY(8px);
-    transition: color 0.15s ease;
+    transition: color $animation-duration-fast ease;
 
     &:hover, &:focus {
       color: $color-text-highlight !important;
@@ -119,7 +119,7 @@
 .navbar .dropdown-menu {
   min-width: 320px;
   padding: 0.5rem;
-  border-radius: 16px;
+  border-radius: $layout-border-radius;
   border: 1px solid rgba($color-accent-primary, 0.12);
   box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.2),
@@ -133,9 +133,9 @@
 }
 .navbar .dropdown-item {
   padding: 0.65rem 0.85rem;
-  border-radius: 6px;
+  border-radius: $layout-border-radius-small;
   white-space: normal;
-  transition: background 0.15s ease;
+  transition: background $animation-duration-fast ease;
 
   &:hover,
   &:focus {
@@ -218,15 +218,15 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  border-radius: 6px;
+  border-radius: $layout-border-radius-small;
   background: rgba($color-text, 0.25);
   flex-shrink: 0;
-  transition: background 0.15s ease;
+  transition: background $animation-duration-fast ease;
 
   iconify-icon {
     font-size: 1.1rem;
     color: $color-accent-secondary;
-    transition: color 0.15s ease;
+    transition: color $animation-duration-fast ease;
   }
 }
 

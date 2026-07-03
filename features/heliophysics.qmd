@@ -51,14 +51,14 @@ listing:
 ## Built with NASA CCMC scientists
 OpenSpace's heliophysics tools were built in close collaboration with scientists at NASA's Community Coordinated Modeling Center (CCMC), the group behind the operational space weather models that forecasters rely on every day. What you're seeing isn't an approximation of solar activity. It's the actual simulation data, made explorable in 3D.
 
-::: {.card-grid}
+::: {.feature-grid}
 
-::: {.card}
+::: {.feature-card}
 ### Real operational models
 OpenSpace runs on ENLIL and BATS-R-US, the same models CCMC scientists use for real-world forecasting. Every particle field and magnetic field line comes from actual simulation data.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Historical storm archive
 Step back through some of the biggest solar events on record, including Bastille Day 2000 and the 2012 near-miss CME, using the same archived model runs that researchers study today.
 :::

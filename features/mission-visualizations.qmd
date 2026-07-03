@@ -42,19 +42,19 @@ listing:
 
 ## How it works
 
-::: {.card-grid}
+::: {.feature-grid}
 
-::: {.card}
+::: {.feature-card}
 ### Real trajectory data
 SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time. Every flyby happens at the moment it really did.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Instrument footprints
 Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured, with actual pointing direction.
 :::
 
-::: {.card}
+::: {.feature-card}
 ### Full time control
 Play, rewind, scrub, or accelerate to any moment in a mission's history. Combine with Globe Browsing to fly from Earth to a planet's surface in one continuous view.
 :::

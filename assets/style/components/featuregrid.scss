@@ -4,16 +4,16 @@
 // A regular grid that contains sub-divs with a title and some text. The number of grid
 // elements adjusts automatically
 //
-.card-grid {
+.feature-grid {
   @include card-grid(auto-fit);
 
   margin-bottom: 2rem;
 
-  .card {
-    background: rgba($color-accent-primary, 0.04);
-    border-radius: 10px;
+  .feature-card {
+    background: $color-surface-secondary;
+    border-radius: $layout-border-radius;
     padding: 1.5rem 1.75rem;
-    border: 1px solid rgba($color-accent-primary, 0.1);
+    border: 1px solid $color-border-subtle;
 
     h3 {
       font-size: 1.0625rem;
@@ -26,12 +26,11 @@
     p {
       font-size: 0.9375rem;
       line-height: 1.65;
-      color: rgba($color-text-highlight, 0.8);
-      margin: 0;
+      color: $color-text;
+      margin: 0 0 0.75rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-  }
-
-  @media (max-width: $bp-sm) {
-    gap: 1.5rem;
   }
 }

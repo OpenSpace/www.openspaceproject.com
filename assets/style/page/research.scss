@@ -21,8 +21,8 @@
 
   .page-research-paper-row {
     padding: 1rem 1.1rem;
-    border-radius: 10px;
-    transition: background 0.18s ease;
+    border-radius: $layout-border-radius;
+    transition: background $animation-duration-fast ease;
 
     &:hover {
       background: rgba($color-accent-primary, 0.04);
@@ -65,7 +65,7 @@
       background: rgba($color-accent-soft, 0.07);
       border: 1px solid rgba($color-accent-soft, 0.2);
       padding: 0.15rem 0.5rem;
-      border-radius: 4px;
+      border-radius: $layout-border-radius-small;
     }
   }
 }
@@ -83,10 +83,13 @@
     background: rgba($color-accent-primary, 0.06);
     border: 1px solid rgba($color-accent-primary, 0.1);
     padding: 0.3rem 0.75rem;
-    border-radius: 20px;
+    border-radius: $layout-border-radius;
     cursor: pointer;
     appearance: none;
-    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    transition:
+      background $animation-duration-fast,
+      border-color $animation-duration-fast,
+      color $animation-duration-fast;
 
     &:hover {
       background: rgba($color-accent-primary, 0.12);
@@ -130,9 +133,9 @@
     grid-template-columns: 168px 1fr;
     gap: 1.25rem;
     padding: 1.25rem 1.1rem;
-    border-radius: 10px;
+    border-radius: $layout-border-radius;
     align-items: center;
-    transition: background 0.18s ease;
+    transition: background $animation-duration-fast ease;
 
     &:hover {
       background: rgba($color-accent-primary, 0.04);
@@ -194,7 +197,7 @@
           color: $color-accent-soft;
           border: 1px solid rgba($color-accent-soft, 0.4);
           padding: 0.1rem 0.45rem;
-          border-radius: 3px;
+          border-radius: $layout-border-radius-small;
           margin-left: 0.5rem;
           vertical-align: middle;
           position: relative;
@@ -218,7 +221,7 @@
         background: rgba($color-accent-primary, 0.07);
         border: 1px solid rgba($color-accent-primary, 0.15);
         padding: 0.15rem 0.5rem;
-        border-radius: 4px;
+        border-radius: $layout-border-radius-small;
       }
     }
 

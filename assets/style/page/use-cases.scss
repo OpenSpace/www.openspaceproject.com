@@ -7,7 +7,7 @@
 .page-usecases-card {
   position: relative;
   height: 300px;
-  border-radius: 8px;
+  border-radius: $layout-border-radius;
   overflow: hidden;
   background-size: cover;
   background-position: center 50%;
@@ -16,14 +16,9 @@
 
   &:hover .page-usecases-card-overlay,
   &:focus-visible .page-usecases-card-overlay {
-    background: linear-gradient(
-      180deg,
-      rgba(#000000, 0.12) 0%,
-      rgba(#000000, 0.55) 50%,
-      rgba(#000000, 0.92) 100%
-    );
+    background: $gradient-image-scrim;
     border: 1px solid rgba($color-accent-primary, 0.35);
-    border-radius: $layout-card-radius;
+    border-radius: $layout-border-radius;
   }
 
   &:focus-visible {
@@ -35,12 +30,7 @@
 .page-usecases-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 30%,
-    rgba(0, 0, 0, 0.5) 65%,
-    rgba(0, 0, 0, 0.88) 100%
-  );
+  background: $gradient-image-scrim;
   transition: background 0.3s ease;
 }
 
@@ -81,7 +71,9 @@
   padding: 1.5rem;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.25s ease, visibility 0.25s;
+  transition:
+    opacity $animation-duration-base ease,
+    visibility $animation-duration-base;
 
   &.is-open {
     visibility: visible;
@@ -99,9 +91,9 @@
 .page-usecases-modal-box {
   position: relative;
   z-index: 1;
-  background: $color-surface;
+  background: $color-surface-primary;
   border: 1px solid rgba($color-accent-primary, 0.12);
-  border-radius: 12px;
+  border-radius: $layout-border-radius;
   overflow: hidden;
   width: 100%;
   max-width: 900px;
@@ -179,7 +171,7 @@
     color: rgba($color-text, 0.8);
     background: rgba(0, 0, 0, 0.45);
     border: 1px solid rgba($color-accent-primary, 0.22);
-    border-radius: 3px;
+    border-radius: $layout-border-radius-small;
     padding: 0.25rem 0.55rem;
   }
 }
@@ -201,7 +193,9 @@
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition:
+    background $animation-duration-fast ease,
+    color $animation-duration-fast ease;
 
   &:hover {
     background: rgba($color-accent-primary, 0.15);

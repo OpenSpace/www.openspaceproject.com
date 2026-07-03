@@ -40,14 +40,16 @@
     input, textarea {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba($color-accent-primary, 0.15);
-      border-radius: 8px;
+      border-radius: $layout-border-radius-small;
       color: $color-text-highlight;
       font-size: 0.9rem;
       font-family: inherit;
       padding: 0.6rem 0.9rem;
       outline: none;
       width: 100%;
-      transition: border-color 0.15s, background 0.15s;
+      transition:
+        border-color $animation-duration-fast,
+        background $animation-duration-fast;
 
       &::placeholder {
         color: rgba($color-text, 0.3);
@@ -88,7 +90,7 @@
   padding: 1.5rem;
   padding-top: 0;
   border: 1px solid rgba($color-accent-primary, 0.1);
-  border-radius: 12px;
+  border-radius: $layout-border-radius;
   background: rgba($color-accent-primary, 0.03);
 
   h2 {

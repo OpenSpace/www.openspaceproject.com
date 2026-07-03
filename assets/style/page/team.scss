@@ -21,7 +21,7 @@
   &:focus-visible {
     outline: 2px solid $color-accent-primary;
     outline-offset: 3px;
-    border-radius: 14px;
+    border-radius: $layout-border-radius;
   }
 
   @media (max-width: $bp-sm) {
@@ -35,7 +35,7 @@
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.52s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 14px;
+  border-radius: $layout-border-radius;
 }
 
 .page-team-card:hover .page-team-card-inner,
@@ -46,7 +46,7 @@
 .page-team-card-front, .page-team-card-back {
   position: absolute;
   inset: 0;
-  border-radius: 14px;
+  border-radius: $layout-border-radius;
   overflow: hidden;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -96,7 +96,7 @@
 
 // Back: dark surface with accent border
 .page-team-card-back {
-  background: $color-surface;
+  background: $color-surface-primary;
   border: 1px solid rgba($color-accent-primary, 0.2);
   transform: rotateY(180deg);
   display: flex;

@@ -22,10 +22,11 @@ $os-soft-yellow: #e8fbc2;
 $os-satellite-gray: #b8c8ca;
 $os-terra-green: #d0f4ea;
 $os-base-white: #ecf5fb;
-$os-attention-alert: #de4e4e;
-$os-attention-warning: #e07c56;
-$os-attention-okay: #5cdd8b;
-$os-surface-highlight: #0d1014;
+$os-betelgeuse-red: #de4e4e;
+$os-reentry-orange: #e07c56;
+$os-aurora-green: #5cdd8b;
+$os-event-horizon: #0d1014;
+$os-accretion-disk: #11140e;
 
 $os-font-headings: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
 $os-font-body: 'IBM Plex Sans', sans-serif;
@@ -37,7 +38,8 @@ $os-font-monospace: 'IBM Plex Mono', monospace;
 // Colors
 //
 $color-bg: $os-deep-space;
-$color-surface: $os-surface-highlight;
+$color-surface-primary: $os-event-horizon;
+$color-surface-secondary: $os-accretion-disk;
 $color-accent-primary: $os-prime-blue;
 $color-accent-secondary: $os-flare-yellow;
 $color-accent-soft: $os-soft-yellow;
@@ -53,10 +55,14 @@ $color-button-primary-bg: $color-accent-secondary;
 $color-button-primary-text: $os-deep-space;
 $color-button-secondary-bg: transparent;
 $color-button-secondary-text: $color-text-highlight;
+$color-breadcrumb-text: rgba($color-text, 0.5);
+$color-breadcrumb-highlight: $color-accent-primary;
 
-$color-attention-alert: $os-attention-alert;
-$color-attention-warning: $os-attention-warning;
-$color-attention-okay: $os-attention-okay;
+$color-border-subtle: rgba($color-accent-primary, 0.1);
+
+$color-attention-alert: $os-betelgeuse-red;
+$color-attention-warning: $os-reentry-orange;
+$color-attention-okay: $os-aurora-green;
 
 //
 // Fonts
@@ -75,8 +81,8 @@ $layout-section-title-min: 1.75rem;
 $layout-section-title-max: 2.5rem;
 
 $layout-container-max: 1200px;
-$layout-card-radius: 12px;
-$layout-button-radius: 6px;
+$layout-border-radius: 12px;
+$layout-border-radius-small: 6px;
 $layout-button-padding: 0.75rem 1.75rem;
 
 //
@@ -90,5 +96,21 @@ $bp-lg: 992px;
 //
 // Animations
 //
+$animation-duration-fast: 0.15s;
+$animation-duration-base: 0.25s;
+$animation-duration-slow: 0.5s;
+
 $animation-marquee-duration: 30s;
-$animation-button-transition: 0.2s;
+$animation-button-transition: $animation-duration-base;
+$animation-carousel-transition: $animation-duration-slow;
+
+
+//
+// Scrims
+//
+$gradient-image-scrim: linear-gradient(
+  180deg,
+  transparent 50%,
+  rgba(#000000, 0.65) 75%,
+  rgba(#000000, 0.85) 100%
+);

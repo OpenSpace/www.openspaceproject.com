@@ -104,7 +104,7 @@ listing:
 </section>
 
 
-<section class="content-carousel-section">
+<section class="section__content-carousel">
   <h2>See what's possible</h2>
   <p class="section-lede">Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
 ```

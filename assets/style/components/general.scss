@@ -13,7 +13,7 @@
   }
 
   &:nth-child(even of .content-section) {
-    background: $color-surface;
+    background: $color-surface-primary;
   }
 
   h2 {
@@ -56,7 +56,7 @@
       a {
         color: $color-accent-primary;
         text-decoration: none;
-        transition: color 0.15s ease;
+        transition: color $animation-duration-fast ease;
 
         i, .bi {
           display: none;
@@ -73,7 +73,7 @@
 
 .section-lede {
   font-size: 1.125rem;
-  color: $color-text-muted;
+  color: $color-text;
   margin: 0 0 3rem;
   line-height: 1.6;
 

@@ -1,0 +1,122 @@
+/*-- scss:rules --*/
+
+// Newsletter signup
+
+.newsletter {
+  flex: 0 0 220px;
+
+  @media (max-width: $bp-md) {
+    flex: none;
+  }
+}
+
+.newsletter__step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+
+  // The gap owns the vertical rhythm — children must not add their own margins
+  > * {
+    margin: 0;
+  }
+}
+
+.newsletter__label {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-text-light;
+  margin-bottom: 0.65rem; // Intentional extra separation below the heading, added to the step gap
+}
+
+.newsletter__optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: $color-text-faint;
+}
+
+.newsletter__input {
+  background: $color-bg;
+  border: 1px solid $color-border-light;
+  border-radius: $layout-border-radius-small;
+  color: $color-text-highlight;
+  font-size: 0.83rem;
+  padding: 0.45rem 0.8rem;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  transition: border-color $animation-duration-fast ease;
+
+  &::placeholder {
+    color: $color-text-faint;
+  }
+
+  // Focus is indicated by the brightened border (instead of the removed outline)
+  &:focus {
+    border-color: $color-accent-primary;
+  }
+}
+
+.newsletter__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletter__button {
+  @extend %button-base;
+
+  background: $color-bg;
+  border: 1px solid $color-border-light;
+  color: $color-text-light;
+  font-size: 0.82rem;
+  padding: 0.45rem 1.1rem;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: $color-border-light;
+    color: $color-accent-primary;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: default;
+  }
+}
+
+.newsletter__skip {
+  background: none;
+  border: none;
+  color: $color-text-faint;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-text-light;
+  }
+
+  // Same focus treatment as %button-base
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 2px;
+  }
+}
+
+.newsletter__message {
+  color: $color-text-light;
+  margin-top: 0.45rem; // Intentional extra separation from the controls above, added to the step gap
+}
+
+.newsletter__message--error {
+  color: $color-attention-alert;
+}
+
+.newsletter__success {
+  color: $color-text-muted;
+}

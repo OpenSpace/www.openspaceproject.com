@@ -35,6 +35,7 @@ format:
       - "assets/style/components/hero.scss"
       - "assets/style/components/imagestack.scss"
       - "assets/style/components/navbar.scss"
+      - "assets/style/components/newsletter.scss"
       - "assets/style/components/richlist.scss"
       - "assets/style/components/status.scss"
     include-after-body:

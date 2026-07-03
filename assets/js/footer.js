@@ -16,16 +16,16 @@
 
   function show(n) {
     for (let i = 1; i <= 3; i++) {
-      const el = document.getElementById('footer-newsletter-' + i);
+      const el = document.getElementById('newsletter-' + i);
       if (el) el.hidden = (i !== n);
     }
   }
 
   function setMsg(step, msg, isError) {
-    const el = document.getElementById('footer-newsletter-msg-' + step);
+    const el = document.getElementById('newsletter__message-' + step);
     if (!el) return;
     el.textContent = msg;
-    el.className = 'footer-newsletter-msg' + (isError ? ' footer-newsletter-msg--error' : '');
+    el.className = 'newsletter__message' + (isError ? ' newsletter__message newsletter__message--error' : '');
     el.hidden = !msg;
   }
 
@@ -94,7 +94,7 @@
     document.head.appendChild(s);
   }
 
-  const step1 = document.getElementById('footer-newsletter-1');
+  const step1 = document.getElementById('newsletter-1');
   if (step1) {
     step1.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -109,7 +109,7 @@
     });
   }
 
-  const step2 = document.getElementById('footer-newsletter-2');
+  const step2 = document.getElementById('newsletter-2');
   if (step2) {
     step2.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -121,7 +121,7 @@
       const lname = val('footer-newsletter-lname');
       if (lname) data.LNAME = lname;
 
-      const affil = val('footer-newsletter');
+      const affil = val('newsletter');
       if (affil) data.MMERGE6 = affil;
 
       const how = val('footer-newsletter-how');

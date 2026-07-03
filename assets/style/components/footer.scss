@@ -4,285 +4,142 @@
 // Page footer
 //
 // Custom site footer
-.site-footer {
-  background: $footer-bg;
-  border-top: 1px solid rgba($color-accent-primary, 0.12);
-  padding: 3rem 2rem 1.5rem;
+.footer {
+  background: $color-footer-bg;
+  border-top: 1px solid $color-border-faint;
+  padding: 1rem 2rem 1rem;
   font-size: 0.85rem;
-  color: rgba($color-text, 0.7);
+  color: $color-text-light;
+}
 
-  .site-footer-inner {
-    display: flex;
-    gap: 3rem;
-    max-width: 1000px;
-    margin: 0 auto 2rem;
-    align-items: flex-start;
+.footer__inner {
+  display: flex;
+  gap: 3rem;
+  margin: 0 auto;
+  align-items: flex-start;
 
-    @media (max-width: $bp-md) {
-      flex-direction: column;
-      gap: 2rem;
-    }
+  @media (max-width: $bp-md) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 
-    .footer-brand {
-      flex: 0 0 220px;
+.footer__brand {
+  flex: 0 0 220px;
+  text-align: center;
 
-      .footer-logo {
-        max-width: 180px;
-        height: auto;
-        display: block;
-        margin-bottom: 0.8rem;
-      }
+  @media (max-width: $bp-md) {
+    flex: none;
+  }
+}
 
-      .footer-tagline {
-        font-size: 0.78rem;
-        color: rgba($color-text, 0.7);
-        margin: 0 0 1.2rem;
-        letter-spacing: 0.02em;
-      }
+.footer__logo {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.8rem;
+}
 
-      .footer-social {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 0.25rem;
-        font-size: 2rem;
+.footer__tagline {
+  font-size: 0.78rem;
+  margin: 0 0 1.2rem;
+  letter-spacing: 0.02em;
+}
 
-        a {
-          color: rgba($color-text, 0.75);
-          text-decoration: none;
-          transition: color $animation-duration-base;
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 2rem;
 
-          &:hover {
-            color: $color-accent-soft;
-          }
-        }
-      }
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+    transition: color $animation-duration-base ease;
 
-      @media (max-width: $bp-md) {
-        flex: none;
-      }
-    }
-
-    .footer-links {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-      flex: 1;
-
-      // Install (last child) sits below About on desktop
-      .footer-col:last-child {
-        grid-column: 1;
-        grid-row: 2;
-      }
-
-      @media (max-width: $bp-tn) {
-        grid-template-columns: 1fr;
-      }
-
-      @media (max-width: $bp-sm) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media (max-width: $bp-md) {
-        gap: 1.5rem;
-      }
-
-      @media (max-width: $bp-lg) {
-        grid-template-columns: repeat(3, 1fr);
-        .footer-col:last-child {
-          grid-column: auto;
-          grid-row: auto;
-        }
-      }
-
-      .footer-col {
-        min-width: 0;
-
-        h4 {
-          font-family: $font-headings;
-          font-size: 0.7rem;
-          letter-spacing: 0.16em;
-          text-transform: uppercase;
-          color: $color-accent-primary;
-          margin: 0 0 0.8rem;
-          font-weight: 400;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-
-          li {
-            margin-bottom: 0.45rem;
-          }
-
-          a {
-            color: rgba($color-text, 0.8);
-            text-decoration: none;
-            font-size: 0.82rem;
-            transition: color $animation-duration-base;
-
-            &:hover {
-              color: $color-text;
-            }
-          }
-        }
-      }
+    &:hover {
+      color: $color-accent-secondary;
     }
   }
+}
 
-  .footer-bottom {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 1.2rem;
-    border-top: 1px solid rgba($color-accent-primary, 0.08);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 0.75rem;
-    color: rgba($color-text, 0.6);
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  flex: 1;
 
-    @media (max-width: $bp-md) {
-      flex-direction: column;
-      gap: 0.3rem;
+  @media (max-width: $bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: $bp-md) {
+    gap: 1.5rem;
+  }
+
+  @media (max-width: $bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $bp-tn) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__column {
+  h4 {
+    font-family: $font-headings;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $color-accent-primary;
+    margin: 0 0 0.8rem;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.15rem;
     }
 
     a {
-      color: rgba($color-text, 0.7);
+      color: $color-text-light;
       text-decoration: none;
+      font-size: 0.82rem;
+      transition: color $animation-duration-base;
 
       &:hover {
         color: $color-text;
       }
     }
-
-    .footer-bottom-legal {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
   }
 }
 
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: $color-text-light;
 
-
-
-
-
-
-
-
-
-// Footer newsletter
-.footer-newsletter {
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba($color-accent-primary, 0.1);
-
-  .footer-newsletter-step {
-    display: flex;
+  @media (max-width: $bp-md) {
     flex-direction: column;
-    gap: 0.45rem;
-
-    .footer-newsletter-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba($color-text, 0.55);
-      margin: 0 0 0.65rem;
-
-      .footer-newsletter-optional {
-        font-weight: 400;
-        text-transform: none;
-        letter-spacing: 0;
-        font-size: 0.72rem;
-        color: rgba($color-text, 0.38);
-      }
-    }
-
-    .footer-newsletter-input {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba($color-accent-primary, 0.15);
-      border-radius: $layout-border-radius-small;
-      color: $color-text-highlight;
-      font-size: 0.83rem;
-      padding: 0.45rem 0.8rem;
-      font-family: inherit;
-      outline: none;
-      width: 100%;
-      transition:
-        border-color $animation-duration-fast,
-        background $animation-duration-fast;
-
-      &::placeholder {
-        color: rgba($color-text, 0.35);
-      }
-
-      &:focus {
-        border-color: rgba($color-accent-primary, 0.4);
-        background: rgba(255, 255, 255, 0.07);
-      }
-    }
-
-    .footer-newsletter-actions {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .footer-newsletter-button {
-      @extend %button-base;
-
-      background: transparent;
-      border: 1px solid rgba($color-accent-primary, 0.15);
-      color: $color-text-faint;
-      font-size: 0.82rem;
-      padding: 0.45rem 1.1rem;
-      white-space: nowrap;
-
-      &:hover {
-        border-color: rgba($color-accent-primary, 0.4);
-        color: $color-accent-primary;
-      }
-      &:disabled {
-        opacity: 0.55;
-        cursor: default;
-      }
-    }
-
-    .footer-newsletter-button-skip {
-      background: none;
-      border: none;
-      color: rgba($color-text, 0.45);
-      font-size: 0.82rem;
-      font-family: inherit;
-      cursor: pointer;
-      padding: 0;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-
-      &:hover {
-        color: rgba($color-text, 0.75);
-      }
-    }
-
-    .footer-newsletter-msg {
-      font-size: 0.77rem;
-      margin: 0.45rem 0 0;
-      color: rgba($color-text, 0.65);
-
-      &--error {
-        color: $color-attention-alert;
-      }
-    }
-
-    .footer-newsletter-success-sub {
-      font-size: 0.82rem;
-      color: rgba($color-text, 0.55);
-      margin: 0.2rem 0 0;
-    }
+    gap: 0.3rem;
   }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer__legal {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }

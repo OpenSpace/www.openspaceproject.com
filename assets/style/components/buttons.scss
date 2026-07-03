@@ -1,11 +1,16 @@
 /*-- scss:rules --*/
 
-.btn-primary-os {
-  @include os-button-base;
-  @include card-hover-lift;
-
-  background: $color-accent-secondary;
-  color: $color-bg;
+%button-base {
+  display: inline-flex;
+  align-items: center;
+  padding: $layout-button-padding;
+  font-weight: 500;
+  border-radius: $layout-button-radius;
+  text-decoration: none;
+  transition:
+    background $animation-button-transition ease,
+    box-shadow $animation-button-transition ease,
+    color $animation-button-transition ease;
 
   i, .bi {
     display: none;
@@ -15,35 +20,39 @@
   // with margin-left:.2em and padding-right:.75em — this shifts the text left of center.
   &::after {
     content: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 
   &:hover {
-    color: $color-bg;
     text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 2px;
   }
 }
 
-.btn-ghost-os {
-  @include os-button-base;
-  background: transparent;
-  color: white;
-  border: 1px solid $color-overlay-light;
+.button__primary {
+  @extend %button-base;
 
-  i, .bi {
-    display: none;
-  }
-
-  &::after {
-    content: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  background: $color-button-primary-bg;
+  color: $color-button-primary-text;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    text-decoration: none;
+    background: lighten($color-accent-secondary, 5%);
+    box-shadow: 0px 0px 24px rgba($color-accent-secondary, 0.4);
+  }
+}
+
+.button__secondary {
+  @extend %button-base;
+
+  background: $color-button-secondary-bg;
+  color: $color-button-secondary-text;
+  border: 1px solid $color-overlay-light;
+
+  &:hover {
+    background: $color-overlay-faint;
+    box-shadow: 0px 0px 24px $color-overlay-light;
   }
 }

@@ -136,6 +136,6 @@ Registration is **free**. We recommend bringing your own OpenSpace-compatible la
 
 Contact [Alexander Bock](mailto:alexander.bock@liu.se) or [Support](mailto:support@openspaceproject.com) with any questions about the meeting.
 
-[Register now](https://visualiseringscenter.se/registration-openspace-user-meeting/){.btn-primary-os}
+[Register now](https://visualiseringscenter.se/registration-openspace-user-meeting/){.button__primary}
 
 :::

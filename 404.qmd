@@ -22,14 +22,14 @@ format:
     <input type="hidden" name="sites" value="www.openspaceproject.com">
     <label class="visually-hidden" for="page-404-search-input">Search the site</label>
     <input type="search" id="page-404-search-input" name="q" placeholder="Search for the page's new location…">
-    <button type="submit" class="btn-primary-os">Search</button>
+    <button type="submit" class="button__primary">Search</button>
   </form>
 
   <div class="page-404-actions">
-    <a href="index.qmd" class="btn-primary-os">Back to home</a>
-    <a href="install/download.qmd" class="btn-ghost-os">Download</a>
-    <a href="resources/tutorials.qmd" class="btn-ghost-os">Tutorials</a>
-    <a href="community/contact.qmd" class="btn-ghost-os">Contact</a>
+    <a href="index.qmd" class="button__primary">Back to home</a>
+    <a href="install/download.qmd" class="button__secondary">Download</a>
+    <a href="resources/tutorials.qmd" class="button__secondary">Tutorials</a>
+    <a href="community/contact.qmd" class="button__secondary">Contact</a>
   </div>
 
   <p class="page-404-report">

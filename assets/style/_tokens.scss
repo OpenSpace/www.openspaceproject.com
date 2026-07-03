@@ -36,18 +36,23 @@ $os-font-monospace: 'IBM Plex Mono', monospace;
 //
 // Colors
 //
-$color-text: $os-satellite-gray;
-$color-text-highlight: $os-base-white;
-$color-text-muted: $os-satellite-gray;
-$color-text-faint: rgba($os-satellite-gray, 0.7);
-$color-link:  $os-flare-yellow;
-$color-overlay-light: rgba($os-base-white, 0.4);
-
 $color-bg: $os-deep-space;
 $color-surface: $os-surface-highlight;
 $color-accent-primary: $os-prime-blue;
 $color-accent-secondary: $os-flare-yellow;
 $color-accent-soft: $os-soft-yellow;
+
+$color-text: $os-satellite-gray;
+$color-text-highlight: $os-base-white;
+$color-text-muted: $os-satellite-gray;
+$color-text-faint: rgba($os-satellite-gray, 0.7);
+$color-link: $os-flare-yellow;
+$color-overlay-light: rgba($os-base-white, 0.4);
+$color-overlay-faint: rgba($os-base-white, 0.1);
+$color-button-primary-bg: $color-accent-secondary;
+$color-button-primary-text: $os-deep-space;
+$color-button-secondary-bg: transparent;
+$color-button-secondary-text: $color-text-highlight;
 
 $color-attention-alert: $os-attention-alert;
 $color-attention-warning: $os-attention-warning;
@@ -72,6 +77,7 @@ $layout-section-title-max: 2.5rem;
 $layout-container-max: 1200px;
 $layout-card-radius: 12px;
 $layout-button-radius: 6px;
+$layout-button-padding: 0.75rem 1.75rem;
 
 //
 // Breakpoints
@@ -85,4 +91,4 @@ $bp-lg: 992px;
 // Animations
 //
 $animation-marquee-duration: 30s;
-$animation-marquee-duration--mobile: 22s;
+$animation-button-transition: 0.2s;

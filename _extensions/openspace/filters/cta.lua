@@ -57,7 +57,7 @@ local function render_cta(cta_meta)
       if action["style"] ~= nil then
         style = pandoc.utils.stringify(action["style"])
       end
-      local class = (style == "ghost") and "btn-ghost-os" or "btn-primary-os"
+      local class = (style == "ghost") and "button__secondary" or "button__primary"
 
       local target = ""
       if action["external"] == true then

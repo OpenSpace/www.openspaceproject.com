@@ -39,7 +39,7 @@ hero:
         <textarea id="cf-message" name="message" placeholder="Tell us what you need…" required></textarea>
       </div>
       <p class="page-contact-form-error" id="cf-error" hidden></p>
-      <button type="submit" class="btn-primary-os">Send message</button>
+      <button type="submit" class="button__primary">Send message</button>
       <p class="page-contact-form-note">This opens your email client with a pre-addressed message to support@openspaceproject.com.</p>
     </form>
   </div>
@@ -47,7 +47,7 @@ hero:
   <div class="page-contact-slack-wrap">
     <h2>Also on Slack</h2>
     <p>For real-time help, the OpenSpace Slack is active with community members, educators, and developers.</p>
-    <a class="btn-ghost-os" href="/community/slack.html">Join the Slack</a>
+    <a class="button__secondary" href="/community/slack.html">Join the Slack</a>
   </div>
 </div>
 

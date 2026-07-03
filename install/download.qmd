@@ -34,9 +34,9 @@ cta:
 ---
 
 ::: {.page-download-actions}
-[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download-btn-primary}
+[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download-button__primary}
 
-[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download-btn-ghost target="_blank" rel="noopener"}
+[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download-button__secondary target="_blank" rel="noopener"}
 :::
 
 ::: {.page-download-summary}

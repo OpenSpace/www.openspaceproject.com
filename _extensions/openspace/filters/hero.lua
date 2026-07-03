@@ -118,7 +118,7 @@ local function render_hero(hero_meta)
   if action_text ~= nil and action_link ~= nil then
     action_html = [[
     <div class="hero-actions">
-      <a class="btn-primary-os ]] .. action_external .. [[" href="]] .. action_link .. [[" target="_blank" rel="noopener">]] .. action_text .. [[</a>
+      <a class="button__primary ]] .. action_external .. [[" href="]] .. action_link .. [[" target="_blank" rel="noopener">]] .. action_text .. [[</a>
     </div>]]
   end
 

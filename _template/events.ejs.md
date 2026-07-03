@@ -55,7 +55,7 @@ for (const item of items) {
         <%
           if (item.generate_calendar) {
         %>
-            <a class="btn-primary-os external" data-ev-calendar href="http://www.google.com/calendar/event?action=TEMPLATE&text=<%- encodeURIComponent(item.title) %>&dates=<%- gcalStart %>/<%- gcalEnd %>" target="_blank" rel="noopener">Add to Calendar</a>
+            <a class="button__primary external" data-ev-calendar href="http://www.google.com/calendar/event?action=TEMPLATE&text=<%- encodeURIComponent(item.title) %>&dates=<%- gcalStart %>/<%- gcalEnd %>" target="_blank" rel="noopener">Add to Calendar</a>
         <%
           }
         %>
@@ -63,7 +63,7 @@ for (const item of items) {
         <%
           for (const cta of (item.cta || [])) {
         %>
-            <a class="btn-ghost-os" data-ev-cta data-show-when-passed="<%- cta.show_when_passed ? 'true' : 'false' %>" href="<%- cta.link %>" target="_blank" rel="noopener"><%- cta.text %></a>
+            <a class="button__secondary" data-ev-cta data-show-when-passed="<%- cta.show_when_passed ? 'true' : 'false' %>" href="<%- cta.link %>" target="_blank" rel="noopener"><%- cta.text %></a>
         <%
           }
         %>

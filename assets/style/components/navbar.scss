@@ -252,22 +252,20 @@
   font-weight: 400;
 }
 
-// ---------- Download CTA button ----------
+// Download CTA button
 .navbar .nav-cta {
-  display: inline-block;
+  @extend %button-base;
+
   background: $color-bg;
   color: $color-text-highlight;
   border: 1px solid $color-accent-secondary;
   padding: 0.45rem 1.1rem;
-  border-radius: 6px;
   font-weight: 500;
-  transition: background 0.15s ease, color 0.15s ease;
-}
 
-.navbar .nav-link:hover .nav-cta,
-.navbar .nav-link:focus .nav-cta {
-  background: $color-accent-secondary;
-  color: $color-bg;
+  &:hover {
+    background: $color-accent-secondary;
+    color: $color-bg;
+  }
 }
 
 @media (max-width: $bp-lg) {

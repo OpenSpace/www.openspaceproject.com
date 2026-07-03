@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "Any screen. Any venue."
-  breadcrumbs:
+  crumbs:
     - "Features"
     - "Display Support"
   lede: >
@@ -34,12 +34,12 @@ cta:
 ---
 
 ```{=html}
-<nav class="dot-nav" aria-label="Navigate to venue section">
-  <button class="dot-nav-item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
-  <button class="dot-nav-item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
-  <button class="dot-nav-item" data-target="museum-exhibits" aria-label="Museum exhibits"></button>
-  <button class="dot-nav-item" data-target="fisheye" aria-label="Fisheye rendering"></button>
-  <button class="dot-nav-item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
+<nav class="dotnav" aria-label="Navigate to venue section">
+  <button class="dotnav__item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
+  <button class="dotnav__item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
+  <button class="dotnav__item" data-target="museum-exhibits" aria-label="Museum exhibits"></button>
+  <button class="dotnav__item" data-target="fisheye" aria-label="Fisheye rendering"></button>
+  <button class="dotnav__item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
 </nav>
 ```
 
@@ -132,32 +132,32 @@ OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of vi
 
 ::: {.feature-grid}
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### MPCDI support
 Reads industry-standard MPCDI calibration files for precise mesh warping and blending on any dome or curved screen.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Edge blending
 Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Projection modes
 Soft masking and gamma correction across projector boundaries for seamless multi-projector displays.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Multi-node sync
 Synchronized rendering across multiple GPUs and machines for tiled video walls and segmented spheres.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Window configs
 A single JSON file describes your entire display setup. Switch between venues without reinstalling.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Cross-platform
 Windows, macOS, and Linux. Runs on consumer hardware and professional visualization clusters alike.
 :::

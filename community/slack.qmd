@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "Where OpenSpace users connect"
-  breadcrumbs:
+  crumbs:
     - "Community"
     - "Slack"
   action:

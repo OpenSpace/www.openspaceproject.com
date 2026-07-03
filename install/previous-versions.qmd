@@ -9,7 +9,7 @@ format:
 
 hero:
   title: "Previous versions"
-  breadcrumbs:
+  crumbs:
     - "Install"
     - text: "Version 0.22.0"
       link: "download.qmd"

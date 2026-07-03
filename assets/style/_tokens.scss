@@ -55,10 +55,11 @@ $color-button-primary-bg: $color-accent-secondary;
 $color-button-primary-text: $os-deep-space;
 $color-button-secondary-bg: transparent;
 $color-button-secondary-text: $color-text-highlight;
-$color-breadcrumb-text: rgba($color-text, 0.5);
-$color-breadcrumb-highlight: $color-accent-primary;
+$color-crumbs-text: rgba($color-text, 0.65);
+$color-crumbs-highlight: $color-accent-primary;
 
-$color-border-subtle: rgba($color-accent-primary, 0.1);
+$color-border-light: rgba($color-accent-primary, 0.25);
+$color-border-faint: rgba($color-accent-primary, 0.1);
 
 $color-attention-alert: $os-betelgeuse-red;
 $color-attention-warning: $os-reentry-orange;
@@ -84,6 +85,10 @@ $layout-container-max: 1200px;
 $layout-border-radius: 12px;
 $layout-border-radius-small: 6px;
 $layout-button-padding: 0.75rem 1.75rem;
+
+$layout-cta-max-width: 680px;
+
+$layout-z-dotnav: 0;
 
 //
 // Breakpoints

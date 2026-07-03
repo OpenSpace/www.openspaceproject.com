@@ -23,7 +23,7 @@
       object-position: center;
       display: block;
       border-radius: $layout-border-radius;
-      border: 1px solid $color-border-subtle;
+      border: 1px solid $color-border-faint;
 
       @media (max-width: $bp-md) {
         height: 200px;

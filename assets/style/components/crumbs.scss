@@ -1,0 +1,66 @@
+/*-- scss:rules --*/
+
+//
+// Navigation bar breadcrumbs (.crumbs)
+//
+// The hero filter (_extensions/openspace/filters/hero.lua) emits the crumbs and h1 as
+// raw HTML; Quarto extracts that first h1 into #title-block-header, placing it before the
+// page content. The JS in _template/header.html moves the h1 back into the hero and then
+// relocates the crumbs into #quarto-header. These CSS rules hide the title block
+// (which the JS empties; without JS the h1 stays hidden inside it) and remove the padding
+// Quarto reserves for it. Scoped to `body` (not `main`) because the crumbs no longer
+// live inside main once the JS has moved them.
+//
+// The class is named `.crumbs` (not `.breadcrumb`) to avoid colliding with Bootstrap's
+// breadcrumb component, which Quarto ships.
+body:has(.crumbs) {
+  #title-block-header {
+    display: none !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+}
+
+.crumbs {
+  padding-left: 2rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.72rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.05em;
+  color: $color-crumbs-text;
+  background: $color-bg;
+}
+
+// Once the JS has moved the crumbs into #quarto-header, Quarto's own `#quarto-header>nav`
+// rule outranks `.crumbs` (ID specificity) and overrides the padding. This selector is
+// more specific still (ID + class), so it wins without needing !important.
+#quarto-header > .crumbs {
+  padding-left: 2rem;
+}
+
+.crumbs__parent {
+  color: $color-crumbs-text;
+  text-decoration: none;
+}
+
+a.crumbs__parent {
+  transition: color $animation-duration-fast ease;
+
+  &:hover {
+    color: $color-crumbs-highlight;
+  }
+
+  &:focus-visible {
+    color: $color-crumbs-highlight;
+  }
+}
+
+.crumbs__separator {
+  margin: 0 0.45rem;
+}
+
+.crumbs__current {
+  color: $color-text;
+}

@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "User Meeting"
-  breadcrumbs:
+  crumbs:
     - "Community"
     - "User Meetings"
   lede: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."

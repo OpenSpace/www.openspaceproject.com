@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "The people behind OpenSpace"
-  breadcrumbs:
+  crumbs:
     - "About"
     - "Team"
   lede: >

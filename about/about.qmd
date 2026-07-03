@@ -9,7 +9,7 @@ format:
 
 hero:
   title: "The open-source tool for space exploration"
-  breadcrumbs:
+  crumbs:
     - "About"
     - "About OpenSpace"
   lede: >

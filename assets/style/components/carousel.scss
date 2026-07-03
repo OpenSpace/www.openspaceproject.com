@@ -124,22 +124,12 @@ a.content-carousel__slide {
     background: $color-accent-secondary;
 
     &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 1px solid rgba($color-accent-secondary, 0.38);
-      transform: translate(-50%, -50%);
-      pointer-events: none;
+      border-color: rgba($color-accent-secondary, 0.38);
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
     }
   }
 
-  &:hover:not(.active) {
-    background: rgba($color-text, 0.7);
-  }
 }
 
 .content-carousel__buttons {

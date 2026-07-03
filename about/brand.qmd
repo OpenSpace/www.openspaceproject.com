@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "Brand & Attribution"
-  breadcrumbs:
+  crumbs:
     - "About"
     - "Brand & Attribution"
   lede: >

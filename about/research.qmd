@@ -12,7 +12,7 @@ format:
 
 hero:
   title: "Academic Research & Publications"
-  breadcrumbs:
+  crumbs:
     - "About"
     - "Research"
   lede: >

@@ -5,7 +5,7 @@
 --
 --     ---
 --     hero:
---       breadcrumbs:
+--       crumbs:
 --         - text: "Features"
 --           link: "/features"
 --         - "Display Support"
@@ -19,7 +19,7 @@
 --       lede: "From a personal laptop to a 30-meter planetarium dome ..."
 --     ---
 --
--- `breadcrumbs`, `title`, and `lede` are required. `image`, `badge`, and `action` are
+-- `crumbs`, `title`, and `lede` are required. `image`, `badge`, and `action` are
 -- optional.
 
 -- Render the hero section from the `hero` metadata table. Returns an HTML string, or nil
@@ -32,18 +32,18 @@ local function render_hero(hero_meta)
   title = pandoc.utils.stringify(title)
 
 
-  local breadcrumbs = hero_meta["breadcrumbs"]
-  if breadcrumbs == nil then
-    return nil, "Missing parameter 'breadcrumbs' in the 'hero' frontmatter"
+  local crumbs_meta = hero_meta["crumbs"]
+  if crumbs_meta == nil then
+    return nil, "Missing parameter 'crumbs' in the 'hero' frontmatter"
   end
 
 
   local crumbs = {}
-  for _, crumb in ipairs(breadcrumbs) do
+  for _, crumb in ipairs(crumbs_meta) do
     local link = nil
     local text
-    -- A breadcrumb may be a table carrying a `text` label and an optional `link`,
-    -- or a plain string that is used as the label directly
+    -- A breadcrumb may be a table carrying a `text` label and an optional `link`, or a
+    -- plain string that is used as the label directly
     if type(crumb) == "table" and crumb["text"] ~= nil then
       text = pandoc.utils.stringify(crumb["text"])
       if crumb["link"] ~= nil then
@@ -96,9 +96,9 @@ local function render_hero(hero_meta)
   local crumb_parts = {}
   for index, crumb in ipairs(crumbs) do
     if index > 1 then
-      crumb_parts[#crumb_parts + 1] = '<span class="breadcrumb-separator">›</span>'
+      crumb_parts[#crumb_parts + 1] = '<span class="crumbs__separator">›</span>'
     end
-    local class = (index == #crumbs) and "breadcrumb-current" or "breadcrumb-parent"
+    local class = (index == #crumbs) and "crumbs__current" or "crumbs__parent"
     if crumb.link ~= nil then
       crumb_parts[#crumb_parts + 1] =
         '<a class="' .. class .. '" href="' .. crumb.link .. '">' .. crumb.text .. '</a>'
@@ -107,7 +107,7 @@ local function render_hero(hero_meta)
         '<span class="' .. class .. '">' .. crumb.text .. '</span>'
     end
   end
-  local breadcrumb_html = table.concat(crumb_parts, "\n    ")
+  local crumbs_html = table.concat(crumb_parts, "\n    ")
 
   local badge_html = ""
   if badge ~= nil then
@@ -129,8 +129,8 @@ local function render_hero(hero_meta)
 
   return [[
 <section class="hero" ]] .. style .. [[>
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    ]] .. breadcrumb_html .. [[
+  <nav class="crumbs" aria-label="Breadcrumb">
+    ]] .. crumbs_html .. [[
   </nav>
   <div>
   ]] .. badge_html .. [[

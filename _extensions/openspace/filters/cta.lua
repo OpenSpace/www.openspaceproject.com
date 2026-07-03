@@ -72,16 +72,16 @@ local function render_cta(cta_meta)
   local actions_html = ""
   if #action_parts > 0 then
     actions_html = [[
-    <div class="hero-actions">
+    <div class="cta__actions">
       ]] .. table.concat(action_parts, "\n      ") .. [[
     </div>]]
   end
 
   return [[
-<section class="cta-section">
-  <div class="cta-card">
-    <h2 class="section-heading">]] .. heading .. [[</h2>
-    <p class="section-lede">]] .. lede .. [[</p>]] .. actions_html .. [[
+<section class="section__cta">
+  <div class="cta__card">
+    <h2>]] .. heading .. [[</h2>
+    <p>]] .. lede .. [[</p>]] .. actions_html .. [[
   </div>
 </section>]]
 end

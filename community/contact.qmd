@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "Get in touch"
-  breadcrumbs:
+  crumbs:
     - "Community"
     - "Contact"
   lede: "Have a question, bug report, or want to learn more? We're happy to help."

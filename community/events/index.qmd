@@ -10,7 +10,7 @@ format:
 
 hero:
   title: Events
-  breadcrumbs:
+  crumbs:
     - Community
     - Events
   lede: >

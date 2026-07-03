@@ -9,7 +9,7 @@ format:
 
 hero:
   title: "Fly from the Milky Way<br>to a single crater"
-  breadcrumbs:
+  crumbs:
     - "Features"
     - "Globe Browsing"
   image: "/assets/images/banner/mars.webp"
@@ -57,17 +57,17 @@ Globe Browsing is the planetary surface rendering engine at the heart of OpenSpa
 
 ::: {.feature-grid}
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Real mission data
 Every surface is built from actual spacecraft imagery and elevation measurements: HiRISE and MOLA for Mars, LRO for the Moon, Cassini for the outer planets. No artist approximations.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Continuous at every scale
 Fly from interstellar space to the texture of Martian regolith in one uncut flight, fifteen orders of magnitude with no load screens, no transitions, no second application.
 :::
 
-::: {.feature-card}
+::: {.feature-grid__card}
 ### Live layer blending
 Stack base imagery, colorized elevation, scientific overlays, and labels simultaneously. Toggle and blend layers live during a presentation without pausing or switching scenes.
 :::

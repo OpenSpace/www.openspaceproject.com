@@ -11,7 +11,7 @@ format:
 
 hero:
   title: "OpenSpace User Meeting"
-  breadcrumbs:
+  crumbs:
     - "Community"
     - text: "User Meetings"
       link: "/community/user-meetings/"
@@ -21,13 +21,13 @@ hero:
 ---
 
 ```{=html}
-<nav class="dot-nav" aria-label="Navigate to section">
-  <button class="dot-nav-item is-active" data-target="about" aria-label="About"></button>
-  <button class="dot-nav-item" data-target="venue" aria-label="Venue"></button>
-  <button class="dot-nav-item" data-target="schedule" aria-label="Schedule"></button>
-  <button class="dot-nav-item" data-target="getting-here" aria-label="Getting here"></button>
-  <button class="dot-nav-item" data-target="accommodation" aria-label="Accommodation"></button>
-  <button class="dot-nav-item" data-target="register" aria-label="Register"></button>
+<nav class="dotnav" aria-label="Navigate to section">
+  <button class="dotnav__item is-active" data-target="about" aria-label="About"></button>
+  <button class="dotnav__item" data-target="venue" aria-label="Venue"></button>
+  <button class="dotnav__item" data-target="schedule" aria-label="Schedule"></button>
+  <button class="dotnav__item" data-target="getting-here" aria-label="Getting here"></button>
+  <button class="dotnav__item" data-target="accommodation" aria-label="Accommodation"></button>
+  <button class="dotnav__item" data-target="register" aria-label="Register"></button>
 </nav>
 ```
 

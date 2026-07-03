@@ -58,7 +58,7 @@ website:
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:calendar"></iconify-icon></span><span class="nav-rich-title">Events</span></span><span class="nav-rich-desc">Upcoming events and conferences.</span></span>
             href: community/events/index.qmd
           - text: |
-             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:users"></iconify-icon></span><span class="nav-rich-title">Annual Meetings</span></span><span class="nav-rich-desc">Build your skills and connect with users at our annual meetings.</span></span>
+             <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:users"></iconify-icon></span><span class="nav-rich-title">User Meetings</span></span><span class="nav-rich-desc">Build your skills and connect with users at our user meetings.</span></span>
             href: community/user-meetings/index.qmd
           - text: |
              <span class="nav-rich"><span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:message-circle"></iconify-icon></span><span class="nav-rich-title">Slack</span></span><span class="nav-rich-desc">Ask questions and share ideas with the OpenSpace community.</span></span>

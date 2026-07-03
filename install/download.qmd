@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "Explore the universe.<br>Free."
-  breadcrumbs:
+  crumbs:
     - "Install"
     - "Version 0.22.0"
   badge: "v0.22.0 — Latest Release"

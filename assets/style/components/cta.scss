@@ -3,15 +3,14 @@
 //
 // Call-to-action section
 //
-// `.cta-section` is a full-width band with a soft radial glow that animates on hover.
-// Inside it, `.cta-card` is a centred, bordered card that hosts a heading, lede text, and
-// one or more `.hero-actions` buttons. The `@mixin os-external-icon` renders an inline
-// external-link arrow via CSS mask-image in currentColor, used by ghost CTA buttons that
-// link off-site. The `cta-glow-morph` keyframe slowly shifts the glow's blur radius and
-// hue while the user hovers over the section.
+// `.section__cta` is a full-width band with a soft blurred glow rendered by its
+// `::before` pseudo-element. Inside it, `.cta__card` is a centered, bordered card that
+// hosts a heading and one or more `.cta__actions` button rows. While the section is
+// hovered, the `cta__glow-morph` keyframes slowly shift the glow's hue, position, and
+// scale.
 //
 
-.cta-section {
+.section__cta {
   padding: $layout-section-padding-wide;
   background: $color-bg;
   position: relative;
@@ -26,36 +25,33 @@
     width: 200px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(to top right, $color-accent-secondary, $color-accent-primary);
+    background: linear-gradient($color-accent-secondary, $color-accent-primary);
     opacity: 0.22;
     filter: blur(60px);
-    pointer-events: none;
     transition: opacity 0.4s ease;
+    animation: cta__glow-morph 4s ease-in-out infinite;
   }
 
   &:hover::before {
-    animation: cta-glow-morph 4s ease-in-out infinite;
     opacity: 0.32;
   }
 }
 
-.cta-card {
-  background: rgba(255, 255, 255, 0.01);
-  border: 1px solid rgba($color-text-highlight, 0.18);
+.cta__card {
+  border: 1px solid $color-border-light;
   border-radius: $layout-border-radius;
   padding: 3.5rem 2.5rem;
   text-align: center;
-  position: relative;
-  z-index: 1;
-  max-width: 680px;
+  max-width: $layout-cta-max-width;
   margin: 0 auto;
 
-  &::before {
-    display: none;
-  }
-
-  .hero-actions {
-    justify-content: center;
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+    color: $color-text-highlight;
+    padding-left: 0;
   }
 
   @media (max-width: $bp-md) {
@@ -63,13 +59,17 @@
   }
 }
 
-@keyframes cta-glow-morph {
-  0% {
+.cta__actions {
+  justify-content: center;
+}
+
+@keyframes cta__glow-morph {
+  0%, 100% {
     filter: blur(60px) hue-rotate(0deg);
     transform: translate(-50%, -50%) scale(1);
   }
   25% {
-    filter: blur(68px) hue-rotate(30deg);
+    filter: blur(60px) hue-rotate(30deg);
     transform: translate(-51%, -51%) scale(1.06);
   }
   50% {
@@ -79,9 +79,5 @@
   75% {
     filter: blur(60px) hue-rotate(20deg);
     transform: translate(-49%, -51%) scale(1.04);
-  }
-  100% {
-    filter: blur(60px) hue-rotate(0deg);
-    transform: translate(-50%, -50%) scale(1);
   }
 }

@@ -1,16 +1,16 @@
 <script>
 // Quarto extracts the first h1 from {=html} blocks and places it in #title-block-header
-// before the page content. Restore it into the hero section (breadcrumb -> title -> body),
-// then relocate the breadcrumb into #quarto-header so it renders as a sub-bar below the
-// navbar and hides/reveals together with the headroom navbar on scroll.
+// before the page content. Restore it into the hero section (crumbs -> title -> body),
+// then relocate the crumbs into #quarto-header so it renders as a sub-bar below the
+// navbar and hides/reveals together with the headroom navbar on scroll
 (() => {
-  let breadcrumb = document.querySelector('.breadcrumb');
-  if (!breadcrumb) return;
+  let crumbs = document.querySelector('.crumbs');
+  if (!crumbs) return;
 
-  // Capture the breadcrumb's original position in the hero before moving it, so the h1
-  // can be restored relative to it.
-  let heroSection = breadcrumb.parentElement;
-  let contentDiv = breadcrumb.nextElementSibling;
+  // Capture the crumbs's original position in the hero before moving it, so the h1 can be
+  // restored relative to it
+  let heroSection = crumbs.parentElement;
+  let contentDiv = crumbs.nextElementSibling;
 
   let titleBlock = document.getElementById('title-block-header');
   let h1 = titleBlock ? titleBlock.querySelector('h1') : null;
@@ -21,18 +21,19 @@
     quartoClasses.forEach((c) => { h1.classList.remove(c); });
 
     if (contentDiv && contentDiv.tagName === 'DIV') {
-      // Text heroes: the h1 originally lived inside the first div child of the hero section.
+      // Text heroes: the h1 originally lived inside the first div child of the hero
+      // section
       contentDiv.insertBefore(h1, contentDiv.firstChild);
     } else {
-      // Fallback: insert directly after the breadcrumb nav.
-      breadcrumb.insertAdjacentElement('afterend', h1);
+      // Fallback: insert directly after the crumbs nav
+      crumbs.insertAdjacentElement('afterend', h1);
     }
   }
 
-  // Move the breadcrumb out of the hero and into the site header as a sub-bar.
+  // Move the crumbs out of the hero and into the site header as a sub-bar
   let quartoHeader = document.getElementById('quarto-header');
   if (quartoHeader) {
-    quartoHeader.appendChild(breadcrumb);
+    quartoHeader.appendChild(crumbs);
   }
 })();
 </script>

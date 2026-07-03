@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "The Institutions behind OpenSpace"
-  breadcrumbs:
+  crumbs:
     - "About"
     - "Partners"
   lede: >

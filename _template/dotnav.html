@@ -3,19 +3,8 @@
 // navigate between different headers of the page
 
 (() => {
-  let dotNav = document.querySelector('.dot-nav');
-  function alignNav() {
-    if (!dotNav) return;
-    let btn = document.querySelector('.nav-cta');
-    if (btn) {
-      let right = window.innerWidth - btn.getBoundingClientRect().right;
-      dotNav.style.right = Math.max(8, right) + 'px';
-    }
-  }
-  alignNav();
-  window.addEventListener('resize', alignNav);
-
-  let navItems = Array.from(document.querySelectorAll('.dot-nav-item'));
+  let dotNav = document.querySelector('.dotnav');
+  let navItems = Array.from(document.querySelectorAll('.dotnav__item'));
   let sections = navItems.map((item) => {
     return document.getElementById(item.dataset.target);
   }).filter(Boolean);

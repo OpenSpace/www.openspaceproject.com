@@ -16,7 +16,7 @@ listing:
 
 hero:
   title: "OpenSpace in Action"
-  breadcrumbs:
+  crumbs:
     - "Community"
     - "Use Cases"
   lede: >

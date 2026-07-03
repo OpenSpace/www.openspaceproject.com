@@ -11,7 +11,7 @@ format:
 
 hero:
   title: "OpenSpace User Meeting"
-  breadcrumbs:
+  crumbs:
     - "Community"
     - text: "User Meetings"
       link: "/community/user-meetings/"
@@ -20,11 +20,11 @@ hero:
 ---
 
 ```{=html}
-<nav class="dot-nav" aria-label="Navigate to section">
-  <button class="dot-nav-item is-active" data-target="recap" aria-label="Recap"></button>
-  <button class="dot-nav-item" data-target="sessions" aria-label="Sessions"></button>
-  <button class="dot-nav-item" data-target="recordings" aria-label="Recordings"></button>
-  <button class="dot-nav-item" data-target="community" aria-label="Community"></button>
+<nav class="dotnav" aria-label="Navigate to section">
+  <button class="dotnav__item is-active" data-target="recap" aria-label="Recap"></button>
+  <button class="dotnav__item" data-target="sessions" aria-label="Sessions"></button>
+  <button class="dotnav__item" data-target="recordings" aria-label="Recordings"></button>
+  <button class="dotnav__item" data-target="community" aria-label="Community"></button>
 </nav>
 ```
 

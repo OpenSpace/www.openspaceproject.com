@@ -16,7 +16,7 @@ format:
 
 hero:
   title: "OpenSpace around the world"
-  breadcrumbs:
+  crumbs:
     - "About"
     - "Impact"
   lede: >

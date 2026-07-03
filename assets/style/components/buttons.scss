@@ -12,7 +12,7 @@
     box-shadow $animation-button-transition ease,
     color $animation-button-transition ease;
 
-  i, .bi {
+  .bi {
     display: none;
   }
 
@@ -39,8 +39,8 @@
   color: $color-button-primary-text;
 
   &:hover {
-    background: lighten($color-accent-secondary, 5%);
-    box-shadow: 0px 0px 24px rgba($color-accent-secondary, 0.4);
+    background: lighten($color-button-primary-bg, 5%);
+    box-shadow: 0 0 24px rgba($color-button-primary-bg, 0.4);
   }
 }
 
@@ -53,6 +53,6 @@
 
   &:hover {
     background: $color-overlay-faint;
-    box-shadow: 0px 0px 24px $color-overlay-light;
+    box-shadow: 0 0 24px $color-overlay-light;
   }
 }

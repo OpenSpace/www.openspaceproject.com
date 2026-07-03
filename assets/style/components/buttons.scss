@@ -1,0 +1,48 @@
+/*-- scss:rules --*/
+
+.btn-primary-os {
+  @include os-button-base;
+  background: $color-accent-secondary;
+  color: $color-bg;
+
+  i, .bi {
+    display: none;
+  }
+
+  // Quarto adds class="external" to external links and injects a ::after pseudo-element
+  // with margin-left:.2em and padding-right:.75em — this shifts the text left of center.
+  &::after {
+    content: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    color: $color-bg;
+    text-decoration: none;
+  }
+}
+
+.btn-ghost-os {
+  @include os-button-base;
+  background: transparent;
+  color: white;
+  border: 1px solid $color-overlay-light;
+
+  i, .bi {
+    display: none;
+  }
+
+  &::after {
+    content: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+  }
+}

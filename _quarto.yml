@@ -24,7 +24,19 @@ format:
       - "assets/style/_base.scss"
       - "assets/style/_tokens.scss"
       - "assets/style/_mixins.scss"
-      - "assets/style/_components.scss"
+      - "assets/style/components/breadcrumbs.scss"
+      - "assets/style/components/buttons.scss"
+      - "assets/style/components/cardgrid.scss"
+      - "assets/style/components/carousel.scss"
+      - "assets/style/components/cta.scss"
+      - "assets/style/components/dotnav.scss"
+      - "assets/style/components/footer.scss"
+      - "assets/style/components/general.scss"
+      - "assets/style/components/hero.scss"
+      - "assets/style/components/imagestack.scss"
+      - "assets/style/components/navbar.scss"
+      - "assets/style/components/richlist.scss"
+      - "assets/style/components/status.scss"
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html

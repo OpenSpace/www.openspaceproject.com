@@ -1,0 +1,102 @@
+/*-- scss:rules --*/
+
+//
+// Navigation dots on the right side of the page to allow the user to navigate to the
+// different sections in the document
+//
+.dot-nav {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  z-index: 200;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.dot-nav-item {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba($color-text, 0.22);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  // orbit ring — shown when active
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba($color-accent-primary, 0.5);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  // label — shown on hover, appears to the left
+  &::after {
+    content: attr(aria-label);
+    position: absolute;
+    right: calc(100% + 1rem);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.6rem;
+    font-family: $font-monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba($color-text, 0.7);
+    white-space: nowrap;
+    background: rgba($color-bg, 0.88);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    border: 1px solid rgba($color-accent-primary, 0.12);
+    opacity: 0;
+    transition: opacity 0.18s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: rgba($color-text, 0.55);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 4px;
+  }
+
+  &.is-active {
+    background: $color-accent-secondary;
+
+    &::before {
+      border-color: rgba($color-accent-secondary, 0.5);
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+}

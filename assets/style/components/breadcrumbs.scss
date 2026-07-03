@@ -1,0 +1,53 @@
+/*-- scss:rules --*/
+
+//
+// Navigation bar breadcrumbs
+//
+// Quarto extracts the first h1 from {=html} blocks into #title-block-header,
+// placing it before the page content. The header JS restores it to the correct
+// position (inside the hero) and then relocates the breadcrumb into #quarto-header.
+// These CSS rules hide the now-empty title block and remove the padding Quarto
+// reserves for it. Scoped to `body` (not `main`) because the breadcrumb no longer
+// lives inside main once the JS has moved it.
+body:has(.page-breadcrumb) #title-block-header {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body:has(.page-breadcrumb) main {
+  padding-top: 0 !important;
+}
+
+.page-breadcrumb {
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.72rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.05em;
+  color: rgba($color-text, 0.5);
+  background: $color-bg;
+  line-height: 1;
+
+  a {
+    color: rgba($color-text, 0.5);
+    text-decoration: none;
+    transition: color 0.15s;
+
+    &:hover {
+      color: $color-accent-primary;
+    }
+  }
+
+  .bc-sep {
+    margin: 0 0.45rem;
+    color: rgba($color-text, 0.25);
+  }
+
+  .bc-current {
+    color: rgba($color-text, 0.85);
+  }
+}

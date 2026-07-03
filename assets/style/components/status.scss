@@ -1,0 +1,50 @@
+/*-- scss:rules --*/
+
+//
+// System status indicator included in the footer
+//
+.system-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba($color-text, 0.6) !important;
+  font-size: 0.75rem;
+
+  &:hover {
+    color: rgba($color-text, 0.7) !important;
+  }
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &.status--up {
+    background: #5cdd8b;
+    animation: status-pulse 2.5s ease-in-out infinite;
+  }
+
+  &.status--degraded {
+    background: #f8a306;
+  }
+
+  &.status--down {
+    background: #dc3545;
+  }
+
+  &.status--unknown {
+    background: #5cdd8b;
+    animation: status-pulse 2.5s ease-in-out infinite;
+  }
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 #5cdd8b80;
+  }
+  50% {
+    box-shadow: 0 0 0 4px #5cdd8b00;
+  }
+}

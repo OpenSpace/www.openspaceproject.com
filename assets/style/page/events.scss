@@ -64,13 +64,13 @@
 
       display: inline-block;
       margin-bottom: 0.5rem;
-      color: rgba($color-text, 0.5);
+      color: $color-text-light;
     }
 
     .page-events-time {
       font-size: 0.75rem;
       font-family: $font-monospace;
-      color: rgba($color-text, 0.75);
+      color: $color-text-muted;
       letter-spacing: 0.04em;
       margin: 0 0 0.85rem;
     }
@@ -78,7 +78,7 @@
     .page-events-desc {
       font-size: 0.9375rem;
       line-height: 1.75;
-      color: rgba($color-text-highlight, 0.75);
+      color: $color-text-muted;
       margin: 0 0 1.25rem;
 
       .page-events-item--past & {

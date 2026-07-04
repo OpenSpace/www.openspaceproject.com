@@ -19,6 +19,12 @@
   > * {
     margin: 0;
   }
+
+  // Higher specificity (0,2,0) than the `> *` reset above, so this wins
+  // regardless of source order
+  > .newsletter__label {
+    margin-bottom: 0.65rem;
+  }
 }
 
 .newsletter__label {
@@ -26,7 +32,6 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: $color-text-light;
-  margin-bottom: 0.65rem;
 }
 
 .newsletter__optional {
@@ -74,7 +79,6 @@
   white-space: nowrap;
 
   &:hover {
-    border-color: $color-border-light;
     color: $color-accent-primary;
   }
 
@@ -94,12 +98,10 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     color: $color-text-light;
   }
 
-  // Same focus treatment as %button-base
   &:focus-visible {
     outline: 2px solid $color-accent-primary;
     outline-offset: 2px;
@@ -108,13 +110,13 @@
 
 .newsletter__message {
   color: $color-text-light;
-  margin-top: 0.45rem; // Intentional extra separation from the controls above, added to the step gap
+  margin-top: 0.45rem;
 }
 
 .newsletter__message--error {
   color: $color-attention-alert;
 }
 
-.newsletter__success {
+.newsletter__message--success {
   color: $color-text-muted;
 }

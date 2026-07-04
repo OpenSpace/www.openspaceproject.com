@@ -152,7 +152,7 @@
   function setStatus(key) {
     const dot = document.getElementById('status-dot');
     if (dot) {
-      dot.className = `status-dot status--${key}`;
+      dot.className = `system-status__dot system-status__dot--${key}`;
     }
 
     const text = document.getElementById('status-text');

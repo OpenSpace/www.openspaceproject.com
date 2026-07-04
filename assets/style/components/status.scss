@@ -7,44 +7,47 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: rgba($color-text, 0.6) !important;
+  color: $color-text-light;
   font-size: 0.75rem;
+  transition: color $animation-duration-fast ease;
 
   &:hover {
-    color: rgba($color-text, 0.7) !important;
+    color: $color-text-muted;
   }
 }
 
-.status-dot {
+.system-status__dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
 
-  &.status--up {
+  &--up {
+    --pulse-color: #{$color-attention-okay};
     background: $color-attention-okay;
     animation: status-pulse 2.5s ease-in-out infinite;
   }
 
-  &.status--degraded {
+  &--degraded {
     background: $color-attention-warning;
   }
 
-  &.status--down {
+  &--down {
     background: $color-attention-alert;
   }
 
-  &.status--unknown {
-    background: $color-attention-okay;
+  &--unknown {
+    --pulse-color: #{$color-attention-unknown};
+    background: $color-attention-unknown;
     animation: status-pulse 2.5s ease-in-out infinite;
   }
 }
 
 @keyframes status-pulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba($color-attention-okay, 128);
+    box-shadow: 0 0 0 0 var(--pulse-color);
   }
   50% {
-    box-shadow: 0 0 0 4px rgba($color-attention-okay, 0);
+    box-shadow: 0 0 0 4px transparent;
   }
 }

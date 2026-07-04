@@ -3,81 +3,70 @@
 //
 // A list of rich items that include an image, title, tags, a tagline and a description
 //
-.rich-list {
-  .rich-list-item {
-    display: grid;
-    grid-template-columns: 45% 1fr;
-    gap: 3rem;
-    padding: 2.5rem 0;
-    border-top: 1px solid rgba($color-accent-primary, 0.08);
-    align-items: start;
+.rich-list__item {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  align-items: start;
 
-    &:first-of-type {
-      border-top: none;
-    }
-
-    img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      border-radius: $layout-border-radius;
-      border: 1px solid $color-border-faint;
-
-      @media (max-width: $bp-md) {
-        height: 200px;
-      }
-    }
-
-    .rich-list-item-meta {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-
-      .rich-list-item-number {
-        font-size: 0.65rem;
-        font-family: $font-monospace;
-        letter-spacing: 0.14em;
-        color: $color-accent-primary;
-        font-weight: 500;
-      }
-
-      .rich-list-item-tag {
-        @include eyebrow-label(0.6rem);
-
-        color: rgba($color-text, 0.5);
-      }
-    }
-
-    h3 {
-      font-size: clamp(1.25rem, 2.5vw, 1.625rem);
-      font-weight: 600;
-      color: $color-text-highlight;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin: 0 0 0.35rem;
-    }
-
-    .rich-list-item-tagline {
-      font-size: 0.75rem;
-      color: rgba($color-text, 0.55);
-      font-family: $font-monospace;
-      letter-spacing: 0.04em;
-      margin: 0 0 0.85rem;
-    }
-
-    .rich-list-item-description {
-      font-size: 0.9375rem;
-      line-height: 1.75;
-      color: rgba($color-text-highlight, 0.78);
-      margin: 0 0 1rem;
-    }
-
-    @media (max-width: $bp-md) {
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-    }
+  img {
+    width: 100%;
+    aspect-ratio: 9 / 4;
+    object-fit: cover;
+    border-radius: $layout-border-radius;
+    border: 1px solid $color-border-faint;
   }
+
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+    font-weight: 600;
+    color: $color-text-highlight;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.35rem;
+  }
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.rich-list__item + .rich-list__item {
+  border-top: 1px solid $color-border-faint;
+}
+
+.rich-list__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rich-list__number {
+  @include eyebrow-label(0.65rem);
+
+  color: $color-accent-primary;
+  font-weight: 600;
+}
+
+.rich-list__tag {
+  @include eyebrow-label(0.6rem);
+
+  color: $color-text-light;
+}
+
+.rich-list__tagline {
+  font-size: 0.75rem;
+  color: $color-text-light;
+  font-family: $font-monospace;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.85rem;
+}
+
+.rich-list__description {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: $color-text;
 }

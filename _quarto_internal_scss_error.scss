@@ -5419,7 +5419,7 @@ $grid-default-toc-mid-body: minmax(
   // Active-state selectors (e.g. `.is-active`) win over this hover as long as
   // they are declared after the @include, since specificity is equal
   &:hover {
-    background: rgba($color-text, 0.75);
+    background: $color-text-muted;
   }
 
   // Orbit ring — hidden by default; active-state selectors reveal it by

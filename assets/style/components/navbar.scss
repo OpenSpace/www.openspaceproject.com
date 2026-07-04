@@ -5,25 +5,70 @@
 //
 // Overrides Quarto's Bootstrap navbar to lay out as a proper horizontal flex row on
 // desktop, where the brand sits left and the nav links sit right. On mobile the standard
-// Bootstrap collapse/hamburger behavior is preserved. Dropdowns use a frosted-glass card
-// style and switch to a two-column grid when they contain five or more items.
-// `.nav-rich` / `.nav-rich-icon` / `.nav-rich-desc` compose the rich link items inside
-// those dropdowns. `.nav-cta` styles the Download button as an outlined pill that fills
-// on hover.
+// Bootstrap collapse/hamburger behavior is preserved. The class names do not use
+// BEM-style as they are mostly provided by Quarto/Bootstrap.
 //
 
-// ---------- DESKTOP NAV ----------
 .navbar {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-  border-bottom: 0px solid rgba($color-accent-primary, 0.15);
-}
+  padding: 0.875rem 1rem;
 
-.navbar-brand {
-  font-family: $font-headings;
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
-  color: $color-accent-primary !important;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  // Dropdown menu container
+  .dropdown-menu {
+    min-width: 320px;
+    padding: 0.5rem;
+    background: $color-overlay-dark;
+    margin-top: 0.75rem;
+    border-radius: $layout-border-radius;
+    border: 1px solid $color-border-light;
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.2),
+      0 16px 40px rgba(0, 0, 0, 0.45),
+      0 0 0 1px $color-border-faint inset;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .dropdown-item {
+    padding: 0.65rem 0.85rem;
+    border-radius: $layout-border-radius-small;
+    white-space: normal;
+    transition: background $animation-duration-fast ease;
+
+    &:hover,
+    &:focus {
+      background: $color-border-faint;
+
+      .nav-rich-icon {
+        background: $color-accent-secondary;
+
+        iconify-icon {
+          color: $color-bg;
+        }
+      }
+    }
+  }
+
+  // Download CTA button
+  .nav-cta {
+    @extend %button-base;
+
+    background: $color-bg;
+    color: $color-text-highlight;
+    border: 1px solid $color-accent-secondary;
+    padding: 0.45rem 1.1rem;
+    font-weight: 500;
+
+    &:hover {
+      background: $color-accent-secondary;
+      color: $color-bg;
+    }
+  }
 }
 
 .nav-link {
@@ -33,174 +78,152 @@
 }
 
 @media (min-width: $bp-lg) {
-  // Force the outer navbar container to be a horizontal flex row
-  .navbar > .navbar-container,
-  .navbar .navbar-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-  // Vertical breathing room around logo and nav
   .navbar {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
+    // Force the outer navbar container to be a horizontal flex row
+    .navbar-container {
+      display: flex;
+      align-items: center;
 
-  // Brand container: take only as much width as needed, vertically centered
-  .navbar .navbar-brand-container {
-    flex: 0 0 auto !important;
-    width: auto !important;
-    max-width: none !important;
-    margin: 0 !important;
-    margin-right: 1.5rem !important;
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  // Logo size cap
-  .navbar .navbar-logo {
-    max-height: 56px;
-    width: auto;
-  }
-
-  // Hide hamburger
-  .navbar .navbar-toggler {
-    display: none !important;
-  }
-
-  // Collapse container takes the remaining space, vertically centered
-  .navbar .navbar-collapse {
-    display: flex !important;
-    flex: 1 1 auto !important;
-    flex-basis: auto !important;
-    visibility: visible !important;
-    height: auto !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-  }
-
-  // Nav list: horizontal row
-  .navbar .navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    gap: 1.25rem;
-  }
-
-  // Each nav item: inline-flex, no bullets, no stacking
-  .navbar .navbar-nav .nav-item {
-    display: inline-flex !important;
-    list-style: none !important;
-    width: auto !important;
-  }
-
-  // Extra space before Download
-  .navbar .nav-link:has(.nav-cta) {
-    margin-left: 1rem;
-  }
-
-  .navbar .nav-link {
-    transform: translateY(8px);
-    transition: color $animation-duration-fast ease;
-
-    &:hover, &:focus {
-      color: $color-text-highlight !important;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
-  }
-  .navbar {
-    position: relative;
-  }
-}
 
-// ---------- Dropdown menu container ----------
-.navbar .dropdown-menu {
-  min-width: 320px;
-  padding: 0.5rem;
-  border-radius: $layout-border-radius;
-  border: 1px solid rgba($color-accent-primary, 0.12);
-  box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.2),
-    0 16px 40px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba($color-accent-primary, 0.04) inset;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-.navbar .dropdown-menu {
-  margin-top: 0.75rem;
-}
-.navbar .dropdown-item {
-  padding: 0.65rem 0.85rem;
-  border-radius: $layout-border-radius-small;
-  white-space: normal;
-  transition: background $animation-duration-fast ease;
+    // Brand container: take only as much width as needed, vertically centered
+    .navbar-brand-container {
+      flex: 0 0 auto;
+      max-width: none;
+    }
 
-  &:hover,
-  &:focus {
-    background: rgba($color-accent-primary, 0.08);
+    // Logo size cap
+    .navbar-logo {
+      max-height: 56px;
+    }
 
-    .nav-rich-icon {
-      background: $color-accent-secondary;
+    // Hide hamburger
+    .navbar-toggler {
+      display: none;
+    }
 
-      iconify-icon {
-        color: $color-bg;
+    // Collapse container takes the remaining space, vertically centered
+    .navbar-collapse {
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+    }
+
+    // Nav list: horizontal row
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    // Extra space before Download
+    .nav-link:has(.nav-cta) {
+      margin-left: 1rem;
+    }
+
+    .nav-link {
+      &:hover, &:focus {
+        color: $color-text-highlight;
       }
     }
-  }
 
-  > span {
-    text-decoration: none;
-  }
-}
-@media (min-width: $bp-lg) {
-  .navbar .navbar-container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
+    // Open on hover (pointer) and on focus-within (keyboard tabbing into the item)
+    .nav-item.dropdown:hover .dropdown-menu,
+    .nav-item.dropdown:focus-within .dropdown-menu {
+      display: block;
+    }
 
-  .navbar .navbar-toggler {
-    display: none !important;
-    width: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 0 !important;
-  }
-}
-@media (min-width: $bp-lg) {
-  .navbar .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-  }
+    .nav-item.dropdown .dropdown-menu {
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  .navbar .nav-item.dropdown {
-    position: relative;
-  }
+    .nav-item.dropdown .dropdown-menu::before {
+      content: "";
+      position: absolute;
+      top: -0.75rem;
+      left: 0;
+      right: 0;
+      height: 0.75rem;
+    }
 
-  .navbar .nav-item.dropdown .dropdown-menu {
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 0.75rem;
-  }
-
-  .navbar .nav-item.dropdown .dropdown-menu::before {
-    content: "";
-    position: absolute;
-    top: -0.75rem;
-    left: 0;
-    right: 0;
-    height: 0.75rem;
-  }
-
-  // Two-column layout for dropdowns with more than 4 items
-  .navbar .nav-item.dropdown:hover .dropdown-menu:has(> li:nth-child(5)) {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    min-width: 640px;
+    // Two-column layout for dropdowns with more than 4 items
+    .nav-item.dropdown:hover .dropdown-menu:has(> li:nth-child(5)),
+    .nav-item.dropdown:focus-within .dropdown-menu:has(> li:nth-child(5)) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-width: 640px;
+    }
   }
 }
 
-// ---------- Rich item layout ----------
+// Make the max-width trigger at a different width than min-width
+@media (max-width: calc(#{$bp-lg} - 0.02px)) {
+  .navbar {
+    // Brand row: centered logo (via Bootstrap's .mx-auto on the brand container) with
+    // the hamburger on the right; the expanded menu wraps to its own full-width row
+    .navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    // Leave room for the hamburger; scale the logo down instead of letting Quarto's
+    // overflow:hidden on .navbar-brand clip it on narrow screens
+    .navbar-brand-container {
+      max-width: calc(100% - 80px);
+      min-width: 0;
+
+      .navbar-brand {
+        max-width: 100%;
+        min-width: 0;
+      }
+    }
+
+    .navbar-logo {
+      max-height: 40px;
+      max-width: 100%;
+    }
+
+    // The compiled Quarto/Bootstrap CSS ships no styles for the toggler button or its
+    // icon on regular (non-dashboard) pages, so provide the hamburger chrome ourselves
+    .navbar-toggler {
+      padding: 0.3rem 0.65rem;
+      background: transparent;
+      border: 1px solid $color-border-light;
+      border-radius: $layout-border-radius-small;
+    }
+
+    .navbar-toggler-icon {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: middle;
+      // Hamburger lines; stroke is $color-text (#b8c8ca), keep in sync with the token
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(184, 200, 202, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    .navbar-collapse {
+      flex-basis: 100%;
+    }
+
+    .dropdown-menu {
+      // Flow inline and push the nav items below down (standard Bootstrap mobile
+      // behavior) instead of overlaying them with the stock absolute positioning
+      position: static;
+      min-width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+// Rich item layout
 .nav-rich {
   display: block;
 }
@@ -219,7 +242,7 @@
   width: 32px;
   height: 32px;
   border-radius: $layout-border-radius-small;
-  background: rgba($color-text, 0.25);
+  background: $color-surface-primary-light;
   flex-shrink: 0;
   transition: background $animation-duration-fast ease;
 
@@ -239,7 +262,7 @@
 
 .nav-ext-icon {
   font-size: 0.7rem;
-  color: rgba($color-text, 0.5);
+  color: $color-text-light;
   margin-left: auto;
   flex-shrink: 0;
 }
@@ -250,44 +273,4 @@
   color: $color-text;
   line-height: 1.45;
   font-weight: 400;
-}
-
-// Download CTA button
-.navbar .nav-cta {
-  @extend %button-base;
-
-  background: $color-bg;
-  color: $color-text-highlight;
-  border: 1px solid $color-accent-secondary;
-  padding: 0.45rem 1.1rem;
-  font-weight: 500;
-
-  &:hover {
-    background: $color-accent-secondary;
-    color: $color-bg;
-  }
-}
-
-@media (max-width: $bp-lg) {
-  .navbar {
-    padding-top: 0.875rem !important;
-    padding-bottom: 0.875rem !important;
-  }
-
-  .navbar .navbar-logo {
-    max-height: 40px;
-    width: auto;
-  }
-
-  .navbar .dropdown-menu {
-    min-width: 100%;
-    box-shadow: none;
-    border: none;
-  }
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }

@@ -57,7 +57,7 @@
       & > p {
         font-size: 0.8125rem;
         line-height: 1.65;
-        color: rgba($color-text, 0.75);
+        color: $color-text-muted;
         margin: 0;
         flex: 1;
       }

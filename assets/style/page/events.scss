@@ -5,92 +5,28 @@
   grid-template-columns: 260px 1fr;
   gap: 3rem;
   padding: 2.5rem 0;
-  border-top: 1px solid $color-border-faint;
   align-items: start;
   position: relative;
 
-  &:first-of-type {
-    border-top: none;
+  & + & {
+    border-top: 1px solid $color-border-faint;
   }
 
-  &:hover img {
+  &:hover .page-events__img {
     border-color: $color-border-light;
   }
 
-  & > img {
-    width: 100%;
-    height: 175px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    border-radius: $layout-border-radius;
-    border: 1px solid $color-border-faint;
-
-    .page-events__item--past & {
+  &--past {
+    .page-events__img {
       opacity: 0.55;
     }
-  }
 
-  .page-events__body > h3 {
-    font-size: clamp(1.125rem, 2vw, 1.375rem);
-    font-weight: 600;
-    color: $color-text-highlight;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin: 0 0 0.35rem;
-
-    .page-events__item--past & {
+    .page-events__title {
       color: $color-text-muted;
-    }
-
-    & > a {
-      color: inherit;
-      text-decoration: none;
-
-      &::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-      }
-
-      &:hover {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
-
-    .page-events__tag {
-      @include eyebrow-label(0.6rem);
-
-      display: inline-block;
-      margin-bottom: 0.5rem;
-      color: $color-text-light;
-    }
-
-    .page-events__time {
-      font-size: 0.75rem;
-      font-family: $font-monospace;
-      color: $color-text-muted;
-      letter-spacing: 0.04em;
-      margin: 0 0 0.85rem;
     }
 
     .page-events__desc {
-      font-size: 0.9375rem;
-      line-height: 1.75;
-      color: $color-text-muted;
-      margin: 0 0 1.25rem;
-
-      .page-events__item--past & {
-        color: $color-text-light;
-        margin-bottom: 0;
-      }
-    }
-
-    .page-events__actions {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      color: $color-text-light;
     }
   }
 
@@ -98,4 +34,79 @@
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
+}
+
+.page-events__img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  display: block;
+  border-radius: $layout-border-radius;
+  border: 1px solid $color-border-faint;
+  transition: border-color $animation-duration-base ease;
+}
+
+.page-events__title {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
+  color: $color-text-highlight;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.35rem;
+
+  & > a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+
+    // Stretched link: makes the whole item clickable
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+
+    // The focus ring wraps the whole clickable card, not just the title text
+    &:focus-visible::after {
+      outline: 2px solid $color-accent-primary;
+      outline-offset: 2px;
+      border-radius: $layout-border-radius;
+    }
+  }
+}
+
+.page-events__tag {
+  @include eyebrow-label(0.6rem);
+
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: $color-text-light;
+}
+
+.page-events__time {
+  font-size: 0.75rem;
+  font-family: $font-monospace;
+  color: $color-text-muted;
+  letter-spacing: 0.04em;
+}
+
+.page-events__desc {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: $color-text-muted;
+  margin: 0 0 1.25rem;
+
+  // Past items without surviving CTAs have their actions row removed by the
+  // template JS, leaving the description last in the body
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-events__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }

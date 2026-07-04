@@ -5,7 +5,7 @@
   <button class="page-impact__toggle-btn" data-layer="orgs">Organizations</button>
 </div>
 
-<div id="page-impact-startup-map"></div>
+<div id="page-impact-startup-map" class="page-impact__map"></div>
 
 <script>
 function initImpactMap() {

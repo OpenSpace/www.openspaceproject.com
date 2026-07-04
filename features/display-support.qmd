@@ -47,7 +47,7 @@ cta:
 
 ## Dome theaters
 
-![](/assets/images/venue-cards/hayden_jwst.webp){.page-display-support__img fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
+![](/assets/images/venue-cards/hayden_jwst.webp){.page-display-support__media fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
 
 ::: {.page-display-support__body}
 Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.
@@ -67,7 +67,7 @@ Full-dome fisheye projection for fixed and portable planetariums. OpenSpace hand
 
 ## Classrooms & desktops
 
-![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-display-support__img fig-alt="Students using OpenSpace in a classroom at AMNH"}
+![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-display-support__media fig-alt="Students using OpenSpace in a classroom at AMNH"}
 
 ::: {.page-display-support__body}
 
@@ -87,7 +87,7 @@ OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
 ## Museum exhibits
 
-![](/assets/images/venue-cards/spaceship.webp){.page-display-support__img fig-alt="OpenSpace running in a museum exhibit"}
+![](/assets/images/venue-cards/spaceship.webp){.page-display-support__media fig-alt="OpenSpace running in a museum exhibit"}
 
 ::: {.page-display-support__body}
 Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium.
@@ -107,7 +107,7 @@ Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays fo
 ## Fisheye rendering
 
 ```{=html}
-<video class="page-display-support__img" autoplay loop muted playsinline>
+<video class="page-display-support__media page-display-support__media--square" autoplay loop muted playsinline>
   <source src="/assets/videos/fisheye.mp4" type="video/mp4">
 </video>
 ```

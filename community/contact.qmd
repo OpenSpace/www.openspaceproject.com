@@ -21,7 +21,8 @@ hero:
 
   <div class="page-contact__form-wrap">
     <h2>Send a message</h2>
-    <form id="page-contact-form" novalidate>
+    <p>This form opens your email client with a pre-addressed message to <a href="support@openspaceproject.com">support@openspaceproject.com</a>. Use that email address or the Slack to get in touch!</p>
+    <form id="contact-form" novalidate>
       <div class="page-contact__form-field">
         <label for="cf-name">Name</label>
         <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name">
@@ -35,12 +36,11 @@ hero:
         <input type="text" id="cf-subject" name="subject" placeholder="What's this about?">
       </div>
       <div class="page-contact__form-field">
-        <label for="cf-message">Message <span class="cf-required">*</span></label>
+        <label for="cf-message">Message <span class="page-contact__form-required">*</span></label>
         <textarea id="cf-message" name="message" placeholder="Tell us what you need…" required></textarea>
       </div>
       <p class="page-contact__form-error" id="cf-error" hidden></p>
       <button type="submit" class="button__primary">Send message</button>
-      <p class="page-contact__form-note">This opens your email client with a pre-addressed message to support@openspaceproject.com.</p>
     </form>
   </div>
 

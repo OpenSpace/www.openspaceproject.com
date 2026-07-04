@@ -1,234 +1,226 @@
 /*-- scss:rules --*/
 
-.page-research__paper-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+.page-research__paper-year-label {
+  @include eyebrow-label(0.65rem);
 
-  .page-research__paper-year-label {
-    @include eyebrow-label(0.65rem);
+  color: $color-text-light;
+  padding: 1.5rem 1.1rem 0.5rem;
+  border-top: 1px solid $color-border-faint;
+  margin-top: 0.5rem;
 
-    color: $color-border-muted;
-    padding: 1.5rem 1.1rem 0.5rem;
-    border-top: 1px solid $color-border-faint;
-    margin-top: 0.5rem;
-
-    &:first-child {
-      border-top: none;
-      padding-top: 0;
-    }
-  }
-
-  .page-research__paper-row {
-    padding: 1rem 1.1rem;
-    border-radius: $layout-border-radius;
-    transition: background $animation-duration-fast ease;
-
-    &:hover {
-      background: $color-surface-primary-faint;
-    }
-
-    .page-research__paper-title {
-      font-size: 1rem;
-      font-weight: 500;
-      color: $color-text-highlight;
-      line-height: 1.4;
-      margin-bottom: 0.3rem;
-
-      a {
-        color: $color-text-highlight;
-        text-decoration: none;
-
-        &:hover {
-          color: $color-accent-soft;
-        }
-      }
-
-      i, .bi {
-        display: none;
-      }
-    }
-
-    .page-research__paper-author {
-      font-size: 0.8125rem;
-      color: $color-text-light;
-      line-height: 1.5;
-      margin-bottom: 0.35rem;
-    }
-
-    .page-research__paper-venue-badge {
-      display: inline-block;
-      font-size: 0.62rem;
-      font-family: $font-monospace;
-      letter-spacing: 0.08em;
-      color: rgba($color-accent-soft, 0.85);
-      background: rgba($color-accent-soft, 0.07);
-      border: 1px solid rgba($color-accent-soft, 0.2);
-      padding: 0.15rem 0.5rem;
-      border-radius: $layout-border-radius-small;
-    }
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
   }
 }
+
+.page-research__paper-row {
+  padding: 1rem 1.1rem;
+  border-radius: $layout-border-radius;
+  transition: background $animation-duration-fast ease;
+
+  &:hover {
+    background: $color-surface-primary-faint;
+  }
+}
+
+.page-research__paper-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-text-highlight;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+
+  a {
+    color: $color-text-highlight;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-accent-soft;
+    }
+  }
+
+  i, .bi {
+    display: none;
+  }
+}
+
+.page-research__paper-author {
+  font-size: 0.8125rem;
+  color: $color-text-light;
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
+}
+
+.page-research__paper-venue-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.08em;
+  color: rgba($color-accent-soft, 0.85);
+  background: rgba($color-accent-soft, 0.07);
+  border: 1px solid rgba($color-accent-soft, 0.2);
+  padding: 0.15rem 0.5rem;
+  border-radius: $layout-border-radius-small;
+}
+
 .page-research__thesis-partners {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1.25rem 0 2.5rem;
+}
 
-  button {
-    font-size: 0.7rem;
-    font-family: $font-monospace;
-    letter-spacing: 0.06em;
-    color: $color-text-muted;
+.page-research__thesis-partner-tag {
+  font-size: 0.7rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.06em;
+  color: $color-text-muted;
+  background: $color-surface-primary-faint;
+  border: 1px solid $color-border-faint;
+  padding: 0.3rem 0.75rem;
+  border-radius: $layout-border-radius;
+  cursor: pointer;
+  appearance: none;
+  transition:
+    background $animation-duration-fast,
+    border-color $animation-duration-fast,
+    color $animation-duration-fast;
+
+  &:hover {
+    border-color: $color-border-light;
+    color: $color-accent-primary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 2px;
+  }
+
+  &.is-active {
+    background: $color-surface-primary-light;
+    border-color: $color-border-muted;
+    color: $color-accent-primary;
+  }
+}
+
+.page-research__thesis-row.is-hidden,
+.page-research__thesis-year-label.is-hidden {
+  display: none;
+}
+
+.page-research__thesis-year-label {
+  @include eyebrow-label(0.65rem);
+
+  color: $color-text-light;
+  padding: 1.5rem 0 0.5rem;
+  border-top: 1px solid $color-border-faint;
+  margin-top: 0.5rem;
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.page-research__thesis-row {
+  display: grid;
+  grid-template-columns: 168px 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem 1.1rem;
+  border-radius: $layout-border-radius;
+  align-items: center;
+  transition: background $animation-duration-fast ease;
+
+  &:hover {
     background: $color-surface-primary-faint;
-    border: 1px solid $color-border-faint;
-    padding: 0.3rem 0.75rem;
-    border-radius: $layout-border-radius;
-    cursor: pointer;
-    appearance: none;
-    transition:
-      background $animation-duration-fast,
-      border-color $animation-duration-fast,
-      color $animation-duration-fast;
+  }
 
-    &:hover {
-      background: $color-surface-primary-faint;
-      border-color: $color-border-light;
-      color: $color-accent-primary;
-    }
-
-    &.is-active {
-      background: $color-surface-primary-faint;
-      border-color: $color-border-muted;
-      color: $color-accent-primary;
-    }
+  @media (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.9rem 0.75rem;
   }
 }
 
-.page-research__thesis-hidden {
-  display: none !important;
-}
-
-.page-research__thesis-list {
+.page-research__thesis-photos {
   display: flex;
-  flex-direction: column;
-  gap: 0;
+  gap: 0.4rem;
+  justify-content: flex-start;
+  align-items: center;
 
-  .page-research__thesis-year-label {
-    @include eyebrow-label(0.65rem);
-
-    color: $color-border-muted;
-    padding: 1.5rem 0 0.5rem;
-    border-top: 1px solid $color-border-faint;
-    margin-top: 0.5rem;
-
-    &:first-child {
-      border-top: none;
-      padding-top: 0;
-    }
-  }
-
-  .page-research__thesis-row {
-    display: grid;
-    grid-template-columns: 168px 1fr;
-    gap: 1.25rem;
-    padding: 1.25rem 1.1rem;
-    border-radius: $layout-border-radius;
-    align-items: center;
-    transition: background $animation-duration-fast ease;
-
-    &:hover {
-      background: $color-surface-primary-faint;
-    }
-
-    .page-research__thesis-photos {
-      display: flex;
-      gap: 0.4rem;
-      justify-content: flex-start;
-      align-items: center;
-
-      img {
-        width: 72px;
-        height: 72px;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: top center;
-        border: 1.5px solid $color-border-bw-light;
-        flex-shrink: 0;
-
-        @media (max-width: $bp-sm) {
-          width: 48px;
-          height: 48px;
-        }
-      }
-
-      @media (max-width: $bp-sm) {
-        justify-content: flex-start;
-      }
-    }
-
-    .page-research__thesis-content {
-      .page-research__thesis-title {
-        font-size: 1rem;
-        font-weight: 500;
-        color: $color-text-highlight;
-        line-height: 1.4;
-        margin-bottom: 0.3rem;
-
-        a {
-          color: $color-text-highlight;
-          text-decoration: none;
-
-          &:hover {
-            color: $color-accent-primary;
-          }
-        }
-
-        // Suppress Quarto's external link icon inside thesis titles
-        i, .bi {
-          display: none;
-        }
-
-        .page-research__thesis-degree-badge {
-          display: inline-block;
-          font-size: 0.6rem;
-          font-family: $font-monospace;
-          letter-spacing: 0.1em;
-          color: $color-accent-soft;
-          border: 1px solid rgba($color-accent-soft, 0.4);
-          padding: 0.1rem 0.45rem;
-          border-radius: $layout-border-radius-small;
-          margin-left: 0.5rem;
-          vertical-align: middle;
-          position: relative;
-          top: -1px;
-        }
-      }
-
-      .page-research__thesis-author {
-        font-size: 0.8125rem;
-        color: $color-text-light;
-        line-height: 1.4;
-        margin-bottom: 0.35rem;
-      }
-
-      .page-research__thesis-partner-badge {
-        display: inline-block;
-        font-size: 0.62rem;
-        font-family: $font-monospace;
-        letter-spacing: 0.08em;
-        color: rgba($color-accent-primary, 0.7);
-        background: rgba($color-accent-primary, 0.07);
-        border: 1px solid rgba($color-accent-primary, 0.15);
-        padding: 0.15rem 0.5rem;
-        border-radius: $layout-border-radius-small;
-      }
-    }
+  img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 1.5px solid $color-border-bw-light;
+    flex-shrink: 0;
 
     @media (max-width: $bp-sm) {
-      grid-template-columns: 1fr;
-      gap: 0.75rem;
-      padding: 0.9rem 0.75rem;
+      width: 48px;
+      height: 48px;
     }
   }
+
+  @media (max-width: $bp-sm) {
+    justify-content: flex-start;
+  }
+}
+
+.page-research__thesis-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-text-highlight;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+
+  a {
+    color: $color-text-highlight;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-accent-primary;
+    }
+  }
+
+  // Suppress Quarto's external link icon inside thesis titles
+  i, .bi {
+    display: none;
+  }
+}
+
+.page-research__thesis-degree-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.1em;
+  color: $color-accent-soft;
+  border: 1px solid rgba($color-accent-soft, 0.4);
+  padding: 0.1rem 0.45rem;
+  border-radius: $layout-border-radius-small;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.page-research__thesis-author {
+  font-size: 0.8125rem;
+  color: $color-text-light;
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+}
+
+.page-research__thesis-partner-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.08em;
+  color: rgba($color-accent-primary, 0.7);
+  background: rgba($color-accent-primary, 0.07);
+  border: 1px solid rgba($color-accent-primary, 0.15);
+  padding: 0.15rem 0.5rem;
+  border-radius: $layout-border-radius-small;
 }

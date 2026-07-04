@@ -2,6 +2,7 @@
 
 .page-impact__map-toggle {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -22,24 +23,30 @@
     color $animation-duration-fast ease,
     background $animation-duration-fast ease;
 
-  &:hover {
+  // :not(.is-active) keeps this at higher specificity than the .is-active
+  // block below, so the accent border wins on hover regardless of source order
+  &:not(.is-active):hover {
     border-color: $color-border-muted;
     color: $color-accent-primary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 2px;
   }
 
   &.is-active {
     border-color: $color-accent-primary;
     color: $color-accent-primary;
-    background: rgba($color-accent-primary, 0.08);
+    background: $color-surface-primary-faint;
   }
 }
 
-// Startup map
-#page-impact-startup-map {
+.page-impact__map {
   height: 460px;
   border-radius: $layout-border-radius;
-  border: 1px solid $color-border-light;
-  background: $color-bg;
+  border: 1px solid $color-border-faint;
+  background: none !important;
 }
 
 .page-impact__map-footer {
@@ -51,16 +58,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
 
-  a {
-    color: $color-accent-primary;
-    text-decoration: none;
-    font-family: $font-monospace;
-    letter-spacing: 0.04em;
+.page-impact__footer-link {
+  color: $color-accent-primary;
+  text-decoration: none;
+  font-family: $font-monospace;
+  letter-spacing: 0.04em;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -69,8 +76,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
+}
 
-  a {
-    @include pill-link;
-  }
+.page-impact__report-link {
+  @include pill-link;
 }

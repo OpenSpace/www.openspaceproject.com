@@ -34,57 +34,61 @@ cta:
 ---
 
 ::: {.page-download__actions}
-[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__button--primary}
+[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__button-primary}
 
-[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download__button--secondary target="_blank" rel="noopener"}
+[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download__button-secondary target="_blank" rel="noopener"}
 :::
 
 ::: {.page-download__summary}
 Windows · Linux (source)
 :::
 
-::::: {.content-section}
+:::::: {.content-section}
 
 ## Platforms
 
-:::: {.page-download__platforms}
+::::: {.page-download__platforms}
 
-::: {.page-download__platform}
+:::: {.page-download__platform}
 {{< iconify fa7-brands:windows >}}
 
 ### Windows
 
+::: {.page-download__platform-desc}
 Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.
-
-[Download v0.22.0 (full)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip)
-
-[Download v0.22.0 (lightweight)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip)
-
-[View previous versions](previous-versions.qmd){.is-text}
 :::
 
-::: {.page-download__platform}
+[Download v0.22.0 (full)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__platform-link}
+
+[Download v0.22.0 (lightweight)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip){.page-download__platform-link}
+
+[View previous versions](previous-versions.qmd){.page-download__platform-more}
+::::
+
+:::: {.page-download__platform}
 {{< iconify fa7-brands:linux >}}
 
 ### Linux
 
+::: {.page-download__platform-desc}
 No pre-compiled binary for Linux. Source code is freely available on GitHub — build instructions are in the documentation.
-
-[View source on GitHub](https://github.com/OpenSpace/OpenSpace){target="_blank" rel="noopener"}
-
-[Build instructions](https://docs.openspaceproject.com/latest/getting-started/install/index.html){target="_blank" rel="noopener"}
 :::
 
+[View source on GitHub](https://github.com/OpenSpace/OpenSpace){.page-download__platform-link target="_blank" rel="noopener"}
+
+[Build instructions](https://docs.openspaceproject.com/latest/getting-started/install/index.html){.page-download__platform-link target="_blank" rel="noopener"}
 ::::
 
 :::::
+
+::::::
 
 :::: {.content-section .page-download__requirements}
 
 ## System requirements
 
 ::: {.page-download__requirements-panel}
-Minimum
+[Minimum]{.page-download__requirements-label}
 
 CPU
 : Intel Core i5 or equivalent
@@ -103,7 +107,7 @@ OS
 :::
 
 ::: {.page-download__requirements-panel .is-recommended}
-Recommended
+[Recommended]{.page-download__requirements-label}
 
 CPU
 : Modern Intel Core i7 / AMD Ryzen 7

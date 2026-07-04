@@ -9,39 +9,23 @@
   p {
     margin: 0;
   }
+}
 
-  .page-download__button--primary {
-    @extend .button__primary;
+.page-download__button-primary {
+  @extend %button-primary;
 
-    gap: 0.6rem;
-    font-weight: 700;
-    font-size: 1.0625rem;
-    padding: 0.9rem 2.25rem;
-    letter-spacing: -0.01em;
-    border: none;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  padding: 0.9rem 2.25rem;
+  letter-spacing: -0.01em;
+}
 
-    svg {
-      width: 18px;
-      height: 18px;
-    }
-  }
+.page-download__button-secondary {
+  @extend %button-secondary;
 
-  .page-download__button--secondary {
-    @extend .button__secondary;
-
-    gap: 0.4rem;
-    font-size: 0.875rem;
-
-    svg {
-      width: 15px;
-      height: 15px;
-      opacity: 0.7;
-    }
-
-    &:hover {
-      color: $color-text-highlight;
-    }
-  }
+  gap: 0.4rem;
+  font-size: 0.875rem;
 }
 
 .page-download__summary {
@@ -61,6 +45,7 @@
   @media (max-width: $bp-md) {
     grid-template-columns: 1fr;
     max-width: 560px;
+    margin-inline: auto;
   }
 
   > section {
@@ -95,7 +80,7 @@
 
 .page-download__requirements {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 
   @media (max-width: $bp-sm) {
@@ -148,21 +133,26 @@
   border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
 
+  p {
+    margin: 0;
+  }
+
   &.is-recommended {
     border-color: $color-border-light;
     background: $color-surface-primary-faint;
-  }
 
-  > p:first-child {
-    @include eyebrow-label(0.7rem);
-
-    margin: 0 0 1.25rem;
-    color: $color-text-light;
+    .page-download__requirements-label {
+      color: $color-accent-primary;
+    }
   }
+}
 
-  &.is-recommended > p:first-child {
-    color: $color-accent-primary;
-  }
+.page-download__requirements-label {
+  @include eyebrow-label(0.7rem);
+
+  display: block;
+  margin-bottom: 1.25rem;
+  color: $color-text-light;
 }
 
 .page-download__platforms {
@@ -178,13 +168,16 @@
 .page-download__platform {
   @include card-hover-lift;
 
-  flex-direction: column;
-  gap: 0.75rem;
   padding: 2rem 1.75rem;
   border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
   background: $color-surface-primary;
-  transition: border-color $animation-duration-base ease;
+
+  // Restate the card-hover-lift transform transition — this shorthand would otherwise
+  // fully replace it, snapping the hover lift
+  transition:
+    transform $animation-duration-fast ease,
+    border-color $animation-duration-base ease;
 
   &:hover {
     border-color: $color-border-muted;
@@ -192,7 +185,6 @@
 
   > section {
     display: flex;
-    flex: 1;
     flex-direction: column;
     gap: 0.75rem;
   }
@@ -214,50 +206,45 @@
     color: $color-text-highlight;
   }
 
-  h3 + p {
-    flex: 1;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: $color-text-muted;
+}
+
+.page-download__platform-desc {
+  flex: 1;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: $color-text-muted;
+}
+
+.page-download__platform-link {
+  @include pill-link(
+    $bg: $color-overlay-faint,
+    $border: $color-border-faint
+  );
+
+  // pill-link is inline-flex; these links are stacked full-width rows, and margin auto
+  // centering needs a block-level box
+  display: flex;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.65rem 1.25rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-weight: 600;
+
+  &:hover {
+    background: $color-surface-primary;
   }
+}
 
-  a {
-    @include pill-link(
-      $bg: $color-overlay-faint,
-      $border: $color-border-faint
-    );
-
-    // pill-link is inline-flex; these links are stacked full-width rows, and margin auto
-    // centering needs a block-level box
-    display: flex;
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0.65rem 1.25rem;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    font-weight: 600;
-
-    &:hover {
-      background: $color-surface-primary;
-    }
-
-    &.is-text {
-      max-width: none;
-      padding: 0.35rem 0 0;
-      border: none;
-      background: none;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      font-weight: 500;
-      color: $color-accent-primary;
-
-      &:hover {
-        background: none;
-        transform: none;
-        color: $color-accent-primary;
-      }
-    }
-  }
+// Subdued "view previous versions" text link below the pill links
+.page-download__platform-more {
+  display: block;
+  padding-top: 0.35rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $color-accent-primary;
+  text-decoration: none;
 }

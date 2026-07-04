@@ -307,7 +307,7 @@
       position: absolute;
       bottom: 0;
       left: clamp(1.5rem, 8vw, 12rem);
-      width: calc(#{$layout-container-max} - 2 * clamp(1.5rem, 8vw, 12rem));
+      width: calc(#{$layout-container-max-wide} - 2 * clamp(1.5rem, 8vw, 12rem));
       height: 1px;
       background: $color-surface-primary-faint;
     }

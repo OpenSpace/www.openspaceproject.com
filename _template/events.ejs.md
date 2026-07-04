@@ -32,11 +32,11 @@ for (const item of items) {
     : "";
 %>
   <div class="page-events__item" data-ev-item data-date="<%- iso %>"<% if (descPast) { %> data-desc-past="<%- descPast %>"<% } %>>
-    <img src="<%- item.image %>" alt="<%- item.alt %>">
+    <img class="page-events__img" src="<%- item.image %>" alt="<%- item.alt %>">
 
     <div class="page-events__body">
       <span class="page-events__tag"><%- item.type %></span>
-      <h3>
+      <h3 class="page-events__title">
         <%
           if (item.page) {
         %>
@@ -125,13 +125,11 @@ for (const item of items) {
     let d = new Date(el._ts);
     timeEl.textContent = '';
     let dateRow = document.createElement('span');
-    dateRow.className = 'page-events__time';
     dateRow.textContent = dateFmt.format(d);
     timeEl.appendChild(dateRow);
     zones.forEach(function (f) {
       timeEl.appendChild(document.createTextNode(' · '));
       let row = document.createElement('span');
-      row.className = 'page-events__time-row';
       row.textContent = f.format(d);
       timeEl.appendChild(row);
     });

@@ -1,28 +1,26 @@
 /*-- scss:rules --*/
 
-.page-display-support__img {
+.page-display-support__media {
   width: 100%;
   height: clamp(280px, 42vw, 540px);
   object-fit: cover;
-  object-position: center;
   display: block;
   border-radius: $layout-border-radius;
   border: 1px solid $color-border-faint;
   margin-bottom: 2.5rem;
+}
 
-  #fisheye & {
-    width: min(100%, 80vh);
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 2.5rem;
-  }
+.page-display-support__media--square {
+  width: min(100%, 80vh);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
 }
 
 .page-display-support__body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
-  align-items: start;
 
   @media (max-width: $bp-md) {
     grid-template-columns: 1fr;

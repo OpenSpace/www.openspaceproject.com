@@ -1,5 +1,13 @@
 /*-- scss:rules --*/
 
+$page-brand-light-surface: #f0f4f6;
+$page-brand-light-button-bg: $color-accent-primary;
+$page-brand-light-button-text: black;
+$page-brand-light-button-border: rgba(black, 0.65);
+$page-brand-light-button-highlight: $color-accent-secondary;
+$page-brand-light-border: rgba(black, 0.08);
+
+
 .page-brand__credit-text {
   background: $color-surface-primary-faint;
   border: 1px solid $color-border-light;
@@ -43,7 +51,6 @@
     max-width: 100%;
     width: auto;
     height: auto;
-    display: block;
     object-fit: contain;
   }
 
@@ -52,27 +59,26 @@
   }
 
   &--light {
-    background: #f0f4f6;
+    background: $page-brand-light-surface;
 
     .page-brand__logo-meta {
-      background: rgba(white, 0.65);
-      border-top-color: rgba(black, 0.08);
+      border-top-color: $page-brand-light-border;
 
       h3 {
-        color: black;
+        color: $page-brand-light-button-text;
       }
 
       p {
-        color: black;
+        color: $page-brand-light-button-text;
       }
 
       a {
-        color: darken($color-accent-primary, 38%);
-        border-color: rgba(darken($color-accent-primary, 30%), 0.4);
+        color: $page-brand-light-button-text;
+        background: $page-brand-light-button-bg;
+        border-color: $page-brand-light-button-border;
 
         &:hover {
-          background: rgba(darken($color-accent-primary, 30%), 0.08);
-          color: darken($color-accent-primary, 42%);
+          background: $page-brand-light-button-highlight;
         }
       }
     }
@@ -85,7 +91,6 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: $color-bg;
 
   h3 {
     font-size: 0.875rem;
@@ -98,7 +103,7 @@
   p {
     font-size: 0.72rem;
     font-family: $font-monospace;
-    color: rgba($color-text, 0.6);
+    color: $color-text-light;
     margin: 0;
   }
 
@@ -114,13 +119,8 @@
     white-space: nowrap;
     transition: background $animation-duration-fast ease;
 
-    i, .bi {
-      display: none;
-    }
-
     &:hover {
       background: $color-surface-primary-faint;
-      color: $color-accent-primary;
       text-decoration: none;
     }
   }

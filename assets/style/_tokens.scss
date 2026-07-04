@@ -96,7 +96,8 @@ $layout-section-padding-narrow: 4.5rem clamp(2.5rem, 8vw, 12rem) 3rem;
 $layout-section-title-min: 1.75rem;
 $layout-section-title-max: 2.5rem;
 
-$layout-container-max: 1200px;
+$layout-container-max-wide: 1200px;
+$layout-container-max-narrow: 850px;
 $layout-border-radius: 12px;
 $layout-border-radius-small: 6px;
 $layout-button-padding: 0.75rem 1.75rem;

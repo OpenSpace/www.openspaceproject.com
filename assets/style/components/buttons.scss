@@ -34,7 +34,7 @@
   }
 }
 
-.button__primary {
+%button-primary {
   @extend %button-base;
 
   background: $color-button-primary-bg;
@@ -46,7 +46,11 @@
   }
 }
 
-.button__secondary {
+.button__primary {
+  @extend %button-primary;
+}
+
+%button-secondary {
   @extend %button-base;
 
   background: $color-button-secondary-bg;
@@ -57,4 +61,8 @@
     background: $color-overlay-faint;
     box-shadow: 0 0 24px $color-overlay-light;
   }
+}
+
+.button__secondary {
+  @extend %button-secondary;
 }

@@ -1,9 +1,8 @@
 /*-- scss:rules --*/
 
 .page-contact__body {
-  max-width: 860px;
+  max-width: $layout-container-max-narrow;
   margin: 4rem auto;
-  padding: $layout-section-padding-wide;
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 4rem;
@@ -14,72 +13,12 @@
     gap: 2.5rem;
     margin: 2.5rem auto;
   }
-}
 
-.page-contact__form-wrap {
   h2 {
     font-size: 1.1rem;
     font-weight: 600;
     color: $color-text-highlight;
     margin: 0 0 1.5rem;
-  }
-
-  .page-contact__form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    margin-bottom: 1rem;
-
-    label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      color: $color-text-light;
-    }
-
-    input, textarea {
-      @include text-input;
-
-      border-radius: $layout-border-radius-small;
-      width: 100%;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 130px;
-    }
-
-    .page-contact__form-required {
-      color: $color-accent-primary;
-      margin-left: 0.15rem;
-    }
-  }
-
-  .page-contact__form-note {
-    font-size: 0.75rem;
-    color: $color-text-faint;
-    margin: 0.75rem 0 0;
-    line-height: 1.5;
-  }
-
-  .page-contact__form-error {
-    font-size: 0.78rem;
-    color: $color-attention-alert;
-    margin: 0.5rem 0 0;
-  }
-}
-
-.page-contact__slack-wrap {
-  padding: 1.5rem;
-  padding-top: 0;
-  border: 1px solid $color-border-faint;
-  border-radius: $layout-border-radius;
-
-  h2 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: $color-text-highlight;
-    margin: 0 0 0.75rem;
   }
 
   p {
@@ -88,4 +27,45 @@
     color: $color-text-light;
     margin: 0 0 1.25rem;
   }
+}
+
+.page-contact__form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: $color-text-light;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    @include text-input;
+
+    border-radius: $layout-border-radius-small;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
+}
+
+.page-contact__form-required {
+  color: $color-accent-primary;
+  margin-left: 0.15rem;
+}
+
+.page-contact__form-error {
+  font-size: 0.78rem;
+  color: $color-attention-alert;
+  margin: 0.5rem 0 0;
+}
+
+.page-contact__slack-wrap {
+  border: 1px solid $color-border-faint;
+  border-radius: $layout-border-radius;
 }

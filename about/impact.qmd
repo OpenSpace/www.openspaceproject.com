@@ -51,11 +51,11 @@ Explore anonymous startup locations from our usage data, or see the 100+ organiz
 
 ::: {.page-impact__map-footer}
 
-::: {#page-impact-map-footer-tex}
+::: {#page-impact-map-footer-text}
 Each marker = a unique startup location &nbsp;·&nbsp; Circle size scales with launch count
 :::
 
-[View full usage stats &rarr;](https://status.openspaceproject.com/)
+[View full usage stats &rarr;](https://status.openspaceproject.com/){.page-impact__footer-link}
 
 :::
 
@@ -69,25 +69,25 @@ OpenSpace is funded in part by NASA's Science Activation Program under award No.
 
 ::: {.page-impact__reports-grid}
 
-[&#8595; 2025](/resources/reports/2025_NNX16AB93A_Y10_Annual_Report.pdf)
+[&#8595; 2025](/resources/reports/2025_NNX16AB93A_Y10_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2024](/resources/reports/2025_NNX16AB93A_Y9_Annual_Report.pdf)
+[&#8595; 2024](/resources/reports/2025_NNX16AB93A_Y9_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2023](/resources/reports/2025_NNX16AB93A_Y8_Annual_Report.pdf)
+[&#8595; 2023](/resources/reports/2025_NNX16AB93A_Y8_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2022](/resources/reports/2025_NNX16AB93A_Y7_Annual_Report.pdf)
+[&#8595; 2022](/resources/reports/2025_NNX16AB93A_Y7_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2021](/resources/reports/2025_NNX16AB93A_Y6_Annual_Report.pdf)
+[&#8595; 2021](/resources/reports/2025_NNX16AB93A_Y6_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2020](/resources/reports/2025_NNX16AB93A_Y5_Annual_Report.pdf)
+[&#8595; 2020](/resources/reports/2025_NNX16AB93A_Y5_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2019](/resources/reports/2025_NNX16AB93A_Y4_Annual_Report.pdf)
+[&#8595; 2019](/resources/reports/2025_NNX16AB93A_Y4_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2018](/resources/reports/2025_NNX16AB93A_Y3_Annual_Report.pdf)
+[&#8595; 2018](/resources/reports/2025_NNX16AB93A_Y3_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2017](/resources/reports/2025_NNX16AB93A_Y2_Annual_Report.pdf)
+[&#8595; 2017](/resources/reports/2025_NNX16AB93A_Y2_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2016](/resources/reports/2025_NNX16AB93A_Y1_Annual_Report.pdf)
+[&#8595; 2016](/resources/reports/2025_NNX16AB93A_Y1_Annual_Report.pdf){.page-impact__report-link}
 
 :::
 

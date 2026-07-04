@@ -7,7 +7,7 @@
   object-position: center;
   display: block;
   border-radius: $layout-border-radius;
-  border: 1px solid rgba($color-accent-primary, 0.12);
+  border: 1px solid $color-border-faint;
   margin-bottom: 2.5rem;
 
   #fisheye & {

@@ -17,7 +17,7 @@
   &:hover .page-use-cases__card-overlay,
   &:focus-visible .page-use-cases__card-overlay {
     background: $gradient-image-scrim;
-    border: 1px solid rgba($color-accent-primary, 0.35);
+    border: 1px solid $color-border-light;
     border-radius: $layout-border-radius;
   }
 
@@ -46,7 +46,7 @@
     font-size: 0.68rem;
     font-family: $font-monospace;
     letter-spacing: 0.06em;
-    color: rgba($color-text-highlight, 0.7);
+    color: $color-text-light;
     margin: 0 0 0.4rem;
     line-height: 1.4;
   }
@@ -84,7 +84,7 @@
 .page-use-cases__modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.72);
+  background: $color-surface-primary;
   backdrop-filter: blur(4px);
 }
 
@@ -92,7 +92,7 @@
   position: relative;
   z-index: 1;
   background: $color-surface-primary;
-  border: 1px solid rgba($color-accent-primary, 0.12);
+  border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
   overflow: hidden;
   width: 100%;
@@ -152,7 +152,7 @@
   .page-use-cases__modal-body {
     font-size: 0.9375rem;
     line-height: 1.75;
-    color: rgba($color-text-highlight, 0.78);
+    color: $color-text-light;
     margin: 0 0 1.5rem;
     flex: 1;
   }
@@ -168,9 +168,9 @@
     font-size: 0.65rem;
     font-family: $font-monospace;
     letter-spacing: 0.05em;
-    color: rgba($color-text, 0.8);
-    background: rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba($color-accent-primary, 0.22);
+    color: $color-text-muted;
+    background: $color-surface-secondary;
+    border: 1px solid $color-border-light;
     border-radius: $layout-border-radius-small;
     padding: 0.25rem 0.55rem;
   }
@@ -186,10 +186,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba($color-accent-primary, 0.2);
+  background: $color-surface-secondary;
+  border: 1px solid $color-border-light;
   border-radius: 50%;
-  color: rgba($color-text-highlight, 0.7);
+  color: $color-text-light;
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;
@@ -198,7 +198,7 @@
     color $animation-duration-fast ease;
 
   &:hover {
-    background: rgba($color-accent-primary, 0.15);
+    background: $color-surface-primary-faint;
     color: $color-text-highlight;
   }
 

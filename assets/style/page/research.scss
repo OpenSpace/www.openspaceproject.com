@@ -8,9 +8,9 @@
   .page-research__paper-year-label {
     @include eyebrow-label(0.65rem);
 
-    color: rgba($color-accent-primary, 0.55);
+    color: $color-border-muted;
     padding: 1.5rem 1.1rem 0.5rem;
-    border-top: 1px solid rgba($color-accent-primary, 0.08);
+    border-top: 1px solid $color-border-faint;
     margin-top: 0.5rem;
 
     &:first-child {
@@ -25,7 +25,7 @@
     transition: background $animation-duration-fast ease;
 
     &:hover {
-      background: rgba($color-accent-primary, 0.04);
+      background: $color-surface-primary-faint;
     }
 
     .page-research__paper-title {
@@ -51,7 +51,7 @@
 
     .page-research__paper-author {
       font-size: 0.8125rem;
-      color: rgba($color-text, 0.65);
+      color: $color-text-light;
       line-height: 1.5;
       margin-bottom: 0.35rem;
     }
@@ -79,9 +79,9 @@
     font-size: 0.7rem;
     font-family: $font-monospace;
     letter-spacing: 0.06em;
-    color: rgba($color-text, 0.8);
-    background: rgba($color-accent-primary, 0.06);
-    border: 1px solid rgba($color-accent-primary, 0.1);
+    color: $color-text-muted;
+    background: $color-surface-primary-faint;
+    border: 1px solid $color-border-faint;
     padding: 0.3rem 0.75rem;
     border-radius: $layout-border-radius;
     cursor: pointer;
@@ -92,14 +92,14 @@
       color $animation-duration-fast;
 
     &:hover {
-      background: rgba($color-accent-primary, 0.12);
-      border-color: rgba($color-accent-primary, 0.3);
+      background: $color-surface-primary-faint;
+      border-color: $color-border-light;
       color: $color-accent-primary;
     }
 
     &.is-active {
-      background: rgba($color-accent-primary, 0.18);
-      border-color: rgba($color-accent-primary, 0.5);
+      background: $color-surface-primary-faint;
+      border-color: $color-border-muted;
       color: $color-accent-primary;
     }
   }
@@ -117,9 +117,9 @@
   .page-research__thesis-year-label {
     @include eyebrow-label(0.65rem);
 
-    color: rgba($color-accent-primary, 0.55);
+    color: $color-border-muted;
     padding: 1.5rem 0 0.5rem;
-    border-top: 1px solid rgba($color-accent-primary, 0.08);
+    border-top: 1px solid $color-border-faint;
     margin-top: 0.5rem;
 
     &:first-child {
@@ -138,7 +138,7 @@
     transition: background $animation-duration-fast ease;
 
     &:hover {
-      background: rgba($color-accent-primary, 0.04);
+      background: $color-surface-primary-faint;
     }
 
     .page-research__thesis-photos {
@@ -153,7 +153,7 @@
         border-radius: 50%;
         object-fit: cover;
         object-position: top center;
-        border: 1.5px solid rgba($color-text, 0.15);
+        border: 1.5px solid $color-border-bw-light;
         flex-shrink: 0;
 
         @media (max-width: $bp-sm) {
@@ -207,7 +207,7 @@
 
       .page-research__thesis-author {
         font-size: 0.8125rem;
-        color: rgba($color-text, 0.65);
+        color: $color-text-light;
         line-height: 1.4;
         margin-bottom: 0.35rem;
       }

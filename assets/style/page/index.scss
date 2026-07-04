@@ -45,8 +45,8 @@
       inset: 0;
       background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.35) 0%,
-        rgba(0, 0, 0, 0.55) 100%
+        rgba(black, 0.35) 0%,
+        rgba(black, 0.55) 100%
       );
     }
   }
@@ -65,7 +65,7 @@
       font-size: 1.25rem;
       line-height: 1.5;
       margin: 0 0 2rem;
-      color: rgba($color-text-highlight, 0.9);
+      color: $color-text;
     }
   }
 
@@ -94,7 +94,6 @@
   }
 }
 
-
 .page-index__trusted-section {
   width: 50%;
   margin-left: 25%;
@@ -114,7 +113,9 @@
     margin: 0 0 2.5rem;
 
     // Pandoc wraps the label text in a <p> inside this div
-    p { margin: 0; }
+    p {
+      margin: 0;
+    }
   }
 
   .page-index__logo-grid {
@@ -126,7 +127,6 @@
     width: 100%;
     padding: 0;
 
-    // Pandoc wraps the images in a <p>; make them flex items again
     > p {
       display: contents;
       margin: 0;
@@ -155,8 +155,9 @@
     margin: 2rem 0 0;
     font-size: 0.9rem;
 
-    // Pandoc wraps the link in a <p> inside this div
-    p { margin: 0; }
+    p {
+      margin: 0;
+    }
 
     a {
       color: $color-text-muted;
@@ -203,10 +204,10 @@
       @include card-hover-lift;
 
       background: $color-surface-primary;
-      border: 1px solid rgba($color-accent-primary, 0.12);
+      border: 1px solid $color-border-faint;
       border-radius: $layout-border-radius;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 3px rgba(black, 0.2);
       transition:
         box-shadow $animation-duration-base ease,
         border-color $animation-duration-base ease;
@@ -217,8 +218,8 @@
       position: relative;
 
       &:hover {
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-        border-color: rgba($color-accent-primary, 0.3);
+        box-shadow: 0 8px 24px rgba(black, 0.4);
+        border-color: $color-border-light;
         text-decoration: none;
         color: inherit;
       }
@@ -231,7 +232,7 @@
 
         object-position: center;
         border-radius: $layout-border-radius;
-        border: 1px solid rgba($color-accent-primary, 0.12);
+        border: 1px solid $color-border-faint;
         margin-bottom: 2.5rem;
       }
 
@@ -258,7 +259,7 @@
 
         p {
           margin: 0 0 1rem;
-          color: rgba($color-text, 0.8);
+          color: $color-text-muted;
           line-height: 1.6;
           flex-grow: 1;
         }
@@ -308,7 +309,7 @@
       left: clamp(1.5rem, 8vw, 12rem);
       width: calc(#{$layout-container-max} - 2 * clamp(1.5rem, 8vw, 12rem));
       height: 1px;
-      background: rgba($color-accent-primary, 0.15);
+      background: $color-surface-primary-faint;
     }
   }
 
@@ -346,8 +347,12 @@
       animation: page-index-scroll-funders $animation-marquee-duration linear infinite;
 
       @keyframes page-index-scroll-funders {
-        from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
       }
 
       &:hover {

@@ -77,7 +77,7 @@
     width: $ring-size;
     height: $ring-size;
     border-radius: 50%;
-    border: 1px solid rgba($color-accent-secondary, 0.5);
+    border: 1px solid $color-border-secondary-muted;
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     transition:
@@ -99,19 +99,18 @@
     right: calc(100% + 1rem);
     top: 50%;
     transform: translateY(-50%);
-    color: rgba($color-text, 0.7);
+    color: $color-text-light;
     white-space: nowrap;
     background: rgba($color-bg, 0.88);
     padding: 0.2rem 0.55rem;
     border-radius: 4px;
-    border: 1px solid rgba($color-accent-primary, 0.12);
+    border: 1px solid $color-border-faint;
     opacity: 0;
     transition: opacity $animation-duration-fast ease;
     pointer-events: none;
   }
 
-  &:hover::after,
-  &:focus-visible::after {
+  &:hover::after, &:focus-visible::after {
     opacity: 1;
   }
 }
@@ -126,7 +125,7 @@
 // toward the accent color. Pass $bg/$border to vary the fill.
 @mixin pill-link(
   $bg: $color-surface-primary,
-  $border: rgba($color-accent-primary, 0.2)
+  $border: $color-border-light
 ) {
   display: inline-flex;
   align-items: center;
@@ -147,7 +146,7 @@
     background $animation-duration-base ease;
 
   &:hover {
-    border-color: rgba($color-accent-primary, 0.55);
+    border-color: $color-border-muted;
     color: $color-accent-primary;
   }
 }
@@ -155,8 +154,8 @@
 // Text input styling shared by form fields (contact form, 404 search box).
 // Set border-radius and sizing at the call site.
 @mixin text-input {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba($color-accent-primary, 0.15);
+  background: rgba(white, 0.04);
+  border: 1px solid $color-border-faint;
   color: $color-text-highlight;
   font-size: 0.9rem;
   font-family: inherit;
@@ -167,11 +166,11 @@
     background $animation-duration-fast;
 
   &::placeholder {
-    color: rgba($color-text, 0.3);
+    color: $color-text-faint;
   }
 
   &:focus {
-    border-color: rgba($color-accent-primary, 0.4);
-    background: rgba(255, 255, 255, 0.07);
+    border-color: $color-border-muted;
+    background: rgba(white, 0.07);
   }
 }

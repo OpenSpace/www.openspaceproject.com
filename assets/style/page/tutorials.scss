@@ -13,7 +13,7 @@
     @include card-hover-lift;
 
     background: $color-surface-primary;
-    border: 1px solid rgba($color-accent-primary, 0.15);
+    border: 1px solid $color-border-faint;
     border-radius: $layout-border-radius;
     overflow: hidden;
     display: flex;
@@ -21,7 +21,7 @@
     transition: border-color $animation-duration-base ease;
 
     &:hover {
-      border-color: rgba($color-accent-primary, 0.4);
+      border-color: $color-border-muted;
     }
 
     iframe {

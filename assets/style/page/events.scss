@@ -5,7 +5,7 @@
   grid-template-columns: 260px 1fr;
   gap: 3rem;
   padding: 2.5rem 0;
-  border-top: 1px solid rgba($color-accent-primary, 0.1);
+  border-top: 1px solid $color-border-faint;
   align-items: start;
   position: relative;
 
@@ -14,7 +14,7 @@
   }
 
   &:hover img {
-    border-color: rgba($color-accent-primary, 0.3);
+    border-color: $color-border-light;
   }
 
   & > img {
@@ -24,7 +24,7 @@
     object-position: center;
     display: block;
     border-radius: $layout-border-radius;
-    border: 1px solid rgba($color-accent-primary, 0.1);
+    border: 1px solid $color-border-faint;
 
     .page-events__item--past & {
       opacity: 0.55;
@@ -40,7 +40,7 @@
     margin: 0 0 0.35rem;
 
     .page-events__item--past & {
-      color: rgba($color-text-highlight, 0.6);
+      color: $color-text-muted;
     }
 
     & > a {
@@ -82,7 +82,7 @@
       margin: 0 0 1.25rem;
 
       .page-events__item--past & {
-        color: rgba($color-text-highlight, 0.45);
+        color: $color-text-light;
         margin-bottom: 0;
       }
     }

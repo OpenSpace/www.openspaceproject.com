@@ -1,8 +1,8 @@
 /*-- scss:rules --*/
 
 .page-brand__credit-text {
-  background: rgba($color-accent-primary, 0.05);
-  border: 1px solid rgba($color-accent-primary, 0.18);
+  background: $color-surface-primary-faint;
+  border: 1px solid $color-border-light;
   border-left: 3px solid $color-accent-primary;
   border-radius: $layout-border-radius;
   padding: 1rem 1.5rem;
@@ -17,8 +17,8 @@
 .page-brand__logo-grid {
   background: $color-surface-primary;
   padding: $layout-section-padding-wide;
-  border-top: 1px solid rgba($color-accent-primary, 0.08);
-  border-bottom: 1px solid rgba($color-accent-primary, 0.08);
+  border-top: 1px solid $color-border-faint;
+  border-bottom: 1px solid $color-border-faint;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
@@ -31,7 +31,7 @@
 .page-brand__logo-card {
   border-radius: $layout-border-radius;
   overflow: hidden;
-  border: 1px solid rgba($color-accent-primary, 0.12);
+  border: 1px solid $color-border-faint;
   display: flex;
   flex-direction: column;
 
@@ -55,11 +55,11 @@
     background: #f0f4f6;
 
     .page-brand__logo-meta {
-      background: rgba(255, 255, 255, 0.65);
-      border-top-color: rgba(0, 0, 0, 0.08);
+      background: rgba(white, 0.65);
+      border-top-color: rgba(black, 0.08);
 
       h3 {
-        color: #1a1a1a;
+        color: black;
       }
 
       p {
@@ -81,11 +81,11 @@
 
 .page-brand__logo-meta {
   padding: 1rem 1.25rem;
-  border-top: 1px solid rgba($color-accent-primary, 0.1);
+  border-top: 1px solid $color-border-faint;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: $color-bg;
 
   h3 {
     font-size: 0.875rem;
@@ -107,7 +107,7 @@
     font-size: 0.72rem;
     font-family: $font-monospace;
     color: $color-accent-primary;
-    border: 1px solid rgba($color-accent-primary, 0.28);
+    border: 1px solid $color-border-light;
     border-radius: $layout-border-radius-small;
     padding: 0.25rem 0.65rem;
     text-decoration: none;
@@ -119,7 +119,7 @@
     }
 
     &:hover {
-      background: rgba($color-accent-primary, 0.08);
+      background: $color-surface-primary-faint;
       color: $color-accent-primary;
       text-decoration: none;
     }

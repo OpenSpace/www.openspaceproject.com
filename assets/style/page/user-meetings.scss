@@ -5,7 +5,7 @@
   grid-template-columns: 55% 1fr;
   gap: 3.5rem;
   padding: 3rem 0;
-  border-top: 1px solid rgba($color-accent-primary, 0.1);
+  border-top: 1px solid $color-border-faint;
   align-items: center;
   position: relative;
 
@@ -14,7 +14,7 @@
   }
 
   &:hover img {
-    border-color: rgba($color-accent-primary, 0.3);
+    border-color: $color-border-light;
   }
 
   @media (max-width: $bp-md) {
@@ -28,7 +28,7 @@
     }
 
     h3 {
-      color: rgba($color-text-highlight, 0.5);
+      color: $color-text-light;
     }
   }
 
@@ -39,7 +39,7 @@
     object-position: center;
     display: block;
     border-radius: $layout-border-radius;
-    border: 1px solid rgba($color-accent-primary, 0.12);
+    border: 1px solid $color-border-faint;
     transition: border-color $animation-duration-base ease;
 
     @media (max-width: $bp-md) {
@@ -59,21 +59,21 @@
       font-weight: 600;
       padding: 0.2rem 0.6rem;
       border-radius: $layout-border-radius;
-      background: rgba($color-accent-secondary, 0.15);
+      background: $color-surface-secondary-faint;
       color: $color-accent-secondary;
-      border: 1px solid rgba($color-accent-secondary, 0.35);
+      border: 1px solid $color-border-secondary-light;
     }
 
     .page-user-meetings__year {
       @include eyebrow-label(0.6rem);
-      color: rgba($color-text, 0.5);
+      color: $color-text-light;
     }
   }
 
   .page-user-meetings__location {
     font-size: 0.75rem;
     font-family: $font-monospace;
-    color: rgba($color-text, 0.55);
+    color: $color-text-light;
     letter-spacing: 0.04em;
     margin: 0 0 0.85rem;
   }
@@ -81,7 +81,7 @@
   .page-user-meetings__desc {
     font-size: 0.9375rem;
     line-height: 1.75;
-    color: $color-text; 
+    color: $color-text;
     margin: 0 0 1.25rem;
   }
 
@@ -92,8 +92,7 @@
     text-decoration: none;
     letter-spacing: 0.01em;
     transition: color $animation-duration-fast ease;
-
-      position: relative;
+    position: relative;
     z-index: 1;
 
     i, .bi {

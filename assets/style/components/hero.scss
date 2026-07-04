@@ -4,11 +4,10 @@
 // Hero section
 //
 // `.hero` is the full-width banner emitted by the `hero.lua` Pandoc filter from a page's
-// YAML front matter (title, lede, badge, actions). The `body:has(img.hero)` block handles
-// pages that declare a hero background image: `hero.html` picks up the `img.hero` src via
-// JS, applies it as a CSS background on `#title-block-header`, and these rules style that
-// header as a full-bleed image banner with a dark gradient overlay for legibility.
-// `img.hero` is then hidden so only the background effect remains visible.
+// YAML front matter (title, lede, badge, actions). When the front matter declares a hero
+// image, the filter inlines it as a `background-image` (with a dark overlay gradient for
+// legibility) directly in the section's `style` attribute, so no image rules are needed
+// here. The breadcrumbs the filter emits inside the hero are styled in crumbs.scss.
 //
 
 .hero {

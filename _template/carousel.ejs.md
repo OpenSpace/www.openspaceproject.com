@@ -3,7 +3,7 @@
   <div class="content-carousel__track" id="carouselTrack">
     <% for (const item of items) { %>
       <% if (item.link) { %>
-        <a class="content-carousel__slide" href="<%- item.link %>" style="background-image: url(<%- item.image %>);">
+        <a class="content-carousel__slide content-carousel__slide--link" href="<%- item.link %>" style="background-image: url(<%- item.image %>);">
           <div class="content-carousel__overlay"></div>
           <div class="content-carousel__text">
             <p class="content-carousel__eyebrow"><%- item.eyebrow %></p>

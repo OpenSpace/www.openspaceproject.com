@@ -63,8 +63,15 @@ $color-crumbs-text: rgba($color-text, 0.65);
 $color-crumbs-highlight: $color-accent-primary;
 $color-footer-bg: darken($color-bg, 10%);
 
+$color-border-muted: rgba($color-accent-primary, 0.5);
 $color-border-light: rgba($color-accent-primary, 0.25);
 $color-border-faint: rgba($color-accent-primary, 0.1);
+$color-border-secondary-muted: rgba($color-accent-secondary, 0.5);
+$color-border-secondary-light: rgba($color-accent-secondary, 0.25);
+$color-border-secondary-faint: rgba($color-accent-secondary, 0.1);
+$color-border-bw-muted: rgba($os-satellite-gray, 0.5);
+$color-border-bw-light: rgba($os-satellite-gray, 0.25);
+$color-border-bw-faint: rgba($os-satellite-gray, 0.1);
 
 $color-attention-alert: $os-betelgeuse-red;
 $color-attention-warning: $os-reentry-orange;

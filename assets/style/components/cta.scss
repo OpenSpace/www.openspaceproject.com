@@ -30,6 +30,10 @@
     filter: blur(60px);
     transition: opacity 0.4s ease;
     animation: cta__glow-morph 4s ease-in-out infinite;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
   }
 
   &:hover::before {
@@ -46,12 +50,9 @@
   margin: 0 auto;
 
   h2 {
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 600;
+    @include section-title;
+
     margin: 0 0 0.5rem;
-    letter-spacing: -0.01em;
-    color: $color-text-highlight;
-    padding-left: 0;
   }
 
   @media (max-width: $bp-md) {
@@ -60,7 +61,10 @@
 }
 
 .cta__actions {
+  display: flex;
+  gap: 0.75rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 @keyframes cta__glow-morph {

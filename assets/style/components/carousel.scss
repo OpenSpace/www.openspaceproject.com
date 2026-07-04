@@ -11,7 +11,6 @@
     @include section-title;
     margin: 0 0 0.75rem;
   }
-
 }
 
 .content-carousel {
@@ -22,16 +21,10 @@
 }
 
 .content-carousel__track {
-  // Slide gap is read by assets/js/carousel.js to compute scroll offsets. Keep it in
-  // the custom property so JS can access the value
-  --carousel-gap: 0.875rem;
-
   display: flex;
   gap: 0.875rem;
   padding-right: 12%;
   transition: transform $animation-carousel-transition cubic-bezier(0.32, 0.72, 0.35, 1);
-  will-change: transform;
-
 }
 
 .content-carousel__slide {
@@ -48,7 +41,6 @@
     flex-basis: 90%;
     height: 320px;
   }
-
 }
 
 .content-carousel__overlay {
@@ -64,7 +56,6 @@
   right: 0;
   padding: 1.25rem 1.5rem 1.5rem;
   z-index: 1;
-
 }
 
 .content-carousel__eyebrow {
@@ -83,13 +74,17 @@
   letter-spacing: -0.01em;
 }
 
-a.content-carousel__slide {
-  display: block;
+.content-carousel__slide--link {
   text-decoration: none;
   transition: transform $animation-duration-fast ease;
 
   &:hover {
     transform: scale(1.015);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: -2px;
   }
 }
 
@@ -97,17 +92,12 @@ a.content-carousel__slide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
-  margin: 0;
-
 }
 
 .content-carousel__dots {
   display: flex;
   gap: 1.375rem;
   align-items: center;
-  overflow: visible;
-
 }
 
 .content-carousel__dot {
@@ -120,16 +110,20 @@ a.content-carousel__slide {
     inset: -9px;
   }
 
-  &.active {
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 4px;
+  }
+
+  &.is-active {
     background: $color-accent-secondary;
 
     &::before {
-      border-color: rgba($color-accent-secondary, 0.38);
+      border-color: $color-border-secondary-muted;
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
     }
   }
-
 }
 
 .content-carousel__buttons {
@@ -141,11 +135,10 @@ a.content-carousel__slide {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba($color-bg, 0.65);
-  border: 1px solid rgba($color-text-highlight, 0.3);
+  background: $color-bg;
+  border: 1px solid $color-border-bw-light;
   color: $color-text-highlight;
   font-size: 1rem;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,6 +151,11 @@ a.content-carousel__slide {
     background: $color-accent-secondary;
     color: $color-bg;
     border-color: $color-accent-secondary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-primary;
+    outline-offset: 2px;
   }
 
   &:disabled {

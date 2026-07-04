@@ -48,11 +48,7 @@ body:has(.crumbs) {
 a.crumbs__parent {
   transition: color $animation-duration-fast ease;
 
-  &:hover {
-    color: $color-crumbs-highlight;
-  }
-
-  &:focus-visible {
+  &:hover, &:focus-visible {
     color: $color-crumbs-highlight;
   }
 }

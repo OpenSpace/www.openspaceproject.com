@@ -7,7 +7,7 @@
 .footer {
   background: $color-footer-bg;
   border-top: 1px solid $color-border-faint;
-  padding: 1rem 2rem 1rem;
+  padding: 1rem 2rem;
   font-size: 0.85rem;
   color: $color-text-light;
 }
@@ -15,7 +15,6 @@
 .footer__inner {
   display: flex;
   gap: 3rem;
-  margin: 0 auto;
   align-items: flex-start;
 
   @media (max-width: $bp-md) {

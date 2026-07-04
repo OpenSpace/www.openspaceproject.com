@@ -3,18 +3,15 @@
 //
 // Hero section
 //
-// `.hero` is the full-width banner emitted by the `hero.lua` Pandoc filter from a
-// page's YAML front matter (title, lede, badge, actions). The `body:has(img.hero)`
-// block handles pages that declare a hero background image: `hero.html` picks up the
-// `img.hero` src via JS, applies it as a CSS background on `#title-block-header`, and
-// these rules style that header as a full-bleed image banner with a dark gradient
-// overlay for legibility. `img.hero` is then hidden so only the background effect
-// remains visible.
+// `.hero` is the full-width banner emitted by the `hero.lua` Pandoc filter from a page's
+// YAML front matter (title, lede, badge, actions). The `body:has(img.hero)` block handles
+// pages that declare a hero background image: `hero.html` picks up the `img.hero` src via
+// JS, applies it as a CSS background on `#title-block-header`, and these rules style that
+// header as a full-bleed image banner with a dark gradient overlay for legibility.
+// `img.hero` is then hidden so only the background effect remains visible.
 //
 
 .hero {
-  background: $color-bg;
-  color: white;
   padding: $layout-section-padding-wide;
   text-align: center;
 
@@ -27,106 +24,30 @@
     color: $color-text-highlight;
     max-width: 750px;
   }
-
-  p.hero-lede {
-    font-size: 1.0625rem;
-    line-height: 1.6;
-    color: rgba($color-text, 0.9);
-    max-width: 600px;
-    margin: 0 auto 2.5rem;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .hero-badge {
-    @include eyebrow-label(0.7rem);
-
-    display: inline-block;
-    color: $color-accent-primary;
-    border: 1px solid rgba($color-accent-primary, 0.3);
-    border-radius: $layout-border-radius;
-    padding: 0.3rem 0.9rem;
-    margin-bottom: 1.5rem;
-  }
 }
 
-
-
-
-/* Hero Image Background for Title Block Header */
-/* Only apply styles when a hero image is present */
-body:has(img.hero) {
-  #title-block-header.quarto-title-block {
-    position: relative;
-    min-height: 30vh;
-    background-color: transparent !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    margin-right: calc(-50vw + 50%);
-    padding-left: 0;
-    padding-right: 0;
-
-    /* Override any background color from theme/brand */
-    .quarto-title-banner {
-      background-color: transparent !important;
-    }
-
-    /* Add overlay for better text readability */
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-      z-index: 0;
-    }
-
-    /* Ensure content stays above the overlay */
-    > * {
-      position: relative;
-      z-index: 1;
-    }
-  }
-
-  /* Make the title banner span full width */
-  #title-block-header .quarto-title-banner {
-    max-width: none;
-    width: 100%;
-    padding-left: max(1rem, calc(50vw - 570px));
-    padding-right: max(1rem, calc(50vw - 570px));
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  /* Improve text visibility on hero background */
-  #title-block-header .quarto-title-banner .title,
-  #title-block-header .quarto-title-meta-heading,
-  #title-block-header .quarto-title-meta-contents,
-  #title-block-header .quarto-category {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
-
-  #title-block-header .quarto-category {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+.hero__lede {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: $color-text;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
 }
-/* Hide the hero image element itself */
-img.hero {
-  display: none !important;
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero__badge {
+  @include eyebrow-label(0.7rem);
+
+  display: inline-block;
+  color: $color-accent-primary;
+  border: 1px solid $color-border-light;
+  border-radius: $layout-border-radius;
+  padding: 0.3rem 0.9rem;
+  margin-bottom: 1.5rem;
 }

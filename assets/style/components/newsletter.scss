@@ -16,7 +16,6 @@
   gap: 0.25rem;
   font-size: 0.72rem;
 
-  // The gap owns the vertical rhythm — children must not add their own margins
   > * {
     margin: 0;
   }
@@ -27,7 +26,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: $color-text-light;
-  margin-bottom: 0.65rem; // Intentional extra separation below the heading, added to the step gap
+  margin-bottom: 0.65rem;
 }
 
 .newsletter__optional {
@@ -53,7 +52,6 @@
     color: $color-text-faint;
   }
 
-  // Focus is indicated by the brightened border (instead of the removed outline)
   &:focus {
     border-color: $color-accent-primary;
   }

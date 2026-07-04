@@ -38,7 +38,7 @@
       card.classList.add(states[Math.min(offset, states.length - 1)]);
     });
     dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === current);
+      dot.classList.toggle('is-active', i === current);
     });
   }
 

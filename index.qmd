@@ -44,7 +44,7 @@ listing:
   <h1>Explore a Universe of Data</h1>
   <div class="page-main-hero-content">
     <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
-    <div class="hero-actions">
+    <div>
       <a href="install/download.qmd" class="button__primary">Download OpenSpace</a>
       <a href="features/globe-browsing.qmd" class="button__secondary">Explore features</a>
     </div>
@@ -70,7 +70,7 @@ listing:
 
 <section class="page-main-venues-section">
   <h2>Built for every venue</h2>
-  <p class="section-lede">From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
+  <p>From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
   <div class="page-main-venue-grid">
 
     <a href="features/display-support.qmd#dome-theaters">
@@ -106,7 +106,7 @@ listing:
 
 <section class="section__content-carousel">
   <h2>See what's possible</h2>
-  <p class="section-lede">Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
+  <p>Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
 ```
 
 ::: {#carousel}
@@ -119,7 +119,7 @@ listing:
 
 <section class="page-main-funders-section">
   <h2>Funded by</h2>
-  <p class="section-lede text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
+  <p class="text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
 
   <div class="page-main-funder-marquee">
     <div class="page-main-funder-track">

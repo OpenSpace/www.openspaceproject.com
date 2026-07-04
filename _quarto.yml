@@ -41,7 +41,6 @@ format:
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html
-      - file: _template/hero.html
       - file: _template/iconify.html
       - file: _template/footer.html
     anchor-sections: false

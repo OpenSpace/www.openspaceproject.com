@@ -18,10 +18,10 @@
 $os-deep-space: #0a0a0a;
 $os-prime-blue: #3dbdee;
 $os-flare-yellow: #d0f884;
-$os-soft-yellow: #e8fbc2;
+$os-airglow-yellow: #e8fbc2;
 $os-satellite-gray: #b8c8ca;
 $os-terra-green: #d0f4ea;
-$os-base-white: #ecf5fb;
+$os-hyperspace-white: #ecf5fb;
 $os-betelgeuse-red: #de4e4e;
 $os-reentry-orange: #e07c56;
 $os-aurora-green: #5cdd8b;
@@ -42,20 +42,20 @@ $color-surface-primary: $os-event-horizon;
 $color-surface-secondary: $os-accretion-disk;
 $color-accent-primary: $os-prime-blue;
 $color-accent-secondary: $os-flare-yellow;
-$color-accent-soft: $os-soft-yellow;
+$color-accent-soft: $os-airglow-yellow;
 
 $color-text: $os-satellite-gray;
-$color-text-highlight: $os-base-white;
-$color-text-muted: $color-text;
-$color-text-light: rgba($color-text, 0.7);
+$color-text-highlight: $os-hyperspace-white;
+$color-text-muted: rgba($color-text, 0.85);
+$color-text-light: rgba($color-text, 0.6);
 $color-text-faint: rgba($color-text, 0.35);
 $color-link: $os-flare-yellow;
-$color-overlay-light: rgba($os-base-white, 0.4);
-$color-overlay-faint: rgba($os-base-white, 0.1);
+$color-overlay-light: rgba($os-hyperspace-white, 0.4);
+$color-overlay-faint: rgba($os-hyperspace-white, 0.1);
 $color-button-primary-bg: $color-accent-secondary;
 $color-button-primary-text: $os-deep-space;
 $color-button-secondary-bg: transparent;
-$color-button-secondary-text: $os-base-white;
+$color-button-secondary-text: $os-hyperspace-white;
 $color-crumbs-text: rgba($color-text, 0.65);
 $color-crumbs-highlight: $color-accent-primary;
 $color-footer-bg: darken($color-bg, 10%);
@@ -118,6 +118,6 @@ $animation-carousel-transition: $animation-duration-slow;
 $gradient-image-scrim: linear-gradient(
   180deg,
   transparent 50%,
-  rgba(#000000, 0.65) 75%,
-  rgba(#000000, 0.85) 100%
+  rgba(black, 0.65) 75%,
+  rgba(black, 0.85) 100%
 );

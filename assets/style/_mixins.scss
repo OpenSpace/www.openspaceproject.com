@@ -51,7 +51,7 @@
   width: $size;
   height: $size;
   border-radius: 50%;
-  background: rgba($color-text, 0.35);
+  background: $color-text-faint;
   border: none;
   padding: 0;
   cursor: pointer;

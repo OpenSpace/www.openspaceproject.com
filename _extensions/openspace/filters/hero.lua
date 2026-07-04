@@ -111,13 +111,13 @@ local function render_hero(hero_meta)
 
   local badge_html = ""
   if badge ~= nil then
-    badge_html = [[<span class="hero-badge">]] .. badge .. [[</span>]]
+    badge_html = [[<span class="hero__badge">]] .. badge .. [[</span>]]
   end
 
   local action_html = ""
   if action_text ~= nil and action_link ~= nil then
     action_html = [[
-    <div class="hero-actions">
+    <div class="hero__actions">
       <a class="button__primary ]] .. action_external .. [[" href="]] .. action_link .. [[" target="_blank" rel="noopener">]] .. action_text .. [[</a>
     </div>]]
   end
@@ -135,7 +135,7 @@ local function render_hero(hero_meta)
   <div>
   ]] .. badge_html .. [[
     <h1>]] .. title .. [[</h1>
-    <p class="hero-lede">]] .. lede .. [[</p>]] .. action_html .. [[
+    <p class="hero__lede">]] .. lede .. [[</p>]] .. action_html .. [[
   </div>
 </section>]]
 end

@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-contact-body {
+.page-contact__body {
   max-width: 860px;
   margin: 4rem auto;
   padding: $layout-section-padding-wide;
@@ -16,7 +16,7 @@
   }
 }
 
-.page-contact-form-wrap {
+.page-contact__form-wrap {
   h2 {
     font-size: 1.1rem;
     font-weight: 600;
@@ -24,7 +24,7 @@
     margin: 0 0 1.5rem;
   }
 
-  .page-contact-form-field {
+  .page-contact__form-field {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -49,27 +49,27 @@
       min-height: 130px;
     }
 
-    .page-contact-form-required {
+    .page-contact__form-required {
       color: rgba($color-accent-primary, 0.7);
       margin-left: 0.15rem;
     }
   }
 
-  .page-contact-form-note {
+  .page-contact__form-note {
     font-size: 0.75rem;
     color: rgba($color-text, 0.4);
     margin: 0.75rem 0 0;
     line-height: 1.5;
   }
 
-  .page-contact-form-error {
+  .page-contact__form-error {
     font-size: 0.78rem;
     color: $color-attention-alert;
     margin: 0.5rem 0 0;
   }
 }
 
-.page-contact-slack-wrap {
+.page-contact__slack-wrap {
   padding: 1.5rem;
   padding-top: 0;
   border: 1px solid rgba($color-accent-primary, 0.1);

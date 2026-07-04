@@ -6,7 +6,7 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
-    theme: ../../assets/style/page/usermeeting.scss
+    theme: ../../assets/style/page/user-meetings.scss
 
 hero:
   title: "User Meeting"
@@ -37,36 +37,36 @@ The User Meetings bring together planetarium operators, museum staff, educators,
 
 ```{=html}
 <div class="content-section">
-  <div class="page-usermeeting-item">
+  <div class="page-user-meetings__item">
     <img src="2026/visc.webp"
          alt="Visualization Center C, Norrköping, Sweden">
     <div>
-      <div class="page-usermeeting-meta">
-        <span class="page-usermeeting-badge">Upcoming</span>
-        <span class="page-usermeeting-year">2026</span>
+      <div class="page-user-meetings__meta">
+        <span class="page-user-meetings__badge">Upcoming</span>
+        <span class="page-user-meetings__year">2026</span>
       </div>
       <h3>
         <a href="2026/">2026 User Meeting</a>
       </h3>
-      <p class="page-usermeeting-location">August 26–28 · Visualization Center C, Norrköping, Sweden</p>
-      <p class="page-usermeeting-desc">Join the OpenSpace community in Norrköping for three days of demos, training sessions, hands-on workshops, and conversation about where the project is headed. Registration is free.</p>
-      <a href="2026/" class="page-usermeeting-link">View details &rarr;</a>
+      <p class="page-user-meetings__location">August 26–28 · Visualization Center C, Norrköping, Sweden</p>
+      <p class="page-user-meetings__desc">Join the OpenSpace community in Norrköping for three days of demos, training sessions, hands-on workshops, and conversation about where the project is headed. Registration is free.</p>
+      <a href="2026/" class="page-user-meetings__link">View details &rarr;</a>
     </div>
   </div>
 
-  <div class="page-usermeeting-item page-usermeeting-item--past">
+  <div class="page-user-meetings__item page-user-meetings__item--past">
     <img src="2025/hayden.webp"
          alt="Hayden Planetarium, American Museum of Natural History, New York">
     <div>
-      <div class="page-usermeeting-meta">
-        <span class="page-usermeeting-year">2025</span>
+      <div class="page-user-meetings__meta">
+        <span class="page-user-meetings__year">2025</span>
       </div>
       <h3>
         <a href="2025/">2025 User Meeting</a>
       </h3>
-      <p class="page-usermeeting-location">July 31 – August 1 · American Museum of Natural History, New York</p>
-      <p class="page-usermeeting-desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
-      <a href="2025/" class="page-usermeeting-link">See recap &rarr;</a>
+      <p class="page-user-meetings__location">July 31 – August 1 · American Museum of Natural History, New York</p>
+      <p class="page-user-meetings__desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
+      <a href="2025/" class="page-user-meetings__link">See recap &rarr;</a>
     </div>
   </div>
 </div>

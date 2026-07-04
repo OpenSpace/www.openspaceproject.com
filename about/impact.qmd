@@ -49,7 +49,7 @@ Explore anonymous startup locations from our usage data, or see the 100+ organiz
 ::: {#impact-map}
 :::
 
-::: {.page-impact-map-footer}
+::: {.page-impact__map-footer}
 
 ::: {#page-impact-map-footer-tex}
 Each marker = a unique startup location &nbsp;·&nbsp; Circle size scales with launch count
@@ -67,7 +67,7 @@ Each marker = a unique startup location &nbsp;·&nbsp; Circle size scales with l
 ## Annual reports
 OpenSpace is funded in part by NASA's Science Activation Program under award No. NNX16AB93A. We publish a report each year documenting project progress, reach, and outcomes. For questions about our reporting, contact us at [support@openspaceproject.com](mailto:support@openspaceproject.com).
 
-::: {.page-impact-reports-grid}
+::: {.page-impact__reports-grid}
 
 [&#8595; 2025](/resources/reports/2025_NNX16AB93A_Y10_Annual_Report.pdf)
 

@@ -33,13 +33,13 @@ cta:
     community on Slack is also here to help.
 ---
 
-::: {.page-download-actions}
-[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download-button__primary}
+::: {.page-download__actions}
+[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__button--primary}
 
-[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download-button__secondary target="_blank" rel="noopener"}
+[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download__button--secondary target="_blank" rel="noopener"}
 :::
 
-::: {.page-download-summary}
+::: {.page-download__summary}
 Windows · Linux (source)
 :::
 
@@ -47,9 +47,9 @@ Windows · Linux (source)
 
 ## Platforms
 
-:::: {.page-download-platforms}
+:::: {.page-download__platforms}
 
-::: {.page-download-platform}
+::: {.page-download__platform}
 {{< iconify fa7-brands:windows >}}
 
 ### Windows
@@ -63,7 +63,7 @@ Pre-compiled binary for Windows 10 and newer. Includes the application and all d
 [View previous versions](previous-versions.qmd){.is-text}
 :::
 
-::: {.page-download-platform}
+::: {.page-download__platform}
 {{< iconify fa7-brands:linux >}}
 
 ### Linux
@@ -79,11 +79,11 @@ No pre-compiled binary for Linux. Source code is freely available on GitHub — 
 
 :::::
 
-:::: {.content-section .page-download-requirements}
+:::: {.content-section .page-download__requirements}
 
 ## System requirements
 
-::: {.page-download-requirements-panel}
+::: {.page-download__requirements-panel}
 Minimum
 
 CPU
@@ -102,7 +102,7 @@ OS
 : Windows 10/11 or Linux
 :::
 
-::: {.page-download-requirements-panel .is-recommended}
+::: {.page-download__requirements-panel .is-recommended}
 Recommended
 
 CPU
@@ -128,7 +128,7 @@ OS
 
 ## Before you install
 
-::: {.page-download-notes}
+::: {.page-download__notes}
 
 ### Windows C++ Redistributable
 OpenSpace requires the [Microsoft Visual C++ Redistributable for Visual Studio 2022](https://aka.ms/vs/17/release/vc_redist.x64.exe). A copy is included in the downloaded folder. If you see "VCRUNTIME140_1.dll was not found," install it to resolve the error.

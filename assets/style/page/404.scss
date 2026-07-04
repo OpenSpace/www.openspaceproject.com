@@ -10,61 +10,61 @@
   padding: clamp(3rem, 8vh, 6rem) 1.5rem 3rem;
   text-align: center;
 
-  .page-404-code {
-    font-family: $font-headings;
-    font-weight: 700;
-    font-size: clamp(5rem, 16vw, 8.5rem);
-    line-height: 1;
-    letter-spacing: 0.06em;
-    margin: 0 0 0.5rem;
-    background: linear-gradient(120deg, $color-accent-primary, $color-accent-secondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
   h1 {
     font-size: clamp(1.5rem, 4vw, 2.1rem);
     color: $color-text-highlight;
     margin-bottom: 0.75rem;
   }
+}
 
-  .page-404-lede {
-    font-size: 1.05rem;
-    color: $color-text;
-    max-width: 480px;
-    margin: 0 auto 2rem;
+.page-404__code {
+  font-family: $font-headings;
+  font-weight: 700;
+  font-size: clamp(5rem, 16vw, 8.5rem);
+  line-height: 1;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(120deg, $color-accent-primary, $color-accent-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.page-404__lede {
+  font-size: 1.05rem;
+  color: $color-text;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+}
+
+.page-404__search {
+  display: flex;
+  gap: 0.6rem;
+  max-width: 460px;
+  margin: 0 auto 2rem;
+
+  input[type="search"] {
+    @include text-input;
+
+    flex: 1;
+    border-radius: $layout-border-radius;
   }
 
-  .page-404-search {
-    display: flex;
-    gap: 0.6rem;
-    max-width: 460px;
-    margin: 0 auto 2rem;
-
-    input[type="search"] {
-      @include text-input;
-
-      flex: 1;
-      border-radius: $layout-border-radius;
-    }
-
-    button {
-      border: none;
-    }
+  button {
+    border: none;
   }
+}
 
-  .page-404-actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-bottom: 2.5rem;
-  }
+.page-404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
 
-  .page-404-report {
-    font-size: 0.85rem;
-    color: $color-text-light;
-    margin: 0;
-  }
+.page-404__report {
+  font-size: 0.85rem;
+  color: $color-text-light;
+  margin: 0;
 }

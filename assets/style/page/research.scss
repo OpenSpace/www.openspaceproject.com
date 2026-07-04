@@ -1,11 +1,11 @@
 /*-- scss:rules --*/
 
-.page-research-paper-list {
+.page-research__paper-list {
   display: flex;
   flex-direction: column;
   gap: 0;
 
-  .page-research-paper-year-label {
+  .page-research__paper-year-label {
     @include eyebrow-label(0.65rem);
 
     color: rgba($color-accent-primary, 0.55);
@@ -19,7 +19,7 @@
     }
   }
 
-  .page-research-paper-row {
+  .page-research__paper-row {
     padding: 1rem 1.1rem;
     border-radius: $layout-border-radius;
     transition: background $animation-duration-fast ease;
@@ -28,7 +28,7 @@
       background: rgba($color-accent-primary, 0.04);
     }
 
-    .page-research-paper-title {
+    .page-research__paper-title {
       font-size: 1rem;
       font-weight: 500;
       color: $color-text-highlight;
@@ -49,14 +49,14 @@
       }
     }
 
-    .page-research-paper-author {
+    .page-research__paper-author {
       font-size: 0.8125rem;
       color: rgba($color-text, 0.65);
       line-height: 1.5;
       margin-bottom: 0.35rem;
     }
 
-    .page-research-paper-venue-badge {
+    .page-research__paper-venue-badge {
       display: inline-block;
       font-size: 0.62rem;
       font-family: $font-monospace;
@@ -69,7 +69,7 @@
     }
   }
 }
-.page-research-thesis-partners {
+.page-research__thesis-partners {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -105,16 +105,16 @@
   }
 }
 
-.page-research-thesis-hidden {
+.page-research__thesis-hidden {
   display: none !important;
 }
 
-.page-research-thesis-list {
+.page-research__thesis-list {
   display: flex;
   flex-direction: column;
   gap: 0;
 
-  .page-research-thesis-year-label {
+  .page-research__thesis-year-label {
     @include eyebrow-label(0.65rem);
 
     color: rgba($color-accent-primary, 0.55);
@@ -128,7 +128,7 @@
     }
   }
 
-  .page-research-thesis-row {
+  .page-research__thesis-row {
     display: grid;
     grid-template-columns: 168px 1fr;
     gap: 1.25rem;
@@ -141,7 +141,7 @@
       background: rgba($color-accent-primary, 0.04);
     }
 
-    .page-research-thesis-photos {
+    .page-research__thesis-photos {
       display: flex;
       gap: 0.4rem;
       justify-content: flex-start;
@@ -167,8 +167,8 @@
       }
     }
 
-    .page-research-thesis-content {
-      .page-research-thesis-title {
+    .page-research__thesis-content {
+      .page-research__thesis-title {
         font-size: 1rem;
         font-weight: 500;
         color: $color-text-highlight;
@@ -189,7 +189,7 @@
           display: none;
         }
 
-        .page-research-thesis-degree-badge {
+        .page-research__thesis-degree-badge {
           display: inline-block;
           font-size: 0.6rem;
           font-family: $font-monospace;
@@ -205,14 +205,14 @@
         }
       }
 
-      .page-research-thesis-author {
+      .page-research__thesis-author {
         font-size: 0.8125rem;
         color: rgba($color-text, 0.65);
         line-height: 1.4;
         margin-bottom: 0.35rem;
       }
 
-      .page-research-thesis-partner-badge {
+      .page-research__thesis-partner-badge {
         display: inline-block;
         font-size: 0.62rem;
         font-family: $font-monospace;

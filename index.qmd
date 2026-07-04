@@ -33,16 +33,16 @@ listing:
 ---
 
 ```{=html}
-<section class="page-main-hero">
-  <div class="page-main-hero-video-wrap">
+<section class="page-index__hero">
+  <div class="page-index__hero-video-wrap">
     <video autoplay muted loop playsinline poster="assets/images/hero-poster.webp">
       <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
       <source src="videos/home-zoomout.webm" type="video/webm">
     </video>
-    <div class="page-main-hero-overlay"></div>
+    <div class="page-index__hero-overlay"></div>
   </div>
   <h1>Explore a Universe of Data</h1>
-  <div class="page-main-hero-content">
+  <div class="page-index__hero-content">
     <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
     <div>
       <a href="install/download.qmd" class="button__primary">Download OpenSpace</a>
@@ -51,9 +51,9 @@ listing:
   </div>
 </section>
 
-<section class="page-main-trusted-section">
-  <p class="page-main-trusted-label">Built in collaboration with</p>
-  <div class="page-main-logo-grid">
+<section class="page-index__trusted-section">
+  <p class="page-index__trusted-label">Built in collaboration with</p>
+  <div class="page-index__logo-grid">
     <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium">
     <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History">
     <img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science">
@@ -65,13 +65,13 @@ listing:
     <img src="assets/images/institutions/universeum.webp" alt="Universeum">
     <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C">
   </div>
-  <p class="page-main-trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
+  <p class="page-index__trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
 
-<section class="page-main-venues-section">
+<section class="page-index__venues-section">
   <h2>Built for every venue</h2>
   <p>From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
-  <div class="page-main-venue-grid">
+  <div class="page-index__venue-grid">
 
     <a href="features/display-support.qmd#dome-theaters">
       <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running">
@@ -117,12 +117,12 @@ listing:
 
 
 
-<section class="page-main-funders-section">
+<section class="page-index__funders-section">
   <h2>Funded by</h2>
   <p class="text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
 
-  <div class="page-main-funder-marquee">
-    <div class="page-main-funder-track">
+  <div class="page-index__funder-marquee">
+    <div class="page-index__funder-track">
       <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee"></a>
       <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation"></a>
       <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre"></a>
@@ -137,7 +137,7 @@ listing:
     </div>
   </div>
 
-  <p class="page-main-funder-disclaimer">Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.</p>
+  <p class="page-index__funder-disclaimer">Funded in part by NASA under award No NNX16AB93A. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NASA.</p>
 </section>
 ```
 

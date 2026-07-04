@@ -1,12 +1,12 @@
 /*-- scss:rules --*/
 
-.page-impact-map-toggle {
+.page-impact__map-toggle {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
-.page-impact-toggle-btn {
+.page-impact__toggle-btn {
   background: transparent;
   border: 1px solid rgba($color-accent-primary, 0.25);
   color: rgba($color-text, 0.65);
@@ -42,7 +42,7 @@
   background: $color-bg;
 }
 
-.page-impact-map-footer {
+.page-impact__map-footer {
   margin-top: 0.85rem;
   font-size: 0.8125rem;
   color: rgba($color-text, 0.55);
@@ -65,7 +65,7 @@
 }
 
 // Annual reports
-.page-impact-reports-grid {
+.page-impact__reports-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;

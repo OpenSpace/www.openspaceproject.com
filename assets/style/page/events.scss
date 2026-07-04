@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-events-item {
+.page-events__item {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 3rem;
@@ -26,12 +26,12 @@
     border-radius: $layout-border-radius;
     border: 1px solid rgba($color-accent-primary, 0.1);
 
-    .page-events-item--past & {
+    .page-events__item--past & {
       opacity: 0.55;
     }
   }
 
-  .page-events-body > h3 {
+  .page-events__body > h3 {
     font-size: clamp(1.125rem, 2vw, 1.375rem);
     font-weight: 600;
     color: $color-text-highlight;
@@ -39,7 +39,7 @@
     letter-spacing: -0.01em;
     margin: 0 0 0.35rem;
 
-    .page-events-item--past & {
+    .page-events__item--past & {
       color: rgba($color-text-highlight, 0.6);
     }
 
@@ -59,7 +59,7 @@
       }
     }
 
-    .page-events-tag {
+    .page-events__tag {
       @include eyebrow-label(0.6rem);
 
       display: inline-block;
@@ -67,7 +67,7 @@
       color: $color-text-light;
     }
 
-    .page-events-time {
+    .page-events__time {
       font-size: 0.75rem;
       font-family: $font-monospace;
       color: $color-text-muted;
@@ -75,19 +75,19 @@
       margin: 0 0 0.85rem;
     }
 
-    .page-events-desc {
+    .page-events__desc {
       font-size: 0.9375rem;
       line-height: 1.75;
       color: $color-text-muted;
       margin: 0 0 1.25rem;
 
-      .page-events-item--past & {
+      .page-events__item--past & {
         color: rgba($color-text-highlight, 0.45);
         margin-bottom: 0;
       }
     }
 
-    .page-events-actions {
+    .page-events__actions {
       display: flex;
       gap: 0.75rem;
       flex-wrap: wrap;

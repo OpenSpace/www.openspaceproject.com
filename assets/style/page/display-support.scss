@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-displaysupport-img {
+.page-display-support__img {
   width: 100%;
   height: clamp(280px, 42vw, 540px);
   object-fit: cover;
@@ -18,7 +18,7 @@
   }
 }
 
-.page-displaysupport-body {
+.page-display-support__body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;

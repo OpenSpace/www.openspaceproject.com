@@ -1,7 +1,7 @@
 ```{=html}
 <section class="content-section" data-ev-upcoming>
   <h2>Upcoming</h2>
-  <p class="page-events-desc" data-ev-empty hidden>No upcoming events are scheduled right now — check back soon.</p>
+  <p class="page-events__desc" data-ev-empty hidden>No upcoming events are scheduled right now — check back soon.</p>
 </section>
 
 <section class="content-section" data-ev-past hidden>
@@ -31,11 +31,11 @@ for (const item of items) {
     ? String(item.description_past).replace(/"/g, "&quot;").trim()
     : "";
 %>
-  <div class="page-events-item" data-ev-item data-date="<%- iso %>"<% if (descPast) { %> data-desc-past="<%- descPast %>"<% } %>>
+  <div class="page-events__item" data-ev-item data-date="<%- iso %>"<% if (descPast) { %> data-desc-past="<%- descPast %>"<% } %>>
     <img src="<%- item.image %>" alt="<%- item.alt %>">
 
-    <div class="page-events-body">
-      <span class="page-events-tag"><%- item.type %></span>
+    <div class="page-events__body">
+      <span class="page-events__tag"><%- item.type %></span>
       <h3>
         <%
           if (item.page) {
@@ -49,9 +49,9 @@ for (const item of items) {
           }
         %>
       </h3>
-      <span class="page-events-time"></span>
-      <p class="page-events-desc"><%- item.description %></p>
-      <div class="page-events-actions">
+      <span class="page-events__time"></span>
+      <p class="page-events__desc"><%- item.description %></p>
+      <div class="page-events__actions">
         <%
           if (item.generate_calendar) {
         %>
@@ -120,18 +120,18 @@ for (const item of items) {
   }
 
   function fillTime(el) {
-    let timeEl = el.querySelector('.page-events-time');
+    let timeEl = el.querySelector('.page-events__time');
     if (!timeEl || !el._ts) { return; }
     let d = new Date(el._ts);
     timeEl.textContent = '';
     let dateRow = document.createElement('span');
-    dateRow.className = 'page-events-time';
+    dateRow.className = 'page-events__time';
     dateRow.textContent = dateFmt.format(d);
     timeEl.appendChild(dateRow);
     zones.forEach(function (f) {
       timeEl.appendChild(document.createTextNode(' · '));
       let row = document.createElement('span');
-      row.className = 'page-events-time-row';
+      row.className = 'page-events__time-row';
       row.textContent = f.format(d);
       timeEl.appendChild(row);
     });
@@ -143,11 +143,11 @@ for (const item of items) {
   });
 
   past.forEach((el) => {
-    el.classList.add('page-events-item--past');
+    el.classList.add('page-events__item--past');
     fillTime(el);
 
     // Swap to the "past" description when one is provided
-    let descEl = el.querySelector('.page-events-desc');
+    let descEl = el.querySelector('.page-events__desc');
     let descPast = el.getAttribute('data-desc-past');
     if (descEl && descPast) {
       descEl.textContent = descPast;
@@ -165,7 +165,7 @@ for (const item of items) {
     });
 
     // Drop the actions row if nothing is left in it
-    let actions = el.querySelector('.page-events-actions');
+    let actions = el.querySelector('.page-events__actions');
     if (actions && !actions.querySelector('a')) {
       actions.parentNode.removeChild(actions);
     }

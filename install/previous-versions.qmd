@@ -6,6 +6,7 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
+    theme: ../assets/style/page/previous-versions.scss
 
 hero:
   title: "Previous versions"
@@ -33,9 +34,9 @@ hero:
 | v0.19.0 | June 2023 | [Full](https://data.openspaceproject.com/release/0.19.0/OpenSpace-0.19.0.zip) · [Lightweight](https://data.openspaceproject.com/release/0.19.0/OpenSpace-0.19.0_minimal.zip) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.0){target="_blank" rel="noopener"} |
 | v0.18.2 | January 2023 | [Full](https://data.openspaceproject.com/release/0.18.2/OpenSpace-0.18.2.zip) · [Lightweight](https://data.openspaceproject.com/release/0.18.2/OpenSpace-0.18.2_minimal.zip) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.2){target="_blank" rel="noopener"} |
 | v0.18.1 | November 2022 | [Full](https://data.openspaceproject.com/release/0.18.1/OpenSpace-0.18.1.zip) · [Lightweight](https://data.openspaceproject.com/release/0.18.1/OpenSpace-0.18.1_minimal.zip) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.1){target="_blank" rel="noopener"} |
-| v0.18.0 | May 2022 | [Windows]{.page-download-prev-platform} [Full](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.zip) · [Lightweight](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.zip)<br>[Mac]{.page-download-prev-platform} [Full](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.pkg) · [Lightweight](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.pkg) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.0){target="_blank" rel="noopener"} |
+| v0.18.0 | May 2022 | [Windows]{.page-previous-versions__platform} [Full](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.zip) · [Lightweight](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.zip)<br>[Mac]{.page-previous-versions__platform} [Full](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0.pkg) · [Lightweight](https://data.openspaceproject.com/release/0.18.0/OpenSpace-0.18.0-minimal.pkg) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.0){target="_blank" rel="noopener"} |
 
-::: {.page-download-prev-older}
+::: {.page-previous-versions__older}
 For versions older than v0.18.0, visit the [GitHub releases page](https://github.com/OpenSpace/OpenSpace/releases){target="_blank" rel="noopener"} or the [direct download page](https://data.openspaceproject.com/release){target="_blank" rel="noopener"}.
 :::
 

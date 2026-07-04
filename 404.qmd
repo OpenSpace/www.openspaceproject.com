@@ -12,27 +12,27 @@ format:
 
 ```{=html}
 <section class="page-404">
-  <p class="page-404-code" aria-hidden="true">404</p>
+  <p class="page-404__code" aria-hidden="true">404</p>
   <h1>Houston, this page has drifted out of orbit</h1>
-  <p class="page-404-lede">
+  <p class="page-404__lede">
     The page you're looking for may have been moved, renamed, or launched into deep space. Let's get you back on course.
   </p>
 
-  <form class="page-404-search" action="https://duckduckgo.com/" method="get" role="search">
+  <form class="page-404__search" action="https://duckduckgo.com/" method="get" role="search">
     <input type="hidden" name="sites" value="www.openspaceproject.com">
     <label class="visually-hidden" for="page-404-search-input">Search the site</label>
     <input type="search" id="page-404-search-input" name="q" placeholder="Search for the page's new location…">
     <button type="submit" class="button__primary">Search</button>
   </form>
 
-  <div class="page-404-actions">
+  <div class="page-404__actions">
     <a href="index.qmd" class="button__primary">Back to home</a>
     <a href="install/download.qmd" class="button__secondary">Download</a>
     <a href="resources/tutorials.qmd" class="button__secondary">Tutorials</a>
     <a href="community/contact.qmd" class="button__secondary">Contact</a>
   </div>
 
-  <p class="page-404-report">
+  <p class="page-404__report">
     Followed a broken link to get here?
     <a href="community/contact.qmd">Let us know</a> or
     <a href="https://github.com/OpenSpace/www.openspaceproject.com/issues">open an issue on GitHub</a>

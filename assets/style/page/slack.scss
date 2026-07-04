@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-slack-channels-grid {
+.page-slack__channels-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
@@ -14,7 +14,7 @@
   }
 }
 
-.page-slack-channel-group {
+.page-slack__channel-group {
   display: flex;
   flex-direction: column;
 
@@ -25,7 +25,7 @@
     margin: 0 0 0.75rem;
   }
 
-  .page-slack-channel-item {
+  .page-slack__channel-item {
     padding: 0.75rem 0;
     border-top: 1px solid rgba($color-accent-primary, 0.1);
     display: flex;

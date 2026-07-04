@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-download-actions {
+.page-download__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
     margin: 0;
   }
 
-  .page-download-button__primary {
+  .page-download__button--primary {
     @extend .button__primary;
 
     gap: 0.6rem;
@@ -26,7 +26,7 @@
     }
   }
 
-  .page-download-button__secondary {
+  .page-download__button--secondary {
     @extend .button__secondary;
 
     gap: 0.4rem;
@@ -44,7 +44,7 @@
   }
 }
 
-.page-download-summary {
+.page-download__summary {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   font-family: $font-monospace;
@@ -53,7 +53,7 @@
   text-align: center;
 }
 
-.page-download-notes {
+.page-download__notes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -93,7 +93,7 @@
   }
 }
 
-.page-download-requirements {
+.page-download__requirements {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
@@ -145,7 +145,7 @@
   }
 }
 
-.page-download-requirements-panel {
+.page-download__requirements-panel {
   padding: 1.75rem;
   border: 1px solid rgba($color-accent-primary, 0.1);
   border-radius: $layout-border-radius;
@@ -168,7 +168,7 @@
   }
 }
 
-.page-download-platforms {
+.page-download__platforms {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
@@ -178,10 +178,9 @@
   }
 }
 
-.page-download-platform {
+.page-download__platform {
   @include card-hover-lift;
 
-  display: flex;
   flex-direction: column;
   gap: 0.75rem;
   padding: 2rem 1.75rem;
@@ -231,9 +230,13 @@
       $border: rgba(255, 255, 255, 0.12)
     );
 
+    // pill-link is inline-flex; these links are stacked full-width rows,
+    // and margin auto centering needs a block-level box
+    display: flex;
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
+    text-align: center;
     padding: 0.65rem 1.25rem;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -258,30 +261,6 @@
         transform: none;
         color: $color-accent-primary;
       }
-    }
-  }
-}
-
-.page-download-prev-platform {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: rgba($color-text, 0.45);
-  min-width: 4rem;
-}
-
-.page-download-prev-older {
-  max-width: 860px;
-  margin: 0 auto;
-  font-size: 0.875rem;
-  color: rgba($color-text, 0.55);
-
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
     }
   }
 }

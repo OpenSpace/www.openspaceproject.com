@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-team-grid {
+.page-team__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   justify-content: center;
@@ -13,7 +13,7 @@
   }
 }
 
-.page-team-card {
+.page-team__card {
   height: 300px;
   perspective: 900px;
   cursor: pointer;
@@ -29,7 +29,7 @@
   }
 }
 
-.page-team-card-inner {
+.page-team__card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -38,12 +38,12 @@
   border-radius: $layout-border-radius;
 }
 
-.page-team-card:hover .page-team-card-inner,
-.page-team-card:focus-within .page-team-card-inner {
+.page-team__card:hover .page-team__card-inner,
+.page-team__card:focus-within .page-team__card-inner {
   transform: rotateY(180deg);
 }
 
-.page-team-card-front, .page-team-card-back {
+.page-team__card-front, .page-team__card-back {
   position: absolute;
   inset: 0;
   border-radius: $layout-border-radius;
@@ -53,7 +53,7 @@
 }
 
 // Front: photo with gradient name overlay
-.page-team-card-front {
+.page-team__card-front {
   // Background image
   img {
     width: 100%;
@@ -63,7 +63,7 @@
     display: block;
   }
 
-  .page-team-card-info {
+  .page-team__card-info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -95,7 +95,7 @@
 }
 
 // Back: dark surface with accent border
-.page-team-card-back {
+.page-team__card-back {
   background: $color-surface-primary;
   border: 1px solid rgba($color-accent-primary, 0.2);
   transform: rotateY(180deg);
@@ -115,7 +115,7 @@
     opacity: 0.6;
   }
 
-  .page-team-card-back-inner {
+  .page-team__card-back-inner {
     padding: 1.5rem;
   }
 

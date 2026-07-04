@@ -102,11 +102,11 @@ table {
 }
 
 
-main:has(.page-main-hero) {
+main:has(.page-index__hero) {
   padding-top: 0 !important;
 }
 
-main:has(.page-main-hero) #title-block-header {
+main:has(.page-index__hero) #title-block-header {
   display: none !important;
 }
 

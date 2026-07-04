@@ -47,9 +47,9 @@ cta:
 
 ## Dome theaters
 
-![](/assets/images/venue-cards/hayden_jwst.webp){.page-displaysupport-img fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
+![](/assets/images/venue-cards/hayden_jwst.webp){.page-display-support__img fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
 
-::: {.page-displaysupport-body}
+::: {.page-display-support__body}
 Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.
 
   - Mesh warping for any dome geometry
@@ -67,9 +67,9 @@ Full-dome fisheye projection for fixed and portable planetariums. OpenSpace hand
 
 ## Classrooms & desktops
 
-![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-displaysupport-img fig-alt="Students using OpenSpace in a classroom at AMNH"}
+![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-display-support__img fig-alt="Students using OpenSpace in a classroom at AMNH"}
 
-::: {.page-displaysupport-body}
+::: {.page-display-support__body}
 
 OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
@@ -87,9 +87,9 @@ OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
 ## Museum exhibits
 
-![](/assets/images/venue-cards/spaceship.webp){.page-displaysupport-img fig-alt="OpenSpace running in a museum exhibit"}
+![](/assets/images/venue-cards/spaceship.webp){.page-display-support__img fig-alt="OpenSpace running in a museum exhibit"}
 
-::: {.page-displaysupport-body}
+::: {.page-display-support__body}
 Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium.
 
   - Touch and gesture input for kiosk-style exhibits
@@ -107,12 +107,12 @@ Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays fo
 ## Fisheye rendering
 
 ```{=html}
-<video class="page-displaysupport-img" autoplay loop muted playsinline>
+<video class="page-display-support__img" autoplay loop muted playsinline>
   <source src="/assets/videos/fisheye.mp4" type="video/mp4">
 </video>
 ```
 
-::: {.page-displaysupport-body}
+::: {.page-display-support__body}
 OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.
 
   - Native 180° fisheye — no post-process warping

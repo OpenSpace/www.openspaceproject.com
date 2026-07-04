@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-tutorial-grid {
+.page-tutorials__grid {
   @include card-grid(3);
 
   @media (max-width: $bp-lg) {
@@ -9,7 +9,7 @@
     margin: 0 auto;
   }
 
-  .page-tutorial-card {
+  .page-tutorials__card {
     @include card-hover-lift;
 
     background: $color-surface-primary;
@@ -32,7 +32,7 @@
       background: $color-bg;
     }
 
-    .page-tutorial-card-body {
+    .page-tutorials__card-body {
       padding: 1.25rem 1.5rem 1.5rem;
       flex: 1;
       display: flex;

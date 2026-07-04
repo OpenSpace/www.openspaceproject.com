@@ -47,118 +47,120 @@ Ask questions, report issues, share screenshots of your work, stay current on ne
 ## Find your channel
 The workspace is organized into focused channels. Here are some of the best places to start.
 
-::: {.page-slack-channels-grid}
+::: {.page-slack__channels-grid}
 
-::: {.page-slack-channel-group}
+::: {.page-slack__channel-group}
 ### Get started
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#intros]{}
 
 Introduce yourself to the community
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#openspace-help]{}
 
 Ask questions and get answers
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#announcements]{}
 
 Software updates and community events
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#hub]{}
 
 Assets and content shared on the OpenSpace Hub
 :::
 :::
 
-::: {.page-slack-channel-group}
+::: {.page-slack__channel-group}
 ### Technical
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#bugs-and-breaks]{}
 
 Report issues you've encountered
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#compiling]{}
 
 Build and compilation support
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#breaking-changes]{}
 
 Stay current on software changes
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#documentation]{}
 
 Contribute to OpenSpace documentation
 :::
 :::
 
-::: {.page-slack-channel-group}
+::: {.page-slack__channel-group}
 ### Share & inspire
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#showcase]{}
 
 Show off your OpenSpace work
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#video-making]{}
 
 Rendering and producing videos with OpenSpace
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#wishlist]{}
 
 Feature requests and ideas
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#events]{}
 
 Programs, conferences, and community gatherings
 :::
 :::
 
-::: {.page-slack-channel-group}
+::: {.page-slack__channel-group}
 ### Your community
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#users-at-planetariums]{}
 
 Connect with planetarium professionals
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#users-at-museums-and-science-centers]{}
 
 Museum and science center network
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#users-at-higher-education-institutions]{}
 
 University and research communities
 :::
 
-::: {.page-slack-channel-item}
+::: {.page-slack__channel-item}
 [#random]{}
 
 Interesting news and off-topic conversation
 :::
+:::
+
 :::
 
 :::

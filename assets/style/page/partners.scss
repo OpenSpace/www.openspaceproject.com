@@ -1,10 +1,10 @@
 /*-- scss:rules --*/
 
-.page-partners-grid {
+.page-partners__grid {
   @include card-grid(auto-fill);
 }
 
-.page-partners-card {
+.page-partners__card {
   @include card-hover-lift;
 
   background: $color-surface-primary;

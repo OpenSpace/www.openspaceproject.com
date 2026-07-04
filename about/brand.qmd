@@ -32,7 +32,7 @@ cta:
 ## Crediting OpenSpace
 If you use OpenSpace images, videos, or visualizations in publications, presentations, articles, or other media, please credit the OpenSpace Project. A standard credit line:
 
-```{.page-brand-credit-text}
+```{.page-brand__credit-text}
 Visualization created with OpenSpace — openspaceproject.com
 ```
 For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available in the [documentation](https://docs.openspaceproject.com).
@@ -62,32 +62,32 @@ The following logo files are available for use in accordance with the guidelines
 
 
 
-::: {.page-brand-logo-grid}
+::: {.page-brand__logo-grid}
 
-:::: {.page-brand-logo-card .brand-logo-card--dark}
+:::: {.page-brand__logo-card .page-brand__logo-card--dark}
 ![](/assets/brand/horizontal_logo.webp){fig-alt="OpenSpace horizontal logo, white"}
 
-::::: {.page-brand-logo-meta}
+::::: {.page-brand__logo-meta}
 ### Horizontal logo
 For dark backgrounds
 [Download](/assets/brand/horizontal_logo.webp){download=""}
 :::::
 ::::
 
-:::: {.page-brand-logo-card .page-brand-logo-card--dark}
+:::: {.page-brand__logo-card .page-brand__logo-card--dark}
 ![](/assets/brand/logo.webp){fig-alt="OpenSpace mark, white"}
 
-::::: {.page-brand-logo-meta}
+::::: {.page-brand__logo-meta}
 ### Mark
 For dark backgrounds
 [Download](/assets/brand/logo.webp){download=""}
 :::::
 ::::
 
-:::: {.page-brand-logo-card .page-brand-logo-card--light}
+:::: {.page-brand__logo-card .page-brand__logo-card--light}
 ![](/assets/brand/openspace_black.webp){fig-alt="OpenSpace horizontal logo, black"}
 
-::::: {.page-brand-logo-meta}
+::::: {.page-brand__logo-meta}
 ### Horizontal logo
 For light backgrounds
 [Download](/assets/brand/openspace_black.webp){download=""}

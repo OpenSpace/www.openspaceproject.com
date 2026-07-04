@@ -7,7 +7,7 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
-    theme: ../../../assets/style/page/usermeeting.scss
+    theme: ../../../assets/style/page/user-meetings.scss
 
 hero:
   title: "OpenSpace User Meeting"

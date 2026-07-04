@@ -1,6 +1,6 @@
 /*-- scss:rules --*/
 
-.page-brand-credit-text {
+.page-brand__credit-text {
   background: rgba($color-accent-primary, 0.05);
   border: 1px solid rgba($color-accent-primary, 0.18);
   border-left: 3px solid $color-accent-primary;
@@ -14,7 +14,7 @@
   letter-spacing: 0.02em;
 }
 
-.page-brand-logo-grid {
+.page-brand__logo-grid {
   background: $color-surface-primary;
   padding: $layout-section-padding-wide;
   border-top: 1px solid rgba($color-accent-primary, 0.08);
@@ -26,102 +26,102 @@
   @media (max-width: $bp-sm) {
     grid-template-columns: 1fr;
   }
+}
 
-  .page-brand-logo-card {
-    border-radius: $layout-border-radius;
-    overflow: hidden;
-    border: 1px solid rgba($color-accent-primary, 0.12);
-    display: flex;
-    flex-direction: column;
+.page-brand__logo-card {
+  border-radius: $layout-border-radius;
+  overflow: hidden;
+  border: 1px solid rgba($color-accent-primary, 0.12);
+  display: flex;
+  flex-direction: column;
 
-    img {
-      flex: 1;
-      margin: auto;
-      padding: 2rem 1.5rem;
-      max-height: calc(60px + 4rem);
-      max-width: 100%;
-      width: auto;
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
+  img {
+    flex: 1;
+    margin: auto;
+    padding: 2rem 1.5rem;
+    max-height: calc(60px + 4rem);
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
 
-    .page-brand-logo-meta {
-      padding: 1rem 1.25rem;
-      border-top: 1px solid rgba($color-accent-primary, 0.1);
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      background: rgba(0, 0, 0, 0.3);
+  &--dark  {
+    background: $color-bg;
+  }
+
+  &--light {
+    background: #f0f4f6;
+
+    .page-brand__logo-meta {
+      background: rgba(255, 255, 255, 0.65);
+      border-top-color: rgba(0, 0, 0, 0.08);
 
       h3 {
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: $color-text-highlight;
-        margin: 0;
-        flex: 1;
+        color: #1a1a1a;
       }
 
       p {
-        font-size: 0.72rem;
-        font-family: $font-monospace;
-        color: rgba($color-text, 0.6);
-        margin: 0;
+        color: black;
       }
 
       a {
-        display: inline-block;
-        font-size: 0.72rem;
-        font-family: $font-monospace;
-        color: $color-accent-primary;
-        border: 1px solid rgba($color-accent-primary, 0.28);
-        border-radius: $layout-border-radius-small;
-        padding: 0.25rem 0.65rem;
-        text-decoration: none;
-        white-space: nowrap;
-        transition: background $animation-duration-fast ease;
-
-        i, .bi {
-          display: none;
-        }
+        color: darken($color-accent-primary, 38%);
+        border-color: rgba(darken($color-accent-primary, 30%), 0.4);
 
         &:hover {
-          background: rgba($color-accent-primary, 0.08);
-          color: $color-accent-primary;
-          text-decoration: none;
+          background: rgba(darken($color-accent-primary, 30%), 0.08);
+          color: darken($color-accent-primary, 42%);
         }
       }
     }
+  }
+}
 
-    &--dark  {
-      background: $color-bg;
+.page-brand__logo-meta {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba($color-accent-primary, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+
+  h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $color-text-highlight;
+    margin: 0;
+    flex: 1;
+  }
+
+  p {
+    font-size: 0.72rem;
+    font-family: $font-monospace;
+    color: rgba($color-text, 0.6);
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-family: $font-monospace;
+    color: $color-accent-primary;
+    border: 1px solid rgba($color-accent-primary, 0.28);
+    border-radius: $layout-border-radius-small;
+    padding: 0.25rem 0.65rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background $animation-duration-fast ease;
+
+    i, .bi {
+      display: none;
     }
 
-    &--light {
-      background: #f0f4f6;
-
-      .page-brand-logo-meta {
-        background: rgba(255, 255, 255, 0.65);
-        border-top-color: rgba(0, 0, 0, 0.08);
-
-        h3 {
-          color: #1a1a1a;
-        }
-
-        p {
-          color: black;
-        }
-
-        a {
-          color: darken($color-accent-primary, 38%);
-          border-color: rgba(darken($color-accent-primary, 30%), 0.4);
-
-          &:hover {
-            background: rgba(darken($color-accent-primary, 30%), 0.08);
-            color: darken($color-accent-primary, 42%);
-          }
-        }
-      }
+    &:hover {
+      background: rgba($color-accent-primary, 0.08);
+      color: $color-accent-primary;
+      text-decoration: none;
     }
   }
 }

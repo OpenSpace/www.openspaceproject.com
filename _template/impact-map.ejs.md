@@ -1,8 +1,8 @@
 ```{=html}
 
-<div class="page-impact-map-toggle">
-  <button class="page-impact-toggle-btn is-active" data-layer="startups">Startup locations</button>
-  <button class="page-impact-toggle-btn" data-layer="orgs">Organizations</button>
+<div class="page-impact__map-toggle">
+  <button class="page-impact__toggle-btn is-active" data-layer="startups">Startup locations</button>
+  <button class="page-impact__toggle-btn" data-layer="orgs">Organizations</button>
 </div>
 
 <div id="page-impact-startup-map"></div>
@@ -68,11 +68,11 @@ function initImpactMap() {
 
   // Toggle logic
   let footerText = document.getElementById('page-impact-map-footer-text');
-  let toggleBtns = document.querySelectorAll('.page-impact-toggle-btn');
+  let toggleBtns = document.querySelectorAll('.page-impact__toggle-btn');
 
   function showLayer(layerName) {
     toggleBtns.forEach((b) => { b.classList.remove('is-active'); });
-    document.querySelector('.page-impact-toggle-btn[data-layer="' + layerName + '"]').classList.add('is-active');
+    document.querySelector('.page-impact__toggle-btn[data-layer="' + layerName + '"]').classList.add('is-active');
     if (layerName === 'startups') {
       leafletMap.removeLayer(orgLayer);
       startupLayer.addTo(leafletMap);

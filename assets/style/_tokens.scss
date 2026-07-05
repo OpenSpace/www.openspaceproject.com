@@ -4,6 +4,9 @@
 // This file contains brand colors, font-family stacks, type scale, spacing/inset values,
 // letter-spacing & radius constants. anything referenced by name elsewhere
 
+/*-- scss:uses --*/
+@use 'sass:color';
+
 /*-- scss:defaults --*/
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
@@ -21,7 +24,6 @@ $os-flare-yellow: #d0f884;
 $os-airglow-yellow: #e8fbc2;
 $os-satellite-gray: #b8c8ca;
 $os-terra-green: #d0f4ea;
-$os-hyperspace-white: #ecf5fb;
 $os-betelgeuse-red: #de4e4e;
 $os-reentry-orange: #e07c56;
 $os-aurora-green: #5cdd8b;
@@ -37,33 +39,37 @@ $os-font-monospace: 'IBM Plex Mono', monospace;
 //
 // Colors
 //
-$color-bg: $os-deep-space;
-$color-surface-primary: $os-event-horizon;
-$color-surface-secondary: $os-accretion-disk;
 $color-accent-primary: $os-prime-blue;
 $color-accent-secondary: $os-flare-yellow;
-$color-accent-soft: $os-airglow-yellow;
+$color-accent-tertiary: $os-airglow-yellow;
+
+$color-background: $os-deep-space;
+$color-surface-primary: $os-event-horizon;
+$color-surface-secondary: $os-accretion-disk;
 $color-surface-primary-light: rgba($color-accent-primary, 0.25);
 $color-surface-primary-faint: rgba($color-accent-primary, 0.1);
 $color-surface-secondary-light: rgba($color-accent-secondary, 0.25);
 $color-surface-secondary-faint: rgba($color-accent-secondary, 0.1);
 
 $color-text: $os-satellite-gray;
-$color-text-highlight: $os-hyperspace-white;
+$color-text-highlight: color.adjust($color-text, $lightness: +20%);
 $color-text-muted: rgba($color-text, 0.85);
 $color-text-light: rgba($color-text, 0.6);
 $color-text-faint: rgba($color-text, 0.35);
 $color-link: $os-flare-yellow;
 $color-overlay-dark: rgba(black, 0.75);
-$color-overlay-light: rgba($os-hyperspace-white, 0.4);
-$color-overlay-faint: rgba($os-hyperspace-white, 0.1);
+$color-overlay-dark-faint: rgba(black, 0.3);
+$color-overlay-light: rgba(white, 0.4);
+$color-overlay-light-faint: rgba(white, 0.1);
 $color-button-primary-bg: $color-accent-secondary;
 $color-button-primary-text: $os-deep-space;
 $color-button-secondary-bg: transparent;
-$color-button-secondary-text: $os-hyperspace-white;
+$color-button-secondary-text: $color-text;
 $color-crumbs-text: rgba($color-text, 0.65);
 $color-crumbs-highlight: $color-accent-primary;
-$color-footer-bg: darken($color-bg, 10%);
+$color-footer-bg: darken($color-background, 10%);
+$color-input-bg: rgba(white, 0.04);
+$color-input-bg-focus: rgba(white, 0.07);
 
 $color-border-muted: rgba($color-accent-primary, 0.5);
 $color-border-light: rgba($color-accent-primary, 0.25);
@@ -103,11 +109,10 @@ $layout-section-padding-narrow: 2.5rem 20vw;
 
 $layout-container-max-wide: 1200px;
 $layout-container-max-narrow: 850px;
+$layout-cta-max-width: 680px;
 $layout-border-radius: 12px;
 $layout-border-radius-small: 6px;
 $layout-button-padding: 0.75rem 1.75rem;
-
-$layout-cta-max-width: 680px;
 
 $layout-z-dotnav: 0;
 $layout-z-modal: 1200;

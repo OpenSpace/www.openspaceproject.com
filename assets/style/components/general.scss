@@ -6,7 +6,7 @@
 %content-section-base {
   border-top: 1px solid $color-border-faint;
   border-bottom: 1px solid $color-border-faint;
-  background: $color-bg;
+  background: $color-background;
 
   h2 {
     font-size: $font-size-2xl;
@@ -19,7 +19,6 @@
   }
 
   ul {
-    list-style: none;
     padding: 0;
     margin: 0 0 1.75rem;
 
@@ -27,24 +26,15 @@
       font-size: $font-size-sm;
       line-height: 1.65;
       color: $color-text-light;
-      padding: 0.45rem 0 0.45rem 1.25rem;
-      border-bottom: 1px solid $color-border-faint;
+      padding: 0.45rem 0;
       position: relative;
 
       &:last-child {
         border-bottom: none;
       }
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: $color-border-muted;
+      &::marker {
+        color: $color-border-muted;
       }
 
       a {

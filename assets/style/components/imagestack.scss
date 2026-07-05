@@ -113,8 +113,8 @@ $stack-step-y: -11px;
   background-position: center;
   background-color: $color-surface-primary;
   transition:
-    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.45s ease;
+    transform $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1),
+    opacity $animation-duration-slow ease;
 }
 
 .image-stack__card--front {
@@ -173,7 +173,7 @@ $stack-step-y: -11px;
 }
 
 .image-stack__hint {
-  @include eyebrow-label(0.68rem);
+  @include eyebrow-label($font-size-2xs);
 
   color: $color-text-faint;
 }

@@ -8,14 +8,24 @@
 /*-- scss:defaults --*/
 $primary: $color-link !default;
 
-$body-bg: $color-bg;
+$body-bg: $color-background;
 $body-color: $color-text;
 
-$link-color: $color-accent-soft;
-$link-hover-color: lighten($color-accent-soft, 8%);
+$border-color: $color-border-faint;
+$border-radius: $layout-border-radius;
+$border-radius-sm: $layout-border-radius-small;
+
+$link-color: $color-accent-tertiary;
+$link-hover-color: lighten($color-accent-tertiary, 8%);
 
 $font-family-sans-serif: $font-body;
 $font-family-monospace: $font-monospace;
+$font-size-base: $font-size-md;
+$small-font-size: $font-size-sm;
+$text-muted: $color-text-muted;
+
+$code-bg: $color-surface-secondary;
+$code-color: $color-accent-secondary;
 
 $headings-font-family: $font-headings;
 $headings-font-weight: 300;
@@ -24,21 +34,21 @@ $headings-letter-spacing: 0.02em;
 
 $navbar-fg: rgba($color-text, 0.85);
 $navbar-hl: $color-accent-primary;
-$navbar-bg: $color-bg;
+$navbar-bg: $color-background;
 
 $footer-fg: $color-text;
 $footer-bg: $color-footer-bg;
 
-$dropdown-link-hover-color: $color-accent-soft;
-$dropdown-link-hover-bg: $color-bg;
-$dropdown-link-active-bg: $color-bg;
+$dropdown-link-hover-color: $color-accent-tertiary;
+$dropdown-link-hover-bg: $color-background;
+$dropdown-link-active-bg: $color-background;
 
 /*-- scss:rules --*/
 
-// Quarto's mobile grid has minmax(500px,...) on body-content columns, which
-// overflows the viewport on narrow screens. This makes calc(50% - 50vw) in
-// full-bleed sections miscalculate, shifting content right and clipping it.
-// overflow-x: hidden collapses that overflow so 50% == 50vw.
+// Quarto's mobile grid has minmax(500px,...) on body-content columns, which overflows the
+// viewport on narrow screens. This makes calc(50% - 50vw) in full-bleed sections
+// miscalculate, shifting content right and clipping it. overflow-x: hidden collapses that
+// overflow so 50% == 50vw.
 html {
   overflow-x: hidden;
 }
@@ -56,11 +66,11 @@ h3 {
 }
 
 h3, h4 {
-  color: $color-accent-soft;
+  color: $color-accent-tertiary;
 }
 
 strong {
-  color: $color-accent-soft;
+  color: $color-accent-tertiary;
   font-weight: 600;
 }
 

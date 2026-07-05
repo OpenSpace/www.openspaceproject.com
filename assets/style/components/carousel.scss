@@ -59,7 +59,7 @@
 }
 
 .content-carousel__eyebrow {
-  @include eyebrow-label(0.6875rem);
+  @include eyebrow-label($font-size-2xs);
 
   color: $color-text;
   margin: 0 0 0.4rem;
@@ -135,7 +135,7 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: $color-bg;
+  background: $color-background;
   border: 1px solid $color-border-bw-light;
   color: $color-text-highlight;
   display: flex;
@@ -148,7 +148,7 @@
 
   &:hover:not(:disabled) {
     background: $color-accent-secondary;
-    color: $color-bg;
+    color: $color-background;
     border-color: $color-accent-secondary;
   }
 

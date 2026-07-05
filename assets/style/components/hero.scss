@@ -40,7 +40,7 @@
 }
 
 .hero__badge {
-  @include eyebrow-label(0.7rem);
+  @include eyebrow-label($font-size-xs);
 
   display: inline-block;
   color: $color-accent-primary;

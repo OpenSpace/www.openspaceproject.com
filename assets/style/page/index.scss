@@ -11,7 +11,7 @@
   justify-content: center;
   gap: 1.75rem;
   color: white;
-  background-color: $color-bg;
+  background: $color-background;
   padding: 5rem 0 clamp(200px, 28vh, 380px);
 
   .page-index__hero-video-wrap {
@@ -29,7 +29,7 @@
       left: 0;
       right: 0;
       height: clamp(140px, 24vh, 320px);
-      background: linear-gradient(to bottom, transparent 0%, $color-bg 100%);
+      background: linear-gradient(to bottom, transparent 0%, $color-background 100%);
       pointer-events: none;
     }
 
@@ -99,7 +99,7 @@
   margin-left: 25%;
 
   padding: 3rem 0;
-  background: $color-bg;
+  background: $color-background;
   margin-top: clamp(-360px, -26vh, -180px);
   position: relative;
   z-index: 10;
@@ -176,7 +176,7 @@
 }
 
 .page-index__venues-section {
-  background: $color-bg;
+  background: $color-background;
 
   padding: $layout-section-padding-wide;
 
@@ -206,7 +206,7 @@
       border: 1px solid $color-border-faint;
       border-radius: $layout-border-radius;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(black, 0.2);
+      box-shadow: 0 1px 3px $color-overlay-dark-faint;
       transition:
         box-shadow $animation-duration-base ease,
         border-color $animation-duration-base ease;
@@ -217,7 +217,7 @@
       position: relative;
 
       &:hover {
-        box-shadow: 0 8px 24px rgba(black, 0.4);
+        box-shadow: 0 8px 24px $color-overlay-dark-faint;
         border-color: $color-border-light;
         text-decoration: none;
         color: inherit;
@@ -285,7 +285,7 @@
 .page-index__funders-section {
   padding: $layout-section-padding-wide;
 
-  background: $color-bg;
+  background: $color-background;
 
   overflow: hidden;
   max-width: 100vw;

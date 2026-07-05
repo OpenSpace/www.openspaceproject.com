@@ -147,7 +147,7 @@
 }
 
 .page-download__requirements-label {
-  @include eyebrow-label(0.7rem);
+  @include eyebrow-label($font-size-xs);
 
   display: block;
   margin-bottom: 1.25rem;
@@ -213,7 +213,7 @@
 
 .page-download__platform-link {
   @include pill-link(
-    $bg: $color-overlay-faint,
+    $bg: $color-overlay-light-faint,
     $border: $color-border-faint
   );
 

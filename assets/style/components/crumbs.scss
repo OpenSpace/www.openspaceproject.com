@@ -30,7 +30,7 @@ body:has(.crumbs) {
   font-family: $font-monospace;
   letter-spacing: 0.05em;
   color: $color-crumbs-text;
-  background: $color-bg;
+  background: $color-background;
 }
 
 // Once the JS has moved the crumbs into #quarto-header, Quarto's own `#quarto-header>nav`

@@ -42,7 +42,7 @@
 }
 
 .newsletter__input {
-  background: $color-bg;
+  background: $color-background;
   border: 1px solid $color-border-light;
   border-radius: $layout-border-radius-small;
   color: $color-text-highlight;
@@ -71,7 +71,7 @@
 .newsletter__button {
   @extend %button-base;
 
-  background: $color-bg;
+  background: $color-background;
   border: 1px solid $color-border-light;
   color: $color-text-light;
   font-size: $font-size-sm;

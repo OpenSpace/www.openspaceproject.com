@@ -43,14 +43,14 @@
 }
 
 .rich-list__number {
-  @include eyebrow-label(0.65rem);
+  @include eyebrow-label($font-size-2xs);
 
   color: $color-accent-primary;
   font-weight: 600;
 }
 
 .rich-list__tag {
-  @include eyebrow-label(0.6rem);
+  @include eyebrow-label($font-size-2xs);
 
   color: $color-text-light;
 }

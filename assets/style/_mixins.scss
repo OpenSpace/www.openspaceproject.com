@@ -90,7 +90,7 @@
 // Hover/focus tooltip rendered from the element's `aria-label` via `::after`. The element
 // must be positioned (e.g. `position: relative`). Placed to the left of the element,
 // vertically centered; override placement at the call site if needed.
-@mixin tooltip-label($size: 0.6rem) {
+@mixin tooltip-label($size: $font-size-2xs) {
   &::after {
     @include eyebrow-label($size);
 
@@ -101,9 +101,9 @@
     transform: translateY(-50%);
     color: $color-text-light;
     white-space: nowrap;
-    background: rgba($color-bg, 0.88);
+    background: rgba($color-background, 0.88);
     padding: 0.2rem 0.55rem;
-    border-radius: 4px;
+    border-radius: $layout-border-radius-small;
     border: 1px solid $color-border-faint;
     opacity: 0;
     transition: opacity $animation-duration-fast ease;
@@ -121,6 +121,7 @@
   letter-spacing: -0.01em;
   color: $color-text-highlight;
 }
+
 // Compact bordered "pill" link that lifts on hover and shifts its border/text
 // toward the accent color. Pass $bg/$border to vary the fill.
 @mixin pill-link(
@@ -154,7 +155,7 @@
 // Text input styling shared by form fields (contact form, 404 search box).
 // Set border-radius and sizing at the call site.
 @mixin text-input {
-  background: rgba(white, 0.04);
+  background: $color-input-bg;
   border: 1px solid $color-border-faint;
   color: $color-text-highlight;
   font-family: inherit;
@@ -170,7 +171,7 @@
 
   &:focus {
     border-color: $color-border-muted;
-    background: rgba(white, 0.07);
+    background: $color-input-bg-focus;
   }
 
   &:focus-visible {

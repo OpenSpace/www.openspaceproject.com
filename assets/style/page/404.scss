@@ -1,7 +1,7 @@
 /*-- scss:rules --*/
 
 .page-404 {
-  max-width: 850px;
+  max-width: $layout-container-max-narrow;
   margin: 0 auto;
   padding: 6rem 1.5rem 3rem;
   text-align: center;

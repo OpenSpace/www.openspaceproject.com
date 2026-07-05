@@ -16,7 +16,7 @@
 
 .page-slack__channel-group {
   h3 {
-    @include eyebrow-label(0.7rem);
+    @include eyebrow-label($font-size-xs);
 
     color: $color-accent-primary;
     margin: 0 0 0.75rem;

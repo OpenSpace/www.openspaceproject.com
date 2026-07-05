@@ -76,7 +76,7 @@
 }
 
 .page-events__tag {
-  @include eyebrow-label(0.6rem);
+  @include eyebrow-label($font-size-2xs);
 
   display: inline-block;
   margin-bottom: 0.5rem;

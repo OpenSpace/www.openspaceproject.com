@@ -76,18 +76,17 @@
 }
 
 .page-user-meetings__badge {
-  @include eyebrow-label(0.6rem);
+  @include eyebrow-label($font-size-2xs);
 
   font-weight: 600;
   padding: 0.2rem 0.6rem;
   border-radius: $layout-border-radius;
-  background: $color-surface-secondary-faint;
   color: $color-accent-secondary;
   border: 1px solid $color-border-secondary-light;
 }
 
 .page-user-meetings__year {
-  @include eyebrow-label(0.6rem);
+  @include eyebrow-label($font-size-2xs);
   color: $color-text-light;
 }
 

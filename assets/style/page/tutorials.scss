@@ -34,7 +34,7 @@
     aspect-ratio: 16 / 9;
     border: none;
     display: block;
-    background: $color-bg;
+    background: $color-background;
   }
 }
 
@@ -47,7 +47,7 @@
   // Higher specificity than the description's `& > p`, so these declarations
   // win over that rule regardless of source order
   & > .page-tutorials__card-eyebrow {
-    @include eyebrow-label(0.65rem);
+    @include eyebrow-label($font-size-2xs);
 
     color: $color-accent-primary;
     margin: 0 0 0.4rem;

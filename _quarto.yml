@@ -14,9 +14,6 @@ metadata-files:
   - _navbar.yml
   - _sidebars.yml
 
-  # resources:
-    # - assets/js/slider.js
-
 format:
   html:
     quarto-required: 1.9.*

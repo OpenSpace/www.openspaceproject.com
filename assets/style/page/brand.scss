@@ -16,7 +16,6 @@ $page-brand-light-border: rgba(black, 0.08);
   padding: 1rem 1.5rem;
 
   font-family: $font-monospace;
-  font-size: 0.9375rem;
   color: $color-text-highlight;
   margin: 0;
   letter-spacing: 0.02em;
@@ -93,15 +92,14 @@ $page-brand-light-border: rgba(black, 0.08);
   gap: 0.75rem;
 
   h3 {
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: $font-size-sm;
     color: $color-text-highlight;
     margin: 0;
     flex: 1;
   }
 
   p {
-    font-size: 0.72rem;
+    font-size: $font-size-xs;
     font-family: $font-monospace;
     color: $color-text-light;
     margin: 0;
@@ -109,7 +107,7 @@ $page-brand-light-border: rgba(black, 0.08);
 
   a {
     display: inline-block;
-    font-size: 0.72rem;
+    font-size: $font-size-xs;
     font-family: $font-monospace;
     color: $color-accent-primary;
     border: 1px solid $color-border-light;

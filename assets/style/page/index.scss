@@ -62,7 +62,7 @@
     box-sizing: border-box;
 
     p {
-      font-size: 1.25rem;
+      font-size: $font-size-lg;
       line-height: 1.5;
       margin: 0 0 2rem;
       color: $color-text;
@@ -106,7 +106,7 @@
 
   .page-index__trusted-label {
     text-align: center;
-    font-size: 0.875rem;
+    font-size: $font-size-sm;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $color-text-muted;
@@ -153,7 +153,6 @@
   .page-index__trusted-more {
     text-align: center;
     margin: 2rem 0 0;
-    font-size: 0.9rem;
 
     p {
       margin: 0;
@@ -251,8 +250,6 @@
         }
 
         h3 {
-          font-size: 1.25rem;
-          font-weight: 600;
           margin: 0 0 0.75rem;
           color: $color-text-highlight;
         }
@@ -381,7 +378,7 @@
   }
 
   .page-index__funder-disclaimer {
-    font-size: 0.75rem;
+    font-size: $font-size-xs;
     color: $color-text-light;
     line-height: 1.5;
     max-width: 640px;

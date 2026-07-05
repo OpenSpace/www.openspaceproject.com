@@ -37,7 +37,6 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 @mixin research-title($hover-color) {
-  font-size: 1rem;
   font-weight: 500;
   color: $color-text-highlight;
   line-height: 1.4;
@@ -54,7 +53,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 @mixin research-author {
-  font-size: 0.8125rem;
+  font-size: $font-size-sm;
   color: $color-text-light;
   line-height: 1.5;
   margin-bottom: 0.35rem;
@@ -62,7 +61,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 
 @mixin research-badge($text, $bg, $border) {
   display: inline-block;
-  font-size: 0.62rem;
+  font-size: $font-size-2xs;
   font-family: $font-monospace;
   letter-spacing: 0.08em;
   color: $text;
@@ -106,7 +105,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 .page-research__thesis-partner-tag {
-  font-size: 0.7rem;
+  font-size: $font-size-xs;
   font-family: $font-monospace;
   letter-spacing: 0.06em;
   color: $color-text-muted;
@@ -197,7 +196,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 
 .page-research__thesis-degree-badge {
   display: inline-block;
-  font-size: 0.6rem;
+  font-size: $font-size-2xs;
   font-family: $font-monospace;
   letter-spacing: 0.1em;
   color: $color-accent-soft;

@@ -46,6 +46,13 @@ html {
 main {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+
+  font-size: $font-size-md;
+}
+
+h3 {
+  font-size: $font-size-lg;
+  font-weight: 600;
 }
 
 h3, h4 {
@@ -66,7 +73,7 @@ table {
   max-width: 860px;
   margin: 0 auto 2rem;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: $font-size-sm;
 
   thead tr {
     border-bottom: 1px solid $color-border-bw-faint;
@@ -75,7 +82,7 @@ table {
   th {
     text-align: left;
     padding: 0 1rem 0.75rem 0;
-    font-size: 0.75rem;
+    font-size: $font-size-xs;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;

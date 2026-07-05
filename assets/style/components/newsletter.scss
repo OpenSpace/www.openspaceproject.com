@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  font-size: 0.72rem;
+  font-size: $font-size-xs;
 
   > * {
     margin: 0;
@@ -46,7 +46,7 @@
   border: 1px solid $color-border-light;
   border-radius: $layout-border-radius-small;
   color: $color-text-highlight;
-  font-size: 0.83rem;
+  font-size: $font-size-sm;
   padding: 0.45rem 0.8rem;
   font-family: inherit;
   outline: none;
@@ -74,7 +74,7 @@
   background: $color-bg;
   border: 1px solid $color-border-light;
   color: $color-text-light;
-  font-size: 0.82rem;
+  font-size: $font-size-sm;
   padding: 0.45rem 1.1rem;
   white-space: nowrap;
 

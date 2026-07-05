@@ -87,14 +87,19 @@ $font-headings: $os-font-headings;
 $font-body: $os-font-body;
 $font-monospace: $os-font-monospace;
 
+$font-size-2xs: 0.65rem;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: 2rem;
+
 //
 // Layout
 //
-$layout-section-padding-wide: 4.5rem clamp(1.5rem, 8vw, 12rem) 3rem;
-$layout-section-padding-narrow: 4.5rem clamp(2.5rem, 8vw, 12rem) 3rem;
-
-$layout-section-title-min: 1.75rem;
-$layout-section-title-max: 2.5rem;
+$layout-section-padding-wide: 2.5rem 8vw;
+$layout-section-padding-narrow: 2.5rem 20vw;
 
 $layout-container-max-wide: 1200px;
 $layout-container-max-narrow: 850px;
@@ -110,7 +115,6 @@ $layout-z-modal: 1200;
 //
 // Breakpoints
 //
-$bp-tn: 400px;
 $bp-sm: 600px;
 $bp-md: 768px;
 $bp-lg: 992px;

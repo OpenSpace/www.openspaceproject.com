@@ -32,8 +32,6 @@ $stack-step-y: -11px;
 
 .image-stack__text {
   h3 {
-    font-size: clamp(1.1rem, 2vw, 1.35rem);
-    font-weight: 500;
     color: $color-text-muted;
     line-height: 1.4;
     margin: 0 0 1rem;
@@ -41,7 +39,6 @@ $stack-step-y: -11px;
   }
 
   p {
-    font-size: 1rem;
     line-height: 1.8;
     color: $color-text;
     margin: 0;
@@ -53,7 +50,7 @@ $stack-step-y: -11px;
     margin: 1.25rem 0 0;
 
     li {
-      font-size: 0.875rem;
+      font-size: $font-size-sm;
       line-height: 1.65;
       color: $color-text-muted;
       padding: 0.5rem 0 0.5rem 1.25rem;

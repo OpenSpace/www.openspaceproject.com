@@ -66,7 +66,7 @@
 }
 
 .content-carousel__title {
-  font-size: 1.25rem;
+  font-size: $font-size-lg;
   font-weight: 600;
   margin: 0;
   color: $color-text-highlight;
@@ -138,7 +138,6 @@
   background: $color-bg;
   border: 1px solid $color-border-bw-light;
   color: $color-text-highlight;
-  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -44,7 +44,7 @@ listing:
       type: evaluator
 ---
 
-::: {.content-section}
+::: {.content-section-narrow}
 
 ## Stewarding Institutions
 

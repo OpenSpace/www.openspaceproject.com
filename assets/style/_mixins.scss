@@ -116,7 +116,7 @@
 }
 
 @mixin section-title {
-  font-size: clamp($layout-section-title-min, 3vw, $layout-section-title-max);
+  font-size: $font-size-2xl;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: $color-text-highlight;
@@ -135,7 +135,7 @@
   border: 1px solid $border;
   border-radius: $layout-border-radius-small;
   background: $bg;
-  font-size: 0.875rem;
+  font-size: $font-size-sm;
   font-weight: 500;
   color: $color-text-highlight;
   text-decoration: none;
@@ -157,7 +157,6 @@
   background: rgba(white, 0.04);
   border: 1px solid $color-border-faint;
   color: $color-text-highlight;
-  font-size: 0.9rem;
   font-family: inherit;
   padding: 0.6rem 0.9rem;
   outline: none;

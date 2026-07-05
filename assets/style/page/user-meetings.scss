@@ -43,8 +43,7 @@
   }
 
   h3 {
-    font-size: clamp(1.375rem, 2.5vw, 1.875rem);
-    font-weight: 600;
+    font-size: $font-size-xl;
     color: $color-text-highlight;
     line-height: 1.15;
     letter-spacing: -0.02em;
@@ -93,7 +92,7 @@
 }
 
 .page-user-meetings__location {
-  font-size: 0.75rem;
+  font-size: $font-size-xs;
   font-family: $font-monospace;
   color: $color-text-light;
   letter-spacing: 0.04em;
@@ -101,14 +100,13 @@
 }
 
 .page-user-meetings__desc {
-  font-size: 0.9375rem;
   line-height: 1.75;
   color: $color-text;
   margin: 0 0 1.25rem;
 }
 
 .page-user-meetings__link {
-  font-size: 0.875rem;
+  font-size: $font-size-sm;
   font-weight: 500;
   color: $color-accent-primary;
   text-decoration: none;

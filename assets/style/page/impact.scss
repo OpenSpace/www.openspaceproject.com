@@ -11,7 +11,7 @@
   background: transparent;
   border: 1px solid $color-border-light;
   color: $color-text-light;
-  font-size: 0.75rem;
+  font-size: $font-size-xs;
   font-family: $font-monospace;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
 
 .page-impact__map-footer {
   margin-top: 0.85rem;
-  font-size: 0.8125rem;
+  font-size: $font-size-sm;
   color: $color-text-light;
   display: flex;
   align-items: center;

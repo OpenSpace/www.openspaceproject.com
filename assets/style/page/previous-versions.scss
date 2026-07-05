@@ -2,7 +2,7 @@
 
 .page-previous-versions__platform {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: $font-size-xs;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
 .page-previous-versions__older {
   max-width: 860px;
   margin: 0 auto;
-  font-size: 0.875rem;
+  font-size: $font-size-sm;
   color: $color-text-light;
 
   a {

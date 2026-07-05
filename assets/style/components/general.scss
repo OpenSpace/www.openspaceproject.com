@@ -3,18 +3,13 @@
 //
 // General sections
 //
-.content-section {
-  padding: $layout-section-padding-wide;
+%content-section-base {
   border-top: 1px solid $color-border-faint;
   border-bottom: 1px solid $color-border-faint;
   background: $color-bg;
 
-  &:nth-child(even of .content-section) {
-    background: $color-surface-primary;
-  }
-
   h2 {
-    font-size: 1.75rem;
+    font-size: $font-size-2xl;
     letter-spacing: 0;
     font-variant-caps: small-caps;
     color: $color-text-highlight;
@@ -29,7 +24,7 @@
     margin: 0 0 1.75rem;
 
     li {
-      font-size: 0.875rem;
+      font-size: $font-size-sm;
       line-height: 1.65;
       color: $color-text-light;
       padding: 0.45rem 0 0.45rem 1.25rem;
@@ -67,5 +62,25 @@
         }
       }
     }
+  }
+}
+
+.content-section {
+  @extend %content-section-base;
+
+  padding: $layout-section-padding-wide;
+
+  &:nth-child(even of .content-section) {
+    background: $color-surface-primary;
+  }
+}
+
+.content-section-narrow {
+  @extend %content-section-base;
+
+  padding: $layout-section-padding-narrow;
+
+  &:nth-child(even of .content-section-narrow) {
+    background: $color-surface-primary;
   }
 }

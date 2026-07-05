@@ -1,7 +1,7 @@
 /*-- scss:rules --*/
 
 .page-use-cases__grid {
-  @include card-grid(3);
+  @include card-grid;
 }
 
 .page-use-cases__card {
@@ -10,15 +10,12 @@
   border-radius: $layout-border-radius;
   overflow: hidden;
   background-size: cover;
-  background-position: center 50%;
   background-repeat: no-repeat;
   cursor: pointer;
 
   &:hover .page-use-cases__card-overlay,
   &:focus-visible .page-use-cases__card-overlay {
-    background: $gradient-image-scrim;
     border: 1px solid $color-border-light;
-    border-radius: $layout-border-radius;
   }
 
   &:focus-visible {
@@ -31,14 +28,11 @@
   position: absolute;
   inset: 0;
   background: $gradient-image-scrim;
-  transition: background $animation-duration-base ease;
 }
 
 .page-use-cases__card-text {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: auto 0 0;
   padding: 1.25rem 1.5rem 1.5rem;
   z-index: 2;
 
@@ -64,28 +58,36 @@
 .page-use-cases__modal {
   position: fixed;
   inset: 0;
-  z-index: 1200;
+  z-index: $layout-z-modal;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
   visibility: hidden;
   opacity: 0;
+  backdrop-filter: blur(0px);
   transition:
     opacity $animation-duration-base ease,
-    visibility $animation-duration-base;
+    visibility $animation-duration-base ease,
+    backdrop-filter $animation-duration-base ease;
 
   &.is-open {
     visibility: visible;
     opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    backdrop-filter: none;
+    transition:
+      opacity $animation-duration-base ease,
+      visibility $animation-duration-base ease;
   }
 }
 
 .page-use-cases__modal-backdrop {
   position: absolute;
   inset: 0;
-  background: $color-surface-primary;
-  backdrop-filter: blur(4px);
 }
 
 .page-use-cases__modal-box {
@@ -99,7 +101,7 @@
   max-width: 900px;
   max-height: 90vh;
   display: grid;
-  grid-template-columns: 42% 1fr;
+  grid-template-columns: 40% 1fr;
   transform: translateY(12px);
   transition: transform $animation-duration-base cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -118,7 +120,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
   display: block;
 }
 
@@ -131,49 +132,49 @@
   @media (max-width: $bp-sm) {
     padding: 1.5rem 1.25rem 1.5rem;
   }
+}
 
-  .page-use-cases__modal-meta {
-    @include eyebrow-label(0.7rem);
+.page-use-cases__modal-meta {
+  @include eyebrow-label(0.7rem);
 
-    color: $color-accent-primary;
-    margin: 0 0 0.75rem;
-    line-height: 1.5;
-  }
+  color: $color-accent-primary;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
 
-  .page-use-cases__modal-title {
-    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
-    font-weight: 700;
-    color: $color-text-highlight;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    margin: 0 0 1.25rem;
-  }
+.page-use-cases__modal-title {
+  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+  font-weight: 700;
+  color: $color-text-highlight;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+}
 
-  .page-use-cases__modal-body {
-    font-size: 0.9375rem;
-    line-height: 1.75;
-    color: $color-text-light;
-    margin: 0 0 1.5rem;
-    flex: 1;
-  }
+.page-use-cases__modal-body {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: $color-text-light;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
 
-  .page-use-cases__modal-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: auto;
-  }
+.page-use-cases__modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
 
-  .page-use-cases__modal-tag {
-    font-size: 0.65rem;
-    font-family: $font-monospace;
-    letter-spacing: 0.05em;
-    color: $color-text-muted;
-    background: $color-surface-secondary;
-    border: 1px solid $color-border-light;
-    border-radius: $layout-border-radius-small;
-    padding: 0.25rem 0.55rem;
-  }
+.page-use-cases__modal-tag {
+  font-size: 0.65rem;
+  font-family: $font-monospace;
+  letter-spacing: 0.05em;
+  color: $color-text-muted;
+  background: $color-surface-secondary;
+  border: 1px solid $color-border-light;
+  border-radius: $layout-border-radius-small;
+  padding: 0.25rem 0.55rem;
 }
 
 .page-use-cases__modal-close {

@@ -5,49 +5,42 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
 
-  @media (max-width: $bp-sm) {
-    grid-template-columns: 1fr;
-  }
-
   @media (max-width: $bp-lg) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
   }
 }
 
 .page-slack__channel-group {
-  display: flex;
-  flex-direction: column;
-
   h3 {
     @include eyebrow-label(0.7rem);
 
     color: $color-accent-primary;
     margin: 0 0 0.75rem;
   }
+}
 
-  .page-slack__channel-item {
-    padding: 0.75rem 0;
-    border-top: 1px solid $color-border-faint;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+.page-slack__channel-item {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 
-    p {
-      margin: 0;
-    }
+  p {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: $color-text-muted;
+  }
 
-    span {
-      font-size: 0.8125rem;
-      font-family: $font-monospace;
-      color: $color-text-highlight;
-      font-weight: 500;
-      line-height: 1.3;
-    }
-
-    p:last-child {
-      font-size: 0.8125rem;
-      line-height: 1.55;
-      color: $color-text-muted;
-    }
+  span {
+    font-size: 0.8125rem;
+    font-family: $font-monospace;
+    color: $color-text-highlight;
+    font-weight: 500;
+    line-height: 1.3;
   }
 }

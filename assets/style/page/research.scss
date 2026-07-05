@@ -1,21 +1,33 @@
 /*-- scss:rules --*/
 
-.page-research__paper-year-label {
+$page-research-paper-text: rgba($color-accent-soft, 0.85);
+$page-research-paper-bg: rgba($color-accent-soft, 0.07);
+$page-research-paper-border: rgba($color-accent-soft, 0.2);
+$page-research-thesis-text: rgba($color-accent-primary, 0.7);
+$page-research-thesis-bg: rgba($color-accent-primary, 0.07);
+$page-research-thesis-border: rgba($color-accent-primary, 0.15);
+
+// Shared paper/thesis list patterns. The two halves of this page are the same
+// layout themed twice: papers in $color-accent-soft, theses in $color-accent-primary.
+
+@mixin research-year-label($padding-x: 0, $divider: true) {
   @include eyebrow-label(0.65rem);
 
   color: $color-text-light;
-  padding: 1.5rem 1.1rem 0.5rem;
-  border-top: 1px solid $color-border-faint;
+  padding: if($divider, 1.5rem, 0) $padding-x 0.5rem;
   margin-top: 0.5rem;
 
-  &:first-child {
-    border-top: none;
-    padding-top: 0;
+  @if $divider {
+    border-top: 1px solid $color-border-faint;
+
+    &:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
   }
 }
 
-.page-research__paper-row {
-  padding: 1rem 1.1rem;
+@mixin research-row {
   border-radius: $layout-border-radius;
   transition: background $animation-duration-fast ease;
 
@@ -24,7 +36,7 @@
   }
 }
 
-.page-research__paper-title {
+@mixin research-title($hover-color) {
   font-size: 1rem;
   font-weight: 500;
   color: $color-text-highlight;
@@ -36,32 +48,54 @@
     text-decoration: none;
 
     &:hover {
-      color: $color-accent-soft;
+      color: $hover-color;
     }
-  }
-
-  i, .bi {
-    display: none;
   }
 }
 
-.page-research__paper-author {
+@mixin research-author {
   font-size: 0.8125rem;
   color: $color-text-light;
   line-height: 1.5;
   margin-bottom: 0.35rem;
 }
 
-.page-research__paper-venue-badge {
+@mixin research-badge($text, $bg, $border) {
   display: inline-block;
   font-size: 0.62rem;
   font-family: $font-monospace;
   letter-spacing: 0.08em;
-  color: rgba($color-accent-soft, 0.85);
-  background: rgba($color-accent-soft, 0.07);
-  border: 1px solid rgba($color-accent-soft, 0.2);
+  color: $text;
+  background: $bg;
+  border: 1px solid $border;
   padding: 0.15rem 0.5rem;
   border-radius: $layout-border-radius-small;
+}
+
+.page-research__paper-year-label {
+  @include research-year-label(1.1rem);
+}
+
+.page-research__paper-row {
+  @include research-row;
+
+  padding: 1rem 1.1rem;
+}
+
+.page-research__paper-title {
+  @include research-title($color-accent-soft);
+}
+
+.page-research__paper-author {
+  @include research-author;
+}
+
+.page-research__paper-venue-badge {
+  @include research-badge(
+    $page-research-paper-text,
+    $page-research-paper-bg,
+    $page-research-paper-border
+  );
 }
 
 .page-research__thesis-partners {
@@ -83,9 +117,9 @@
   cursor: pointer;
   appearance: none;
   transition:
-    background $animation-duration-fast,
-    border-color $animation-duration-fast,
-    color $animation-duration-fast;
+    background $animation-duration-fast ease,
+    border-color $animation-duration-fast ease,
+    color $animation-duration-fast ease;
 
   &:hover {
     border-color: $color-border-light;
@@ -110,31 +144,22 @@
 }
 
 .page-research__thesis-year-label {
-  @include eyebrow-label(0.65rem);
+  @include research-year-label($divider: false);
+}
 
-  color: $color-text-light;
-  padding: 1.5rem 0 0.5rem;
+.page-research__thesis-row:not(.is-hidden) ~ .page-research__thesis-year-label {
   border-top: 1px solid $color-border-faint;
-  margin-top: 0.5rem;
-
-  &:first-child {
-    border-top: none;
-    padding-top: 0;
-  }
+  padding-top: 1.5rem;
 }
 
 .page-research__thesis-row {
+  @include research-row;
+
   display: grid;
   grid-template-columns: 168px 1fr;
   gap: 1.25rem;
   padding: 1.25rem 1.1rem;
-  border-radius: $layout-border-radius;
   align-items: center;
-  transition: background $animation-duration-fast ease;
-
-  &:hover {
-    background: $color-surface-primary-faint;
-  }
 
   @media (max-width: $bp-sm) {
     grid-template-columns: 1fr;
@@ -145,6 +170,7 @@
 
 .page-research__thesis-photos {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
   justify-content: flex-start;
   align-items: center;
@@ -155,7 +181,7 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: top center;
-    border: 1.5px solid $color-border-bw-light;
+    border: 1px solid $color-border-bw-light;
     flex-shrink: 0;
 
     @media (max-width: $bp-sm) {
@@ -163,32 +189,10 @@
       height: 48px;
     }
   }
-
-  @media (max-width: $bp-sm) {
-    justify-content: flex-start;
-  }
 }
 
 .page-research__thesis-title {
-  font-size: 1rem;
-  font-weight: 500;
-  color: $color-text-highlight;
-  line-height: 1.4;
-  margin-bottom: 0.3rem;
-
-  a {
-    color: $color-text-highlight;
-    text-decoration: none;
-
-    &:hover {
-      color: $color-accent-primary;
-    }
-  }
-
-  // Suppress Quarto's external link icon inside thesis titles
-  i, .bi {
-    display: none;
-  }
+  @include research-title($color-accent-primary);
 }
 
 .page-research__thesis-degree-badge {
@@ -197,30 +201,21 @@
   font-family: $font-monospace;
   letter-spacing: 0.1em;
   color: $color-accent-soft;
-  border: 1px solid rgba($color-accent-soft, 0.4);
+  border: 1px solid $page-research-thesis-border;
   padding: 0.1rem 0.45rem;
   border-radius: $layout-border-radius-small;
   margin-left: 0.5rem;
   vertical-align: middle;
-  position: relative;
-  top: -1px;
 }
 
 .page-research__thesis-author {
-  font-size: 0.8125rem;
-  color: $color-text-light;
-  line-height: 1.4;
-  margin-bottom: 0.35rem;
+  @include research-author;
 }
 
 .page-research__thesis-partner-badge {
-  display: inline-block;
-  font-size: 0.62rem;
-  font-family: $font-monospace;
-  letter-spacing: 0.08em;
-  color: rgba($color-accent-primary, 0.7);
-  background: rgba($color-accent-primary, 0.07);
-  border: 1px solid rgba($color-accent-primary, 0.15);
-  padding: 0.15rem 0.5rem;
-  border-radius: $layout-border-radius-small;
+  @include research-badge(
+    $page-research-thesis-text,
+    $page-research-thesis-bg,
+    $page-research-thesis-border
+  );
 }

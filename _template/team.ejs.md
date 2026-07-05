@@ -1,15 +1,15 @@
 ```{=html}
 <div class="page-team__grid">
 <% for (const item of items) { %>
-  <div class="page-team__card" tabindex="0" aria-label="<%- item.name %>">
+  <div class="page-team__card" role="button" tabindex="0" aria-expanded="false">
     <div class="page-team__card-inner">
 
       <div class="page-team__card-front">
         <img
           src="/assets/team/<%- item.type %>/<%- item.image %>"
-          alt="<%- item.name %>"
+          alt=""
         >
-        <div class="page-team__card-info">
+        <div class="page-team__card-info" aria-hidden="true">
           <h3><%- item.name %></h3>
           <% if (item.title) { %>
           <span><%- item.title %></span>
@@ -31,4 +31,5 @@
   </div>
 <% } %>
 </div>
+<script src="/assets/js/team.js"></script>
 ```

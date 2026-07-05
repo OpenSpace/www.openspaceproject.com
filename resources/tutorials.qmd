@@ -10,7 +10,7 @@ format:
 
 hero:
   title: "Get started with OpenSpace"
-  breadcrumbs:
+  crumbs:
     - "Resources"
     - "Tutorials"
   lede: >

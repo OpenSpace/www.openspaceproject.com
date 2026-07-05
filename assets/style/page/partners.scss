@@ -1,7 +1,7 @@
 /*-- scss:rules --*/
 
 .page-partners__grid {
-  @include card-grid(auto-fill);
+  @include card-grid;
 }
 
 .page-partners__card {

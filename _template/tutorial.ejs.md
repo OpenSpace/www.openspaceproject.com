@@ -11,7 +11,7 @@
               loading="lazy">
       </iframe>
       <div class="page-tutorials__card-body">
-        <h4><%- item.header %></h4>
+        <p class="page-tutorials__card-eyebrow"><%- item.header %></p>
         <h3><%- item.title %></h3>
         <p><%- item.description %></p>
       </div>

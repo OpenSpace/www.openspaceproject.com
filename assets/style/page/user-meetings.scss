@@ -17,11 +17,6 @@
     border-color: $color-border-light;
   }
 
-  @media (max-width: $bp-md) {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
   &--past {
     img {
       opacity: 0.4;
@@ -47,64 +42,6 @@
     }
   }
 
-  .page-user-meetings__meta {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.6rem;
-
-    .page-user-meetings__badge {
-      @include eyebrow-label(0.6rem);
-
-      font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: $layout-border-radius;
-      background: $color-surface-secondary-faint;
-      color: $color-accent-secondary;
-      border: 1px solid $color-border-secondary-light;
-    }
-
-    .page-user-meetings__year {
-      @include eyebrow-label(0.6rem);
-      color: $color-text-light;
-    }
-  }
-
-  .page-user-meetings__location {
-    font-size: 0.75rem;
-    font-family: $font-monospace;
-    color: $color-text-light;
-    letter-spacing: 0.04em;
-    margin: 0 0 0.85rem;
-  }
-
-  .page-user-meetings__desc {
-    font-size: 0.9375rem;
-    line-height: 1.75;
-    color: $color-text;
-    margin: 0 0 1.25rem;
-  }
-
-  .page-user-meetings__link {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: $color-accent-primary;
-    text-decoration: none;
-    letter-spacing: 0.01em;
-    transition: color $animation-duration-fast ease;
-    position: relative;
-    z-index: 1;
-
-    i, .bi {
-      display: none;
-    }
-
-    &:hover {
-      color: $color-text-highlight;
-      text-decoration: none;
-    }
-  }
-
   h3 {
     font-size: clamp(1.375rem, 2.5vw, 1.875rem);
     font-weight: 600;
@@ -123,11 +60,65 @@
         position: absolute;
         inset: 0;
       }
-
-      &:hover {
-        color: inherit;
-        text-decoration: none;
-      }
     }
+  }
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.page-user-meetings__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.page-user-meetings__badge {
+  @include eyebrow-label(0.6rem);
+
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: $layout-border-radius;
+  background: $color-surface-secondary-faint;
+  color: $color-accent-secondary;
+  border: 1px solid $color-border-secondary-light;
+}
+
+.page-user-meetings__year {
+  @include eyebrow-label(0.6rem);
+  color: $color-text-light;
+}
+
+.page-user-meetings__location {
+  font-size: 0.75rem;
+  font-family: $font-monospace;
+  color: $color-text-light;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.85rem;
+}
+
+.page-user-meetings__desc {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: $color-text;
+  margin: 0 0 1.25rem;
+}
+
+.page-user-meetings__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $color-accent-primary;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color $animation-duration-fast ease;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    color: $color-text-highlight;
+    text-decoration: none;
   }
 }

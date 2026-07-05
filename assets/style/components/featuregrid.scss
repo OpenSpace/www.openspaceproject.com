@@ -5,7 +5,7 @@
 // elements adjusts automatically
 //
 .feature-grid {
-  @include card-grid(auto-fit);
+  @include card-grid;
 
   margin-bottom: 2rem;
 }

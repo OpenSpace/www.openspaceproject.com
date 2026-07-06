@@ -1,6 +1,7 @@
 ---
-pagetitle: "Partners — OpenSpace"
-description-meta: "The institutions and universities that make the OpenSpace project possible."
+pagetitle: Partners — OpenSpace
+description-meta: >
+  The institutions and universities that make the OpenSpace project possible.
 format:
   html:
     page-layout: full
@@ -9,10 +10,10 @@ format:
     theme: ../assets/style/page/partners.scss
 
 hero:
-  title: "The Institutions behind OpenSpace"
+  title: The Institutions behind OpenSpace
   crumbs:
-    - "About"
-    - "Partners"
+    - About
+    - Partners
   lede: >
     A collaboration between universities, science museums, and planetariums in the US and
     Sweden, united by a shared mission to make space exploration accessible to everyone.

@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let i = 0;
   setInterval(() => {
     const prev = i;
-    i = (i + 1) % words.length;
+    let next;
+    do { next = Math.floor(Math.random() * words.length); } while (next === prev);
+    i = next;
     words[prev].classList.remove('is-active');
     words[prev].classList.add('is-exit');
     words[prev].setAttribute('aria-hidden', 'true');

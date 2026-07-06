@@ -1,6 +1,6 @@
 ```{=html}
 
-<div class="page-partners__grid">
+<div class="card-grid">
 <%
   for (const item of items) {
 %>

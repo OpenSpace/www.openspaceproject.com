@@ -1,6 +1,8 @@
 ---
-pagetitle: "Use Cases — OpenSpace"
-description-meta: "How museums, planetariums, universities, and research institutions use OpenSpace to engage audiences and advance science."
+pagetitle: Use Cases — OpenSpace
+description-meta: >
+  How museums, planetariums, universities, and research institutions use OpenSpace to
+  engage audiences and advance science.
 format:
   html:
     page-layout: full
@@ -15,23 +17,23 @@ listing:
     contents: ../assets/listing/use-cases.yml
 
 hero:
-  title: "OpenSpace in Action"
+  title: OpenSpace in Action
   crumbs:
-    - "Community"
-    - "Use Cases"
+    - Community
+    - Use Cases
   lede: >
     Real installations, real venues. See how institutions worldwide are using OpenSpace.
 
 cta:
-  heading: "Add your story"
+  heading: Add your story
   actions:
-    - text: "Download OpenSpace"
-      link: "/install/download.qmd"
-      style: "primary"
-    - text: "Get in touch"
-      link: "/community/contact.qmd"
-      style: "ghost"
-  lede: "If your institution is using OpenSpace, we'd love to feature it here."
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: Get in touch
+      link: /community/contact.qmd
+      style: ghost
+  lede: If your institution is using OpenSpace, we'd love to feature it here.
 ---
 
 ::: {.content-section}

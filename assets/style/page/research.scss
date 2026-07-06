@@ -7,25 +7,19 @@ $page-research-thesis-text: rgba($color-accent-primary, 0.7);
 $page-research-thesis-bg: rgba($color-accent-primary, 0.07);
 $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 
-// Shared paper/thesis list patterns. The two halves of this page are the same
-// layout themed twice: papers in $color-accent-tertiary, theses in $color-accent-primary.
-
-@mixin research-badge($text, $bg, $border) {
+%research-badge {
   display: inline-block;
   font-size: $font-size-2xs;
   font-family: $font-monospace;
-  letter-spacing: 0.08em;
-  color: $text;
-  background: $bg;
-  border: 1px solid $border;
+  letter-spacing: $font-letterspacing-extrawide;
   padding: 0.15rem 0.5rem;
+  border: 1px solid $color-accent-primary;
   border-radius: $layout-border-radius-small;
 }
 
 .page-research__title {
   font-weight: $font-weight-demibold;
   color: $color-text-highlight;
-  line-height: 1.4;
   margin-bottom: 0.3rem;
 
   a {
@@ -46,7 +40,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 .page-research__year-label {
-  @include eyebrow-label($font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-2xs);
 
   color: $color-text-light;
   padding: 0.5rem 0 0.2rem;
@@ -70,11 +64,11 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 .page-research__paper-venue-badge {
-  @include research-badge(
-    $page-research-paper-text,
-    $page-research-paper-bg,
-    $page-research-paper-border
-  );
+  @extend %research-badge;
+
+  color: $page-research-paper-text;
+  background: $page-research-paper-bg;
+  border-color: $page-research-paper-border;
 }
 
 .page-research__thesis-partners {
@@ -87,7 +81,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 .page-research__thesis-partner-tag {
   font-size: $font-size-xs;
   font-family: $font-monospace;
-  letter-spacing: 0.06em;
+  letter-spacing: $font-letterspacing-wide;
   color: $color-text-muted;
   background: $color-surface-primary-faint;
   border: 1px solid $color-border-faint;
@@ -172,9 +166,9 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 .page-research__thesis-partner-badge {
-  @include research-badge(
-    $page-research-thesis-text,
-    $page-research-thesis-bg,
-    $page-research-thesis-border
-  );
+  @extend %research-badge;
+
+  color: $page-research-thesis-text;
+  background: $page-research-thesis-bg;
+  border-color: $page-research-thesis-border;
 }

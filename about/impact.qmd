@@ -1,6 +1,7 @@
 ---
-pagetitle: "Impact — OpenSpace"
-description-meta: "OpenSpace's global reach — where it runs, annual reports, and how to get involved."
+pagetitle: Impact — OpenSpace
+description-meta: >
+  OpenSpace's global reach — where it runs, annual reports, and how to get involved.
 format:
   html:
     page-layout: full
@@ -16,21 +17,21 @@ format:
         <script src="/assets/js/impact-map.js"></script>
 
 hero:
-  title: "OpenSpace around the world"
+  title: OpenSpace around the world
   crumbs:
-    - "About"
-    - "Impact"
+    - About
+    - Impact
   lede: >
     From planetarium domes to research labs, OpenSpace is running on every continent.
     Here's a look at our global footprint, annual progress, and how you can be part of the
     story.
 
 cta:
-  heading: "Using OpenSpace? Tell us about it."
+  heading: Using OpenSpace? Tell us about it.
   actions:
-    - text: "Get in touch"
+    - text: Get in touch
       link: "mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution"
-      style: "primary"
+      style: primary
   lede: >
     If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you —
     and may feature you in our annual reports and on this site.
@@ -70,25 +71,25 @@ OpenSpace is funded in part by NASA's Science Activation Program under award No.
 
 ::: {.page-impact__reports-grid}
 
-[&#8595; 2025](/resources/reports/2025_NNX16AB93A_Y10_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2025](/assets/reports/2025_NNX16AB93A_Y10_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2024](/resources/reports/2025_NNX16AB93A_Y9_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2024](/assets/reports/2024_NNX16AB93A_Y9_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2023](/resources/reports/2025_NNX16AB93A_Y8_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2023](/assets/reports/2023_NNX16AB93A_Y8_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2022](/resources/reports/2025_NNX16AB93A_Y7_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2022](/assets/reports/2022_NNX16AB93A_Y7_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2021](/resources/reports/2025_NNX16AB93A_Y6_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2021](/assets/reports/2021_NNX16AB93A_Y6_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2020](/resources/reports/2025_NNX16AB93A_Y5_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2020](/assets/reports/2020_NNX16AB93A_Y5_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2019](/resources/reports/2025_NNX16AB93A_Y4_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2019](/assets/reports/2019_NNX16AB93A_Y4_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2018](/resources/reports/2025_NNX16AB93A_Y3_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2018](/assets/reports/2018_NNX16AB93A_Y3_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2017](/resources/reports/2025_NNX16AB93A_Y2_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2017](/assets/reports/2017_NNX16AB93A_Y2_Annual_Report.pdf){.page-impact__report-link}
 
-[&#8595; 2016](/resources/reports/2025_NNX16AB93A_Y1_Annual_Report.pdf){.page-impact__report-link}
+[&#8595; 2016](/assets/reports/2016_NNX16AB93A_Y1_Annual_Report.pdf){.page-impact__report-link}
 
 :::
 

@@ -4,7 +4,7 @@
   display: inline-block;
   font-size: $font-size-xs;
   font-weight: $font-weight-demibold;
-  letter-spacing: 0.05em;
+  letter-spacing: $font-letterspacing-wide;
   text-transform: uppercase;
   color: $color-text-faint;
   min-width: 4rem;

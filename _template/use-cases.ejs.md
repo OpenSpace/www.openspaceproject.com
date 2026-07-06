@@ -1,5 +1,5 @@
 ```{=html}
-<div class="page-use-cases__grid">
+<div class="card-grid">
 <%
   for (const item of items) {
 %>

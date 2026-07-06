@@ -1,6 +1,8 @@
 ---
 pagetitle: "Brand & Attribution — OpenSpace"
-description-meta: "Guidelines for crediting OpenSpace in your work, plus logos and brand assets available for download."
+description-meta: >
+  Guidelines for crediting OpenSpace in your work, plus logos and brand assets available
+  for download.
 format:
   html:
     page-layout: full
@@ -11,18 +13,18 @@ format:
 hero:
   title: "Brand & Attribution"
   crumbs:
-    - "About"
+    - About
     - "Brand & Attribution"
   lede: >
     Guidelines for crediting OpenSpace in publications, presentations, and media, plus
     logos available for download.
 
 cta:
-  heading: "Questions about usage?"
+  heading: Questions about usage?
   actions:
-    - text: "Get in touch"
-      link: "/community/contact.qmd"
-      style: "primary"
+    - text: Get in touch
+      link: /community/contact.qmd
+      style: primary
   lede: >
     For licensing, permissions, or anything not covered here, reach out directly.
 ---

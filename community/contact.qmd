@@ -1,6 +1,7 @@
 ---
-pagetitle: "Contact — OpenSpace"
-description-meta: "Get in touch with the OpenSpace team — send a message or join us on Slack."
+pagetitle: Contact — OpenSpace
+description-meta: >
+  Get in touch with the OpenSpace team — send a message or join us on Slack.
 format:
   html:
     page-layout: full
@@ -12,11 +13,11 @@ format:
           <script src="/assets/js/contact-form.js"></script>
 
 hero:
-  title: "Get in touch"
+  title: Get in touch
   crumbs:
-    - "Community"
-    - "Contact"
-  lede: "Have a question, bug report, or want to learn more? We're happy to help."
+    - Community
+    - Contact
+  lede: Have a question, bug report, or want to learn more? We're happy to help.
 ---
 
 ```{=html}

@@ -1,6 +1,8 @@
 ---
-pagetitle: "Events — OpenSpace"
-description-meta: "Monthly community meetings, annual user conferences, and special events with the OpenSpace team."
+pagetitle: Events — OpenSpace
+description-meta: >
+  Monthly community meetings, annual user conferences, and special events with the
+  OpenSpace team.
 format:
   html:
     page-layout: full

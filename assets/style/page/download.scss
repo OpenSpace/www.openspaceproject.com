@@ -18,7 +18,7 @@
   font-weight: $font-weight-bold;
   font-size: $font-size-lg;
   padding: 0.9rem 2.25rem;
-  letter-spacing: -0.01em;
+  letter-spacing: $font-letterspacing-narrow;
 }
 
 .page-download__button-secondary {
@@ -32,7 +32,7 @@
   margin-top: 1.5rem;
   font-size: $font-size-sm;
   font-family: $font-monospace;
-  letter-spacing: 0.08em;
+  letter-spacing: $font-letterspacing-extrawide;
   color: $color-text-light;
   text-align: center;
 }
@@ -107,7 +107,7 @@
     grid-column: 1;
     font-family: $font-monospace;
     font-size: $font-size-sm;
-    letter-spacing: 0.04em;
+    letter-spacing: $font-letterspacing-wide;
     white-space: nowrap;
     color: $color-text-light;
   }
@@ -147,7 +147,7 @@
 }
 
 .page-download__requirements-label {
-  @include eyebrow-label($font-size-xs);
+  @include eyebrow-label($fontsize: $font-size-xs);
 
   display: block;
   margin-bottom: 1.25rem;
@@ -165,21 +165,18 @@
 }
 
 .page-download__platform {
-  @include card-hover-lift;
-
   padding: 2rem 1.75rem;
   border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
   background: $color-surface-primary;
 
-  // Restate the card-hover-lift transform transition — this shorthand would otherwise
-  // fully replace it, snapping the hover lift
   transition:
     transform $animation-duration-fast ease,
     border-color $animation-duration-base ease;
 
   &:hover {
     border-color: $color-border-muted;
+    transform: translateY($layout-hover-lift-amount);
   }
 
   > section {

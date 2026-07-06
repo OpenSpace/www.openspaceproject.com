@@ -1,6 +1,8 @@
 ---
-pagetitle: "Community Slack — OpenSpace"
-description-meta: "Join the OpenSpace Slack — connect with planetarium professionals, educators, scientists, and developers building and using OpenSpace."
+pagetitle: Community Slack — OpenSpace
+description-meta: >
+  Join the OpenSpace Slack — connect with planetarium professionals, educators,
+  scientists, and developers building and using OpenSpace.
 format:
   html:
     page-layout: full
@@ -9,12 +11,12 @@ format:
     theme: ../assets/style/page/slack.scss
 
 hero:
-  title: "Where OpenSpace users connect"
+  title: Where OpenSpace users connect
   crumbs:
-    - "Community"
-    - "Slack"
+    - Community
+    - Slack
   action:
-    text: "Join the Slack"
+    text: Join the Slack
     link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
     external: true
   lede: >
@@ -23,11 +25,11 @@ hero:
     time.
 
 cta:
-  heading: "Ready to join?"
+  heading: Ready to join?
   actions:
-    - text: "Join the Slack"
+    - text: Join the Slack
       link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
-      style: "primary"
+      style: primary
       external: true
   lede: >
     The OpenSpace community is open to everyone — users, educators, scientists, and

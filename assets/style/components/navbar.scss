@@ -72,7 +72,7 @@
 }
 
 .nav-link {
-  letter-spacing: 0.08em;
+  letter-spacing: $font-letterspacing-extrawide;
   text-transform: uppercase;
   font-size: $font-size-sm;
 }
@@ -253,10 +253,9 @@
 }
 
 .nav-rich-title {
-  font-weight:$font-weight-bold;
+  font-weight: $font-weight-demibold;
   font-size: $font-size-sm;
   color: $color-text-highlight;
-  line-height: 1.3;
 }
 
 .nav-ext-icon {

@@ -104,6 +104,10 @@ $font-size-2xl: 2rem;
 $font-weight-demibold: 550;
 $font-weight-bold: 700;
 
+$font-letterspacing-narrow: -0.01em;
+$font-letterspacing-wide: 0.05em;
+$font-letterspacing-extrawide: 0.08em;
+
 //
 // Layout
 //
@@ -116,6 +120,8 @@ $layout-cta-max-width: 680px;
 $layout-border-radius: 12px;
 $layout-border-radius-small: 6px;
 $layout-button-padding: 0.75rem 1.75rem;
+
+$layout-hover-lift-amount: -2px;
 
 $layout-z-dotnav: 0;
 $layout-z-modal: 1200;

@@ -22,11 +22,11 @@ cta:
       link: "https://github.com/OpenSpace/OpenSpace"
       style: "ghost"
       external: true
-    # - text: "Join Slack
-    #   link: "https://github.com/OpenSpace/OpenSpace"
-    #   style: "primary"
-    #   external: true
-  lede: "Free. Open source. Cross-platform."
+    - text: "Join Slack"
+      link: "https://github.com/OpenSpace/OpenSpace"
+      style: "ghost"
+      external: true
+  lede: Free. Open source. Cross-platform.
 
 listing:
   - id: carousel
@@ -44,7 +44,20 @@ listing:
     </video>
     <div class="page-index__hero-overlay"></div>
   </div>
-  <h1><span class="hero-slot"><span class="hero-slot__word is-active">Explore</span><span class="hero-slot__word" aria-hidden="true">Research</span><span class="hero-slot__word" aria-hidden="true">Present</span><span class="hero-slot__word" aria-hidden="true">Discover</span></span> a Universe of Data</h1>
+  <h1>
+    <span class="hero-slot">
+      <span class="hero-slot__word is-active">Explore</span>
+      <span class="hero-slot__word" aria-hidden="true">Research</span>
+      <span class="hero-slot__word" aria-hidden="true">Present</span>
+      <span class="hero-slot__word" aria-hidden="true">Discover</span>
+      <span class="hero-slot__word" aria-hidden="true">Share</span>
+      <span class="hero-slot__word" aria-hidden="true">Traverse</span>
+      <span class="hero-slot__word" aria-hidden="true">Uncover</span>
+      <span class="hero-slot__word" aria-hidden="true">Reveal</span>
+      <span class="hero-slot__word" aria-hidden="true">Teach</span>
+    </span>
+    a Universe of Data
+  </h1>
   <div class="page-index__hero-content">
     <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
     <div>
@@ -107,7 +120,7 @@ listing:
 </section>
 
 
-<section class="section__content-carousel">
+<section class="content-section">
   <h2>See what's possible</h2>
   <p>Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
 ```

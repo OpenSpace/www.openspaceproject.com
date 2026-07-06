@@ -1,6 +1,8 @@
 ---
-pagetitle: "Heliophysics — OpenSpace"
-description-meta: "OpenSpace visualizes real solar wind, magnetosphere, CME, and aurora data from NASA — from live conditions to historical storm events."
+pagetitle: Heliophysics — OpenSpace
+description-meta: >
+  OpenSpace visualizes real solar wind, magnetosphere, CME, and aurora data from NASA —
+  from live conditions to historical storm events.
 format:
   html:
     page-layout: full
@@ -8,25 +10,25 @@ format:
     anchor-sections: false
 
 hero:
-  title: "The Sun's reach, visualized in real data"
+  title: The Sun's reach, visualized in real data
   crumbs:
-    - "Features"
-    - "Heliophysics"
-  image: "/assets/images/features/bastilleday-2.webp"
+    - Features
+    - Heliophysics
+  image: /assets/images/features/bastilleday-2.webp
   lede: >
     OpenSpace visualizes live and historical space weather data so you can see exactly
     what the Sun is doing to our solar system, from solar wind all the way to coronal mass
     ejections.
 
 cta:
-  heading: "See space weather in action"
+  heading: See space weather in action
   actions:
-    - text: "Download OpenSpace"
-      link: "/install/download.qmd"
-      style: "primary"
-    - text: "NASA CCMC"
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: NASA CCMC
       link: "https://ccmc.gsfc.nasa.gov"
-      style: "ghost"
+      style: ghost
       external: true
   lede: >
     Space weather visualization is built right into OpenSpace. Download it free, or head
@@ -51,7 +53,7 @@ listing:
 ## Built with NASA CCMC scientists
 OpenSpace's heliophysics tools were built in close collaboration with scientists at NASA's Community Coordinated Modeling Center (CCMC), the group behind the operational space weather models that forecasters rely on every day. What you're seeing isn't an approximation of solar activity. It's the actual simulation data, made explorable in 3D.
 
-::: {.feature-grid}
+::: {.card-grid}
 
 ::: {.feature-grid__card}
 ### Real operational models

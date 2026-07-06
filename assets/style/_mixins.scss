@@ -17,31 +17,17 @@
   -webkit-backdrop-filter: blur(12px);
 }
 
-@mixin eyebrow-label($size) {
+@mixin eyebrow-label($fontsize) {
   font-family: $font-monospace;
-  font-size: $size;
+  font-size: $fontsize;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-@mixin card-hover-lift {
-  transition: transform $animation-duration-fast ease;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
-
-@mixin card-grid() {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.25rem;
-}
-
-@mixin orbit-dot($size: 6px, $ring-size: 22px) {
+@mixin orbit-dot {
   position: relative;
-  width: $size;
-  height: $size;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: $color-text-faint;
   border: none;
@@ -53,21 +39,21 @@
   -webkit-appearance: none;
   box-shadow: none;
 
-  // Active-state selectors (e.g. `.is-active`) win over this hover as long as
-  // they are declared after the @include, since specificity is equal
+  // Active-state selectors (e.g. `.is-active`) win over this hover as long as they are
+  // declared after the @include, since specificity is equal
   &:hover {
     background: $color-text-muted;
   }
 
-  // Orbit ring — hidden by default; active-state selectors reveal it by
-  // scaling it up: `transform: translate(-50%, -50%) scale(1); opacity: 1;`
+  // Orbit ring hidden by default; active-state selectors reveal it by scaling it up:
+  // `transform: translate(-50%, -50%) scale(1); opacity: 1;`
   &::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: $ring-size;
-    height: $ring-size;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     border: 1px solid $color-border-secondary-muted;
     transform: translate(-50%, -50%) scale(0);
@@ -79,43 +65,15 @@
   }
 }
 
-// Hover/focus tooltip rendered from the element's `aria-label` via `::after`. The element
-// must be positioned (e.g. `position: relative`). Placed to the left of the element,
-// vertically centered; override placement at the call site if needed.
-@mixin tooltip-label($size: $font-size-2xs) {
-  &::after {
-    @include eyebrow-label($size);
-
-    content: attr(aria-label);
-    position: absolute;
-    right: calc(100% + 1rem);
-    top: 50%;
-    transform: translateY(-50%);
-    color: $color-text-light;
-    white-space: nowrap;
-    background: rgba($color-background, 0.88);
-    padding: 0.2rem 0.55rem;
-    border-radius: $layout-border-radius-small;
-    border: 1px solid $color-border-faint;
-    opacity: 0;
-    transition: opacity $animation-duration-fast ease;
-    pointer-events: none;
-  }
-
-  &:hover::after, &:focus-visible::after {
-    opacity: 1;
-  }
-}
-
-@mixin section-title {
-  font-size: $font-size-2xl;
+@mixin section-title($fontsize: $font-size-2xl) {
+  font-size: $fontsize;
   font-weight: $font-weight-bold;
-  letter-spacing: -0.01em;
+  letter-spacing: $font-letterspacing-narrow;
   color: $color-text-highlight;
 }
 
-// Compact bordered "pill" link that lifts on hover and shifts its border/text
-// toward the accent color. Pass $bg/$border to vary the fill.
+// Compact bordered "pill" link that lifts on hover and shifts its border/text toward the
+// accent color. Pass $bg/$border to vary the fill.
 @mixin pill-link(
   $bg: $color-surface-primary,
   $border: $color-border-light
@@ -144,8 +102,8 @@
   }
 }
 
-// Text input styling shared by form fields (contact form, 404 search box).
-// Set border-radius and sizing at the call site.
+// Text input styling shared by form fields (contact form, 404 search box). Set
+// border-radius and sizing at the call site.
 @mixin text-input {
   background: $color-input-bg;
   border: 1px solid $color-border-faint;

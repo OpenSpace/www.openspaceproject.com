@@ -1,6 +1,7 @@
 ---
-pagetitle: "Previous Versions — OpenSpace"
-description-meta: "Download previous versions of OpenSpace astrovisualization software for Windows."
+pagetitle: Previous Versions — OpenSpace
+description-meta: >
+  Download previous versions of OpenSpace astrovisualization software for Windows.
 format:
   html:
     page-layout: full
@@ -9,13 +10,13 @@ format:
     theme: ../assets/style/page/previous-versions.scss
 
 hero:
-  title: "Previous versions"
+  title: Previous versions
   crumbs:
-    - "Install"
-    - text: "Version 0.22.0"
-      link: "download.qmd"
-    - "Previous Versions"
-  lede: "Windows binaries and release notes for older OpenSpace releases."
+    - Install
+    - text: Version 0.22.0
+      link: download.qmd
+    - Previous Versions
+  lede: Windows binaries and release notes for older OpenSpace releases.
 ---
 
 ::: {.content-section}

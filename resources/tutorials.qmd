@@ -1,6 +1,8 @@
 ---
-pagetitle: "Tutorials — OpenSpace"
-description-meta: "Step-by-step video tutorials for getting started with OpenSpace — installation, navigation, and the user interface."
+pagetitle: Tutorials — OpenSpace
+description-meta: >
+  Step-by-step video tutorials for getting started with OpenSpace — installation,
+  navigation, and the user interface.
 format:
   html:
     page-layout: full
@@ -9,24 +11,24 @@ format:
     theme: ../assets/style/page/tutorials.scss
 
 hero:
-  title: "Get started with OpenSpace"
+  title: Get started with OpenSpace
   crumbs:
-    - "Resources"
-    - "Tutorials"
+    - Resources
+    - Tutorials
   lede: >
     Step-by-step video guides covering installation, navigation, and the user interface —
     everything you need to take your first flight.
 
 cta:
-  heading: "More learning resources"
+  heading: More learning resources
   actions:
-    - text: "Documentation"
+    - text: Documentation
       link: "https://docs.openspaceproject.com"
-      style: "primary"
+      style: primary
       external: true
-    - text: "Join the Slack"
-      link: "/community/slack.qmd"
-      style: "ghost"
+    - text: Join the Slack
+      link: /community/slack.qmd
+      style: ghost
   lede: >
     The full documentation covers every feature in depth. The community Slack is the best
     place to ask questions and connect with other OpenSpace users.

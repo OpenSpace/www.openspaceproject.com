@@ -33,9 +33,8 @@ $stack-step-y: -11px;
 .image-stack__text {
   h3 {
     color: $color-text-muted;
-    line-height: 1.4;
     margin: 0 0 1rem;
-    letter-spacing: -0.01em;
+    letter-spacing: $font-letterspacing-narrow;
   }
 
   p {
@@ -173,7 +172,7 @@ $stack-step-y: -11px;
 }
 
 .image-stack__hint {
-  @include eyebrow-label($font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-2xs);
 
   color: $color-text-faint;
 }

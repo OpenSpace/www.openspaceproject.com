@@ -4,12 +4,6 @@
 // A regular grid that contains sub-divs with a title and some text. The number of grid
 // elements adjusts automatically
 //
-.feature-grid {
-  @include card-grid;
-
-  margin-bottom: 2rem;
-}
-
 .feature-grid__card {
   background: $color-surface-secondary;
   border-radius: $layout-border-radius;

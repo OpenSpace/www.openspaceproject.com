@@ -15,7 +15,7 @@
   color: $color-text-light;
   font-size: $font-size-xs;
   font-family: $font-monospace;
-  letter-spacing: 0.06em;
+  letter-spacing: $font-letterspacing-wide;
   text-transform: uppercase;
   padding: 0.4rem 1rem;
   border-radius: $layout-border-radius;
@@ -61,7 +61,7 @@
   color: $color-accent-primary;
   text-decoration: none;
   font-family: $font-monospace;
-  letter-spacing: 0.04em;
+  letter-spacing: $font-letterspacing-wide;
 
   &:hover {
     text-decoration: underline;

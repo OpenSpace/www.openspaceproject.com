@@ -1,6 +1,9 @@
 ---
-pagetitle: "Mission Visualizations — OpenSpace"
-description-meta: "OpenSpace recreates real spacecraft missions using actual trajectory data from NASA and ESA archives. Fly alongside New Horizons, watch JWST unfold, ride with Rosetta to a comet."
+pagetitle: Mission Visualizations — OpenSpace
+description-meta: >
+  OpenSpace recreates real spacecraft missions using actual trajectory data from NASA and
+  ESA archives. Fly alongside New Horizons, watch JWST unfold, ride with Rosetta to a
+  comet.
 format:
   html:
     page-layout: full
@@ -8,23 +11,23 @@ format:
     anchor-sections: false
 
 hero:
-  title: "Ride alongside the spacecraft at the moment it happened"
+  title: Ride alongside the spacecraft at the moment it happened
   crumbs:
-    - "Features"
-    - "Mission Visualizations"
+    - Features
+    - Mission Visualizations
   lede: >
     OpenSpace recreates real missions using actual trajectory data, instrument footprints,
     and observation timelines from NASA and ESA archives.
 
 cta:
-  heading: "Start flying with spacecraft"
+  heading: Start flying with spacecraft
   actions:
-    - text: "Download OpenSpace"
-      link: "/install/download.qmd"
-      style: "primary"
-    - text: "Documentation"
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: Documentation
       link: "https://docs.openspaceproject.com"
-      style: "ghost"
+      style: ghost
       external: true
   lede: >
     Every mission listed here is available in OpenSpace today. Download it free and open
@@ -35,14 +38,13 @@ listing:
     type: custom
     template: ../_template/rich-list.ejs.md
     contents: ../assets/listing/mission-visualizations.yml
-
 ---
 
 ::: {.content-section}
 
 ## How it works
 
-::: {.feature-grid}
+::: {.card-grid}
 
 ::: {.feature-grid__card}
 ### Real trajectory data

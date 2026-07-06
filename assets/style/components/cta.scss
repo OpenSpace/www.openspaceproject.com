@@ -28,7 +28,8 @@
     background: linear-gradient($color-accent-secondary, $color-accent-primary);
     opacity: 0.22;
     filter: blur(60px);
-    transition: opacity 0.4s ease;
+    pointer-events: none;
+    transition: opacity $animation-duration-slow ease;
     animation: cta__glow-morph 4s ease-in-out infinite;
 
     @media (prefers-reduced-motion: reduce) {

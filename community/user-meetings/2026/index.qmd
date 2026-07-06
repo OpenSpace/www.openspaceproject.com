@@ -1,6 +1,8 @@
 ---
-pagetitle: "2026 User Meeting — OpenSpace"
-description-meta: "Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for three days of demos, training, and conversation."
+pagetitle: 2026 User Meeting — OpenSpace
+description-meta: >
+  Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for
+  three days of demos, training, and conversation.
 sidebar: false
 format:
   html:
@@ -10,14 +12,14 @@ format:
     theme: ../../../assets/style/page/user-meetings.scss
 
 hero:
-  title: "OpenSpace User Meeting"
+  title: OpenSpace User Meeting
   crumbs:
-    - "Community"
-    - text: "User Meetings"
-      link: "/community/user-meetings/"
-    - "2026"
-  image: "/assets/images/user-meetings/liu_earth.webp"
-  lede: "August 26–28, 2026 · Visualization Center C, Norrköping, Sweden"
+    - Community
+    - text: User Meetings
+      link: /community/user-meetings/
+    - 2026
+  image: /assets/images/user-meetings/liu_earth.webp
+  lede: August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 ---
 
 ```{=html}

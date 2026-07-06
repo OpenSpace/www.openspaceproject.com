@@ -11,14 +11,12 @@ $page-brand-light-border: rgba(black, 0.08);
 .page-brand__credit-text {
   background: $color-surface-primary-faint;
   border: 1px solid $color-border-light;
-  border-left: 3px solid $color-accent-primary;
   border-radius: $layout-border-radius;
   padding: 1rem 1.5rem;
 
   font-family: $font-monospace;
   color: $color-text-highlight;
   margin: 0;
-  letter-spacing: 0.02em;
 }
 
 .page-brand__logo-grid {

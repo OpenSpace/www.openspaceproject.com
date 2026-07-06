@@ -1,6 +1,7 @@
 ---
-pagetitle: "Research — OpenSpace"
-description-meta: "Academic research, master's theses, and publications from the OpenSpace project."
+pagetitle: Research — OpenSpace
+description-meta: >
+  Academic research, master's theses, and publications from the OpenSpace project.
 aliases:
   - academia.html
 format:
@@ -13,8 +14,8 @@ format:
 hero:
   title: "Academic Research & Publications"
   crumbs:
-    - "About"
-    - "Research"
+    - About
+    - Research
   lede: >
     OpenSpace sits at the intersection of scientific visualization research and public
     outreach. Explore the theses and papers that shape it.
@@ -25,20 +26,20 @@ listing:
     template: ../_template/theses.ejs.md
     contents: ../assets/listing/theses.yml
     page-size: 9999
-    sort: "year desc"
+    sort: year desc
   - id: papers
     type: custom
     template: ../_template/publications.ejs.md
     contents: ../assets/listing/publications.yml
     include:
-      type: "paper"
+      type: paper
     page-size: 9999
-    sort: "year desc"
+    sort: year desc
 ---
 
 ::: {.content-section}
 
-## Master's Thesis Program
+## Master's Theses
 Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
 
 Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.

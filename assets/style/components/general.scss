@@ -10,7 +10,6 @@
 
   h2 {
     font-size: $font-size-2xl;
-    letter-spacing: 0;
     font-variant-caps: small-caps;
     color: $color-text-highlight;
     border-bottom: 1px solid $color-border-faint;
@@ -72,5 +71,17 @@
 
   &:nth-child(even of .content-section-narrow) {
     background: $color-surface-primary;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+
+  @media (max-width: $bp-lg) {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    margin: 0 auto;
   }
 }

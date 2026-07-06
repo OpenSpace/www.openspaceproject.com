@@ -47,11 +47,8 @@
 }
 
 .page-events__title {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-bold;
-  color: $color-text-highlight;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  @include section-title($fontsize: $font-size-lg);
+
   margin: 0 0 0.35rem;
 
   & > a {
@@ -76,7 +73,7 @@
 }
 
 .page-events__tag {
-  @include eyebrow-label($font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-2xs);
 
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -87,7 +84,7 @@
   font-size: $font-size-sm;
   font-family: $font-monospace;
   color: $color-text-muted;
-  letter-spacing: 0.04em;
+  letter-spacing: $font-letterspacing-wide;
 }
 
 .page-events__desc {

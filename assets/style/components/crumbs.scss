@@ -28,7 +28,7 @@ body:has(.crumbs) {
   padding-bottom: 0.2rem;
   font-size: $font-size-xs;
   font-family: $font-monospace;
-  letter-spacing: 0.05em;
+  letter-spacing: $font-letterspacing-wide;
   color: $color-crumbs-text;
   background: $color-background;
 }

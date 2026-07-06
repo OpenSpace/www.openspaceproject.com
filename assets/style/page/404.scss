@@ -15,14 +15,11 @@
 
 .page-404__code {
   font-family: $font-headings;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-demibold;
   font-size: 6.5rem;
   line-height: 1;
-  letter-spacing: 0.06em;
-  margin: 0 0 0.5rem;
   background: linear-gradient(120deg, $color-accent-primary, $color-accent-secondary);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
 
   // Forced-colors mode strips backgrounds, which would leave the transparent gradient

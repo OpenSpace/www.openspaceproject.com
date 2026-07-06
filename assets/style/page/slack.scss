@@ -16,7 +16,7 @@
 
 .page-slack__channel-group {
   h3 {
-    @include eyebrow-label($font-size-xs);
+    @include eyebrow-label($fontsize: $font-size-xs);
 
     color: $color-accent-primary;
     margin: 0 0 0.75rem;
@@ -32,7 +32,6 @@
 
   p {
     margin: 0;
-    line-height: 1.55;
     color: $color-text-muted;
   }
 
@@ -40,6 +39,5 @@
     font-family: $font-monospace;
     color: $color-text-highlight;
     font-weight: $font-weight-demibold;
-    line-height: 1.3;
   }
 }

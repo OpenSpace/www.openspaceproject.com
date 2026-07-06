@@ -4,15 +4,6 @@
 // Content carousel
 //
 
-.section__content-carousel {
-  padding: $layout-section-padding-wide;
-
-  h2 {
-    @include section-title;
-    margin: 0 0 0.75rem;
-  }
-}
-
 .content-carousel {
   position: relative;
   overflow: hidden;
@@ -59,19 +50,16 @@
 }
 
 .content-carousel__eyebrow {
-  @include eyebrow-label($font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-2xs);
 
   color: $color-text;
   margin: 0 0 0.4rem;
 }
 
 .content-carousel__title {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-bold;
+  @include section-title($fontsize: $font-size-lg);
+
   margin: 0;
-  color: $color-text-highlight;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
 }
 
 .content-carousel__slide--link {
@@ -101,7 +89,7 @@
 }
 
 .content-carousel__dot {
-  @include orbit-dot(6px);
+  @include orbit-dot;
   @include focus-ring;
 
   // Invisible hit-area expander: 6px + 2 * 9px = 24px minimum target

@@ -108,7 +108,7 @@ table {
     padding: 0 1rem 0.75rem 0;
     font-size: $font-size-xs;
     font-weight: $font-weight-demibold;
-    letter-spacing: 0.06em;
+    letter-spacing: $font-letterspacing-wide;
     text-transform: uppercase;
     color: $color-text-light;
   }

@@ -84,6 +84,8 @@
       display: inline-grid;
       overflow: hidden;
       vertical-align: bottom;
+      justify-items: end;
+      margin-right: 0.5rem;
 
       .hero-slot__word {
         grid-area: 1 / 1;
@@ -127,7 +129,7 @@
   .page-index__trusted-label {
     text-align: center;
     font-size: $font-size-sm;
-    letter-spacing: 0.08em;
+    letter-spacing: $font-letterspacing-extrawide;
     text-transform: uppercase;
     color: $color-text-muted;
     margin: 0 0 2.5rem;
@@ -197,7 +199,6 @@
 
 .page-index__venues-section {
   background: $color-background;
-
   padding: $layout-section-padding-wide;
 
   // Venue grid breaks out of container to full width
@@ -220,8 +221,6 @@
     box-sizing: border-box;
 
     & > a {
-      @include card-hover-lift;
-
       background: $color-surface-primary;
       border: 1px solid $color-border-faint;
       border-radius: $layout-border-radius;
@@ -229,7 +228,8 @@
       box-shadow: 0 1px 3px $color-overlay-dark-faint;
       transition:
         box-shadow $animation-duration-base ease,
-        border-color $animation-duration-base ease;
+        border-color $animation-duration-base ease,
+        transform $animation-duration-fast ease;
       display: flex;
       flex-direction: column;
       text-decoration: none;
@@ -241,6 +241,7 @@
         border-color: $color-border-light;
         text-decoration: none;
         color: inherit;
+        transform: translateY($layout-hover-lift-amount);
       }
 
       & > img {

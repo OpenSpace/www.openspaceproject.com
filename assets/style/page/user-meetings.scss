@@ -46,7 +46,7 @@
     font-size: $font-size-xl;
     color: $color-text-highlight;
     line-height: 1.15;
-    letter-spacing: -0.02em;
+    letter-spacing: $font-letterspacing-narrow;
     margin: 0 0 0.4rem;
 
     // Stretched link
@@ -76,7 +76,7 @@
 }
 
 .page-user-meetings__badge {
-  @include eyebrow-label($font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-2xs);
 
   font-weight: $font-weight-demibold;
   padding: 0.2rem 0.6rem;
@@ -86,7 +86,8 @@
 }
 
 .page-user-meetings__year {
-  @include eyebrow-label($font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-2xs);
+
   color: $color-text-light;
 }
 
@@ -94,7 +95,7 @@
   font-size: $font-size-xs;
   font-family: $font-monospace;
   color: $color-text-light;
-  letter-spacing: 0.04em;
+  letter-spacing: $font-letterspacing-wide;
   margin: 0 0 0.85rem;
 }
 

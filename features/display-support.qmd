@@ -1,6 +1,8 @@
 ---
-pagetitle: "Display Support — OpenSpace"
-description-meta: "OpenSpace runs on everything from a personal laptop to a 30-meter planetarium dome — with fisheye, MPCDI, multi-projector, and tiled display support built in."
+pagetitle: Display Support — OpenSpace
+description-meta: >
+  OpenSpace runs on everything from a personal laptop to a 30-meter planetarium dome —
+  with fisheye, MPCDI, multi-projector, and tiled display support built in.
 format:
   html:
     page-layout: full
@@ -9,25 +11,25 @@ format:
     theme: ../assets/style/page/display-support.scss
 
 hero:
-  title: "Any screen. Any venue."
+  title: Any screen. Any venue.
   crumbs:
-    - "Features"
-    - "Display Support"
+    - Features
+    - Display Support
   lede: >
     OpenSpace adapts to your display whether you're running on a personal laptop or a
     30-meter planetarium dome, with fisheye rendering, MPCDI mesh warping, multi-projector
     blending, and tiled wall support built in.
 
 cta:
-  heading: "Set up OpenSpace for your venue"
+  heading: Set up OpenSpace for your venue
   actions:
-    - text: "Documentation"
+    - text: Documentation
       link: "https://docs.openspaceproject.com"
-      style: "primary"
+      style: primary
       external: true
-    - text: "Get in touch"
-      link: "/community/contact.qmd"
-      style: "ghost"
+    - text: Get in touch
+      link: /community/contact.qmd
+      style: ghost
   lede: >
     The documentation covers every display configuration in detail. Or get in touch and
     the team can help you configure OpenSpace for your specific setup.
@@ -130,7 +132,7 @@ OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of vi
 
 ## Technical capabilities
 
-::: {.feature-grid}
+::: {.card-grid}
 
 ::: {.feature-grid__card}
 ### MPCDI support

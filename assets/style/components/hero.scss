@@ -22,12 +22,10 @@
   }
 
   h1 {
-    font-size: 3.75rem;
-    font-weight: $font-weight-bold;
+    @include section-title($fontsize: 3.75rem);
+
     line-height: 1.08;
-    letter-spacing: -0.025em;
     margin: 0 auto 1.25rem;
-    color: $color-text-highlight;
     max-width: 750px;
   }
 }
@@ -47,7 +45,7 @@
 }
 
 .hero__badge {
-  @include eyebrow-label($font-size-xs);
+  @include eyebrow-label($fontsize: $font-size-xs);
 
   display: inline-block;
   color: $color-accent-primary;

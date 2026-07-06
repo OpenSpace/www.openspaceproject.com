@@ -1,6 +1,8 @@
 ---
-pagetitle: "Download OpenSpace — v0.22.0"
-description-meta: "Download OpenSpace v0.22.0 — free, open-source astrovisualization software for Windows. Source builds available for Linux."
+pagetitle: Download OpenSpace — v0.22.0
+description-meta: >
+  Download OpenSpace v0.22.0 — free, open-source astrovisualization software for Windows.
+  Source builds available for Linux.
 format:
   html:
     page-layout: full
@@ -9,25 +11,25 @@ format:
     theme: ../assets/style/page/download.scss
 
 hero:
-  title: "Explore the universe.<br>Free."
+  title: Explore the universe.<br>Free.
   crumbs:
-    - "Install"
-    - "Version 0.22.0"
-  badge: "v0.22.0 — Latest Release"
+    - Install
+    - Version 0.22.0
+  badge: v0.22.0 — Latest Release
   lede: >
     Open-source astrovisualization software built for planetarium domes, classrooms, and
     personal computers.
 
 cta:
-  heading: "Need help getting started?"
+  heading: Need help getting started?
   actions:
-    - text: "Read the docs"
+    - text: Read the docs
       link: "https://docs.openspaceproject.com"
-      style: "primary"
+      style: primary
       external: true
-    - text: "Join the Slack"
-      link: "/community/slack.qmd"
-      style: "ghost"
+    - text: Join the Slack
+      link: /community/slack.qmd
+      style: ghost
   lede: >
     The documentation covers installation, profiles, and configuration. The OpenSpace
     community on Slack is also here to help.

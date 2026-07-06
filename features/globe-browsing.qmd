@@ -1,6 +1,8 @@
 ---
-pagetitle: "Globe Browsing — OpenSpace"
-description-meta: "Globe Browsing in OpenSpace renders planetary surfaces from real mission data — fly from interstellar space to the texture of Martian regolith in one continuous flight."
+pagetitle: Globe Browsing — OpenSpace
+description-meta: >
+  Globe Browsing in OpenSpace renders planetary surfaces from real mission data — fly from
+  interstellar space to the texture of Martian regolith in one continuous flight.
 format:
   html:
     page-layout: full
@@ -8,24 +10,24 @@ format:
     anchor-sections: false
 
 hero:
-  title: "Fly from the Milky Way<br>to a single crater"
+  title: Fly from the Milky Way<br>to a single crater
   crumbs:
-    - "Features"
-    - "Globe Browsing"
-  image: "/assets/images/banner/mars.webp"
+    - Features
+    - Globe Browsing
+  image: /assets/images/banner/mars.webp
   lede: >
     OpenSpace streams real spacecraft imagery and elevation data from NASA missions. Cross
     fifteen orders of magnitude in one uncut, uninterrupted flight.
 
 cta:
-  heading: "Start exploring planetary surfaces"
+  heading: Start exploring planetary surfaces
   actions:
-    - text: "Download OpenSpace"
-      link: "/install/download.qmd"
-      style: "primary"
-    - text: "Documentation"
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: Documentation
       link: "https://docs.openspaceproject.com"
-      style: "ghost"
+      style: ghost
       external: true
   lede: >
     Globe Browsing is built into every copy of OpenSpace. Download free, or browse the
@@ -55,7 +57,7 @@ listing:
 
 Globe Browsing is the planetary surface rendering engine at the heart of OpenSpace. It streams high-resolution imagery and elevation data from real spacecraft missions (HiRISE, MOLA, LRO, Cassini) and renders them continuously at every scale. No load screens. No transitions. No second application.
 
-::: {.feature-grid}
+::: {.card-grid}
 
 ::: {.feature-grid__card}
 ### Real mission data

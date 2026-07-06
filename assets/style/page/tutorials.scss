@@ -1,15 +1,5 @@
 /*-- scss:rules --*/
 
-.page-tutorials__grid {
-  @include card-grid;
-
-  @media (max-width: $bp-lg) {
-    grid-template-columns: 1fr;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-}
-
 .page-tutorials__card {
   background: $color-surface-primary;
   border: 1px solid $color-border-faint;
@@ -47,7 +37,7 @@
   // Higher specificity than the description's `& > p`, so these declarations
   // win over that rule regardless of source order
   & > .page-tutorials__card-eyebrow {
-    @include eyebrow-label($font-size-2xs);
+    @include eyebrow-label($fontsize: $font-size-2xs);
 
     color: $color-accent-primary;
     margin: 0 0 0.4rem;
@@ -58,8 +48,7 @@
   & > h3 {
     color: $color-text-highlight;
     margin: 0 0 0.6rem;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
+    letter-spacing: $font-letterspacing-narrow;
   }
 
   & > p {

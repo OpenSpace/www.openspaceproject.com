@@ -3,14 +3,14 @@ def branch = env.BRANCH_NAME
 
 // Uncomment all of this once we are ready to go live
 def mainTarget = "www.openspaceproject.com"
-def testingTarget = "testing.www.openspaceproject.com"
+def stagingTarget = "staging.www.openspaceproject.com"
 
 def target;
 if (branch == "master") {
   target = mainTarget;
 }
-else if (branch != "testing") {
-  target = testingTarget;
+else if (branch != "staging") {
+  target = stagingTarget;
 }
 else {
   // Nothing do to for any other branch

@@ -1,0 +1,57 @@
+---
+pagetitle: "Contribute — OpenSpace"
+description-meta: "See how you can contribute to the project."
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    theme: ../assets/style/page/contribute.scss
+
+hero:
+  title: "Get Involved"
+  crumbs:
+    - "Community"
+    - "Contribute"
+  lede: >
+    OpenSpace is built by a global community of researchers, educators, and developers.
+    Whether you're filing a bug, proposing a feature, or ready to write code — here's how to get involved.
+
+cta:
+  heading: "Ready to join?"
+  actions:
+    - text: "Join the Slack"
+      link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
+      style: "primary"
+      external: true
+  lede: >
+    The OpenSpace community is open to everyone — users, educators, scientists, and
+    developers at any experience level.
+---
+
+::: {.content-section}
+## Ways to Contribute
+
+There are many ways to get involved with OpenSpace, and no contribution is too small. Whether you have five minutes or five months, here's how you can help shape the project.
+
+### Join the Community on Slack
+
+![OpenSpace community members](/assets/images/user-meetings/users-builders.webp){.float-end style="width: 40%; margin-left: 1.5rem; margin-bottom: 1rem;"}
+
+The [OpenSpace Slack](/community/slack.html) is the most active place to connect with users, educators, and core developers. Ask questions, share what you've built, report problems, or just follow along with what the community is working on. It's the fastest way to get a response from the team and a great place to start if you're new.
+
+
+
+### Report Bugs or Request Features on GitHub
+OpenSpace is developed in the open on [GitHub](https://github.com/OpenSpace/OpenSpace). If you've found a bug, opening an issue there is the best way to make sure it gets tracked and addressed. Feature requests and technical discussions live there too — the GitHub issue tracker is where ideas go from conversations to roadmap items.
+
+### Tell Us About Your Presentations and Installations
+Are you using OpenSpace in a planetarium show, a classroom, a museum exhibit, or a public lecture? We'd love to hear about it. Knowing where and how OpenSpace is being used helps us prioritize features, report impact to our funders, and connect you with others doing similar work. Reach out via email at [support@openspaceproject.com](mailto:support@openspaceproject.com) or share in the [#showcase](https://openspacesupport.slack.com) channel on Slack.
+
+### Share or Request Scientific Datasets
+OpenSpace's value depends on the quality and breadth of the data it can visualize. If you work with scientific datasets — whether from a space mission, an observatory, or your own research — and think they would be a good fit for OpenSpace, we want to hear from you. Likewise, if there's a dataset you wish OpenSpace could show, let us know. Get in touch via email or Slack and we can discuss what's involved in integrating new data.
+
+### Contribute Code
+If you're a developer, the [OpenSpace GitHub repository](https://github.com/OpenSpace/OpenSpace) is the place to start. Check the contributing guidelines, browse open issues tagged `good first issue`, and join the `#compiling` and `#breaking-changes` channels on Slack for technical discussion with the core team.
+:::
+

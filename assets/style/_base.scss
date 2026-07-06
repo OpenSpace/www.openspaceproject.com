@@ -60,6 +60,20 @@ main {
   font-size: $font-size-md;
 }
 
+div.sourceCode,
+div.sourceCode pre,
+div.sourceCode pre code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  overflow-x: visible !important;
+}
+
+code, .sourceCode, pre.sourceCode {
+  background: $code-bg;
+  color: $code-color;
+  padding: 0;
+}
+
 h3 {
   font-size: $font-size-lg;
   font-weight: 600;

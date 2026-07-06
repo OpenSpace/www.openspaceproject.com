@@ -5,14 +5,21 @@
 //
 // `.hero` is the full-width banner emitted by the `hero.lua` Pandoc filter from a page's
 // YAML front matter (title, lede, badge, actions). When the front matter declares a hero
-// image, the filter inlines it as a `background-image` (with a dark overlay gradient for
-// legibility) directly in the section's `style` attribute, so no image rules are needed
-// here. The breadcrumbs the filter emits inside the hero are styled in crumbs.scss.
+// image, the filter sets `--hero-image` as a CSS custom property on the section element.
+// The `.hero[style]` rule below picks that up and applies the overlay gradient, sizing,
+// and positioning — keeping all visual styling here rather than in the filter.
+// The breadcrumbs the filter emits inside the hero are styled in crumbs.scss.
 //
 
 .hero {
   padding: $layout-section-padding-wide;
   text-align: center;
+
+  &[style] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), var(--hero-image);
+    background-size: cover;
+    background-position: center;
+  }
 
   h1 {
     font-size: 3.75rem;

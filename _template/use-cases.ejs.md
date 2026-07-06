@@ -17,7 +17,7 @@
     data-title="<%- item.title %>"
     data-shorttitle="<%- item.shorttitle %>"
     data-body="<%- item.body %>"
-    data-tags="<%- item.tags.join("|||||") %>"
+    data-tags='<%- JSON.stringify(item.tags) %>'
   >
     <div class="page-use-cases__card-overlay"></div>
     <div class="page-use-cases__card-text">

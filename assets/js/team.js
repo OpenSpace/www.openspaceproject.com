@@ -1,7 +1,6 @@
-(() => {
-  // The team template renders once per listing, so this script can be
-  // included multiple times on a page — only wire things up once.
-  if (window.__pageTeamInit) return;
+// The team template renders once per listing, so this script can be included multiple
+// times on a page — only wire things up once.
+if (!window.__pageTeamInit) {
   window.__pageTeamInit = true;
 
   document.querySelectorAll('.page-team__card').forEach((card) => {
@@ -18,4 +17,4 @@
       }
     });
   });
-})();
+}

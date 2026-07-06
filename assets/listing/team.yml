@@ -7,7 +7,18 @@
 #   - affiliation: The primary affiliation
 #   - image: The image of the person
 #   - type: The role the person was fulfilling within the project. Must be one of
-#           { admin, admin-previous, coordinator, developer, developer-previous, student }
+#           admin: Currently active in the administration team
+#           admin-previous: Formerly on the administration team
+#           advisor: Current scientific advisor to the project
+#           advisor-previous: Former scientific advisor to the project
+#           coordinator: Currently active project coordinator
+#           coordinator-previous: Former project coordinator
+#           developer: Currently active developer
+#           developer-previous: Former developer
+#           student: Master thesis or PhD student
+#   - thesis_affiliation (optional): The shortname of the institution where a student was
+#                                    performing their thesis work. Must only exist if the
+#                                    type is 'student'
 #
 
 - name: Anders Ynnerman
@@ -88,7 +99,7 @@
 - name: Corrie Roe
   title: Project Coordinator
   affiliation: American Museum of Natural History
-  image: "03_corrie_row.webp"
+  image: "03_corrie_roe.webp"
   type: coordinator-previous
 
 
@@ -271,7 +282,7 @@
 
 - name: Dennis Moradkhani
   affiliation: Linköping University
-  image: "66_denis_moradkhani.webp"
+  image: "66_dennis_moradkhani.webp"
   thesis_affiliation: SCI
   type: student
 
@@ -493,7 +504,7 @@
 
 - name: Karin Reidarman
   affiliation: Linköping University
-  image: "29_karin_keidarman.webp"
+  image: "29_karin_reidarman.webp"
   thesis_affiliation: NYU
   type: student
 
@@ -613,7 +624,7 @@
 
 - name: Michael Nilsson
   affiliation: Linköping University
-  image: "09_michael_nielsson.webp"
+  image: "09_michael_nilsson.webp"
   thesis_affiliation: CCMC
   type: student
 

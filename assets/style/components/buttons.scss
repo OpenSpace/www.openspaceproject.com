@@ -1,6 +1,8 @@
 /*-- scss:rules --*/
 
 %button-base {
+  @include focus-ring;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -26,11 +28,6 @@
 
   &:hover {
     text-decoration: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 2px;
   }
 }
 

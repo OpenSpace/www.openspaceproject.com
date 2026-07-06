@@ -1,28 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let modal = document.getElementById('ucModal');
+  const modal = document.getElementById('ucModal');
   if (!modal) {
     return;
   }
 
-  let modalImg = modal.querySelector('.page-use-cases__modal-img');
-  let modalMeta = modal.querySelector('.page-use-cases__modal-meta');
-  let modalTitle = modal.querySelector('.page-use-cases__modal-title');
-  let modalBody = modal.querySelector('.page-use-cases__modal-body');
-  let modalTags = modal.querySelector('.page-use-cases__modal-tags');
-  let closeBtn = modal.querySelector('.page-use-cases__modal-close');
-  let backdrop = modal.querySelector('.page-use-cases__modal-backdrop');
+  const modalImg = modal.querySelector('.page-use-cases__modal-img');
+  const modalMeta = modal.querySelector('.page-use-cases__modal-meta');
+  const modalTitle = modal.querySelector('.page-use-cases__modal-title');
+  const modalBody = modal.querySelector('.page-use-cases__modal-body');
+  const modalTags = modal.querySelector('.page-use-cases__modal-tags');
+  const closeBtn = modal.querySelector('.page-use-cases__modal-close');
+  const backdrop = modal.querySelector('.page-use-cases__modal-backdrop');
   let lastFocused = null;
 
   function openModal(card) {
     modalImg.src = card.dataset.image;
     modalImg.alt = card.dataset.image_alt || card.dataset.title;
-    let meta = card.dataset.institution + (card.dataset.location ? ' · ' + card.dataset.location : '');
+    const meta = card.dataset.institution + (card.dataset.location ? ' · ' + card.dataset.location : '');
     modalMeta.textContent = meta;
     modalTitle.textContent = card.dataset.title;
     modalBody.textContent = card.dataset.body;
-    modalTags.innerHTML = card.dataset.tags.split('|||||').map(function (t) {
-      return `<span class="page-use-cases__modal-tag">${t}</span>`;
-    }).join('');
+    modalTags.replaceChildren();
+    JSON.parse(card.dataset.tags || '[]').forEach(function (t) {
+      const span = document.createElement('span');
+      span.className = 'page-use-cases__modal-tag';
+      span.textContent = t;
+      modalTags.appendChild(span);
+    });
     modal.setAttribute('aria-hidden', 'false');
     modal.classList.add('is-open');
     document.body.style.overflow = 'hidden';

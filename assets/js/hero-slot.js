@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let words = Array.from(document.querySelectorAll('.hero-slot__word'));
+  const words = Array.from(document.querySelectorAll('.hero-slot__word'));
   if (!words.length) {
     return;
   }
 
   let i = 0;
   setInterval(() => {
-    let  prev = i;
+    const prev = i;
     i = (i + 1) % words.length;
     words[prev].classList.remove('is-active');
     words[prev].classList.add('is-exit');

@@ -123,12 +123,12 @@
   lat: 35.5951
   lng: -82.5515
 
-- name: ASU School of Earth & Space Exploration
+- name: Arizona State University School of Earth & Space Exploration
   city: Tempe, AZ, USA
   lat: 33.4255
   lng: -111.94
 
-- name: ASU Thunderbird School of Global Management
+- name: Arizona State University Thunderbird School of Global Management
   city: Phoenix, AZ, USA
   lat: 33.4484
   lng: -112.074
@@ -370,7 +370,7 @@
 
 - name: Astrolab Iris
   city: Ieper, Belgium
-  lat: 50.85
+  lat: 50.8503
   lng: 2.8833
 
 - name: Bromsgrove School
@@ -459,7 +459,7 @@
   lng: -123.4631
 
 - name: Ontario Science Centre
-  city: Toronto, Ontario
+  city: Toronto, Ontario, Canada
   lat: 43.6532
   lng: -79.3832
 
@@ -474,7 +474,7 @@
   lng: 175.529
 
 - name: Spaceward Bound NZ
-  city: New Zealand
+  city: Nationwide, New Zealand
   lat: -41.2865
   lng: 174.7762
 

@@ -14,12 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    let css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-    document.head.appendChild(css);
-
-    let js = document.createElement('script');
+    const js = document.createElement('script');
     js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
     js.onload = () => {
       leafletReady = true;
@@ -27,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     document.head.appendChild(js);
 
-    let dataJs = document.createElement('script');
+    const dataJs = document.createElement('script');
     dataJs.src = 'https://status.openspaceproject.com/data.js';
     dataJs.onload = () => {
       dataReady = true;
@@ -36,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(dataJs);
   }
 
-  let mapEl = document.getElementById('page-impact-startup-map');
+  const mapEl = document.getElementById('page-impact-startup-map');
   if ('IntersectionObserver' in window && mapEl) {
-    let obs = new IntersectionObserver((entries) => {
+    const obs = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         obs.disconnect();
         loadMapAssets();

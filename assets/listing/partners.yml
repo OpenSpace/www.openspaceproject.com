@@ -29,8 +29,8 @@
 
 - name: NYU Tandon School of Engineering
   type: university
-  logo: /assets/images/institutions/nyu_tandon--white.png
-  link: https://engineering.nyu.edu/research-innovation/centers/visualization-imaging-and-data-analysis-center-vida
+  logo: /assets/images/institutions/nyu_tandon--white.webp
+  link: https://engineering.nyu.edu/
   description: >
     The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of
     open-source tools and NASA-partnered research to the OpenSpace collaboration.
@@ -61,7 +61,7 @@
     75-foot-diameter screen, making it one of the most technologically advanced
     planetariums in the world.
 
-- name: Denver Museum of Nature & Science
+- name: "Denver Museum of Nature & Science"
   type: isi
   logo: /assets/images/institutions/dmns--white.webp
   link: https://www.dmns.org/
@@ -96,7 +96,7 @@
     scientific visualization, home to the Wisdome dome theater, and a long-standing
     collaborator in the OpenSpace project alongside Linköping University.
 
-- name: HG&Co
+- name: "HG&Co"
   type: evaluator
   logo: /assets/images/institutions/hgandco--white.webp
   link: https://www.hgandco.com/

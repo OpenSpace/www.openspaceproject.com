@@ -216,6 +216,7 @@
     $bg: $color-overlay-light-faint,
     $border: $color-border-faint
   );
+  @include backdrop-blur;
 
   // pill-link is inline-flex; these links are stacked full-width rows, and margin auto
   // centering needs a block-level box
@@ -225,8 +226,6 @@
   margin: 0 auto;
   text-align: center;
   padding: 0.65rem 1.25rem;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   font-weight: 600;
 
   &:hover {

@@ -20,6 +20,8 @@
 
   // Dropdown menu container
   .dropdown-menu {
+    @include backdrop-blur;
+
     min-width: 320px;
     padding: 0.5rem;
     background: $color-overlay-dark;
@@ -30,8 +32,6 @@
       0 4px 6px rgba(0, 0, 0, 0.2),
       0 16px 40px rgba(0, 0, 0, 0.45),
       0 0 0 1px $color-border-faint inset;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
 
   .dropdown-item {

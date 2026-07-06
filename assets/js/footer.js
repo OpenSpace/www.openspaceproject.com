@@ -1,16 +1,7 @@
 (() => {
-  // ---------------------------------------------------------------------- //
-  // Copyright year
-  // ---------------------------------------------------------------------- //
-
-  const yearEl = document.getElementById('footer-year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
-
-  // ---------------------------------------------------------------------- //
   // Newsletter signup (Mailchimp)
-  // ---------------------------------------------------------------------- //
+  const mailchimpUser = '4c1bf0cc740f267dc37ede3ff';
+  const mailchimpId = '002e0deef0';
 
   let _email = '';
 
@@ -41,14 +32,14 @@
       btn.textContent = 'Subscribing...';
     }
 
-    data['b_4c1bf0cc740f267dc37ede3ff_002e0deef0'] = '';
+    data[`b_${mailchimpUser}_${mailchimpId}`] = '';
     const qs = Object.keys(data).map((k) => {
       return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
     }).join('&');
 
     const cb = `mcSub${Date.now()}`;
     const s = document.createElement('script');
-    s.src = 'https://amnh.us20.list-manage.com/subscribe/post-json?u=4c1bf0cc740f267dc37ede3ff&id=002e0deef0&' + qs + '&c=' + cb;
+    s.src = `https://amnh.us20.list-manage.com/subscribe/post-json?u=${mailchimpUser}&id=${mailchimpUser}&${qs}&c=${cb}`;
 
     function cleanup() {
       clearTimeout(timer);
@@ -121,7 +112,7 @@
       const lname = val('footer-newsletter-lname');
       if (lname) data.LNAME = lname;
 
-      const affil = val('newsletter');
+      const affil = val('footer-newsletter-affil');
       if (affil) data.MMERGE6 = affil;
 
       const how = val('footer-newsletter-how');
@@ -138,9 +129,7 @@
     });
   }
 
-  // ---------------------------------------------------------------------- //
   // System status indicator (Uptime Kuma)
-  // ---------------------------------------------------------------------- //
 
   const LABELS = {
     up: 'All Systems Operational',

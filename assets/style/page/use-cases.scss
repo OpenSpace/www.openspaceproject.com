@@ -5,6 +5,8 @@
 }
 
 .page-use-cases__card {
+  @include focus-ring;
+
   position: relative;
   height: 300px;
   border-radius: $layout-border-radius;
@@ -16,11 +18,6 @@
   &:hover .page-use-cases__card-overlay,
   &:focus-visible .page-use-cases__card-overlay {
     border: 1px solid $color-border-light;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 3px;
   }
 }
 
@@ -175,6 +172,8 @@
 }
 
 .page-use-cases__modal-close {
+  @include focus-ring;
+
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
@@ -198,10 +197,5 @@
   &:hover {
     background: $color-surface-primary-faint;
     color: $color-text-highlight;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 2px;
   }
 }

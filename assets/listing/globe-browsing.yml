@@ -30,7 +30,7 @@
     meter-scale surface texture of the lunar highlands. LRO imagery and LOLA
     elevation data render the Moon at full mission resolution.
 
-- image: "/assets/images/carousel/mars_surface.webp"
+- image: "/assets/images/features/mars_surface.webp"
   alt: "HiRISE surface imagery of Mars — terrain detail near Jezero Crater"
   tag: "Mars"
   title: "Mars at full resolution"

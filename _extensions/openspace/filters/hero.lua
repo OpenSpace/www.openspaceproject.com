@@ -88,56 +88,66 @@ local function render_hero(hero_meta)
     if action["link"] ~= nil then
       action_link = pandoc.utils.stringify(action["link"])
     end
-    if action["external"] ~= nil and action["external"] then
-      action_external = "external"
+
+    if (action_text == nil) ~= (action_link == nil) then
+      quarto.log.warning("[hero] 'action' requires both 'text' and 'link'")
+    end
+
+    if action["external"] and pandoc.utils.stringify(action["external"]) == "true" then
+      action_external = " external"
     end
   end
 
   local crumb_parts = {}
   for index, crumb in ipairs(crumbs) do
     if index > 1 then
-      crumb_parts[#crumb_parts + 1] = '<span class="crumbs__separator">›</span>'
+      crumb_parts[#crumb_parts + 1] = '<span class="crumbs__separator" aria-hidden="true">›</span>'
     end
     local class = (index == #crumbs) and "crumbs__current" or "crumbs__parent"
     if crumb.link ~= nil then
-      crumb_parts[#crumb_parts + 1] =
-        '<a class="' .. class .. '" href="' .. crumb.link .. '">' .. crumb.text .. '</a>'
+      crumb_parts[#crumb_parts + 1] = string.format(
+        '<a class="%s" href="%s">%s</a>', class, crumb.link, crumb.text
+      )
     else
-      crumb_parts[#crumb_parts + 1] =
-        '<span class="' .. class .. '">' .. crumb.text .. '</span>'
+      crumb_parts[#crumb_parts + 1] = string.format(
+        '<span class="%s">%s</span>', class, crumb.text
+      )
     end
   end
   local crumbs_html = table.concat(crumb_parts, "\n    ")
 
   local badge_html = ""
   if badge ~= nil then
-    badge_html = [[<span class="hero__badge">]] .. badge .. [[</span>]]
+    badge_html = string.format('<span class="hero__badge">%s</span>', badge)
   end
 
   local action_html = ""
   if action_text ~= nil and action_link ~= nil then
-    action_html = [[
-    <div class="hero__actions">
-      <a class="button__primary ]] .. action_external .. [[" href="]] .. action_link .. [[" target="_blank" rel="noopener">]] .. action_text .. [[</a>
-    </div>]]
+    action_html = string.format([[
+<div class="hero__actions">
+      <a class="button__primary %s" href="%s" target="_blank" rel="noopener">%s</a>
+</div>
+    ]], action_external, action_link, action_text)
   end
 
   local style = ""
   if image ~= nil then
-    style = [[style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(']] .. image .. [['); background-size: cover; background-position: center;"]]
+    style = string.format([[style="--hero-image: url('%s')"]], image)
   end
 
-  return [[
-<section class="hero" ]] .. style .. [[>
-  <nav class="crumbs" aria-label="Breadcrumb">
-    ]] .. crumbs_html .. [[
-  </nav>
-  <div>
-  ]] .. badge_html .. [[
-    <h1>]] .. title .. [[</h1>
-    <p class="hero__lede">]] .. lede .. [[</p>]] .. action_html .. [[
-  </div>
-</section>]]
+  return string.format([[
+    <section class="hero" %s>
+      <nav class="crumbs" aria-label="Breadcrumb">%s</nav>
+      <div>
+        %s
+        <h1>%s</h1>
+        <p class="hero__lede">%s</p>
+        %s
+      </div>
+    </section>
+  ]],
+    style, crumbs_html, badge_html, title, lede, action_html
+  )
 end
 
 return {

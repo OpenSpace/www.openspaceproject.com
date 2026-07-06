@@ -102,17 +102,13 @@
 
 .content-carousel__dot {
   @include orbit-dot(6px);
+  @include focus-ring;
 
   // Invisible hit-area expander: 6px + 2 * 9px = 24px minimum target
   &::after {
     content: '';
     position: absolute;
     inset: -9px;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 4px;
   }
 
   &.is-active {
@@ -132,6 +128,8 @@
 }
 
 .content-carousel__button {
+  @include focus-ring;
+
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -150,11 +148,6 @@
     background: $color-accent-secondary;
     color: $color-background;
     border-color: $color-accent-secondary;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 2px;
   }
 
   &:disabled {

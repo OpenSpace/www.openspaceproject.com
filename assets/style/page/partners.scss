@@ -6,6 +6,7 @@
 
 .page-partners__card {
   @include card-hover-lift;
+  @include focus-ring;
 
   background: $color-surface-primary;
   border: 1px solid $color-border-faint;
@@ -27,11 +28,6 @@
     .page-partners__logo {
       opacity: 1;
     }
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 3px;
   }
 }
 

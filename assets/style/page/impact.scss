@@ -8,6 +8,8 @@
 }
 
 .page-impact__toggle-btn {
+  @include focus-ring;
+
   background: transparent;
   border: 1px solid $color-border-light;
   color: $color-text-light;
@@ -28,11 +30,6 @@
   &:not(.is-active):hover {
     border-color: $color-border-muted;
     color: $color-accent-primary;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-accent-primary;
-    outline-offset: 2px;
   }
 
   &.is-active {

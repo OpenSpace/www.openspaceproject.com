@@ -57,11 +57,15 @@ local function render_cta(cta_meta)
       if action["style"] ~= nil then
         style = pandoc.utils.stringify(action["style"])
       end
+      if style ~= "primary" and style ~= "ghost" then
+        quarto.log.warning("[cta] Unknown button style '" .. style .. "', defaulting to 'primary'")
+      end
       local class = (style == "ghost") and "button__secondary" or "button__primary"
 
       local target = ""
-      if action["external"] == true then
+      if action["external"] then
         class = class .. ' external'
+        target = ' target="_blank" rel="noopener noreferrer"'
       end
 
       action_parts[#action_parts + 1] =

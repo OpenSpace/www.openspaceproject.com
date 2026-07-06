@@ -32,7 +32,7 @@
 - image: "/assets/images/features/apollo11.webp"
   alt: "Apollo 11 mission visualization in OpenSpace"
   tag: "NASA"
-  title: "Apollo"
+  title: "Apollo 11"
   tagline: "Moon landing · July 20, 1969"
   description: >
     Watch the command module and lunar module at their exact positions throughout the
@@ -45,11 +45,11 @@
   title: "Voyager"
   tagline: "Interstellar space · 1977 – present"
   description: >
-    Trace the full 48-year journey of both probes through planetary encounters with
-    Jupiter, Saturn, Uranus, and Neptune, out to interstellar space. Scrub through
-    decades of flight in seconds.
+    Trace the full journey of both probes through planetary encounters with Jupiter,
+    Saturn, Uranus, and Neptune, out to interstellar space. Scrub through decades of
+    flight in seconds.
 
-- image: "/assets/images/carousel/mars_surface.webp"
+- image: "/assets/images/features/mars_surface.webp"
   alt: "Mars surface from HiRISE, Perseverance landing site terrain"
   tag: "NASA"
   title: "Mars"

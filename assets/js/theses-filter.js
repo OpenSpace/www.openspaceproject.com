@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         row.classList.toggle('is-hidden', partner && row.dataset.partner !== partner);
       });
 
-      document.querySelectorAll('.page-research__thesis-year-label').forEach((label) => {
+      document.querySelectorAll('.page-research__year-label').forEach((label) => {
         const year = label.dataset.year;
         const hasVisible = !!document.querySelector(
           `.page-research__thesis-row:not(.is-hidden)[data-year="${year}"]`

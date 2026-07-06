@@ -78,7 +78,7 @@
 .page-user-meetings__badge {
   @include eyebrow-label($font-size-2xs);
 
-  font-weight: 600;
+  font-weight: $font-weight-demibold;
   padding: 0.2rem 0.6rem;
   border-radius: $layout-border-radius;
   color: $color-accent-secondary;
@@ -106,7 +106,7 @@
 
 .page-user-meetings__link {
   font-size: $font-size-sm;
-  font-weight: 500;
+  font-weight: $font-weight-demibold;
   color: $color-accent-primary;
   text-decoration: none;
   letter-spacing: 0.01em;

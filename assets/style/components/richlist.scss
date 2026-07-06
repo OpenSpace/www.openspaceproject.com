@@ -46,7 +46,7 @@
   @include eyebrow-label($font-size-2xs);
 
   color: $color-accent-primary;
-  font-weight: 600;
+  font-weight: $font-weight-demibold;
 }
 
 .rich-list__tag {

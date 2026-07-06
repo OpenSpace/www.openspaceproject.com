@@ -19,11 +19,11 @@
 
       <div class="page-team__card-back">
         <div class="page-team__card-back-inner">
-          <h3><%- item.name %></h3>
+          <span class="page-team__card-name"><%- item.name %></span>
           <% if (item.title) { %>
-          <h4><%- item.title %></h4>
+          <span class="page-team__card-title"><%- item.title %></span>
           <% } %>
-          <span><%- item.affiliation %></span>
+          <span class="page-team__card-affiliation"><%- item.affiliation %></span>
         </div>
       </div>
 

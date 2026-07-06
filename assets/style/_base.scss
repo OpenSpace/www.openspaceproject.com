@@ -28,7 +28,7 @@ $code-bg: $color-surface-secondary;
 $code-color: $color-accent-secondary;
 
 $headings-font-family: $font-headings;
-$headings-font-weight: 300;
+$headings-font-weight: $font-weight-demibold;
 $headings-color: $color-accent-primary;
 $headings-letter-spacing: 0.02em;
 
@@ -76,7 +76,7 @@ code, .sourceCode, pre.sourceCode {
 
 h3 {
   font-size: $font-size-lg;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 }
 
 h3, h4 {
@@ -85,7 +85,7 @@ h3, h4 {
 
 strong {
   color: $color-accent-tertiary;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 }
 
 hr {
@@ -107,7 +107,7 @@ table {
     text-align: left;
     padding: 0 1rem 0.75rem 0;
     font-size: $font-size-xs;
-    font-weight: 600;
+    font-weight: $font-weight-demibold;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $color-text-light;
@@ -120,7 +120,8 @@ table {
     vertical-align: middle;
 
     &:first-child {
-      font-weight: 600; color: $color-text-highlight;
+      font-weight: $font-weight-demibold;
+      color: $color-text-highlight;
     }
 
     a {

@@ -15,7 +15,7 @@
   }
 
   h2 {
-    font-weight: 600;
+    font-weight: $font-weight-bold;
     color: $color-text-highlight;
     margin: 0 0 1.5rem;
   }
@@ -36,7 +36,7 @@
 
   label {
     font-size: $font-size-sm;
-    font-weight: 600;
+    font-weight: $font-weight-demibold;
     letter-spacing: 0.04em;
     color: $color-text-light;
   }

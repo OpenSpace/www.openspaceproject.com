@@ -15,7 +15,7 @@
 
 .page-404__code {
   font-family: $font-headings;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-size: 6.5rem;
   line-height: 1;
   letter-spacing: 0.06em;
@@ -25,8 +25,8 @@
   background-clip: text;
   color: transparent;
 
-  // Forced-colors mode strips backgrounds, which would leave the transparent
-  // gradient text invisible
+  // Forced-colors mode strips backgrounds, which would leave the transparent gradient
+  // text invisible
   @media (forced-colors: active) {
     background: none;
     color: CanvasText;

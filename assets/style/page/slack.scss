@@ -39,7 +39,7 @@
   span {
     font-family: $font-monospace;
     color: $color-text-highlight;
-    font-weight: 500;
+    font-weight: $font-weight-demibold;
     line-height: 1.3;
   }
 }

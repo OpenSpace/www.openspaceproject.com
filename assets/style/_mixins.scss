@@ -109,7 +109,7 @@
 
 @mixin section-title {
   font-size: $font-size-2xl;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   letter-spacing: -0.01em;
   color: $color-text-highlight;
 }
@@ -129,7 +129,7 @@
   border-radius: $layout-border-radius-small;
   background: $bg;
   font-size: $font-size-sm;
-  font-weight: 500;
+  font-weight: $font-weight-demibold;
   color: $color-text-highlight;
   text-decoration: none;
   transition:

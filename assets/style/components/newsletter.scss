@@ -28,14 +28,13 @@
 }
 
 .newsletter__label {
-  font-weight: 600;
+  font-weight: $font-weight-demibold;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: $color-text-light;
 }
 
 .newsletter__optional {
-  font-weight: 400;
   text-transform: none;
   letter-spacing: 0;
   color: $color-text-faint;

@@ -10,7 +10,6 @@
 #   - year: The year in which the thesis was finished
 #   - partner: The shortname of the partner where the thesis was carried out
 #   - link (optional): The link to the thesis
-#   - degree: The degree for which the thesis was submitted
 #
 
 - title: An Interactive Black Hole Visualisation in OpenSpace
@@ -22,7 +21,6 @@
   year: 2025
   partner: LiU
   link: https://liu.diva-portal.org/smash/get/diva2:1974754/FULLTEXT01.pdf
-  degree: master
 
 - title: Contextual Visualization of Adaptive Meshes using YT
   authors:
@@ -33,7 +31,6 @@
   year: 2024
   partner: AMNH
   link: https://liu.diva-portal.org/smash/get/diva2:1975471/FULLTEXT01.pdf
-  degree: master
 
 - title: Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace
   authors:
@@ -44,7 +41,6 @@
   year: 2024
   partner: SCI
   link: https://liu.diva-portal.org/smash/get/diva2:1974447/FULLTEXT01.pdf
-  degree: master
 
 - title: Space Weather Simulation Model Integration
   authors:
@@ -55,7 +51,6 @@
   year: 2023
   partner: CCMC
   link: https://liu.diva-portal.org/smash/get/diva2:1829691/FULLTEXT02.pdf
-  degree: master
 
 - title: Enhancing Dungey Cycle Visualization in OpenSpace
   authors:
@@ -66,7 +61,6 @@
   year: 2023
   partner: CCMC
   link:
-  degree: master
 
 - title: Investigating the Chemical Cartography of the Galaxy Through Visualization
   authors:
@@ -75,7 +69,6 @@
   year: 2023
   partner: AMNH
   link: https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-206480
-  degree: master
 
 - title: Using Point Cloud Interpolation to Present a Cosmic View of Life
   authors:
@@ -86,7 +79,6 @@
   year: 2023
   partner: AMNH
   link: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-199028
-  degree: master
 
 - title: Astronomy Software Integration with OpenSpace in Distributed Systems
   authors:
@@ -97,7 +89,6 @@
   year: 2022
   partner: SCI
   link: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-196497
-  degree: master
 
 - title: Interactive visualization of climate change on Earth in the OpenSpace project
   authors:
@@ -108,7 +99,6 @@
   year: 2022
   partner: NYU
   link:
-  degree: master
 
 - title: Advanced Fieldline Rendering for Space Weather Visualization
   authors:
@@ -119,7 +109,6 @@
   year: 2022
   partner: CCMC
   link: http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157
-  degree: master
 
 - title: "A Cosmic View of Life on Earth: Visualizing the Relationship Between Species DNA in Three-Dimensional Space"
   authors:
@@ -130,7 +119,6 @@
   year: 2022
   partner: AMNH
   link: http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669
-  degree: master
 
 - title: Topological Analysis Tool for Earth's Magnetosphere
   authors:
@@ -139,7 +127,6 @@
   year: 2022
   partner: CCMC
   link:
-  degree: master
 
 - title: Interactive Visualization of Air Traffic in OpenSpace
   authors:
@@ -148,7 +135,6 @@
   year: 2022
   partner: CCMC
   link: http://liu.diva-portal.org/smash/record.jsf?dswid=579&pid=diva2%3A1657454
-  degree: master
 
 - title: Designing a Streaming Pipeline for the Public Dissemination of Astronomy Data
   authors:
@@ -159,7 +145,6 @@
   year: 2022
   partner: LiU
   link: http://liu.diva-portal.org/smash/record.jsf?dswid=6325&pid=diva2%3A1686604
-  degree: master
 
 - title: Interactive Visualization of Air Traffic in OpenSpace
   authors:
@@ -170,7 +155,6 @@
   year: 2021
   partner: LiU
   link: https://liu.diva-portal.org/smash/get/diva2:1582766/FULLTEXT01.pdf
-  degree: master
 
 - title: "Interactive Visualization of Astronomy Images: Integrating AAS WorldWide Telescope into OpenSpace"
   authors:
@@ -181,7 +165,6 @@
   year: 2021
   partner: AMNH
   link: https://liu.diva-portal.org/smash/get/diva2:1740944/FULLTEXT01.pdf
-  degree: master
 
 - title: Interactive 3D-visualization of a Solar Particle Event for Public Outreach
   authors:
@@ -192,7 +175,6 @@
   year: 2020
   partner: CCMC
   link: https://liu.diva-portal.org/smash/get/diva2:1530786/FULLTEXT01.pdf
-  degree: master
 
 - title: Astronomy Software Integration with OpenSpace
   authors:
@@ -203,7 +185,6 @@
   year: 2020
   partner: SCI
   link: https://liu.diva-portal.org/smash/get/diva2:1530782/FULLTEXT01.pdf
-  degree: master
 
 - title: Interactive Sonification in OpenSpace
   authors:
@@ -214,7 +195,6 @@
   year: 2020
   partner: LiU
   link: https://liu.diva-portal.org/smash/get/diva2:1473031/FULLTEXT01.pdf
-  degree: master
 
 - title: A System for Procedural Camera Movements for Navigation in Astrographics
   authors:
@@ -225,7 +205,6 @@
   year: 2019
   partner: NYU
   link: https://liu.diva-portal.org/smash/get/diva2:1629977/FULLTEXT01.pdf
-  degree: master
 
 - title: "Today's Space Weather in the Planetarium"
   authors:
@@ -236,7 +215,6 @@
   year: 2019
   partner: CCMC
   link: https://liu.diva-portal.org/smash/get/diva2:1429856/FULLTEXT01.pdf
-  degree: master
 
 - title: Visualization of Space Debris using Orbital Representation and Volume Rendering
   authors:
@@ -247,7 +225,6 @@
   year: 2019
   partner: SCI
   link: http://liu.diva-portal.org/smash/get/diva2:1371832/FULLTEXT01.pdf
-  degree: master
 
 - title: Flight Controller
   authors:
@@ -256,7 +233,6 @@
   year: 2019
   partner: SCI
   link:
-  degree: master
 
 - title: Implementing an Interactive Simulation Data Pipeline for Space Weather Visualization
   authors:
@@ -267,7 +243,6 @@
   year: 2018
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:1375791/FULLTEXT01.pdf
-  degree: master
 
 - title: Interactive 3D Visualization of the NASA Deep Space Network Activity
   authors:
@@ -278,7 +253,6 @@
   year: 2018
   partner: AMNH
   link: http://liu.diva-portal.org/smash/get/diva2:1322083/FULLTEXT01.pdf
-  degree: master
 
 - title: "Exoplanets: Interactive Visualization of Data and Discovery Method"
   authors:
@@ -287,7 +261,6 @@
   year: 2018
   partner: NYU
   link: https://liu.diva-portal.org/smash/get/diva2:1315169/FULLTEXT01.pdf
-  degree: master
 
 - title: Graphical User Interfaces for Multi-Touch Displays Supporting Public Exploration and Guided Storytelling of Astronomical Visualizations
   authors:
@@ -298,7 +271,6 @@
   year: 2018
   partner: SCI
   link: http://liu.diva-portal.org/smash/get/diva2:1270021/FULLTEXT01.pdf
-  degree: master
 
 - title: Robotic Spacecraft Visualization of MSL Curiosity using Telemetry Data
   authors:
@@ -309,7 +281,6 @@
   year: 2018
   partner: AMNH
   link:
-  degree: master
 
 - title: Interactive Out-of-Core Rendering and Filtering of One Billion Stars Measured by the ESA Gaia Mission
   authors:
@@ -318,7 +289,6 @@
   year: 2018
   partner: LiU
   link: http://liu.diva-portal.org/smash/get/diva2:1247648/FULLTEXT01.pdf
-  degree: master
 
 - title: Tailoring Visualization Applications for Tasks and Users
   authors:
@@ -328,7 +298,6 @@
   year: 2018
   partner: LiU
   link: http://liu.diva-portal.org/smash/get/diva2:1208841/FULLTEXT01.pdf
-  degree: phd
 
 - title: Contextualization of Autonomous Spaceflight Operations for Deep Space Planetary Encounters
   authors:
@@ -337,7 +306,6 @@
   year: 2018
   partner: AMNH
   link: https://www.diva-portal.org/smash/get/diva2:1195627/FULLTEXT02.pdf
-  degree: master
 
 - title: Real-Time Magnetohydrodynamic Space Weather Visualization
   authors:
@@ -348,7 +316,6 @@
   year: 2017
   partner: CCMC
   link: http://www.diva-portal.org/smash/get/diva2:1147161/FULLTEXT01.pdf
-  degree: master
 
 - title: Interactive In-Situ Visualization of Mars Science Laboratory Data
   authors:
@@ -359,7 +326,6 @@
   year: 2017
   partner: AMNH
   link:
-  degree: master
 
 - title: Multi-Touch Interfaces for Public Exploration and Navigation in Astronomical Visualizations
   authors:
@@ -368,7 +334,6 @@
   year: 2017
   partner: SCI
   link: http://www.diva-portal.org/smash/get/diva2:1147162/FULLTEXT01.pdf
-  degree: master
 
 - title: Creating User Interfaces Using Web-based Technologies to Support Rapid Prototyping in a Desktop Astrovisualization Software
   authors:
@@ -377,7 +342,6 @@
   year: 2017
   partner: NYU
   link: http://www.diva-portal.org/smash/get/diva2:1169029/FULLTEXT01.pdf
-  degree: master
 
 - title: Multi-Volume Rendering in OpenSpace Using A-Buffers for Space Weather Visualizations
   authors:
@@ -386,7 +350,6 @@
   year: 2017
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:1098484/FULLTEXT01.pdf
-  degree: master
 
 - title: Design and Implementation of an Out-of-Core Globe Rendering System Using Multiple Map Services
   authors:
@@ -397,7 +360,6 @@
   year: 2016
   partner: AMNH
   link: http://liu.diva-portal.org/smash/get/diva2:1098476/FULLTEXT01.pdf
-  degree: master
 
 - title: "Bridging the Gap: Providing Public Science Dissemination through Expert Tools"
   authors:
@@ -408,7 +370,6 @@
   year: 2016
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:1072646/FULLTEXT01.pdf
-  degree: master
 
 - title: Spatio-temporal Multi-modal Visualization of Volumetric Simulation and In Situ Satellite Data
   authors:
@@ -419,7 +380,6 @@
   year: 2015
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:968704/FULLTEXT01.pdf
-  degree: master
 
 - title: Public Dissemination of Deep Space Missions through Immersive Visualization
   authors:
@@ -428,7 +388,6 @@
   year: 2015
   partner: AMNH
   link:
-  degree: master
 
 - title: "Visualizing Space Weather: Acquiring and Rendering Data of Earth's Magnetosphere"
   authors:
@@ -437,7 +396,6 @@
   year: 2014
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:1375792/FULLTEXT01.pdf
-  degree: master
 
 - title: Dynamic Visualization of Space Weather Data
   authors:
@@ -446,7 +404,6 @@
   year: 2014
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:763094/FULLTEXT01.pdf
-  degree: master
 
 - title: Interactive Visualization of Space Weather Data
   authors:
@@ -455,4 +412,3 @@
   year: 2013
   partner: CCMC
   link: http://liu.diva-portal.org/smash/get/diva2:667227/FULLTEXT01.pdf
-  degree: master

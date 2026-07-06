@@ -15,7 +15,7 @@
     if (item.year !== currentYear) {
       currentYear = item.year;
 %>
-    <div class="page-research__thesis-year-label" data-year="<%- item.year %>"><%- item.year %></div>
+    <div class="page-research__year-label" data-year="<%- item.year %>"><%- item.year %></div>
 <%
     }
 %>
@@ -30,17 +30,14 @@
         <% } %>
       </div>
       <div class="page-research__thesis-content">
-        <div class="page-research__thesis-title">
+        <div class="page-research__title">
           <% if (item.link) { %>
             <a href="<%- item.link %>" target="_blank" rel="noopener noreferrer"><%- item.title %></a>
           <% } else { %>
             <%- item.title %>
           <% } %>
-          <% if (item.degree === 'phd') { %>
-            <span class="page-research__thesis-degree-badge">PhD</span>
-          <% } %>
         </div>
-        <div class="page-research__thesis-author"><%- item.authors.map((a => a.name)).join(" & ") %></div>
+        <div class="page-research__author"><%- item.authors.map((a => a.name)).join(" & ") %></div>
         <div class="page-research__thesis-partner-badge"><%- item.partner %></div>
       </div>
     </div>

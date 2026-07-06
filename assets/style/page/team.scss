@@ -104,31 +104,28 @@
     background: linear-gradient(to right, transparent, $color-accent-primary, transparent);
     opacity: 0.6;
   }
+}
 
-  // Name
-  h3 {
-    font-size: $font-size-sm;
-    color: $color-text-highlight;
-    line-height: 1.25;
-    margin-bottom: 0.4rem;
-  }
+.page-team__card-name {
+  font-size: $font-size-sm;
+  color: $color-text-highlight;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
 
-  // Title
-  h4 {
-    font-size: $font-size-2xs;
-    color: $color-accent-primary;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 0.8rem;
-    line-height: 1.4;
-  }
+.page-team__card-title {
+  font-size: $font-size-2xs;
+  color: $color-accent-primary;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
 
-  // Affiliation
-  span {
-    font-size: $font-size-xs;
-    color: $color-text-muted;
-    line-height: 1.5;
-  }
+.page-team__card-affiliation {
+  font-size: $font-size-xs;
+  color: $color-text-muted;
+  line-height: 1.5;
 }
 
 .page-team__card-back-inner {

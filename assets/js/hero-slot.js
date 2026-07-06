@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(() => {
     const prev = i;
     let next;
-    do { next = Math.floor(Math.random() * words.length); } while (next === prev);
+    do {
+      next = Math.floor(Math.random() * words.length);
+    } while (next === prev);
     i = next;
     words[prev].classList.remove('is-active');
     words[prev].classList.add('is-exit');

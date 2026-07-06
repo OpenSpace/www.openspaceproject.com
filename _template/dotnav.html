@@ -3,9 +3,26 @@
 // navigate between different headers of the page
 
 (() => {
-  let dotNav = document.querySelector('.dotnav');
-  let navItems = Array.from(document.querySelectorAll('.dotnav__item'));
-  let sections = navItems.map((item) => {
+  const dotNav = document.querySelector('.dotnav');
+  if (!dotNav) {
+    return;
+  }
+
+  // Auto-generate buttons from .content-section[id] elements when the nav is empty
+  if (dotNav.querySelectorAll('.dotnav__item').length === 0) {
+    Array.from(document.querySelectorAll('.content-section[id]')).forEach((section, i) => {
+      let heading = section.querySelector('h2, h3, h4');
+      let label = heading ? heading.textContent.trim() : section.id;
+      let btn = document.createElement('button');
+      btn.className = 'dotnav__item' + (i === 0 ? ' is-active' : '');
+      btn.dataset.target = section.id;
+      btn.setAttribute('aria-label', label);
+      dotNav.appendChild(btn);
+    });
+  }
+
+  const navItems = Array.from(dotNav.querySelectorAll('.dotnav__item'));
+  const sections = navItems.map((item) => {
     return document.getElementById(item.dataset.target);
   }).filter(Boolean);
   let currentIndex = 0;
@@ -25,7 +42,7 @@
   function goTo(index) {
     index = Math.max(0, Math.min(index, sections.length - 1));
     setActive(index);
-    let top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
+    const top = sections[index].getBoundingClientRect().top + window.pageYOffset - navbarHeight();
     window.scrollTo({ top: top, behavior: 'smooth' });
   }
 
@@ -34,16 +51,24 @@
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown') { e.preventDefault(); goTo(currentIndex + 1); }
-    if (e.key === 'ArrowUp')   { e.preventDefault(); goTo(currentIndex - 1); }
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      goTo(currentIndex + 1);
+    }
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      goTo(currentIndex - 1);
+    }
   });
 
   if ('IntersectionObserver' in window) {
-    let observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          let idx = sections.indexOf(entry.target);
-          if (idx !== -1) setActive(idx);
+          const idx = sections.indexOf(entry.target);
+          if (idx !== -1) {
+            setActive(idx);
+          }
         }
       });
     }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 });

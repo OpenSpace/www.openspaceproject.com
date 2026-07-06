@@ -21,14 +21,7 @@ hero:
   lede: July 31 – August 1, 2025 · American Museum of Natural History, New York
 ---
 
-```{=html}
-<nav class="dotnav" aria-label="Navigate to section">
-  <button class="dotnav__item is-active" data-target="recap" aria-label="Recap"></button>
-  <button class="dotnav__item" data-target="sessions" aria-label="Sessions"></button>
-  <button class="dotnav__item" data-target="recordings" aria-label="Recordings"></button>
-  <button class="dotnav__item" data-target="community" aria-label="Community"></button>
-</nav>
-```
+{{< dotnav label="Navigate to venue section" >}}
 
 ::: {.content-section #recap}
 

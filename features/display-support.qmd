@@ -35,15 +35,7 @@ cta:
     the team can help you configure OpenSpace for your specific setup.
 ---
 
-```{=html}
-<nav class="dotnav" aria-label="Navigate to venue section">
-  <button class="dotnav__item is-active" data-target="dome-theaters" aria-label="Dome theaters"></button>
-  <button class="dotnav__item" data-target="classrooms-desktops" aria-label="Classrooms"></button>
-  <button class="dotnav__item" data-target="museum-exhibits" aria-label="Museum exhibits"></button>
-  <button class="dotnav__item" data-target="fisheye" aria-label="Fisheye rendering"></button>
-  <button class="dotnav__item" data-target="technical-capabilities" aria-label="Technical capabilities"></button>
-</nav>
-```
+{{< dotnav label="Navigate to venue section" >}}
 
 ::: {.content-section #dome-theaters}
 

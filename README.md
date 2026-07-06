@@ -19,23 +19,26 @@ File formats and tools used in the webpage:
 ## File locations
 
   - `assets`: Assets used globally for the webpage itself
-    - `assets/images`: General folder for images. Images should have a naming scheme of separating individual words using `_`. If multiple images are present for a single name, `-1`, `-2`, etc are appended. If a specific image variant is used (black, white, color, ...) it is separate with `--`, for example `logo--white.webp`
+    - `assets/images`: General folder for images. Images should have a naming scheme of separating individual words using `_`. If multiple images are present for a single name, `-1`, `-2`, etc are appended. If a specific image variant is used (black, white, color, ...) it is separated with `--`, for example `logo--white.webp`
       - `assets/images/banner`: Images used for the hero banner section. Images in this folder should be of the aspect ratio φ:1 (1.61803398874989:1)
-      - `assets/images/carousel`: Iamges that are automatically rotated through in the main page carousel
-      - `assets/images/resources`: Images that will end up automatically on the resources page
-    - `assets/logos`: Logos for softwares, institutions
-    - `asset/style`: SCSS style files used for the webpage
-    - `asset/team`: Information about team members
-    - `asset/listing`: Different listings that are used to generate content on different pages. Each `.yml` in this folder is named after the webpage on which it is used
-  - `events`: A list of events that will automatically be added to the events page. Each event should be in a subfolder that has a `index.qmd`
+      - `assets/images/carousel`: Images that are automatically rotated through in the main page carousel
+      - `assets/images/features`: Images used on feature pages
+      - `assets/images/use-cases`: Images used on the use-cases page
+      - `assets/images/user-meetings`: Images used on user meeting pages
+    - `assets/brand`: Brand assets (logos, wordmarks) for OpenSpace and partner institutions
+    - `assets/js`: JavaScript files used by the webpage
+    - `assets/style`: SCSS style files used for the webpage
+    - `assets/team`: Profile images and information about team members
+    - `assets/listing`: Different listings that are used to generate content on different pages. Each `.yml` in this folder is named after the webpage on which it is used
+    - `assets/videos`: Video assets used on the webpage
+  - `community/events`: A list of events that will automatically be added to the events page. Each event should be in a subfolder that has an `index.qmd`
   - `resources`: Resources that are provided by the webpage for external use
   - `_template`: Partial pages that are included or EJS file templates used by other pages
   - `_announcement.yml`: Configuration file to control a top-level announcement banner
   - `_footer.yml`: Configuration file to control the information provided in the footer
   - `_navbar.yml`: Configuration file to control the top navigation bar
-  - `_sidebar.yml`: Configuration file to control per-page sidebars
+  - `_sidebars.yml`: Configuration file to control per-page sidebars
   - `_quarto.yml`: Root configuration file for Quarto
-  - `_variables.yml`: Global variables that can be reused in different documents
   - `404.qmd`: Special 404 page that gets displayed when someone navigates to a page that doesn't exist
   - `index.qmd`: Root page
 
@@ -51,61 +54,3 @@ File formats and tools used in the webpage:
 - [ ] Move profile image from the current folder in `assets/team` to the `-previous` version
 - [ ] Update the profile image file name to have the correct sequence number. We try our best to have previous members ordered based on their seniority; longer time in the project -> lower number
 - [ ] Move the persons entry in the `assets/team/team.yml` to the current group, update `type` and `image` entries
-
-### Add Carousel to a page
-**Note**:  Currently only a single carousel is supported per page
-
-- [ ] Add the carousel template to the top of the page
-- [ ] Set the `contents` to the path where the images can be found
-- [ ] The delay is the time between images (in milliseconds)
-- [ ] Place the next text in the document where the carousel should appear:
-
-```qmd
-::: {#carousel}
-:::
-```
-
-
-## Templates
-### Team
-
-```yml
-- name: <Name>
-  title: <Title>
-  affiliation: <Affiliation of the team member>
-  image: <path to image file in assets/team/<type>
-  type: <One of 'admin', 'admin-previous', 'advisor', 'advisor-previous', 'coordinator', 'developer', 'developer-previous', 'student'>
-  thesis-affiliation: <Needed if type=student; where was the student located during their thesis work>
-```
-
-### Event
-
-```yml
----
-title: <Event Title>
-description: <Short description of the vent>
-date: <Date in format  YYYY-MM-DD>
-time: <Time in format HH:MM -- HH:MM timezone>
-image: <Optional path to a representative image>
-categories: [ "<Category 1>", "<Category 2>" ]
-google-cal: <Link to a google calender>
----
-```
-
-### Carousel
-
-```yml
----
-format:
-  html:
-    include-after-body:
-      - text: <script src="assets/js/slider.js"></script>
-listing:
-  - id: carousel
-    contents: <path to image>/*
-    type: custom
-    template: _template/carousel.ejs.md
-    template-params:
-      delay: <delay in ms>
----
-```

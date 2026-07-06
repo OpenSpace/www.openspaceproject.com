@@ -22,16 +22,7 @@ hero:
   lede: August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 ---
 
-```{=html}
-<nav class="dotnav" aria-label="Navigate to section">
-  <button class="dotnav__item is-active" data-target="about" aria-label="About"></button>
-  <button class="dotnav__item" data-target="venue" aria-label="Venue"></button>
-  <button class="dotnav__item" data-target="schedule" aria-label="Schedule"></button>
-  <button class="dotnav__item" data-target="getting-here" aria-label="Getting here"></button>
-  <button class="dotnav__item" data-target="accommodation" aria-label="Accommodation"></button>
-  <button class="dotnav__item" data-target="register" aria-label="Register"></button>
-</nav>
-```
+{{< dotnav label="Navigate to venue section" >}}
 
 ::: {.content-section #about}
 

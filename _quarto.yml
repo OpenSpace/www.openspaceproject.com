@@ -9,10 +9,8 @@ project:
     - assets/js/
 
 metadata-files:
-  - _announcement.yml
   - _footer.yml
   - _navbar.yml
-  - _sidebars.yml
 
 format:
   html:

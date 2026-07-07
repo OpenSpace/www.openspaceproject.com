@@ -60,7 +60,6 @@ When using the OpenSpace name or logo, please follow these guidelines:
 ## Logo downloads
 The following logo files are available for use in accordance with the guidelines above.
 
-:::
 
 
 
@@ -98,4 +97,5 @@ For light backgrounds
 
 :::
 
+:::
 

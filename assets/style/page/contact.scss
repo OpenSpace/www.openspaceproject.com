@@ -13,19 +13,17 @@
     gap: 2.5rem;
     margin: 2.5rem auto;
   }
+}
 
-  h2 {
-    font-weight: $font-weight-bold;
-    color: $color-text-highlight;
-    margin: 0 0 1.5rem;
-  }
+.page-contact__title {
+  font-weight: $font-weight-bold;
+  color: $color-text-highlight;
+  margin: 0 0 1.5rem;
+}
 
-  p {
-    font-size: $font-size-sm;
-    line-height: 1.65;
-    color: $color-text-light;
-    margin: 0 0 1.25rem;
-  }
+.page-contact__desc {
+  font-size: $font-size-sm;
+  color: $color-text-light;
 }
 
 .page-contact__form-field {
@@ -48,23 +46,16 @@
   }
 
   textarea {
-    resize: vertical;
     min-height: 130px;
   }
 }
 
 .page-contact__form-required {
   color: $color-accent-primary;
-  margin-left: 0.15rem;
 }
 
 .page-contact__form-error {
   font-size: $font-size-sm;
   color: $color-attention-alert;
   margin: 0.5rem 0 0;
-}
-
-.page-contact__slack-wrap {
-  border: 1px solid $color-border-faint;
-  border-radius: $layout-border-radius;
 }

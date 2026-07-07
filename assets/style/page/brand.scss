@@ -16,14 +16,10 @@ $page-brand-light-border: rgba(black, 0.08);
 
   font-family: $font-monospace;
   color: $color-text-highlight;
-  margin: 0;
 }
 
 .page-brand__logo-grid {
   background: $color-surface-primary;
-  padding: $layout-section-padding-wide;
-  border-top: 1px solid $color-border-faint;
-  border-bottom: 1px solid $color-border-faint;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
@@ -35,23 +31,17 @@ $page-brand-light-border: rgba(black, 0.08);
 
 .page-brand__logo-card {
   border-radius: $layout-border-radius;
-  overflow: hidden;
   border: 1px solid $color-border-faint;
   display: flex;
   flex-direction: column;
 
   img {
-    flex: 1;
-    margin: auto;
     padding: 2rem 1.5rem;
     max-height: calc(60px + 4rem);
     max-width: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
   }
 
-  &--dark  {
+  &--dark {
     background: $color-background;
   }
 
@@ -87,7 +77,6 @@ $page-brand-light-border: rgba(black, 0.08);
   border-top: 1px solid $color-border-faint;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
 
   h3 {
     font-size: $font-size-sm;
@@ -104,7 +93,6 @@ $page-brand-light-border: rgba(black, 0.08);
   }
 
   a {
-    display: inline-block;
     font-size: $font-size-xs;
     font-family: $font-monospace;
     color: $color-accent-primary;
@@ -112,12 +100,10 @@ $page-brand-light-border: rgba(black, 0.08);
     border-radius: $layout-border-radius-small;
     padding: 0.25rem 0.65rem;
     text-decoration: none;
-    white-space: nowrap;
     transition: background $animation-duration-fast ease;
 
     &:hover {
       background: $color-surface-primary-faint;
-      text-decoration: none;
     }
   }
 }

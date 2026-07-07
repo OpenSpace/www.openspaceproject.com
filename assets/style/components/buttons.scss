@@ -38,7 +38,7 @@
   color: $color-button-primary-text;
 
   &:hover {
-    background: lighten($color-button-primary-bg, 5%);
+    background: color.adjust($color-button-primary-bg, $lightness: 5%);
     box-shadow: 0 0 24px rgba($color-button-primary-bg, 0.4);
   }
 }

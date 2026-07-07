@@ -34,9 +34,9 @@
   display: flex;
   flex-direction: column;
 
-  // Higher specificity than the description's `& > p`, so these declarations
-  // win over that rule regardless of source order
-  & > .page-tutorials__card-eyebrow {
+  // Higher specificity than the description's `& > p`, so these declarations win over
+  // that rule regardless of source order
+  > .page-tutorials__card-eyebrow {
     @include eyebrow-label($fontsize: $font-size-2xs);
 
     color: $color-accent-primary;
@@ -45,13 +45,13 @@
     flex: none;
   }
 
-  & > h3 {
+  > h3 {
     color: $color-text-highlight;
     margin: 0 0 0.6rem;
     letter-spacing: $font-letterspacing-narrow;
   }
 
-  & > p {
+  > p {
     font-size: $font-size-sm;
     line-height: 1.65;
     color: $color-text-muted;

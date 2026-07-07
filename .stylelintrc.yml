@@ -1,0 +1,32 @@
+plugins:
+  - stylelint-scss
+
+rules:
+  # General
+  color-no-invalid-hex: true
+  unit-no-unknown: true
+  property-no-unknown: true
+  block-no-empty: true
+  no-duplicate-selectors: true
+  no-duplicate-at-import-rules: true
+
+  # SCSS
+  scss/at-rule-no-unknown: true
+  scss/comment-no-empty: true
+  scss/dollar-variable-no-missing-interpolation: true
+  scss/function-quote-no-quoted-strings-inside: true
+  scss/function-unquote-no-unquoted-strings-inside: true
+  scss/no-duplicate-dollar-variables:
+    - true
+    - ignoreInsideAtRules:
+        - if
+        - else
+        - each
+        - for
+        - while
+        - mixin
+  scss/no-global-function-names: true
+  scss/operator-no-newline-after: true
+  scss/operator-no-newline-before: true
+  scss/operator-no-unspaced: true
+  scss/selector-no-redundant-nesting-selector: true

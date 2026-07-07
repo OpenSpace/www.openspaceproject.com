@@ -25,7 +25,7 @@
   @extend %button-secondary;
 
   gap: 0.4rem;
-  font-size: $font-size-sm;
+  font-size: $font-size-md;
 }
 
 .page-download__summary {
@@ -49,6 +49,8 @@
   }
 
   > section {
+    @include pill-link;
+
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -58,18 +60,16 @@
     font-size: $font-size-sm;
     color: $color-text-highlight;
     margin: 0;
-    border-bottom: none;
   }
 
   p {
     font-size: $font-size-sm;
-    line-height: 1.7;
     color: $color-text-light;
-    margin: 0;
 
     a {
       color: $color-accent-primary;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
@@ -94,7 +94,6 @@
   dl {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: 1rem;
     margin: 0;
   }
 
@@ -104,19 +103,15 @@
   }
 
   dt {
-    grid-column: 1;
     font-family: $font-monospace;
     font-size: $font-size-sm;
     letter-spacing: $font-letterspacing-wide;
-    white-space: nowrap;
     color: $color-text-light;
   }
 
   dd {
-    grid-column: 2;
     margin: 0;
     font-size: $font-size-sm;
-    line-height: 1.4;
     text-align: right;
     color: $color-text-highlight;
   }
@@ -131,10 +126,6 @@
   padding: 1.75rem;
   border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
-
-  p {
-    margin: 0;
-  }
 
   &.is-recommended {
     border-color: $color-border-light;
@@ -196,15 +187,12 @@
 
   h3 {
     margin: 0;
-    border-bottom: none;
     color: $color-text-highlight;
   }
 }
 
 .page-download__platform-desc {
-  flex: 1;
   font-size: $font-size-sm;
-  line-height: 1.6;
   color: $color-text-muted;
 }
 
@@ -218,7 +206,6 @@
   // pill-link is inline-flex; these links are stacked full-width rows, and margin auto
   // centering needs a block-level box
   display: flex;
-  width: 100%;
   max-width: 280px;
   margin: 0 auto;
   text-align: center;
@@ -239,4 +226,8 @@
   font-weight: $font-weight-demibold;
   color: $color-accent-primary;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

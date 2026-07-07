@@ -1,7 +1,7 @@
 ---
-title: ""
-pagetitle: "Page not found — OpenSpace"
-description-meta: "The page you requested could not be found."
+pagetitle: Page not found — OpenSpace
+description-meta: >
+  The page you requested could not be found.
 format:
   html:
     page-layout: full

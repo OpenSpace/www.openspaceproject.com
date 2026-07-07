@@ -5,10 +5,7 @@
     <div class="page-team__card-inner">
 
       <div class="page-team__card-front">
-        <img
-          src="/assets/team/<%- item.type %>/<%- item.image %>"
-          alt=""
-        >
+        <img src="/assets/team/<%- item.type %>/<%- item.image %>">
         <div class="page-team__card-info" aria-hidden="true">
           <h3><%- item.name %></h3>
           <% if (item.title) { %>

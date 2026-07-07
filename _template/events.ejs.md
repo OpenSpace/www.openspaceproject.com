@@ -1,10 +1,10 @@
 ```{=html}
-<section class="content-section" data-ev-upcoming>
+<section class="content-section-narrow" data-ev-upcoming>
   <h2>Upcoming</h2>
   <p class="page-events__desc" data-ev-empty hidden>No upcoming events are scheduled right now — check back soon.</p>
 </section>
 
-<section class="content-section" data-ev-past hidden>
+<section class="content-section-narrow" data-ev-past hidden>
   <h2>Past events</h2>
 </section>
 

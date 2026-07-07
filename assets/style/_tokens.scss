@@ -39,11 +39,28 @@ $os-font-monospace: 'IBM Plex Mono', monospace;
 //
 // Colors
 //
+// Accent colors
 $color-accent-primary: $os-prime-blue;
 $color-accent-secondary: $os-flare-yellow;
 $color-accent-tertiary: $os-airglow-yellow;
 
+// Derived variants for accent colors
+$color-accent-primary--light: color.adjust($color-accent-primary, $lightness: 5%);
+$color-accent-primary--dark: color.adjust($color-accent-primary, $lightness: -5%);
+$color-accent-secondary--light: color.adjust($color-accent-secondary, $lightness: 5%);
+$color-accent-secondary--dark: color.adjust($color-accent-secondary, $lightness: -5%);
+$color-accent-tertiary--light: color.adjust($color-accent-tertiary, $lightness: 5%);
+$color-accent-tertiary--dark: color.adjust($color-accent-tertiary, $lightness: -5%);
+
+// Attention colors
+$color-attention-alert: $os-betelgeuse-red;
+$color-attention-warning: $os-reentry-orange;
+$color-attention-okay: $os-aurora-green;
+$color-attention-unknown: rgba($os-satellite-gray, 0.6);
+
+// Background and surface colors
 $color-background: $os-deep-space;
+$color-footer-bg: darken($color-background, 10%);
 $color-surface-primary: $os-event-horizon;
 $color-surface-secondary: $os-accretion-disk;
 $color-surface-primary-light: rgba($color-accent-primary, 0.25);
@@ -51,26 +68,35 @@ $color-surface-primary-faint: rgba($color-accent-primary, 0.1);
 $color-surface-secondary-light: rgba($color-accent-secondary, 0.25);
 $color-surface-secondary-faint: rgba($color-accent-secondary, 0.1);
 
-$color-text: $os-satellite-gray;
-$color-text-highlight: color.adjust($color-text, $lightness: +20%);
-$color-text-muted: rgba($color-text, 0.85);
-$color-text-light: rgba($color-text, 0.6);
-$color-text-faint: rgba($color-text, 0.35);
-$color-link: $os-flare-yellow;
+// Overlay colors
 $color-overlay-dark: rgba(black, 0.75);
 $color-overlay-dark-faint: rgba(black, 0.3);
 $color-overlay-light: rgba(white, 0.4);
 $color-overlay-light-faint: rgba(white, 0.1);
+
+// Text colors
+$color-text: $os-satellite-gray;
+$color-text-highlight: color.adjust($color-text, $lightness: 20%);
+$color-text-muted: rgba($color-text, 0.85);
+$color-text-light: rgba($color-text, 0.6);
+$color-text-faint: rgba($color-text, 0.35);
+$color-link: $os-flare-yellow;
+
+// Button colors
 $color-button-primary-bg: $color-accent-secondary;
 $color-button-primary-text: $os-deep-space;
 $color-button-secondary-bg: transparent;
 $color-button-secondary-text: $color-text;
-$color-crumbs-text: rgba($color-text, 0.65);
+
+// Breadcrumbs
+$color-crumbs-text: $color-text-light;
 $color-crumbs-highlight: $color-accent-primary;
-$color-footer-bg: darken($color-background, 10%);
+
+// Input fields
 $color-input-bg: rgba(white, 0.04);
 $color-input-bg-focus: rgba(white, 0.07);
 
+// Border colors
 $color-border-muted: rgba($color-accent-primary, 0.5);
 $color-border-light: rgba($color-accent-primary, 0.25);
 $color-border-faint: rgba($color-accent-primary, 0.1);
@@ -81,18 +107,15 @@ $color-border-bw-muted: rgba($os-satellite-gray, 0.5);
 $color-border-bw-light: rgba($os-satellite-gray, 0.25);
 $color-border-bw-faint: rgba($os-satellite-gray, 0.1);
 
-$color-attention-alert: $os-betelgeuse-red;
-$color-attention-warning: $os-reentry-orange;
-$color-attention-okay: $os-aurora-green;
-$color-attention-unknown: rgba($os-satellite-gray, 0.6);
-
 //
 // Fonts
 //
+// Families
 $font-headings: $os-font-headings;
 $font-body: $os-font-body;
 $font-monospace: $os-font-monospace;
 
+// Sizes
 $font-size-2xs: 0.65rem;
 $font-size-xs: 0.75rem;
 $font-size-sm: 0.875rem;
@@ -101,9 +124,11 @@ $font-size-lg: 1.25rem;
 $font-size-xl: 1.5rem;
 $font-size-2xl: 2rem;
 
+// Weights
 $font-weight-demibold: 550;
 $font-weight-bold: 700;
 
+// Letterspacing
 $font-letterspacing-narrow: -0.01em;
 $font-letterspacing-wide: 0.05em;
 $font-letterspacing-extrawide: 0.08em;
@@ -111,8 +136,8 @@ $font-letterspacing-extrawide: 0.08em;
 //
 // Layout
 //
-$layout-section-padding-wide: 2.5rem 8vw;
-$layout-section-padding-narrow: 2.5rem 20vw;
+$layout-section-padding-wide: 2rem 8vw;
+$layout-section-padding-narrow: 2rem 20vw;
 
 $layout-container-max-wide: 1200px;
 $layout-container-max-narrow: 850px;
@@ -123,6 +148,7 @@ $layout-button-padding: 0.75rem 1.75rem;
 
 $layout-hover-lift-amount: -2px;
 
+// Z layering
 $layout-z-dotnav: 0;
 $layout-z-modal: 1200;
 

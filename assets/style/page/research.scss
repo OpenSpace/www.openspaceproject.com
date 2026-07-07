@@ -20,7 +20,6 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 .page-research__title {
   font-weight: $font-weight-demibold;
   color: $color-text-highlight;
-  margin-bottom: 0.3rem;
 
   a {
     color: $color-text-highlight;
@@ -35,7 +34,6 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 .page-research__author {
   font-size: $font-size-sm;
   color: $color-text-light;
-  line-height: 1.5;
   margin-bottom: 0.35rem;
 }
 
@@ -43,24 +41,16 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
   @include eyebrow-label($fontsize: $font-size-2xs);
 
   color: $color-text-light;
-  padding: 0.5rem 0 0.2rem;
-  border-top: 1px solid $color-border-faint;
-
-  &:first-child {
-    border-top: none;
-    padding-top: 0;
-  }
 }
 
 .page-research__paper-row {
   border-radius: $layout-border-radius;
   transition: background $animation-duration-fast ease;
+  padding: 0.5rem 1.1rem;
 
   &:hover {
     background: $color-surface-primary-faint;
   }
-
-  padding: 0.5rem 1.1rem;
 }
 
 .page-research__paper-venue-badge {
@@ -112,7 +102,7 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 .page-research__thesis-row.is-hidden,
-.page-research__thesis-year-label.is-hidden {
+.page-research__year-label.is-hidden {
   display: none;
 }
 
@@ -124,16 +114,15 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 .page-research__thesis-row {
   border-radius: $layout-border-radius;
   transition: background $animation-duration-fast ease;
-
-  &:hover {
-    background: $color-surface-primary-faint;
-  }
-
   display: grid;
   grid-template-columns: 168px 1fr;
   gap: 1.25rem;
   padding: 1.25rem 1.1rem;
   align-items: center;
+
+  &:hover {
+    background: $color-surface-primary-faint;
+  }
 
   @media (max-width: $bp-sm) {
     grid-template-columns: 1fr;
@@ -143,12 +132,6 @@ $page-research-thesis-border: rgba($color-accent-primary, 0.15);
 }
 
 .page-research__thesis-photos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  justify-content: flex-start;
-  align-items: center;
-
   img {
     width: 72px;
     height: 72px;

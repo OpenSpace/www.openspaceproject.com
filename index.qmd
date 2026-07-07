@@ -1,7 +1,8 @@
 ---
-title: ""
-pagetitle: "OpenSpace — Visualize the known universe"
-description-meta: "OpenSpace is open-source interactive astrovisualization software used by planetariums, museums, classrooms, and researchers worldwide."
+pagetitle: OpenSpace — Visualize the known universe
+description-meta: >
+  OpenSpace is open-source interactive astrovisualization software used by planetariums,
+  museums, classrooms, and researchers worldwide.
 format:
   html:
     page-layout: full
@@ -13,18 +14,18 @@ format:
           <script src="/assets/js/hero-slot.js"></script>
 
 cta:
-  heading: "Start exploring"
+  heading: Start exploring
   actions:
-    - text: "Download OpenSpace"
-      link: "/install/download.qmd"
-      style: "primary"
-    - text: "View on GitHub"
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: View on GitHub
       link: "https://github.com/OpenSpace/OpenSpace"
-      style: "ghost"
+      style: ghost
       external: true
-    - text: "Join Slack"
+    - text: Join Slack
       link: "https://github.com/OpenSpace/OpenSpace"
-      style: "ghost"
+      style: ghost
       external: true
   lede: Free. Open source. Cross-platform.
 
@@ -84,7 +85,7 @@ listing:
   <p class="page-index__trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
 
-<section class="page-index__venues-section">
+<section class="content-section">
   <h2>Built for every venue</h2>
   <p>From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
   <div class="page-index__venue-grid">
@@ -133,7 +134,7 @@ listing:
 
 
 
-<section class="page-index__funders-section">
+<section class="content-section">
   <h2>Funded by</h2>
   <p class="text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
 

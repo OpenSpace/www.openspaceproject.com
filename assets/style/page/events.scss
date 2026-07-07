@@ -4,9 +4,7 @@
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 3rem;
-  padding: 2.5rem 0;
-  align-items: start;
-  position: relative;
+  padding: 1rem 0;
 
   & + & {
     border-top: 1px solid $color-border-faint;
@@ -17,17 +15,7 @@
   }
 
   &--past {
-    .page-events__img {
-      opacity: 0.55;
-    }
-
-    .page-events__title {
-      color: $color-text-muted;
-    }
-
-    .page-events__desc {
-      color: $color-text-light;
-    }
+    opacity: 0.6;
   }
 
   @media (max-width: $bp-md) {
@@ -73,7 +61,7 @@
 }
 
 .page-events__tag {
-  @include eyebrow-label($fontsize: $font-size-2xs);
+  @include eyebrow-label($fontsize: $font-size-xs);
 
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -88,9 +76,8 @@
 }
 
 .page-events__desc {
-  line-height: 1.75;
   color: $color-text-muted;
-  margin: 0 0 1.25rem;
+  margin: 1.25rem 0;
 
   // Past items without surviving CTAs have their actions row removed by the
   // template JS, leaving the description last in the body
@@ -103,6 +90,4 @@
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
 }

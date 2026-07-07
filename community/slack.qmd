@@ -44,7 +44,7 @@ Whether you run a planetarium dome, teach with OpenSpace, contribute code, or ar
 Ask questions, report issues, share screenshots of your work, stay current on new releases, and get direct support from the core team and experienced community members worldwide.
 :::
 
-::: {.content-section}
+::: {.content-section-narrow}
 
 ## Find your channel
 The workspace is organized into focused channels. Here are some of the best places to start.

@@ -19,7 +19,7 @@ hero:
   lede: Windows binaries and release notes for older OpenSpace releases.
 ---
 
-::: {.content-section}
+::: {.content-section-narrow}
 
 | Version | Released | Downloads | Release notes |
 |:--------|:---------|:----------|:--------------|

@@ -4,15 +4,12 @@
   background: $color-surface-primary;
   border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
   transition:
     transform $animation-duration-fast ease,
     border-color $animation-duration-base ease;
 
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY($layout-hover-lift-amount);
   }
 
   &:hover, &:focus-within {
@@ -22,40 +19,27 @@
   iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
-    border: none;
-    display: block;
     background: $color-background;
   }
 }
 
 .page-tutorials__card-body {
-  padding: 1.25rem 1.5rem 1.5rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  padding: 1.25rem;
+}
 
-  // Higher specificity than the description's `& > p`, so these declarations win over
-  // that rule regardless of source order
-  > .page-tutorials__card-eyebrow {
-    @include eyebrow-label($fontsize: $font-size-2xs);
+.page-tutorials__card-eyebrow {
+  @include eyebrow-label($fontsize: $font-size-2xs);
+  color: $color-accent-primary;
+  margin: 0 0 0.4rem;
+}
 
-    color: $color-accent-primary;
-    margin: 0 0 0.4rem;
-    line-height: 1.4;
-    flex: none;
-  }
+.page-tutorials__card-title {
+  color: $color-text-highlight;
+  margin: 0 0 0.6rem;
+  letter-spacing: $font-letterspacing-narrow;
+}
 
-  > h3 {
-    color: $color-text-highlight;
-    margin: 0 0 0.6rem;
-    letter-spacing: $font-letterspacing-narrow;
-  }
-
-  > p {
-    font-size: $font-size-sm;
-    line-height: 1.65;
-    color: $color-text-muted;
-    margin: 0;
-    flex: 1;
-  }
+.page-tutorials__card-description {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
 }

@@ -15,6 +15,7 @@ hero:
   crumbs:
     - Features
     - Mission Visualizations
+  image: /assets/images/features/rosetta.webp
   lede: >
     OpenSpace recreates real missions using actual trajectory data, instrument footprints,
     and observation timelines from NASA and ESA archives.

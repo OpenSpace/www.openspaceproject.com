@@ -25,7 +25,7 @@ hero:
 
   <div class="page-contact__form-wrap">
     <h2 class="page-contact__title">Send a message</h2>
-    <p class="page-contact__desc">This form opens your email client with a pre-addressed message to <a href="support@openspaceproject.com">support@openspaceproject.com</a>. Use that email address or the Slack to get in touch!</p>
+    <p class="page-contact__desc">This form opens your email client with a pre-addressed message to <a href="mailto:support@openspaceproject.com">support@openspaceproject.com</a>. Use that email address or the Slack to get in touch!</p>
     <form id="contact-form" novalidate>
       <div class="page-contact__form-field">
         <label for="cf-name">Name</label>

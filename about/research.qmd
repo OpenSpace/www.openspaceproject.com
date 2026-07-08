@@ -56,8 +56,6 @@ Pushing the boundaries of visualization in the public arena has been in the DNA 
 
 If you use OpenSpace in your academic work, please cite the appropriate paper:
 
----
-
 ```bibtex
 # OpenSpace System paper
 @article{vis19-bock-openspace-system,

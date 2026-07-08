@@ -24,7 +24,7 @@ cta:
       style: ghost
       external: true
     - text: Join Slack
-      link: "https://github.com/OpenSpace/OpenSpace"
+      link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
       style: ghost
       external: true
   lede: Free. Open source. Cross-platform.

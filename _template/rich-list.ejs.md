@@ -7,7 +7,7 @@
     const num = String(number).padStart(2, "0");
 %>
   <div class="rich-list__item">
-    <img src="<%- item.image %>" alt="<%- item.alt || '' %>" loading="lazy">
+    <img class="rich-list__image"src="<%- item.image %>" alt="<%- item.alt || '' %>" loading="lazy">
     <div>
       <div class="rich-list__meta">
         <span class="rich-list__number"><%- num %></span>
@@ -15,11 +15,11 @@
         <span class="rich-list__tag"><%- item.tag %></span>
         <% } %>
       </div>
-      <h3><%- item.title %></h3>
+      <h3 class="rich-list__title"><%- item.title %></h3>
       <% if (item.tagline) { %>
       <p class="rich-list__tagline"><%- item.tagline %></p>
       <% } %>
-      <p class="rich-list__description"><%- item.description %></p>
+      <p><%- item.description %></p>
     </div>
   </div>
 <%

@@ -10,11 +10,10 @@
 //
 
 .navbar {
-  padding: 0.875rem 1rem;
+  padding: 0.5rem 1rem;
 
   ul {
     list-style: none;
-    padding: 0;
     margin: 0;
   }
 
@@ -23,7 +22,7 @@
     @include backdrop-blur;
 
     min-width: 320px;
-    padding: 0.5rem;
+    // padding: 0.5rem;
     background: $color-overlay-dark;
     margin-top: 0.75rem;
     border-radius: $layout-border-radius;
@@ -40,8 +39,7 @@
     white-space: normal;
     transition: background $animation-duration-fast ease;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       background: $color-border-faint;
 
       .nav-rich-icon {
@@ -62,7 +60,6 @@
     color: $color-text-highlight;
     border: 1px solid $color-accent-secondary;
     padding: 0.45rem 1.1rem;
-    font-weight: $font-weight-demibold;
 
     &:hover {
       background: $color-accent-secondary;
@@ -83,9 +80,6 @@
     .navbar-container {
       display: flex;
       align-items: center;
-
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
 
     // Brand container: take only as much width as needed, vertically centered
@@ -224,10 +218,6 @@
 }
 
 // Rich item layout
-.nav-rich {
-  display: block;
-}
-
 .nav-rich-head {
   display: flex;
   align-items: center;
@@ -243,7 +233,6 @@
   height: 32px;
   border-radius: $layout-border-radius-small;
   background: $color-surface-primary-light;
-  flex-shrink: 0;
   transition: background $animation-duration-fast ease;
 
   iconify-icon {
@@ -259,15 +248,11 @@
 }
 
 .nav-ext-icon {
-  font-size: $font-size-xs;
   color: $color-text-light;
   margin-left: auto;
-  flex-shrink: 0;
 }
 
 .nav-rich-desc {
-  display: block;
   font-size: $font-size-sm;
   color: $color-text;
-  line-height: 1.45;
 }

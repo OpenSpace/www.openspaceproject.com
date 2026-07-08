@@ -12,7 +12,6 @@
 
 .section__cta {
   padding: $layout-section-padding-wide;
-  background: $color-background;
   position: relative;
   overflow: hidden;
 
@@ -50,15 +49,15 @@
   max-width: $layout-cta-max-width;
   margin: 0 auto;
 
-  h2 {
-    @include section-title;
-
-    margin: 0 0 0.5rem;
-  }
-
   @media (max-width: $bp-md) {
     padding: 2.5rem 1.5rem;
   }
+}
+
+.cta__title {
+  @include section-title;
+
+  margin: 0 0 0.5rem;
 }
 
 .cta__actions {

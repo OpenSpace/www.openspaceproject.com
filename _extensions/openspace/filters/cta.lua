@@ -84,7 +84,7 @@ local function render_cta(cta_meta)
   return [[
 <section class="section__cta">
   <div class="cta__card">
-    <h2>]] .. heading .. [[</h2>
+    <h2 class="cta__title">]] .. heading .. [[</h2>
     <p>]] .. lede .. [[</p>]] .. actions_html .. [[
   </div>
 </section>]]

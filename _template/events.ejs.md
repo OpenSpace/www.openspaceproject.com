@@ -30,6 +30,39 @@ for (const item of items) {
   const descPast = item.description_past
     ? String(item.description_past).replace(/"/g, "&quot;").trim()
     : "";
+  const calDescription = String(item.description).trim();
+
+  // The Zoom (or other meeting) link doubles as the calendar event's location
+  const zoomCta = (item.cta || []).find((c) => /zoom/i.test(c.text || ""));
+  const calLocation = zoomCta ? zoomCta.link : "";
+
+  const googleCalendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    "&text=" + encodeURIComponent(item.title) +
+    "&dates=" + gcalStart + "/" + gcalEnd +
+    "&details=" + encodeURIComponent(calDescription) +
+    (calLocation ? "&location=" + encodeURIComponent(calLocation) : "");
+  const icsEscape = (s) => String(s)
+    .replace(/\\/g, "\\\\")
+    .replace(/;/g, "\\;")
+    .replace(/,/g, "\\,")
+    .replace(/\r?\n/g, "\\n");
+  const icsContent = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//OpenSpace//Events//EN",
+    "BEGIN:VEVENT",
+    "UID:" + gcalStart + "-" + Math.random().toString(36).slice(2) + "@openspaceproject.com",
+    "DTSTAMP:" + gcalStart,
+    "DTSTART:" + gcalStart,
+    "DTEND:" + gcalEnd,
+    "SUMMARY:" + icsEscape(item.title),
+    "DESCRIPTION:" + icsEscape(calDescription),
+  ].concat(calLocation ? ["LOCATION:" + icsEscape(calLocation)] : []).concat([
+    "END:VEVENT",
+    "END:VCALENDAR"
+  ]).join("\r\n");
+  const icsHref = "data:text/calendar;charset=utf-8," + encodeURIComponent(icsContent);
+  const icsFilename = String(item.title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") + ".ics";
 %>
   <div class="page-events__item" data-ev-item data-date="<%- iso %>"<% if (descPast) { %> data-desc-past="<%- descPast %>"<% } %>>
     <img class="page-events__img" src="<%- item.image %>" alt="<%- item.alt %>">
@@ -55,7 +88,17 @@ for (const item of items) {
         <%
           if (item.generate_calendar) {
         %>
-            <a class="button__primary external" data-ev-calendar href="http://www.google.com/calendar/event?action=TEMPLATE&text=<%- encodeURIComponent(item.title) %>&dates=<%- gcalStart %>/<%- gcalEnd %>" target="_blank" rel="noopener">Add to Calendar</a>
+            <div class="dropdown page-events__calendar" data-ev-calendar>
+              <button type="button" class="button__primary page-events__calendar-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Add to Calendar
+                <iconify-icon icon="lucide:chevron-down" aria-hidden="true"></iconify-icon>
+              </button>
+              <ul class="dropdown-menu page-events__calendar-menu">
+                <li><a class="dropdown-item" href="<%- googleCalendarUrl %>" target="_blank" rel="noopener">Google Calendar</a></li>
+                <li><a class="dropdown-item" href="<%- icsHref %>" download="<%- icsFilename %>">Apple Calendar</a></li>
+                <li><a class="dropdown-item" href="<%- icsHref %>" download="<%- icsFilename %>">Outlook</a></li>
+              </ul>
+            </div>
         <%
           }
         %>

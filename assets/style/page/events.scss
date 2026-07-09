@@ -91,3 +91,46 @@
   gap: 0.75rem;
   flex-wrap: wrap;
 }
+
+.page-events__calendar {
+  position: relative;
+}
+
+.page-events__calendar-toggle {
+  gap: 0.4rem;
+
+  iconify-icon {
+    font-size: 0.85em;
+    transition: transform $animation-duration-fast ease;
+  }
+
+  &[aria-expanded="true"] iconify-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.page-events__calendar-menu {
+  @include backdrop-blur;
+
+  min-width: 200px;
+  padding: 0.35rem;
+  background: $color-overlay-dark;
+  border-radius: $layout-border-radius;
+  border: 1px solid $color-border-light;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.2),
+    0 16px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px $color-border-faint inset;
+
+  .dropdown-item {
+    padding: 0.5rem 0.75rem;
+    border-radius: $layout-border-radius-small;
+    color: $color-text-highlight;
+    transition: background $animation-duration-fast ease;
+
+    &:hover, &:focus {
+      background: $color-overlay-light-faint;
+      color: $color-text-highlight;
+    }
+  }
+}

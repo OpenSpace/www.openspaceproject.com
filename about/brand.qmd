@@ -1,5 +1,5 @@
 ---
-pagetitle: "Brand & Attribution — OpenSpace"
+pagetitle: "Branding & Licensing — OpenSpace"
 description-meta: >
   Guidelines for crediting OpenSpace in your work, plus logos and brand assets available
   for download.
@@ -11,10 +11,10 @@ format:
     theme: ../assets/style/page/brand.scss
 
 hero:
-  title: "Brand & Attribution"
+  title: "Branding & Licensing"
   crumbs:
     - About
-    - "Brand & Attribution"
+    - "Branding & Licensing"
   lede: >
     Guidelines for crediting OpenSpace in publications, presentations, and media, plus
     logos available for download.
@@ -69,19 +69,9 @@ The following logo files are available for use in accordance with the guidelines
 ![](/assets/brand/horizontal_logo.webp){fig-alt="OpenSpace horizontal logo, white"}
 
 ::::: {.page-brand__logo-meta}
-### Horizontal logo
+### Horizontal logo (primary)
 For dark backgrounds
 [Download](/assets/brand/horizontal_logo.webp){download=""}
-:::::
-::::
-
-:::: {.page-brand__logo-card .page-brand__logo-card--dark}
-![](/assets/brand/logo.webp){fig-alt="OpenSpace mark, white"}
-
-::::: {.page-brand__logo-meta}
-### Mark
-For dark backgrounds
-[Download](/assets/brand/logo.webp){download=""}
 :::::
 ::::
 
@@ -89,9 +79,29 @@ For dark backgrounds
 ![](/assets/brand/openspace_black.webp){fig-alt="OpenSpace horizontal logo, black"}
 
 ::::: {.page-brand__logo-meta}
-### Horizontal logo
+### Horizontal logo (primary)
 For light backgrounds
 [Download](/assets/brand/openspace_black.webp){download=""}
+:::::
+::::
+
+:::: {.page-brand__logo-card .page-brand__logo-card--dark}
+![](/assets/brand/openspace-square-white.webp){fig-alt="OpenSpace square logo, white"}
+
+::::: {.page-brand__logo-meta}
+### Square logo
+For dark backgrounds
+[Download](/assets/brand/openspace-square-white.webp){download=""}
+:::::
+::::
+
+:::: {.page-brand__logo-card .page-brand__logo-card--light}
+![](/assets/brand/openspace-square-black.webp){fig-alt="OpenSpace square logo, black"}
+
+::::: {.page-brand__logo-meta}
+### Square logo
+For light backgrounds
+[Download](/assets/brand/openspace-square-black.webp){download=""}
 :::::
 ::::
 

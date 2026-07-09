@@ -1,7 +1,7 @@
 ---
 pagetitle: Mission Visualizations — OpenSpace
 description-meta: >
-  OpenSpace recreates real spacecraft missions using actual trajectory data from NASA and
+  OpenSpace recreates spacecraft missions using actual trajectory data from NASA and
   ESA archives. Fly alongside New Horizons, watch JWST unfold, ride with Rosetta to a
   comet.
 format:
@@ -17,7 +17,7 @@ hero:
     - Mission Visualizations
   image: /assets/images/features/rosetta.webp
   lede: >
-    OpenSpace recreates real missions using actual trajectory data, instrument footprints,
+    OpenSpace recreates space missions using actual trajectory data, instrument footprints,
     and observation timelines from NASA and ESA archives.
 
 cta:
@@ -48,13 +48,13 @@ listing:
 ::: {.card-grid}
 
 ::: {.feature-grid__card}
-### Real trajectory data
+### Accurate trajectory data
 SPICE kernels from NASA and ESA place every spacecraft at its exact position for any given date and time. Every flyby happens at the moment it really did.
 :::
 
 ::: {.feature-grid__card}
 ### Instrument footprints
-Camera fields of view, observation targets, and acquired images appear at the moment and position they were captured, with actual pointing direction.
+Camera fields of view, observation targets, and acquired images appear at the moment and from the position they were captured, with actual pointing direction.
 :::
 
 ::: {.feature-grid__card}

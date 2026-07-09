@@ -16,7 +16,7 @@ hero:
     - Partners
   lede: >
     A collaboration between universities, science museums, and planetariums in the US and
-    Sweden, united by a shared mission to make space exploration accessible to everyone.
+    Europe, united by a shared mission to make space exploration accessible to everyone.
 
 listing:
   - id: stewards

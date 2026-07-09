@@ -17,7 +17,7 @@
   tagline: Lunar return · 2022 – present
   description: >
     Follow the Artemis program's return to the Moon, from Orion's trans-lunar
-    trajectory and lunar orbit insertion all the way to the surface. Real trajectory
+    trajectory and lunar orbit insertion all the way to the surface. Trajectory
     data places the spacecraft at its exact position for every phase of the mission.
 
 - image: /assets/images/features/jwst_pillarsofcreation.webp
@@ -26,7 +26,7 @@
   title: James Webb Space Telescope
   tagline: L2 orbit · 2022 – present
   description: >
-    See JWST's actual orbit at the Sun-Earth L2 point, 1.5 million km from home, and
+    See JWST's orbit at the Sun-Earth L2 point, 1.5 million km from home, and
     explore the deep fields it has surveyed since launch.
 
 - image: /assets/images/features/apollo11.webp
@@ -56,5 +56,5 @@
   tagline: Jezero Crater · February 18, 2021
   description: >
     The Mars profile covers both InSight and the Perseverance rover. Follow
-    Perseverance's traverse across Jezero Crater using real trajectory data, then pull
+    Perseverance's traverse across Jezero Crater usinng NASA's trajectory data, then pull
     back to see the full landing sequence from orbit.

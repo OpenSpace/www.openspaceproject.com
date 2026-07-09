@@ -87,7 +87,7 @@ listing:
 
 <section class="content-section">
   <h2>Built for every venue</h2>
-  <p>From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
+  <p>From a portable screen to a 30-meter planetarium, OpenSpace adapts to your display.</p>
   <div class="page-index__venue-grid">
 
     <a href="features/display-support.qmd#dome-theaters">
@@ -112,7 +112,7 @@ listing:
       <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit">
       <div>
         <h3>Museum exhibits</h3>
-        <p>Power immersive permanent and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
+        <p>Power immersive shows and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
         <span>Learn more →</span>
       </div>
     </a>
@@ -123,7 +123,7 @@ listing:
 
 <section class="content-section">
   <h2>See what's possible</h2>
-  <p>Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
+  <p>Scientifically accurate visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
 ```
 
 ::: {#carousel}

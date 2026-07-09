@@ -35,7 +35,7 @@ cta:
 
 ::: {.content-section}
 
-The User Meetings bring together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
+The User Meetings bring together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training.
 
 :::
 
@@ -67,7 +67,7 @@ The User Meetings bring together planetarium operators, museum staff, educators,
         <a href="2025/">2025 User Meeting</a>
       </h3>
       <p class="page-user-meetings__location">July 31 – August 1 · American Museum of Natural History, New York</p>
-      <p class="page-user-meetings__desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
+      <p class="page-user-meetings__desc">The first in-person user meeting, held at AMNH. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
       <a href="2025/" class="page-user-meetings__link">See recap &rarr;</a>
     </div>
   </div>

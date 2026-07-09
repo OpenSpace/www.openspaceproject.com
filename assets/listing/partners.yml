@@ -27,7 +27,7 @@
     visualization and has a distinguished record of NASA partnerships that enhance
     science education for global audiences.
 
-- name: NYU Tandon School of Engineering
+- name: New York University Tandon School of Engineering
   type: university
   logo: /assets/images/institutions/nyu_tandon--white.webp
   link: https://engineering.nyu.edu/
@@ -35,7 +35,7 @@
     The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of
     open-source tools and NASA-partnered research to the OpenSpace collaboration.
 
-- name: SCI Institute — University of Utah
+- name: Scientific Computing and Imaging Institute — University of Utah
   type: university
   logo: /assets/images/institutions/sci--white.webp
   link: https://www.sci.utah.edu/

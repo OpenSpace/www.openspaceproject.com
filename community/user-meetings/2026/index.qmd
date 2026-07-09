@@ -44,7 +44,7 @@ This is a great opportunity to:
 
 ![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
 
-We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.
+We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University.
 
 Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.
 
@@ -125,7 +125,7 @@ Hotels in the city are around $100 per night. A few options near the venue:
 
 ## Register for free
 
-Registration is **free**. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.
+Registration is **free**. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices will be limited.
 
 Contact [Alexander Bock](mailto:alexander.bock@liu.se) or [Support](mailto:support@openspaceproject.com) with any questions about the meeting.
 

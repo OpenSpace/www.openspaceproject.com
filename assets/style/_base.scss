@@ -144,6 +144,16 @@ main:has(.page-index__hero) #title-block-header {
 
 #quarto-document-content {
   margin-top: 0;
+
+  p a {
+    color: $os-prime-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $os-prime-blue;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media (min-width: $bp-lg) {

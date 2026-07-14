@@ -36,6 +36,7 @@ main:has(.page-index__hero) .content-section {
 
     line-height: 1.1;
     margin: 0;
+    letter-spacing: $font-letterspacing-wide;
     text-transform: uppercase;
     text-align: center;
     z-index: 2;
@@ -183,16 +184,19 @@ main:has(.page-index__hero) .content-section {
 .page-index__trusted-more {
   text-align: center;
   margin: 2rem 0 0;
+}
 
-  a {
-    color: $color-text-muted;
-    text-decoration: none;
-    transition: color $animation-duration-base ease;
+// Specificity bumped to beat #quarto-document-content p a, which otherwise
+// forces this link blue at all times instead of grey-until-hover
+#quarto-document-content .page-index__trusted-more a {
+  color: $color-text-muted;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color $animation-duration-base ease;
 
-    &:hover {
-      color: $color-link;
-      text-decoration: underline;
-    }
+  &:hover {
+    color: $color-link;
+    text-decoration: underline;
   }
 }
 
@@ -365,7 +369,7 @@ main:has(.page-index__hero) .content-section {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    color: $color-accent-primary;
+    color: $color-accent-secondary;
     font-weight: $font-weight-demibold;
 
     svg {

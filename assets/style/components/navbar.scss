@@ -141,6 +141,14 @@
       transform: translateX(-50%);
     }
 
+    // Resources is the rightmost dropdown, too close to the viewport edge for a
+    // centered menu — right-align it to its trigger instead so it can't overflow
+    .navbar-nav .nav-item:has(#nav-menu-resources) .dropdown-menu {
+      left: auto;
+      right: 0;
+      transform: none;
+    }
+
     .nav-item.dropdown .dropdown-menu::before {
       content: "";
       position: absolute;

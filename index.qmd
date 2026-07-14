@@ -61,14 +61,14 @@ listing:
   </h1>
   <div class="page-index__hero-content">
     <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
-    <div>
-      <a href="install/download.qmd" class="button__primary">Download OpenSpace</a>
-      <a href="features/globe-browsing.qmd" class="button__secondary">Explore features</a>
-    </div>
+    <a href="#trusted" class="button__primary page-index__discover-more">
+      Discover More
+      <iconify-icon icon="lucide:chevron-right" aria-hidden="true"></iconify-icon>
+    </a>
   </div>
 </section>
 
-<section class="page-index__trusted-section">
+<section id="trusted" class="page-index__trusted-section">
   <p class="page-index__trusted-label">Built in collaboration with</p>
   <div class="page-index__logo-grid">
     <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium">

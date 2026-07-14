@@ -29,6 +29,7 @@ $os-reentry-orange: #e07c56;
 $os-aurora-green: #5cdd8b;
 $os-event-horizon: #0d1014;
 $os-accretion-disk: #11140e;
+$os-ion-blue: #a2e7fb;
 
 $os-font-headings: 'TeX Gyre Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
 $os-font-body: 'IBM Plex Sans', sans-serif;
@@ -67,6 +68,8 @@ $color-surface-primary-light: rgba($color-accent-primary, 0.25);
 $color-surface-primary-faint: rgba($color-accent-primary, 0.1);
 $color-surface-secondary-light: rgba($color-accent-secondary, 0.25);
 $color-surface-secondary-faint: rgba($color-accent-secondary, 0.1);
+$color-surface-primary-hover: rgba($color-accent-primary, 0.08);
+$color-surface-muted: rgba($os-satellite-gray, 0.25);
 
 // Overlay colors
 $color-overlay-dark: rgba(black, 0.75);
@@ -74,11 +77,20 @@ $color-overlay-dark-faint: rgba(black, 0.3);
 $color-overlay-light: rgba(white, 0.4);
 $color-overlay-light-faint: rgba(white, 0.1);
 
+// Glow/border tint for glass-panel elements (dropdowns, etc.)
+$color-border-glow: rgba($os-ion-blue, 0.12);
+$color-border-glow-faint: rgba($os-ion-blue, 0.04);
+
+// Drop shadow for floating glass-panel elements (dropdowns, etc.)
+$color-shadow-near: rgba(black, 0.2);
+$color-shadow-far: rgba(black, 0.45);
+
 // Text colors
 $color-text: $os-satellite-gray;
 $color-text-highlight: color.adjust($color-text, $lightness: 20%);
 $color-text-muted: rgba($color-text, 0.85);
 $color-text-light: rgba($color-text, 0.6);
+$color-text-dim: rgba($color-text, 0.5);
 $color-text-faint: rgba($color-text, 0.35);
 $color-link: $os-prime-blue;
 

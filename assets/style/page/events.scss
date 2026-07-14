@@ -118,8 +118,8 @@
   border-radius: $layout-border-radius;
   border: 1px solid $color-border-light;
   box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.2),
-    0 16px 40px rgba(0, 0, 0, 0.45),
+    0 4px 6px $color-shadow-near,
+    0 16px 40px $color-shadow-far,
     0 0 0 1px $color-border-faint inset;
 
   .dropdown-item {

@@ -26,11 +26,11 @@
     background: $color-overlay-dark;
     margin-top: 0.75rem;
     border-radius: $layout-border-radius;
-    border: 1px solid $color-border-light;
+    border: 1px solid $color-border-glow;
     box-shadow:
-      0 4px 6px rgba(0, 0, 0, 0.2),
-      0 16px 40px rgba(0, 0, 0, 0.45),
-      0 0 0 1px $color-border-faint inset;
+      0 4px 6px $color-shadow-near,
+      0 16px 40px $color-shadow-far,
+      0 0 0 1px $color-border-glow-faint inset;
   }
 
   .dropdown-item {
@@ -40,7 +40,7 @@
     transition: background $animation-duration-fast ease;
 
     &:hover, &:focus {
-      background: $color-border-faint;
+      background: $color-surface-primary-hover;
 
       .nav-rich-icon {
         background: $color-accent-secondary;
@@ -57,7 +57,7 @@
     @extend %button-base;
 
     background: $color-background;
-    color: $color-text-highlight;
+    color: white;
     border: 1px solid $color-accent-secondary;
     padding: 0.45rem 1.1rem;
 
@@ -129,6 +129,13 @@
       display: block;
     }
 
+    // Keep the toggle text highlighted while its dropdown is open, even after the
+    // pointer moves down into the panel and off the .nav-link itself
+    .nav-item.dropdown:hover .nav-link,
+    .nav-item.dropdown:focus-within .nav-link {
+      color: $color-text-highlight;
+    }
+
     .nav-item.dropdown .dropdown-menu {
       left: 50%;
       transform: translateX(-50%);
@@ -186,7 +193,7 @@
     .navbar-toggler {
       padding: 0.3rem 0.65rem;
       background: transparent;
-      border: 1px solid $color-border-light;
+      border: 1px solid $color-border-glow;
       border-radius: $layout-border-radius-small;
     }
 
@@ -195,8 +202,8 @@
       width: 1.5em;
       height: 1.5em;
       vertical-align: middle;
-      // Hamburger lines; stroke is $color-text (#b8c8ca), keep in sync with the token
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(184, 200, 202, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      // Hamburger lines; stroke matches $color-text-muted
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#{$color-text-muted}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -232,7 +239,7 @@
   width: 32px;
   height: 32px;
   border-radius: $layout-border-radius-small;
-  background: $color-surface-primary-light;
+  background: $color-surface-muted;
   transition: background $animation-duration-fast ease;
 
   iconify-icon {
@@ -244,11 +251,11 @@
 .nav-rich-title {
   font-weight: $font-weight-demibold;
   font-size: $font-size-md;
-  color: $color-text-highlight;
+  color: white;
 }
 
 .nav-ext-icon {
-  color: $color-text-light;
+  color: $color-text-dim;
   margin-left: auto;
 }
 

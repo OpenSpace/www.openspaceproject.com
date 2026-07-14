@@ -34,7 +34,7 @@
 }
 
 .newsletter__input {
-  border: 1px solid $color-border-light;
+  border: 1px solid $color-border-glow;
   border-radius: $layout-border-radius-small;
   color: $color-text-highlight;
   font-size: $font-size-sm;
@@ -61,7 +61,7 @@
   @extend %button-base;
 
   background: $color-background;
-  border: 1px solid $color-border-light;
+  border: 1px solid $color-border-glow;
   color: $color-text-light;
   font-size: $font-size-sm;
   padding: 0.45rem 1.1rem;

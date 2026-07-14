@@ -39,7 +39,6 @@
 
   &:hover {
     background: color.adjust($color-button-primary-bg, $lightness: 5%);
-    box-shadow: 0 0 24px rgba($color-button-primary-bg, 0.4);
   }
 }
 
@@ -56,7 +55,8 @@
 
   &:hover {
     background: $color-overlay-light-faint;
-    box-shadow: 0 0 24px $color-overlay-light;
+    color: white;
+    text-decoration: none;
   }
 }
 

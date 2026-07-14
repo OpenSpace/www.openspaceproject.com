@@ -7,6 +7,12 @@
 .content-carousel {
   position: relative;
   overflow: hidden;
+  // Breathing room for the hover scale/glow: a centered scale(1.015) grows a slide
+  // past its own box on every edge (including the first/last slide's outer edge),
+  // which this container's overflow:hidden would otherwise clip. The matching
+  // negative margin cancels the padding back out so resting alignment is unchanged.
+  padding: 6px 8px;
+  margin: -6px -8px;
 }
 
 .content-carousel__track {
@@ -25,6 +31,8 @@
   position: relative;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 0 0 1px transparent;
+  transition: box-shadow $animation-duration-base ease;
 
   @media (max-width: $bp-sm) {
     flex-basis: 90%;
@@ -66,6 +74,7 @@
 
   &:hover {
     transform: scale(1.015);
+    box-shadow: 0 0 0 1px $color-border-secondary-light;
   }
 
   &:focus-visible {

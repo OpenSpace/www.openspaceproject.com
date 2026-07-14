@@ -1,5 +1,24 @@
 /*-- scss:rules --*/
 
+main:has(.page-index__hero) .content-section {
+  border-top: none;
+  border-bottom: none;
+
+  h2 {
+    border-bottom: none;
+  }
+
+  &:nth-child(even of .content-section) {
+    background: linear-gradient(
+      to bottom,
+      $color-background 0,
+      $color-surface-primary clamp(80px, 12vh, 160px),
+      $color-surface-primary calc(100% - clamp(80px, 12vh, 160px)),
+      $color-background 100%
+    );
+  }
+}
+
 .page-index__hero {
   position: relative;
   height: 90vh;
@@ -187,41 +206,33 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 
-  > a {
-    background: $color-surface-primary;
-    border: 1px solid $color-border-faint;
-    border-radius: $layout-border-radius;
+  // Card hover border — distinct from browser focus-ring blue
+  .card {
+    position: relative;
     overflow: hidden;
+    background: $color-surface-primary;
+    border: 1px solid $color-border-glow;
+    border-radius: $layout-border-radius;
     box-shadow: 0 1px 3px $color-overlay-dark-faint;
     transition:
-      box-shadow $animation-duration-base ease,
+      transform $animation-duration-base ease,
       border-color $animation-duration-base ease,
-      transform $animation-duration-fast ease;
+      box-shadow $animation-duration-base ease;
     display: flex;
     flex-direction: column;
     text-decoration: none;
 
     &:hover {
-      box-shadow: 0 8px 24px $color-overlay-dark-faint;
-      border-color: $color-border-light;
+      transform: translateY(-6px);
+      border-color: $color-border-secondary-light;
+      box-shadow:
+        0 0 0 1px $color-border-glow-faint,
+        0 20px 40px -20px rgba(black, 0.5);
       text-decoration: none;
       color: inherit;
-      transform: translateY($layout-hover-lift-amount);
     }
 
-    > img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-
-      object-position: center;
-      border-radius: $layout-border-radius;
-      border: 1px solid $color-border-faint;
-      margin-bottom: 2.5rem;
-    }
-
-    > div {
+    > div:not(.card-media) {
       padding: 1.5rem 1.75rem 1.75rem;
       display: flex;
       flex-direction: column;
@@ -240,11 +251,136 @@
       p {
         color: $color-text-muted;
       }
+    }
+  }
 
-      span {
-        color: $color-accent-primary;
-        font-weight: $font-weight-demibold;
-      }
+  .card-media {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: $layout-border-radius;
+      border: 1px solid $color-border-faint;
+      transform: scale(1);
+      transition: transform $animation-duration-slow ease;
+    }
+  }
+
+  .card:hover .card-media img {
+    transform: scale(1.06);
+  }
+
+  // Motif icon overlay, top-right corner of media
+  .motif {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition:
+      opacity $animation-duration-base ease,
+      transform $animation-duration-base ease;
+    pointer-events: none;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      stroke: $color-accent-secondary;
+      fill: none;
+      stroke-width: 1.4;
+      filter: drop-shadow(0 0 6px rgba($color-accent-secondary, 0.35));
+    }
+
+    .dot {
+      fill: $color-accent-secondary;
+      stroke: none;
+    }
+  }
+
+  .card:hover .motif {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  // Planetarium domes — arc draws in
+  .motif.dome .arc {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+  }
+
+  .card:hover .motif.dome .arc {
+    animation: page-index-draw-arc 1.1s ease forwards;
+  }
+
+  // Classrooms — comet tail draws in, staggered
+  .motif.comet .tail {
+    stroke-dasharray: 13;
+    stroke-dashoffset: 13;
+  }
+
+  .card:hover .motif.comet .tail1 {
+    animation: page-index-draw-tail 0.5s ease forwards;
+  }
+
+  .card:hover .motif.comet .tail2 {
+    animation: page-index-draw-tail 0.5s ease 0.08s forwards;
+  }
+
+  .card:hover .motif.comet .tail3 {
+    animation: page-index-draw-tail 0.5s ease 0.16s forwards;
+  }
+
+  // Museum exhibits — Saturn ring rotates
+  .motif.planet .ring-ellipse {
+    transform-origin: 20px 18px;
+  }
+
+  .card:hover .motif.planet .ring-ellipse {
+    animation: page-index-tilt-spin 3.2s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .motif * {
+      animation: none !important;
+    }
+
+    .card:hover .card-media img {
+      transform: none;
+    }
+
+    .card:hover {
+      transform: none;
+    }
+  }
+
+  .learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: $color-accent-primary;
+    font-weight: $font-weight-demibold;
+
+    svg {
+      transition:
+        transform $animation-duration-base ease,
+        stroke $animation-duration-base ease;
+    }
+  }
+
+  .card:hover .learn-more {
+    color: $color-accent-secondary;
+
+    svg {
+      transform: translateX(5px);
+      stroke: $color-accent-secondary;
     }
   }
 
@@ -252,6 +388,24 @@
     grid-template-columns: 1fr;
     max-width: 480px;
     margin: 0 auto;
+  }
+}
+
+@keyframes page-index-draw-arc {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes page-index-draw-tail {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes page-index-tilt-spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 

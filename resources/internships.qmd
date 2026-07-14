@@ -9,7 +9,6 @@ format:
     page-layout: full
     toc: false
     anchor-sections: false
-    theme: ../assets/style/page/internships.scss
 
 hero:
   title: Internships
@@ -38,28 +37,21 @@ cta:
 
 ::: {.content-section}
 
+## What our internships look like
+
+![](/assets/images/misc/dmns-interns.webp){.float-end style="width: 40%; margin-left: 1.5rem; margin-bottom: 1rem;"}
+
 Institutions across the United States and Sweden — museums, planetariums, and universities — use OpenSpace's open-source codebase to build internship programs that give students real, hands-on experience with astrovisualization, scientific data, and software development. Interns are mentored day-to-day by staff at their host institution, with the OpenSpace team providing technical guidance and opportunities to share their work with the wider community.
 
-![Students using OpenSpace in a classroom setting](/assets/images/venue-cards/amnh_lwd_students.webp){.float-end style="width: 40%; margin-left: 1.5rem; margin-bottom: 1rem;"}
+## High school programs
 
-### High school internships
+High school programs typically focus on a first introduction to coding and visual storytelling: creating guided space tours using OpenSpace's scripting engine, learning coding fundamentals in Lua or Python, and developing content for planetarium shows or social media.
 
-High school programs typically focus on a first introduction to coding and visual storytelling, such as:
+## Undergraduate and graduate programs
 
-- Creating guided space tours using OpenSpace's scripting engine
-- Learning coding fundamentals in Lua or Python
-- Developing content for planetarium shows or social media
+College-level programs take on more technical, research-oriented work: writing or modifying code in C++ or Lua, integrating real scientific datasets such as exoplanet catalogs or mission data, building tutorials and documentation, and contributing assets back to the broader OpenSpace community.
 
-### Undergraduate and graduate internships
-
-College-level programs take on more technical, research-oriented work, such as:
-
-- Writing or modifying code in C++ or Lua
-- Integrating real scientific datasets, such as exoplanet catalogs or mission data
-- Building tutorials, documentation, or teaching materials
-- Contributing assets back to the broader OpenSpace community
-
-### Interested in hosting an internship program?
+## Interested in hosting an internship program?
 
 The OpenSpace team supports institutions that want to bring OpenSpace into their internship programs with sample project ideas, technical guidance, and connections to others already doing similar work. Reach out using the link below to get started.
 

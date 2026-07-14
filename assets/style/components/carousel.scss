@@ -7,8 +7,6 @@
 .content-carousel {
   position: relative;
   overflow: hidden;
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
 
 .content-carousel__track {
@@ -19,9 +17,9 @@
 }
 
 .content-carousel__slide {
-  flex: 0 0 60%;
-  max-width: 720px;
-  height: 420px;
+  flex: 0 0 48%;
+  max-width: 620px;
+  height: 400px;
   border-radius: $layout-border-radius;
   overflow: hidden;
   position: relative;
@@ -80,6 +78,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.5rem;
+  padding-left: 0.75rem;
 }
 
 .content-carousel__dots {

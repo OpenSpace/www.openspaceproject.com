@@ -215,7 +215,7 @@ main:has(.page-index__hero) .content-section {
     position: relative;
     overflow: hidden;
     background: $color-surface-primary;
-    border: 1px solid $color-border-glow;
+    border: 1.5px solid $color-border-glow;
     border-radius: $layout-border-radius;
     box-shadow: 0 1px 3px $color-overlay-dark-faint;
     transition:
@@ -280,82 +280,7 @@ main:has(.page-index__hero) .content-section {
     transform: scale(1.06);
   }
 
-  // Motif icon overlay, top-right corner of media
-  .motif {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    width: 40px;
-    height: 40px;
-    opacity: 0;
-    transform: translateY(-6px);
-    transition:
-      opacity $animation-duration-base ease,
-      transform $animation-duration-base ease;
-    pointer-events: none;
-
-    svg {
-      width: 100%;
-      height: 100%;
-      stroke: $color-accent-secondary;
-      fill: none;
-      stroke-width: 1.4;
-      filter: drop-shadow(0 0 6px rgba($color-accent-secondary, 0.35));
-    }
-
-    .dot {
-      fill: $color-accent-secondary;
-      stroke: none;
-    }
-  }
-
-  .card:hover .motif {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  // Planetarium domes — arc draws in
-  .motif.dome .arc {
-    stroke-dasharray: 60;
-    stroke-dashoffset: 60;
-  }
-
-  .card:hover .motif.dome .arc {
-    animation: page-index-draw-arc 1.1s ease forwards;
-  }
-
-  // Classrooms — comet tail draws in, staggered
-  .motif.comet .tail {
-    stroke-dasharray: 13;
-    stroke-dashoffset: 13;
-  }
-
-  .card:hover .motif.comet .tail1 {
-    animation: page-index-draw-tail 0.5s ease forwards;
-  }
-
-  .card:hover .motif.comet .tail2 {
-    animation: page-index-draw-tail 0.5s ease 0.08s forwards;
-  }
-
-  .card:hover .motif.comet .tail3 {
-    animation: page-index-draw-tail 0.5s ease 0.16s forwards;
-  }
-
-  // Museum exhibits — Saturn ring rotates
-  .motif.planet .ring-ellipse {
-    transform-origin: 20px 18px;
-  }
-
-  .card:hover .motif.planet .ring-ellipse {
-    animation: page-index-tilt-spin 3.2s linear infinite;
-  }
-
   @media (prefers-reduced-motion: reduce) {
-    .motif * {
-      animation: none !important;
-    }
-
     .card:hover .card-media img {
       transform: none;
     }
@@ -392,24 +317,6 @@ main:has(.page-index__hero) .content-section {
     grid-template-columns: 1fr;
     max-width: 480px;
     margin: 0 auto;
-  }
-}
-
-@keyframes page-index-draw-arc {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes page-index-draw-tail {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes page-index-tilt-spin {
-  to {
-    transform: rotate(360deg);
   }
 }
 

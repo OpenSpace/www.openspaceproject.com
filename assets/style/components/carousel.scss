@@ -31,8 +31,18 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 0 1px transparent;
-  transition: box-shadow $animation-duration-base ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: $color-accent-secondary;
+    opacity: 0;
+    transition: opacity $animation-duration-base ease;
+  }
 
   @media (max-width: $bp-sm) {
     flex-basis: 90%;
@@ -74,7 +84,10 @@
 
   &:hover {
     transform: scale(1.015);
-    box-shadow: 0 0 0 2px $color-border-secondary-light;
+
+    &::after {
+      opacity: 1;
+    }
   }
 
   &:focus-visible {

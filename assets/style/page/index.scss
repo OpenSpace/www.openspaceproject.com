@@ -210,7 +210,7 @@ main:has(.page-index__hero) .content-section {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 
-  // Card hover border — distinct from browser focus-ring blue
+  // Card hover — a flare-yellow bar fills in along the bottom edge
   .card {
     position: relative;
     overflow: hidden;
@@ -220,22 +220,34 @@ main:has(.page-index__hero) .content-section {
     box-shadow: 0 1px 3px $color-overlay-dark-faint;
     transition:
       transform $animation-duration-base ease,
-      border-color $animation-duration-base ease,
-      border-width $animation-duration-base ease,
       box-shadow $animation-duration-base ease;
     display: flex;
     flex-direction: column;
     text-decoration: none;
 
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 5px;
+      background: $color-accent-secondary;
+      opacity: 0;
+      transition: opacity $animation-duration-base ease;
+    }
+
     &:hover {
       transform: translateY(-6px);
-      border-width: 2px;
-      border-color: $color-border-secondary-light;
       box-shadow:
         0 0 0 1px $color-border-glow-faint,
         0 20px 40px -20px rgba(black, 0.5);
       text-decoration: none;
       color: inherit;
+
+      &::after {
+        opacity: 1;
+      }
     }
 
     > div:not(.card-media) {
@@ -296,7 +308,7 @@ main:has(.page-index__hero) .content-section {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    color: $color-accent-primary;
+    color: $color-accent-secondary;
     font-weight: $font-weight-demibold;
 
     svg {
@@ -307,11 +319,11 @@ main:has(.page-index__hero) .content-section {
   }
 
   .card:hover .learn-more {
-    color: $color-accent-primary;
+    color: $color-accent-secondary;
 
     svg {
       transform: translateX(5px);
-      stroke: $color-accent-primary;
+      stroke: $color-accent-secondary;
     }
   }
 

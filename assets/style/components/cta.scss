@@ -13,7 +13,6 @@
 .section__cta {
   padding: $layout-section-padding-wide;
   position: relative;
-  overflow: hidden;
 
   &::before {
     content: '';
@@ -21,15 +20,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
+    width: 320px;
     height: 300px;
-    border-radius: 50%;
-    background: linear-gradient($color-accent-secondary, $color-accent-primary);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background: linear-gradient(45deg, $color-accent-secondary, $color-accent-primary);
     opacity: 0.22;
-    filter: blur(60px);
+    filter: blur(45px);
     pointer-events: none;
     transition: opacity $animation-duration-slow ease;
-    animation: cta__glow-morph 4s ease-in-out infinite;
+    animation: cta__glow-morph 20s ease-in-out infinite;
 
     @media (prefers-reduced-motion: reduce) {
       animation: none;
@@ -69,19 +68,43 @@
 
 @keyframes cta__glow-morph {
   0%, 100% {
-    filter: blur(60px) hue-rotate(0deg);
-    transform: translate(-50%, -50%) scale(1);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    filter: blur(45px) hue-rotate(0deg);
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  12.5% {
+    border-radius: 52% 48% 58% 42% / 40% 44% 56% 60%;
+    filter: blur(45px) hue-rotate(15deg);
+    transform: translate(-51.5%, -48.5%) scale(1.05) rotate(5deg);
   }
   25% {
-    filter: blur(60px) hue-rotate(30deg);
-    transform: translate(-51%, -51%) scale(1.06);
+    border-radius: 70% 30% 46% 54% / 51% 60% 40% 49%;
+    filter: blur(45px) hue-rotate(30deg);
+    transform: translate(-53%, -47%) scale(1.1) rotate(10deg);
+  }
+  37.5% {
+    border-radius: 59% 41% 38% 62% / 58% 51% 49% 42%;
+    filter: blur(45px) hue-rotate(45deg);
+    transform: translate(-50%, -50%) scale(1.01) rotate(1deg);
   }
   50% {
-    filter: blur(60px) hue-rotate(60deg);
-    transform: translate(-50%, -50%) scale(1);
+    border-radius: 47% 53% 30% 70% / 65% 41% 59% 35%;
+    filter: blur(45px) hue-rotate(60deg);
+    transform: translate(-47%, -53%) scale(0.92) rotate(-8deg);
+  }
+  62.5% {
+    border-radius: 50.5% 49.5% 45% 55% / 47.5% 55.5% 44.5% 52.5%;
+    filter: blur(45px) hue-rotate(40deg);
+    transform: translate(-49.5%, -51%) scale(0.99) rotate(-1deg);
   }
   75% {
-    filter: blur(60px) hue-rotate(20deg);
-    transform: translate(-49%, -51%) scale(1.04);
+    border-radius: 54% 46% 60% 40% / 30% 70% 30% 70%;
+    filter: blur(45px) hue-rotate(20deg);
+    transform: translate(-52%, -48%) scale(1.06) rotate(6deg);
+  }
+  87.5% {
+    border-radius: 42% 58% 65% 35% / 30% 50% 50% 70%;
+    filter: blur(45px) hue-rotate(10deg);
+    transform: translate(-51%, -49%) scale(1.03) rotate(3deg);
   }
 }

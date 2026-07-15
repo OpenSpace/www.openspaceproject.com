@@ -58,17 +58,10 @@
 }
 
 .newsletter__button {
-  @extend %button-base;
+  @extend %button-secondary;
 
-  background: $color-background;
-  border: 1px solid $color-border-glow;
-  color: $color-text-light;
   font-size: $font-size-sm;
   padding: 0.45rem 1.1rem;
-
-  &:hover {
-    color: $color-accent-primary;
-  }
 
   &:disabled {
     opacity: 0.55;

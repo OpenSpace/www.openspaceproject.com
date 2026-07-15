@@ -221,6 +221,7 @@ main:has(.page-index__hero) .content-section {
     transition:
       transform $animation-duration-base ease,
       border-color $animation-duration-base ease,
+      border-width $animation-duration-base ease,
       box-shadow $animation-duration-base ease;
     display: flex;
     flex-direction: column;
@@ -228,6 +229,7 @@ main:has(.page-index__hero) .content-section {
 
     &:hover {
       transform: translateY(-6px);
+      border-width: 2px;
       border-color: $color-border-secondary-light;
       box-shadow:
         0 0 0 1px $color-border-glow-faint,
@@ -294,7 +296,7 @@ main:has(.page-index__hero) .content-section {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    color: $color-accent-secondary;
+    color: $color-accent-primary;
     font-weight: $font-weight-demibold;
 
     svg {
@@ -305,11 +307,11 @@ main:has(.page-index__hero) .content-section {
   }
 
   .card:hover .learn-more {
-    color: $color-accent-secondary;
+    color: $color-accent-primary;
 
     svg {
       transform: translateX(5px);
-      stroke: $color-accent-secondary;
+      stroke: $color-accent-primary;
     }
   }
 

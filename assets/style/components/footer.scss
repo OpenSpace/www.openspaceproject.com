@@ -57,7 +57,7 @@
     transition: color $animation-duration-base ease;
 
     &:hover {
-      color: $color-accent-secondary;
+      color: $color-link;
     }
   }
 }
@@ -98,7 +98,7 @@
       transition: color $animation-duration-base;
 
       &:hover {
-        color: $color-text-highlight;
+        color: $color-link;
       }
     }
   }
@@ -107,9 +107,10 @@
 .footer__title {
   font-family: $font-headings;
   font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
   letter-spacing: $font-letterspacing-extrawide;
   text-transform: uppercase;
-  color: $color-accent-primary;
+  color: $color-text-light;
   margin: 0 0 0.8rem;
 }
 

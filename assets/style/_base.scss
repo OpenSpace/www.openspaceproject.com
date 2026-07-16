@@ -25,7 +25,7 @@ $small-font-size: $font-size-sm;
 $text-muted: $color-text-muted;
 
 $code-bg: $color-surface-secondary;
-$code-color: $color-accent-secondary;
+$code-color: $color-attention-warning;
 
 $headings-font-family: $font-headings;
 $headings-font-weight: $font-weight-demibold;
@@ -152,6 +152,10 @@ main:has(.page-index__hero) #title-block-header {
     &:hover {
       color: $os-prime-blue;
       text-decoration: underline;
+    }
+
+    &.external::after {
+      content: none;
     }
   }
 }

@@ -1,5 +1,14 @@
 /*-- scss:rules --*/
 
+.content-section {
+  border-top: none;
+  border-bottom: none;
+
+  h2 {
+    border-bottom: none;
+  }
+}
+
 .page-download__actions {
   display: flex;
   flex-direction: column;
@@ -11,7 +20,7 @@
   }
 }
 
-.page-download__button-primary {
+#quarto-document-content .page-download__button-primary {
   @extend %button-primary;
 
   gap: 0.6rem;
@@ -19,9 +28,22 @@
   font-size: $font-size-lg;
   padding: 0.9rem 2.25rem;
   letter-spacing: $font-letterspacing-narrow;
+
+  iconify-icon {
+    transition: transform $animation-duration-base ease;
+  }
+
+  &:hover {
+    color: $color-button-primary-text;
+    text-decoration: none;
+
+    iconify-icon {
+      transform: translateY(3px);
+    }
+  }
 }
 
-.page-download__button-secondary {
+#quarto-document-content .page-download__button-secondary {
   @extend %button-secondary;
 
   gap: 0.4rem;
@@ -49,11 +71,17 @@
   }
 
   > section {
-    @include pill-link;
+    @include pill-link($border: $color-border-glow);
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-content: center;
+    justify-items: center;
     gap: 0.6rem;
+    padding: 1.5rem;
+
+    &:hover {
+      border-color: $color-border-glow;
+    }
   }
 
   h3 {
@@ -64,7 +92,9 @@
 
   p {
     font-size: $font-size-sm;
-    color: $color-text-light;
+    font-weight: normal;
+    color: $color-text-muted;
+    margin: 0;
 
     a {
       color: $color-accent-primary;
@@ -124,7 +154,7 @@
 
 .page-download__requirements-panel {
   padding: 1.75rem;
-  border: 1px solid $color-border-faint;
+  border: 1px solid $color-border-glow;
   border-radius: $layout-border-radius;
 
   &.is-recommended {
@@ -157,18 +187,9 @@
 
 .page-download__platform {
   padding: 2rem 1.75rem;
-  border: 1px solid $color-border-faint;
+  border: 1px solid $color-border-glow;
   border-radius: $layout-border-radius;
   background: $color-surface-primary;
-
-  transition:
-    transform $animation-duration-fast ease,
-    border-color $animation-duration-base ease;
-
-  &:hover {
-    border-color: $color-border-muted;
-    transform: translateY($layout-hover-lift-amount);
-  }
 
   > section {
     display: flex;
@@ -196,24 +217,26 @@
   color: $color-text-muted;
 }
 
-.page-download__platform-link {
-  @include pill-link(
-    $bg: $color-overlay-light-faint,
-    $border: $color-border-faint
-  );
-  @include backdrop-blur;
+// Specificity bumped to beat #quarto-document-content p a, which otherwise forces
+// this link's resting-state text to prime blue instead of $color-text-highlight
+#quarto-document-content .page-download__platform-link {
+  @extend %button-secondary;
 
-  // pill-link is inline-flex; these links are stacked full-width rows, and margin auto
-  // centering needs a block-level box
+  // button base is inline-flex; these links are stacked full-width rows, and margin
+  // auto centering needs a block-level box
   display: flex;
   max-width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding: 0.65rem 1.25rem;
-  font-weight: $font-weight-demibold;
+  gap: 0.4rem;
 
-  &:hover {
-    background: $color-surface-primary;
+  iconify-icon {
+    font-size: 1rem;
+    transition: transform $animation-duration-base ease;
+  }
+
+  &:hover iconify-icon {
+    transform: translateY(3px);
   }
 }
 

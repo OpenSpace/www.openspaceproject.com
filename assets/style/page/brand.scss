@@ -1,10 +1,8 @@
 /*-- scss:rules --*/
 
 $page-brand-light-surface: #f0f4f6;
-$page-brand-light-button-bg: $color-accent-primary;
 $page-brand-light-button-text: black;
 $page-brand-light-button-border: rgba(black, 0.65);
-$page-brand-light-button-highlight: $color-accent-secondary;
 $page-brand-light-border: rgba(black, 0.08);
 
 
@@ -64,16 +62,6 @@ $page-brand-light-border: rgba(black, 0.08);
       p {
         color: $page-brand-light-button-text;
       }
-
-      a {
-        color: $page-brand-light-button-text;
-        background: $page-brand-light-button-bg;
-        border-color: $page-brand-light-button-border;
-
-        &:hover {
-          background: $page-brand-light-button-highlight;
-        }
-      }
     }
   }
 }
@@ -97,19 +85,31 @@ $page-brand-light-border: rgba(black, 0.08);
     color: $color-text-light;
     margin: 0;
   }
+}
 
-  a {
-    font-size: $font-size-xs;
-    font-family: $font-monospace;
-    color: $color-accent-primary;
-    border: 1px solid $color-border-light;
-    border-radius: $layout-border-radius-small;
-    padding: 0.25rem 0.65rem;
-    text-decoration: none;
-    transition: background $animation-duration-fast ease;
+#quarto-document-content .page-brand__logo-meta a {
+  @extend %button-secondary;
 
-    &:hover {
-      background: $color-surface-primary-faint;
-    }
+  font-family: $font-body;
+  font-size: $font-size-md;
+  gap: 0.4rem;
+
+  iconify-icon {
+    transition: transform $animation-duration-base ease;
+  }
+
+  &:hover iconify-icon {
+    transform: translateY(3px);
+  }
+}
+
+#quarto-document-content .page-brand__logo-card--light .page-brand__logo-meta a {
+  color: $page-brand-light-button-text;
+  background: transparent;
+  border-color: $page-brand-light-button-border;
+
+  &:hover {
+    background: rgba(black, 0.08);
+    color: $page-brand-light-button-text;
   }
 }

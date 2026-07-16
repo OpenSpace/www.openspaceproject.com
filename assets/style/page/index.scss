@@ -186,10 +186,9 @@ main:has(.page-index__hero) .content-section {
   margin: 2rem 0 0;
 }
 
-// Specificity bumped to beat #quarto-document-content p a, which otherwise
-// forces this link blue at all times instead of grey-until-hover
+// Specificity bumped to beat #quarto-document-content p a
 #quarto-document-content .page-index__trusted-more a {
-  color: $color-text-muted;
+  color: $color-link;
   font-weight: normal;
   text-decoration: none;
   transition: color $animation-duration-base ease;

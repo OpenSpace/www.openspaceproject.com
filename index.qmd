@@ -69,7 +69,7 @@ listing:
 </section>
 
 <section id="trusted" class="page-index__trusted-section">
-  <p class="page-index__trusted-label">Built in collaboration with</p>
+  <p class="page-index__trusted-label">Powering visualizations at</p>
   <div class="page-index__logo-grid">
     <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium">
     <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History">

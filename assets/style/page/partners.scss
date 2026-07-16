@@ -3,6 +3,8 @@
 .page-partners__card {
   @include focus-ring;
 
+  position: relative;
+  overflow: hidden;
   background: $color-surface-primary;
   border: 1px solid $color-border-faint;
   border-radius: $layout-border-radius;
@@ -11,13 +13,26 @@
   flex-direction: column;
   text-decoration: none;
 
-  transition:
-    transform $animation-duration-fast ease,
-    border-color $animation-duration-base ease;
+  transition: transform $animation-duration-fast ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: $color-accent-secondary;
+    opacity: 0;
+    transition: opacity $animation-duration-base ease;
+  }
 
   &:hover {
-    border-color: $color-border-muted;
     transform: translateY($layout-hover-lift-amount);
+
+    &::after {
+      opacity: 1;
+    }
   }
 }
 

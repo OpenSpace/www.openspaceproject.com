@@ -15,8 +15,8 @@ $border-color: $color-border-faint;
 $border-radius: $layout-border-radius;
 $border-radius-sm: $layout-border-radius-small;
 
-$link-color: $color-accent-tertiary;
-$link-hover-color: lighten($color-accent-tertiary, 8%);
+$link-color: $color-accent-primary;
+$link-hover-color: $color-accent-primary--light;
 
 $font-family-sans-serif: $font-body;
 $font-family-monospace: $font-monospace;

@@ -90,9 +90,10 @@ $page-brand-light-border: rgba(black, 0.08);
 #quarto-document-content .page-brand__logo-meta a {
   @extend %button-secondary;
 
-  font-family: $font-body;
-  font-size: $font-size-md;
-  gap: 0.4rem;
+  padding: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: none;
 
   iconify-icon {
     transition: transform $animation-duration-base ease;

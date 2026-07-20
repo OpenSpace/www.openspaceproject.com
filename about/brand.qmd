@@ -71,7 +71,7 @@ The following logo files are available for use in accordance with the guidelines
 ::::: {.page-brand__logo-meta}
 ### Horizontal logo (primary)
 For dark backgrounds
-[Download {{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/horizontal_logo.webp){.button__secondary download=""}
+[{{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/horizontal_logo.webp){.button__secondary download="" aria-label="Download horizontal logo, white"}
 :::::
 ::::
 
@@ -81,7 +81,7 @@ For dark backgrounds
 ::::: {.page-brand__logo-meta}
 ### Horizontal logo (primary)
 For light backgrounds
-[Download {{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/openspace_black.webp){.button__secondary download=""}
+[{{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/openspace_black.webp){.button__secondary download="" aria-label="Download horizontal logo, black"}
 :::::
 ::::
 
@@ -91,7 +91,7 @@ For light backgrounds
 ::::: {.page-brand__logo-meta}
 ### Square logo
 For dark backgrounds
-[Download {{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/openspace-square-white.webp){.button__secondary download=""}
+[{{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/openspace-square-white.webp){.button__secondary download="" aria-label="Download square logo, white"}
 :::::
 ::::
 
@@ -101,7 +101,7 @@ For dark backgrounds
 ::::: {.page-brand__logo-meta}
 ### Square logo
 For light backgrounds
-[Download {{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/openspace-square-black.webp){.button__secondary download=""}
+[{{< iconify lucide:download style="color: currentColor;" >}}](/assets/brand/openspace-square-black.webp){.button__secondary download="" aria-label="Download square logo, black"}
 :::::
 ::::
 

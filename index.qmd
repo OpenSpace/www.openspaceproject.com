@@ -142,7 +142,7 @@ listing:
 
 <section class="content-section">
   <h2>Funded by</h2>
-  <p class="text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
+  <p>OpenSpace is grateful to be supported by the following public research funders.</p>
 
   <div class="page-index__funder-marquee">
     <div class="page-index__funder-track">

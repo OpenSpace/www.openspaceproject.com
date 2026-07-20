@@ -1,0 +1,47 @@
+---
+pagetitle: Program Guides — OpenSpace
+description-meta: >
+  Downloadable program guides for presenting topic-specific tours in OpenSpace —
+  planetarium and museum programs ready to use as-is or adapt for your own audience.
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    theme: ../assets/style/page/program-guides.scss
+
+hero:
+  title: Program guides
+  crumbs:
+    - Resources
+    - Program Guides
+  lede: >
+    Ready-to-run scripts for presenting topic-specific programs in OpenSpace, written by planetarium and museum educators, with navigation cues and background for every stop.
+
+cta:
+  heading: Building your own program?
+  actions:
+    - text: Join the Slack
+      link: /community/slack.qmd
+      style: primary
+    - text: Documentation
+      link: "https://docs.openspaceproject.com"
+      style: ghost
+      external: true
+  lede: >
+    Share your own guides or ask for feedback in the community Slack. The documentation
+    covers the scripting and navigation tools referenced in these guides.
+
+listing:
+  - id: program-guides
+    type: custom
+    template: ../_template/program-guide.ejs.md
+    contents: ../assets/listing/program-guides.yml
+---
+
+::: {.content-section}
+
+::: {#program-guides}
+:::
+
+:::

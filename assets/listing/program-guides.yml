@@ -1,0 +1,31 @@
+#
+# List of downloadable program guides
+#
+# Fields:
+#   - title: Title of the guide
+#   - image: Cover image for the card
+#   - alt: Alt text for the cover image
+#   - description: Longer paragraph of description for the guide
+#   - pdf: Link to the PDF download
+#   - credit: Author and institution credit line
+#
+
+- title: The Grand Tour
+  image: /assets/images/guides/digital-universe-grand-tour.webp
+  alt: Spiral galaxy rendered in OpenSpace, from the Digital Universe Atlas Grand Tour guide
+  description: >
+    An overview of the entire observable universe, from Earth and the Moon out through
+    the Solar System, the Milky Way, and the cosmic microwave background — modeled after
+    the tour given at the Hayden Planetarium.
+  pdf: /assets/guides/digital-universe-grand-tour.pdf
+  credit: Brian Patrick Abbott, Hayden Planetarium — American Museum of Natural History
+
+- title: Astrobiology
+  image: /assets/images/guides/astrobiology-program-guide.webp
+  alt: Grand Prismatic Spring viewed from above in OpenSpace, from the Astrobiology program guide
+  description: >
+    The search for life in the Solar System and the search for extraterrestrial
+    intelligence (SETI) — following NASA's "follow the water" approach from extremophiles
+    on Earth to Europa, Titan, and Enceladus.
+  pdf: /assets/guides/astrobiology-program-guide.pdf
+  credit: Rachel L. Smith, North Carolina Museum of Natural Sciences

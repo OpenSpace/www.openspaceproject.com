@@ -78,6 +78,9 @@ website:
               <span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:graduation-cap"></iconify-icon></span><span class="nav-rich-title">Tutorials</span></span><span class="nav-rich-desc">Step-by-step walkthroughs for new users.</span>
             href: resources/tutorials.qmd
           - text: >
+              <span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:file-text"></iconify-icon></span><span class="nav-rich-title">Program Guides</span></span><span class="nav-rich-desc">Downloadable scripts for planetarium and museum programs.</span>
+            href: resources/program-guides.qmd
+          - text: >
               <span class="nav-rich-head"><span class="nav-rich-icon"><iconify-icon icon="lucide:briefcase"></iconify-icon></span><span class="nav-rich-title">Internships</span></span><span class="nav-rich-desc">High school, undergraduate, and graduate internship programs built around OpenSpace.</span>
             href: resources/internships.qmd
           - text: >

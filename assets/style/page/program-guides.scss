@@ -29,7 +29,7 @@
 
   &:hover {
     transform: translateY($layout-hover-lift-amount);
-    box-shadow: 0 20px 40px -20px rgba(black, 0.5);
+    box-shadow: 0 20px 40px -20px $color-shadow-far;
 
     &::after {
       opacity: 1;
@@ -94,9 +94,5 @@
 
   iconify-icon {
     transition: transform $animation-duration-base ease;
-  }
-
-  &:hover iconify-icon {
-    transform: translateY(3px);
   }
 }

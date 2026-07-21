@@ -24,6 +24,7 @@ main:has(.page-index__hero) .content-section {
   height: 90vh;
   min-height: 600px;
   overflow: hidden;
+  pointer-events: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +99,7 @@ main:has(.page-index__hero) .content-section {
 
 .page-index__hero-content {
   z-index: 2;
+  pointer-events: auto;
   max-width: 800px;
   text-align: center;
   padding: 0 1.5rem;

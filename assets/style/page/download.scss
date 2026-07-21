@@ -36,10 +36,6 @@
   &:hover {
     color: $color-button-primary-text;
     text-decoration: none;
-
-    iconify-icon {
-      transform: translateY(3px);
-    }
   }
 }
 
@@ -233,10 +229,6 @@
   iconify-icon {
     font-size: 1rem;
     transition: transform $animation-duration-base ease;
-  }
-
-  &:hover iconify-icon {
-    transform: translateY(3px);
   }
 }
 

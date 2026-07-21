@@ -28,7 +28,7 @@
     filter: blur(45px);
     pointer-events: none;
     transition: opacity $animation-duration-slow ease;
-    animation: cta__glow-morph 20s ease-in-out infinite;
+    animation: cta__glow-morph $animation-cta-duration ease-in-out infinite;
 
     @media (prefers-reduced-motion: reduce) {
       animation: none;

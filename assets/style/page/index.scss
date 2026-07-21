@@ -32,7 +32,7 @@ main:has(.page-index__hero) .content-section {
   padding: 5rem 0 clamp(200px, 28vh, 380px);
 
   h1 {
-    @include section-title;
+    @include section-title($fontsize: 2.5rem);
 
     line-height: 1.1;
     margin: 0;
@@ -42,19 +42,44 @@ main:has(.page-index__hero) .content-section {
     z-index: 2;
     position: relative;
     padding: 0 1.5rem;
+
+    @media (max-width: $bp-md) {
+      line-height: 1.4;
+    }
   }
 
   @media (max-width: $bp-md) {
-    height: 75vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 75vh;
   }
+}
+
+.hero-slot-wrap {
+  position: relative;
+  display: inline-grid;
+  margin-right: 0.4rem;
+  line-height: 1;
 }
 
 .hero-slot {
   display: inline-grid;
   overflow: hidden;
   justify-items: end;
-  margin-right: 0.4rem;
+}
+
+.hero-slot__underline {
+  position: absolute;
+  right: 0;
+  bottom: -0.08em;
+  height: 0.08em;
+  min-height: 3px;
+  background: $color-accent-secondary;
+  border-radius: 999px;
+  transition: width $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (max-width: $bp-md) {
+    bottom: -0.2em;
+  }
 }
 
 .hero-slot__word {
@@ -75,24 +100,10 @@ main:has(.page-index__hero) .content-section {
   z-index: 2;
   max-width: 800px;
   text-align: center;
+  padding: 0 1.5rem;
 
   p {
     font-size: $font-size-lg;
-  }
-}
-
-.page-index__discover-more {
-  gap: 0.35rem;
-  margin-top: 1.5rem;
-  color: $color-button-primary-text;
-  box-shadow: 0 8px 24px $color-overlay-dark-faint;
-
-  iconify-icon {
-    transition: transform $animation-duration-base ease;
-  }
-
-  &:hover iconify-icon {
-    transform: rotate(90deg);
   }
 }
 

@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
+  const underline = document.querySelector('.hero-slot__underline');
+  const setUnderlineWidth = (word) => {
+    if (underline) {
+      underline.style.width = `${word.offsetWidth}px`;
+    }
+  };
+
+  setUnderlineWidth(words[0]);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => setUnderlineWidth(words[0]));
+  }
+
   let i = 0;
   setInterval(() => {
     const prev = i;
@@ -17,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     words[prev].setAttribute('aria-hidden', 'true');
     words[i].classList.add('is-active');
     words[i].removeAttribute('aria-hidden');
+    setUnderlineWidth(words[i]);
     setTimeout(() => {
       words[prev].style.transition = 'none';
       words[prev].classList.remove('is-exit');

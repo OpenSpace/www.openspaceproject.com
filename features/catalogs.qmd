@@ -1,0 +1,70 @@
+---
+pagetitle: Catalogs — OpenSpace
+description-meta: >
+  OpenSpace renders scientific catalogs — exoplanets, galaxy surveys, quasars, the
+  cosmic microwave background, and small Solar System bodies as explorable 3D data.
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+
+hero:
+  title: Scientific catalogs, rendered as explorable data
+  crumbs:
+    - Features
+    - Catalogs
+  image: /assets/images/carousel/sdss.webp
+  lede: >
+    From confirmed exoplanets to the cosmic microwave background, OpenSpace plots
+    scientific catalogs in context of the universe.
+
+cta:
+  heading: Start exploring the catalogs
+  actions:
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: Documentation
+      link: "https://docs.openspaceproject.com"
+      style: ghost
+      external: true
+  lede: >
+    Every catalog listed here ships with OpenSpace. Download it free and explore them in the defauly profile.
+
+listing:
+  - id: catalogs
+    type: custom
+    template: ../_template/rich-list.ejs.md
+    contents: ../assets/listing/catalogs.yml
+---
+
+::: {.content-section}
+
+## How it works
+
+::: {.card-grid}
+
+::: {.feature-grid__card}
+### Scientific catalogs
+Every point is backed by data pulled from NASA archives and international sky surveys.
+:::
+
+::: {.feature-grid__card}
+### True positions in 3D space
+Each object sits at its measured distance and position, so you can explore datasets in their simulated environment.
+:::
+
+::: {.feature-grid__card}
+### Toggle live during a presentation
+Turn any catalog on or off, adjust marker size and color, and blend multiple datasets live or add your own data to explore.
+:::
+
+:::
+
+## Catalogs
+
+::: {#catalogs}
+:::
+
+:::

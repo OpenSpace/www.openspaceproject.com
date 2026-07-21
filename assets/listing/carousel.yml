@@ -16,10 +16,12 @@
 - title: Asteroid trajectories near Earth
   eyebrow: Small Bodies
   image: /assets/images/carousel/asteroids.webp
+  link: /features/catalogs.qmd
 
 - title: Sloan Digital Sky Survey galaxy catalog
   eyebrow: Digital Universe
   image: /assets/images/carousel/sdss.webp
+  link: /features/catalogs.qmd
 
 - title: Earth's magnetosphere and field lines
   eyebrow: Space Weather

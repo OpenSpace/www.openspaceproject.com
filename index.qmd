@@ -51,11 +51,7 @@ listing:
         <span class="hero-slot__word is-active">Explore</span>
         <span class="hero-slot__word" aria-hidden="true">Research</span>
         <span class="hero-slot__word" aria-hidden="true">Present</span>
-        <span class="hero-slot__word" aria-hidden="true">Discover</span>
         <span class="hero-slot__word" aria-hidden="true">Share</span>
-        <span class="hero-slot__word" aria-hidden="true">Traverse</span>
-        <span class="hero-slot__word" aria-hidden="true">Uncover</span>
-        <span class="hero-slot__word" aria-hidden="true">Reveal</span>
         <span class="hero-slot__word" aria-hidden="true">Teach</span>
       </span>
       <span class="hero-slot__underline"></span>

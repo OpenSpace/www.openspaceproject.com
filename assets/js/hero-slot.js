@@ -16,14 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.fonts.ready.then(() => setUnderlineWidth(words[0]));
   }
 
+  const shuffle = (arr) => {
+    const shuffled = arr.slice();
+    for (let k = shuffled.length - 1; k > 0; k--) {
+      const j = Math.floor(Math.random() * (k + 1));
+      [shuffled[k], shuffled[j]] = [shuffled[j], shuffled[k]];
+    }
+    return shuffled;
+  };
+
+  const indices = words.map((_, idx) => idx);
   let i = 0;
+  let queue = shuffle(indices.filter((idx) => idx !== i));
+
   setInterval(() => {
+    if (!queue.length) {
+      queue = shuffle(indices.filter((idx) => idx !== i));
+    }
     const prev = i;
-    let next;
-    do {
-      next = Math.floor(Math.random() * words.length);
-    } while (next === prev);
-    i = next;
+    i = queue.shift();
     words[prev].classList.remove('is-active');
     words[prev].classList.add('is-exit');
     words[prev].setAttribute('aria-hidden', 'true');

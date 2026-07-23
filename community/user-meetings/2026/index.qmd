@@ -3,6 +3,8 @@ pagetitle: 2026 User Meeting — OpenSpace
 description-meta: >
   Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for
   three days of demos, training, and conversation.
+aliases:
+  - /2026-user-meeting
 sidebar: false
 format:
   html:
@@ -24,7 +26,7 @@ hero:
 
 {{< dotnav label="Navigate to venue section" >}}
 
-::: {.content-section #about}
+::: {.content-section-narrow #about}
 
 ## Join us in Norrköping
 
@@ -38,7 +40,7 @@ This is a great opportunity to:
 
 :::
 
-::: {.content-section #venue}
+::: {.content-section-narrow #venue}
 
 ## Visualization Center C
 
@@ -51,7 +53,7 @@ Norrköping is an old industrial town located about 90 minutes south of Stockhol
 
 :::
 
-::: {.content-section #schedule}
+::: {.content-section-narrow #schedule}
 
 ## Agenda
 
@@ -69,7 +71,7 @@ Schedule is subject to change.
 | 15:00 – 16:00<br>(1h)    | Coffee Break                                             | ---                         | Developer Helpdesk/<br>Jam Session |
 | 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
 | 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie                         | ---                         | ---                                |
-|                          | Dinner on your own                                       |                             |                                    |
+|                          | Group Dinner (pay-on-your-own) at [Hemma Hus](https://hemmahosnorrkoping.se/) |                             |                                    |
 
 ### Thursday, August 27
 
@@ -93,11 +95,12 @@ Schedule is subject to change.
 | 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | Developer Helpdesk/<br>Jam Session |
 | 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |
 |                          | End of the official program                     |         |                                    |
+| 17:30                    | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
 
 
 :::
 
-::: {.content-section #getting-here}
+::: {.content-section-narrow #getting-here}
 
 ## Travel & airports
 
@@ -108,7 +111,7 @@ Norrköping is easy to reach internationally. Recommended routes:
 
 :::
 
-::: {.content-section #accommodation}
+::: {.content-section-narrow #accommodation}
 
 ## Where to stay
 
@@ -121,7 +124,7 @@ Hotels in the city are around $100 per night. A few options near the venue:
 :::
 
 
-::: {.content-section #register}
+::: {.content-section-narrow #register}
 
 ## Register for free
 

@@ -186,4 +186,38 @@
       }
     })
     .catch(() => { setStatus('unknown'); });
+
+  // Reveal-footer effect: the footer is fixed to the viewport bottom, sitting behind
+  // #quarto-document-content. Keeping #quarto-content's padding-bottom (transparent —
+  // it has no background of its own) equal to the footer's own (responsive,
+  // variable-height) size means the footer only comes into view once the page is
+  // scrolled all the way down, instead of scrolling up with the content. The padding
+  // lives on #quarto-content rather than #quarto-document-content specifically so that
+  // element's own opaque background (which paints straight through its own padding,
+  // per background-clip's border-box default) can't cover the gutter back up.
+  const footerEl = document.querySelector('.footer');
+  const contentEl = document.getElementById('quarto-document-content');
+  const gridEl = document.getElementById('quarto-content');
+  if (footerEl && contentEl && gridEl) {
+    const syncFooterGutter = () => {
+      // #quarto-content is a Quarto-templated CSS grid with its own fixed row(s) below
+      // the content row, which already read as extra (transparent) reveal gutter — so
+      // only the shortfall needs to come from our own padding. Subtract out whatever
+      // padding we previously applied so this stays correct across re-syncs.
+      const currentPadding = parseFloat(getComputedStyle(gridEl).paddingBottom) || 0;
+      const structuralGutter = gridEl.getBoundingClientRect().height - contentEl.getBoundingClientRect().height - currentPadding;
+      // #quarto-document-content's rounded bottom corners need the footer sitting
+      // behind them to actually show through the curve — otherwise the corner arc
+      // only cuts into the (transparent, footer-less) gutter above the footer's fixed
+      // top edge, revealing whatever's behind the page instead. Shrinking the gutter
+      // by the corner radius makes the content box overlap that far into the footer's
+      // territory, so the arc has the footer right there to reveal.
+      const cornerRadius = parseFloat(getComputedStyle(contentEl).borderBottomLeftRadius) || 0;
+      const needed = Math.max(0, footerEl.offsetHeight - structuralGutter - cornerRadius);
+      gridEl.style.paddingBottom = needed + 'px';
+    };
+    syncFooterGutter();
+    window.addEventListener('resize', syncFooterGutter);
+    new ResizeObserver(syncFooterGutter).observe(footerEl);
+  }
 })();

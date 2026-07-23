@@ -5,7 +5,10 @@
 .newsletter {
   flex: 0 0 220px;
 
-  @media (max-width: $bp-md) {
+  // Matches .footer__inner's own stacking breakpoint — once flex-direction is column,
+  // flex: 0 0 220px would set a 220px *height* instead of width, leaving a large gap
+  // below the (much shorter) actual content.
+  @media (max-width: $bp-lg) {
     flex: none;
   }
 }
@@ -34,11 +37,12 @@
 }
 
 .newsletter__input {
+  width: 170px;
   border: 1px solid $color-border-glow;
   border-radius: $layout-border-radius-small;
   color: $color-text-highlight;
   font-size: $font-size-sm;
-  padding: 0.45rem 0.8rem;
+  padding: 0.3rem 0.8rem;
   font-family: inherit;
   transition: border-color $animation-duration-fast ease;
 
@@ -60,8 +64,9 @@
 .newsletter__button {
   @extend %button-secondary;
 
+  width: 170px;
   font-size: $font-size-sm;
-  padding: 0.45rem 1.1rem;
+  padding: 0.3rem 1.1rem;
 
   &:disabled {
     opacity: 0.55;

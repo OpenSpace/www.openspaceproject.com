@@ -1,13 +1,62 @@
 /*-- scss:rules --*/
 
+// Reveal-footer setup, split across two elements on purpose:
+//
+// - #quarto-content (Quarto's own grid container) carries the padding-bottom gutter
+//   (kept in sync with the footer's real height by footer.js). It has no background of
+//   its own, so that padding stays genuinely transparent and lets the fixed footer show
+//   through underneath — it must NOT also carry the rounded/opaque styling below, or
+//   background-clip's border-box default would paint straight through this same padding,
+//   defeating the gutter (only the sliver past the padding would ever reveal the footer).
+// - #quarto-document-content (the real opaque page content, rounded on the bottom
+//   corners like our cards) becomes its own positive z-index stacking context so it
+//   always paints above the fixed, lower-stacked footer. It carries NO padding of its
+//   own, so its rounded/clipped edge sits exactly at the true bottom of the visible
+//   content, not partway down a transparent gutter.
+//
+// #quarto-content's grid-row sizing doesn't treat an added padding-bottom as plain block
+// padding (it reserves its own fixed extra row below the content row), so footer.js
+// measures and subtracts that structural gutter before setting our own padding.
+//
+// #quarto-document-content is scoped under #quarto-content (2 IDs) rather than the bare
+// ID, because Quarto's own built-in rule `#quarto-content.page-columns main.column-page`
+// (1 ID + 2 classes + 1 type) otherwise outranks a plain `#quarto-document-content` and
+// pins z-index back to 0 — which ties with the footer and, on DOM order, made the footer
+// win and permanently cover the bottom of every page instead of only revealing at the end.
+#quarto-content {
+  padding-bottom: 0;
+}
+
+#quarto-content #quarto-document-content {
+  position: relative;
+  z-index: 1;
+  background: $color-background;
+  // Content and footer are both near-black, so a card-sized 12px radius reads as
+  // basically flat — sized up from $layout-border-radius so the curve is legible on
+  // shape alone, with no border needed for contrast. Capped below ~22px: the straight
+  // (non-corner) part of this edge overlaps the footer by the same amount, and the
+  // footer's own column titles start ~22px below its top edge — any bigger and the
+  // titles get covered outside the curved corners themselves.
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
 //
 // Page footer
 //
-// Custom site footer
+// Custom site footer. Fixed to the viewport bottom and sits behind #quarto-content, so
+// it "floats up" into view via the padding-bottom gutter above, instead of scrolling
+// up with the rest of the page.
 .footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
   background: $color-footer-bg;
   border-top: 1px solid $color-border-faint;
-  padding: 1rem 2rem;
+  padding: 2.5rem 2rem 1.5rem;
   font-size: $font-size-sm;
   color: $color-text-light;
 }
@@ -17,26 +66,38 @@
   gap: 3rem;
   align-items: flex-start;
 
-  @media (max-width: $bp-md) {
+  // Matches .footer__links' own breakpoint (3-column grid kicks in at $bp-lg too) —
+  // below $bp-lg, footer__brand (220px) + .newsletter (220px) + gaps leave too little
+  // room for the link columns, which were getting squeezed and clipped off-screen.
+  @media (max-width: $bp-lg) {
     flex-direction: column;
+    // Overrides flex-start: once stacked, footer__links should stretch to the full
+    // available width so its columns can flow across it, instead of shrinking to fit.
+    align-items: stretch;
     gap: 2rem;
   }
 }
 
 .footer__brand {
   flex: 0 0 220px;
-  text-align: center;
+  text-align: left;
 
-  @media (max-width: $bp-md) {
+  // Matches .footer__inner's own stacking breakpoint — once flex-direction is column,
+  // flex: 0 0 220px would set a 220px *height* instead of width.
+  @media (max-width: $bp-lg) {
     flex: none;
   }
 }
 
 .footer__logo {
-  max-width: 80%;
+  // A fixed cap rather than a %, since .footer__brand's own width becomes shrink-to-fit
+  // (flex: none) below $bp-md — a percentage of that just tracks the logo's own
+  // intrinsic size instead of constraining it, letting it render far too large.
+  max-width: 160px;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 0.8rem;
+  margin: 0 0 0.8rem;
 }
 
 .footer__tagline {
@@ -47,7 +108,7 @@
 
 .footer__social {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.25rem;
   font-size: $font-size-2xl;
 
@@ -64,20 +125,15 @@
 
 .footer__links {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  // auto-fit + minmax flows as many columns as actually fit the available width,
+  // wrapping to more rows only once they no longer do — rather than jumping between
+  // fixed column counts at specific breakpoints regardless of how much room there is.
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 2rem;
   flex: 1;
 
-  @media (max-width: $bp-lg) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   @media (max-width: $bp-md) {
     gap: 1.5rem;
-  }
-
-  @media (max-width: $bp-sm) {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -120,6 +176,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 4rem;
   font-size: $font-size-xs;
   color: $color-text-light;
 

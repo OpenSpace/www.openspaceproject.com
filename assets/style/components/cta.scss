@@ -10,8 +10,13 @@
 // scale.
 //
 
+// padding stays symmetric (top == bottom) so the section's own 50% vertical center —
+// what the glow below is centered on — lines up with the card's center. The extra gap
+// before the footer comes from margin-bottom instead, which doesn't touch that
+// symmetry the way padding-bottom did.
 .section__cta {
   padding: $layout-section-padding-wide;
+  margin-bottom: 4rem;
   position: relative;
 
   &::before {

@@ -52,6 +52,7 @@
   @extend %content-section-base;
 
   padding: $layout-section-padding-wide;
+  padding-bottom: 4.5rem;
 
   &:nth-child(even of .content-section) {
     background: $color-surface-primary;

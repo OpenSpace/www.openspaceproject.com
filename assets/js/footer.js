@@ -187,10 +187,17 @@
     })
     .catch(() => { setStatus('unknown'); });
 
-  // Reveal-footer effect: the footer is fixed to the viewport bottom, sitting behind
-  // #quarto-document-content. Keeping #quarto-content's padding-bottom (transparent —
-  // it has no background of its own) equal to the footer's own (responsive,
-  // variable-height) size means the footer only comes into view once the page is
+  // Below $footer-accordion-bp (defined in footer.scss — keep this value in sync with
+  // it) the footer's link columns become an accordion and the footer itself reverts to
+  // a normal static one (see .footer in footer.scss for why: the reveal effect's fixed
+  // positioning and an interactive, height-changing accordion don't mix). Both the
+  // gutter sync and the accordion sync below key off this same query.
+  const footerAccordionQuery = window.matchMedia('(max-width: 1350px)');
+
+  // Reveal-footer effect (wide widths only): the footer is fixed to the viewport
+  // bottom, sitting behind #quarto-document-content. Keeping #quarto-content's
+  // padding-bottom (transparent — it has no background of its own) equal to the
+  // footer's own height means the footer only comes into view once the page is
   // scrolled all the way down, instead of scrolling up with the content. The padding
   // lives on #quarto-content rather than #quarto-document-content specifically so that
   // element's own opaque background (which paints straight through its own padding,
@@ -200,6 +207,12 @@
   const gridEl = document.getElementById('quarto-content');
   if (footerEl && contentEl && gridEl) {
     const syncFooterGutter = () => {
+      if (footerAccordionQuery.matches) {
+        // Footer is static here — no gutter needed, and the footer's own height can
+        // change freely (accordion open/close) without it mattering.
+        gridEl.style.paddingBottom = '0px';
+        return;
+      }
       // #quarto-content is a Quarto-templated CSS grid with its own fixed row(s) below
       // the content row, which already read as extra (transparent) reveal gutter — so
       // only the shortfall needs to come from our own padding. Subtract out whatever
@@ -219,5 +232,70 @@
     syncFooterGutter();
     window.addEventListener('resize', syncFooterGutter);
     new ResizeObserver(syncFooterGutter).observe(footerEl);
+  }
+
+  // Footer link columns: an accordion below $footer-accordion-bp, always expanded
+  // above it. Toggling the real `open` attribute here — rather than just forcing it
+  // open with CSS — keeps assistive tech's sense of expanded/collapsed accurate, and
+  // only needs to run when the breakpoint is actually crossed.
+  const footerColumns = document.querySelectorAll('.footer__column');
+  if (footerColumns.length) {
+    const syncFooterAccordion = () => {
+      footerColumns.forEach((el) => {
+        el.open = !footerAccordionQuery.matches;
+      });
+    };
+    syncFooterAccordion();
+    footerAccordionQuery.addEventListener('change', syncFooterAccordion);
+
+    // Opening a <summary> near the bottom of the page can make Chromium auto-scroll
+    // to reveal the newly-expanded content, shifting the just-clicked header to a new
+    // position — so clicking "the same spot" again doesn't close it, since the header
+    // isn't there any more. A single corrective scrollTo isn't enough: this site sets
+    // `html { scroll-behavior: smooth }` globally, so the browser's own adjustment is an
+    // animation running over several frames, not an instant jump — one correction just
+    // gets overridden by the next frame of that animation. Instead, re-assert the
+    // pre-click position on every frame for a short window, forcing an instant (not
+    // smooth) scroll each time so we don't kick off a competing animation of our own.
+    footerColumns.forEach((el) => {
+      const summary = el.querySelector('summary');
+      if (!summary) return;
+      summary.addEventListener('click', () => {
+        const left = window.scrollX;
+        const top = window.scrollY;
+        const until = performance.now() + 350;
+        const hold = (now) => {
+          if (window.scrollX !== left || window.scrollY !== top) {
+            window.scrollTo({ left, top, behavior: 'instant' });
+          }
+          if (now < until) {
+            requestAnimationFrame(hold);
+          }
+        };
+        requestAnimationFrame(hold);
+      });
+    });
+  }
+
+  // Newsletter form: relocated (not duplicated — it has JS-wired IDs, like the message
+  // elements above) into .footer__bottom-row below the accordion breakpoint, alongside
+  // the mark and social icons; restored to its original spot above it. Plain DOM
+  // moves preserve the form's listeners and any in-progress state (typed email, which
+  // step is showing), since it's the same node throughout, just relocated.
+  const newsletterEl = document.getElementById('footer-newsletter');
+  const bottomRowStart = document.querySelector('.footer__bottom-row__start');
+  if (newsletterEl && bottomRowStart) {
+    const originalParent = newsletterEl.parentNode;
+    const originalNextSibling = newsletterEl.nextSibling;
+    const syncNewsletterPosition = () => {
+      if (footerAccordionQuery.matches) {
+        bottomRowStart.appendChild(newsletterEl);
+      }
+      else {
+        originalParent.insertBefore(newsletterEl, originalNextSibling);
+      }
+    };
+    syncNewsletterPosition();
+    footerAccordionQuery.addEventListener('change', syncNewsletterPosition);
   }
 })();

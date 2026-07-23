@@ -24,7 +24,7 @@ hero:
 
 {{< dotnav label="Navigate to venue section" >}}
 
-::: {.content-section #about}
+::: {.content-section-narrow #about}
 
 ## Join us in Norrköping
 
@@ -38,7 +38,7 @@ This is a great opportunity to:
 
 :::
 
-::: {.content-section #venue}
+::: {.content-section-narrow #venue}
 
 ## Visualization Center C
 
@@ -51,7 +51,7 @@ Norrköping is an old industrial town located about 90 minutes south of Stockhol
 
 :::
 
-::: {.content-section #schedule}
+::: {.content-section-narrow #schedule}
 
 ## Agenda
 
@@ -93,11 +93,12 @@ Schedule is subject to change.
 | 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | Developer Helpdesk/<br>Jam Session |
 | 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |
 |                          | End of the official program                     |         |                                    |
+| 17:30                    | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
 
 
 :::
 
-::: {.content-section #getting-here}
+::: {.content-section-narrow #getting-here}
 
 ## Travel & airports
 
@@ -108,7 +109,7 @@ Norrköping is easy to reach internationally. Recommended routes:
 
 :::
 
-::: {.content-section #accommodation}
+::: {.content-section-narrow #accommodation}
 
 ## Where to stay
 
@@ -121,7 +122,7 @@ Hotels in the city are around $100 per night. A few options near the venue:
 :::
 
 
-::: {.content-section #register}
+::: {.content-section-narrow #register}
 
 ## Register for free
 

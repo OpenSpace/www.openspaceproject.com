@@ -103,6 +103,92 @@
   margin: 0 0 1.25rem;
 }
 
+// "Where to stay" hotel links: underline on hover instead of the shared
+// %content-section-base list-link behavior (color shifts to $color-text-highlight,
+// no underline) — the color would otherwise look like white here.
+#accommodation ul li a:hover {
+  color: $color-accent-primary;
+  text-decoration: underline;
+}
+
+// FAQ accordion (#faq): same collapsible <details>/<summary> pattern as the footer's
+// link-column accordion (border-drawn chevron, rotates on [open]), reimplemented here
+// as page-scoped classes rather than reusing .footer__* — no other page has this
+// pattern yet, so it isn't factored into a shared component.
+.faq__item {
+  // Quarto's own base styles apply `margin-bottom: 1em` to every <details> element
+  // site-wide (for doc-style collapsible blocks) — override it here, or it stacks with
+  // .faq__question's padding-bottom to make the gap above the divider much bigger than
+  // the gap below it.
+  margin-bottom: 0;
+  border-top: 1px solid $color-border-faint;
+
+  &:first-of-type {
+    border-top: none;
+  }
+}
+
+.faq__question {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-demibold;
+  line-height: 1.2;
+  color: $color-text-highlight;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.faq__chevron {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-color: $color-text-light;
+  border-width: 0 2px 2px 0;
+  margin-right: 0.15rem;
+  transition: transform $animation-duration-base ease;
+  transform: rotate(-45deg);
+}
+
+.faq__item[open] .faq__chevron {
+  transform: rotate(45deg);
+}
+
+.faq__item[open] .faq__answer {
+  display: block;
+}
+
+.faq__answer {
+  display: none;
+  padding: 0 0 1rem;
+  color: $color-text;
+  line-height: 1.75;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $color-accent-primary;
+    text-decoration: none;
+    transition: color $animation-duration-fast ease;
+
+    &:hover {
+      color: $color-text-highlight;
+      text-decoration: underline;
+    }
+  }
+}
+
 .page-user-meetings__link {
   font-size: $font-size-sm;
   font-weight: $font-weight-demibold;

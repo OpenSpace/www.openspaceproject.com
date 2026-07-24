@@ -282,6 +282,11 @@ $footer-accordion-bp: 1350px;
 }
 
 .footer__column {
+  // Quarto's own base styles apply `margin-bottom: 1em` to every <details> element
+  // site-wide (for doc-style collapsible blocks) — override it here, same fix as
+  // .faq__item (see user-meetings.scss), or it stacks with the column's own spacing
+  // and inflates the gap below each accordion item in the narrow/stacked layout.
+  margin-bottom: 0;
   border-bottom: 1px solid $color-border-faint;
 
   &:last-child {

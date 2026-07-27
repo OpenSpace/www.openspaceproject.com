@@ -14,18 +14,13 @@
   link: /features/globe-browsing.qmd
 
 - title: Asteroid trajectories near Earth
-  eyebrow: Small Bodies
+  eyebrow: Catalogs
   image: /assets/images/carousel/asteroids.webp
   link: /features/catalogs.qmd
 
-- title: Sloan Digital Sky Survey galaxy catalog
-  eyebrow: Digital Universe
-  image: /assets/images/carousel/sdss.webp
-  link: /features/catalogs.qmd
-
-- title: Earth's magnetosphere and field lines
-  eyebrow: Space Weather
-  image: /assets/images/carousel/earth_magnetosphere.webp
+- title: Solar magnetic field lines from PFSS model
+  eyebrow: Heliophysics
+  image: /assets/images/carousel/pfss.webp
   link: /features/heliophysics.qmd
 
 - title: James Webb Space Telescope unfolding animation
@@ -33,12 +28,19 @@
   image: /assets/images/carousel/jwst.webp
   link: /features/mission-visualizations.qmd
 
-- title: Solar magnetic field lines from PFSS model
-  eyebrow: Heliophysics
-  image: /assets/images/carousel/pfss.webp
-  link: /features/heliophysics.qmd
-
 - title: Sea surface temperature from satellite data
   eyebrow: Globe Browsing
   image: /assets/images/carousel/sea_surface_temperature.webp
   link: /features/globe-browsing.qmd
+
+- title: Sloan Digital Sky Survey galaxy catalog
+  eyebrow: Catalogs
+  image: /assets/images/carousel/sdss.webp
+  link: /features/catalogs.qmd
+
+- title: Earth's magnetosphere and field lines
+  eyebrow: Heliophysics
+  image: /assets/images/carousel/earth_magnetosphere.webp
+  link: /features/heliophysics.qmd
+
+

@@ -20,7 +20,6 @@ hero:
     - text: User Meetings
       link: /community/user-meetings/
     - 2026
-  image: /assets/images/user-meetings/liu_earth.webp
   lede: August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 
 cta:
@@ -39,6 +38,8 @@ cta:
 
 ## Join us in Norrköping
 
+![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
+
 Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.
 
 This is a great opportunity to:
@@ -53,7 +54,13 @@ This is a great opportunity to:
 
 ## Visualization Center C
 
-![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
+<div class="venue-map">
+<iframe
+  src="https://www.google.com/maps?q=Visualization+Center+C,+Kungsgatan+54,+602+33+Norrk%C3%B6ping,+Sweden&output=embed"
+  width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Map showing Visualization Center C in Norrköping"></iframe>
+</div>
 
 We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University.
 
@@ -68,7 +75,11 @@ Norrköping is an old industrial town located about 90 minutes south of Stockhol
 
 Schedule is subject to change.
 
-### Wednesday, August 26
+::: {.panel-tabset}
+
+### Day 1
+
+**Wednesday, August 26**
 
 | Time                     | Track 1                                                  | Track 2                     | Track 3                            |
 | ------------------------ | -------------------------------------------------------- | --------------------------- | ---------------------------------- |
@@ -82,7 +93,9 @@ Schedule is subject to change.
 | 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie                         | ---                         | ---                                |
 |                          | Group Dinner (pay-on-your-own) at [Hemma Hus](https://hemmahosnorrkoping.se/) |                             |                                    |
 
-### Thursday, August 27
+### Day 2
+
+**Thursday, August 27**
 
 
 | Time                     | Track 1                                        | Track 2                                      | Track 3                            |
@@ -96,7 +109,9 @@ Schedule is subject to change.
 | 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks | ---                                          | Developer Helpdesk/<br>Jam Session |
 |                          | Dinner on your own                             |                                              |                                    |
 
-### Friday, August 28
+### Day 3
+
+**Friday, August 28**
 
 | Time                     | Track 1                                         | Track 2 | Track 3                            |
 | ------------------------ | ----------------------------------------------- | ------- | ---------------------------------- |
@@ -106,23 +121,22 @@ Schedule is subject to change.
 |                          | End of the official program                     |         |                                    |
 | 17:30                    | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
 
+:::
 
 :::
 
-::: {.content-section-narrow #getting-here}
+::: {.content-section-narrow #travel}
 
-## Travel & airports
+## Travel & where to stay
+
+### Getting there
 
 Norrköping is easy to reach internationally. Recommended routes:
 
   - **Stockholm Arlanda (ARN)** — major international hub, roughly 90 minutes to Norrköping by train
   - **Linköping City Airport (LPI)** — direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs
 
-:::
-
-::: {.content-section-narrow #accommodation}
-
-## Where to stay
+### Where to stay
 
 Hotels in the city are around $100 per night. A few options near the venue:
 

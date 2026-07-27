@@ -43,6 +43,12 @@ $dropdown-link-hover-color: $color-accent-tertiary;
 $dropdown-link-hover-bg: $color-background;
 $dropdown-link-active-bg: $color-background;
 
+// Bootstrap's nav-tabs defaults assume a light theme (active tab text defaults to
+// black) — left unset, the active tab's label is black-on-near-black and effectively
+// invisible against this site's dark background.
+$nav-tabs-link-active-color: $color-text-highlight;
+$nav-tabs-link-active-bg: $color-background;
+
 /*-- scss:rules --*/
 
 // Quarto's mobile grid has minmax(500px,...) on body-content columns, which overflows the
@@ -95,6 +101,12 @@ hr {
 table {
   width: 100%;
   max-width: 860px;
+  // Pandoc emits a <colgroup> with percentage widths inferred from the raw markdown
+  // table's column proportions. With the default table-layout:auto, those percentages
+  // are only a hint — the browser still grows the table past 100% of its container
+  // when a column's actual content doesn't fit the hinted width. table-layout:fixed
+  // makes the colgroup widths authoritative, forcing cells to wrap instead of overflow.
+  table-layout: fixed;
   margin: 0 auto 2rem;
   border-collapse: collapse;
   font-size: $font-size-sm;

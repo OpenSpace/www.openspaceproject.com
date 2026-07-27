@@ -8,9 +8,10 @@
     return;
   }
 
-  // Auto-generate buttons from .content-section[id] elements when the nav is empty
+  // Auto-generate buttons from .content-section[id]/.content-section-narrow[id]
+  // elements when the nav is empty
   if (dotNav.querySelectorAll('.dotnav__item').length === 0) {
-    Array.from(document.querySelectorAll('.content-section[id]')).forEach((section, i) => {
+    Array.from(document.querySelectorAll('.content-section[id], .content-section-narrow[id]')).forEach((section, i) => {
       let heading = section.querySelector('h2, h3, h4');
       let label = heading ? heading.textContent.trim() : section.id;
       let btn = document.createElement('button');

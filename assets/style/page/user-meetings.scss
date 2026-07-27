@@ -1,5 +1,61 @@
 /*-- scss:rules --*/
 
+// Override the site-wide h3/h4 color (_base.scss sets $color-accent-tertiary, a yellow)
+// for the 2026 meeting page only — scoped to its section ids (not a bare h3/h4 selector)
+// since this theme file is shared with the listing page and the 2025 page too.
+#schedule h3,
+#travel h3,
+#travel h4 {
+  color: $color-text-highlight;
+}
+
+// Same override for the bold day-date line above each schedule tab's table
+// (_base.scss colors all <strong> text the same yellow).
+#schedule .panel-tabset strong {
+  color: $color-text-highlight;
+}
+
+// Day 1/2/3 tab nav: replace Bootstrap's default light-gray hover border-box (looks
+// like a stray white highlight on this dark theme) with a plain blue underline, and
+// mark the selected tab with a thicker accent bar instead of just a color/bg change.
+#schedule .panel-tabset .nav-tabs .nav-link {
+  position: relative;
+  border-color: transparent;
+
+  &:hover {
+    color: $color-accent-primary;
+    text-decoration: underline;
+    border-color: transparent;
+  }
+
+  &:focus {
+    border-color: transparent;
+  }
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: $color-accent-secondary;
+  }
+}
+
+// Venue section's embedded map, replacing the photo that moved up to #about.
+.venue-map {
+  margin-bottom: 1.5rem;
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 360px;
+    border: 1px solid $color-border-faint;
+    border-radius: $layout-border-radius;
+  }
+}
+
 .page-user-meetings__item {
   display: grid;
   grid-template-columns: 55% 1fr;
@@ -106,7 +162,7 @@
 // "Where to stay" hotel links: underline on hover instead of the shared
 // %content-section-base list-link behavior (color shifts to $color-text-highlight,
 // no underline) — the color would otherwise look like white here.
-#accommodation ul li a:hover {
+#travel ul li a:hover {
   color: $color-accent-primary;
   text-decoration: underline;
 }

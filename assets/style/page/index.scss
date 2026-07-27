@@ -234,7 +234,9 @@ main:has(.page-index__hero) .content-section {
   overflow: hidden;
   gap: 1.5rem;
   padding: 0 1.5rem;
-  background: $color-accent-secondary;
+  background: $color-surface-primary;
+  border-top: 1.5px solid $color-border-glow;
+  border-bottom: 1.5px solid $color-border-glow;
 
   @media (max-width: $bp-sm) {
     gap: 1rem;
@@ -260,7 +262,7 @@ main:has(.page-index__hero) .content-section {
   margin: 0;
   font-size: $font-size-sm;
   font-weight: $font-weight-demibold;
-  color: $color-button-primary-text;
+  color: $color-text-highlight;
 }
 
 .page-index__meeting-banner-timer {
@@ -279,7 +281,7 @@ main:has(.page-index__hero) .content-section {
   font-family: $font-monospace;
   font-size: 1.15rem;
   font-weight: $font-weight-demibold;
-  color: $color-button-primary-text;
+  color: $color-accent-secondary;
   line-height: 1.2;
 }
 
@@ -287,26 +289,17 @@ main:has(.page-index__hero) .content-section {
   font-size: $font-size-2xs;
   letter-spacing: $font-letterspacing-wide;
   text-transform: uppercase;
-  color: rgba($color-button-primary-text, 0.7);
+  color: $color-text-light;
 }
 
+// Same styling as "Download OpenSpace" in the homepage CTA (.button__primary,
+// buttons.scss) — solid yellow fill, dark text, slightly lighter on hover.
 .page-index__meeting-banner-register {
+  @extend %button-primary;
+
   flex-shrink: 0;
   padding: 0.35rem 1.1rem;
   font-size: $font-size-sm;
-  border: 1.5px solid $color-button-primary-text;
-  border-radius: $layout-border-radius-small;
-  color: $color-button-primary-text;
-  font-weight: $font-weight-demibold;
-  text-decoration: none;
-  transition:
-    background $animation-duration-base ease,
-    color $animation-duration-base ease;
-
-  &:hover {
-    background: $color-button-primary-text;
-    color: $color-accent-secondary;
-  }
 }
 
 // Venue grid breaks out of container to full width

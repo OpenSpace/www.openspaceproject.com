@@ -14,9 +14,12 @@
 // what the glow below is centered on — lines up with the card's center. The extra gap
 // before the footer comes from margin-bottom instead, which doesn't touch that
 // symmetry the way padding-bottom did.
+//
+// margin-bottom defaults to 4.5rem, matching .content-section's own padding-bottom
+// override (general.scss) — the common case.
 .section__cta {
   padding: $layout-section-padding-wide;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
   position: relative;
 
   &::before {
@@ -43,6 +46,20 @@
   &:hover::before {
     opacity: 0.2;
   }
+}
+
+// .content-section-narrow has no padding-bottom override (it uses
+// $layout-section-padding-narrow's 2rem vertical value directly), which combined with
+// this section's own 2rem padding-top made the gap above the card 68px. Zeroing the
+// padding-bottom below brings that down to the CTA's own 2rem padding alone (~34px).
+.content-section-narrow:has(+ .section__cta) {
+  padding-bottom: 0;
+}
+
+// A little extra room below the card, on top of the section's own 2rem padding-bottom
+// (~34px) — intentionally more than the ~34px gap above, not matched to it.
+.content-section-narrow + .section__cta {
+  margin-bottom: 1rem;
 }
 
 .cta__card {

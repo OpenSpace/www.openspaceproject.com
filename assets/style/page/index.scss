@@ -1,5 +1,8 @@
 /*-- scss:rules --*/
 
+$hero-video-bottom: clamp(100px, 14vh, 200px);
+$trusted-pullup: calc(#{$hero-video-bottom} - 20px);
+
 main:has(.page-index__hero) .content-section {
   border-top: none;
   border-bottom: none;
@@ -30,7 +33,7 @@ main:has(.page-index__hero) .content-section {
   align-items: center;
   justify-content: center;
   gap: 1.75rem;
-  padding: 5rem 0 clamp(200px, 28vh, 380px);
+  padding: 5rem 0 $hero-video-bottom;
 
   h1 {
     @include section-title($fontsize: 2.5rem);
@@ -114,7 +117,7 @@ main:has(.page-index__hero) .content-section {
   top: 0;
   left: 0;
   right: 0;
-  bottom: clamp(200px, 28vh, 380px);
+  bottom: $hero-video-bottom;
   z-index: 0;
 
   &::after {
@@ -152,7 +155,10 @@ main:has(.page-index__hero) .content-section {
 
   padding: 3rem 0;
   background: $color-background;
-  margin-top: clamp(-360px, -26vh, -180px);
+  // Smaller pull-up than the original design (was clamp(-360px,-26vh,-180px)) —
+  // freed-up room is where .page-index__meeting-banner now sits, between the video's
+  // own edge ($hero-video-bottom) and this section's start.
+  margin-top: calc(-1 * #{$trusted-pullup});
 
   @media (max-width: $bp-md) {
     padding-top: 3rem;
@@ -209,6 +215,97 @@ main:has(.page-index__hero) .content-section {
   &:hover {
     color: $color-link;
     text-decoration: underline;
+  }
+}
+
+// Full-bleed announcement banner
+.page-index__meeting-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: $hero-video-bottom;
+  z-index: 3;
+  pointer-events: auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  background: $color-accent-secondary;
+
+  @media (max-width: $bp-sm) {
+    gap: 1rem;
+    padding: 0 1.25rem;
+  }
+
+  @media (max-width: $bp-md) {
+    .page-index__meeting-banner-timer {
+      display: none;
+    }
+
+    .page-index__meeting-banner-label {
+      white-space: normal;
+    }
+  }
+}
+
+.page-index__meeting-banner-label {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-demibold;
+  color: $color-button-primary-text;
+}
+
+.page-index__meeting-banner-timer {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.page-index__meeting-banner-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 32px;
+}
+
+.page-index__meeting-banner-value {
+  font-family: $font-monospace;
+  font-size: 1.15rem;
+  font-weight: $font-weight-demibold;
+  color: $color-button-primary-text;
+  line-height: 1.2;
+}
+
+.page-index__meeting-banner-unit-label {
+  font-size: $font-size-2xs;
+  letter-spacing: $font-letterspacing-wide;
+  text-transform: uppercase;
+  color: rgba($color-button-primary-text, 0.7);
+}
+
+.page-index__meeting-banner-register {
+  flex-shrink: 0;
+  padding: 0.35rem 1.1rem;
+  font-size: $font-size-sm;
+  border: 1.5px solid $color-button-primary-text;
+  border-radius: $layout-border-radius-small;
+  color: $color-button-primary-text;
+  font-weight: $font-weight-demibold;
+  text-decoration: none;
+  transition:
+    background $animation-duration-base ease,
+    color $animation-duration-base ease;
+
+  &:hover {
+    background: $color-button-primary-text;
+    color: $color-accent-secondary;
   }
 }
 

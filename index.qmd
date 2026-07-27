@@ -61,7 +61,27 @@ listing:
   <div class="page-index__hero-content">
     <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
   </div>
+
+  <div class="page-index__meeting-banner" id="userMeetingCountdown">
+    <p class="page-index__meeting-banner-label">2026 OpenSpace User Meeting · Norrköping, Sweden</p>
+    <div class="page-index__meeting-banner-timer" aria-live="polite">
+      <div class="page-index__meeting-banner-unit">
+        <span class="page-index__meeting-banner-value" id="cdDays">00</span>
+        <span class="page-index__meeting-banner-unit-label">Days</span>
+      </div>
+      <div class="page-index__meeting-banner-unit">
+        <span class="page-index__meeting-banner-value" id="cdHours">00</span>
+        <span class="page-index__meeting-banner-unit-label">Hrs</span>
+      </div>
+      <div class="page-index__meeting-banner-unit">
+        <span class="page-index__meeting-banner-value" id="cdMinutes">00</span>
+        <span class="page-index__meeting-banner-unit-label">Min</span>
+      </div>
+    </div>
+    <a class="page-index__meeting-banner-register" href="community/user-meetings/2026/">Register</a>
+  </div>
 </section>
+<script src="/assets/js/countdown.js"></script>
 
 <section id="trusted" class="page-index__trusted-section">
   <p class="page-index__trusted-label">Powering visualizations at</p>

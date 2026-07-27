@@ -78,6 +78,23 @@
   border-bottom: none;
 }
 
+// An even-indexed section's own $color-surface-primary background (below) meets the
+// CTA's un-set background (effectively $color-background, since .section__cta has
+// none of its own) in a hard seam. Fading out over the last stretch — rather than
+// switching the whole section to a flat color, which would un-alternate it — keeps
+// the alternating pattern intact everywhere except right at this specific boundary.
+// Odd-indexed sections already match the CTA's background exactly, so they need no
+// such fade.
+.content-section:nth-child(even of .content-section):has(+ .section__cta),
+.content-section-narrow:nth-child(even of .content-section-narrow):has(+ .section__cta) {
+  background: linear-gradient(
+    to bottom,
+    $color-surface-primary 0,
+    $color-surface-primary calc(100% - clamp(60px, 10vh, 140px)),
+    $color-background 100%
+  );
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

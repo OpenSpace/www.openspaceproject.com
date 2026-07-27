@@ -1,5 +1,19 @@
 /*-- scss:rules --*/
 
+// Removes the divider between "Project Leadership" and "Developers" — this file is
+// only loaded on the team page, so the plain-looking selectors don't leak to other
+// pages' adjacent content-sections. Each section draws its own border-top AND
+// border-bottom independently — removing only one side (Project Leadership's
+// bottom) still leaves the other (Developers' top) drawing the exact same line, so
+// both need to go.
+.content-section:has(+ .content-section) {
+  border-bottom: none;
+}
+
+.content-section + .content-section {
+  border-top: none;
+}
+
 .page-team__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);

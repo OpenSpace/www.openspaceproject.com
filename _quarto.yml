@@ -20,6 +20,7 @@ format:
       - "assets/style/_base.scss"
       - "assets/style/_tokens.scss"
       - "assets/style/_mixins.scss"
+      - "assets/style/components/announcement-banner.scss"
       - "assets/style/components/buttons.scss"
       - "assets/style/components/carousel.scss"
       - "assets/style/components/crumbs.scss"

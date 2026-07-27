@@ -218,88 +218,18 @@ main:has(.page-index__hero) .content-section {
   }
 }
 
-// Full-bleed announcement banner
-.page-index__meeting-banner {
+// Positions the shared .announcement-banner (components/announcement-banner.scss)
+// against the hero video specifically on this page — everywhere else it just falls
+// back to that file's plain static-bar styling. See $hero-video-bottom and
+// $trusted-pullup above for why this exact offset avoids overlapping the
+// trusted-institutions section that follows.
+.page-index__hero .announcement-banner {
   position: absolute;
   left: 0;
   right: 0;
   bottom: $hero-video-bottom;
   z-index: 3;
   pointer-events: auto;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  gap: 1.5rem;
-  padding: 0 1.5rem;
-  background: $color-surface-primary;
-  border-top: 1.5px solid $color-border-glow;
-  border-bottom: 1.5px solid $color-border-glow;
-
-  @media (max-width: $bp-sm) {
-    gap: 1rem;
-    padding: 0 1.25rem;
-  }
-
-  @media (max-width: $bp-md) {
-    .page-index__meeting-banner-timer {
-      display: none;
-    }
-
-    .page-index__meeting-banner-label {
-      white-space: normal;
-    }
-  }
-}
-
-.page-index__meeting-banner-label {
-  min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0;
-  font-size: $font-size-sm;
-  font-weight: $font-weight-demibold;
-  color: $color-text-highlight;
-}
-
-.page-index__meeting-banner-timer {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.page-index__meeting-banner-unit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 32px;
-}
-
-.page-index__meeting-banner-value {
-  font-family: $font-monospace;
-  font-size: 1.15rem;
-  font-weight: $font-weight-demibold;
-  color: $color-accent-secondary;
-  line-height: 1.2;
-}
-
-.page-index__meeting-banner-unit-label {
-  font-size: $font-size-2xs;
-  letter-spacing: $font-letterspacing-wide;
-  text-transform: uppercase;
-  color: $color-text-light;
-}
-
-// Same styling as "Download OpenSpace" in the homepage CTA (.button__primary,
-// buttons.scss) — solid yellow fill, dark text, slightly lighter on hover.
-.page-index__meeting-banner-register {
-  @extend %button-primary;
-
-  flex-shrink: 0;
-  padding: 0.35rem 1.1rem;
-  font-size: $font-size-sm;
 }
 
 // Venue grid breaks out of container to full width

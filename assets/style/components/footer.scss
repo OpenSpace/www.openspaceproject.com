@@ -1,14 +1,13 @@
 /*-- scss:defaults --*/
 
 // Dedicated breakpoint (not $bp-lg) for switching the footer's link columns between
-// their wide, always-expanded grid and the narrow accordion — set to where the grid
-// actually starts wrapping to a second row (auto-fit + minmax(110px,1fr) against
-// footer__brand + .newsletter's combined width), not an arbitrary shared token. If
-// $bp-lg were reused here, the grid would already be wrapping to 2+ rows well before
-// the breakpoint switched it to the accordion instead. Re-measured at 1350px after
-// widening .footer's side padding to 3.5rem (was 1300px at the old 2rem padding) —
-// re-check this any time that padding changes again.
-$footer-accordion-bp: 1350px;
+// their wide, always-expanded grid and the narrow accordion. Previously set to where
+// the grid naturally starts wrapping to a second row (1350px, after widening
+// .footer's side padding to 3.5rem) — moved earlier per explicit preference, which
+// also means the grid never gets a chance to show that awkward wrapped-to-2-rows
+// state in between, since the accordion now kicks in first.
+// footer.js's `footerAccordionQuery` must stay in sync with this value.
+$footer-accordion-bp: 1150px;
 
 /*-- scss:rules --*/
 

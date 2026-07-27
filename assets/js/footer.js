@@ -192,7 +192,7 @@
   // a normal static one (see .footer in footer.scss for why: the reveal effect's fixed
   // positioning and an interactive, height-changing accordion don't mix). Both the
   // gutter sync and the accordion sync below key off this same query.
-  const footerAccordionQuery = window.matchMedia('(max-width: 1350px)');
+  const footerAccordionQuery = window.matchMedia('(max-width: 1150px)');
 
   // Reveal-footer effect (wide widths only): the footer is fixed to the viewport
   // bottom, sitting behind #quarto-document-content. Keeping #quarto-content's

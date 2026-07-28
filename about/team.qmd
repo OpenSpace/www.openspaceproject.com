@@ -40,6 +40,12 @@ listing:
     contents: "../assets/listing/team.yml"
     include:
       type: developer
+  - id: emeritus
+    type: custom
+    template: ../_template/team.ejs.md
+    contents: "../assets/listing/team.yml"
+    include:
+      type: emeritus
 ---
 
 ::: {.content-section}
@@ -56,6 +62,15 @@ listing:
 ## Developers
 
 ::: {#developer}
+:::
+
+:::
+
+::: {.content-section}
+
+## Emeritus
+
+::: {#emeritus}
 :::
 
 :::

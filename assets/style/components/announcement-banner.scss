@@ -20,7 +20,7 @@
   overflow: hidden;
   gap: 1.5rem;
   padding: 0 1.5rem;
-  background: $color-surface-primary;
+  background: linear-gradient(to bottom, rgba(white, 0.05), rgba(white, 0)), $color-surface-primary;
   border-top: 1.5px solid $color-border-glow;
   border-bottom: 1.5px solid $color-border-glow;
 

@@ -21,6 +21,24 @@
 #   - page (optional): Path to a page with additional information
 #
 
+- title: August OpenSpace Monthly Meeting
+  datetime: "2026-08-10 19:00"
+  type: Monthly Meeting
+  image: /assets/images/events/zoom_screenshot.webp
+  alt: Screenshot of an OpenSpace Monthly Meeting on Zoom
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
 - title: July OpenSpace Monthly Meeting
   datetime: "2026-07-13 19:00"
   type: Monthly Meeting

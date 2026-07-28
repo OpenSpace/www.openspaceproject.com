@@ -4,6 +4,9 @@
 # Fields:
 #   - title: The title of the event
 #   - datetime: The date in "YYYY-MM-DD HH:mm" format with the time specified in UTC.
+#   - date_end (optional): For multi-day events, the last day as "YYYY-MM-DD". When set,
+#                          the card shows a date range (e.g. "Wednesday, August 26 -
+#                          Friday, August 28, 2026") instead of a single date and time.
 #   - type: The type of the event as a free string
 #   - image: The path to the image to use for the event
 #   - alt: The alt text for the image
@@ -13,6 +16,9 @@
 #                                  description is used
 #   - generate_calendar: Determines whether a "Add to Calendar" with the date should be
 #                        automatically generated
+#   - location (optional): Venue name/address to use as the calendar event's location. If
+#                          not specified, the Zoom (or other meeting) CTA link is used
+#                          instead.
 #   - cta (optional): Call to action buttons
 #     - text: Button text
 #       link: Link for the CTA button
@@ -20,6 +26,25 @@
 #                         passed
 #   - page (optional): Path to a page with additional information
 #
+
+- title: 2026 OpenSpace User Meeting
+  datetime: "2026-08-26 07:30"
+  date_end: "2026-08-28"
+  type: User Meeting
+  image: /community/user-meetings/2026/visc.webp
+  alt: Visualization Center C, Norrköping, Sweden
+  description: >
+    Join the OpenSpace community in Norrköping, Sweden for three days of demos, training,
+    and conversation at the Visualization Center C.
+  description_past: >
+    Three days of demos, training, and conversation with the OpenSpace community at the
+    Visualization Center C in Norrköping, Sweden.
+  generate_calendar: true
+  location: "Visualization Center C, Kungsgatan 54, 602 33 Norrköping, Sweden"
+  cta:
+    - text: Register
+      link: /community/user-meetings/2026/
+      show_when_passed: false
 
 - title: August OpenSpace Monthly Meeting
   datetime: "2026-08-10 19:00"
@@ -42,44 +67,8 @@
 - title: July OpenSpace Monthly Meeting
   datetime: "2026-07-13 19:00"
   type: Monthly Meeting
-  image: /assets/images/venue-cards/hayden_jwst.webp
-  alt: Hayden Planetarium — venue for OpenSpace community events
-  description: >
-    Dive into the latest OpenSpace software development updates and participate in
-    feedback sessions. This community meeting is a great opportunity to learn, share, and
-    connect with fellow OpenSpace users.
-  description_past: >
-    Software development updates, community feedback sessions, and an opportunity to
-    showcase recent OpenSpace projects and discoveries.
-  generate_calendar: true
-  cta:
-    - text: Join Zoom
-      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
-      show_when_passed: false
-
-- title: December OpenSpace Monthly Meeting
-  datetime: "2025-12-08 20:00"
-  type: Monthly Meeting
-  image: /assets/images/venue-cards/amnh_lwd_students.webp
-  alt: Students at AMNH using OpenSpace
-  description: >
-    Dive into the latest OpenSpace software development updates and participate in
-    feedback sessions. This community meeting is a great opportunity to learn, share, and
-    connect with fellow OpenSpace users.
-  description_past: >
-    Software development updates, community feedback sessions, and an opportunity to
-    showcase recent OpenSpace projects and discoveries.
-  generate_calendar: true
-  cta:
-    - text: Join Zoom
-      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
-      show_when_passed: false
-
-- title: November OpenSpace Monthly Meeting
-  datetime: "2025-11-10 20:00"
-  type: Monthly Meeting
-  image: /assets/images/venue-cards/spaceship.webp
-  alt: OpenSpace running in a museum exhibit
+  image: /assets/images/events/july_zoom_screenshot.webp
+  alt: Screenshot of an OpenSpace Monthly Meeting on Zoom
   description: >
     Dive into the latest OpenSpace software development updates and participate in
     feedback sessions. This community meeting is a great opportunity to learn, share, and

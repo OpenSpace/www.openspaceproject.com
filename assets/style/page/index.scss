@@ -368,6 +368,11 @@ main:has(.page-index__hero) .content-section {
 
 .page-index__funder-marquee {
   margin: 2rem 0;
+  // The scrolling track below is intentionally much wider than the viewport — without
+  // this, nothing clips it and it only stays invisible because `html` happens to set
+  // `overflow-x: hidden` globally. That's a fragile, indirect dependency (e.g. can gap
+  // or rubber-band on iOS Safari) — clip it directly at the source instead.
+  overflow-x: hidden;
   mask-image: linear-gradient(
     90deg,
     transparent 0%,

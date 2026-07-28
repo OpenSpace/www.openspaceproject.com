@@ -123,6 +123,11 @@ table {
     letter-spacing: $font-letterspacing-wide;
     text-transform: uppercase;
     color: $color-text-light;
+    // table-layout:fixed constrains a cell's width but doesn't make text wrap on its
+    // own — a word (or space-joined phrase like "Davis Classrooms") wider than the
+    // narrow columns this produces at mobile widths still overflows visually into the
+    // next cell instead of breaking
+    overflow-wrap: break-word;
   }
 
   td {
@@ -130,6 +135,7 @@ table {
     color: rgba($color-text, 0.85);
     border-bottom: 1px solid $color-border-bw-faint;
     vertical-align: middle;
+    overflow-wrap: break-word;
 
     &:first-child {
       font-weight: $font-weight-demibold;

@@ -20,6 +20,15 @@
   @media (max-width: $bp-sm) {
     gap: 1rem;
     padding: 0 1.25rem;
+
+    .announcement-banner__label {
+      font-size: $font-size-xs;
+    }
+
+    .announcement-banner__action {
+      padding: 0.3rem 0.85rem;
+      font-size: $font-size-xs;
+    }
   }
 
   @media (max-width: $bp-md) {

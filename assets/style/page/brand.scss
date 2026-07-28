@@ -14,6 +14,12 @@ $page-brand-light-border: rgba(black, 0.08);
 
   font-family: $font-monospace;
   color: $color-text-highlight;
+  white-space: pre-wrap;
+  word-break: break-word;
+  code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 }
 
 .page-brand__logo-grid {

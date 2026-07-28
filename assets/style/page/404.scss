@@ -2,6 +2,10 @@
 
 .page-404 {
   text-align: center;
+
+  @media (max-width: $bp-md) {
+    padding-inline: 1.5rem;
+  }
 }
 
 .page-404__code {
@@ -42,6 +46,7 @@
     @include text-input;
 
     flex: 1;
+    min-width: 0;
     border-radius: $layout-border-radius-small;
   }
 }
@@ -49,6 +54,7 @@
 .page-404__actions {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0.75rem;
   margin-bottom: 1rem;
 }

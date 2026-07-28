@@ -1,5 +1,5 @@
 ---
-pagetitle: User Meeting — OpenSpace
+pagetitle: User Meetings — OpenSpace
 description-meta: >
   Each year, the OpenSpace community gathers to share work, learn from each other, and
   shape what comes next.
@@ -11,7 +11,7 @@ format:
     theme: ../../assets/style/page/user-meetings.scss
 
 hero:
-  title: User Meeting
+  title: User Meetings
   crumbs:
     - Community
     - User Meetings

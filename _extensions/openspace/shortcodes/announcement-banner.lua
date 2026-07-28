@@ -1,15 +1,6 @@
 -- Announcement banner shortcode.
 --
--- Renders a banner from the document's `announcement` frontmatter, wherever
--- `{{< announcement-banner >}}` is placed. On the homepage that's inside the hero's
--- raw HTML block (see index.qmd), which is what gives it the hero's absolute
--- positioning against the video (.page-index__hero .announcement-banner in
--- index.scss) — placed anywhere else, it renders as a plain static bar using just
--- the shared styles in components/announcement-banner.scss.
---
--- Renders nothing if the document has no `announcement` key, so removing that
--- frontmatter block (or the shortcode call) turns the banner off without deleting
--- any content — turn it back on by restoring the frontmatter.
+-- Renders a banner from the document's `announcement` frontmatter.
 --
 -- `label` is required. `date` is optional and enables a live countdown (an ISO 8601
 -- timestamp with a UTC offset, read by announcement-banner.js). `action` is optional

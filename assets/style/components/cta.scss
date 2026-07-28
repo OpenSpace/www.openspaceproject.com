@@ -3,22 +3,7 @@
 //
 // Call-to-action section
 //
-// `.section__cta` is a full-width band with a soft blurred glow rendered by its
-// `::before` pseudo-element. Inside it, `.cta__card` is a centered, bordered card that
-// hosts a heading and one or more `.cta__actions` button rows. While the section is
-// hovered, the `cta__glow-morph` keyframes slowly shift the glow's hue, position, and
-// scale.
-//
 
-// padding stays symmetric (top == bottom) so the section's own 50% vertical center —
-// what the glow below is centered on — lines up with the card's center. The extra gap
-// before the footer comes from margin-bottom instead, which doesn't touch that
-// symmetry the way padding-bottom did.
-//
-// margin-bottom was originally set to 4.5rem to match .content-section's own
-// padding-bottom override (general.scss) exactly, but that made the gap below the
-// card read as too large in practice (e.g. about.qmd) — tightened to 2rem, matching
-// this section's own padding value instead.
 .section__cta {
   padding: $layout-section-padding-wide;
   margin-bottom: 2rem;
@@ -50,16 +35,10 @@
   }
 }
 
-// .content-section-narrow has no padding-bottom override (it uses
-// $layout-section-padding-narrow's 2rem vertical value directly), which combined with
-// this section's own 2rem padding-top made the gap above the card 68px. Zeroing the
-// padding-bottom below brings that down to the CTA's own 2rem padding alone (~34px).
 .content-section-narrow:has(+ .section__cta) {
   padding-bottom: 0;
 }
 
-// A little extra room below the card, on top of the section's own 2rem padding-bottom
-// (~34px) — intentionally more than the ~34px gap above, not matched to it.
 .content-section-narrow + .section__cta {
   margin-bottom: 1rem;
 }

@@ -49,7 +49,7 @@ hero:
   </div>
 
   <div>
-    <h2 class="page-contact__title">Also on Slack</h2>
+    <h2 class="page-contact__title">Slack us</h2>
     <p class="page-contact__desc">For real-time help, the OpenSpace Slack is active with community members, educators, and developers.</p>
     <a class="button__secondary" href="/community/slack.html">Join the Slack</a>
   </div>

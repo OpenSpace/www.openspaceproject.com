@@ -15,7 +15,7 @@ format:
   <p class="page-404__code" aria-hidden="true">404</p>
   <h1 class="page-404__title">Houston, this page has drifted out of orbit</h1>
   <p class="page-404__lede">
-    The page you're looking for may have been moved, renamed, or launched into deep space. Let's get you back on course.
+    The page you are looking for may have been moved, renamed, or launched into deep space. Let's get you back on course.
   </p>
 
   <form class="page-404__search" action="https://duckduckgo.com/" method="get" role="search">

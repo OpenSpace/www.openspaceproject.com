@@ -42,7 +42,7 @@ cta:
 :::
 
 ::: {.page-download__summary}
-Windows · Linux (source)
+Windows · Linux (source) askl;dklasdkl;asd
 :::
 
 :::::: {.content-section}

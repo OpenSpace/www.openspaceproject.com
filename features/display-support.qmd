@@ -45,11 +45,11 @@ cta:
 
 ::: {.column width=60%}
 
-![](/assets/images/venue-cards/hayden_jwst.webp){.page-display-support__media fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
+![](/assets/images/venue-cards/hayden_jwst.webp){.page-display-support__media .page-display-support__media--left fig-alt="Hayden Planetarium dome running OpenSpace with JWST data"}
 
 :::
 
-::: {.column width=35%}
+::: {.column width=35% .page-display-support__text--right}
 
 Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.
 
@@ -63,6 +63,8 @@ Full-dome fisheye projection for fixed and portable planetariums. OpenSpace hand
 
 :::
 
+:::
+
 
 ::: {.content-section #classrooms-desktops}
 
@@ -70,7 +72,7 @@ Full-dome fisheye projection for fixed and portable planetariums. OpenSpace hand
 
 ::: {.columns}
 
-::: {.column width=40%}
+::: {.column width=35% .page-display-support__text--left}
 
 OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
@@ -83,7 +85,7 @@ OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
 ::: {.column width=60%}
 
-![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-display-support__media fig-alt="Students using OpenSpace in a classroom at AMNH"}
+![](/assets/images/venue-cards/amnh_lwd_students.webp){.page-display-support__media .page-display-support__media--right fig-alt="Students using OpenSpace in a classroom at AMNH"}
 
 :::
 
@@ -100,11 +102,11 @@ OpenSpace runs on Windows and Linux from a standard laptop or workstation.
 
 ::: {.column width=60%}
 
-![](/assets/images/venue-cards/spaceship.webp){.page-display-support__media fig-alt="OpenSpace running in a museum exhibit"}
+![](/assets/images/venue-cards/spaceship.webp){.page-display-support__media .page-display-support__media--left fig-alt="OpenSpace running in a museum exhibit"}
 
 :::
 
-::: {.column width=35%}
+::: {.column width=35% .page-display-support__text--right}
 
 Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays for permanent and traveling exhibits. Visitors get a curated experience using the same content available in the planetarium.
 
@@ -125,7 +127,7 @@ Touch-enabled kiosks, locked profiles, and synchronized multi-screen displays fo
 
 ::: {.columns}
 
-::: {.column width=35%}
+::: {.column width=35% .page-display-support__text--left}
 
 OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of view required for dome theaters. The projection is computed natively — not post-processed — maintaining full frame rate and visual fidelity at any resolution.
 
@@ -139,11 +141,7 @@ OpenSpace's fisheye renderer reproduces the full 180° hemispherical field of vi
 
 ::: {.column width=60%}
 
-```{=html}
-<video class="page-display-support__media page-display-support__media--square" autoplay loop muted playsinline>
-  <source src="/assets/videos/fisheye.mp4" type="video/mp4">
-</video>
-```
+![](/assets/images/venue-cards/fisheye_bigbang.webp){.page-display-support__media .page-display-support__media--right fig-alt="Fisheye rendering of the Big Bang visualization in OpenSpace"}
 
 :::
 

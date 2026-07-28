@@ -1,7 +1,39 @@
 /*-- scss:rules --*/
 
+// Quarto's defaults are `div.columns { display: initial; gap: initial; }` and
+// `div.column { display: inline-block; vertical-align: top; width: X%; }` — both
+// type+class selectors, which outrank plain `.columns`/`.column` overrides by
+// specificity regardless of source order, so these have to match them exactly to
+// actually win. See about.scss for the same pattern.
+div.columns {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+
+  // The column widths (e.g. 35%/60%) don't naturally trigger wrapping on their own —
+  // percentages still "fit" at any viewport size — so narrow screens need an explicit
+  // switch to a stacked, full-width layout instead.
+  @media (max-width: $bp-md) {
+    display: block;
+  }
+}
+
+div.column {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  @media (max-width: $bp-md) {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .page-display-support__media {
-  width: 75%;
+  width: 90%;
   height: auto;
   margin-inline: auto;
   object-fit: cover;
@@ -11,9 +43,42 @@
   margin-bottom: 2.5rem;
 }
 
-.page-display-support__media--square {
-  width: min(100%, 80vh);
-  height: auto;
-  aspect-ratio: 1 / 1;
-  margin-inline: auto;
+// Push the image flush toward whichever side it sits on, so its edge lines up with the
+// edge of the paragraph text in sections where the image is on the opposite side
+.page-display-support__media--left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.page-display-support__media--right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+// Once columns stack, "flush toward one side" no longer means anything — go back to a
+// centered, full-width image
+.page-display-support__media--left,
+.page-display-support__media--right {
+  @media (max-width: $bp-md) {
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+// Give the text column some breathing room on the side facing the image
+.page-display-support__text--left {
+  padding-right: 2rem;
+}
+
+.page-display-support__text--right {
+  padding-left: 2rem;
+}
+
+// That breathing-room padding was only needed next to a side-by-side image; once
+// stacked, it just eats into the full-width text column for no reason
+.page-display-support__text--left,
+.page-display-support__text--right {
+  @media (max-width: $bp-md) {
+    padding: 0;
+  }
 }

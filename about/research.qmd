@@ -57,6 +57,8 @@ Pushing the boundaries of visualization in the public arena has been in the DNA 
 ::: {#papers}
 :::
 
+::: {#citation}
+
 If you use OpenSpace in your academic work, please cite the appropriate paper:
 
 ```bibtex
@@ -94,5 +96,7 @@ If you use OpenSpace in your academic work, please cite the appropriate paper:
   ISSN    = {1077-2626}
 }
 ```
+
+:::
 
 :::

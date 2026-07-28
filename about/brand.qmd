@@ -37,7 +37,7 @@ If you use OpenSpace images, videos, or visualizations in publications, presenta
 ```{.page-brand__credit-text}
 Visualization created with OpenSpace — openspaceproject.com
 ```
-For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available in the [documentation](https://docs.openspaceproject.com).
+For academic publications, please also cite the relevant OpenSpace software release or paper. Citation details are available on the [research page](/about/research.qmd#citation).
 
 :::
 

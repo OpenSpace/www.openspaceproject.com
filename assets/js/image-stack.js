@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = Array.from(stack.querySelectorAll('.image-stack__card'));
   const dots = Array.from(document.querySelectorAll('#layer-dots .image-stack__dot'));
   const total = cards.length;
-  const current = 0;
+  let current = 0;
   const states = ['image-stack__card--front', 'image-stack__card--mid', 'image-stack__card--back', 'image-stack__card--hidden'];
 
   function render() {

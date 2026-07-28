@@ -8,9 +8,19 @@
   border-bottom: 1px solid $color-border-faint;
   background: $color-background;
 
+  // Plain content photos (about.qmd, contribute.qmd, user-meetings recaps, etc.)
+  // otherwise render with sharp corners, unlike every card/photo component
+  // elsewhere on the site. Logos and brand assets need their exact shape
+  // preserved, so pages with those (funder marquee, brand download cards) turn
+  // this back off at the specific selector rather than this getting scoped
+  // narrowly to begin with — see .page-index__funder-marquee img and
+  // .page-brand__logo-card img.
+  img {
+    border-radius: $layout-border-radius;
+  }
+
   h2 {
     font-size: $font-size-2xl;
-    font-variant-caps: small-caps;
     color: $color-text-highlight;
     border-bottom: 1px solid $color-border-faint;
     padding-bottom: 0.5rem;
@@ -18,15 +28,10 @@
   }
 
   ul {
-    padding: 0;
-    margin: 0 0 1.75rem;
-
     li {
       font-size: $font-size-sm;
-      line-height: 1.65;
       color: $color-text-light;
       padding: 0.45rem 0;
-      position: relative;
 
       &:last-child {
         border-bottom: none;
@@ -58,6 +63,7 @@
   @extend %content-section-base;
 
   padding: $layout-section-padding-wide;
+  padding-bottom: 4.5rem;
 
   &:nth-child(even of .content-section) {
     background: $color-surface-primary;
@@ -72,6 +78,38 @@
   &:nth-child(even of .content-section-narrow) {
     background: $color-surface-primary;
   }
+}
+
+@media (max-width: $bp-lg) {
+  .content-section-narrow {
+    padding: $layout-section-padding-wide;
+  }
+}
+
+// %content-section-base's border-bottom reads as a harsh line when the CTA section
+// (a distinct, floating card treatment) follows immediately — drop it in that specific
+// adjacency rather than site-wide, since it's still the right separator between two
+// ordinary content sections.
+.content-section:has(+ .section__cta),
+.content-section-narrow:has(+ .section__cta) {
+  border-bottom: none;
+}
+
+// An even-indexed section's own $color-surface-primary background (below) meets the
+// CTA's un-set background (effectively $color-background, since .section__cta has
+// none of its own) in a hard seam. Fading out over the last stretch — rather than
+// switching the whole section to a flat color, which would un-alternate it — keeps
+// the alternating pattern intact everywhere except right at this specific boundary.
+// Odd-indexed sections already match the CTA's background exactly, so they need no
+// such fade.
+.content-section:nth-child(even of .content-section):has(+ .section__cta),
+.content-section-narrow:nth-child(even of .content-section-narrow):has(+ .section__cta) {
+  background: linear-gradient(
+    to bottom,
+    $color-surface-primary 0,
+    $color-surface-primary calc(100% - clamp(60px, 10vh, 140px)),
+    $color-background 100%
+  );
 }
 
 .card-grid {

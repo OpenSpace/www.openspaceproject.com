@@ -1,0 +1,89 @@
+/*-- scss:rules --*/
+
+//
+// Announcement banner
+//
+
+.announcement-banner {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  background: linear-gradient(to bottom, rgba(white, 0.05), rgba(white, 0)), $color-surface-primary;
+  border-top: 1.5px solid $color-border-glow;
+  border-bottom: 1.5px solid $color-border-glow;
+
+  @media (max-width: $bp-sm) {
+    gap: 1rem;
+    padding: 0 1.25rem;
+
+    .announcement-banner__label {
+      font-size: $font-size-xs;
+    }
+
+    .announcement-banner__action {
+      padding: 0.3rem 0.85rem;
+      font-size: $font-size-xs;
+    }
+  }
+
+  @media (max-width: $bp-md) {
+    .announcement-banner__timer {
+      display: none;
+    }
+
+    .announcement-banner__label {
+      white-space: normal;
+    }
+  }
+}
+
+.announcement-banner__label {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-demibold;
+  color: $color-text-highlight;
+}
+
+.announcement-banner__timer {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.announcement-banner__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 32px;
+}
+
+.announcement-banner__value {
+  font-family: $font-monospace;
+  font-size: 1.15rem;
+  font-weight: $font-weight-demibold;
+  color: $color-accent-secondary;
+  line-height: 1.2;
+}
+
+.announcement-banner__unit-label {
+  font-size: $font-size-2xs;
+  letter-spacing: $font-letterspacing-wide;
+  text-transform: uppercase;
+  color: $color-text-light;
+}
+
+.announcement-banner__action {
+  @extend %button-primary;
+
+  flex-shrink: 0;
+  padding: 0.35rem 1.1rem;
+  font-size: $font-size-sm;
+}

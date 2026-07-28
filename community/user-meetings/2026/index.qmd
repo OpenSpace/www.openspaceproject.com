@@ -3,6 +3,8 @@ pagetitle: 2026 User Meeting — OpenSpace
 description-meta: >
   Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for
   three days of demos, training, and conversation.
+aliases:
+  - /2026-user-meeting
 sidebar: false
 format:
   html:
@@ -18,15 +20,25 @@ hero:
     - text: User Meetings
       link: /community/user-meetings/
     - 2026
-  image: /assets/images/user-meetings/liu_earth.webp
   lede: August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
+
+cta:
+  heading: Save your spot
+  lede: Registration is free.
+  actions:
+    - text: Register now
+      link: https://visualiseringscenter.se/registration-openspace-user-meeting/
+      style: primary
+      external: true
 ---
 
 {{< dotnav label="Navigate to venue section" >}}
 
-::: {.content-section #about}
+::: {.content-section-narrow #about}
 
 ## Join us in Norrköping
+
+![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
 
 Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.
 
@@ -38,26 +50,36 @@ This is a great opportunity to:
 
 :::
 
-::: {.content-section #venue}
+::: {.content-section-narrow #venue}
 
 ## Visualization Center C
 
-![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
+<div class="venue-map">
+<iframe
+  src="https://www.google.com/maps?q=Visualization+Center+C,+Kungsgatan+54,+602+33+Norrk%C3%B6ping,+Sweden&output=embed"
+  width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Map showing Visualization Center C in Norrköping"></iframe>
+</div>
 
-We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University as a research environment.
+We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University.
 
 Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.
 
 
 :::
 
-::: {.content-section #schedule}
+::: {.content-section-narrow #schedule}
 
 ## Agenda
 
 Schedule is subject to change.
 
-### Wednesday, August 26
+::: {.panel-tabset}
+
+### Day 1
+
+**Wednesday, August 26**
 
 | Time                     | Track 1                                                  | Track 2                     | Track 3                            |
 | ------------------------ | -------------------------------------------------------- | --------------------------- | ---------------------------------- |
@@ -69,9 +91,11 @@ Schedule is subject to change.
 | 15:00 – 16:00<br>(1h)    | Coffee Break                                             | ---                         | Developer Helpdesk/<br>Jam Session |
 | 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
 | 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie                         | ---                         | ---                                |
-|                          | Dinner on your own                                       |                             |                                    |
+|                          | Group Dinner (pay-on-your-own) at [Hemma Hus](https://hemmahosnorrkoping.se/) |                             |                                    |
 
-### Thursday, August 27
+### Day 2
+
+**Thursday, August 27**
 
 
 | Time                     | Track 1                                        | Track 2                                      | Track 3                            |
@@ -85,7 +109,9 @@ Schedule is subject to change.
 | 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks | ---                                          | Developer Helpdesk/<br>Jam Session |
 |                          | Dinner on your own                             |                                              |                                    |
 
-### Friday, August 28
+### Day 3
+
+**Friday, August 28**
 
 | Time                     | Track 1                                         | Track 2 | Track 3                            |
 | ------------------------ | ----------------------------------------------- | ------- | ---------------------------------- |
@@ -93,24 +119,24 @@ Schedule is subject to change.
 | 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | Developer Helpdesk/<br>Jam Session |
 | 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |
 |                          | End of the official program                     |         |                                    |
-
+| 17:30                    | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
 
 :::
 
-::: {.content-section #getting-here}
+:::
 
-## Travel & airports
+::: {.content-section-narrow #travel}
+
+## Travel & where to stay
+
+### Getting there
 
 Norrköping is easy to reach internationally. Recommended routes:
 
   - **Stockholm Arlanda (ARN)** — major international hub, roughly 90 minutes to Norrköping by train
   - **Linköping City Airport (LPI)** — direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs
 
-:::
-
-::: {.content-section #accommodation}
-
-## Where to stay
+### Where to stay
 
 Hotels in the city are around $100 per night. A few options near the venue:
 
@@ -121,14 +147,80 @@ Hotels in the city are around $100 per night. A few options near the venue:
 :::
 
 
-::: {.content-section #register}
+::: {.content-section-narrow #faq}
 
-## Register for free
+## FAQ
 
-Registration is **free**. We recommend bringing your own OpenSpace-compatible laptop, as loaner devices are limited.
+Below are answers to some frequently asked questions about the meeting. If you don't see yours here, reach out via email or on [Slack](/community/slack.qmd).
 
-Contact [Alexander Bock](mailto:alexander.bock@liu.se) or [Support](mailto:support@openspaceproject.com) with any questions about the meeting.
+<details class="faq__item">
+<summary class="faq__question">When and where is the meeting?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>August 26–28, 2026 at the Visualization Center C in Norrköping, Sweden.</p>
+</div>
+</details>
 
-[Register now](https://visualiseringscenter.se/registration-openspace-user-meeting/){.button__primary}
+<details class="faq__item">
+<summary class="faq__question">Who should attend?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>OpenSpace users of all levels are welcome — educators, planetarium professionals, researchers, and developers looking to sharpen their skills, explore the latest features, and connect with the community.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">How do I register?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p><a href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register online</a> through the Visualization Center C.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">Is there a registration fee?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>No — registration for the 2026 User Meeting is free.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">Is travel support available?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>No travel support or reimbursement is offered for the 2026 meeting.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">What's the best way to get to Norrköping?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>The nearest major hub is Stockholm Arlanda (ARN), about 90 minutes away by train. Linköping City Airport (LPI) also offers a direct connection to Amsterdam Schiphol (AMS).</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">Do I need to bring my own laptop?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>We recommend bringing your own OpenSpace-compatible laptop, as loaner devices will be limited.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">Will there be a virtual option?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>There is no virtual attendance option this year, but select sessions will be recorded and posted after the meeting.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">Is there a social event?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>Wednesday evening features a dome movie screening of <em>Once Upon the Moon</em>, followed by a pay-your-own group dinner at <a href="https://hemmahosnorrkoping.se/" target="_blank" rel="noopener">Hemma Hus</a>. On Friday evening, there's an optional visit to the <a href="https://www.tekniskamuseet.se/en/" target="_blank" rel="noopener">Tekniska Museet</a> in Stockholm. The agenda also builds in extra time throughout the meeting for networking with peers.</p>
+</div>
+</details>
+
+<details class="faq__item">
+<summary class="faq__question">Who do I contact with questions about the meeting?<span class="faq__chevron" aria-hidden="true"></span></summary>
+<div class="faq__answer">
+<p>Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> or <a href="mailto:support@openspaceproject.com">Support</a> with any questions about the meeting.</p>
+</div>
+</details>
 
 :::

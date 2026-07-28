@@ -7,6 +7,7 @@ project:
     - assets/images/
     - assets/brand/
     - assets/js/
+    - assets/guides/
 
 metadata-files:
   - _footer.yml
@@ -14,11 +15,12 @@ metadata-files:
 
 format:
   html:
-    quarto-required: 1.9.*
+    quarto-required: 1.*
     theme:
       - "assets/style/_base.scss"
       - "assets/style/_tokens.scss"
       - "assets/style/_mixins.scss"
+      - "assets/style/components/announcement-banner.scss"
       - "assets/style/components/buttons.scss"
       - "assets/style/components/carousel.scss"
       - "assets/style/components/crumbs.scss"
@@ -72,7 +74,7 @@ website:
   favicon: "/assets/brand/favicon.webp"
   image: "/assets/brand/logo.webp"
   image-alt: "OpenSpace"
-  site-url: "https://testing.www.openspaceproject.com"
+  site-url: "https://staging.www.openspaceproject.com"
   # repo-url: "https://github.com/OpenSpace/www.openspaceproject.com"
   # repo-link-target: "_blank"
   # repo-actions: [edit, issue]

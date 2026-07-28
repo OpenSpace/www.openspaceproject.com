@@ -1,7 +1,8 @@
 ---
-title: ""
-pagetitle: "OpenSpace — Visualize the known universe"
-description-meta: "OpenSpace is open-source interactive astrovisualization software used by planetariums, museums, classrooms, and researchers worldwide."
+pagetitle: OpenSpace — Visualize the known universe
+description-meta: >
+  OpenSpace is open-source interactive astrovisualization software used by planetariums,
+  museums, classrooms, and researchers worldwide.
 format:
   html:
     page-layout: full
@@ -12,19 +13,26 @@ format:
       - text: |
           <script src="/assets/js/hero-slot.js"></script>
 
+announcement:
+  label: 2026 OpenSpace User Meeting · Norrköping, Sweden
+  date: "2026-08-26T09:30:00+02:00"
+  action:
+    text: Register
+    link: community/user-meetings/2026/
+
 cta:
-  heading: "Start exploring"
+  heading: Start exploring
   actions:
-    - text: "Download OpenSpace"
-      link: "/install/download.qmd"
-      style: "primary"
-    - text: "View on GitHub"
+    - text: Download OpenSpace
+      link: /install/download.qmd
+      style: primary
+    - text: View on GitHub
       link: "https://github.com/OpenSpace/OpenSpace"
-      style: "ghost"
+      style: ghost
       external: true
-    - text: "Join Slack"
-      link: "https://github.com/OpenSpace/OpenSpace"
-      style: "ghost"
+    - text: Join Slack
+      link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
+      style: ghost
       external: true
   lede: Free. Open source. Cross-platform.
 
@@ -38,37 +46,37 @@ listing:
 ```{=html}
 <section class="page-index__hero">
   <div class="page-index__hero-video-wrap">
-    <video autoplay muted loop playsinline poster="assets/images/hero-poster.webp">
+    <video autoplay muted loop playsinline poster="assets/images/hero_poster.webp">
       <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
       <source src="videos/home-zoomout.webm" type="video/webm">
     </video>
     <div class="page-index__hero-overlay"></div>
   </div>
   <h1>
-    <span class="hero-slot">
-      <span class="hero-slot__word is-active">Explore</span>
-      <span class="hero-slot__word" aria-hidden="true">Research</span>
-      <span class="hero-slot__word" aria-hidden="true">Present</span>
-      <span class="hero-slot__word" aria-hidden="true">Discover</span>
-      <span class="hero-slot__word" aria-hidden="true">Share</span>
-      <span class="hero-slot__word" aria-hidden="true">Traverse</span>
-      <span class="hero-slot__word" aria-hidden="true">Uncover</span>
-      <span class="hero-slot__word" aria-hidden="true">Reveal</span>
-      <span class="hero-slot__word" aria-hidden="true">Teach</span>
+    <span class="hero-slot-wrap">
+      <span class="hero-slot">
+        <span class="hero-slot__word is-active">Explore</span>
+        <span class="hero-slot__word" aria-hidden="true">Research</span>
+        <span class="hero-slot__word" aria-hidden="true">Present</span>
+        <span class="hero-slot__word" aria-hidden="true">Share</span>
+        <span class="hero-slot__word" aria-hidden="true">Teach</span>
+      </span>
+      <span class="hero-slot__underline"></span>
     </span>
     a Universe of Data
   </h1>
   <div class="page-index__hero-content">
     <p>Open-source software bringing the latest data visualization research to planetariums, classrooms, and screens everywhere.</p>
-    <div>
-      <a href="install/download.qmd" class="button__primary">Download OpenSpace</a>
-      <a href="features/globe-browsing.qmd" class="button__secondary">Explore features</a>
-    </div>
   </div>
+```
+
+{{< announcement-banner >}}
+
+```{=html}
 </section>
 
-<section class="page-index__trusted-section">
-  <p class="page-index__trusted-label">Built in collaboration with</p>
+<section id="trusted" class="page-index__trusted-section">
+  <p class="page-index__trusted-label">Powering visualizations at</p>
   <div class="page-index__logo-grid">
     <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium">
     <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History">
@@ -84,35 +92,41 @@ listing:
   <p class="page-index__trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
 
-<section class="page-index__venues-section">
+<section class="content-section">
   <h2>Built for every venue</h2>
-  <p>From a portable inflatable dome to a 30-meter planetarium, OpenSpace adapts to your display.</p>
+  <p>From a portable screen to a 30-meter planetarium, OpenSpace adapts to your display.</p>
   <div class="page-index__venue-grid">
 
-    <a href="features/display-support.qmd#dome-theaters">
-      <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running">
+    <a href="features/display-support.qmd#dome-theaters" class="card">
+      <div class="card-media">
+        <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running">
+      </div>
       <div>
         <h3>Planetarium domes</h3>
         <p>Drive fixed and portable domes with multi-projector blending, fisheye, and MPCDI support. Built-in tools for warp, edge-blend, and calibration.</p>
-        <span>Learn more →</span>
+        <span class="learn-more">Learn more <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h11M9 3l5 5-5 5"/></svg></span>
       </div>
     </a>
 
-    <a href="features/display-support.qmd#classrooms-desktops">
-      <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom">
+    <a href="features/display-support.qmd#classrooms-desktops" class="card">
+      <div class="card-media">
+        <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom">
+      </div>
       <div>
         <h3>Classrooms</h3>
         <p>Bring the solar system, deep space, and live mission data into any classroom. Free, cross-platform, with curated profiles and lesson-ready content.</p>
-        <span>Learn more →</span>
+        <span class="learn-more">Learn more <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h11M9 3l5 5-5 5"/></svg></span>
       </div>
     </a>
 
-    <a href="features/display-support.qmd#museum-exhibits">
-      <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit">
+    <a href="features/display-support.qmd#museum-exhibits" class="card">
+      <div class="card-media">
+        <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit">
+      </div>
       <div>
         <h3>Museum exhibits</h3>
-        <p>Power immersive permanent and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
-        <span>Learn more →</span>
+        <p>Power immersive shows and traveling exhibits. Touch interfaces, custom profiles, and synchronized multi-screen displays.</p>
+        <span class="learn-more">Learn more <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h11M9 3l5 5-5 5"/></svg></span>
       </div>
     </a>
 
@@ -122,7 +136,7 @@ listing:
 
 <section class="content-section">
   <h2>See what's possible</h2>
-  <p>Real visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
+  <p>Scientifically accurate visualizations from real data — planetary surfaces, mission trajectories, deep-sky catalogs, and live space weather.</p>
 ```
 
 ::: {#carousel}
@@ -133,9 +147,9 @@ listing:
 
 
 
-<section class="page-index__funders-section">
+<section class="content-section">
   <h2>Funded by</h2>
-  <p class="text-center">OpenSpace is grateful to be supported by the following public research funders.</p>
+  <p>OpenSpace is grateful to be supported by the following public research funders.</p>
 
   <div class="page-index__funder-marquee">
     <div class="page-index__funder-track">

@@ -16,6 +16,7 @@
 #           developer: Currently active developer
 #           developer-previous: Former developer
 #           student: Master thesis or PhD student
+#           emeritus: Retired from an active role, but honored for past contribution
 #   - thesis_affiliation (optional): The shortname of the institution where a student was
 #                                    performing their thesis work. Must only exist if the
 #                                    type is 'student'
@@ -31,7 +32,7 @@
   title: Creative Lead
   affiliation: American Museum of Natural History
   image: 02_carter_emmart.webp
-  type: admin
+  type: emeritus
 
 - name: Ro Kinzler
   title: Principal Investigator NASA Grant
@@ -49,7 +50,7 @@
   title: Project Management
   affiliation: NASA Goddard, Community Coordinated Modeling Center
   image: 04_masha_kuznetsova.webp
-  type: admin
+  type: emeritus
 
 
 
@@ -230,7 +231,7 @@
   title: Scientific Advisor
   affiliation: American Museum of Natural History
   image: 01_mordecai_mark_mac_low.webp
-  type: advisor
+  type: emeritus
 
 - name: Denton Ebel
   title: Scientific Advisor

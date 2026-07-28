@@ -2,7 +2,8 @@
 --
 -- Renders the dotnav container used for section navigation. The dotnav JS in
 -- `_template/dotnav.html` auto-populates the buttons at runtime by scanning for
--- `.content-section[id]` elements, so no manual button markup is required.
+-- `.content-section[id]`/`.content-section-narrow[id]` elements, so no manual button
+-- markup is required.
 --
 -- Usage:
 --

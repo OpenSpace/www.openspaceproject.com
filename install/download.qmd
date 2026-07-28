@@ -36,7 +36,7 @@ cta:
 ---
 
 ::: {.page-download__actions}
-[{{< iconify lucide:download style="color: currentColor;" >}} Download for Windows](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__button-primary}
+[Download for Windows {{< iconify lucide:download style="color: currentColor;" >}}](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__button-primary}
 
 [{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download__button-secondary target="_blank" rel="noopener"}
 :::
@@ -60,9 +60,9 @@ Windows · Linux (source)
 Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.
 :::
 
-[Download v0.22.0 (full)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__platform-link}
+[Download v0.22.0 (full) {{< iconify lucide:download style="color: currentColor;" >}}](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0.zip){.page-download__platform-link}
 
-[Download v0.22.0 (lightweight)](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip){.page-download__platform-link}
+[Download v0.22.0 (lightweight) {{< iconify lucide:download style="color: currentColor;" >}}](https://data.openspaceproject.com/release/0.22.0/OpenSpace-0.22.0_minimal.zip){.page-download__platform-link}
 
 [View previous versions](previous-versions.qmd){.page-download__platform-more}
 ::::
@@ -83,7 +83,14 @@ No pre-compiled binary for Linux. Source code is freely available on GitHub — 
 
 :::::
 
-*MacOS support* OpenSpace is using OpenGL as our graphics pipeline, which Apple has deprecated a number of years ago. The way they still support it on M-class chips is a separate conversion layer that transforms the OpenGL calls into Metal 3 (the Apple-specific graphics API) before it gets executed by the GPU cores on the M-class chips. Apple decided not support double precision floating point operations ([Spec Section 2.1](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)) which is used everywhere in OpenSpace to get enough precision for the whole universe. Additionally, Apple has not updated they OpenGL implementation in the past 10+ years and supporting that old OpenGL standard was slowing down users on Windows and Linux. As of version 0.22.0 OpenSpace now targets OpenGL 4.6 which has resulted in a 3-4x performance improvements for Windows and Linux uses at the cost of not being able to support MacOS anymore.
+\
+*MacOS support* 
+
+OpenSpace relies on OpenGL for graphics rendering. On Apple Silicon (M-series) Macs, OpenGL calls are translated to Metal, Apple's native graphics API, through a compatibility layer rather than running natively.
+
+This translation layer doesn't support double-precision floating point operations [Metal Shading Language Specification, Section 2.1](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf), which OpenSpace relies on to maintain precision at both planetary and universal scales.
+
+As of version 0.22.0, OpenSpace targets OpenGL 4.6, delivering a 3-4x performance improvement for Windows and Linux users. This update requires OpenGL features that are not available through the macOS compatibility layer, meaning OpenSpace can no longer support macOS going forward.
 
 ::::::
 

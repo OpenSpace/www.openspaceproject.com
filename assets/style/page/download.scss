@@ -1,5 +1,14 @@
 /*-- scss:rules --*/
 
+.content-section {
+  border-top: none;
+  border-bottom: none;
+
+  h2 {
+    border-bottom: none;
+  }
+}
+
 .page-download__actions {
   display: flex;
   flex-direction: column;
@@ -11,7 +20,7 @@
   }
 }
 
-.page-download__button-primary {
+#quarto-document-content .page-download__button-primary {
   @extend %button-primary;
 
   gap: 0.6rem;
@@ -19,13 +28,22 @@
   font-size: $font-size-lg;
   padding: 0.9rem 2.25rem;
   letter-spacing: $font-letterspacing-narrow;
+
+  iconify-icon {
+    transition: transform $animation-duration-base ease;
+  }
+
+  &:hover {
+    color: $color-button-primary-text;
+    text-decoration: none;
+  }
 }
 
-.page-download__button-secondary {
+#quarto-document-content .page-download__button-secondary {
   @extend %button-secondary;
 
   gap: 0.4rem;
-  font-size: $font-size-sm;
+  font-size: $font-size-md;
 }
 
 .page-download__summary {
@@ -49,27 +67,35 @@
   }
 
   > section {
-    display: flex;
-    flex-direction: column;
+    @include pill-link($border: $color-border-glow);
+
+    display: grid;
+    align-content: center;
+    justify-items: center;
     gap: 0.6rem;
+    padding: 1.5rem;
+
+    &:hover {
+      border-color: $color-border-glow;
+    }
   }
 
   h3 {
     font-size: $font-size-sm;
     color: $color-text-highlight;
     margin: 0;
-    border-bottom: none;
   }
 
   p {
     font-size: $font-size-sm;
-    line-height: 1.7;
-    color: $color-text-light;
+    font-weight: normal;
+    color: $color-text-muted;
     margin: 0;
 
     a {
       color: $color-accent-primary;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
@@ -94,7 +120,6 @@
   dl {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: 1rem;
     margin: 0;
   }
 
@@ -104,19 +129,15 @@
   }
 
   dt {
-    grid-column: 1;
     font-family: $font-monospace;
     font-size: $font-size-sm;
     letter-spacing: $font-letterspacing-wide;
-    white-space: nowrap;
     color: $color-text-light;
   }
 
   dd {
-    grid-column: 2;
     margin: 0;
     font-size: $font-size-sm;
-    line-height: 1.4;
     text-align: right;
     color: $color-text-highlight;
   }
@@ -129,12 +150,8 @@
 
 .page-download__requirements-panel {
   padding: 1.75rem;
-  border: 1px solid $color-border-faint;
+  border: 1px solid $color-border-glow;
   border-radius: $layout-border-radius;
-
-  p {
-    margin: 0;
-  }
 
   &.is-recommended {
     border-color: $color-border-light;
@@ -166,18 +183,9 @@
 
 .page-download__platform {
   padding: 2rem 1.75rem;
-  border: 1px solid $color-border-faint;
+  border: 1px solid $color-border-glow;
   border-radius: $layout-border-radius;
   background: $color-surface-primary;
-
-  transition:
-    transform $animation-duration-fast ease,
-    border-color $animation-duration-base ease;
-
-  &:hover {
-    border-color: $color-border-muted;
-    transform: translateY($layout-hover-lift-amount);
-  }
 
   > section {
     display: flex;
@@ -196,37 +204,31 @@
 
   h3 {
     margin: 0;
-    border-bottom: none;
     color: $color-text-highlight;
   }
 }
 
 .page-download__platform-desc {
-  flex: 1;
   font-size: $font-size-sm;
-  line-height: 1.6;
   color: $color-text-muted;
 }
 
-.page-download__platform-link {
-  @include pill-link(
-    $bg: $color-overlay-light-faint,
-    $border: $color-border-faint
-  );
-  @include backdrop-blur;
+// Specificity bumped to beat #quarto-document-content p a, which otherwise forces
+// this link's resting-state text to prime blue instead of $color-text-highlight
+#quarto-document-content .page-download__platform-link {
+  @extend %button-secondary;
 
-  // pill-link is inline-flex; these links are stacked full-width rows, and margin auto
-  // centering needs a block-level box
+  // button base is inline-flex; these links are stacked full-width rows, and margin
+  // auto centering needs a block-level box
   display: flex;
-  width: 100%;
   max-width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding: 0.65rem 1.25rem;
-  font-weight: $font-weight-demibold;
+  gap: 0.4rem;
 
-  &:hover {
-    background: $color-surface-primary;
+  iconify-icon {
+    font-size: 1rem;
+    transition: transform $animation-duration-base ease;
   }
 }
 
@@ -239,4 +241,8 @@
   font-weight: $font-weight-demibold;
   color: $color-accent-primary;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

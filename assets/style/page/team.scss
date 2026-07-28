@@ -1,11 +1,24 @@
 /*-- scss:rules --*/
 
+// Removes the divider between "Project Leadership" and "Developers" — this file is
+// only loaded on the team page, so the plain-looking selectors don't leak to other
+// pages' adjacent content-sections. Each section draws its own border-top AND
+// border-bottom independently — removing only one side (Project Leadership's
+// bottom) still leaves the other (Developers' top) drawing the exact same line, so
+// both need to go.
+.content-section:has(+ .content-section) {
+  border-bottom: none;
+}
+
+.content-section + .content-section {
+  border-top: none;
+}
+
 .page-team__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1rem;
 
   @media (max-width: $bp-sm) {
     grid-template-columns: repeat(auto-fill, 150px);
@@ -22,8 +35,6 @@
 }
 
 .page-team__card-inner {
-  position: relative;
-  width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition:
@@ -55,8 +66,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
-    display: block;
   }
 }
 
@@ -69,18 +78,16 @@
   background: $gradient-image-scrim;
 
   // Name
-  & h3 {
+  h3 {
     font-size: $font-size-sm;
     color: $color-text-highlight;
-    line-height: 1.25;
     margin-bottom: 0.15rem;
   }
 
   // Title
-  & span {
+  span {
     font-size: $font-size-2xs;
     color: $color-text-muted;
-    line-height: 1.3;
   }
 }
 
@@ -93,23 +100,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 15%;
-    right: 15%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, $color-accent-primary, transparent);
-    opacity: 0.6;
-  }
 }
 
 .page-team__card-name {
   font-size: $font-size-sm;
   color: $color-text-highlight;
-  line-height: 1.25;
   margin-bottom: 0.4rem;
 }
 
@@ -118,18 +113,17 @@
   color: $color-accent-primary;
   letter-spacing: $font-letterspacing-extrawide;
   text-transform: uppercase;
-  margin-bottom: 0.8rem;
-  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 .page-team__card-affiliation {
   font-size: $font-size-xs;
   color: $color-text-muted;
-  line-height: 1.5;
 }
 
 .page-team__card-back-inner {
   padding: 1.5rem;
-  max-height: 100%;
-  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
 }

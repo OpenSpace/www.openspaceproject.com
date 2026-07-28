@@ -1,15 +1,103 @@
+/*-- scss:defaults --*/
+
+// Dedicated breakpoint (not $bp-lg) for switching the footer's link columns between
+// their wide, always-expanded grid and the narrow accordion. Previously set to where
+// the grid naturally starts wrapping to a second row (1350px, after widening
+// .footer's side padding to 3.5rem) — moved earlier per explicit preference, which
+// also means the grid never gets a chance to show that awkward wrapped-to-2-rows
+// state in between, since the accordion now kicks in first.
+// footer.js's `footerAccordionQuery` must stay in sync with this value.
+$footer-accordion-bp: 1150px;
+
 /*-- scss:rules --*/
+
+// Reveal-footer setup, split across two elements on purpose:
+//
+// - #quarto-content (Quarto's own grid container) carries the padding-bottom gutter
+//   (kept in sync with the footer's real height by footer.js). It has no background of
+//   its own, so that padding stays genuinely transparent and lets the fixed footer show
+//   through underneath — it must NOT also carry the rounded/opaque styling below, or
+//   background-clip's border-box default would paint straight through this same padding,
+//   defeating the gutter (only the sliver past the padding would ever reveal the footer).
+// - #quarto-document-content (the real opaque page content, rounded on the bottom
+//   corners like our cards) becomes its own positive z-index stacking context so it
+//   always paints above the fixed, lower-stacked footer. It carries NO padding of its
+//   own, so its rounded/clipped edge sits exactly at the true bottom of the visible
+//   content, not partway down a transparent gutter.
+//
+// #quarto-content's grid-row sizing doesn't treat an added padding-bottom as plain block
+// padding (it reserves its own fixed extra row below the content row), so footer.js
+// measures and subtracts that structural gutter before setting our own padding.
+//
+// #quarto-document-content is scoped under #quarto-content (2 IDs) rather than the bare
+// ID, because Quarto's own built-in rule `#quarto-content.page-columns main.column-page`
+// (1 ID + 2 classes + 1 type) otherwise outranks a plain `#quarto-document-content` and
+// pins z-index back to 0 — which ties with the footer and, on DOM order, made the footer
+// win and permanently cover the bottom of every page instead of only revealing at the end.
+#quarto-content {
+  padding-bottom: 0;
+}
+
+#quarto-content #quarto-document-content {
+  position: relative;
+  z-index: 1;
+  background: $color-background;
+  // Content and footer are both near-black, so a card-sized 12px radius reads as
+  // basically flat — sized up from $layout-border-radius so the curve is legible on
+  // shape alone, with no border needed for contrast. Capped below ~22px: the straight
+  // (non-corner) part of this edge overlaps the footer by the same amount, and the
+  // footer's own column titles start ~22px below its top edge — any bigger and the
+  // titles get covered outside the curved corners themselves.
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+
+  // Below $footer-accordion-bp the footer itself isn't fixed/revealed any more (see
+  // .footer) — nothing to round or clip a corner against.
+  @media (max-width: $footer-accordion-bp) {
+    border-radius: 0;
+    overflow: visible;
+  }
+}
 
 //
 // Page footer
 //
-// Custom site footer
+// Custom site footer. Fixed to the viewport bottom and sits behind #quarto-content, so
+// it "floats up" into view via the padding-bottom gutter above, instead of scrolling
+// up with the rest of the page.
+//
+// Below $footer-accordion-bp this reverts to a normal, static, in-flow footer instead.
+// The reveal effect relies on the footer being pinned to the viewport's *bottom* edge —
+// so when its own height changes (e.g. the accordion opens), it grows *upward*, since
+// the bottom stays fixed. That shifts every element inside it, including whichever
+// <summary> you just clicked, to a new screen position — you can't click "the same
+// spot" to close it again because the header isn't there any more. The reveal effect
+// only makes sense at wide widths anyway, where there's no accordion and nothing
+// inside the footer changes height on its own — footer.js only computes/sets the
+// reveal gutter in that same wide range, via the same breakpoint.
 .footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
   background: $color-footer-bg;
   border-top: 1px solid $color-border-faint;
-  padding: 1rem 2rem;
+  // A clearly bigger side margin than the original 2rem — meant to visibly pull the
+  // footer content in from the edges, rather than a subtle pixel-matched value.
+  padding: 3rem 3.5rem 1.5rem;
   font-size: $font-size-sm;
   color: $color-text-light;
+  // Browsers scroll-anchor near the bottom of the page: opening an accordion item
+  // here extends the document, and — even fully static — the browser was nudging
+  // scrollY to reveal more of the newly added content, shifting the just-clicked
+  // <summary> to a new position. Opt this whole region out of that adjustment.
+  overflow-anchor: none;
+
+  @media (max-width: $footer-accordion-bp) {
+    position: static;
+  }
 }
 
 .footer__inner {
@@ -17,39 +105,101 @@
   gap: 3rem;
   align-items: flex-start;
 
-  @media (max-width: $bp-md) {
+  // Matches .footer__links' own breakpoint (accordion kicks in at $footer-accordion-bp
+  // too) — below it, footer__brand (220px) + .newsletter (220px) + gaps leave too
+  // little room for the link columns, which were getting squeezed and clipped off-screen.
+  @media (max-width: $footer-accordion-bp) {
     flex-direction: column;
+    // Overrides flex-start: once stacked, footer__links should stretch to the full
+    // available width so its columns can flow across it, instead of shrinking to fit.
+    align-items: stretch;
     gap: 2rem;
   }
 }
 
 .footer__brand {
   flex: 0 0 220px;
-  text-align: center;
+  text-align: left;
 
-  @media (max-width: $bp-md) {
-    flex: none;
+  // Below the accordion breakpoint its mark, tagline, and social icons are all
+  // hidden/relocated elsewhere (see .footer__logo-link--bottom, .footer__bottom-row) —
+  // nothing left to show, so drop the block entirely rather than leaving an empty gap.
+  @media (max-width: $footer-accordion-bp) {
+    display: none;
+  }
+}
+
+// The top-of-brand mark (wide widths) and the one that relocates below the accordion
+// (narrow widths, see .footer__logo-link--bottom) share this class for their image
+// sizing, but only one of the two links is ever displayed at once.
+.footer__logo-link {
+  display: block;
+
+  // Below the accordion breakpoint the mark relocates to
+  // .footer__logo-link--bottom instead, without a tagline alongside it.
+  @media (max-width: $footer-accordion-bp) {
+    display: none;
+  }
+}
+
+.footer__logo-link--bottom {
+  display: none;
+
+  // A flex item within .footer__bottom-row__start now (row layout, alongside the
+  // relocated newsletter) rather than a standalone centered block.
+  @media (max-width: $footer-accordion-bp) {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .footer__logo {
+    // Fixed rather than the fluid clamp() below — this instance only ever renders at
+    // narrow widths, where a small, constant mark (mirroring the reference) reads
+    // better than continuing the wide-mode scaling down further.
+    max-width: 36px;
+    margin: 0;
   }
 }
 
 .footer__logo {
-  max-width: 80%;
+  // A fixed cap rather than a %, since .footer__brand's own width becomes shrink-to-fit
+  // (flex: none) below $bp-md — a percentage of that just tracks the logo's own
+  // intrinsic size instead of constraining it, letting it render far too large.
+  // clamp() scales it down fluidly as the window narrows (rather than staying one
+  // fixed size all the way to the accordion breakpoint, where it relocates instead).
+  // Coefficients solved for 72px at a 1920px viewport down to 48px right at
+  // $footer-accordion-bp (1300px) — a bare `vw` alone can't hit two specific points
+  // like this since it has no constant offset term.
+  max-width: clamp(48px, calc(3.9vw - 2.3px), 72px);
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 0.8rem;
+  margin: 0 0 0.8rem;
 }
 
 .footer__tagline {
   font-size: $font-size-sm;
   margin: 0 0 1.2rem;
   letter-spacing: 0.02em;
+
+  // Only ever shown alongside the top-of-brand mark — once the mark relocates below
+  // the accordion, drop the tagline entirely rather than moving it too.
+  @media (max-width: $footer-accordion-bp) {
+    display: none;
+  }
 }
 
 .footer__social {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.25rem;
   font-size: $font-size-2xl;
+
+  // Replaced below the accordion breakpoint by the duplicate in .footer__bottom-row
+  // (right-aligned, alongside the mark + newsletter) rather than staying up here.
+  @media (max-width: $footer-accordion-bp) {
+    display: none;
+  }
 
   a {
     color: $color-text-light;
@@ -57,35 +207,95 @@
     transition: color $animation-duration-base ease;
 
     &:hover {
-      color: $color-accent-secondary;
+      color: $color-link;
+    }
+  }
+}
+
+// Narrow widths only: mark (left) + the relocated newsletter form, then social icons
+// (right), all in one row below the accordion — see footer.js for the newsletter's
+// DOM move and .footer__logo-link--bottom/.footer__social above for their counterparts.
+.footer__bottom-row {
+  display: none;
+
+  @media (max-width: $footer-accordion-bp) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    // No margin-top here — .footer__inner's own gap (between its stacked children)
+    // already provides the space above this row.
+  }
+}
+
+.footer__bottom-row__start {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  // The relocated newsletter sits right after the mark — drop its own centering (that
+  // was for when it stood alone in its original wide-mode spot), but keep the label.
+  .newsletter {
+    flex: none;
+  }
+
+  .newsletter__step {
+    align-items: stretch;
+    text-align: left;
+  }
+}
+
+.footer__social--bottom {
+  display: flex;
+  gap: 0.25rem;
+  font-size: $font-size-xl;
+
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+    transition: color $animation-duration-base ease;
+
+    &:hover {
+      color: $color-link;
     }
   }
 }
 
 .footer__links {
+  // Wide: every category shown side by side, always expanded — auto-fit + minmax
+  // flows as many columns as actually fit, wrapping to more rows only once they no
+  // longer do. Narrow: a single-column accordion instead (see .footer__column) —
+  // footer.js keeps each <details>'s real `open` attribute in sync with this same
+  // breakpoint, so the two never disagree about which mode is active.
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 2rem;
   flex: 1;
 
-  @media (max-width: $bp-lg) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: $bp-md) {
-    gap: 1.5rem;
-  }
-
-  @media (max-width: $bp-sm) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: $footer-accordion-bp) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 }
 
 .footer__column {
+  // Quarto's own base styles apply `margin-bottom: 1em` to every <details> element
+  // site-wide (for doc-style collapsible blocks) — override it here, same fix as
+  // .faq__item (see user-meetings.scss), or it stacks with the column's own spacing
+  // and inflates the gap below each accordion item in the narrow/stacked layout.
+  margin-bottom: 0;
+  border-bottom: 1px solid $color-border-faint;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 1rem;
 
     li {
       margin-bottom: 0.15rem;
@@ -98,19 +308,86 @@
       transition: color $animation-duration-base;
 
       &:hover {
-        color: $color-text-highlight;
+        color: $color-link;
       }
+    }
+  }
+
+  // Wide: not an accordion — always open (footer.js sets the `open` attribute), and
+  // the heading itself shouldn't look or act clickable.
+  @media (min-width: $footer-accordion-bp + 1) {
+    border-bottom: none;
+
+    .footer__title {
+      padding: 0 0 0.8rem;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .footer__chevron {
+      display: none;
     }
   }
 }
 
 .footer__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.85rem 0;
   font-family: $font-headings;
   font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
   letter-spacing: $font-letterspacing-extrawide;
   text-transform: uppercase;
-  color: $color-accent-primary;
-  margin: 0 0 0.8rem;
+  color: $color-text-light;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  // Same fill-in-on-hover treatment as the venue cards on the homepage — a thin bar
+  // along the bottom edge, hidden until hovered. Only ever visible in the (narrow)
+  // accordion mode: the wide layout disables pointer-events on this element, so hover
+  // never triggers there.
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: $color-accent-secondary;
+    opacity: 0;
+    transition: opacity $animation-duration-base ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+// Drawn with borders rather than an icon glyph, so the stroke weight and color are
+// plain CSS values instead of tied to an icon set's own default weight. Pointing right
+// (collapsed) by default; rotates to point down once the details is open.
+.footer__chevron {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-style: solid;
+  border-color: $color-text-light;
+  border-width: 0 2px 2px 0;
+  margin-right: 0.15rem;
+  transition: transform $animation-duration-base ease;
+  transform: rotate(-45deg);
+}
+
+.footer__column[open] .footer__chevron {
+  transform: rotate(45deg);
 }
 
 .footer__bottom {
@@ -119,8 +396,16 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 4rem;
   font-size: $font-size-xs;
   color: $color-text-light;
+
+  // 4rem was tuned for the gap under the wide-mode columns — .footer__bottom-row
+  // (mark/email/social) sits right above this in the narrow/accordion layout instead,
+  // and doesn't need nearly that much space before the copyright line.
+  @media (max-width: $footer-accordion-bp) {
+    margin-top: 1.5rem;
+  }
 
   @media (max-width: $bp-md) {
     flex-direction: column;

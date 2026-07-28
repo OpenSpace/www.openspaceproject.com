@@ -1,119 +1,152 @@
 /*-- scss:rules --*/
 
+$hero-video-bottom: clamp(100px, 14vh, 200px);
+$trusted-pullup: calc(#{$hero-video-bottom} - 20px);
+
+main:has(.page-index__hero) .content-section {
+  border-top: none;
+  border-bottom: none;
+
+  h2 {
+    border-bottom: none;
+  }
+
+  &:nth-child(even of .content-section) {
+    background: linear-gradient(
+      to bottom,
+      $color-background 0,
+      $color-surface-primary clamp(80px, 12vh, 160px),
+      $color-surface-primary calc(100% - clamp(80px, 12vh, 160px)),
+      $color-background 100%
+    );
+  }
+}
+
 .page-index__hero {
   position: relative;
   height: 90vh;
   min-height: 600px;
   overflow: hidden;
+  pointer-events: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.75rem;
-  color: white;
-  background: $color-background;
-  padding: 5rem 0 clamp(200px, 28vh, 380px);
-
-  .page-index__hero-video-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: clamp(200px, 28vh, 380px);
-    z-index: 0;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: clamp(140px, 24vh, 320px);
-      background: linear-gradient(to bottom, transparent 0%, $color-background 100%);
-      pointer-events: none;
-    }
-
-    video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-    }
-
-    .page-index__hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        rgba(black, 0.35) 0%,
-        rgba(black, 0.55) 100%
-      );
-    }
-  }
-
-
-  .page-index__hero-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 800px;
-    padding: 0 1.5rem;
-    text-align: center;
-    box-sizing: border-box;
-
-    p {
-      font-size: $font-size-lg;
-      line-height: 1.5;
-      margin: 0 0 2rem;
-      color: $color-text;
-    }
-  }
+  padding: 5rem 0 $hero-video-bottom;
 
   h1 {
-    @include section-title;
+    @include section-title($fontsize: 2.5rem);
 
     line-height: 1.1;
     margin: 0;
+    letter-spacing: $font-letterspacing-wide;
     text-transform: uppercase;
     text-align: center;
     z-index: 2;
     position: relative;
     padding: 0 1.5rem;
 
-    .hero-slot {
-      display: inline-grid;
-      overflow: hidden;
-      vertical-align: bottom;
-      justify-items: end;
-      margin-right: 0.5rem;
-
-      .hero-slot__word {
-        grid-area: 1 / 1;
-        transform: translateY(110%);
-        transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-
-        &.is-active {
-          transform: translateY(0);
-        }
-
-        &.is-exit {
-          transform: translateY(-110%);
-        }
-      }
+    @media (max-width: $bp-md) {
+      line-height: 1.4;
     }
   }
 
-  .page-index__hero-actions {
-    display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-    flex-wrap: wrap;
+  @media (max-width: $bp-md) {
+    height: auto;
+    min-height: 75vh;
   }
+}
+
+.hero-slot-wrap {
+  position: relative;
+  display: inline-grid;
+  margin-right: 0.4rem;
+  line-height: 1;
+}
+
+.hero-slot {
+  display: inline-grid;
+  overflow: hidden;
+  justify-items: end;
+}
+
+.hero-slot__underline {
+  position: absolute;
+  right: 0;
+  bottom: -0.08em;
+  height: 0.08em;
+  min-height: 3px;
+  background: $color-accent-secondary;
+  border-radius: 999px;
+  transition: width $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (max-width: $bp-md) {
-    height: 75vh;
-    min-height: 500px;
+    bottom: -0.2em;
   }
+}
+
+.hero-slot__word {
+  grid-area: 1 / 1;
+  transform: translateY(110%);
+  transition: transform $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-active {
+    transform: translateY(0);
+  }
+
+  &.is-exit {
+    transform: translateY(-110%);
+  }
+}
+
+.page-index__hero-content {
+  z-index: 2;
+  pointer-events: auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 1.5rem;
+
+  p {
+    font-size: $font-size-lg;
+  }
+}
+
+.page-index__hero-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: $hero-video-bottom;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: clamp(140px, 24vh, 320px);
+    background: linear-gradient(to bottom, transparent 0%, $color-background 100%);
+    pointer-events: none;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+.page-index__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(black, 0.35) 0%,
+    rgba(black, 0.55) 100%
+  );
 }
 
 .page-index__trusted-section {
@@ -122,74 +155,10 @@
 
   padding: 3rem 0;
   background: $color-background;
-  margin-top: clamp(-360px, -26vh, -180px);
-  position: relative;
-  z-index: 10;
-
-  .page-index__trusted-label {
-    text-align: center;
-    font-size: $font-size-sm;
-    letter-spacing: $font-letterspacing-extrawide;
-    text-transform: uppercase;
-    color: $color-text-muted;
-    margin: 0 0 2.5rem;
-
-    // Pandoc wraps the label text in a <p> inside this div
-    p {
-      margin: 0;
-    }
-  }
-
-  .page-index__logo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-
-    > p {
-      display: contents;
-      margin: 0;
-    }
-
-    img {
-      max-height: 50px;
-      max-width: 140px;
-      width: auto;
-      height: auto;
-      filter: grayscale(100%) brightness(0.82) contrast(1.1);
-      opacity: 0.7;
-      transition:
-        filter $animation-duration-base ease,
-        opacity $animation-duration-base ease;
-
-      &:hover {
-        filter: grayscale(0%);
-        opacity: 1;
-      }
-    }
-  }
-
-  .page-index__trusted-more {
-    text-align: center;
-    margin: 2rem 0 0;
-
-    p {
-      margin: 0;
-    }
-
-    a {
-      color: $color-text-muted;
-      text-decoration: none;
-      transition: color $animation-duration-base ease;
-
-      &:hover {
-        color: $color-link;
-      }
-    }
-  }
+  // Smaller pull-up than the original design (was clamp(-360px,-26vh,-180px)) —
+  // freed-up room is where .page-index__meeting-banner now sits, between the video's
+  // own edge ($hero-video-bottom) and this section's start.
+  margin-top: calc(-1 * #{$trusted-pullup});
 
   @media (max-width: $bp-md) {
     padding-top: 3rem;
@@ -197,219 +166,277 @@
   }
 }
 
-.page-index__venues-section {
-  background: $color-background;
-  padding: $layout-section-padding-wide;
+.page-index__trusted-label {
+  text-align: center;
+  font-size: $font-size-sm;
+  letter-spacing: $font-letterspacing-extrawide;
+  text-transform: uppercase;
+  color: $color-text-muted;
+  margin: 0 0 2.5rem;
+}
 
-  // Venue grid breaks out of container to full width
-  .page-index__venue-grid {
-    width: 100%;
-  }
+.page-index__logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
 
-  h2 {
-    @include section-title;
+  img {
+    max-height: 50px;
+    max-width: 140px;
+    width: auto;
+    height: auto;
+    filter: grayscale(100%) brightness(0.82) contrast(1.1);
+    opacity: 0.7;
+    transition:
+      filter $animation-duration-base ease,
+      opacity $animation-duration-base ease;
 
-    margin: 0 0 0.75rem;
-  }
-
-  .page-index__venue-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-
-    & > a {
-      background: $color-surface-primary;
-      border: 1px solid $color-border-faint;
-      border-radius: $layout-border-radius;
-      overflow: hidden;
-      box-shadow: 0 1px 3px $color-overlay-dark-faint;
-      transition:
-        box-shadow $animation-duration-base ease,
-        border-color $animation-duration-base ease,
-        transform $animation-duration-fast ease;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      color: inherit;
-      position: relative;
-
-      &:hover {
-        box-shadow: 0 8px 24px $color-overlay-dark-faint;
-        border-color: $color-border-light;
-        text-decoration: none;
-        color: inherit;
-        transform: translateY($layout-hover-lift-amount);
-      }
-
-      & > img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-
-        object-position: center;
-        border-radius: $layout-border-radius;
-        border: 1px solid $color-border-faint;
-        margin-bottom: 2.5rem;
-      }
-
-      & > div {
-        padding: 1.5rem 1.75rem 1.75rem;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-
-        gap: 4rem;
-        align-items: start;
-
-        @media (max-width: $bp-md) {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-
-        h3 {
-          margin: 0 0 0.75rem;
-          color: $color-text-highlight;
-        }
-
-        p {
-          margin: 0 0 1rem;
-          color: $color-text-muted;
-          line-height: 1.6;
-          flex-grow: 1;
-        }
-
-        span {
-          display: inline-block;
-          color: $color-accent-primary;
-          font-weight: $font-weight-demibold;
-        }
-      }
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
     }
-
-    @media (max-width: $bp-lg) {
-      grid-template-columns: 1fr;
-      max-width: 480px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: $bp-md) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 }
 
-.page-index__funders-section {
-  padding: $layout-section-padding-wide;
+.page-index__trusted-more {
+  text-align: center;
+  margin: 2rem 0 0;
+}
 
-  background: $color-background;
+// Specificity bumped to beat #quarto-document-content p a
+#quarto-document-content .page-index__trusted-more a {
+  color: $color-link;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color $animation-duration-base ease;
 
-  overflow: hidden;
-  max-width: 100vw;
+  &:hover {
+    color: $color-link;
+    text-decoration: underline;
+  }
+}
 
-  padding-left: clamp(1.5rem, 8vw, 12rem);
+// Positions the shared .announcement-banner (components/announcement-banner.scss)
+// against the hero video specifically on this page — everywhere else it just falls
+// back to that file's plain static-bar styling. See $hero-video-bottom and
+// $trusted-pullup above for why this exact offset avoids overlapping the
+// trusted-institutions section that follows.
+.page-index__hero .announcement-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: $hero-video-bottom;
+  z-index: 3;
+  pointer-events: auto;
+}
 
-  h2 {
-    @include section-title;
+// Venue grid breaks out of container to full width
+.page-index__venue-grid {
+  width: 100%;
+}
 
-    margin: 0 0 0.75rem;
-    border-bottom: none;
+.page-index__venue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  // Card hover — a flare-yellow bar fills in along the bottom edge
+  .card {
     position: relative;
+    overflow: hidden;
+    background: $color-surface-primary;
+    border: 1.5px solid $color-border-glow;
+    border-radius: $layout-border-radius;
+    box-shadow: 0 1px 3px $color-overlay-dark-faint;
+    transition:
+      transform $animation-duration-base ease,
+      box-shadow $animation-duration-base ease;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
 
     &::after {
       content: '';
       position: absolute;
+      left: 0;
+      right: 0;
       bottom: 0;
-      left: clamp(1.5rem, 8vw, 12rem);
-      width: calc(#{$layout-container-max-wide} - 2 * clamp(1.5rem, 8vw, 12rem));
-      height: 1px;
-      background: $color-surface-primary-faint;
+      height: 5px;
+      background: $color-accent-secondary;
+      opacity: 0;
+      transition: opacity $animation-duration-base ease;
     }
-  }
 
-  .page-index__funder-marquee {
-    overflow: hidden;
-    width: 100%;
-    max-width: 100vw;
-    margin: 0 0 2rem;
-    padding: 0;
-    mask-image: linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 15%,
-      black 23%,
-      black 77%,
-      transparent 85%,
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 15%,
-      black 23%,
-      black 77%,
-      transparent 85%,
-      transparent 100%
-    );
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 0 0 1px $color-border-glow-faint,
+        0 20px 40px -20px rgba(black, 0.5);
+      text-decoration: none;
+      color: inherit;
 
-    .page-index__funder-track {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    > div:not(.card-media) {
+      padding: 1.5rem 1.75rem 1.75rem;
       display: flex;
-      gap: 6rem;
-      width: max-content;
-      align-items: center;
-      padding: 0.5rem 2rem;
-      animation: page-index-scroll-funders $animation-marquee-duration linear infinite;
+      flex-direction: column;
+      gap: 1rem;
 
-      @keyframes page-index-scroll-funders {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-50%);
-        }
+      @media (max-width: $bp-md) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
-      &:hover {
-        animation-play-state: paused;
+      h3 {
+        margin: 0 0 0.75rem;
+        color: $color-text-highlight;
       }
 
-      a {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      img {
-        max-height: 60px;
-        // max-width: auto;
-        // width: auto;
-        // height: auto;
-        opacity: 0.7;
-        flex-shrink: 0;
-
-        @media (max-width: $bp-md) {
-          max-height: 48px;
-          max-width: 140px;
-        }
+      p {
+        color: $color-text-muted;
       }
     }
   }
 
-  .page-index__funder-disclaimer {
-    font-size: $font-size-xs;
-    color: $color-text-light;
-    line-height: 1.5;
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    text-align: center;
+  .card-media {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: $layout-border-radius;
+      border: 1px solid $color-border-faint;
+      transform: scale(1);
+      transition: transform $animation-duration-slow ease;
+    }
   }
 
-  @media (max-width: $bp-md) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .card:hover .card-media img {
+    transform: scale(1.06);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card:hover .card-media img {
+      transform: none;
+    }
+
+    .card:hover {
+      transform: none;
+    }
+  }
+
+  .learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: $color-accent-secondary;
+    font-weight: $font-weight-demibold;
+
+    svg {
+      transition:
+        transform $animation-duration-base ease,
+        stroke $animation-duration-base ease;
+    }
+  }
+
+  .card:hover .learn-more {
+    color: $color-accent-secondary;
+
+    svg {
+      transform: translateX(5px);
+      stroke: $color-accent-secondary;
+    }
+  }
+
+  @media (max-width: $bp-lg) {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.page-index__funder-marquee {
+  margin: 2rem 0;
+  // The scrolling track below is intentionally much wider than the viewport — without
+  // this, nothing clips it and it only stays invisible because `html` happens to set
+  // `overflow-x: hidden` globally. That's a fragile, indirect dependency (e.g. can gap
+  // or rubber-band on iOS Safari) — clip it directly at the source instead.
+  overflow-x: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 15%,
+    black 23%,
+    black 77%,
+    transparent 85%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 15%,
+    black 23%,
+    black 77%,
+    transparent 85%,
+    transparent 100%
+  );
+}
+
+.page-index__funder-track {
+  display: flex;
+  gap: 6rem;
+  width: max-content;
+  align-items: center;
+  animation: page-index-scroll-funders $animation-marquee-duration linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+img {
+  max-height: 60px;
+  opacity: 0.7;
+  // Institutional logos, not photos — the site-wide content-section img rounding
+  // (general.scss) would visibly alter their shape.
+  border-radius: 0;
+  transition: opacity 0.3s ease;
+}
+
+a:hover img {
+  opacity: 1;
+  filter: brightness(100%) contrast(97%);
+}
+}
+
+.page-index__funder-disclaimer {
+  font-size: $font-size-xs;
+  color: $color-text-light;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@keyframes page-index-scroll-funders {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

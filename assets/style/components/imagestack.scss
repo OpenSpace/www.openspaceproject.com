@@ -33,45 +33,18 @@ $stack-step-y: -11px;
 .image-stack__text {
   h3 {
     color: $color-text-muted;
-    margin: 0 0 1rem;
     letter-spacing: $font-letterspacing-narrow;
   }
 
   p {
-    line-height: 1.8;
     color: $color-text;
-    margin: 0;
   }
 
   ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.25rem 0 0;
-
     li {
       font-size: $font-size-sm;
-      line-height: 1.65;
       color: $color-text-muted;
-      padding: 0.5rem 0 0.5rem 1.25rem;
       border-bottom: 1px solid $color-border-faint;
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: $color-accent-primary;
-        opacity: 0.7;
-      }
-
-      &:last-child {
-        border-bottom: none;
-      }
     }
   }
 }
@@ -79,8 +52,6 @@ $stack-step-y: -11px;
 .image-stack__container {
   position: relative;
   height: 360px;
-  padding-right: $stack-inset-right;
-  padding-top: $stack-inset-top;
   cursor: pointer;
   user-select: none;
   outline: none;
@@ -114,34 +85,34 @@ $stack-step-y: -11px;
   transition:
     transform $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1),
     opacity $animation-duration-slow ease;
-}
 
-.image-stack__card--front {
-  transform: translate(0, 0) rotate(0deg);
-  opacity: 1;
-  z-index: 3;
+  &--front {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+    z-index: 3;
 
-  .image-stack__container:hover & {
-    transform: translate(-2px, -3px) rotate(-0.5deg);
+    .image-stack__container:hover & {
+      transform: translate(-2px, -3px) rotate(-0.5deg);
+    }
   }
-}
 
-.image-stack__card--mid {
-  transform: translate($stack-step-x, $stack-step-y) rotate(3deg);
-  opacity: 0.7;
-  z-index: 2;
-}
+  &--mid {
+    transform: translate($stack-step-x, $stack-step-y) rotate(3deg);
+    opacity: 0.7;
+    z-index: 2;
+  }
 
-.image-stack__card--back {
-  transform: translate($stack-step-x * 2, $stack-step-y * 2) rotate(5.5deg);
-  opacity: 0.42;
-  z-index: 1;
-}
+  &--back {
+    transform: translate($stack-step-x * 2, $stack-step-y * 2) rotate(5.5deg);
+    opacity: 0.42;
+    z-index: 1;
+  }
 
-.image-stack__card--hidden {
-  transform: translate($stack-step-x * 2, $stack-step-y * 2) rotate(5.5deg);
-  opacity: 0;
-  z-index: 0;
+  &--hidden {
+    transform: translate($stack-step-x * 2, $stack-step-y * 2) rotate(5.5deg);
+    opacity: 0;
+    z-index: 0;
+  }
 }
 
 .image-stack__footer {
@@ -149,7 +120,6 @@ $stack-step-y: -11px;
   align-items: center;
   justify-content: space-between;
   margin-top: 0.75rem;
-  padding-right: $stack-inset-right;
 }
 
 .image-stack__dots {

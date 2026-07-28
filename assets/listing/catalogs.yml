@@ -1,0 +1,61 @@
+#
+# Examples for the catalogs feature page
+#
+# Fields:
+#   - title: Title of the example
+#   - tag: Classification of the example as a single string
+#   - image: Path to a representative image
+#   - alt: Alt text for the image
+#   - tagline: Short informative tag line
+#   - description: Longer paragraph of description for the example
+#
+
+- image: /assets/images/features/exoplanets.webp
+  alt: Confirmed exoplanet host stars marked in the Milky Way, rendered in OpenSpace
+  tag: Exoplanets
+  title: Exoplanets
+  tagline: NASA Exoplanet Archive · 5,000+ confirmed worlds
+  description: >
+    Every confirmed exoplanet plotted around its host star, updated from the NASA
+    Exoplanet Archive. Multi-planet systems are marked, and the narrow cone of the
+    Kepler field reveals just how many worlds a single patch of sky can hold.
+
+- image: /assets/images/carousel/sdss.webp
+  alt: Sloan Digital Sky Survey galaxy catalog rendered in OpenSpace, showing the cosmic web
+  tag: Digital Universe
+  title: Digital Universe Atlas
+  tagline: Tully Galaxy Catalog · 2dF · Sloan Digital Sky Survey
+  description: >
+    Deep sky surveys plotting hundreds of thousands of galaxies in three dimensions,
+    from the nearby Tully catalog out through 2dF and the Sloan Digital Sky Survey —
+    revealing the cosmic web of clusters, filaments, and voids.
+
+- image: /assets/images/features/quasars.webp
+  alt: Half a million quasars rendered in OpenSpace, mapped to the edge of the observable universe
+  tag: Deep Field
+  title: Quasars
+  tagline: Half a million active galactic nuclei
+  description: >
+    A catalog of the most distant, luminous objects we can see — supermassive black
+    holes actively feeding on infalling matter, mapped out toward the edge of the
+    observable universe.
+
+- image: /assets/images/features/cosmic-microwave-background.webp
+  alt: Planck all-sky map of the cosmic microwave background, rendered in OpenSpace
+  tag: Planck
+  title: Cosmic microwave background
+  tagline: The universe's oldest light · 13.8 billion years old
+  description: >
+    The Planck mission's all-sky temperature map of the radiation released 400,000
+    years after the Big Bang — the seed fluctuations that grew, by gravity, into
+    today's galaxies and clusters.
+
+- image: /assets/images/carousel/asteroids.webp
+  alt: Asteroid and comet trajectories near Earth rendered in OpenSpace
+  tag: Small Bodies
+  title: Asteroids & comets
+  tagline: JPL Small-Body Database · Minor Planet Center
+  description: >
+    Orbital data for hundreds of thousands of asteroids and comets, rendered as true
+    trajectories through the Solar System — including near-Earth objects and every
+    famous named comet.

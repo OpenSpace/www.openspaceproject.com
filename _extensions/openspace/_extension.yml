@@ -5,6 +5,7 @@ quarto-required: ">=1.9.0"
 contributes:
   shortcodes:
     - shortcodes/dotnav.lua
+    - shortcodes/announcement-banner.lua
   filters:
     - filters/cta.lua
     - filters/hero.lua

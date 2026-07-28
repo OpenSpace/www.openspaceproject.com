@@ -1,6 +1,8 @@
 ---
-pagetitle: "User Meeting — OpenSpace"
-description-meta: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
+pagetitle: User Meetings — OpenSpace
+description-meta: >
+  Each year, the OpenSpace community gathers to share work, learn from each other, and
+  shape what comes next.
 format:
   html:
     page-layout: full
@@ -9,21 +11,23 @@ format:
     theme: ../../assets/style/page/user-meetings.scss
 
 hero:
-  title: "User Meeting"
+  title: User Meetings
   crumbs:
-    - "Community"
-    - "User Meetings"
-  lede: "Each year, the OpenSpace community gathers to share work, learn from each other, and shape what comes next."
+    - Community
+    - User Meetings
+  lede: >
+    Each year, the OpenSpace community gathers to share work, learn from each other, and
+    shape what comes next.
 
 cta:
-  heading: "Stay in the loop"
+  heading: Stay in the loop
   actions:
-    - text: "Get notified"
-      link: "/community/contact.qmd"
-      style: "primary"
-    - text: "Community events"
-      link: "/community/events/index.qmd"
-      style: "ghost"
+    - text: Get notified
+      link: /community/contact.qmd
+      style: primary
+    - text: Community events
+      link: /community/events/index.qmd
+      style: ghost
   lede: >
     Sign up to be notified when registration opens and to receive session recaps after
     each meeting.
@@ -31,15 +35,14 @@ cta:
 
 ::: {.content-section}
 
-The User Meetings bring together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training. It's where the project's direction gets shaped — by the people building with it.
+The User Meetings bring together planetarium operators, museum staff, educators, researchers, and developers from across the OpenSpace community. Sessions cover new feature demos, dome integration techniques, use-case showcases, and hands-on training.
 
 :::
 
 ```{=html}
-<div class="content-section">
+<div class="content-section-narrow">
   <div class="page-user-meetings__item">
-    <img src="2026/visc.webp"
-         alt="Visualization Center C, Norrköping, Sweden">
+    <img src="2026/visc.webp" alt="Visualization Center C, Norrköping, Sweden">
     <div>
       <div class="page-user-meetings__meta">
         <span class="page-user-meetings__badge">Upcoming</span>
@@ -55,8 +58,7 @@ The User Meetings bring together planetarium operators, museum staff, educators,
   </div>
 
   <div class="page-user-meetings__item page-user-meetings__item--past">
-    <img src="2025/hayden.webp"
-         alt="Hayden Planetarium, American Museum of Natural History, New York">
+    <img src="2025/hayden.webp" alt="Hayden Planetarium, American Museum of Natural History, New York">
     <div>
       <div class="page-user-meetings__meta">
         <span class="page-user-meetings__year">2025</span>
@@ -65,7 +67,7 @@ The User Meetings bring together planetarium operators, museum staff, educators,
         <a href="2025/">2025 User Meeting</a>
       </h3>
       <p class="page-user-meetings__location">July 31 – August 1 · American Museum of Natural History, New York</p>
-      <p class="page-user-meetings__desc">The first in-person user meeting, held at the Hayden Planetarium. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
+      <p class="page-user-meetings__desc">The first in-person user meeting, held at AMNH. Planetarium directors, educators, researchers, and developers gathered for two days of sessions, workshops, and hands-on training.</p>
       <a href="2025/" class="page-user-meetings__link">See recap &rarr;</a>
     </div>
   </div>

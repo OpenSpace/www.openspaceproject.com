@@ -37,26 +37,29 @@ listing:
     sort: year desc
 ---
 
-::: {.content-section}
+::: {.content-section-narrow}
 
 ## Master's Theses
-Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program complete their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
+Since 2013, Linköping University's Department of Science and Technology has been a founding partner of the OpenSpace project. Graduate students in the university's Media Technology program design their master's theses as direct contributions to OpenSpace — implementing new features, integrating scientific datasets, and building tools used by researchers, educators, and planetariums around the world.
 
-Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing real scientific visualization software at a global scale. Over 70 students have contributed through this program.
+Each project is carried out in collaboration with one of OpenSpace's partner institutions. Students work alongside researchers and engineers at these sites, gaining hands-on experience developing scientific visualization software at a global scale. Over 70 students have contributed through this program.
 
 ::: {#theses}
 :::
 
 :::
 
-::: {.content-section}
+::: {.content-section-narrow}
 
 ## Publications
 Pushing the boundaries of visualization in the public arena has been in the DNA of the project from its inception. The academic papers listed here have been written about individual features of OpenSpace, descriptions of the software package as a whole, or studies that involved OpenSpace as an engine. Being able to combine novel visualization research with the ability to perform outreach with these techniques is one of the elements that makes OpenSpace so unique.
 
-If you use OpenSpace in your academic work, please cite the appropriate paper:
+::: {#papers}
+:::
 
----
+::: {#citation}
+
+If you use OpenSpace in your academic work, please cite the appropriate paper:
 
 ```bibtex
 # OpenSpace System paper
@@ -94,7 +97,6 @@ If you use OpenSpace in your academic work, please cite the appropriate paper:
 }
 ```
 
-::: {#papers}
 :::
 
 :::

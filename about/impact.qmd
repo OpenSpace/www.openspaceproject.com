@@ -33,7 +33,7 @@ cta:
       link: "mailto:support@openspaceproject.com?subject=Using%20OpenSpace%20at%20our%20institution"
       style: primary
   lede: >
-    If your institution, lab, or classroom uses OpenSpace, we'd love to hear from you —
+    If your planetarium, lab, or classroom uses OpenSpace, we'd love to hear from you,
     and may feature you in our annual reports and on this site.
 
 listing:

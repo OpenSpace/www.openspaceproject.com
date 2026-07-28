@@ -101,7 +101,7 @@ local function render_hero(hero_meta)
   local crumb_parts = {}
   for index, crumb in ipairs(crumbs) do
     if index > 1 then
-      crumb_parts[#crumb_parts + 1] = '<span class="crumbs__separator" aria-hidden="true">›</span>'
+      crumb_parts[#crumb_parts + 1] = '<span aria-hidden="true">›</span>'
     end
     local class = (index == #crumbs) and "crumbs__current" or "crumbs__parent"
     if crumb.link ~= nil then
@@ -140,7 +140,7 @@ local function render_hero(hero_meta)
       <nav class="crumbs" aria-label="Breadcrumb">%s</nav>
       <div>
         %s
-        <h1>%s</h1>
+        <h1 class="hero__title">%s</h1>
         <p class="hero__lede">%s</p>
         %s
       </div>

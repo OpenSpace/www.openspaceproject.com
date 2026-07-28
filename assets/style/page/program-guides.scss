@@ -1,0 +1,98 @@
+/*-- scss:rules --*/
+
+.content-section:has(.page-guides__card) {
+  border-bottom: none;
+}
+
+.page-guides__card {
+  position: relative;
+  overflow: hidden;
+  background: $color-surface-primary;
+  border: 1px solid $color-border-faint;
+  border-radius: $layout-border-radius;
+  transition:
+    transform $animation-duration-base ease,
+    box-shadow $animation-duration-base ease;
+
+  // Card hover — a flare-yellow bar fills in along the bottom edge
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: $color-accent-secondary;
+    opacity: 0;
+    transition: opacity $animation-duration-base ease;
+  }
+
+  &:hover {
+    transform: translateY($layout-hover-lift-amount);
+    box-shadow: 0 20px 40px -20px $color-shadow-far;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover {
+      transform: none;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    background: $color-background;
+    transform: scale(1);
+    transition: transform $animation-duration-slow ease;
+  }
+
+  &:hover img {
+    transform: scale(1.06);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover img {
+      transform: none;
+    }
+  }
+}
+
+.page-guides__card-body {
+  padding: 1.25rem;
+}
+
+.page-guides__card-title {
+  color: $color-text-highlight;
+  margin: 0.25rem 0 0.6rem;
+  letter-spacing: $font-letterspacing-narrow;
+}
+
+.page-guides__card-description {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+  margin: 0 0 0.75rem;
+}
+
+.page-guides__card-credit {
+  font-size: $font-size-2xs;
+  font-family: $font-monospace;
+  color: $color-text-light;
+  margin: 0 0 1.25rem;
+}
+
+#quarto-document-content .page-guides__card-body a {
+  @extend %button-secondary;
+
+  gap: 0.4rem;
+
+  iconify-icon {
+    transition: transform $animation-duration-base ease;
+  }
+}

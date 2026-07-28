@@ -9,12 +9,14 @@ import re
 import os
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).parent.parent
 
 # Pages to include, in display order
 PAGES = [
     ("Homepage",                          "index.qmd"),
-    ("About OpenSpace",                   "about/about-openspace.qmd"),
+    ("About OpenSpace",                   "about/about.qmd"),
     ("Team",                              "about/team.qmd"),
     ("Partners",                          "about/partners.qmd"),
     ("Impact",                            "about/impact.qmd"),
@@ -22,24 +24,98 @@ PAGES = [
     ("Brand & Attribution",               "about/brand.qmd"),
     ("Globe Browsing",                    "features/globe-browsing.qmd"),
     ("Mission Visualizations",            "features/mission-visualizations.qmd"),
-    ("Space Weather",                     "features/space-weather.qmd"),
+    ("Heliophysics",                      "features/heliophysics.qmd"),
     ("Display Support",                   "features/display-support.qmd"),
+    ("Catalogs",                          "features/catalogs.qmd"),
     ("Use Cases",                         "community/use-cases.qmd"),
     ("Community Slack",                   "community/slack.qmd"),
-    ("Projects",                          "community/projects/index.qmd"),
-    ("Ocean World's Roadshow",            "community/projects/ocean-worlds-roadshow/index.qmd"),
-    ("Spinning Stars (2025)",             "community/projects/spinning-stars-2025/index.qmd"),
-    ("Spinning Stars (2023)",             "community/projects/spinning-stars/index.qmd"),
-    ("Weird Worlds",                      "community/projects/weird-worlds/index.qmd"),
-    ("Arecibo Wow!",                      "community/projects/arecibo-wow/index.qmd"),
-    ("Lost City",                         "community/projects/lost-city/index.qmd"),
+    ("Contact",                           "community/contact.qmd"),
+    ("Contribute",                        "community/contribute.qmd"),
     ("Events",                            "community/events/index.qmd"),
     ("Annual User Meetings",              "community/user-meetings/index.qmd"),
     ("2025 Annual User Meeting",          "community/user-meetings/2025/index.qmd"),
+    ("2025 User Meeting FAQs",            "community/user-meetings/2025/faqs.qmd"),
+    ("2025 User Meeting Hotels",          "community/user-meetings/2025/hotels.qmd"),
+    ("2025 User Meeting Sessions",        "community/user-meetings/2025/sessions.qmd"),
+    ("2025 User Meeting Travel",          "community/user-meetings/2025/travel.qmd"),
     ("2026 Annual User Meeting",          "community/user-meetings/2026/index.qmd"),
-    ("Download",                          "install/version-0213.qmd"),
+    ("2026 User Meeting Location",        "community/user-meetings/2026/location.qmd"),
+    ("Download",                          "install/download.qmd"),
+    ("Previous Versions",                 "install/previous-versions.qmd"),
     ("Tutorials",                         "resources/tutorials.qmd"),
+    ("Program Guides",                    "resources/program-guides.qmd"),
+    ("Internships",                       "resources/internships.qmd"),
 ]
+
+# Quarto listings (`assets/listing/*.yml` rendered through an .ejs.md template) hold real
+# on-page copy — card titles, bios, descriptions — that never appears in the QMD source
+# itself. Each entry maps a page's rel_path to the listing YAML file(s) it renders, the
+# label to head each item with, and which fields are actually shown as text on the page
+# (as opposed to image paths, coordinates, or internal ids — verified against each
+# _template/*.ejs.md). "field" may be a dotted path into a list of dicts, e.g.
+# "cta[].text" pulls the `text` field out of each item in a `cta` list.
+PAGE_LISTINGS = {
+    "index.qmd": [
+        ("assets/listing/carousel.yml", "title", ["title", "eyebrow"]),
+    ],
+    "resources/tutorials.qmd": [
+        ("assets/listing/tutorials.yml", "title", ["title", "header", "description"]),
+    ],
+    "features/globe-browsing.qmd": [
+        ("assets/listing/globe-browsing.yml", "title", ["title", "tag", "tagline", "description"]),
+    ],
+    "features/heliophysics.qmd": [
+        ("assets/listing/heliophysics.yml", "title", ["title", "tag", "tagline", "description"]),
+    ],
+    "features/mission-visualizations.qmd": [
+        ("assets/listing/mission-visualizations.yml", "title", ["title", "tag", "tagline", "description"]),
+    ],
+    "about/research.qmd": [
+        ("assets/listing/theses.yml", "title", ["title", "authors[].name", "year", "partner"]),
+        ("assets/listing/publications.yml", "title", ["author", "title", "location", "year"]),
+    ],
+    "about/partners.qmd": [
+        ("assets/listing/partners.yml", "name", ["name", "description"]),
+    ],
+    "about/team.qmd": [
+        ("assets/listing/team.yml", "name", ["name", "title", "affiliation"]),
+    ],
+    "community/use-cases.qmd": [
+        ("assets/listing/use-cases.yml", "title", ["title", "shorttitle", "institution", "location", "body", "tags"]),
+    ],
+    "community/events/index.qmd": [
+        ("assets/listing/events.yml", "title", ["title", "type", "datetime", "description", "description_past", "cta[].text"]),
+    ],
+    "about/impact.qmd": [
+        ("assets/listing/organizations.yml", "name", ["name", "city"]),
+    ],
+}
+
+# Human-readable labels for the raw YAML field names above
+FIELD_LABELS = {
+    "title": "Title",
+    "eyebrow": "Eyebrow",
+    "header": "Header",
+    "description": "Description",
+    "tag": "Tag",
+    "tagline": "Tagline",
+    "authors[].name": "Author(s)",
+    "author": "Author(s)",
+    "location": "Location",
+    "year": "Year",
+    "partner": "Partner",
+    "name": "Name",
+    "affiliation": "Affiliation",
+    "shorttitle": "Short title",
+    "institution": "Institution",
+    "body": "Body",
+    "tags": "Tags",
+    "type": "Type",
+    "datetime": "Date/time (UTC)",
+    "description_past": "Description (once past)",
+    "cta[].text": "Button text",
+    "city": "City",
+}
 
 # HTML entities to decode
 HTML_ENTITIES = [
@@ -137,6 +213,51 @@ def extract_copy(path):
     return text
 
 
+def field_value(item, field):
+    """Resolve a plain or dotted `authors[].name`-style field path against one YAML item."""
+    if field.endswith("[].name") or field.endswith("[].text"):
+        list_key, sub_key = field[:-7], field.split(".")[-1]
+        entries = item.get(list_key) or []
+        values = [str(e.get(sub_key, "")).strip() for e in entries if e.get(sub_key)]
+        return ", ".join(values)
+
+    value = item.get(field)
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        return ", ".join(str(v).strip() for v in value)
+    return str(value).strip()
+
+
+def format_listing_item(item, fields):
+    """Render one YAML listing entry as `Label: value` lines."""
+    lines = []
+    for field in fields:
+        value = field_value(item, field)
+        if not value:
+            continue
+        label = FIELD_LABELS.get(field, field)
+        value = " ".join(value.split())  # collapse YAML's folded-block newlines
+        lines.append(f"**{label}:** {value}")
+    return "\n".join(lines)
+
+
+def extract_listing(yml_rel_path, title_field, fields):
+    """Render every entry of a listing YAML file as a series of copy blocks."""
+    path = ROOT / yml_rel_path
+    if not path.exists():
+        return f"_Listing file not found: {yml_rel_path}_"
+
+    items = yaml.safe_load(path.read_text(encoding="utf-8")) or []
+    blocks = []
+    for item in items:
+        heading = field_value(item, title_field) or "(untitled)"
+        body = format_listing_item(item, fields)
+        if body:
+            blocks.append(f"### {heading}\n\n{body}")
+    return "\n\n".join(blocks)
+
+
 def main():
     output_lines = [
         "# OpenSpace Website Copy",
@@ -154,13 +275,27 @@ def main():
             continue
 
         copy = extract_copy(path)
-        if not copy:
+
+        listings = PAGE_LISTINGS.get(rel_path, [])
+        listing_blocks = [
+            (f"## {yml_path.rsplit('/', 1)[-1]}", extract_listing(yml_path, title_field, fields))
+            for yml_path, title_field, fields in listings
+        ]
+        listing_blocks = [(h, b) for h, b in listing_blocks if b]
+
+        if not copy and not listing_blocks:
             continue
 
         output_lines.append(f"# {title}")
         output_lines.append("")
-        output_lines.append(copy)
-        output_lines.append("")
+        if copy:
+            output_lines.append(copy)
+            output_lines.append("")
+        for heading, body in listing_blocks:
+            output_lines.append(heading)
+            output_lines.append("")
+            output_lines.append(body)
+            output_lines.append("")
         output_lines.append("---")
         output_lines.append("")
 

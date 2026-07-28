@@ -9,7 +9,7 @@ def target;
 if (branch == "master") {
   target = mainTarget;
 }
-else if (branch != "staging") {
+else if (branch == "staging") {
   target = stagingTarget;
 }
 else {

@@ -1,3 +1,4 @@
+
 /*-- scss:rules --*/
 
 //
@@ -51,10 +52,6 @@ a.crumbs__parent {
   &:hover, &:focus-visible {
     color: $color-crumbs-highlight;
   }
-}
-
-.crumbs__separator {
-  margin: 0 0.45rem;
 }
 
 .crumbs__current {

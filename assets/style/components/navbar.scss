@@ -10,11 +10,10 @@
 //
 
 .navbar {
-  padding: 0.875rem 1rem;
+  padding: 0.5rem 1rem;
 
   ul {
     list-style: none;
-    padding: 0;
     margin: 0;
   }
 
@@ -23,15 +22,15 @@
     @include backdrop-blur;
 
     min-width: 320px;
-    padding: 0.5rem;
+    // padding: 0.5rem;
     background: $color-overlay-dark;
     margin-top: 0.75rem;
     border-radius: $layout-border-radius;
-    border: 1px solid $color-border-light;
+    border: 1px solid $color-border-glow;
     box-shadow:
-      0 4px 6px rgba(0, 0, 0, 0.2),
-      0 16px 40px rgba(0, 0, 0, 0.45),
-      0 0 0 1px $color-border-faint inset;
+      0 4px 6px $color-shadow-near,
+      0 16px 40px $color-shadow-far,
+      0 0 0 1px $color-border-glow-faint inset;
   }
 
   .dropdown-item {
@@ -40,9 +39,8 @@
     white-space: normal;
     transition: background $animation-duration-fast ease;
 
-    &:hover,
-    &:focus {
-      background: $color-border-faint;
+    &:hover, &:focus {
+      background: $color-surface-primary-hover;
 
       .nav-rich-icon {
         background: $color-accent-secondary;
@@ -59,10 +57,9 @@
     @extend %button-base;
 
     background: $color-background;
-    color: $color-text-highlight;
+    color: white;
     border: 1px solid $color-accent-secondary;
     padding: 0.45rem 1.1rem;
-    font-weight: $font-weight-demibold;
 
     &:hover {
       background: $color-accent-secondary;
@@ -83,9 +80,6 @@
     .navbar-container {
       display: flex;
       align-items: center;
-
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
 
     // Brand container: take only as much width as needed, vertically centered
@@ -135,9 +129,24 @@
       display: block;
     }
 
+    // Keep the toggle text highlighted while its dropdown is open, even after the
+    // pointer moves down into the panel and off the .nav-link itself
+    .nav-item.dropdown:hover .nav-link,
+    .nav-item.dropdown:focus-within .nav-link {
+      color: $color-text-highlight;
+    }
+
     .nav-item.dropdown .dropdown-menu {
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    // Resources is the rightmost dropdown, too close to the viewport edge for a
+    // centered menu — right-align it to its trigger instead so it can't overflow
+    .navbar-nav .nav-item:has(#nav-menu-resources) .dropdown-menu {
+      left: auto;
+      right: 0;
+      transform: none;
     }
 
     .nav-item.dropdown .dropdown-menu::before {
@@ -168,6 +177,8 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: space-between;
+      position: relative;
     }
 
     // Leave room for the hamburger; scale the logo down instead of letting Quarto's
@@ -190,9 +201,10 @@
     // The compiled Quarto/Bootstrap CSS ships no styles for the toggler button or its
     // icon on regular (non-dashboard) pages, so provide the hamburger chrome ourselves
     .navbar-toggler {
+      margin-left: auto;
       padding: 0.3rem 0.65rem;
       background: transparent;
-      border: 1px solid $color-border-light;
+      border: 1px solid $color-border-glow;
       border-radius: $layout-border-radius-small;
     }
 
@@ -201,15 +213,43 @@
       width: 1.5em;
       height: 1.5em;
       vertical-align: middle;
-      // Hamburger lines; stroke is $color-text (#b8c8ca), keep in sync with the token
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(184, 200, 202, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      // Hamburger lines; stroke matches $color-text-muted
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#{$color-text-muted}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
     }
 
     .navbar-collapse {
-      flex-basis: 100%;
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      left: auto;
+      width: min(320px, calc(100vw - 2rem));
+      margin-top: 0;
+      z-index: 1020;
+      padding: 0.5rem;
+      border: 1px solid $color-border-glow;
+      border-radius: $layout-border-radius;
+      background: rgba($color-background, 0.96);
+      box-shadow:
+        0 12px 30px $color-shadow-far,
+        0 0 0 1px $color-border-glow inset;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .navbar-toggler {
+      order: 2;
+    }
+
+    .navbar-brand-container {
+      order: 1;
     }
 
     .dropdown-menu {
@@ -224,10 +264,6 @@
 }
 
 // Rich item layout
-.nav-rich {
-  display: block;
-}
-
 .nav-rich-head {
   display: flex;
   align-items: center;
@@ -242,8 +278,7 @@
   width: 32px;
   height: 32px;
   border-radius: $layout-border-radius-small;
-  background: $color-surface-primary-light;
-  flex-shrink: 0;
+  background: $color-surface-muted;
   transition: background $animation-duration-fast ease;
 
   iconify-icon {
@@ -254,20 +289,16 @@
 
 .nav-rich-title {
   font-weight: $font-weight-demibold;
-  font-size: $font-size-sm;
-  color: $color-text-highlight;
+  font-size: $font-size-md;
+  color: white;
 }
 
 .nav-ext-icon {
-  font-size: $font-size-xs;
-  color: $color-text-light;
+  color: $color-text-dim;
   margin-left: auto;
-  flex-shrink: 0;
 }
 
 .nav-rich-desc {
-  display: block;
   font-size: $font-size-sm;
   color: $color-text;
-  line-height: 1.45;
 }

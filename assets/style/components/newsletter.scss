@@ -5,7 +5,11 @@
 .newsletter {
   flex: 0 0 220px;
 
-  @media (max-width: $bp-md) {
+  // Matches .footer__inner's own stacking breakpoint ($footer-accordion-bp, defined in
+  // footer.scss) — once flex-direction is column, flex: 0 0 220px would set a 220px
+  // *height* instead of width, leaving a large gap below the (much shorter) actual
+  // content.
+  @media (max-width: $footer-accordion-bp) {
     flex: none;
   }
 }
@@ -20,10 +24,11 @@
     margin: 0;
   }
 
-  // Higher specificity (0,2,0) than the `> *` reset above, so this wins
-  // regardless of source order
-  > .newsletter__label {
-    margin-bottom: 0.65rem;
+  // Once the accordion appears, center this alongside the brand block above it —
+  // the input/button keep their own fixed width, just centered instead of left-set.
+  @media (max-width: $footer-accordion-bp) {
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -39,16 +44,26 @@
   color: $color-text-faint;
 }
 
+// The initial email capture (form#newsletter-1) — a single compact row: an
+// underlined "line" for the address plus a small round arrow button, rather than a
+// full labeled input + full-width text button.
+.newsletter__row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .newsletter__input {
-  background: $color-background;
-  border: 1px solid $color-border-light;
-  border-radius: $layout-border-radius-small;
+  width: 130px;
+  min-width: 0;
+  border: none;
+  border-bottom: 1px solid $color-border-glow;
+  border-radius: 0;
+  background: transparent;
   color: $color-text-highlight;
   font-size: $font-size-sm;
-  padding: 0.45rem 0.8rem;
+  padding: 0.3rem 0;
   font-family: inherit;
-  outline: none;
-  width: 100%;
   transition: border-color $animation-duration-fast ease;
 
   &::placeholder {
@@ -56,7 +71,21 @@
   }
 
   &:focus {
-    border-color: $color-accent-primary;
+    border-color: $color-accent-primary--dark;
+  }
+}
+
+.newsletter__submit {
+  @extend %button-secondary;
+
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+
+  svg {
+    display: block;
   }
 }
 
@@ -64,21 +93,18 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @media (max-width: $footer-accordion-bp) {
+    justify-content: center;
+  }
 }
 
 .newsletter__button {
-  @extend %button-base;
+  @extend %button-secondary;
 
-  background: $color-background;
-  border: 1px solid $color-border-light;
-  color: $color-text-light;
+  width: 170px;
   font-size: $font-size-sm;
-  padding: 0.45rem 1.1rem;
-  white-space: nowrap;
-
-  &:hover {
-    color: $color-accent-primary;
-  }
+  padding: 0.3rem 1.1rem;
 
   &:disabled {
     opacity: 0.55;

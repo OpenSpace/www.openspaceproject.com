@@ -27,7 +27,7 @@
     visualization and has a distinguished record of NASA partnerships that enhance
     science education for global audiences.
 
-- name: NYU Tandon School of Engineering
+- name: New York University Tandon School of Engineering
   type: university
   logo: /assets/images/institutions/nyu_tandon--white.webp
   link: https://engineering.nyu.edu/
@@ -35,7 +35,7 @@
     The Visualization and Data Analysis Lab at NYU Tandon brings a strong tradition of
     open-source tools and NASA-partnered research to the OpenSpace collaboration.
 
-- name: SCI Institute — University of Utah
+- name: Scientific Computing and Imaging Institute — University of Utah
   type: university
   logo: /assets/images/institutions/sci--white.webp
   link: https://www.sci.utah.edu/
@@ -69,6 +69,15 @@
     The Rocky Mountain region's leading resource for informal science education, DMNS
     helps visitors experience the natural wonders of Colorado, Earth, and the universe.
 
+- name: University of Colorado BoulderFiske Planetarium
+  type: isi
+  logo: /assets/images/institutions/fiske--color.webp
+  link: https://www.colorado.edu/fiske/
+  description: >
+    One of the largest planetariums in the United States, Fiske brings an 8K fulldome
+    system and a 65-foot dome to the University of Colorado Boulder campus for immersive
+    science visualization and public astronomy programming.
+
 - name: Houston Museum of Natural Science
   type: isi
   logo: /assets/images/institutions/hmns--white.webp
@@ -77,6 +86,14 @@
     Home to the Burke Baker Planetarium, HMNS has fostered wonder for natural science
     since 1909 through exhibitions and immersive dome experiences that give visitors the
     feeling of traveling through space.
+
+- name: Michigan Science Center
+  type: isi
+  logo: /assets/images/institutions/misci--color.webp
+  link: https://www.mi-sci.org/
+  description: >
+    Home to the Chrysler IMAX Dome Theatre and the Penske Planetarium, Detroit's MiSci
+    brings immersive science storytelling and space visualization to visitors of all ages.
 
 - name: North Carolina Museum of Natural Sciences
   type: isi

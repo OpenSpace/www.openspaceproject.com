@@ -38,13 +38,13 @@ cta:
 
 ::: {.content-section}
 
-## A community built for users
-Whether you run a planetarium dome, teach with OpenSpace, contribute code, or are just getting started — Slack is the fastest way to get answers, share your work, and connect with the people who know OpenSpace best.
+## A community for users
+Whether you run a planetarium dome, teach with OpenSpace, write code, or are just getting started — Slack is the fastest way to get answers, share your work, and connect with the people who know OpenSpace best.
 
 Ask questions, report issues, share screenshots of your work, stay current on new releases, and get direct support from the core team and experienced community members worldwide.
 :::
 
-::: {.content-section}
+::: {.content-section-narrow}
 
 ## Find your channel
 The workspace is organized into focused channels. Here are some of the best places to start.

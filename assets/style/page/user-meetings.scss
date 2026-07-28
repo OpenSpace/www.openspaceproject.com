@@ -1,5 +1,61 @@
 /*-- scss:rules --*/
 
+// Override the site-wide h3/h4 color (_base.scss sets $color-accent-tertiary, a yellow)
+// for the 2026 meeting page only — scoped to its section ids (not a bare h3/h4 selector)
+// since this theme file is shared with the listing page and the 2025 page too.
+#schedule h3,
+#travel h3,
+#travel h4 {
+  color: $color-text-highlight;
+}
+
+// Same override for the bold day-date line above each schedule tab's table
+// (_base.scss colors all <strong> text the same yellow).
+#schedule .panel-tabset strong {
+  color: $color-text-highlight;
+}
+
+// Day 1/2/3 tab nav: replace Bootstrap's default light-gray hover border-box (looks
+// like a stray white highlight on this dark theme) with a plain blue underline, and
+// mark the selected tab with a thicker accent bar instead of just a color/bg change.
+#schedule .panel-tabset .nav-tabs .nav-link {
+  position: relative;
+  border-color: transparent;
+
+  &:hover {
+    color: $color-accent-primary;
+    text-decoration: underline;
+    border-color: transparent;
+  }
+
+  &:focus {
+    border-color: transparent;
+  }
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: $color-accent-secondary;
+  }
+}
+
+// Venue section's embedded map, replacing the photo that moved up to #about.
+.venue-map {
+  margin-bottom: 1.5rem;
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 360px;
+    border: 1px solid $color-border-faint;
+    border-radius: $layout-border-radius;
+  }
+}
+
 .page-user-meetings__item {
   display: grid;
   grid-template-columns: 55% 1fr;
@@ -27,7 +83,7 @@
     }
   }
 
-  & > img {
+  > img {
     width: 100%;
     height: 380px;
     object-fit: cover;
@@ -45,7 +101,6 @@
   h3 {
     font-size: $font-size-xl;
     color: $color-text-highlight;
-    line-height: 1.15;
     letter-spacing: $font-letterspacing-narrow;
     margin: 0 0 0.4rem;
 
@@ -53,11 +108,10 @@
     a {
       color: inherit;
       text-decoration: none;
+      transition: color $animation-duration-base ease;
 
-      &::after {
-        content: '';
-        position: absolute;
-        inset: 0;
+      &:hover {
+        color: $color-accent-primary;
       }
     }
   }
@@ -105,12 +159,98 @@
   margin: 0 0 1.25rem;
 }
 
+// "Where to stay" hotel links: underline on hover instead of the shared
+// %content-section-base list-link behavior (color shifts to $color-text-highlight,
+// no underline) — the color would otherwise look like white here.
+#travel ul li a:hover {
+  color: $color-accent-primary;
+  text-decoration: underline;
+}
+
+// FAQ accordion (#faq): same collapsible <details>/<summary> pattern as the footer's
+// link-column accordion (border-drawn chevron, rotates on [open]), reimplemented here
+// as page-scoped classes rather than reusing .footer__* — no other page has this
+// pattern yet, so it isn't factored into a shared component.
+.faq__item {
+  // Quarto's own base styles apply `margin-bottom: 1em` to every <details> element
+  // site-wide (for doc-style collapsible blocks) — override it here, or it stacks with
+  // .faq__question's padding-bottom to make the gap above the divider much bigger than
+  // the gap below it.
+  margin-bottom: 0;
+  border-top: 1px solid $color-border-faint;
+
+  &:first-of-type {
+    border-top: none;
+  }
+}
+
+.faq__question {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-demibold;
+  line-height: 1.2;
+  color: $color-text-highlight;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.faq__chevron {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-color: $color-text-light;
+  border-width: 0 2px 2px 0;
+  margin-right: 0.15rem;
+  transition: transform $animation-duration-base ease;
+  transform: rotate(-45deg);
+}
+
+.faq__item[open] .faq__chevron {
+  transform: rotate(45deg);
+}
+
+.faq__item[open] .faq__answer {
+  display: block;
+}
+
+.faq__answer {
+  display: none;
+  padding: 0 0 1rem;
+  color: $color-text;
+  line-height: 1.75;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $color-accent-primary;
+    text-decoration: none;
+    transition: color $animation-duration-fast ease;
+
+    &:hover {
+      color: $color-text-highlight;
+      text-decoration: underline;
+    }
+  }
+}
+
 .page-user-meetings__link {
   font-size: $font-size-sm;
   font-weight: $font-weight-demibold;
   color: $color-accent-primary;
   text-decoration: none;
-  letter-spacing: 0.01em;
+  letter-spacing: $font-letterspacing-wide;
   transition: color $animation-duration-fast ease;
   position: relative;
   z-index: 1;

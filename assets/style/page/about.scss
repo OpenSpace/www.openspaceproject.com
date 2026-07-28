@@ -1,0 +1,67 @@
+/*-- scss:rules --*/
+
+// Quarto's defaults are `div.columns { display: initial; gap: initial; }` and
+// `div.column { display: inline-block; vertical-align: top; width: 50%; }` — both
+// type+class selectors, which outrank plain `.columns`/`.column` overrides by
+// specificity regardless of source order, so these have to match them exactly to
+// actually win.
+//
+// display:initial resolves to inline, which doesn't reliably size itself to
+// contain inline-block children of differing heights — the row's own box can end
+// up shorter than its tallest child, throwing off where content after the row
+// starts. Flex fixes that and, as a side benefit, replaces the padding-based
+// column gap with a real `gap` that doesn't eat into either column's declared
+// width.
+div.columns {
+  display: flex;
+  gap: 2rem;
+  // flex-start, not center: centering looked fine for "How it began" (its image
+  // and text are close in height), but "What is OpenSpace?"'s image is much
+  // taller than its short paragraph, so centering pushed that paragraph down by
+  // half the height difference — reading as a much bigger-than-normal gap right
+  // after the heading above it. A slightly uneven gap further down the page (the
+  // problem centering was solving) is less visually jarring than that.
+  align-items: flex-start;
+
+  // Quarto's own .column is inline-block with a fixed inline width:X% (from the
+  // qmd's `{.column width=40%}` etc.) at every viewport size, cramped well before
+  // mobile widths — percentages don't naturally trigger flex-wrap on their own
+  // (40%/55% still "fits" at any width, since it's relative to the container), so
+  // this still needs an explicit media query rather than relying on wrapping.
+  @media (max-width: $bp-md) {
+    display: block;
+  }
+}
+
+// flex-grow:1 on both — rather than 0, which would respect each column's own
+// width=X% attribute exactly — is what makes the row's total width reach 100%
+// instead of stopping at 95% (40% + 55%, the two widths actually used below don't
+// sum to 100%) and leaving a gap that a plain full-width paragraph right after
+// the row doesn't have. This only slightly skews the intended 40/55 ratio, since
+// the leftover space (that missing 5%, minus the new gap) is small.
+div.column {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  @media (max-width: $bp-md) {
+    width: 100% !important;
+  }
+}
+
+.page-about__media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border: 1px solid $color-border-faint;
+
+  @media (max-width: $bp-md) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.page-about__media--full {
+  @extend .page-about__media;
+
+  margin-top: 1rem;
+}

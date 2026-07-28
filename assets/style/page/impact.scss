@@ -25,8 +25,8 @@
     color $animation-duration-fast ease,
     background $animation-duration-fast ease;
 
-  // :not(.is-active) keeps this at higher specificity than the .is-active
-  // block below, so the accent border wins on hover regardless of source order
+  // :not(.is-active) keeps this at higher specificity than the .is-active block below, so
+  // the accent border wins on hover regardless of source order
   &:not(.is-active):hover {
     border-color: $color-border-muted;
     color: $color-accent-primary;
@@ -47,14 +47,11 @@
 }
 
 .page-impact__map-footer {
-  margin-top: 0.85rem;
   font-size: $font-size-sm;
   color: $color-text-light;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
 .page-impact__footer-link {

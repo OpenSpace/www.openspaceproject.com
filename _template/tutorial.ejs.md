@@ -12,8 +12,8 @@
       </iframe>
       <div class="page-tutorials__card-body">
         <p class="page-tutorials__card-eyebrow"><%- item.header %></p>
-        <h3><%- item.title %></h3>
-        <p><%- item.description %></p>
+        <h3 class="page-tutorials__card-title"><%- item.title %></h3>
+        <p class="page-tutorials__card-description"><%- item.description %></p>
       </div>
     </div>
 <%

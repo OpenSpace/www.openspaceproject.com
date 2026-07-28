@@ -20,21 +20,20 @@
     background-size: cover;
     background-position: center;
   }
+}
 
-  h1 {
-    @include section-title($fontsize: 3.75rem);
+.hero__title {
+  @include section-title($fontsize: clamp(1.75rem, 1.2rem + 4vw, 3.75rem));
 
-    line-height: 1.08;
-    margin: 0 auto 1.25rem;
-    max-width: 750px;
-  }
+  margin: 0 auto;
+  max-width: 750px;
+  overflow-wrap: break-word;
 }
 
 .hero__lede {
-  line-height: 1.6;
   color: $color-text;
   max-width: 600px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 1rem;
 }
 
 .hero__actions {
@@ -47,10 +46,8 @@
 .hero__badge {
   @include eyebrow-label($fontsize: $font-size-xs);
 
-  display: inline-block;
   color: $color-accent-primary;
   border: 1px solid $color-border-light;
   border-radius: $layout-border-radius;
   padding: 0.3rem 0.9rem;
-  margin-bottom: 1.5rem;
 }

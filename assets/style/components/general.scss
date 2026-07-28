@@ -80,6 +80,12 @@
   }
 }
 
+@media (max-width: $bp-lg) {
+  .content-section-narrow {
+    padding: $layout-section-padding-wide;
+  }
+}
+
 // %content-section-base's border-bottom reads as a harsh line when the CTA section
 // (a distinct, floating card treatment) follows immediately — drop it in that specific
 // adjacency rather than site-wide, since it's still the right separator between two

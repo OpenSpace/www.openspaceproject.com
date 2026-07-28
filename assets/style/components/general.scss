@@ -8,6 +8,17 @@
   border-bottom: 1px solid $color-border-faint;
   background: $color-background;
 
+  // Plain content photos (about.qmd, contribute.qmd, user-meetings recaps, etc.)
+  // otherwise render with sharp corners, unlike every card/photo component
+  // elsewhere on the site. Logos and brand assets need their exact shape
+  // preserved, so pages with those (funder marquee, brand download cards) turn
+  // this back off at the specific selector rather than this getting scoped
+  // narrowly to begin with — see .page-index__funder-marquee img and
+  // .page-brand__logo-card img.
+  img {
+    border-radius: $layout-border-radius;
+  }
+
   h2 {
     font-size: $font-size-2xl;
     color: $color-text-highlight;

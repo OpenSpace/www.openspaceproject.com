@@ -23,7 +23,7 @@ hero:
   lede: August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 
 cta:
-  heading: Register for free
+  heading: Save your spot
   lede: Registration is free.
   actions:
     - text: Register now

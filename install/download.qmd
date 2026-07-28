@@ -83,7 +83,14 @@ No pre-compiled binary for Linux. Source code is freely available on GitHub — 
 
 :::::
 
-*MacOS support* OpenSpace is using OpenGL as our graphics pipeline, which Apple has deprecated a number of years ago. The way they still support it on M-class chips is a separate conversion layer that transforms the OpenGL calls into Metal 3 (the Apple-specific graphics API) before it gets executed by the GPU cores on the M-class chips. Apple decided not support double precision floating point operations ([Spec Section 2.1](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)) which is used everywhere in OpenSpace to get enough precision for the whole universe. Additionally, Apple has not updated their OpenGL implementation in the past 10+ years and supporting that old OpenGL standard was slowing down users on Windows and Linux. As of version 0.22.0 OpenSpace now targets OpenGL 4.6 which has resulted in a 3-4x performance improvements for Windows and Linux users at the cost of not being able to support MacOS anymore.
+\
+*MacOS support* 
+
+OpenSpace relies on OpenGL for graphics rendering. On Apple Silicon (M-series) Macs, OpenGL calls are translated to Metal, Apple's native graphics API, through a compatibility layer rather than running natively.
+
+This translation layer doesn't support double-precision floating point operations [Metal Shading Language Specification, Section 2.1](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf), which OpenSpace relies on to maintain precision at both planetary and universal scales.
+
+As of version 0.22.0, OpenSpace targets OpenGL 4.6, delivering a 3-4x performance improvement for Windows and Linux users. This update requires OpenGL features that are not available through the macOS compatibility layer, meaning OpenSpace can no longer support macOS going forward.
 
 ::::::
 

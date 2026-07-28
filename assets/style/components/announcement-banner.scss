@@ -3,13 +3,6 @@
 //
 // Announcement banner
 //
-// Rendered by the `announcement-banner` shortcode (see
-// _extensions/openspace/shortcodes/announcement-banner.lua) from a document's
-// `announcement` frontmatter — wherever the shortcode is placed. These are just the
-// shared visual styles (colors, type, layout); page-specific positioning (e.g. the
-// homepage placing it inside the hero, absolutely positioned against the video)
-// lives in that page's own theme file instead.
-//
 
 .announcement-banner {
   height: 80px;
@@ -29,10 +22,6 @@
     padding: 0 1.25rem;
   }
 
-  // The countdown numbers are the first thing to go at narrow widths. The label then
-  // wraps to two lines (rather than truncating) instead of the action button — two
-  // lines of $font-size-sm still fit well within the fixed 80px height, so this
-  // doesn't need any extra padding to accommodate it.
   @media (max-width: $bp-md) {
     .announcement-banner__timer {
       display: none;
@@ -45,13 +34,6 @@
 }
 
 .announcement-banner__label {
-  // Truncates with an ellipsis instead of wrapping to a second line (below $bp-md,
-  // where it's allowed to wrap instead — see above), which the banner's fixed height
-  // + overflow:hidden would otherwise just clip off. No flex-grow here — this only
-  // shrinks (the default flex-shrink:1) when the row doesn't fit, so the
-  // label+action group stays centered as a unit rather than splitting to opposite
-  // edges. min-width:0 is what lets it shrink below its text's natural width at
-  // all — without it, text-overflow has nothing to trigger on.
   min-width: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -89,8 +71,6 @@
   color: $color-text-light;
 }
 
-// Same styling as "Download OpenSpace" in the homepage CTA (.button__primary,
-// buttons.scss) — solid yellow fill, dark text, slightly lighter on hover.
 .announcement-banner__action {
   @extend %button-primary;
 

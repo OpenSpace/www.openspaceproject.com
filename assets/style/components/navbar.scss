@@ -177,6 +177,8 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: space-between;
+      position: relative;
     }
 
     // Leave room for the hamburger; scale the logo down instead of letting Quarto's
@@ -199,6 +201,7 @@
     // The compiled Quarto/Bootstrap CSS ships no styles for the toggler button or its
     // icon on regular (non-dashboard) pages, so provide the hamburger chrome ourselves
     .navbar-toggler {
+      margin-left: auto;
       padding: 0.3rem 0.65rem;
       background: transparent;
       border: 1px solid $color-border-glow;
@@ -218,7 +221,35 @@
     }
 
     .navbar-collapse {
-      flex-basis: 100%;
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      left: auto;
+      width: min(320px, calc(100vw - 2rem));
+      margin-top: 0;
+      z-index: 1020;
+      padding: 0.5rem;
+      border: 1px solid $color-border-glow;
+      border-radius: $layout-border-radius;
+      background: rgba($color-background, 0.96);
+      box-shadow:
+        0 12px 30px $color-shadow-far,
+        0 0 0 1px $color-border-glow inset;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .navbar-toggler {
+      order: 2;
+    }
+
+    .navbar-brand-container {
+      order: 1;
     }
 
     .dropdown-menu {

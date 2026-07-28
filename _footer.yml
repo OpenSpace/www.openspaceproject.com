@@ -1,4 +1,4 @@
 website:
   page-footer:
     border: false
-    background: dark
+    background: white

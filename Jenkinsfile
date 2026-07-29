@@ -29,7 +29,7 @@ node("server-misc") {
       label: "PIP install"
     )
     sh(
-      script: "quarto render",
+      script: "quarto render${branch == 'staging' ? ' --profile staging' : ''}",
       label: "Quarto rendering"
     )
   }

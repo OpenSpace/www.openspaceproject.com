@@ -74,7 +74,7 @@ website:
   favicon: "/assets/brand/favicon.webp"
   image: "/assets/brand/logo.webp"
   image-alt: "OpenSpace"
-  site-url: "https://staging.www.openspaceproject.com"
+  site-url: "https://www.openspaceproject.com"
   # repo-url: "https://github.com/OpenSpace/www.openspaceproject.com"
   # repo-link-target: "_blank"
   # repo-actions: [edit, issue]

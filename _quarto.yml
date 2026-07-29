@@ -79,7 +79,7 @@ website:
   # repo-link-target: "_blank"
   # repo-actions: [edit, issue]
   llms-txt: true
-  # google-analytics:
+  google-analytics: "G-EBPKNE9E43"
   # cookie-consent:
   #   type: express
   #   style: simple

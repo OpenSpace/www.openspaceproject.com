@@ -1,6 +1,6 @@
 ---
 pagetitle: Mission Visualizations — OpenSpace
-description-meta: >
+description: >
   OpenSpace recreates spacecraft missions using actual trajectory data from NASA and
   ESA archives. Fly alongside New Horizons, watch JWST unfold, ride with Rosetta to a
   comet.

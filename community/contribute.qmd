@@ -1,6 +1,6 @@
 ---
 pagetitle: Contribute — OpenSpace
-description-meta: See how you can contribute to the project.
+description: See how you can contribute to the project.
 format:
   html:
     page-layout: full

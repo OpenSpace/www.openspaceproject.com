@@ -1,6 +1,6 @@
 ---
 pagetitle: "Branding & Licensing — OpenSpace"
-description-meta: >
+description: >
   Guidelines for crediting OpenSpace in your work, plus logos and brand assets available
   for download.
 format:

@@ -1,6 +1,6 @@
 ---
 pagetitle: Use Cases — OpenSpace
-description-meta: >
+description: >
   How museums, planetariums, universities, and research institutions use OpenSpace to
   engage audiences and advance science.
 format:

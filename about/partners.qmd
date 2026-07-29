@@ -1,6 +1,6 @@
 ---
 pagetitle: Partners — OpenSpace
-description-meta: >
+description: >
   The institutions and universities that make the OpenSpace project possible.
 format:
   html:

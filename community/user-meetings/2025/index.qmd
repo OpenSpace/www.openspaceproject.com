@@ -1,6 +1,6 @@
 ---
 pagetitle: 2025 User Meeting — OpenSpace
-description-meta: >
+description: >
   Recap of the 2025 OpenSpace User Meeting at the American Museum of Natural History —
   sessions, highlights, and community moments.
 sidebar: false

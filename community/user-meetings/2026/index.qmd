@@ -1,6 +1,6 @@
 ---
 pagetitle: 2026 User Meeting — OpenSpace
-description-meta: >
+description: >
   Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for
   three days of demos, training, and conversation.
 aliases:

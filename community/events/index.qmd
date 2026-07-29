@@ -1,6 +1,6 @@
 ---
 pagetitle: Events — OpenSpace
-description-meta: >
+description: >
   Monthly community meetings, annual user conferences, and special events with the
   OpenSpace team.
 format:

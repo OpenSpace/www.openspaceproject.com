@@ -1,6 +1,6 @@
 ---
 pagetitle: Research — OpenSpace
-description-meta: >
+description: >
   Academic research, master's theses, and publications from the OpenSpace project.
 aliases:
   - academia.html

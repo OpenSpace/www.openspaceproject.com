@@ -1,0 +1,9 @@
+# Without an explicit `image:`, Quarto falls back to the first <img> it finds in a
+# page's own content for social-share previews (og:image/twitter:image) — only using
+# the site-wide `website.image` default (_quarto.yml) if a page has no images at all.
+# Since almost every page has some image (a team photo, a partner logo, etc.), that
+# heuristic was surfacing those instead of the OpenSpace logo. Setting `image:` here
+# applies it to every page by default, while still letting an individual page override
+# it with its own `image:` in frontmatter if it ever needs to.
+image: /assets/brand/openspace-preview.webp
+image-alt: OpenSpace

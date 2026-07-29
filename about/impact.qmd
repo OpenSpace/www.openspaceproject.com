@@ -1,6 +1,6 @@
 ---
 pagetitle: Impact — OpenSpace
-description-meta: >
+description: >
   OpenSpace's global reach — where it runs, annual reports, and how to get involved.
 format:
   html:

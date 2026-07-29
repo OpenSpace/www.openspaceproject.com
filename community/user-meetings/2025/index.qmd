@@ -1,8 +1,10 @@
 ---
 pagetitle: 2025 User Meeting — OpenSpace
-description-meta: >
+description: >
   Recap of the 2025 OpenSpace User Meeting at the American Museum of Natural History —
   sessions, highlights, and community moments.
+image: hayden.webp
+image-alt: Hayden Planetarium, American Museum of Natural History, New York
 sidebar: false
 format:
   html:

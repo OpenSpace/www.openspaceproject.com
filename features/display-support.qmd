@@ -1,8 +1,10 @@
 ---
 pagetitle: Display Support — OpenSpace
-description-meta: >
+description: >
   OpenSpace runs on everything from a personal laptop to a 30-meter planetarium dome —
   with fisheye, MPCDI, multi-projector, and tiled display support built in.
+image: /assets/images/venue-cards/hayden_jwst.webp
+image-alt: Hayden Planetarium dome running OpenSpace with JWST data
 format:
   html:
     page-layout: full

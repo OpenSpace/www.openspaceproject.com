@@ -1,7 +1,8 @@
 (() => {
   // Newsletter signup (Mailchimp)
   const mailchimpUser = '4c1bf0cc740f267dc37ede3ff';
-  const mailchimpId = '002e0deef0';
+  const mailchimpId = '72d08c7149';
+  const mailchimpFid = '008613eef0';
 
   let _email = '';
 
@@ -39,7 +40,7 @@
 
     const cb = `mcSub${Date.now()}`;
     const s = document.createElement('script');
-    s.src = `https://amnh.us20.list-manage.com/subscribe/post-json?u=${mailchimpUser}&id=${mailchimpUser}&${qs}&c=${cb}`;
+    s.src = `https://amnh.us20.list-manage.com/subscribe/post-json?u=${mailchimpUser}&id=${mailchimpId}&f_id=${mailchimpFid}&${qs}&c=${cb}`;
 
     function cleanup() {
       clearTimeout(timer);

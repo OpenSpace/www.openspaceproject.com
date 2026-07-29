@@ -1,6 +1,6 @@
 ---
 pagetitle: Tutorials — OpenSpace
-description-meta: >
+description: >
   Step-by-step video tutorials for getting started with OpenSpace — installation,
   navigation, and the user interface.
 format:

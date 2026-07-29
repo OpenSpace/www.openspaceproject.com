@@ -1,6 +1,6 @@
 ---
 pagetitle: Page not found — OpenSpace
-description: >
+description-meta: >
   The page you requested could not be found.
 format:
   html:

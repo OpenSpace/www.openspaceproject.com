@@ -1,6 +1,6 @@
 ---
 pagetitle: Globe Browsing — OpenSpace
-description: >
+description-meta: >
   Globe Browsing in OpenSpace renders planetary surfaces from mission data — fly from
   interstellar space to the texture of Martian regolith in one continuous flight.
 image: /assets/images/banner/mars.webp

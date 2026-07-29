@@ -1,6 +1,6 @@
 ---
 pagetitle: Internships — OpenSpace
-description: >
+description-meta: >
   Partner museums, planetariums, and universities host high school, undergraduate, and
   graduate internships built around OpenSpace — from scripting guided tours to
   contributing real code.

@@ -3,6 +3,8 @@ pagetitle: Heliophysics — OpenSpace
 description: >
   OpenSpace visualizes real solar wind, magnetosphere, CME, and aurora data from NASA —
   from live conditions to historical storm events.
+image: /assets/images/features/bastilleday-2.webp
+image-alt: Solar storm visualization in OpenSpace
 format:
   html:
     page-layout: full

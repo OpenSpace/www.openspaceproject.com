@@ -1,6 +1,6 @@
 ---
 pagetitle: Previous Versions — OpenSpace
-description-meta: >
+description: >
   Download previous versions of OpenSpace astrovisualization software for Windows.
 format:
   html:

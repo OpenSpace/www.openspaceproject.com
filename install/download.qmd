@@ -1,6 +1,6 @@
 ---
 pagetitle: Download OpenSpace — v0.22.0
-description-meta: >
+description: >
   Download OpenSpace v0.22.0 — free, open-source astrovisualization software for Windows.
   Source builds available for Linux.
 format:

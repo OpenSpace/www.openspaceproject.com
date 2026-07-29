@@ -1,6 +1,6 @@
 ---
 pagetitle: Program Guides — OpenSpace
-description-meta: >
+description: >
   Downloadable program guides for presenting topic-specific tours in OpenSpace —
   planetarium and museum programs ready to use as-is or adapt for your own audience.
 format:

@@ -1,6 +1,6 @@
 ---
 pagetitle: Team — OpenSpace
-description-meta: The people behind the OpenSpace project.
+description: The people behind the OpenSpace project.
 format:
   html:
     page-layout: full

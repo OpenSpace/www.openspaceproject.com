@@ -1,6 +1,6 @@
 ---
 pagetitle: Catalogs — OpenSpace
-description-meta: >
+description: >
   OpenSpace renders scientific catalogs — exoplanets, galaxy surveys, quasars, the
   cosmic microwave background, and small Solar System bodies as explorable 3D data.
 format:

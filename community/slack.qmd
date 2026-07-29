@@ -1,6 +1,6 @@
 ---
 pagetitle: Community Slack — OpenSpace
-description-meta: >
+description: >
   Join the OpenSpace Slack — connect with planetarium professionals, educators,
   scientists, and developers building and using OpenSpace.
 format:

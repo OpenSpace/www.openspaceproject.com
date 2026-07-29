@@ -1,6 +1,6 @@
 ---
 pagetitle: Display Support — OpenSpace
-description-meta: >
+description: >
   OpenSpace runs on everything from a personal laptop to a 30-meter planetarium dome —
   with fisheye, MPCDI, multi-projector, and tiled display support built in.
 format:

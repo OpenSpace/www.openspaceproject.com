@@ -1,6 +1,6 @@
 ---
 pagetitle: OpenSpace — Visualize the known universe
-description-meta: >
+description: >
   OpenSpace is open-source interactive astrovisualization software used by planetariums,
   museums, classrooms, and researchers worldwide.
 format:

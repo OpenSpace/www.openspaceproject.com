@@ -1,6 +1,6 @@
 ---
 pagetitle: Contact — OpenSpace
-description-meta: >
+description: >
   Get in touch with the OpenSpace team — send a message or join us on Slack.
 format:
   html:

@@ -1,6 +1,6 @@
 ---
 pagetitle: About OpenSpace — The project, its origins, and its future
-description-meta: >
+description: >
   OpenSpace is an open-source astrovisualization software project developed by an
   international consortium of museums, universities, and research institutions.
 format:

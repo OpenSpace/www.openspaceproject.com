@@ -1,0 +1,37 @@
+/*-- scss:rules --*/
+
+// Cookiebot's declaration script injects its own inline <style> using these
+// class names (see _template/cookiebot.html) — override with the higher
+// specificity of #quarto-document-content so our dark theme wins regardless
+// of DOM insertion order.
+#quarto-document-content .CookieDeclaration {
+  color: $color-text;
+
+  a {
+    color: $color-link;
+  }
+}
+
+#quarto-document-content .CookieDeclarationType {
+  border-color: $color-border-light;
+  border-radius: $layout-border-radius-small;
+  background: $color-surface-primary;
+}
+
+#quarto-document-content .CookieDeclarationTypeHeader {
+  color: $color-text-highlight;
+}
+
+#quarto-document-content .CookieDeclarationTable {
+  display: block;
+  overflow-x: auto;
+}
+
+#quarto-document-content .CookieDeclarationTableHeader,
+#quarto-document-content .CookieDeclarationTableCell {
+  border-bottom-color: $color-border-light;
+}
+
+#quarto-document-content #CookieDeclarationUserStatusPanel {
+  color: $color-text-muted;
+}

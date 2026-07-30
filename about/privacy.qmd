@@ -1,0 +1,74 @@
+---
+pagetitle: "Privacy Policy — OpenSpace"
+description-meta: >
+  How the OpenSpace website uses cookies and handles data collected through
+  analytics, the newsletter, and the contact form.
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    theme: ../assets/style/page/privacy.scss
+
+hero:
+  title: "Privacy Policy"
+  crumbs:
+    - Legal
+    - Privacy Policy
+  lede: >
+    An overview of the cookies and third-party services used on
+    openspaceproject.com, and the data collected through them.
+---
+
+::: {.content-section}
+
+## Cookies
+
+We use [Cookiebot](https://www.cookiebot.com/) to manage cookie consent.
+When you first visit the site, a banner lets you choose which categories of
+cookies to allow; scripts that aren't strictly necessary (such as analytics)
+only run after you consent.
+
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/0feb0669-f01b-4e38-8750-8132c8216d12/cd.js" type="text/javascript" async></script>
+
+:::
+
+::: {.content-section}
+
+## Analytics
+
+With your consent, we use **Google Analytics** and **Google Tag Manager** to
+understand how visitors use the site (pages visited, general location,
+device type). This data is aggregated and does not identify you personally.
+
+:::
+
+::: {.content-section}
+
+## Newsletter
+
+If you sign up for the OpenSpace newsletter, the information you enter
+(email address, and optionally your name, affiliation, and how you heard
+about us) is sent to **Mailchimp**, our email newsletter provider, and used
+to send you updates. You can unsubscribe at any time using the link in any
+newsletter email.
+
+:::
+
+::: {.content-section}
+
+## Contact form
+
+The [contact form](/community/contact.qmd) opens your own email client with
+a pre-addressed message — the information you enter is sent directly to us
+by email and is not stored on this website.
+
+:::
+
+::: {.content-section}
+
+## Questions
+
+If you have questions about this policy, please [get in touch](/community/contact.qmd).
+
+:::

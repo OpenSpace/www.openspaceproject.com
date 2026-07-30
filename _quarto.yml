@@ -35,6 +35,8 @@ format:
       - "assets/style/components/newsletter.scss"
       - "assets/style/components/richlist.scss"
       - "assets/style/components/status.scss"
+    include-in-header:
+      - file: _template/gtm.html
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html
@@ -87,7 +89,11 @@ website:
   #   policy-url: www.openspaceproject.com
   search: false
 
-  # body-header:
+  body-header: |
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9NH7DDD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   body-footer: ""
   page-navigation: false
   back-to-top-navigation: false

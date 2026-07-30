@@ -36,6 +36,7 @@ format:
       - "assets/style/components/richlist.scss"
       - "assets/style/components/status.scss"
     include-in-header:
+      - file: _template/cookiebot.html
       - file: _template/gtm.html
     include-after-body:
       - file: _template/dotnav.html

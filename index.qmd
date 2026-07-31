@@ -78,16 +78,16 @@ listing:
 <section id="trusted" class="page-index__trusted-section">
   <p class="page-index__trusted-label">Powering visualizations at</p>
   <div class="page-index__logo-grid">
-    <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium">
-    <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History">
-    <img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science">
-    <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium">
-    <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science">
-    <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center">
-    <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences">
-    <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet">
-    <img src="assets/images/institutions/universeum.webp" alt="Universeum">
-    <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C">
+    <img src="assets/images/institutions/adler--white.webp" data-light-src="assets/images/institutions/adler--black.webp" alt="Adler Planetarium" loading="lazy">
+    <img src="assets/images/institutions/amnh--white.webp" data-light-src="assets/images/institutions/amnh--black.webp" alt="American Museum of Natural History" loading="lazy">
+    <img src="assets/images/institutions/dmns--white.webp" data-light-src="assets/images/institutions/dmns--black.webp" alt="Denver Museum of Nature & Science" loading="lazy">
+    <img src="assets/images/institutions/fiske--color.webp" alt="Fiske Planetarium" loading="lazy">
+    <img src="assets/images/institutions/hmns--white.webp" data-light-src="assets/images/institutions/hmns--black.webp" alt="Houston Museum of Natural Science" loading="lazy">
+    <img src="assets/images/institutions/misci--color.webp" alt="Michigan Science Center" loading="lazy">
+    <img src="assets/images/institutions/ncmns--white.webp" alt="North Carolina Museum of Natural Sciences" loading="lazy">
+    <img src="assets/images/institutions/tekniska--white.webp" alt="Tekniska museet" loading="lazy">
+    <img src="assets/images/institutions/universeum.webp" alt="Universeum" loading="lazy">
+    <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" loading="lazy">
   </div>
   <p class="page-index__trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
@@ -99,7 +99,7 @@ listing:
 
     <a href="features/display-support.qmd#dome-theaters" class="card">
       <div class="card-media">
-        <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running">
+        <img src="assets/images/venue-cards/hayden_jwst--thumb.webp" alt="Hayden Planetarium dome with OpenSpace running" loading="lazy">
       </div>
       <div>
         <h3>Planetarium domes</h3>
@@ -110,7 +110,7 @@ listing:
 
     <a href="features/display-support.qmd#classrooms-desktops" class="card">
       <div class="card-media">
-        <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom">
+        <img src="assets/images/venue-cards/amnh_lwd_students--thumb.webp" alt="Students using OpenSpace in a classroom" loading="lazy">
       </div>
       <div>
         <h3>Classrooms</h3>
@@ -121,7 +121,7 @@ listing:
 
     <a href="features/display-support.qmd#museum-exhibits" class="card">
       <div class="card-media">
-        <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit">
+        <img src="assets/images/venue-cards/spaceship.webp" alt="OpenSpace in a museum exhibit" loading="lazy">
       </div>
       <div>
         <h3>Museum exhibits</h3>
@@ -153,17 +153,17 @@ listing:
 
   <div class="page-index__funder-marquee">
     <div class="page-index__funder-track">
-      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee"></a>
-      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation"></a>
-      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre"></a>
-      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet"></a>
-      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen"></a>
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee" loading="lazy"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation" loading="lazy"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre" loading="lazy"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet" loading="lazy"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen" loading="lazy"></a>
 
-      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee"></a>
-      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation"></a>
-      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre"></a>
-      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet"></a>
-      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen"></a>
+      <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/nasa.webp" alt="NASA Grantee" loading="lazy"></a>
+      <a href="https://kaw.wallenberg.org" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/kaw.webp" alt="Knut and Alice Wallenberg Foundation" loading="lazy"></a>
+      <a href="https://e-science.se/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/serc.webp" alt="Swedish e-Science Research Centre" loading="lazy"></a>
+      <a href="https://www.vr.se/english" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/vetenskapsradet.webp" alt="Vetenskapsrådet" loading="lazy"></a>
+      <a href="https://www.rymdstyrelsen.se/en/" target="_blank" rel="noopener noreferrer"><img src="assets/images/funders/rymdstyrelsen.webp" alt="Rymdstyrelsen" loading="lazy"></a>
     </div>
   </div>
 

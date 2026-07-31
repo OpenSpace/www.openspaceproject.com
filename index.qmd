@@ -99,7 +99,7 @@ listing:
 
     <a href="features/display-support.qmd#dome-theaters" class="card">
       <div class="card-media">
-        <img src="assets/images/venue-cards/hayden_jwst.webp" alt="Hayden Planetarium dome with OpenSpace running">
+        <img src="assets/images/venue-cards/hayden_jwst--thumb.webp" alt="Hayden Planetarium dome with OpenSpace running">
       </div>
       <div>
         <h3>Planetarium domes</h3>
@@ -110,7 +110,7 @@ listing:
 
     <a href="features/display-support.qmd#classrooms-desktops" class="card">
       <div class="card-media">
-        <img src="assets/images/venue-cards/amnh_lwd_students.webp" alt="Students using OpenSpace in a classroom">
+        <img src="assets/images/venue-cards/amnh_lwd_students--thumb.webp" alt="Students using OpenSpace in a classroom">
       </div>
       <div>
         <h3>Classrooms</h3>

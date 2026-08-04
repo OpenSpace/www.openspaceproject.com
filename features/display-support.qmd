@@ -53,13 +53,13 @@ cta:
 
 ::: {.column width=35% .page-display-support__text--right}
 
-Full-dome fisheye projection for fixed and portable planetariums. OpenSpace handles warp mesh calibration, multi-projector edge blending, and MPCDI calibration files, so it works with everything your dome already uses.
+Full-dome fisheye projection for fixed and portable planetariums. OpenSpace works with your existing projector alignment, warp meshes, and edge blending.
+
 
   - Mesh warping for any dome geometry
   - Multi-projector soft edge blending and masking
   - Fisheye, cylindrical, and equirectangular output modes
   - Compatible with portable inflatable and permanent fixed domes
-  - Live presenter controls for real-time narration
 
 :::
 

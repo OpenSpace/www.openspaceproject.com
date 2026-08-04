@@ -53,7 +53,7 @@ cta:
 
 ::: {.column width=35% .page-display-support__text--right}
 
-Full-dome multi-channel and single projection for fixed and portable planetariums. OpenSpace works with your existing projector alignment, warp meshes, and edge blending.
+Full-dome projection for fixed and portable planetariums. OpenSpace works with your existing projector alignment, warp meshes, and edge blending.
 
 
   - Mesh warping for any dome geometry

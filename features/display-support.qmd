@@ -55,9 +55,8 @@ cta:
 
 Full-dome projection for fixed and portable planetariums. OpenSpace works with your existing projector alignment, warp meshes, and edge blending.
 
-
-  - Mesh warping for any dome geometry
-  - Multi-projector soft edge blending and masking
+  - Support for single and multi-channel projection systems
+  - Master and node image generator support with C-Troll
   - Fisheye, cylindrical, and equirectangular output modes
   - Compatible with portable inflatable and permanent fixed domes
 

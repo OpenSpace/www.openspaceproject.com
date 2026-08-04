@@ -91,7 +91,7 @@ Schedule is subject to change.
 | 15:00 – 16:00<br>(1h)    | Coffee Break                                             | ---                         | Developer Helpdesk/<br>Jam Session |
 | 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
 | 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie                         | ---                         | ---                                |
-|                          | Group Dinner (pay-on-your-own) at [Hemma Hus](https://hemmahosnorrkoping.se/) |                             |                                    |
+|                          | Group Dinner (pay-on-your-own) at [Hemma Hos](https://hemmahosnorrkoping.se/) |                             |                                    |
 
 ### Day 2
 
@@ -212,7 +212,7 @@ Below are answers to some frequently asked questions about the meeting. If you d
 <details class="faq__item">
 <summary class="faq__question">Is there a social event?<span class="faq__chevron" aria-hidden="true"></span></summary>
 <div class="faq__answer">
-<p>Wednesday evening features a dome movie screening of <em>Once Upon the Moon</em>, followed by a pay-your-own group dinner at <a href="https://hemmahosnorrkoping.se/" target="_blank" rel="noopener">Hemma Hus</a>. On Friday evening, there's an optional visit to the <a href="https://www.tekniskamuseet.se/en/" target="_blank" rel="noopener">Tekniska Museet</a> in Stockholm. The agenda also builds in extra time throughout the meeting for networking with peers.</p>
+<p>Wednesday evening features a dome movie screening of <em>Once Upon the Moon</em>, followed by a pay-your-own group dinner at <a href="https://hemmahosnorrkoping.se/" target="_blank" rel="noopener">Hemma Hos</a>. On Friday evening, there's an optional visit to the <a href="https://www.tekniskamuseet.se/en/" target="_blank" rel="noopener">Tekniska Museet</a> in Stockholm. The agenda also builds in extra time throughout the meeting for networking with peers.</p>
 </div>
 </details>
 

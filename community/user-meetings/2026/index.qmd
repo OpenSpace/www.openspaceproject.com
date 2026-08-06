@@ -40,7 +40,7 @@ cta:
 
 ![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
 
-Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking.
+Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking. Participating at the User Meeting is free of charge and is recommended to all current and potential users of OpenSpace of any skill level.
 
 This is a great opportunity to:
 
@@ -62,9 +62,9 @@ This is a great opportunity to:
   title="Map showing Visualization Center C in Norrköping"></iframe>
 </div>
 
-We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a full planetarium, driven in partnership with the Norrköping municipality and Linköping University.
+We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a state-of-the-art stereoscopic planetarium, driven as a partnership between the Norrköping municipality and Linköping University. This partnership turns the dome into a dual-use space as it is used simultaneously for shows open to the public while at the same time serving as a testbed for the university education.
 
-Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night.
+Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night. More information about potential other places to visit during your trip is available on the [Visit Sweden](https://visitsweden.com/) website (or a more humorous take at [Sweden not Switzerland](https://visitsweden.com/sweden-not-switzerland/)).
 
 
 :::
@@ -73,7 +73,14 @@ Norrköping is an old industrial town located about 90 minutes south of Stockhol
 
 ## Agenda
 
-Schedule is subject to change.
+Schedule is subject to change; this page will always contain the latest information about the meeting schedule. The entire event will take place in rooms located in the [Visualization Center C](https://visualiseringscenter.se/en/).
+
+Unless otherwise specified the locations are:
+  - Track 1: **Workshop area, floor 5**
+  - Track 2: **VR Arena, floor 1**
+  - Track 3: **Eckerberg room, floor 1**
+
+Coffee Breaks are at the restaurant area, on **floor 2**.
 
 ::: {.panel-tabset}
 
@@ -81,17 +88,17 @@ Schedule is subject to change.
 
 **Wednesday, August 26**
 
-| Time                     | Track 1                                                  | Track 2                     | Track 3                            |
-| ------------------------ | -------------------------------------------------------- | --------------------------- | ---------------------------------- |
-| 09:30 – 10:00<br>(30m)   | Welcome and Kickoff<br>Community, Updates & What's Ahead | ---                         | ---                                |
-| 10:00 – 10:30<br>(30m)   | Introductions                                            | ---                         | ---                                |
-| 10:30 – 12:30<br>(2h)    | OpenSpace 101 Workshop: Getting Started                  | Coding and Scripting        | Developer Helpdesk/<br>Jam Session |
-| 12:30 – 14:00<br>(1h30m) | Lunch on your own                                        | ---                         | ---                                |
-| 14:00 – 15:00<br>(1h)    | OpenSpace 201 Workshop: Included Profiles                | Maps and Georeferenced Data | Developer Helpdesk/<br>Jam Session |
-| 15:00 – 16:00<br>(1h)    | Coffee Break                                             | ---                         | Developer Helpdesk/<br>Jam Session |
-| 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
-| 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie                         | ---                         | ---                                |
-|                          | Group Dinner (pay-on-your-own) at [Hemma Hos](https://hemmahosnorrkoping.se/) |                             |                                    |
+| Time                     | Track 1                                                       | Track 2                     | Track 3                            |
+| ------------------------ | ------------------------------------------------------------- | --------------------------- | ---------------------------------- |
+| 09:30 – 10:00<br>(30m)   | Welcome and Kickoff<br>Community, Updates & What's Ahead      | ---                         | ---                                |
+| 10:00 – 10:30<br>(30m)   | Introductions                                                 | ---                         | ---                                |
+| 10:30 – 12:30<br>(2h)    | OpenSpace 101 Workshop: Getting Started                       | Coding and Scripting        | Developer Helpdesk/<br>Jam Session |
+| 12:30 – 14:00<br>(1h30m) | Lunch on your own                                             | ---                         | ---                                |
+| 14:00 – 15:00<br>(1h)    | OpenSpace 201 Workshop: Included Profiles                     | Maps and Georeferenced Data | Developer Helpdesk/<br>Jam Session |
+| 15:00 – 16:00<br>(1h)    | Coffee Break                                                  | ---                         | Developer Helpdesk/<br>Jam Session |
+| 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                     | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
+| 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie<br>**In the dome (floor 4)** | ---                         | ---                                |
+|                          | Group Dinner (pay-on-your-own) at [Hemma Hos](https://hemmahosnorrkoping.se/) |             |                                    |
 
 ### Day 2
 
@@ -100,13 +107,13 @@ Schedule is subject to change.
 
 | Time                     | Track 1                                        | Track 2                                      | Track 3                            |
 | ------------------------ | ---------------------------------------------- | -------------------------------------------- | ---------------------------------- |
-| 09:30 – 11:30<br>(1h30m) | ShowComposer                                   | AssetBuilder                                 | Developer Helpdesk/<br>Jam Session |
+| 09:30 – 11:30<br>(1h30m) | ShowComposer                                   | Creating pre-rendered movies from OpenSpace  | Developer Helpdesk/<br>Jam Session |
 | 11:30 – 12:30<br>(1h)    | The Night's Sky                                | OpenSpace on Multichannel Systems            | Developer Helpdesk/<br>Jam Session |
 | 12:30 – 14:00<br>(1h30m) | Lunch on your own                              | ---                                          | ---                                |
 | 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Setting up OpenSpace in Display Environments | Developer Helpdesk/<br>Jam Session |
 | 15:00 – 16:00<br>(1h)    | Coffee Break                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
-| 16:00 – 17:00<br>(1h)    | Creating pre-rendered movies from OpenSpace    | ---                                          | Developer Helpdesk/<br>Jam Session |
-| 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks | ---                                          | Developer Helpdesk/<br>Jam Session |
+| 16:00 – 17:00<br>(1h)    | AssetBuilder                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
+| 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks<br>**In the dome (floor 4)** | ---             | Developer Helpdesk/<br>Jam Session |
 |                          | Dinner on your own                             |                                              |                                    |
 
 ### Day 3
@@ -119,7 +126,7 @@ Schedule is subject to change.
 | 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | Developer Helpdesk/<br>Jam Session |
 | 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |
 |                          | End of the official program                     |         |                                    |
-| 17:30                    | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
+| 17:30 -                  | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
 
 :::
 
@@ -131,14 +138,17 @@ Schedule is subject to change.
 
 ### Getting there
 
-Norrköping is easy to reach internationally. Recommended routes:
+Norrköping is very easy to reach internationally. Some recommended routes:
 
-  - **Stockholm Arlanda (ARN)** — major international hub, roughly 90 minutes to Norrköping by train
-  - **Linköping City Airport (LPI)** — direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs
+#### Stockholm Arlanda (ARN)
+A major international hub with air service to many European and international destinations. It takes about 2 hours to reach Norrköping from Arlanda by train and the service is fast and reliable. Tickets can be booked through the national railway services [SJ](https://www.sj.se/en?lang=en) and the stations are called "Arlanda Flygplats" and "Norrköping Central". Prices for the train vary, by should be around 400-600 SEK / 40-60€ for a returning trip. If you are staying a few days in Stockholm, its main station is called "Stockholm Central".
+
+### Linköping City Airport (LPI)
+A local airport that has direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs. It is also the airfield that houses SAAB, which provides Sweden's fighter aircraft. Transfer to Norrköping takes about 35 minutes in total. The easiest way is to take a taxi to the Linköping central station, which costs about 200 SEK / 20€ and a train ticket from "Linköping Central" to "Norrköping Central" for another 80 SEK / 8€.
 
 ### Where to stay
 
-Hotels in the city are around $100 per night. A few options near the venue:
+Hotels in the city are around 1000 SEK / 100€ per night. A few options near the visualization center:
 
   - [Hotel President](https://ligula.se/en/profilhotels/profilhotels-president/)
   - [Elite Grand Hôtel](https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/)

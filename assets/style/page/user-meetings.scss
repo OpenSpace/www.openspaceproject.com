@@ -1,14 +1,5 @@
 /*-- scss:rules --*/
 
-// Override the site-wide h3/h4 color (_base.scss sets $color-accent-tertiary, a yellow)
-// for the 2026 meeting page only — scoped to its section ids (not a bare h3/h4 selector)
-// since this theme file is shared with the listing page and the 2025 page too.
-#schedule h3,
-#travel h3,
-#travel h4 {
-  color: $color-text-highlight;
-}
-
 // Same override for the bold day-date line above each schedule tab's table
 // (_base.scss colors all <strong> text the same yellow).
 #schedule .panel-tabset strong {

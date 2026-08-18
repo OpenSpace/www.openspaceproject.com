@@ -96,9 +96,9 @@ Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served 
 | 10:30 - 10:45<br>(15m)   | Coffee Break                                                  | ---                         | ---                                |
 | 10:45 – 12:30<br>(1h45m) | OpenSpace 101 Workshop: Getting Started                       | Coding and Scripting        | Developer Helpdesk/<br>Jam Session |
 | 12:30 – 14:00<br>(1h30m) | Lunch on your own                                             | ---                         | ---                                |
-| 14:00 – 15:00<br>(1h)    | OpenSpace 201 Workshop: Included Profiles                     | Maps and Georeferenced Data | Developer Helpdesk/<br>Jam Session |
-| 15:00 – 16:00<br>(1h)    | Coffee Break                                                  | ---                         | ---                                |
-| 16:00 – 18:00<br>(2h)    | OpenSpace 202 Workshop: Included Profiles                     | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
+| 14:00 – 15:30<br>(1h30m) | OpenSpace 201 Workshop: Included Profiles                     | Maps and Georeferenced Data | Developer Helpdesk/<br>Jam Session |
+| 15:30 – 16:30<br>(1h)    | Coffee Break                                                  | ---                         | ---                                |
+| 16:30 – 18:00<br>(1h30)  | OpenSpace 202 Workshop: Included Profiles                     | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
 | 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie<br>**In the dome (floor 4)** | ---                         | ---                                |
 |                          | Group Dinner (pay-on-your-own) at [Hemma Hos](https://hemmahosnorrkoping.se/) |             |                                    |
 

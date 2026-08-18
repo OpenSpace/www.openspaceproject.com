@@ -109,11 +109,11 @@ Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served 
 
 | Time                     | Track 1                                        | Track 2                                      | Track 3                            |
 | ------------------------ | ---------------------------------------------- | -------------------------------------------- | ---------------------------------- |
-| 09:30 – 11:30<br>(2h)    | ShowComposer                                   | Creating pre-rendered movies from OpenSpace  | Developer Helpdesk/<br>Jam Session |
+| 09:30 – 11:30<br>(2h)    | ShowComposer                                   | ---                                          | ---                                |
 | 10:30 - 10:45<br>(15m)   | Coffee Break as part of the previous session   | ---                                          | ---                                |
-| 11:30 – 12:30<br>(1h)    | The Night's Sky                                | OpenSpace on Multichannel Systems            | Developer Helpdesk/<br>Jam Session |
+| 11:30 – 12:30<br>(1h)    | The Night's Sky                                | Multichannel Display Environments            | Developer Helpdesk/<br>Jam Session |
 | 12:30 – 14:00<br>(1h30m) | Lunch on your own                              | ---                                          | ---                                |
-| 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Setting up OpenSpace in Display Environments | Developer Helpdesk/<br>Jam Session |
+| 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Creating pre-rendered movies from OpenSpace  | Developer Helpdesk/<br>Jam Session |
 | 15:00 – 16:00<br>(1h)    | Coffee Break                                   | ---                                          | ---                                |
 | 16:00 – 17:00<br>(1h)    | AssetBuilder                                   | ---                                          | ---                                |
 | 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks<br>**In the dome (floor 4)** | ---             | ---                                |

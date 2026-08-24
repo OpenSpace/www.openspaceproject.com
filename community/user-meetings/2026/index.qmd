@@ -134,6 +134,14 @@ Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served 
 
 :::
 
+### Travel to Tekniska Museet
+As an optional activity on the Friday, the staff at the National Museum of Science and Technology ([Tekniska Museet](https://www.tekniskamuseet.se/en/)) have offered to provide us with a guided tour through their facility. The travel to Stockholm is self-organized, but here is a suggested travel itinerary:
+
+1. Train from Norrköping Central to Stockholm Central.  For example: Mälartåg 236, leaving Norrköping at 14:28 and arriving in Stockholm 16:14: [Booking](https://www.sj.se/en/search-journey/choose-ticket-type/Norrk%C3%B6ping%20Central/Stockholm%20Central/2026-08-24/outward-journey)
+1. Bus 69 from Stockholm Central towards Djurgårdsbrunn. Payment is on the bus via credit card. [Map](https://transitapp.com/en/region/stockholm/sl/buss-69) and [Location of the Bus stop](https://www.google.com/maps/place/Centralen/@59.3305614,18.0571472,119m/data=!3m1!1e3!4m6!3m5!1s0x465f9d605e29cde1:0x7b2f923908490b4!8m2!3d59.3308!4d18.0571699!16s%2Fg%2F11w1c92hhg?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D)
+
+
+
 :::
 
 ::: {.content-section-narrow #travel}

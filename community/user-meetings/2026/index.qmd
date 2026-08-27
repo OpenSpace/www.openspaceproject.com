@@ -111,7 +111,7 @@ Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served 
 | ------------------------ | ---------------------------------------------- | -------------------------------------------- | ---------------------------------- |
 | 09:30 – 11:30<br>(2h)    | ShowComposer                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
 | 10:30 - 10:45<br>(15m)   | Coffee Break as part of the previous session   | ---                                          | ---                                |
-| 11:30 – 12:30<br>(1h)    | The Night's Sky                                | Multichannel Display Environments            | Developer Helpdesk/<br>Jam Session |
+| 11:30 – 12:30<br>(1h)    | The Night's Sky                                | C-Play                                       | Developer Helpdesk/<br>Jam Session |
 | 12:30 – 14:00<br>(1h30m) | Lunch on your own                              | ---                                          | ---                                |
 | 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Creating pre-rendered movies from OpenSpace  | Developer Helpdesk/<br>Jam Session |
 | 15:00 – 15:45<br>(45m)   | Coffee Break                                   | ---                                          | ---                                |
@@ -126,7 +126,7 @@ Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served 
 
 | Time                     | Track 1                                         | Track 2 | Track 3                            |
 | ------------------------ | ----------------------------------------------- | ------- | ---------------------------------- |
-| 09:30 – 11:00<br>(1h30m) | Giving Presentations in OpenSpace, a case study | C-Play  | Developer Helpdesk/<br>Jam Session |
+| 09:30 – 11:00<br>(1h30m) | Giving Presentations in OpenSpace, a case study | Multichannel Display Environments            | Developer Helpdesk/<br>Jam Session |
 | 10:30 - 10:45<br>(15m)   | Coffee Break as part of the previous session    | ---     | ---                                |
 | 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | ---                                |
 | 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |

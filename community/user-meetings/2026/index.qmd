@@ -114,7 +114,8 @@ Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served 
 | 11:30 – 12:30<br>(1h)    | The Night's Sky                                | Multichannel Display Environments            | Developer Helpdesk/<br>Jam Session |
 | 12:30 – 14:00<br>(1h30m) | Lunch on your own                              | ---                                          | ---                                |
 | 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Creating pre-rendered movies from OpenSpace  | Developer Helpdesk/<br>Jam Session |
-| 15:00 – 16:00<br>(1h)    | Coffee Break                                   | ---                                          | ---                                |
+| 15:00 – 15:45<br>(45m)   | Coffee Break                                   | ---                                          | ---                                |
+| 15:45 – 16:00<br>(15m)   | Group Photo<br>**In front of the dome (floor 4)** | ---                                          | ---                                |
 | 16:00 – 17:00<br>(1h)    | AssetBuilder                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
 | 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks<br>**In the dome (floor 4)** | ---             | ---                                |
 |                          | Dinner on your own                             |                                              |                                    |

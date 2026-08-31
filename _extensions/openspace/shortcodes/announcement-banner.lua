@@ -6,6 +6,8 @@
 -- timestamp with a UTC offset, read by announcement-banner.js). `action` is optional
 -- and renders a single button (`text` + `link`).
 --
+-- To hide the banner, set `show: false` in the frontmatter (defaults to true).
+--
 -- Usage:
 --
 --     ---
@@ -15,11 +17,16 @@
 --       action:
 --         text: Register
 --         link: community/user-meetings/2026/
+--       show: true
 --     ---
 --
 --     {{< announcement-banner >}}
 
 local function render_banner(meta)
+  if meta['show'] ~= nil and meta['show'] == false then
+    return nil, "Announcement banner is disabled"
+  end
+
   local label = meta["label"]
   if label == nil then
     return nil, "Missing parameter 'label' in the 'announcement' frontmatter"

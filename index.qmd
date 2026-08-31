@@ -19,6 +19,7 @@ announcement:
   action:
     text: Register
     link: community/user-meetings/2026/
+  show: false
 
 cta:
   heading: Start exploring

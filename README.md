@@ -51,7 +51,7 @@ Below are details of shortcodes for adding dynamic content to the webpage.
 
 ### Adding an announcement banner to the front page
 
-Use the following information to the front matter of `index.qmd` to update the announcement banner on the front page:
+Use the following information in the frontmatter of `index.qmd` to update the announcement banner on the front page:
 
 ```yaml
 announcement:

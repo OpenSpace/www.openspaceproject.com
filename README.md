@@ -1,6 +1,6 @@
 # OpenSpace Project Website
 
-The website is built using [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. Before building the webpage, make sure to install the Quarto CLI on your system. You also need a working installation of Python.
+The website is built using [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. Before building the webpage, make sure to install the Quarto CLI on your system, by following the instructions on the [Quarto website](https://quarto.org/docs/get-started/). You also need a working Python installation.
 
 To build the webpage:
 

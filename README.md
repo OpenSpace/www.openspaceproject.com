@@ -1,12 +1,15 @@
 # OpenSpace Project Website
+
+The website is built using [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. Before building the webpage, make sure to install the Quarto CLI on your system. You also need a working installation of Python.
+
 To build the webpage:
 
   - Run `pip install -r requirements.txt` from the root folder to install Python dependencies
   - For development, run `quarto preview` in the root folder. A brower will open to `localhost:12800`. This uses hot reloading, so whenever any file is changed the webpage will reload
   - For deployment, run `quarto render`. The generated webpage is created in the `_site` folder
 
-
 ## General considerations
+
 For loading performance, consider converting image files to `.webp` format using, for example, [ImageMagick](https://imagemagick.org).
 
 File formats and tools used in the webpage:
@@ -42,7 +45,30 @@ File formats and tools used in the webpage:
   - `404.qmd`: Special 404 page that gets displayed when someone navigates to a page that doesn't exist
   - `index.qmd`: Root page
 
+## Shortcodes
+
+We use a variety of shortcodes to insert dynamic content into the webpage. More information about shortcodes can be found in the [Quarto documentation](https://quarto.org/docs/authoring/shortcodes.html).
+
+### Adding an announcement banner to the front page
+
+Use the following information to the front matter of `index.qmd` to update the announcement banner on the front page:
+
+```yaml
+announcement:
+  label: 2026 OpenSpace User Meeting · Norrköping, Sweden
+  date: "2026-08-26T09:30:00+02:00"
+  action:
+    text: Register
+    link: community/user-meetings/2026/
+  show: true
+```
+
+This adds an event banner counting down to the event date and linking to the specified page. To hide the banner, set `show: false`.
+
+More information about this shortcode can be found in [`_extensions\openspace\shortcodes\announcement-banner.lua`](https://github.com/OpenSpace/www.openspaceproject.com/blob/master/_extensions/openspace/shortcodes/announcement-banner.lua).
+
 ## Checklists
+
 ### Add new Team Member / Student
 
  - [ ] Resize profile image to 500x500 pixels

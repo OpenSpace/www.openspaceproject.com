@@ -47,7 +47,7 @@ File formats and tools used in the webpage:
 
 ## Shortcodes
 
-We use a variety of shortcodes to insert dynamic content into the webpage. More information about shortcodes can be found in the [Quarto documentation](https://quarto.org/docs/authoring/shortcodes.html).
+Below are details of shortcodes for adding dynamic content to the webpage.
 
 ### Adding an announcement banner to the front page
 

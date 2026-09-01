@@ -45,7 +45,6 @@ The User Meetings bring together planetarium operators, museum staff, educators,
     <img src="2026/visc.webp" alt="Visualization Center C, Norrköping, Sweden">
     <div>
       <div class="page-user-meetings__meta">
-        <span class="page-user-meetings__badge">Upcoming</span>
         <span class="page-user-meetings__year">2026</span>
       </div>
       <h3>

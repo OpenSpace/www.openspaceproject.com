@@ -37,6 +37,16 @@
     color: $color-accent-primary;
     background: $color-surface-primary-faint;
   }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: $color-border-light;
+      color: $color-text-light;
+    }
+  }
 }
 
 .page-impact__map {

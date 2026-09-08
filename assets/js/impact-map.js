@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
       dataReady = true;
       tryInit();
     };
+    // If the status data fails to load, don't hang forever waiting for it — init
+    // the map anyway so layers that don't depend on it (e.g. Organizations) still work.
+    dataJs.onerror = () => {
+      dataReady = true;
+      tryInit();
+    };
     document.head.appendChild(dataJs);
   }
 

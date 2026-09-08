@@ -10,7 +10,7 @@
 <script>
 function initImpactMap() {
   let mapEl = document.getElementById('page-impact-startup-map');
-  if (!mapEl || typeof L === 'undefined' || typeof data === 'undefined') {
+  if (!mapEl || typeof L === 'undefined') {
     return;
   }
 
@@ -21,10 +21,11 @@ function initImpactMap() {
     zoomControl: true
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 19
+  // CARTO's free basemap tiles now require a registered API key (they started watermarking
+  // unauthenticated requests), so we use Esri's no-signup dark canvas basemap instead.
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; <a href="https://www.esri.com">Esri</a>, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 16
   }).addTo(leafletMap);
 
   let accent = '#a2e7fb';
@@ -33,7 +34,7 @@ function initImpactMap() {
   // Build startup layer
   let startupLayer = L.layerGroup();
 
-  (data.places || []).forEach(place => {
+  (hasStartupData ? data.places : []).forEach(place => {
     let r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
     L.circleMarker([place.lat, place.lng], {
       radius: r,
@@ -64,11 +65,27 @@ function initImpactMap() {
     );
 <%
   }
+
+  // Computed at build time from the same data driving the markers above, so the org
+  // count and country count in the footer text below can't drift out of sync with it.
+  const orgCount = items.length;
+  const orgCountries = new Set(items.map((item) => {
+    const parts = item.city.split(',');
+    return parts[parts.length - 1].trim();
+  }));
 %>
 
   // Toggle logic
   let footerText = document.getElementById('page-impact-map-footer-text');
   let toggleBtns = document.querySelectorAll('.page-impact__toggle-btn');
+
+  if (!hasStartupData) {
+    let startupBtn = document.querySelector('.page-impact__toggle-btn[data-layer="startups"]');
+    if (startupBtn) {
+      startupBtn.disabled = true;
+      startupBtn.title = 'Startup location data is temporarily unavailable';
+    }
+  }
 
   function showLayer(layerName) {
     toggleBtns.forEach((b) => { b.classList.remove('is-active'); });
@@ -84,7 +101,7 @@ function initImpactMap() {
       leafletMap.removeLayer(startupLayer);
       orgLayer.addTo(leafletMap);
       if (footerText) {
-        footerText.textContent = '103 organizations across 25+ countries';
+        footerText.textContent = '<%= orgCount %> organizations across <%= orgCountries.size %> countries';
       }
     }
   }
@@ -93,8 +110,8 @@ function initImpactMap() {
     btn.addEventListener('click', function () { showLayer(btn.dataset.layer); });
   });
 
-  // Show orgs layer if linked directly via #orgs
-  if (window.location.hash === '#orgs') {
+  // Show orgs layer if linked directly via #orgs, or if there's no startup data to show
+  if (window.location.hash === '#orgs' || !hasStartupData) {
     showLayer('orgs');
   } else {
     showLayer('startups');

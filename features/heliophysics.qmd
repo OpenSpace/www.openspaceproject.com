@@ -85,7 +85,6 @@ Step back through some of the biggest solar events on record, including Bastille
 ## The Sun in multiple wavelengths
 
 ### SDO sees what the eye cannot
-
 NASA's Solar Dynamics Observatory captures the Sun nonstop across ten wavelength channels, each one revealing a different layer of solar activity, from the cool chromosphere all the way up to 20-million-degree flare plasma. OpenSpace lets you load these image sequences and switch between wavelengths to watch the same event play out at different temperatures.
 
   - 304 Å: chromosphere and transition region (~50,000 K)

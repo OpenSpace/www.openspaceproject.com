@@ -1,5 +1,4 @@
 # OpenSpace Project Website
-
 The website is built using [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. Before building the webpage, make sure to install the Quarto CLI on your system, by following the instructions on the [Quarto website](https://quarto.org/docs/get-started/). You also need a working Python installation.
 
 To build the webpage:
@@ -9,7 +8,6 @@ To build the webpage:
   - For deployment, run `quarto render`. The generated webpage is created in the `_site` folder
 
 ## General considerations
-
 For loading performance, consider converting image files to `.webp` format using, for example, [ImageMagick](https://imagemagick.org).
 
 File formats and tools used in the webpage:
@@ -19,8 +17,12 @@ File formats and tools used in the webpage:
   - [EJS](https://ejs.co/#docs): Templating language to turn files/YML into HTML
   - [Bootstrap](https://getbootstrap.com): Layout for the webpage
 
-## File locations
+### Use Markdown Linting
+It is recommended to use a Markdown linter to ensure consistent formatting and to catch common errors in Markdown files. This repository includes a `.markdownlint.json` configuration file. If you use Visual Studio Code, you can easily check your files by installing the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint). It will automatically use the `.markdownlint.json` file in the project to highlight formatting issues directly in your editor as you type.
 
+To enable linting for Quarto (`.qmd`) files in VS Code, make sure to associate the `.qmd` file extension with the Markdown language.
+
+## File locations
   - `assets`: Assets used globally for the webpage itself
     - `assets/images`: General folder for images. Images should have a naming scheme of separating individual words using `_`. If multiple images are present for a single name, `-1`, `-2`, etc are appended. If a specific image variant is used (black, white, color, ...) it is separated with `--`, for example `logo--white.webp`
       - `assets/images/banner`: Images used for the hero banner section. Images in this folder should be of the aspect ratio φ:1 (1.61803398874989:1)
@@ -46,7 +48,6 @@ File formats and tools used in the webpage:
   - `index.qmd`: Root page
 
 ## Shortcodes
-
 Below are details of shortcodes for adding dynamic content to the webpage.
 
 ### Adding an announcement banner to the front page
@@ -70,13 +71,11 @@ More information about this shortcode can be found in [`_extensions\openspace\sh
 ## Checklists
 
 ### Add new Team Member / Student
-
- - [ ] Resize profile image to 500x500 pixels
- - [ ] Copy profile image into the correct subfolder in `assets/team`. The first two characters should be a sequence number within that folder
- - [ ] Add the new person to the `assets/team/team.yml`
+  - [ ] Resize profile image to 500x500 pixels
+  - [ ] Copy profile image into the correct subfolder in `assets/team`. The first two characters should be a sequence number within that folder
+  - [ ] Add the new person to the `assets/team/team.yml`
 
 ### Team Member becomes inactive
-
-- [ ] Move profile image from the current folder in `assets/team` to the `-previous` version
-- [ ] Update the profile image file name to have the correct sequence number. We try our best to have previous members ordered based on their seniority; longer time in the project -> lower number
-- [ ] Move the persons entry in the `assets/team/team.yml` to the current group, update `type` and `image` entries
+  - [ ] Move profile image from the current folder in `assets/team` to the `-previous` version
+  - [ ] Update the profile image file name to have the correct sequence number. We try our best to have previous members ordered based on their seniority; longer time in the project -> lower number
+  - [ ] Move the persons entry in the `assets/team/team.yml` to the current group, update `type` and `image` entries

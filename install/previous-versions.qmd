@@ -22,7 +22,7 @@ hero:
 ::: {.content-section-narrow}
 
 | Version | Released | Downloads | Release notes |
-|:--------|:---------|:----------|:--------------|
+| :------ | :------- | :-------- | :------------ |
 | v0.21.4 | April 2026 | [Full](https://data.openspaceproject.com/release/0.21.4/OpenSpace-0.21.4.zip) · [Lightweight](https://data.openspaceproject.com/release/0.21.4/OpenSpace-0.21.4_minimal.zip) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.4){target="_blank" rel="noopener"} |
 | v0.21.3 | December 2025 | [Full](https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3.zip) · [Lightweight](https://data.openspaceproject.com/release/0.21.3/OpenSpace-0.21.3_minimal.zip) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3){target="_blank" rel="noopener"} |
 | v0.21.2 | July 2025 | [Full](https://data.openspaceproject.com/release/0.21.2/OpenSpace-0.21.2.zip) · [Lightweight](https://data.openspaceproject.com/release/0.21.2/OpenSpace-0.21.2_minimal.zip) | [GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.2){target="_blank" rel="noopener"} |

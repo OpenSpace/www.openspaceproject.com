@@ -84,7 +84,7 @@ No pre-compiled binary for Linux. Source code is freely available on GitHub — 
 :::::
 
 \
-*MacOS support* 
+*MacOS support*
 
 OpenSpace relies on OpenGL for graphics rendering. On Apple Silicon (M-series) Macs, OpenGL calls are translated to Metal, Apple's native graphics API, through a compatibility layer rather than running natively.
 

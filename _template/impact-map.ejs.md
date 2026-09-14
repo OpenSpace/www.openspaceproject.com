@@ -33,6 +33,7 @@ function initImpactMap() {
 
   // Build startup layer
   let startupLayer = L.layerGroup();
+  let hasStartupData = Array.isArray(data?.places) && data.places.length > 0;
 
   (hasStartupData ? data.places : []).forEach(place => {
     let r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));

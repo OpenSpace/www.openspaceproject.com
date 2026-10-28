@@ -14,10 +14,13 @@ function initImpactMap() {
     return;
   }
 
+  // Scroll-wheel zoom is off on the regular page so it doesn't hijack page scrolling, but
+  // in embed mode the map is the whole page, so there is nothing else to scroll
+  let isEmbed = document.documentElement.classList.contains('impact-embed');
   let leafletMap = L.map('page-impact-startup-map', {
     center: [20, 0],
     zoom: 2,
-    scrollWheelZoom: false,
+    scrollWheelZoom: isEmbed,
     zoomControl: true
   });
 

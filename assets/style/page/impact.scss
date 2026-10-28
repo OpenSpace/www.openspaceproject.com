@@ -56,6 +56,12 @@
   background: none !important;
 }
 
+// The site-wide .content-section img rounding (general.scss) would also round every map
+// tile, leaving gaps wherever four tile corners meet
+.page-impact__map .leaflet-tile {
+  border-radius: 0;
+}
+
 .page-impact__map-footer {
   font-size: $font-size-sm;
   color: $color-text-light;
@@ -84,4 +90,33 @@
 
 .page-impact__report-link {
   @include pill-link;
+}
+
+// Embed mode (?embed, set in impact-map.js): hide everything except the map and stretch
+// it to fill the window. Uses visibility rather than display so the page layout doesn't
+// need to know about it. The black background fills any area the map tiles don't cover
+html.impact-embed {
+  &,
+  body {
+    background: #000 !important;
+    overflow: hidden;
+  }
+
+  body {
+    visibility: hidden;
+  }
+
+  .page-impact__map {
+    visibility: visible;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    height: auto;
+    border: none;
+    border-radius: 0;
+  }
+
+  .leaflet-control-zoom {
+    display: none;
+  }
 }

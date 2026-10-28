@@ -1,3 +1,11 @@
+// Embed mode (impact.html?embed): show only the map, filling the whole window to enable
+// embedding of the map into another source. Set here, before the body renders, to avoid a
+// flash of the full page. Combine with #orgs to show the Organizations layer instead of
+// startups
+if (new URLSearchParams(window.location.search).has('embed')) {
+  document.documentElement.classList.add('impact-embed');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   let loaded = false;
   function loadMapAssets() {

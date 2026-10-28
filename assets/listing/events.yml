@@ -27,6 +27,112 @@
 #   - page (optional): Path to a page with additional information
 #
 
+- title: January Monthly Meeting
+  datetime: "2027-01-11 20:00"
+  type: Monthly Meeting
+  image: /assets/images/events/zoom_screenshot.webp
+  alt: Screenshot of an OpenSpace Monthly Meeting on Zoom
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: December Monthly Meeting
+  datetime: "2026-12-14 20:00"
+  type: Monthly Meeting
+  image: /assets/images/events/zoom_screenshot.webp
+  alt: Screenshot of an OpenSpace Monthly Meeting on Zoom
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: November Monthly Meeting
+  datetime: "2026-11-09 20:00"
+  type: Monthly Meeting
+  image: /assets/images/events/zoom_screenshot.webp
+  alt: Screenshot of an OpenSpace Monthly Meeting on Zoom
+  description: >
+    Dive into the latest OpenSpace software development updates and participate in
+    feedback sessions. This community meeting is a great opportunity to learn, share, and
+    connect with fellow OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: Astrocasting Drop-in
+  datetime: "2026-10-20 20:00"
+  type: Drop-in
+  image: /assets/images/events/carter-alex-hayden-planetarium.webp
+  alt: Two people at the Hayden Planetarium control console with Mars terrain projected on the dome
+  description: >
+    Join a live OpenSpace astrocast to test the feature in your dome, with developers on
+    hand for real-time support.
+  description_past: >
+    A live OpenSpace astrocast where domes tested the feature with developers on hand for
+    real-time support.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: Astrocasting Drop-in
+  datetime: "2026-10-19 19:00"
+  type: Drop-in
+  image: /assets/images/events/carter-alex-hayden-planetarium.webp
+  alt: Two people at the Hayden Planetarium control console with Mars terrain projected on the dome
+  description: >
+    Join a live OpenSpace astrocast to test the feature in your dome, with developers on
+    hand for real-time support.
+  description_past: >
+    A live OpenSpace astrocast where domes tested the feature with developers on hand for
+    real-time support.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
+- title: October Monthly Meeting
+  datetime: "2026-10-05 19:00"
+  type: Monthly Meeting
+  image: /assets/images/events/zoom_screenshot.webp
+  alt: Screenshot of an OpenSpace Monthly Meeting on Zoom
+  description: >
+    Join us for a preview of the OpenSpace Hub site, currently under development. This
+    community meeting is a great opportunity to learn, share, and connect with fellow
+    OpenSpace users.
+  description_past: >
+    Software development updates, community feedback sessions, and an opportunity to
+    showcase recent OpenSpace projects and discoveries.
+  generate_calendar: true
+  cta:
+    - text: Join Zoom
+      link: https://amnh.zoom.us/j/95872204248?pwd=TkJHWnNDSGdPdXg2c0FyWVpVVi9nZz09
+      show_when_passed: false
+
 - title: 2026 OpenSpace User Meeting
   datetime: "2026-08-26 07:30"
   date_end: "2026-08-28"

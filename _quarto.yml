@@ -8,10 +8,16 @@ project:
     - assets/brand/
     - assets/js/
     - assets/guides/
+    - assets/team/
+    - assets/reports/
+    - assets/videos/
+    - assets/listing/
+    - assets/vendor/
 
 metadata-files:
   - _footer.yml
   - _navbar.yml
+  - _release.yml
 
 format:
   html:
@@ -61,6 +67,8 @@ format:
     execution:
       echo: false
       warning: true
+    filters:
+      - openspace-release-html
     lightbox: true
     link-external-icon: true
     link-external-newwindow: true
@@ -87,13 +95,8 @@ website:
   #   style: simple
   #   palette: dark
   #   policy-url: www.openspaceproject.com
-  search: false
+  search: true
 
-  body-header: |
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9NH7DDD"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
   body-footer: ""
   page-navigation: false
   back-to-top-navigation: false
@@ -119,6 +122,7 @@ execute:
 filters:
   - panel-accordion
   - openspace
+  - openspace-release
 
 extensions:
   iconify:

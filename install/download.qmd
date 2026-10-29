@@ -1,7 +1,7 @@
 ---
-pagetitle: Download OpenSpace — v0.22.0
+pagetitle: Download OpenSpace — v%RELEASE_VERSION%
 description: >
-  Download OpenSpace v0.22.0 — free, open-source astrovisualization software for Windows.
+  Download OpenSpace v%RELEASE_VERSION% — free, open-source astrovisualization software for Windows.
   Source builds available for Linux.
 format:
   html:
@@ -14,8 +14,8 @@ hero:
   title: Explore the universe.<br>Free.
   crumbs:
     - Install
-    - Version 0.22.0
-  badge: v0.22.0 — Latest Release
+    - Version %RELEASE_VERSION%
+  badge: v%RELEASE_VERSION% — Latest Release
   lede: >
     Open-source astrovisualization software built for planetarium domes, classrooms, and
     personal computers.
@@ -36,9 +36,9 @@ cta:
 ---
 
 ::: {.page-download__actions}
-[Download for Windows {{< iconify lucide:download style="color: currentColor;" >}}](https://liu-se.cdn.openspaceproject.com/releases/0.22.0/OpenSpace-0.22.0.zip){.page-download__button-primary}
+[Download for Windows {{< iconify lucide:download style="color: currentColor;" >}}](https://liu-se.cdn.openspaceproject.com/releases/%RELEASE_VERSION%/OpenSpace-%RELEASE_VERSION%.zip){.page-download__button-primary}
 
-[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.22.0){.page-download__button-secondary target="_blank" rel="noopener"}
+[{{< iconify lucide:github style="color: currentColor;" >}} View release notes on GitHub](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv%RELEASE_VERSION%){.page-download__button-secondary target="_blank" rel="noopener"}
 :::
 
 ::: {.page-download__summary}
@@ -60,9 +60,9 @@ Windows · Linux (source)
 Pre-compiled binary for Windows 10 and newer. Includes the application and all data for the default profile. Additional profiles download on first launch.
 :::
 
-[Download v0.22.0 (full) {{< iconify lucide:download style="color: currentColor;" >}}](https://liu-se.cdn.openspaceproject.com/releases/0.22.0/OpenSpace-0.22.0.zip){.page-download__platform-link}
+[Download v%RELEASE_VERSION% (full) {{< iconify lucide:download style="color: currentColor;" >}}](https://liu-se.cdn.openspaceproject.com/releases/%RELEASE_VERSION%/OpenSpace-%RELEASE_VERSION%.zip){.page-download__platform-link}
 
-[Download v0.22.0 (lightweight) {{< iconify lucide:download style="color: currentColor;" >}}](https://liu-se.cdn.openspaceproject.com/releases/0.22.0/OpenSpace-0.22.0_minimal.zip){.page-download__platform-link}
+[Download v%RELEASE_VERSION% (lightweight) {{< iconify lucide:download style="color: currentColor;" >}}](https://liu-se.cdn.openspaceproject.com/releases/%RELEASE_VERSION%/OpenSpace-%RELEASE_VERSION%-minimal.zip){.page-download__platform-link}
 
 [View previous versions](previous-versions.qmd){.page-download__platform-more}
 ::::
@@ -152,7 +152,7 @@ OpenSpace requires the [Microsoft Visual C++ Redistributable for Visual Studio 2
 OpenSpace will request internet access on first launch — a standard Windows security prompt. Granting permission is required for full functionality, including the user interface and live data features.
 
 ### Updating from a previous version
-Use the [lightweight download](https://liu-se.cdn.openspaceproject.com/releases/0.22.0/OpenSpace-0.22.0_minimal.zip) if you're updating an existing installation. Copy your `sync` and `user` folders from the previous version into the new OpenSpace directory.
+Use the [lightweight download](https://liu-se.cdn.openspaceproject.com/releases/%RELEASE_VERSION%/OpenSpace-%RELEASE_VERSION%-minimal.zip) if you're updating an existing installation. Copy your `sync` and `user` folders from the previous version into the new OpenSpace directory.
 :::
 
 ::::

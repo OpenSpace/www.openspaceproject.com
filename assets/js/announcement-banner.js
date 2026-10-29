@@ -1,8 +1,8 @@
 (() => {
-  // Supports multiple banners per page in principle, though in practice there's
-  // only ever one. Each reads its own target date from its own data-date attribute
-  // (set by the announcement-banner shortcode from the `announcement.date`
-  // frontmatter) rather than anything hardcoded here.
+  // Supports multiple banners per page in principle, though in practice there's only ever
+  // one. Each reads its own target date from its own data-date attribute (set by the
+  // announcement-banner shortcode from the `announcement.date` frontmatter) rather than
+  // anything hardcoded here
   document.querySelectorAll('.announcement-banner[data-date]').forEach((el) => {
     const target = new Date(el.dataset.date).getTime();
     if (Number.isNaN(target)) {
@@ -19,7 +19,9 @@
       return String(n).padStart(2, '0');
     }
 
-    let interval;
+    // Declared (and null-initialized) before the first tick() so that the clearInterval()
+    // inside tick() sees a defined value even when the event has already passed
+    let interval = null;
 
     function tick() {
       const diff = target - Date.now();

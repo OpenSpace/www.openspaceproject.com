@@ -1,0 +1,143 @@
+#
+# Previous OpenSpace releases, newest first.
+#
+# Drives the "Previous Versions" page table (install/previous-versions.qmd via
+# _template/previous-versions.ejs.md).
+#
+# When publishing a new release, move the current release (see _release.yml)
+# into this list with its release date.
+#
+# Fields:
+#   - version: Version number without the leading "v"
+#   - released: Human-readable release date (e.g. "April 2026")
+#   - downloads: List of download links, in display order. Each entry:
+#       - label: Link text (Full / Lightweight / ...)
+#       - url: Download URL
+#       - platform: (optional) Platform label rendered before the link, for
+#         releases that shipped per-platform builds (e.g. 0.18.0)
+#   - notes: URL of the GitHub release notes
+#
+- version: "0.21.4"
+  released: April 2026
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.4/OpenSpace-0.21.4.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.4/OpenSpace-0.21.4_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.4
+
+- version: "0.21.3"
+  released: December 2025
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.3/OpenSpace-0.21.3.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.3/OpenSpace-0.21.3_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3
+
+- version: "0.21.2"
+  released: July 2025
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.2/OpenSpace-0.21.2.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.2/OpenSpace-0.21.2_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.2
+
+- version: "0.21.1"
+  released: July 2025
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.1/OpenSpace-0.21.1.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.1/OpenSpace-0.21.1_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.1
+
+- version: "0.21.0"
+  released: June 2025
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.0/OpenSpace-0.21.0.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.0/OpenSpace-0.21.0_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.0
+
+- version: "0.20.1"
+  released: July 2024
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.20.1/OpenSpace-0.20.1.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.20.1/OpenSpace-0.20.1_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.1
+
+- version: "0.20.0"
+  released: June 2024
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.20.0/OpenSpace-0.20.0.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.20.0/OpenSpace-0.20.0_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.0
+
+- version: "0.19.2"
+  released: April 2024
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.2/OpenSpace-0.19.2.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.2/OpenSpace-0.19.2_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.2
+
+- version: "0.19.1"
+  released: September 2023
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.1/OpenSpace-0.19.1.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.1/OpenSpace-0.19.1_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.1
+
+- version: "0.19.0"
+  released: June 2023
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.0/OpenSpace-0.19.0.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.0/OpenSpace-0.19.0_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.0
+
+- version: "0.18.2"
+  released: January 2023
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.2/OpenSpace-0.18.2.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.2/OpenSpace-0.18.2_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.2
+
+- version: "0.18.1"
+  released: November 2022
+  downloads:
+    - label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.1/OpenSpace-0.18.1.zip
+    - label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.1/OpenSpace-0.18.1_minimal.zip
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.1
+
+- version: "0.18.0"
+  released: May 2022
+  downloads:
+    - platform: Windows
+      label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.0/OpenSpace-0.18.0.zip
+    - platform: Windows
+      label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.0/OpenSpace-0.18.0-minimal.zip
+    - platform: Mac
+      label: Full
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.0/OpenSpace-0.18.0.pkg
+    - platform: Mac
+      label: Lightweight
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.0/OpenSpace-0.18.0-minimal.pkg
+  notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.0

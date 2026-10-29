@@ -1,5 +1,5 @@
 // The team template renders once per listing, so this script can be included multiple
-// times on a page — only wire things up once via event delegation.
+// times on a page; only wire things up once via event delegation
 if (!window.__pageTeamInit) {
   window.__pageTeamInit = true;
 

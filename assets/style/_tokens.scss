@@ -61,7 +61,7 @@ $color-attention-unknown: rgba($os-satellite-gray, 0.6);
 
 // Background and surface colors
 $color-background: $os-deep-space;
-$color-footer-bg: darken($color-background, 10%);
+$color-footer-bg: color.adjust($color-background, $lightness: -10%);
 $color-surface-primary: $os-event-horizon;
 $color-surface-secondary: $os-accretion-disk;
 $color-surface-primary-light: rgba($color-accent-primary, 0.25);

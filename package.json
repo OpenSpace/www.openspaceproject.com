@@ -1,5 +1,12 @@
 {
-  "dependencies": {
+  "scripts": {
+    "lint": "npm run lint:style && npm run lint:js",
+    "lint:style": "stylelint \"assets/style/**/*.scss\"",
+    "lint:js": "eslint assets/js"
+  },
+  "devDependencies": {
+    "eslint": "^9.30.0",
+    "postcss-scss": "^4.0.9",
     "stylelint": "^17.14.0",
     "stylelint-scss": "^7.2.0"
   }

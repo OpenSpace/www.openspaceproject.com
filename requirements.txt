@@ -1,2 +1,6 @@
-ipyleaflet
-jupyter
+# Python dependencies for the website build tooling.
+#
+# The Quarto build itself has no Python code cells; the only Python that runs is
+# scripts/extract-copy.py (which needs PyYAML) and scripts/generate-navbar.py
+# (which also needs PyYAML).
+PyYAML==6.0.2

@@ -1,17 +1,26 @@
 /*-- scss:rules --*/
 
-// Same override for the bold day-date line above each schedule tab's table
-// (_base.scss colors all <strong> text the same yellow).
-#schedule .panel-tabset strong {
-  color: $color-text-highlight;
-}
-
-// Day 1/2/3 tab nav: replace Bootstrap's default light-gray hover border-box (looks
+// Day tab nav (#materials): replace Bootstrap's default light-gray hover border-box (looks
 // like a stray white highlight on this dark theme) with a plain blue underline, and
 // mark the selected tab with a thicker accent bar instead of just a color/bg change.
-#schedule .panel-tabset .nav-tabs .nav-link {
+#materials .panel-tabset .nav-tabs {
+  border-bottom-color: $color-border-faint;
+  margin-bottom: 1.75rem;
+}
+
+#materials .panel-tabset .tab-content {
+  border: none;
+  padding: 0;
+}
+
+#materials .panel-tabset .nav-tabs .nav-link {
   position: relative;
   border-color: transparent;
+  background: transparent;
+  color: $color-text-light;
+  font-size: $font-size-sm;
+  text-transform: none;
+  letter-spacing: normal;
 
   &:hover {
     color: $color-accent-primary;
@@ -23,6 +32,10 @@
     border-color: transparent;
   }
 
+  &.active {
+    color: $color-text-highlight;
+  }
+
   &.active::after {
     content: '';
     position: absolute;
@@ -31,6 +44,307 @@
     bottom: -1px;
     height: 3px;
     background: $color-accent-secondary;
+  }
+}
+
+// Presentations heading row: the section h2 on the left, playlist link on the right.
+// The h2's own bottom border/margin are dropped so the tab nav's border is the only rule.
+.session-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+
+  h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+
+.session-header__playlist {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: $font-size-sm;
+  color: $color-accent-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text-highlight;
+    text-decoration: underline;
+  }
+}
+
+// Session cards: a 16:9 media tile (recording or slides-only) over the
+// time, title, speaker, and material links.
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem 1.5rem;
+
+  @media (max-width: $bp-lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.session-card__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 0.85rem;
+  background: $color-surface-primary;
+  border: 1px solid $color-border-faint;
+  border-radius: $layout-border-radius-small;
+  color: $color-accent-primary;
+  font-size: $font-size-xs;
+  text-decoration: none;
+  transition:
+    border-color $animation-duration-base ease,
+    background $animation-duration-base ease;
+
+  iconify-icon {
+    font-size: 1.75rem;
+  }
+
+  // Recording tiles: a frame from the talk fills the tile, under a scrim so the play
+  // icon stays legible.
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform $animation-duration-slow ease;
+  }
+
+  &:has(img)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: $color-overlay-dark-faint;
+    transition: background $animation-duration-base ease;
+  }
+
+  img + iconify-icon {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    filter: drop-shadow(0 1px 4px $color-shadow-far);
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+  }
+
+  &:hover::before {
+    background: transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover img {
+      transform: none;
+    }
+  }
+
+  &:is(a):hover {
+    color: $color-accent-primary;
+    border-color: $color-border-muted;
+    background: $color-surface-primary-hover;
+  }
+
+  &--slides {
+    background: transparent;
+    border-style: dashed;
+    border-color: $color-border-bw-light;
+
+    iconify-icon {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.session-card__time {
+  font-family: $font-monospace;
+  font-size: $font-size-2xs;
+  color: $color-text-light;
+  margin: 0 0 0.3rem;
+}
+
+// h3 inside a content section would otherwise pick up the larger heading scale.
+.session-card__title {
+  font-size: $font-size-md;
+  font-weight: $font-weight-demibold;
+  line-height: 1.3;
+  color: $color-text-highlight;
+  margin: 0 0 0.3rem;
+}
+
+.session-card__speaker {
+  font-size: $font-size-xs;
+  color: $color-text-light;
+  margin: 0 0 0.4rem;
+}
+
+.session-card__links {
+  display: flex;
+  gap: 1rem;
+  font-size: $font-size-xs;
+  margin: 0;
+
+  a {
+    color: $color-accent-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-text-highlight;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Recap intro: venue photo in a narrow left column beside the text; stacks on phones.
+.recap-intro {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+  align-items: start;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  // Full-screen widths: photo takes the wider column and stretches to the height of
+  // the text beside it, rather than leaving empty space underneath.
+  @media (min-width: $bp-lg) {
+    grid-template-columns: 3fr 2fr;
+    gap: 2.5rem;
+    align-items: stretch;
+
+    // Quarto wraps the image in <p><a class="lightbox">; each layer needs the height.
+    .recap-intro__media,
+    .recap-intro__media p,
+    .recap-intro__media a {
+      display: block;
+      height: 100%;
+      margin: 0;
+    }
+
+    img {
+      height: 100%;
+      aspect-ratio: auto;
+    }
+  }
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+// Recap highlights: attendee quote on the left, event-at-a-glance numbers on the right,
+// split by a faint vertical rule. Stacks on narrow screens.
+.recap-highlights {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  margin-top: 3rem;
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.recap-quote {
+  padding-right: 2.5rem;
+
+  blockquote {
+    margin: 0 0 1rem;
+    padding: 0;
+    border: none;
+    font-family: $font-headings;
+    font-size: $font-size-xl;
+    line-height: 1.35;
+    color: $color-text-highlight;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: $bp-md) {
+    padding-right: 0;
+  }
+}
+
+.recap-quote__cite {
+  @include eyebrow-label($fontsize: $font-size-xs);
+
+  color: $color-text-light;
+}
+
+// Markup is a <dl>; each row puts the label (<dt>) left and the number (<dd>) right.
+.recap-stats {
+  margin: 0;
+  padding-left: 2.5rem;
+  border-left: 1px solid $color-border-bw-light;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-top: 1px solid $color-border-bw-faint;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  dt {
+    @include eyebrow-label($fontsize: $font-size-xs);
+
+    font-weight: normal;
+    color: $color-text-light;
+  }
+
+  dd {
+    margin: 0;
+    font-family: $font-headings;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-demibold;
+    line-height: 1;
+    color: $color-accent-secondary;
+  }
+
+  @media (max-width: $bp-md) {
+    padding-left: 0;
+    padding-top: 0.5rem;
+    border-left: none;
+    border-top: 1px solid $color-border-bw-light;
   }
 }
 
@@ -74,7 +388,46 @@
     }
   }
 
-  > img {
+  // Same hover as the homepage venue cards: a flare-yellow bar fills in along the
+  // bottom edge of the photo, the photo zooms in, and the "See recap" arrow slides right.
+  &:hover .page-user-meetings__media img {
+    transform: scale(1.06);
+  }
+
+  &:hover .page-user-meetings__media::after {
+    opacity: 1;
+  }
+
+  &:hover .page-user-meetings__link svg {
+    transform: translateX(5px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover .page-user-meetings__media img,
+    &:hover .page-user-meetings__link svg {
+      transform: none;
+    }
+  }
+
+  .page-user-meetings__media {
+    position: relative;
+    overflow: hidden;
+    border-radius: $layout-border-radius;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 5px;
+      background: $color-accent-secondary;
+      opacity: 0;
+      transition: opacity $animation-duration-base ease;
+    }
+  }
+
+  .page-user-meetings__media img {
     width: 100%;
     height: 380px;
     object-fit: cover;
@@ -82,7 +435,10 @@
     display: block;
     border-radius: $layout-border-radius;
     border: 1px solid $color-border-faint;
-    transition: border-color $animation-duration-base ease;
+    transform: scale(1);
+    transition:
+      transform $animation-duration-slow ease,
+      border-color $animation-duration-base ease;
 
     @media (max-width: $bp-md) {
       height: 260px;
@@ -99,10 +455,11 @@
     a {
       color: inherit;
       text-decoration: none;
-      transition: color $animation-duration-base ease;
 
-      &:hover {
-        color: $color-accent-primary;
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
       }
     }
   }
@@ -113,13 +470,6 @@
   }
 }
 
-.page-user-meetings__meta {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.6rem;
-}
-
 .page-user-meetings__badge {
   @include eyebrow-label($fontsize: $font-size-2xs);
 
@@ -128,12 +478,6 @@
   border-radius: $layout-border-radius;
   color: $color-accent-secondary;
   border: 1px solid $color-border-secondary-light;
-}
-
-.page-user-meetings__year {
-  @include eyebrow-label($fontsize: $font-size-2xs);
-
-  color: $color-text-light;
 }
 
 .page-user-meetings__location {
@@ -237,9 +581,12 @@
 }
 
 .page-user-meetings__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: $font-size-sm;
   font-weight: $font-weight-demibold;
-  color: $color-accent-primary;
+  color: $color-accent-secondary;
   text-decoration: none;
   letter-spacing: $font-letterspacing-wide;
   transition: color $animation-duration-fast ease;
@@ -247,7 +594,11 @@
   z-index: 1;
 
   &:hover {
-    color: $color-text-highlight;
+    color: $color-accent-secondary;
     text-decoration: none;
+  }
+
+  svg {
+    transition: transform $animation-duration-base ease;
   }
 }

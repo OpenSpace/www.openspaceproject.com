@@ -1,8 +1,10 @@
 ---
 pagetitle: 2026 User Meeting — OpenSpace
 description: >
-  Join the OpenSpace community at the Visualization Center C in Norrköping, Sweden for
-  three days of demos, training, and conversation.
+  Recap of the 2026 OpenSpace User Meeting at Visualization Center C in Norrköping,
+  Sweden — presentation recordings, slides, and handouts.
+image: /assets/images/user-meetings/2026_OUM_group-photo.webp
+image-alt: Attendees of the 2026 OpenSpace User Meeting on the stairs at Visualization Center C
 aliases:
   - /2026-user-meeting
 sidebar: false
@@ -12,6 +14,9 @@ format:
     toc: false
     anchor-sections: false
     theme: ../../../assets/style/page/user-meetings.scss
+    resources:
+      - slides/
+      - examples/
 
 hero:
   title: OpenSpace User Meeting
@@ -23,271 +28,218 @@ hero:
   lede: August 26–28, 2026 · Visualization Center C, Norrköping, Sweden
 
 cta:
-  heading: Save your spot
-  lede: Registration is free.
+  heading: Keep the conversation going
   actions:
-    - text: Register now
-      link: https://visualiseringscenter.se/registration-openspace-user-meeting/
+    - text: Join the Slack
+      link: "https://join.slack.com/t/openspacesupport/shared_invite/zt-3fkl3g2gw-8CUnrj0tQmhg3B2J3HXH8w"
       style: primary
       external: true
+    - text: Past user meetings
+      link: /community/user-meetings/index.qmd
+      style: ghost
+  lede: >
+    Join the OpenSpace Slack to share session ideas, swap tips with other users, and hear
+    first when registration opens.
 ---
 
 {{< dotnav label="Navigate to venue section" >}}
 
-::: {.content-section-narrow #about}
+::: {.content-section-narrow #recap}
 
-## Join us in Norrköping
+## A look back
 
+:::: {.recap-intro}
+
+::: {.recap-intro__media}
 ![](visc.webp){fig-alt="Visualization Center C, Norrköping, Sweden"}
+:::
 
-Join us for the second in-person OpenSpace User Meeting in Norrköping, Sweden. OpenSpace users of all levels are invited to the Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking. Participating at the User Meeting is free of charge and is recommended to all current and potential users of OpenSpace of any skill level.
+::: {.recap-intro__text}
+In August 2026, the OpenSpace community gathered in Norrköping, Sweden for the second annual user meeting. OpenSpace users of all levels came together at Visualization Center C for three days of trainings, presentations, hands-on sessions, and networking. Attendees sharpened their skills, picked up new techniques, and connected with their peers over fika.
 
-This is a great opportunity to:
+[Visualization Center C](https://visualiseringscenter.se/en/), a science center run by the Norrköping municipality and Linköping University, is one of the institutions where OpenSpace is developed. Its stereoscopic dome hosts both public shows and university research and teaching, making it a perfect venue for the first European meeting.
+:::
 
-  - Sharpen your OpenSpace skills
-  - Explore the latest software features and updates
-  - Connect with educators, planetarium professionals, researchers, and developers in the OpenSpace community
+::::
+
+:::: {.recap-highlights}
+
+::: {.recap-quote}
+> “The community and these meetups really make this product what it is.”
+
+[2026 User Meeting attendee]{.recap-quote__cite}
+:::
+
+<dl class="recap-stats">
+<div><dt>Attendees</dt><dd>32</dd></div>
+<div><dt>Institutions</dt><dd>16</dd></div>
+<div><dt>Countries<br>represented</dt><dd>4</dd></div>
+</dl>
+
+::::
 
 :::
 
-::: {.content-section-narrow #venue}
+::: {.content-section-narrow #materials}
 
-## Visualization Center C
+<div class="session-header">
 
-<div class="venue-map">
-<iframe
-  src="https://www.google.com/maps?q=Visualization+Center+C,+Kungsgatan+54,+602+33+Norrk%C3%B6ping,+Sweden&output=embed"
-  width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  title="Map showing Visualization Center C in Norrköping"></iframe>
+## Presentations
+
+<a class="session-header__playlist" href="https://www.youtube.com/playlist?list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener"><iconify-icon icon="lucide:circle-play"></iconify-icon>Watch the full playlist</a>
+
 </div>
 
-We're excited to welcome you to the [Visualization Center C](https://visualiseringscenter.se/en/) in Norrköping — a digital science center with a state-of-the-art stereoscopic planetarium, driven as a partnership between the Norrköping municipality and Linköping University. This partnership turns the dome into a dual-use space as it is used simultaneously for shows open to the public while at the same time serving as a testbed for the university education.
+<!--
+Each session card's media tile is one of:
 
-Norrköping is an old industrial town located about 90 minutes south of Stockholm. Summer is an amazing time for a visit: during the days of the meeting there will be around 14.5 hours of daylight and only 3.5 hours of true night. More information about potential other places to visit during your trip is available on the [Visit Sweden](https://visitsweden.com/) website (or a more humorous take at [Sweden not Switzerland](https://visitsweden.com/sweden-not-switzerland/)).
+  Recording (play button over a frame from the talk, saved as a 640×360 .webp in thumbnails/):
+    <a class="session-card__media" href="https://www.youtube.com/watch?v=VIDEO_ID&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: TITLE"><img src="thumbnails/SESSION-NAME.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
 
+  Slides only, no recording:
+    <a class="session-card__media session-card__media--slides" href="SLIDES_URL" target="_blank" rel="noopener"><iconify-icon icon="lucide:monitor"></iconify-icon><span>Slides</span></a>
 
-:::
-
-::: {.content-section-narrow #schedule}
-
-## Agenda
-
-Schedule is subject to change; this page will always contain the latest information about the meeting schedule. The entire event will take place in rooms located in the [Visualization Center C](https://visualiseringscenter.se/en/).
-
-Unless otherwise specified the locations are:
-
-  - Track 1: **Workshop area, floor 5**
-  - Track 2: **VR Arena, floor 1**
-  - Track 3: **Eckerberg room, floor 1**
-
-Coffee Breaks are at the restaurant area, on **floor 2**. Coffee will be served at 10.30 and 15.00; the morning coffee will be shorter, the afternoon coffee will have more time to socialize.
+Optional lines below the title:
+    <p class="session-card__speaker">Speaker, Institution</p>
+    <p class="session-card__links"><a href="SLIDES_URL">Slides</a><a href="HANDOUT_URL">Handout</a><a href="EXAMPLE_URL" download>Example</a></p>
+-->
 
 ::: {.panel-tabset}
 
-### Day 1
+### Wed 26 Aug
 
-**Wednesday, August 26**
+<div class="session-grid">
 
-| Time                     | Track 1                                                       | Track 2                     | Track 3                            |
-| ------------------------ | ------------------------------------------------------------- | --------------------------- | ---------------------------------- |
-| 09:30 – 10:00<br>(30m)   | Welcome and Kickoff<br>Community, Updates & What's Ahead      | ---                         | ---                                |
-| 10:00 – 10:30<br>(30m)   | Introductions                                                 | ---                         | ---                                |
-| 10:30 - 10:45<br>(15m)   | Coffee Break                                                  | ---                         | ---                                |
-| 10:45 – 12:30<br>(1h45m) | OpenSpace 101 Workshop: Getting Started                       | Coding and Scripting        | Developer Helpdesk/<br>Jam Session |
-| 12:30 – 14:00<br>(1h30m) | Lunch on your own                                             | ---                         | ---                                |
-| 14:00 – 15:30<br>(1h30m) | OpenSpace 201 Workshop: Included Profiles                     | Maps and Georeferenced Data | Developer Helpdesk/<br>Jam Session |
-| 15:30 – 16:30<br>(1h)    | Coffee Break                                                  | ---                         | ---                                |
-| 16:30 – 18:00<br>(1h30)  | OpenSpace 202 Workshop: Included Profiles                     | 3D Models and Trajectories  | Developer Helpdesk/<br>Jam Session |
-| 18:00 – 19:00<br>(1h)    | Once Upon the Moon<br>Dome movie<br>**In the dome (floor 4)** | ---                         | ---                                |
-|                          | Group Dinner (pay-on-your-own) at [Hemma Hos](https://hemmahosnorrkoping.se/) |             |                                    |
+<div class="session-card">
+<a class="session-card__media session-card__media--slides" href="slides/openspace-101.pdf" target="_blank" rel="noopener"><iconify-icon icon="lucide:monitor"></iconify-icon><span>Slides</span></a>
+<p class="session-card__time">10:45</p>
+<h3 class="session-card__title">OpenSpace 101 Workshop: Getting Started</h3>
+<p class="session-card__speaker">Micah Acinapura, American Museum of Natural History</p>
+<p class="session-card__speaker">Andreas Engberg, Visualization Center C</p>
+<p class="session-card__links"><a href="slides/openspace-101.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
 
-### Day 2
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=zFRlIG2kF1E&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: Coding and Scripting"><img src="thumbnails/coding-and-scripting.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">10:45</p>
+<h3 class="session-card__title">Coding and Scripting</h3>
+<p class="session-card__speaker">Alex Bock, Linköping University</p>
+</div>
 
-**Thursday, August 27**
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=nwOCEvJrJMc&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: OpenSpace 201 Workshop: Included Profiles"><img src="thumbnails/openspace-201.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">14:00</p>
+<h3 class="session-card__title">OpenSpace 201 Workshop: Included Profiles</h3>
+<p class="session-card__speaker">Micah Acinapura, American Museum of Natural History</p>
+<p class="session-card__links"><a href="slides/openspace-201.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
 
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=BM1qDsEn01k&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: Maps and Georeferenced Data"><img src="thumbnails/maps-and-georeferenced-data.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">14:00</p>
+<h3 class="session-card__title">Maps and Georeferenced Data</h3>
+<p class="session-card__speaker">Alex Bock, Linköping University</p>
+</div>
 
-| Time                     | Track 1                                        | Track 2                                      | Track 3                            |
-| ------------------------ | ---------------------------------------------- | -------------------------------------------- | ---------------------------------- |
-| 09:30 – 11:30<br>(2h)    | ShowComposer                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
-| 10:30 - 10:45<br>(15m)   | Coffee Break as part of the previous session   | ---                                          | ---                                |
-| 11:30 – 12:30<br>(1h)    | The Night's Sky                                | C-Play                                       | Developer Helpdesk/<br>Jam Session |
-| 12:30 – 14:00<br>(1h30m) | Lunch on your own                              | ---                                          | ---                                |
-| 14:00 – 15:00<br>(1h)    | OpenSpace 301 Workshop: Create custom Profiles | Creating pre-rendered movies from OpenSpace  | Developer Helpdesk/<br>Jam Session |
-| 15:00 – 15:45<br>(45m)   | Coffee Break                                   | ---                                          | ---                                |
-| 15:45 – 16:00<br>(15m)   | Group Photo<br>**In front of the dome (floor 4)** | ---                                          | ---                                |
-| 16:00 – 17:00<br>(1h)    | AssetBuilder                                   | ---                                          | Developer Helpdesk/<br>Jam Session |
-| 17:00 – 19:00<br>(2h)    | Dome Show and Tell, Presentation Tips & Tricks<br>**In the dome (floor 4)** | ---             | ---                                |
-|                          | Dinner on your own                             |                                              |                                    |
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=dAdRHJyPq_E&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: OpenSpace 202 Workshop: Included Profiles"><img src="thumbnails/openspace-202.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">16:30</p>
+<h3 class="session-card__title">OpenSpace 202 Workshop: Included Profiles</h3>
+<p class="session-card__speaker">Micah Acinapura, American Museum of Natural History</p>
+<p class="session-card__links"><a href="slides/openspace-202.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
 
-### Day 3
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=Av0I0HvZyhI&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: 3D Models and Trajectories"><img src="thumbnails/3d-models-and-trajectories.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">16:30</p>
+<h3 class="session-card__title">3D Models and Trajectories</h3>
+<p class="session-card__speaker">Malin Ejdbo, Linköping University</p>
+<p class="session-card__links"><a href="examples/3d-models-and-trajectories.zip" download>Example</a></p>
+</div>
 
-**Friday, August 28**
+</div>
 
-| Time                     | Track 1                                         | Track 2 | Track 3                            |
-| ------------------------ | ----------------------------------------------- | ------- | ---------------------------------- |
-| 09:30 – 11:00<br>(1h30m) | Giving Presentations in OpenSpace, a case study | Multichannel Display Environments            | Developer Helpdesk/<br>Jam Session |
-| 10:30 - 10:45<br>(15m)   | Coffee Break as part of the previous session    | ---     | ---                                |
-| 11:00 – 12:00<br>(1h)    | OpenSpace: Quo vadis?                           | ---     | ---                                |
-| 12:00 – 12:30<br>(30m)   | Farewell and Thank you                          | ---     | ---                                |
-|                          | End of the official program                     |         |                                    |
-| 17:30 -                  | Visit to [Tekniska Museet](https://www.tekniskamuseet.se/en/) in Stockholm | ---    | --- |
+### Thu 27 Aug
+
+<div class="session-grid">
+
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=CAAQ1GJyyb0&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: The Night Sky"><img src="thumbnails/the-night-sky.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">11:30</p>
+<h3 class="session-card__title">The Night Sky</h3>
+<p class="session-card__speaker">Micah Acinapura, American Museum of Natural History</p>
+<p class="session-card__links"><a href="slides/the-night-sky.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
+
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=Y0FttV01II8&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: C-Play"><img src="thumbnails/c-play.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">11:30</p>
+<h3 class="session-card__title">C-Play</h3>
+<p class="session-card__speaker">Erik Sundén, Visualization Center C</p>
+</div>
+
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=IJ7FY8nOt88&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: OpenSpace 301 Workshop: Create Custom Profiles"><img src="thumbnails/openspace-301.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">14:00</p>
+<h3 class="session-card__title">OpenSpace 301 Workshop: Create Custom Profiles</h3>
+<p class="session-card__speaker">Adam Rohdin, Visualization Center C</p>
+<p class="session-card__speaker">Micah Acinapura, American Museum of Natural History</p>
+<p class="session-card__links"><a href="slides/openspace-301.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
+
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=mWvMw-NTcaA&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: AssetBuilder"><img src="thumbnails/assetbuilder.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">16:00</p>
+<h3 class="session-card__title">AssetBuilder</h3>
+<p class="session-card__speaker">Emma Broman, Linköping University</p>
+<p class="session-card__links"><a href="slides/assetbuilder.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
+
+</div>
+
+### Fri 28 Aug
+
+<div class="session-grid">
+
+<div class="session-card">
+<a class="session-card__media" href="https://www.youtube.com/watch?v=M2eMhTaLdYQ&amp;list=PLHVfc7Kfm_2Q" target="_blank" rel="noopener" aria-label="Watch recording: Multichannel Display Environments"><img src="thumbnails/multichannel-display-environments.webp" alt="" loading="lazy"><iconify-icon icon="lucide:circle-play"></iconify-icon></a>
+<p class="session-card__time">09:30</p>
+<h3 class="session-card__title">Multichannel Display Environments</h3>
+<p class="session-card__speaker">Adam Rohdin, Visualization Center C</p>
+<p class="session-card__links"><a href="slides/multichannel-display-environments.pdf" target="_blank" rel="noopener">Slides</a></p>
+</div>
+
+</div>
 
 :::
 
-### Travel to Tekniska Museet
-As an optional activity on the Friday, the staff at the National Museum of Science and Technology ([Tekniska Museet](https://www.tekniskamuseet.se/en/)) have offered to provide us with a guided tour through their facility. The travel to Stockholm is self-organized, but here is a suggested travel itinerary:
-
-1. Train from Norrköping Central to Stockholm Central.  For example: Mälartåg 236, leaving Norrköping at 14:28 and arriving in Stockholm 16:14: [Booking](https://www.sj.se/en/search-journey/choose-ticket-type/Norrk%C3%B6ping%20Central/Stockholm%20Central/2026-08-24/outward-journey)
-1. Bus 69 from Stockholm Central towards Djurgårdsbrunn. Payment is on the bus via credit card. [Map](https://transitapp.com/en/region/stockholm/sl/buss-69) and [Location of the Bus stop](https://www.google.com/maps/place/Centralen/@59.3305614,18.0571472,119m/data=!3m1!1e3!4m6!3m5!1s0x465f9d605e29cde1:0x7b2f923908490b4!8m2!3d59.3308!4d18.0571699!16s%2Fg%2F11w1c92hhg?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D)
-
-
-
 :::
 
-::: {.content-section-narrow #travel}
+::: {.content-section-narrow #photos}
 
-## Travel & where to stay
+## Photos
 
-### Getting there
+```{=html}
+<div class="content-carousel" id="contentCarousel">
+  <div class="content-carousel__track" id="carouselTrack">
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_group-photo.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_group-photo.webp);" aria-label="Group photo of attendees on the stairs to the dome"></a>
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_welcome-display.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_welcome-display.webp);" aria-label="Welcome display at Visualization Center C"></a>
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_full-room.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_full-room.webp);" aria-label="Presenter addressing a full workshop room"></a>
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_workshop.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_workshop.webp);" aria-label="Workshop session with attendees following along on laptops"></a>
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_included-profiles-workshop.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_included-profiles-workshop.webp);" aria-label="Included Profiles workshop with the Solarstorm 2012 profile on screen"></a>
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_astrographics-talk.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_astrographics-talk.webp);" aria-label="Talk with the OpenSpace astrographics paper on screen"></a>
+    <a class="content-carousel__slide content-carousel__slide--link lightbox" data-gallery="user-meetings-2026" href="/assets/images/user-meetings/2026_OUM_hands-on-session.webp" style="background-image: url(/assets/images/user-meetings/2026_OUM_hands-on-session.webp);" aria-label="Hands-on session around a conference table"></a>
+  </div>
 
-Norrköping is very easy to reach internationally. Some recommended routes:
-
-#### Stockholm Arlanda (ARN)
-A major international hub with air service to many European and international destinations. It takes about 2 hours to reach Norrköping from Arlanda by train and the service is fast and reliable. Tickets can be booked through the national railway services [SJ](https://www.sj.se/en?lang=en) and the stations are called "Arlanda Flygplats" and "Norrköping Central". Prices for the train vary, by should be around 400-600 SEK / 40-60€ for a returning trip. If you are staying a few days in Stockholm, its main station is called "Stockholm Central".
-
-### Linköping City Airport (LPI)
-A local airport that has direct connections to Amsterdam Schiphol (AMS), one of Europe's main airline hubs. It is also the airfield that houses SAAB, which provides Sweden's fighter aircraft. Transfer to Norrköping takes about 35 minutes in total. The easiest way is to take a taxi to the Linköping central station, which costs about 200 SEK / 20€ and a train ticket from "Linköping Central" to "Norrköping Central" for another 80 SEK / 8€.
-
-### Where to stay
-
-Hotels in the city are around 1000 SEK / 100€ per night. A few options near the visualization center:
-
-  - [Hotel President](https://ligula.se/en/profilhotels/profilhotels-president/)
-  - [Elite Grand Hôtel](https://www.elite.se/en/hotels/norrkoping/elite-grand-hotel-norrkoping/)
-  - [Hotel Comfort](https://www.strawberry.se/hotell/sverige/norrkoping/comfort-hotel-norrkoping)
-
-:::
-
-
-::: {.content-section-narrow #activities}
-
-## Activities
-
-### Restaurants
-Lunches at the meeting are self-organized, but Norrköping has a bunch of great restaurants that are all in walking distance:
-
-- Visualization Center restaurant, [location](https://www.google.com/maps/place/Visualization+Center+C/@58.5888018,16.1785013,287m/data=!3m1!1e3!4m6!3m5!1s0x46593bcaa2cdb01d:0x37c29c22fba42ac5!8m2!3d58.5890805!4d16.177305!16s%2Fg%2F11dyjzndw?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://visualiseringscenter.se/en/visit/restaurant-cafe-c/)
-- Bastard Burgers, [location](https://www.google.com/maps/place/Bastard+Burgers/@58.5884779,16.1858785,551m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593b46d9001201:0x591b556e49984e8c!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://bastardburgers.com/se/restaurants/norrkoping)
-- Burgers and Bangers, [location](https://www.google.com/maps/place/Burgers+%26+Bangers/@58.5914825,16.1844132,551m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46593a4b135ef06f:0x152b0cb6fe616471!2sBurgers+%26+Bangers!8m2!3d58.5914825!4d16.1869935!16s%2Fg%2F11bvv55pcy!3m5!1s0x46593a4b135ef06f:0x152b0cb6fe616471!8m2!3d58.5914825!4d16.1869935!16s%2Fg%2F11bvv55pcy?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](http://www.burgersandbangers.se/)
-- Enoteket, [location](https://www.google.com/maps/place/Enoteket/@58.5887849,16.1784446,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593bb5474d8307:0x8b0f18c02bef6a1e!8m2!3d58.5887849!4d16.1810249!16s%2Fg%2F1tgw8jc_?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](http://www.enoteket.se/)
-- Hemma Hos, [location](https://www.google.com/maps/place/Hemma+hos+Norrk%C3%B6ping/@58.5882794,16.1874723,551m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46593a4d20b87b97:0x588104c2ae47ff01!2sSelims+Restaurang!8m2!3d58.5894561!4d16.1935937!16s%2Fg%2F11b6c5_99w!3m5!1s0x46593be16195368b:0x4d3129e7fb8a91a5!8m2!3d58.589457!4d16.1902179!16s%2Fg%2F11xw3qc2qf?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://www.hemmahosnorrkoping.se/)
-- Kitchin by Kasai, [location](https://www.google.com/maps/place/Kitchin+by+Kasai+%E2%80%A2+Norrk%C3%B6ping/@58.5897302,14.9661255,141021m/data=!3m1!1e3!4m10!1m2!2m1!1sKitchin+by+Kasai!3m6!1s0x46593b0f7a1f89b9:0xf05bf3d3e9ab9909!8m2!3d58.5897088!4d16.1848922!15sChBLaXRjaGluIGJ5IEthc2FpWhIiEGtpdGNoaW4gYnkga2FzYWmSAQpyZXN0YXVyYW504AEA!16s%2Fg%2F11z7fc5pb6?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://kitchin.se/norrkoping/)
-- Lingon Food & Friends, [location](https://www.google.com/maps/place/Lingon+Food+%26+Friends/@58.5871167,16.1884476,94m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593bb368f0fed5:0x3acdb2ab079ef43b!8m2!3d58.5872582!4d16.1886388!16s%2Fg%2F11cky3z7ky?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://lingonfoodandfriends.se/)
-- Mannam, [location](https://www.google.com/maps/place/Mannam/@58.5893669,16.1852777,551m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593b9c1708e1db:0x4c8ad66bde2aaf04!8m2!3d58.5896089!4d16.1833201!16s%2Fg%2F11g1xzx09d?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](http://mannam.se/)
-- Mimaru Sushi, [location](https://www.google.com/maps/place/Mimaru+Sushi+%E2%94%82+Norrk%C3%B6ping/@58.5760768,16.1906688,9444m/data=!3m1!1e3!4m6!3m5!1s0x46593b00697267d5:0x29f5734f456efcec!8m2!3d58.5907688!4d16.1821418!16s%2Fg%2F11x0ys5tlq?entry=ttu&g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D), [info](http://www.mimarusushi.se/)
-- Mocca Deli, [location](https://www.google.com/maps/place/Mocca+Deli/@58.5895403,16.1807072,551m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593b73c3b7ab83:0x4c1b805f68582687!8m2!3d58.5900716!4d16.1806177!16s%2Fg%2F11fmb6t83g?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](http://www.moccadeli.se/)
-- Palki, [location](https://www.google.com/maps/place/Palki+Indisk+Restaurang/@58.5909712,16.1845444,260m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593b003e6abf1d:0xd09d72ff77252de6!8m2!3d58.5914272!4d16.1855263!16s%2Fg%2F11m6znqtnm?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://palkirestaurang.se/)
-- Pappa Grappa, [location](https://www.google.com/maps/place/Pappa+Grappa/@58.5893669,16.1852777,551m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593a4b37291441:0xff1b4c66fa04b1b6!8m2!3d58.5900977!4d16.1857961!16s%2Fg%2F113d_kj1t?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://pappagrappa.se/norrkoping/)
-- Paradis du Liban, [location](https://www.google.com/maps/place/Paradis+Du+Liban/@58.5873211,16.1787099,328m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593bca7e13443b:0x6aa59dd8d8d7d93b!8m2!3d58.5873821!4d16.1769602!16s%2Fg%2F1pw3y8bvw?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://paradisduliban.se/meny)
-- Pizzeria Napoli, [location](https://www.google.com/maps/place/Pizzeria+Napoli/@58.5870593,16.1734385,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593bb5833f8129:0x1feacbb056fbbc0e!8m2!3d58.5870594!4d16.178304!16s%2Fg%2F11cnymkmmk?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://napolinorrkoping.se/)
-- Selims Restaurant, [location](https://www.google.com/maps/place/Selims+Restaurang/@58.5894561,16.1910134,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593a4d20b87b97:0x588104c2ae47ff01!8m2!3d58.5894561!4d16.1935937!16s%2Fg%2F11b6c5_99w?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://www.selimsrestaurang.se/)
-- Spicy Hot, [location](https://www.google.com/maps/place/Spicy+Hot+Kungsgatan/@58.5918259,16.1780796,125m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593a351368e13d:0x13e53d21bd2259cc!8m2!3d58.592091!4d16.178013!16s%2Fg%2F1hc4np0m4?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://www.spicyhot.se/)
-- Tao Noi, [location](https://www.google.com/maps/place/Tao+Noi/@58.5871979,16.1868312,328m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593b826d154e01:0x9832ad74dfc2a1a2!8m2!3d58.5870193!4d16.1873035!16s%2Fg%2F11k9n_l25l?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://taonoi.se/pages/meny)
-- Tokio, [location](https://www.google.com/maps/place/Tokio/@58.5867329,16.1736932,551m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46593a4d20b87b97:0x588104c2ae47ff01!2sSelims+Restaurang!8m2!3d58.5894561!4d16.1935937!16s%2Fg%2F11b6c5_99w!3m5!1s0x46593b732f83b97d:0xe3943dcb0fd08aea!8m2!3d58.587214!4d16.1763597!16s%2Fg%2F11rfpm311q?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](http://www.tokiorestaurang.se/)
-- Trattoria Gabriel, [location](https://www.google.com/maps/place/Trattoria+Gabriel/@58.5914273,16.1824497,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593a4b1d77809d:0x96dfe65b344357b7!8m2!3d58.5914273!4d16.18503!16s%2Fg%2F11dynw2sbx?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](https://www.trattoriagabriel.se/)
-- Urbane Goat, [location](https://www.google.com/maps/place/Urbane+Goat/@58.5865129,16.1842488,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593bb37f128b3f:0x9af05a9814bf059c!8m2!3d58.5865129!4d16.1868291!16s%2Fg%2F11bzt097bj?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D), [info](http://urbanegoat.se/)
-
-### Bars
-
-- Boca, [location](https://www.google.com/maps/place/Boca/@58.5865129,16.1842488,551m/data=!3m1!1e3!4m6!3m5!1s0x46593b148025cf5d:0x563feadab812f10!8m2!3d58.5876312!4d16.1867354!16s%2Fg%2F11fs_jblhh?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- Boston Grill, [location](https://www.google.com/maps/place/Boston+Grill+Norrk%C3%B6ping/@58.5866547,16.1884053,246m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593babffcbae83:0xf5a13212ca5dde7b!8m2!3d58.586668!4d16.1889419!16s%2Fg%2F11vq2tbgtr?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- Cromwell House, [location](https://www.google.com/maps/place/Cromwell+House/@58.5900518,16.1777307,246m/data=!3m1!1e3!4m6!3m5!1s0x46593a354f175b65:0xc1e4052674583775!8m2!3d58.5905817!4d16.178194!16s%2Fg%2F1yh9ty_v8?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- Kitchen & Cocktails, [location](https://www.google.com/maps/place/Kitchen+%26+Cocktails/@58.5919057,16.1818619,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593b8e61fb6345:0xd94cca6bd0eb2ccb!8m2!3d58.5919057!4d16.1844422!16s%2Fg%2F11sk3m813l?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- Knäppingen, [location](https://www.google.com/maps/place/Restaurang+Kn%C3%A4ppingen/@58.589892,16.1805654,246m/data=!3m2!1e3!5s0x46593bb55280caff:0xe533ed0a2775efc!4m6!3m5!1s0x46593bb5529549cd:0x7e61f232cf0ebdd3!8m2!3d58.589901!4d16.180129!16s%2Fg%2F1hc8975tm?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- The Black Lion Inn, [location](https://www.google.com/maps/place/The+Black+Lion+Inn/@58.5909102,16.1858613,246m/data=!3m2!1e3!5s0x46593bb335ec53cd:0x80afc16e3df88dca!4m14!1m7!3m6!1s0x46593b46d9001201:0x591b556e49984e8c!2sBastard+Burgers!8m2!3d58.5884779!4d16.1884588!16s%2Fg%2F11fjwwqhy3!3m5!1s0x46593a4b1982da1f:0xd723a1874325b532!8m2!3d58.5912259!4d16.1857407!16s%2Fg%2F1hc2zhmqx?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- O'Learys, [location](https://www.google.com/maps/place/O'Learys+Norrk%C3%B6ping/@58.4990918,15.7408762,35347m/data=!3m2!1e3!5s0x46593bb33a449427:0xcc10a4d97570385!4m10!1m2!2m1!1sO'Learys!3m6!1s0x46593bb36d7efc01:0xa485357899103c38!8m2!3d58.5876124!4d16.191017!15sCghPJ0xlYXJ5cyIDiAEBWgoiCG8gbGVhcnlzkgETYW1lcmljYW5fcmVzdGF1cmFudOABAA!16s%2Fg%2F1tjtgwx0?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- Ölstugan Tullen, [location](https://www.google.com/maps/place/%C3%96lstugan+Tullen+Norrk%C3%B6ping/@58.5864399,16.1807336,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593b630e0fc5ad:0x940b7064330363e0!8m2!3d58.58644!4d16.1855991!16s%2Fg%2F11p5j7bmfs?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- V Bar, [location](https://www.google.com/maps/place/V+Bar/@58.5906473,16.1829745,551m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46593b4690379b63:0x648a51995cce2b8d!8m2!3d58.5906473!4d16.1855548!16s%2Fg%2F11v_3rrs5x?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-- Världens Bar, [location](https://www.google.com/maps/place/V%C3%A4rldens+Bar/@58.589892,16.1805654,246m/data=!3m1!1e3!4m6!3m5!1s0x46593bb54b002367:0x839ac8e8c9197cc!8m2!3d58.5897561!4d16.1806949!16s%2Fg%2F1hc737p80?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D)
-
-:::
-
-
-::: {.content-section-narrow #faq}
-
-## FAQ
-
-Below are answers to some frequently asked questions about the meeting. If you don't see yours here, reach out via email or on [Slack](/community/slack.qmd).
-
-<details class="faq__item">
-<summary class="faq__question">When and where is the meeting?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>August 26–28, 2026 at the Visualization Center C in Norrköping, Sweden.</p>
+  <div class="content-carousel__controls">
+    <div class="content-carousel__dots" id="carouselDots"></div>
+    <div class="content-carousel__buttons">
+      <button class="content-carousel__button" id="carouselPrev" aria-label="Previous slide">&#8249;</button>
+      <button class="content-carousel__button" id="carouselNext" aria-label="Next slide">&#8250;</button>
+    </div>
+  </div>
 </div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Who should attend?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>OpenSpace users of all levels are welcome — educators, planetarium professionals, researchers, and developers looking to sharpen their skills, explore the latest features, and connect with the community.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">How do I register?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p><a href="https://visualiseringscenter.se/registration-openspace-user-meeting/" target="_blank" rel="noopener">Register online</a> through the Visualization Center C.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Is there a registration fee?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>No — registration for the 2026 User Meeting is free.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Is travel support available?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>No travel support or reimbursement is offered for the 2026 meeting.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">What's the best way to get to Norrköping?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>The nearest major hub is Stockholm Arlanda (ARN), about 90 minutes away by train. Linköping City Airport (LPI) also offers a direct connection to Amsterdam Schiphol (AMS).</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Do I need to bring my own laptop?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>We recommend bringing your own OpenSpace-compatible laptop, as loaner devices will be limited.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Will there be a virtual option?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>There is no virtual attendance option this year, but select sessions will be recorded and posted after the meeting.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Is there a social event?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>Wednesday evening features a dome movie screening of <em>Once Upon the Moon</em>, followed by a pay-your-own group dinner at <a href="https://hemmahosnorrkoping.se/" target="_blank" rel="noopener">Hemma Hos</a>. On Friday evening, there's an optional visit to the <a href="https://www.tekniskamuseet.se/en/" target="_blank" rel="noopener">Tekniska Museet</a> in Stockholm. The agenda also builds in extra time throughout the meeting for networking with peers.</p>
-</div>
-</details>
-
-<details class="faq__item">
-<summary class="faq__question">Who do I contact with questions about the meeting?<span class="faq__chevron" aria-hidden="true"></span></summary>
-<div class="faq__answer">
-<p>Contact <a href="mailto:alexander.bock@liu.se">Alexander Bock</a> or <a href="mailto:support@openspaceproject.com">Support</a> with any questions about the meeting.</p>
-</div>
-</details>
+<script src="/assets/js/carousel.js"></script>
+```
 
 :::

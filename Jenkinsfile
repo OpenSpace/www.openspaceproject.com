@@ -1,4 +1,3 @@
-def url = 'https://github.com/OpenSpace/www.openspaceproject.com';
 def branch = env.BRANCH_NAME
 
 // Uncomment all of this once we are ready to go live
@@ -21,7 +20,7 @@ else {
 node("server-misc") {
   stage("SCM") {
     deleteDir();
-    gitHelper.checkoutGit(url, branch, false);
+    checkout scm;
   }
   stage("Quarto") {
     sh(

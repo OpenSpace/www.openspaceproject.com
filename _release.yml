@@ -1,0 +1,17 @@
+#
+# Current OpenSpace release — single source of truth for the release version.
+#
+# How it is used:
+#   - The `release` filter (openspace-release extension) replaces every
+#     `%RELEASE_VERSION%` placeholder in page content and frontmatter with
+#     this version at render time.
+#   - The `release-html` filter (HTML output only) appends a script that sets
+#     `window.__RELEASE_VERSION__`, which the footer's "Version X" link reads.
+#
+# To publish a new release:
+#   1. Update `version` below.
+#   2. Add the previous release to assets/listing/releases.yml (it drives the
+#      "Previous Versions" page table).
+#
+release:
+  version: "0.22.0"

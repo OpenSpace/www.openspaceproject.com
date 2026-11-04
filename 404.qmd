@@ -19,11 +19,21 @@ format:
   </p>
 
   <form class="page-404__search" action="https://duckduckgo.com/" method="get" role="search">
-    <input type="hidden" name="sites" value="www.openspaceproject.com">
     <label class="visually-hidden" for="page-404-search-input">Search the site</label>
     <input type="search" id="page-404-search-input" name="q" placeholder="Search for the page's new location…">
     <button type="submit" class="button__primary">Search</button>
   </form>
+  <script>
+    // Scope the search to this site. DuckDuckGo only honors the `site:` operator inside
+    // the query (a `sites` form parameter is ignored), so prepend it on submit. Without
+    // JS the form still works; it just searches all of DuckDuckGo
+    document.querySelector('.page-404__search').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const q = document.getElementById('page-404-search-input').value.trim();
+      window.location.href = 'https://duckduckgo.com/?q=' +
+        encodeURIComponent('site:www.openspaceproject.com ' + q);
+    });
+  </script>
 
   <div class="page-404__actions">
     <a href="index.qmd" class="button__primary">Back to home</a>

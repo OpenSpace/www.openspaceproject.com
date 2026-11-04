@@ -235,9 +235,6 @@ main:has(.page-index__hero) .content-section {
 // Venue grid breaks out of container to full width
 .page-index__venue-grid {
   width: 100%;
-}
-
-.page-index__venue-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;

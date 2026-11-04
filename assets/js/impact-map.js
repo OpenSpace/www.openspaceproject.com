@@ -22,8 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    // Leaflet is vendored under assets/vendor/leaflet (see the download instructions in
+    // that folder) so the map doesn't depend on unpkg at runtime. Keep the lazy load:
+    // only fetch it when the map nears the viewport
     const js = document.createElement('script');
-    js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    js.src = '/assets/vendor/leaflet/leaflet.js';
     js.onload = () => {
       leafletReady = true;
       tryInit();
@@ -36,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       dataReady = true;
       tryInit();
     };
-    // If the status data fails to load, don't hang forever waiting for it — init
-    // the map anyway so layers that don't depend on it (e.g. Organizations) still work.
+    // If the status data fails to load, don't hang forever waiting for it; init the map
+    // anyway so layers that don't depend on it (e.g. Organizations) still work
     dataJs.onerror = () => {
       dataReady = true;
       tryInit();

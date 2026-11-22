@@ -52,12 +52,12 @@ node("server-misc") {
         curl -sSL https://github.com/lycheeverse/lychee/releases/download/lychee-v0.19.1/lychee-x86_64-unknown-linux-musl.tar.gz | tar xz
         chmod +x lychee
         python3 -m http.server 8123 --directory _site >/dev/null 2>&1 &
-        SERVER_PID=$!
+        SERVER_PID=\$!
         sleep 1
         ./lychee --no-progress --base-url http://localhost:8123 _site
-        RC=$?
-        kill $SERVER_PID
-        exit $RC
+        RC=\$?
+        kill \$SERVER_PID
+        exit \$RC
       """,
       label: "lychee"
     )

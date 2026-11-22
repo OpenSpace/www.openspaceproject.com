@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const email = form.querySelector('#cf-email').value.trim();
 
+    // Same validation as the footer newsletter form (assets/js/footer.js)
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errorEl.textContent = 'Please enter a valid email address.';
+      errorEl.hidden = false;
+      return;
+    }
+
     const message = form.querySelector('#cf-message').value.trim();
     if (!message) {
       errorEl.textContent = 'Please enter a message.';

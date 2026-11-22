@@ -1,3 +1,7 @@
+# postcss-scss is required so stylelint parses .scss files as SCSS instead of
+# plain CSS (without it, every SCSS-specific construct is a parse error).
+customSyntax: postcss-scss
+
 plugins:
   - stylelint-scss
 
@@ -12,7 +16,9 @@ rules:
 
   # SCSS
   scss/at-rule-no-unknown: true
-  scss/comment-no-empty: true
+  scss/comment-no-empty: null
+  # (disabled: the codebase uses bare `//` lines as section dividers
+  # (//\n// Title\n//) — that is the established house style)
   scss/dollar-variable-no-missing-interpolation: true
   scss/function-quote-no-quoted-strings-inside: true
   scss/function-unquote-no-unquoted-strings-inside: true

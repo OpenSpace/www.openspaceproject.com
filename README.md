@@ -1,18 +1,20 @@
 # OpenSpace Project Website
-The website is built using [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. Before building the webpage, make sure to install the Quarto CLI on your system, by following the instructions on the [Quarto website](https://quarto.org/docs/get-started/). You also need a working Python installation.
+The website is built using [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. Before building the webpage, make sure to install the Quarto CLI on your system, by following the instructions on the [Quarto website](https://quarto.org/docs/get-started/).
 
 To build the webpage:
 
   - Run `pip install -r requirements.txt` from the root folder to install Python dependencies
-  - For development, run `quarto preview` in the root folder. A brower will open to `localhost:12800`. This uses hot reloading, so whenever any file is changed the webpage will reload
+  - For development, run `quarto preview` in the root folder. A browser will open to `localhost:12800`. This uses hot reloading, so whenever any file is changed the webpage will reload
   - For deployment, run `quarto render`. The generated webpage is created in the `_site` folder
+
+Python is only needed for the optional copy-extraction script (`scripts/extract-copy.py`), which generates `website-copy.md` — the website build itself has no Python code cells.
 
 ## General considerations
 For loading performance, consider converting image files to `.webp` format using, for example, [ImageMagick](https://imagemagick.org).
 
 File formats and tools used in the webpage:
 
-  - [YML](https://learn.getgrav.org/17/advanced/yaml): Both used for configuration and data files
+  - [YAML](https://yaml.org): Both used for configuration and data files
   - [SCSS](https://sass-lang.com/): Style sheets
   - [EJS](https://ejs.co/#docs): Templating language to turn files/YML into HTML
   - [Bootstrap](https://getbootstrap.com): Layout for the webpage
@@ -39,10 +41,9 @@ To enable linting for Quarto (`.qmd`) files in VS Code, make sure to associate t
   - `community/events`: A list of events that will automatically be added to the events page. Each event should be in a subfolder that has an `index.qmd`
   - `resources`: Resources that are provided by the webpage for external use
   - `_template`: Partial pages that are included or EJS file templates used by other pages
-  - `_announcement.yml`: Configuration file to control a top-level announcement banner
   - `_footer.yml`: Configuration file to control the information provided in the footer
   - `_navbar.yml`: Configuration file to control the top navigation bar
-  - `_sidebars.yml`: Configuration file to control per-page sidebars
+  - `_release.yml`: The current release version — single source of truth for the version shown on the download page, in the footer, and in page titles (see the `%RELEASE_VERSION%` placeholder)
   - `_quarto.yml`: Root configuration file for Quarto
   - `404.qmd`: Special 404 page that gets displayed when someone navigates to a page that doesn't exist
   - `index.qmd`: Root page
@@ -73,9 +74,9 @@ More information about this shortcode can be found in [`_extensions\openspace\sh
 ### Add new Team Member / Student
   - [ ] Resize profile image to 500x500 pixels
   - [ ] Copy profile image into the correct subfolder in `assets/team`. The first two characters should be a sequence number within that folder
-  - [ ] Add the new person to the `assets/team/team.yml`
+  - [ ] Add the new person to the `assets/listing/team.yml`
 
 ### Team Member becomes inactive
   - [ ] Move profile image from the current folder in `assets/team` to the `-previous` version
   - [ ] Update the profile image file name to have the correct sequence number. We try our best to have previous members ordered based on their seniority; longer time in the project -> lower number
-  - [ ] Move the persons entry in the `assets/team/team.yml` to the current group, update `type` and `image` entries
+  - [ ] Move the persons entry in the `assets/listing/team.yml` to the current group, update `type` and `image` entries

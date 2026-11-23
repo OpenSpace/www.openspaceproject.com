@@ -49,7 +49,6 @@ listing:
   <div class="page-index__hero-video-wrap">
     <video autoplay muted loop playsinline poster="assets/images/hero_poster.webp">
       <source src="assets/videos/home-zoomout.mp4" type="video/mp4">
-      <source src="videos/home-zoomout.webm" type="video/webm">
     </video>
     <div class="page-index__hero-overlay"></div>
   </div>

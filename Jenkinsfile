@@ -45,6 +45,13 @@ node("server-misc") {
     // new build (so new pages aren't falsely checked against the old live site), external
     // links live
     //
+    // Each page is passed to lychee as an absolute URL so that relative links resolve
+    // against the page's own location. (With --base-url + directory, lychee resolves
+    // relative links against the site root and every relative asset link in a
+    // subdirectory 404s.)
+    //
+    // External sites that block non-browser user agents are excluded in lychee.toml.
+    //
     // The binary is pinned and downloaded into the workspace each build; no dependency on
     // what's installed on the agent
     sh(
@@ -54,7 +61,7 @@ node("server-misc") {
         python3 -m http.server 8123 --directory _site >/dev/null 2>&1 &
         SERVER_PID=\$!
         sleep 1
-        ./lychee --no-progress --base-url http://localhost:8123 _site
+        find _site -name '*.html' -type f -o -name '*.llms.md' -type f | sed 's|^_site/|http://localhost:8123/|' | xargs ./lychee --no-progress
         RC=\$?
         kill \$SERVER_PID
         exit \$RC

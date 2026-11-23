@@ -1,0 +1,14 @@
+# Link-checker config for the CI "Link check" stage (Jenkinsfile).
+#
+# Sites that block non-browser user agents are excluded here: the links work fine in a
+# real browser, but lychee's requests get 403. Patterns are regexes matched against the
+# URL
+
+exclude = [
+  "https://join\\.slack\\.com/",
+  "https://openspacesupport\\.slack\\.com/",
+  "https://www\\.amnh\\.org/",
+  "https://www\\.dmns\\.org/",
+  "http://dx\\.doi\\.org/",
+  "https://www\\.linkedin\\.com/",
+]

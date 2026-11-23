@@ -32,7 +32,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.21.4/OpenSpace-0.21.4.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.4/OpenSpace-0.21.4_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.4/OpenSpace-0.21.4-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.4
 
 - version: "0.21.3"
@@ -41,7 +41,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.21.3/OpenSpace-0.21.3.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.3/OpenSpace-0.21.3_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.21.3/OpenSpace-0.21.3-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.3
 
 - version: "0.21.2"
@@ -95,7 +95,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.19.2/OpenSpace-0.19.2.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.2/OpenSpace-0.19.2_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.2/OpenSpace-0.19.2-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.2
 
 - version: "0.19.1"
@@ -104,7 +104,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.19.1/OpenSpace-0.19.1.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.1/OpenSpace-0.19.1_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.1/OpenSpace-0.19.1-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.1
 
 - version: "0.19.0"
@@ -113,7 +113,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.19.0/OpenSpace-0.19.0.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.0/OpenSpace-0.19.0_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.19.0/OpenSpace-0.19.0-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.19.0
 
 - version: "0.18.2"
@@ -122,7 +122,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.18.2/OpenSpace-0.18.2.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.2/OpenSpace-0.18.2_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.2/OpenSpace-0.18.2-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.2
 
 - version: "0.18.1"
@@ -131,7 +131,7 @@
     - label: Full
       url: https://liu-se.cdn.openspaceproject.com/releases/0.18.1/OpenSpace-0.18.1.zip
     - label: Lightweight
-      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.1/OpenSpace-0.18.1_minimal.zip
+      url: https://liu-se.cdn.openspaceproject.com/releases/0.18.1/OpenSpace-0.18.1-minimal.zip
   notes: https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.18.1
 
 - version: "0.18.0"

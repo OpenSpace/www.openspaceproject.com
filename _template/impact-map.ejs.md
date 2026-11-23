@@ -114,12 +114,28 @@ function initImpactMap(places) {
     btn.addEventListener('click', function () { showLayer(btn.dataset.layer); });
   });
 
-  // Show orgs layer if linked directly via #orgs, or if there's no startup data to show
-  if (window.location.hash === '#orgs' || !hasStartupData) {
-    showLayer('orgs');
+  // Pick the layer to show on load. Priority: the ?layer= query parameter (orgs | startups),
+  // then the legacy #orgs hash, then the default (startups, or orgs when there's no startup
+  // data to show).
+  const layerParam = (new URLSearchParams(window.location.search).get('layer') || '').toLowerCase();
+  let initialLayer;
+  if (layerParam === 'orgs' || layerParam === 'organizations') {
+    initialLayer = 'orgs';
+  } else if (layerParam === 'startups' || layerParam === 'startup-locations' || layerParam === 'startup') {
+    initialLayer = 'startups';
+  } else if (window.location.hash === '#orgs') {
+    initialLayer = 'orgs';
   } else {
-    showLayer('startups');
+    initialLayer = 'startups';
   }
+
+  // If the requested layer has no data (e.g. ?layer=startups but the startup data failed to
+  // load), fall back to orgs
+  if (initialLayer === 'startups' && !hasStartupData) {
+    initialLayer = 'orgs';
+  }
+
+  showLayer(initialLayer);
 
   setTimeout(() => { leafletMap.invalidateSize(); }, 200);
 }

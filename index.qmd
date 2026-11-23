@@ -89,7 +89,7 @@ listing:
     <img src="assets/images/institutions/universeum.webp" alt="Universeum" loading="lazy">
     <img src="assets/images/institutions/visc--white.webp" alt="Visualization Center C" loading="lazy">
   </div>
-  <p class="page-index__trusted-more"><a href="about/impact.qmd#orgs">Meet the 100+ organizations running OpenSpace →</a></p>
+  <p class="page-index__trusted-more"><a href="about/impact.html?layer=orgs">Meet the 100+ organizations running OpenSpace →</a></p>
 </section>
 
 <section class="content-section">

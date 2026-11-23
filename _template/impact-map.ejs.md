@@ -8,7 +8,7 @@
 <div id="page-impact-startup-map" class="page-impact__map"></div>
 
 <script>
-function initImpactMap() {
+function initImpactMap(places) {
   let mapEl = document.getElementById('page-impact-startup-map');
   if (!mapEl || typeof L === 'undefined') {
     return;
@@ -36,9 +36,9 @@ function initImpactMap() {
 
   // Build startup layer
   let startupLayer = L.layerGroup();
-  let hasStartupData = typeof data !== 'undefined' && Array.isArray(data?.places) && data.places.length > 0;
+  let hasStartupData = Array.isArray(places) && places.length > 0;
 
-  (hasStartupData ? data.places : []).forEach(place => {
+  (hasStartupData ? places : []).forEach(place => {
     let r = Math.max(4, Math.min(14, Math.log2((place.total || 1) + 1) * 1.8));
     L.circleMarker([place.lat, place.lng], {
       radius: r,

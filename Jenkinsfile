@@ -69,11 +69,6 @@ node("server-misc") {
       label: "lychee"
     )
   }
-  stage("Archive") {
-    // Keep a copy of the rendered site on the Jenkins master for rollback. Videos are
-    // excluded; they're the bulk of the site and are served from the CDN anyway
-    archiveArtifacts artifacts: '_site', excludes: '_site/assets/videos/**'
-  }
   stage("Deploy") {
     sh(
       script: "chmod -R o+rx _site",

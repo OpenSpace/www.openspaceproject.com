@@ -44,6 +44,9 @@ format:
     include-in-header:
       - file: _template/cookiebot.html
       - file: _template/gtm.html
+      # Must load after autocomplete.umd.js (Quarto emits it earlier in <head>) so the
+      # wrapper is in place before DOMContentLoaded; see the file for why.
+      - file: _template/search-guard.html
     include-after-body:
       - file: _template/dotnav.html
       - file: _template/header.html

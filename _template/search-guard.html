@@ -1,0 +1,35 @@
+<script data-cookieconsent="ignore">
+// Guard against duplicate Quarto search initialization.
+//
+// Cookiebot (consent.cookiebot.com/uc.js, loaded below with data-blockingmode="auto")
+// re-dispatches the DOMContentLoaded event as part of its consent event-listener
+// override. quarto-search.js registers its init on DOMContentLoaded and is not
+// idempotent, so the re-dispatched event runs the handler a second time and calls
+// autocomplete() again on the same #quarto-search container — producing a second
+// .aa-Autocomplete and a duplicated search loupe in the navbar.
+//
+// This makes autocomplete() idempotent per container: a second call on an already
+// initialized container returns the existing instance instead of building a second
+// one. quarto-search.js reads autocomplete() from the lib at handler-run time, so it
+// picks up this wrapper — but only if the wrapper is applied BEFORE the first
+// DOMContentLoaded. The data-cookieconsent="ignore" attribute is essential: without
+// it, Cookiebot's auto blocking mode defers this script until consent, which lands
+// AFTER the first init and leaves the duplicate in place.
+(() => {
+  const lib = window["@algolia/autocomplete-js"];
+  if (!lib || typeof lib.autocomplete !== "function") return;
+  const orig = lib.autocomplete;
+  const instances = new WeakMap();
+  lib.autocomplete = function (options) {
+    const container = options && options.container;
+    if (container && typeof container === "object" && instances.has(container)) {
+      return instances.get(container);
+    }
+    const instance = orig.apply(this, arguments);
+    if (container && typeof container === "object") {
+      instances.set(container, instance);
+    }
+    return instance;
+  };
+})();
+</script>

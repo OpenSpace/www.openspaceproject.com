@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       document.querySelectorAll('.page-research__year-label').forEach((label) => {
-        const year = label.dataset.year;
+        const { year } = label.dataset;
         const hasVisible = !!document.querySelector(
           `.page-research__thesis-row:not(.is-hidden)[data-year="${year}"]`
         );

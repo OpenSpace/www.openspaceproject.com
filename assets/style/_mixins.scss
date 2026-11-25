@@ -74,10 +74,7 @@
 
 // Compact bordered "pill" link that lifts on hover and shifts its border/text toward the
 // accent color. Pass $bg/$border to vary the fill.
-@mixin pill-link(
-  $bg: $color-surface-primary,
-  $border: $color-border-light
-) {
+@mixin pill-link($bg: $color-surface-primary, $border: $color-border-light) {
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -39,7 +39,8 @@
     white-space: normal;
     transition: background $animation-duration-fast ease;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: $color-surface-primary-hover;
 
       .nav-rich-icon {
@@ -118,7 +119,8 @@
     }
 
     .nav-link {
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $color-text-highlight;
       }
     }
@@ -150,7 +152,7 @@
     }
 
     .nav-item.dropdown .dropdown-menu::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -0.75rem;
       left: 0;

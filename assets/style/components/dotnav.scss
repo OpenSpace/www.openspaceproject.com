@@ -51,7 +51,8 @@
     pointer-events: none;
   }
 
-  &:hover::after, &:focus-visible::after {
+  &:hover::after,
+  &:focus-visible::after {
     opacity: 1;
   }
 }

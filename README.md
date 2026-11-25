@@ -19,8 +19,11 @@ File formats and tools used in the webpage:
   - [EJS](https://ejs.co/#docs): Templating language to turn files/YML into HTML
   - [Bootstrap](https://getbootstrap.com): Layout for the webpage
 
+### Linting and Formatting
+The linting and formatting configurations are based on the shared OpenSpace configurations in [shared-configs](https://github.com/OpenSpace/shared-configs). Run `npm install` once to install them, after which `npm run lint` checks the SCSS (stylelint), the JavaScript (ESLint), and the formatting (Prettier) the same way the build server does. `npm run format` reformats the JavaScript, SCSS, and JSON files with Prettier.
+
 ### Use Markdown Linting
-It is recommended to use a Markdown linter to ensure consistent formatting and to catch common errors in Markdown files. This repository includes a `.markdownlint.json` configuration file. If you use Visual Studio Code, you can easily check your files by installing the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint). It will automatically use the `.markdownlint.json` file in the project to highlight formatting issues directly in your editor as you type.
+It is recommended to use a Markdown linter to ensure consistent formatting and to catch common errors in Markdown files. This repository includes a `.markdownlint.json` configuration file that extends the shared configuration, so `npm install` has to be run once for it to be found. If you use Visual Studio Code, you can easily check your files by installing the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint). It will automatically use the `.markdownlint.json` file in the project to highlight formatting issues directly in your editor as you type.
 
 To enable linting for Quarto (`.qmd`) files in VS Code, make sure to associate the `.qmd` file extension with the Markdown language.
 

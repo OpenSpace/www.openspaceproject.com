@@ -12,7 +12,8 @@
     transform: translateY($layout-hover-lift-amount);
   }
 
-  &:hover, &:focus-within {
+  &:hover,
+  &:focus-within {
     border-color: $color-border-muted;
   }
 

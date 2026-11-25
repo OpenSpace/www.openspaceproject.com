@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function openModal(card) {
     modalImg.src = card.dataset.image;
     modalImg.alt = card.dataset.image_alt || card.dataset.title;
-    const meta = card.dataset.institution + (card.dataset.location ? ' · ' + card.dataset.location : '');
+    const meta =
+      card.dataset.institution +
+      (card.dataset.location ? ' · ' + card.dataset.location : '');
     modalMeta.textContent = meta;
     modalTitle.textContent = card.dataset.title;
     modalBody.textContent = card.dataset.body;

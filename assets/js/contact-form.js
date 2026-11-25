@@ -27,10 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = form.querySelector('#cf-name').value.trim();
     const subject = form.querySelector('#cf-subject').value.trim() ?? 'OpenSpace inquiry';
-    const body = (name ? 'From: ' + name + '\n' : '') + 'Email: ' + email + '\n\n' + message;
+    const body =
+      (name ? 'From: ' + name + '\n' : '') + 'Email: ' + email + '\n\n' + message;
 
-    window.location.href = 'mailto:support@openspaceproject.com' +
-      '?subject=' + encodeURIComponent(subject) +
-      '&body=' + encodeURIComponent(body);
+    window.location.href =
+      'mailto:support@openspaceproject.com' +
+      '?subject=' +
+      encodeURIComponent(subject) +
+      '&body=' +
+      encodeURIComponent(body);
   });
 });

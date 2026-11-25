@@ -1,0 +1,19 @@
+# Build output and dependencies
+_site
+.quarto
+site_libs
+node_modules
+package-lock.json
+
+# Third-party code
+_extensions
+assets/vendor
+assets/js/iconify-icon.min.js
+
+# Quarto templates and configuration/content data are not formatted
+_template
+*.yml
+*.html
+
+# Markdown is checked by markdownlint, whose list indentation differs from Prettier's
+*.md

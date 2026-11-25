@@ -18,7 +18,7 @@
   function show(n) {
     for (let i = 1; i <= 3; i++) {
       const el = document.getElementById('newsletter-' + i);
-      if (el) el.hidden = (i !== n);
+      if (el) el.hidden = i !== n;
     }
   }
 
@@ -26,7 +26,9 @@
     const el = document.getElementById('newsletter__message-' + step);
     if (!el) return;
     el.textContent = msg;
-    el.className = 'newsletter__message' + (isError ? ' newsletter__message newsletter__message--error' : '');
+    el.className =
+      'newsletter__message' +
+      (isError ? ' newsletter__message newsletter__message--error' : '');
     el.hidden = !msg;
   }
 
@@ -43,9 +45,11 @@
     }
 
     data[`b_${mailchimpUser}_${mailchimpId}`] = '';
-    const qs = Object.keys(data).map((k) => {
-      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
-    }).join('&');
+    const qs = Object.keys(data)
+      .map((k) => {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+      })
+      .join('&');
 
     const cb = `mcSub${Date.now()}`;
     const s = document.createElement('script');
@@ -64,7 +68,9 @@
     // If the JSONP callback never fires, clean up and surface an error
     const timer = setTimeout(() => {
       // Swallow a late response instead of throwing on a missing callback
-      window[cb] = function () { delete window[cb]; };
+      window[cb] = function () {
+        delete window[cb];
+      };
       if (s.parentNode) s.parentNode.removeChild(s);
       if (btn) {
         btn.disabled = false;
@@ -77,9 +83,11 @@
       cleanup();
       if (r.result === 'success') {
         show(3);
-      }
-      else {
-        const msg = (r.msg || 'Something went wrong. Please try again.').replace(/^\d+ - /, '');
+      } else {
+        const msg = (r.msg || 'Something went wrong. Please try again.').replace(
+          /^\d+ - /,
+          ''
+        );
         // Parse the Mailchimp HTML response into plain text to avoid HTML injection
         const tmp = document.createElement('div');
         tmp.innerHTML = msg;
@@ -161,7 +169,9 @@
   }
 
   fetch('https://uptime.openspaceproject.com/api/status-page/heartbeat/all')
-    .then((r) => { return r.json(); })
+    .then((r) => {
+      return r.json();
+    })
     .then((data) => {
       const beats = data.heartbeatList || {};
       const ids = Object.keys(beats);
@@ -180,22 +190,21 @@
         const latest = list[list.length - 1];
         if (latest.status === 1) {
           anyUp = true;
-        }
-        else {
+        } else {
           anyDown = true;
         }
       });
       if (anyDown && anyUp) {
         setStatus('degraded');
-      }
-      else if (anyDown) {
+      } else if (anyDown) {
         setStatus('down');
-      }
-      else {
+      } else {
         setStatus('up');
       }
     })
-    .catch(() => { setStatus('unknown'); });
+    .catch(() => {
+      setStatus('unknown');
+    });
 
   // Below $footer-accordion-bp (defined in footer.scss — keep this value in sync with it)
   // the footer's link columns become an accordion and the footer itself reverts to a
@@ -228,14 +237,18 @@
       // the shortfall needs to come from our own padding. Subtract out whatever padding
       // we previously applied so this stays correct across re-syncs
       const currentPadding = parseFloat(getComputedStyle(gridEl).paddingBottom) || 0;
-      const structuralGutter = gridEl.getBoundingClientRect().height - contentEl.getBoundingClientRect().height - currentPadding;
+      const structuralGutter =
+        gridEl.getBoundingClientRect().height -
+        contentEl.getBoundingClientRect().height -
+        currentPadding;
       // #quarto-document-content's rounded bottom corners need the footer sitting behind
       // them to actually show through the curve; otherwise the corner arc only cuts into
       // the (transparent, footer-less) gutter above the footer's fixed top edge,
       // revealing whatever's behind the page instead. Shrinking the gutter by the corner
       // radius makes the content box overlap that far into the footer's territory, so the
       // arc has the footer right there to reveal
-      const cornerRadius = parseFloat(getComputedStyle(contentEl).borderBottomLeftRadius) || 0;
+      const cornerRadius =
+        parseFloat(getComputedStyle(contentEl).borderBottomLeftRadius) || 0;
       const needed = Math.max(0, footerEl.offsetHeight - structuralGutter - cornerRadius);
       gridEl.style.paddingBottom = needed + 'px';
     };
@@ -300,8 +313,7 @@
     const syncNewsletterPosition = () => {
       if (footerAccordionQuery.matches) {
         bottomRowStart.appendChild(newsletterEl);
-      }
-      else {
+      } else {
         originalParent.insertBefore(newsletterEl, originalNextSibling);
       }
     };

@@ -46,7 +46,8 @@
         text-decoration: none;
         transition: color $animation-duration-fast ease;
 
-        i, .bi {
+        i,
+        .bi {
           display: none;
         }
 

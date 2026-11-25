@@ -74,7 +74,9 @@ div.sourceCode pre code {
   overflow-x: visible !important;
 }
 
-code, .sourceCode, pre.sourceCode {
+code,
+.sourceCode,
+pre.sourceCode {
   background: $code-bg;
   color: $code-color;
   padding: 0;
@@ -153,7 +155,6 @@ table {
     }
   }
 }
-
 
 main:has(.page-index__hero) {
   padding-top: 0 !important;

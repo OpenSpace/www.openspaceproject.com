@@ -33,7 +33,7 @@
 
   function goTo(index) {
     current = Math.max(0, Math.min(index, total - 1));
-    const slide = slides[0];
+    const [slide] = slides;
     const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
     const slideWidth = slide.offsetWidth + gap;
     track.style.transform = `translateX(-${current * slideWidth}px)`;

@@ -1,13 +1,25 @@
 {
+  "type": "module",
   "scripts": {
-    "lint": "npm run lint:style && npm run lint:js",
+    "lint": "npm run lint:style && npm run lint:js && npm run format:check",
     "lint:style": "stylelint \"assets/style/**/*.scss\"",
-    "lint:js": "eslint assets/js"
+    "lint:js": "eslint assets/js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "eslint": "^9.30.0",
+    "@eslint/js": "^10.0.1",
+    "@openspace/shared-configs": "github:OpenSpace/shared-configs#v1.0.0",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "markdownlint-cli2": "^0.24.2",
     "postcss-scss": "^4.0.9",
+    "prettier": "^3.10.1",
     "stylelint": "^17.14.0",
-    "stylelint-scss": "^7.2.0"
-  }
+    "stylelint-scss": "^7.2.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2"
+  },
+  "prettier": "@openspace/shared-configs/prettier"
 }

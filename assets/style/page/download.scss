@@ -123,7 +123,8 @@
     margin: 0;
   }
 
-  dt, dd {
+  dt,
+  dd {
     padding: 0.6rem 0;
     border-top: 1px solid $color-border-faint;
   }
@@ -142,7 +143,8 @@
     color: $color-text-highlight;
   }
 
-  dt:first-of-type, dd:first-of-type {
+  dt:first-of-type,
+  dd:first-of-type {
     padding-top: 0;
     border-top: none;
   }

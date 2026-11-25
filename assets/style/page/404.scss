@@ -42,7 +42,7 @@
   max-width: 460px;
   margin: 1rem auto;
 
-  input[type="search"] {
+  input[type='search'] {
     @include text-input;
 
     flex: 1;
@@ -64,4 +64,3 @@
   color: $color-text-light;
   margin: 0;
 }
-

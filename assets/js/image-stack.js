@@ -8,11 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const dots = Array.from(document.querySelectorAll('#layer-dots .image-stack__dot'));
   const total = cards.length;
   let current = 0;
-  const states = ['image-stack__card--front', 'image-stack__card--mid', 'image-stack__card--back', 'image-stack__card--hidden'];
+  const states = [
+    'image-stack__card--front',
+    'image-stack__card--mid',
+    'image-stack__card--back',
+    'image-stack__card--hidden'
+  ];
 
   function render() {
     cards.forEach((card, i) => {
-      states.forEach((s) => { card.classList.remove(s); });
+      states.forEach((s) => {
+        card.classList.remove(s);
+      });
       const offset = (i - current + total) % total;
       card.classList.add(states[Math.min(offset, states.length - 1)]);
     });
@@ -31,8 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       current = (current + 1) % total;
       render();
-    }
-    else if (e.key === 'ArrowLeft') {
+    } else if (e.key === 'ArrowLeft') {
       e.preventDefault();
       current = (current - 1 + total) % total;
       render();

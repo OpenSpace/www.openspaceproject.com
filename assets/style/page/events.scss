@@ -104,7 +104,7 @@
     transition: transform $animation-duration-fast ease;
   }
 
-  &[aria-expanded="true"] iconify-icon {
+  &[aria-expanded='true'] iconify-icon {
     transform: rotate(180deg);
   }
 }
@@ -128,7 +128,8 @@
     color: $color-text-highlight;
     transition: background $animation-duration-fast ease;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: $color-overlay-light-faint;
       color: $color-text-highlight;
     }

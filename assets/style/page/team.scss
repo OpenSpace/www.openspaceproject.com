@@ -37,8 +37,7 @@
 .page-team__card-inner {
   height: 100%;
   transform-style: preserve-3d;
-  transition:
-    transform $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $animation-duration-slow cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (prefers-reduced-motion: reduce) {
     transition: none;
@@ -52,7 +51,8 @@
   transform: rotateY(180deg);
 }
 
-.page-team__card-front, .page-team__card-back {
+.page-team__card-front,
+.page-team__card-back {
   position: absolute;
   inset: 0;
   border-radius: $layout-border-radius;

@@ -23,7 +23,7 @@ node("server-misc") {
     checkout scm;
   }
   stage("Lint") {
-    // stylelint + ESLint. Fails the build on any error so lint regressions can't reach
+    // stylelint + ESLint + Prettier. Fails the build on any error so lint regressions can't reach
     // the rendered site
     sh(
       script: "npm ci && npm run lint",

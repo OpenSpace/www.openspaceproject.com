@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return res.json();
       })
-      .then((json) => { places = Array.isArray(json) ? json : []; })
+      .then((json) => {
+        places = Array.isArray(json) ? json : [];
+      })
       .catch((err) => {
         console.warn('Could not load startup locations:', err);
         places = [];
@@ -55,15 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const mapEl = document.getElementById('page-impact-startup-map');
   if ('IntersectionObserver' in window && mapEl) {
-    const obs = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        obs.disconnect();
-        loadMapAssets();
-      }
-    }, { rootMargin: '300px' });
+    const obs = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          obs.disconnect();
+          loadMapAssets();
+        }
+      },
+      { rootMargin: '300px' }
+    );
     obs.observe(mapEl);
-  }
-  else {
+  } else {
     loadMapAssets();
   }
 });

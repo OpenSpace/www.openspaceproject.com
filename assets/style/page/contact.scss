@@ -40,7 +40,9 @@
     color: $color-text-light;
   }
 
-  input[type="text"], input[type="email"], textarea {
+  input[type='text'],
+  input[type='email'],
+  textarea {
     @include text-input;
 
     border-radius: $layout-border-radius-small;
